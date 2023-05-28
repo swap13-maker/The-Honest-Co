@@ -1,0 +1,85 @@
+.counter-text {
+  transform: skew(-9deg);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.4rem;
+  padding: 15px 10px;
+}
+.counter-number {
+  transform: skew(-6deg);
+  position: relative;
+  font-weight: 600;
+  color: #fff;
+  font-size: 120px;
+  margin: 1px 1px -44px -4px;
+  z-index: 1;
+}
+.counter-height {
+  max-height: 400px;
+  min-height: 250px;
+}
+.align-items-end {
+  display: flex;
+  align-items: end;
+}
+.z-index-2 {
+  z-index: 2;
+}
+
+
+
+
+
+.counter-number.counter-number1::before {
+  content: "8+";
+  position: absolute;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.counter-number.counter-number2::before {
+  content: "25+";
+  position: absolute;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.counter-number.counter-number3::before {
+  content: "50+";
+  position: absolute;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.counter-number.counter-number4::before {
+  content: "100+";
+  position: absolute;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#counter:hover .counter-number::before {
+    width: 100%;
+}
+

@@ -1,0 +1,238 @@
+.nav-pills {
+  text-align: left !important;
+}
+..nav-link {
+  text-transform: capitalize;
+  color: #000 !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+}
+.nav-pills .nav-link {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 21px !important;
+  line-height: 96% !important;
+  color: #000000 !important;
+  opacity: 0.8 !important;
+  background: #fff !important;
+  text-align: left !important;
+  text-transform: capitalize;
+  padding: 14px 0;
+  transition: all 0.4s ease-in-out;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #fff !important;
+  color: #000 !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  text-transform: capitalize;
+}
+.sub-heading-tab {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  padding-top: 0;
+  color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  height: 0px;
+  transition: opacity 0.4s ease;
+}
+.nav-pills .nav-link.active > .sub-heading-tab {
+  height: 40px;
+  padding-top: 1rem;
+  opacity: 0.8;
+}
+.tab-icon {
+  width: 30px;
+}
+
+/*circle*/
+/* tab1 */
+.tab1-ele1{
+  width: 48%;
+  margin-right: 1.5em !important;
+  margin-top: 4em !important;
+  float: right;
+  transition: all 0.2s ease-in-out;
+}
+.tab1-ele2{
+  width: 58%;
+  margin-top: 0rem !important;
+}
+.tab1-ele3{
+  width: 80%;
+  margin-top: 0em !important;
+  margin-right: -3.5em !important;
+  float: right;
+}
+.tab1-ele4{
+  width: 100%;
+  margin-top: -2em !important;
+  margin-left: 3em !important;
+}
+.tab1-ele5{
+  width: 65%;
+  margin-top: -2em !important;
+  margin-left: 3em !important;
+}
+/* tab2 */
+.tab2-ele1{
+  width: 50%;
+  margin-right: 1.5rem !important;
+  float: right;
+  transition: all 0.2s ease-in-out;
+}
+.tab2-ele2{
+  width: 40%;
+  margin-top: 5rem !important;
+}
+.tab2-ele3{
+  width: 55%;
+  margin-top: -3em !important;
+  margin-right: -2.5em !important;
+  float: right;
+}
+.tab2-ele4{
+  width: 40%;
+  margin-top: -1em !important;
+  margin-left: 3em !important;
+}
+/* tab3 */
+.tab3-ele1{
+  width: 60%;
+  margin-right: 1.5rem !important;
+  float: right;
+  transition: all 0.2s ease-in-out;
+}
+.tab3-ele2{
+  width: 50%;
+  margin-top: 5rem !important;
+}
+.tab3-ele3{
+  width: 75%;
+  margin-top: -2.5em !important;
+  margin-right: 0em !important;
+  float: right;
+}
+.tab3-ele4{
+  width: 40%;
+  margin-top: -1em !important;
+  margin-left: 1em !important;
+}
+/* tab4 */
+.tab4-ele1{
+  width: 60%;
+  margin-right: 1.5rem !important;
+  float: right;
+  transition: all 0.2s ease-in-out;
+}
+.tab4-ele2{
+  width: 50%;
+  margin-top: 3rem !important;
+}
+.tab4-ele3{
+  width: 50%;
+  margin-top: 0em !important;
+  margin-right: 2em !important;
+  float: right;
+}
+.tab4-ele4{
+  width: 60%;
+  margin-top: -1em !important;
+  margin-left: 0em !important;
+}
+.tab1-ele1:hover,
+.tab1-ele2:hover,
+.tab1-ele3:hover,
+.tab1-ele4:hover,
+.tab1-ele5:hover,
+.tab2-ele1:hover,
+.tab2-ele2:hover,
+.tab2-ele3:hover,
+.tab2-ele4:hover,
+.tab3-ele1:hover,
+.tab3-ele2:hover,
+.tab3-ele3:hover,
+.tab3-ele4:hover,
+.tab4-ele1:hover,
+.tab4-ele2:hover,
+.tab4-ele3:hover,
+.tab4-ele4:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.15);
+}
+
+
+
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 1em 0;
+  background-color: transparent;
+  color: #222;
+  text-align: center;
+}
+.circle:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  content: "";
+  transition: all 0.2s ease-in-out;
+}
+.circle:hover::after{
+  background-color: #000;
+  color: #fff;
+}
+.circle__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.circle__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__content {
+  display: table-cell;
+  padding: 0.5em;
+  vertical-align: middle;
+}
+
+@media (min-width: 480px) {
+  .circle__content {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .circle__content {
+    font-size: 1em;
+  }
+}
