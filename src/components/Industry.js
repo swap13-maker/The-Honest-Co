@@ -4,7 +4,7 @@ import "./../App.css";
 
 function Industries() {
   return (
-    <section className="py-5 mb-5 bg-white">
+    <section className="py-md-5 mb-5 bg-white">
       <div className="container">
         <div className="row py-5">
           <div className="col-12 col-md-5 col-lg-5">

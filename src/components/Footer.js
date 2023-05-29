@@ -6,8 +6,9 @@ function Footer() {
   return (
     <footer className="footer pt-4 border-white">
       <div className="container">
-        <div className="row py-5 align-items-end">
+        <div className="row py-md-5 align-items-end">
           <div className="col-12 col-md-6 col-lg-6">
+            <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
             <article class="c-article">
               <header class="c-article__header">
                 <h2 class="c-article__title footer-title">
@@ -15,18 +16,17 @@ function Footer() {
                 </h2>
               </header>
             </article>
-            <h5 className="text-white">
-              Click here to start elevating your physical and digital customer
-              experiences.
+            <h5 className="text-white footer-content">
+              High level experience in web design and development knowledge, producing quality work.
             </h5>
           </div>
           <div className="col-12 col-md-3 col-lg-3"></div>
           <div className="col-12 col-md-3 col-lg-3">
-            <img className="w-90" src={myFooterLogo} alt="Footer Logo" />
+            <img className="w-90 d-md-block d-none" src={myFooterLogo} alt="Footer Logo" />
           </div>
         </div>
-        <div className="row pt-5 pb-4">
-          <div className="col-12 col-md-custom-2 footer-card">
+        <div className="row pt-md-5 pb-4">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> Architecture </div>
             <ul>
               <li>
@@ -46,8 +46,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Industrial training </div>
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+            <div className="footer-heading mb-2"> Industrial Design </div>
             <ul>
               <li>
                 <a href="#">Product Design</a>
@@ -63,7 +63,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2">
               {" "}
               Web & Mobile development{" "}
@@ -83,7 +83,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2">
               {" "}
               Marketing & Content creation{" "}
@@ -103,7 +103,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> Get started with us </div>
             <ul>
               <li>
@@ -132,7 +132,7 @@ function Footer() {
         </div>
 
         <div className="row pt-2 pb-5">
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> About </div>
             <ul>
               <li>
@@ -155,7 +155,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> Team </div>
             <ul>
               <li>
@@ -184,7 +184,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> White Papers </div>
             <ul>
               <li>
@@ -210,7 +210,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> Portfolio </div>
             <ul>
               <li>
@@ -229,7 +229,7 @@ function Footer() {
             <div className="footer-heading mt-4 pt-2"> Term & Conditions </div>
             <div className="footer-heading mt-2"> Privacy Policy </div>
           </div>
-          <div className="col-12 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> Blogs </div>
             <ul>
               <li>

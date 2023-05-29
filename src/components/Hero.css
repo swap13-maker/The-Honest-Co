@@ -1,6 +1,5 @@
 .navbar-brand {
   font-style: normal;
-  font-size: 24px !important;
   line-height: 29px;
   text-transform: uppercase;
   color: #ffffff;
@@ -33,11 +32,6 @@
   position: absolute;
   width: 100%;
   bottom: 35%;
-}
-.p-absolute {
-  position: relative;
-  align-items: end;
-  display: flex;
 }
 .heading-quote {
   font-style: normal;

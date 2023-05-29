@@ -4,7 +4,7 @@ import "./Counter.css";
 
 function Counter() {
   return (
-    <section className="container py-5" id="counter">
+    <section className="container py-md-5 d-none d-md-block" id="counter">
       <div className="row">
         <div className="col-12 col-md-1 col-lg-1 z-index-2 bg-white"></div>
         <div className="col-12 col-md-11 col-lg-11">

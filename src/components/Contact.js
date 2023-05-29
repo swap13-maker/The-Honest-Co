@@ -9,9 +9,9 @@ import Cta2Hover from "../images/Cta2-hover.jpg";
 
 function Contact() {
   return (
-    <section className="py-5" id="contact-section">
+    <section className="py-md-5" id="contact-section">
       <Container className="pt-5">
-        <div className="heading text-center text-uppercase py-5">
+        <div className="heading text-center text-uppercase py-md-5">
           <h2 className="text-white section-heading">GET STARTED WITH US</h2>
           <div className="sub-heading pt-4">
             <span className="text-light1">help us to better </span>
@@ -26,7 +26,7 @@ function Contact() {
         <div className="row">
           <div className="col-md-2"></div>
           <div className="col-md-4 pt-4">
-            <div className="grid">
+            <div className="grid p-3 px-md-0">
               <figure class="effect-sadie">
                 <img className="w-100 img-1" src={Cta1} alt="" />
                 <img className="w-100 img-1-hover" src={Cta1Hover} alt="" />
@@ -38,17 +38,17 @@ function Contact() {
                     </span>
                   </h2>
                   <p>
-                  <button className="contact-button">
-                    GET STARTED WITH US !
-                  </button>
+                    <button className="contact-button">
+                      GET STARTED WITH US !
+                    </button>
                   </p>
                 </figcaption>
               </figure>
             </div>
           </div>
           <div className="col-md-4 pt-4">
-            <div className="grid">
-            <figure class="effect-sadie">
+            <div className="grid p-3 px-md-0">
+              <figure class="effect-sadie">
                 <img className="w-100 img-1" src={Cta2} alt="" />
                 <img className="w-100 img-1-hover" src={Cta2Hover} alt="" />
                 <figcaption>
@@ -59,9 +59,9 @@ function Contact() {
                     </span>
                   </h2>
                   <p>
-                  <button className="contact-button">
-                    GET STARTED WITH US !
-                  </button>
+                    <button className="contact-button">
+                      GET STARTED WITH US !
+                    </button>
                   </p>
                 </figcaption>
               </figure>

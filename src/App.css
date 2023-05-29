@@ -238,6 +238,101 @@ h1 {
   .industry-card {
     padding-right: 16%;
   }
+  .navbar-brand{
+    font-size: 24px !important;
+  }
+  .p-absolute {
+    position: relative;
+    align-items: end;
+    display: flex;
+  }
+  .section-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px !important;
+  }
+}
+/*mobile only media view*/
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 9vw;
+  }
+  .footer-content{
+    font-size: 0.8rem;
+  }
+  .pt-media-4{
+    padding-top: 1.4rem;
+  }
+  .footer-card a{
+    font-size: 0.7em;
+  }
+  .footer-heading {
+    font-size: 0.9rem;
+  }
+  .industry-card{
+    padding: 12px;
+  }
+  .even-section{
+    padding-top: 100px;
+  }
+  .odd-section{
+    position: relative;
+    margin-top: -10px;
+  }
+  .indistryHeading{
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .indistry-content {
+    font-size: 0.7rem;
+    font-style: normal;
+  }
+  .sub-heading p{
+    font-size: 12px !important;
+  }
+  .section-heading:before, .section-heading:after{
+    flex: 0;
+  }
+  .font-media-15{
+    font-size: 15px !important;
+  }
+  .navbar-brand{
+    font-size: 16px !important;
+  }
+  .text-align-media-left{
+    text-align: left;
+  }
+  .heading-quote{
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  .heading-logo {
+    width: 80% !important;
+    padding-bottom: 10% !important;
+  }
+  .content{
+    bottom: 40% !important;
+  }
+  .navbar-collapse{
+    background: #1a1a1a;
+    z-index: 9999;
+  }
+  nav{
+    background: #1a1a1a;
+    z-index: 9999;
+  }
+  .card-text{
+    font-size: 12px !important;
+  }
+  figure.effect-sadie h2{
+    font-size: 27px !important;
+    line-height: 35px !important;
+  }
+  .custom-pl{
+    padding-left: 0;
+    text-align: left;
+    font-size: 13px;
+  }
 }
 
 /* tabs and pills */

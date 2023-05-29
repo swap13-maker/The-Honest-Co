@@ -6,7 +6,7 @@ function Resource() {
   return (
     <section className="container py-5">
       <div className="row border-bottom-bold pb-4">
-        <div className="col-12 col-md-6 col-lg-6 px-0">
+        <div className="col-10 col-md-6 col-lg-6 px-0">
           <div className="text-uppercase">
             <h1>
               <span className="text-light-color text-light-space">OUR</span>{" "}
@@ -14,20 +14,20 @@ function Resource() {
             </h1>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-end">
+        <div className="col-2 col-md-6 col-lg-6 d-flex align-items-center justify-content-end">
           <p>icon</p>
         </div>
       </div>
 
       <div className="row py-5">
-        <div className="col-md-3">
+        <div className="col-md-3 col-12">
           <div className="sidebar-btn-section sticky-top">
             <button className="bg-dark text-uppercase text-white font-weight-300 button">
               VIEW ALL CASE STUDIES
             </button>
           </div>
         </div>
-        <div className="col-md-9">
+        <div className="col-md-9 col-12">
           <div className="custom-pl resource-heading">
             Our services have been divided into four categories based on the
             kind of work we have done in the past. From designing the interior.

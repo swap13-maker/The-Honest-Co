@@ -24,7 +24,7 @@ function Services() {
   };
 
   return (
-    <section className="container py-5">
+    <section className="container py-5 d-none">
       <div className="row">
         <div className="col-12 col-md-7 col-lg-7 d-flex">
           <div className="sub-heading d-flex align-items-center">

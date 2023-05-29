@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import "./../App.css";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import logo from "../images/logo.png";
@@ -7,7 +8,7 @@ import logoIcon from "../images/logo-icon.png";
 
 function Hero() {
   return (
-    <section id="hero" className="">
+    <section id="hero">
       <Container>
         <div className="app-container pt-2">
           {/*navbar*/}
@@ -39,11 +40,16 @@ function Hero() {
 
           <main className="content">
             <div className="row">
-              <div className="col-8 p-absolute">
+              <div className="col-md-8 col-12 p-absolute text-align-media-left">
+                <div><img
+                  className="heading-logo d-md-none d-blade"
+                  src={logo}
+                  alt="The Honest Company logo"
+                /></div>
                 <h2 className="heading-quote">
                   We help <span className="bg-elipse">businesses</span>
                   <br />{" "}
-                  <span className="px-4 heading-icon">
+                  <span className="px-md-4 px-2 heading-icon">
                     <img className="rotate" src={logoIcon} />
                   </span>{" "}
                   create digital & physical
@@ -51,7 +57,7 @@ function Hero() {
                   experiences.
                 </h2>
               </div>
-              <div className="col-4 p-absolute">
+              <div className="col-md-4 col-12 p-absolute d-md-block d-none">
                 <img
                   className="heading-logo"
                   src={logo}
@@ -66,7 +72,7 @@ function Hero() {
             <div className="border-top">
               <div className="row">
                 <div className="col-12 col-md-8">
-                  <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text">
+                  <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15">
                     We are a community of creators who make really cool things
                     for new businesses that help them succeed.
                   </p>
