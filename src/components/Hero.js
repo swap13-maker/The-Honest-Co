@@ -5,6 +5,7 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import logo from "../images/logo.png";
 import logoIcon from "../images/logo-icon.png";
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -32,7 +33,7 @@ function Hero() {
                 <Nav.Link href="#">portfolio</Nav.Link>
                 <Nav.Link href="#">resources</Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
-                  <button className="nav-button">get in touch</button>
+                  <Link to="/get-in-touch"><button className="nav-button">get in touch</button></Link>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -76,9 +77,11 @@ function Hero() {
                     We are a community of creators who make really cool things
                     for new businesses that help them succeed.
                   </p>
-                  <button className="nav-foot-button">
-                    Get started with us !
-                  </button>
+                  <Link to="/get-in-touch">
+                    <button className="nav-foot-button">
+                      Get started with us !
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
