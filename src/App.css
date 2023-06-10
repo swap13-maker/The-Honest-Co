@@ -239,7 +239,7 @@ h1 {
   .industry-card {
     padding-right: 16%;
   }
-  .navbar-brand{
+  .navbar-brand {
     font-size: 24px !important;
   }
   .p-absolute {
@@ -247,40 +247,40 @@ h1 {
     align-items: end;
     display: flex;
   }
-   .section-heading {
+  .section-heading {
     font-style: normal;
     font-weight: 400;
     font-size: 55px !important;
-  } 
+  }
 }
 /*mobile only media view*/
 @media (max-width: 768px) {
   .footer-title {
     font-size: 9vw;
   }
-  .footer-content{
+  .footer-content {
     font-size: 0.8rem;
   }
-  .pt-media-4{
+  .pt-media-4 {
     padding-top: 1.4rem;
   }
-  .footer-card a{
+  .footer-card a {
     font-size: 0.7em;
   }
   .footer-heading {
     font-size: 0.9rem;
   }
-  .industry-card{
+  .industry-card {
     padding: 12px;
   }
-  .even-section{
+  .even-section {
     padding-top: 100px;
   }
-  .odd-section{
+  .odd-section {
     position: relative;
     margin-top: -10px;
   }
-  .indistryHeading{
+  .indistryHeading {
     font-size: 14px;
     font-weight: 200;
   }
@@ -288,22 +288,23 @@ h1 {
     font-size: 0.7rem;
     font-style: normal;
   }
-  .sub-heading p{
+  .sub-heading p {
     font-size: 12px !important;
   }
-  .section-heading:before, .section-heading:after{
+  .section-heading:before,
+  .section-heading:after {
     flex: 0;
   }
-  .font-media-15{
+  .font-media-15 {
     font-size: 15px !important;
   }
-  .navbar-brand{
+  .navbar-brand {
     font-size: 16px !important;
   }
-  .text-align-media-left{
+  .text-align-media-left {
     text-align: left;
   }
-  .heading-quote{
+  .heading-quote {
     font-size: 25px !important;
     line-height: 30px !important;
   }
@@ -311,25 +312,25 @@ h1 {
     width: 80% !important;
     padding-bottom: 10% !important;
   }
-  .content{
+  .content {
     bottom: 40% !important;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     background: #1a1a1a;
     z-index: 9999;
   }
-  nav{
+  nav {
     background: #1a1a1a;
     z-index: 9999;
   }
-  .card-text{
+  .card-text {
     font-size: 12px !important;
   }
-  figure.effect-sadie h2{
+  figure.effect-sadie h2 {
     font-size: 27px !important;
     line-height: 35px !important;
   }
-  .custom-pl{
+  .custom-pl {
     padding-left: 0;
     text-align: left;
     font-size: 13px;
@@ -424,22 +425,53 @@ h1 {
   background-color: #000;
 }
 /*wizard*/
-
-
+.height-100vh {
+  height: 100vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+.contact-logo{
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #1A1A1A;
+	margin-top: -12px;
+	text-decoration: none;
+}
 .form-wizard {
   display: flex;
 }
+.border-element{
+	border: 2px solid rgba(0, 0, 0, 0.1);
+}
 .progress-step {
-  width: 20px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  padding-top: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  color: #1a1a1a;
+  opacity: 0.5;
+}
+.sub-progress-step {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  list-style: none;
+}
+.sub-progress-step > li {
+  padding-top: 10px;
 }
 .progress-step.active {
-  color: #f00; /* Change to desired active step color */
+  color: #1a1a1a;
+  opacity: 1;
 }
-.form-select:focus, .form-control:focus, FormControl:focus {
-    box-shadow: none;
-    border-bottom-color: #2196f3;
+.form-select:focus,
+.form-control:focus,
+FormControl:focus {
+  box-shadow: none;
+  border-bottom-color: #2196f3;
 }

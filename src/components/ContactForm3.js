@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 
 function ContactForm3() {
   return (
-    <div>
+    <div className="py-4">
       <div className="contact-heading">
         <span className="font-weight-600 text-black"> Project Details</span>
       </div>
