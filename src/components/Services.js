@@ -24,7 +24,7 @@ function Services() {
   };
 
   return (
-    <section className="container py-5 d-none">
+    <section className="container py-5 d-none d-md-block">
       <div className="row">
         <div className="col-12 col-md-7 col-lg-7 d-flex">
           <div className="sub-heading d-flex align-items-center">
@@ -111,6 +111,11 @@ function Services() {
                   </MDBTabsLink>
                 </MDBTabsItem>
               </MDBTabs>
+              <div className="pt-5">
+                <button className="bg-dark text-uppercase text-white font-weight-300 button">
+                  GET STARTED WITH US !
+                </button>
+              </div>
             </MDBCol>
             <MDBCol size="7">
               <MDBTabsContent>
@@ -353,15 +358,6 @@ function Services() {
         </div>
       </div>
       {/* test */}
-
-      <div className="row py-5">
-        <div className="col-12 col-md-5 col-lg-5">
-          <button className="bg-dark text-uppercase text-white font-weight-300 button">
-            GET STARTED WITH US !
-          </button>
-        </div>
-        <div className="col-12 col-md-7 col-lg-7"></div>
-      </div>
     </section>
   );
 }

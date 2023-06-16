@@ -37,12 +37,12 @@ function Header() {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link className="text-black" href="#">about</Nav.Link>
-            <Nav.Link className="text-black" href="#">services us</Nav.Link>
-            <Nav.Link className="text-black" href="#">team</Nav.Link>
-            <Nav.Link className="text-black" href="#">portfolio</Nav.Link>
-            <Nav.Link className="text-black" href="#">resources</Nav.Link>
-            <Nav.Link className="text-black" href="#" className="nav-btn-area">
+            <Nav.Link className="text-black menu-link" href="#">about</Nav.Link>
+            <Nav.Link className="text-black menu-link" href="#">services</Nav.Link>
+            <Nav.Link className="text-black menu-link" href="#">team</Nav.Link>
+            <Nav.Link className="text-black menu-link" href="#">portfolio</Nav.Link>
+            <Nav.Link className="text-black menu-link" href="#">resources</Nav.Link>
+            <Nav.Link className="text-black nav-btn-area" href="#">
               <Link to="/get-in-touch"><button className="nav-sticky-button">get in touch</button></Link>
             </Nav.Link>
           </Nav>

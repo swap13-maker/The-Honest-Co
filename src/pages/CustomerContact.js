@@ -49,25 +49,25 @@ function CustomerContact() {
             <div className={`progress-step ${step >= 1 ? "active" : ""}`}>
               1. General Information
               <ul className="sub-progress-step">
-                <li id="name">Name: {name}</li>
-                <li id="organization">Organization: {organization}</li>
-                <li id="email">Email: {email}</li>
+                <li id="name">{name}</li>
+                <li id="organization">{organization}</li>
+                <li id="email">{email}</li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 2 ? "active" : ""}`}>
               2. Area of interest
               <ul className="sub-progress-step">
-                <li>test 1234</li>
-                <li>test 1234</li>
-                <li>test 1234</li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 3 ? "active" : ""}`}>
               3. General Information
               <ul className="sub-progress-step">
-                <li>test 1234</li>
-                <li>test 1234</li>
-                <li>test 1234</li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 4 ? "active" : ""}`}>

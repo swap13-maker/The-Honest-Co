@@ -1,6 +1,7 @@
 import React from "react";
 import "./../App.css";
 import studies1 from "../images/studies1.jpg";
+import resourceGif from '../images/resource.gif';
 
 function Resource() {
   return (
@@ -15,7 +16,7 @@ function Resource() {
           </div>
         </div>
         <div className="col-2 col-md-6 col-lg-6 d-flex align-items-center justify-content-end">
-          <p>icon</p>
+          <div><img src={resourceGif} alt="Resource GIF" width="120px" /></div>
         </div>
       </div>
 

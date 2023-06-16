@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import indistry1 from "../images/indistry1.jpg";
 import "./../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Industries() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      offset: 200, // Offset (in pixels) from the element's position to trigger the animation
+      easing: "ease-in-out", // Animation easing (CSS transition-timing-function)
+      delay: 0, // Delay (in milliseconds) before the animation starts
+      once: true, // Whether the animation should occur only once or every time the element is scrolled into view
+      mirror: false, // Whether elements with the same data-aos value should animate individually or together
+    });
+  }, []);
+
   return (
     <section className="py-md-5 mb-5 bg-white">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row py-5">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
@@ -26,7 +40,7 @@ function Industries() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-6 col-md-custom-2 odd-section">
+          <div className="col-6 col-md-custom-2 odd-section" data-aos="fade-up" data-aos-duration="800">
             <div className="industry-card">
               <img className="indistryImage" src={indistry1} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">D2C & ECommerce</div>
@@ -37,7 +51,7 @@ function Industries() {
               </div>
             </div>
           </div>
-          <div className="col-6 col-md-custom-2 even-section">
+          <div className="col-6 col-md-custom-2 even-section" data-aos="fade-up" data-aos-duration="1000">
             <div className="industry-card">
               <img className="indistryImage" src={indistry1} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">Banking & Finance</div>
@@ -50,7 +64,7 @@ function Industries() {
               </div>
             </div>
           </div>
-          <div className="col-6 col-md-custom-2 odd-section">
+          <div className="col-6 col-md-custom-2 odd-section" data-aos="fade-up" data-aos-duration="1200">
             <div className="industry-card">
               <img className="indistryImage" src={indistry1} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">
@@ -63,7 +77,7 @@ function Industries() {
               </div>
             </div>
           </div>
-          <div className="col-6 col-md-custom-2 even-section">
+          <div className="col-6 col-md-custom-2 even-section" data-aos="fade-up" data-aos-duration="1400">
             <div className="industry-card">
               <img className="indistryImage" src={indistry1} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">
@@ -76,7 +90,7 @@ function Industries() {
               </div>
             </div>
           </div>
-          <div className="col-6 col-md-custom-2 odd-section">
+          <div className="col-6 col-md-custom-2 odd-section" data-aos="fade-up" data-aos-duration="1600">
             <div className="industry-card">
               <img className="indistryImage" src={indistry1} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">

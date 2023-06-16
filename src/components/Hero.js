@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.css";
 import "./../App.css";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
@@ -8,6 +8,10 @@ import logoIcon from "../images/logo-icon.png";
 import { Link } from 'react-router-dom';
 
 function Hero() {
+  useEffect(() => {
+    localStorage.clear();
+  }, []);
+
   return (
     <section id="hero">
       <Container>
@@ -27,11 +31,11 @@ function Hero() {
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav" className="justify-content-end">
               <Nav>
-                <Nav.Link href="#">about</Nav.Link>
-                <Nav.Link href="#">services us</Nav.Link>
-                <Nav.Link href="#">team</Nav.Link>
-                <Nav.Link href="#">portfolio</Nav.Link>
-                <Nav.Link href="#">resources</Nav.Link>
+                <Nav.Link href="#" className="menu-link">about</Nav.Link>
+                <Nav.Link href="#" className="menu-link">services</Nav.Link>
+                <Nav.Link href="#" className="menu-link">team</Nav.Link>
+                <Nav.Link href="#" className="menu-link">portfolio</Nav.Link>
+                <Nav.Link href="#" className="menu-link">resources</Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
                   <Link to="/get-in-touch"><button className="nav-button">get in touch</button></Link>
                 </Nav.Link>
