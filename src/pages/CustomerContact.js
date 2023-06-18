@@ -13,6 +13,7 @@ function CustomerContact() {
   const [name, setName] = useState("");
   const [organization, setOrganization] = useState("");
   const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
 
   const handleNameChange = (newName) => {
     setName(newName);
@@ -24,6 +25,10 @@ function CustomerContact() {
 
   const handleEmailChange = (newEmail) => {
     setEmail(newEmail);
+  };
+
+  const handleContactChange = (newContact) => {
+    setContact(newContact);
   };
 
   const [step, setStep] = useState(1);
@@ -90,6 +95,7 @@ function CustomerContact() {
                       onNameChange={handleNameChange}
                       onOrganizationChange={handleOrganizationChange}
                       onEmailChange={handleEmailChange}
+                      onContactChange={handleContactChange}
                     />
                   )}
                   {step === 2 && <ContactForm2 />}

@@ -1,19 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
-function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange }) {
+function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onContactChange }) {
   const [name, setName] = useState("");
   const [organization, setOrganization] = useState("");
   const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+  const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
     const storedName = localStorage.getItem("name");
     const storedOrganization = localStorage.getItem("organization");
     const storedEmail = localStorage.getItem("email");
+    const storedContact = localStorage.getItem("contact");
 
     if (storedName) setName(storedName);
     if (storedOrganization) setOrganization(storedOrganization);
     if (storedEmail) setEmail(storedEmail);
+    if (storedContact) setContact(storedContact);
   }, []);
 
   const handleNameChange = (event) => {
@@ -35,6 +39,21 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange }) {
     setEmail(newEmail);
     onEmailChange(newEmail);
     localStorage.setItem("email", newEmail);
+  };
+
+  const handleContactChange = (event) => {
+    const newContact = event.target.value;
+    setContact(newContact);
+    onContactChange(newContact);
+    localStorage.setItem("contact", newContact);
+  };
+
+  const handleCheckboxChange = (event) => {
+    setShowContactForm(event.target.checked);
+    if (!event.target.checked) {
+      setContact('');
+      localStorage.removeItem('email');
+    }
   };
 
   return (
@@ -67,8 +86,17 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange }) {
           </Form.Floating>
         </Form.Group>
 
+        {showContactForm && (
+        <Form.Group controlId="formContact">
+          <Form.Floating>
+            <Form.Control className="w-75" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
+            <Form.Label>Contact Number</Form.Label>
+          </Form.Floating>
+        </Form.Group>
+        )}
+
         <Form.Group className="pt-4" controlId="formCheckbox">
-            <Form.Check type="checkbox" label="You will be contacted via the entered number" />
+            <Form.Check type="checkbox" label="You will be contacted via the entered number" onChange={handleCheckboxChange} />
         </Form.Group>
 
       </div>
