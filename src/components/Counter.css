@@ -17,8 +17,22 @@
 }
 .counter-height {
   max-height: 400px;
-  min-height: 250px;
+  min-height: 200px;
 }
+.counter-height:nth-child(1),
+.counter-height:nth-child(2),
+.counter-height:nth-child(3),
+.counter-height:nth-child(4) {
+  border-top: 100px solid transparent !important;
+}
+
+.counter-height:nth-child(5),
+.counter-height:nth-child(6),
+.counter-height:nth-child(7),
+.counter-height:nth-child(8) {
+  border-bottom: 100px solid transparent !important;
+}
+
 .align-items-end {
   display: flex;
   align-items: end;
@@ -26,10 +40,6 @@
 .z-index-2 {
   z-index: 2;
 }
-
-
-
-
 
 .counter-number.counter-number1::before {
   content: "8+";
@@ -80,6 +90,5 @@
   transition: all 0.5s;
 }
 #counter:hover .counter-number::before {
-    width: 100%;
+  width: 100%;
 }
-

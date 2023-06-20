@@ -376,6 +376,7 @@ h1 {
 .slick-slide {
   float: left;
   min-height: 1px;
+  overflow: hidden;
 }
 
 /*.slick-slide img {
@@ -430,21 +431,21 @@ h1 {
   padding-top: 8vh;
   padding-bottom: 8vh;
 }
-.contact-logo{
-	font-style: normal;
-	font-weight: 800;
-	font-size: 24px;
-	line-height: 29px;
-	text-transform: uppercase;
-	color: #1A1A1A;
-	margin-top: -12px;
-	text-decoration: none;
+.contact-logo {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-top: -12px;
+  text-decoration: none;
 }
 .form-wizard {
   display: flex;
 }
-.border-element{
-	border: 2px solid rgba(0, 0, 0, 0.1);
+.border-element {
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 .progress-step {
   padding-top: 15px;
@@ -474,4 +475,10 @@ h1 {
 FormControl:focus {
   box-shadow: none;
   border-bottom-color: #2196f3;
+}
+
+@media (max-width: 767px) {
+  .slick-slide > div {
+    padding: 0 12px; /* Adjust the padding as needed */
+  }
 }
