@@ -59,7 +59,9 @@ function Story() {
         </div>
       </section>
       <div className="row slider-container">
-        <div className="col-md-2 col-12"></div>
+        <div className="col-md-2 col-12 slider-container-left">
+          <img src={icon1} className="card-icon" />
+        </div>
         <div
           className="col-md-10 col-12 "
           data-aos="fade-up"
