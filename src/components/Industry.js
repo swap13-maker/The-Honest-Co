@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 import indistry1 from "../images/indistry1.jpg";
+import indistry2 from "../images/indistry2.jpg";
+import indistry3 from "../images/indistry3.jpg";
+import indistry4 from "../images/indistry4.jpg";
+import indistry5 from "../images/indistry5.jpg";
 import "./../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -53,7 +57,7 @@ function Industries() {
           </div>
           <div className="col-6 col-md-custom-2 even-section" data-aos="fade-up" data-aos-duration="1000">
             <div className="industry-card">
-              <img className="indistryImage" src={indistry1} alt="Indistry 1" />
+              <img className="indistryImage" src={indistry2} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">Banking & Finance</div>
               <div className="indistry-content">
                 <p className="m-0">
@@ -66,7 +70,7 @@ function Industries() {
           </div>
           <div className="col-6 col-md-custom-2 odd-section" data-aos="fade-up" data-aos-duration="1200">
             <div className="industry-card">
-              <img className="indistryImage" src={indistry1} alt="Indistry 1" />
+              <img className="indistryImage" src={indistry3} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">
                 Healthcare Technology
               </div>
@@ -79,9 +83,9 @@ function Industries() {
           </div>
           <div className="col-6 col-md-custom-2 even-section" data-aos="fade-up" data-aos-duration="1400">
             <div className="industry-card">
-              <img className="indistryImage" src={indistry1} alt="Indistry 1" />
+              <img className="indistryImage" src={indistry4} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">
-                Real Estate & Home Services
+              Services & Property Technology
               </div>
               <div className="indistry-content">
                 Designing beautiful and functional living spaces Creating
@@ -92,7 +96,7 @@ function Industries() {
           </div>
           <div className="col-6 col-md-custom-2 odd-section" data-aos="fade-up" data-aos-duration="1600">
             <div className="industry-card">
-              <img className="indistryImage" src={indistry1} alt="Indistry 1" />
+              <img className="indistryImage" src={indistry5} alt="Indistry 1" />
               <div className="indistryHeading pt-4 pb-2">
                 Educational Technology
               </div>

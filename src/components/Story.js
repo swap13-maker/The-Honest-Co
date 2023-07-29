@@ -36,7 +36,7 @@ function Story() {
 
   return (
     <>
-      <section className="container pt-5">
+      <section className="container pt-5 d-none">
         <div className="row" data-aos="fade-up">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
@@ -58,7 +58,7 @@ function Story() {
           </div>
         </div>
       </section>
-      <div className="row slider-container">
+      <div className="row slider-container d-none">
         <div className="col-md-2 col-12 slider-container-left">
           <img src={icon1} className="card-icon" />
         </div>

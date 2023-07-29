@@ -1,0 +1,72 @@
+.blog-heading {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.blog-heading::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+.blog-card:hover > .blog-heading::after {
+  width: 100%;
+}
+.blog-card {
+  border-bottom: 1px solid #ccc;
+}
+.blog-title {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: Barlow;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.blog-thumbnail > img {
+    width: 100%;
+    border-top: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transition: all 0.5s;
+}
+.blog-border {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.blog-card:hover > .blog-thumbnail > img {
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+.resource-button {
+  font: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 1em 3.6em;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: rgb(255, 255, 255) 8px 8px 0px -1px, rgb(000, 000, 000) 8px 8px;
+  transition: all 0.25s ease-in-out;
+}
+.resource-button:hover {
+  box-shadow: 0em 0em #000;
+  transform: translate(0.25em, 0.25em);
+}

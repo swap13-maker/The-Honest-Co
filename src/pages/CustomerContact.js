@@ -14,6 +14,8 @@ function CustomerContact() {
   const [organization, setOrganization] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
+  const [project, setProject] = useState("");
+  const [selectedOption, setSelectedOption] = useState("");
 
   const handleNameChange = (newName) => {
     setName(newName);
@@ -31,12 +33,18 @@ function CustomerContact() {
     setContact(newContact);
   };
 
-  const [step, setStep] = useState(1);
+  const handleProjectChange = (newProject) => {
+    setProject(newProject);
+  };
 
+  const handleRadioChange = (newOption) => {
+    setSelectedOption(newOption);
+  };
+
+  const [step, setStep] = useState(1);
   const handleNext = () => {
     setStep((prevStep) => prevStep + 1);
   };
-
   const handlePrevious = () => {
     setStep((prevStep) => prevStep - 1);
   };
@@ -62,6 +70,7 @@ function CustomerContact() {
             <div className={`progress-step ${step >= 2 ? "active" : ""}`}>
               2. Area of interest
               <ul className="sub-progress-step">
+                <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -98,7 +107,12 @@ function CustomerContact() {
                       onContactChange={handleContactChange}
                     />
                   )}
-                  {step === 2 && <ContactForm2 />}
+                  {step === 2 && (
+                    <ContactForm2
+                      onProjectChange={handleProjectChange}
+                      onRadioChange={handleRadioChange}
+                    />
+                  )}
                   {step === 3 && <ContactForm3 />}
                   {step === 4 && <ContactForm4 />}
                 </Form>

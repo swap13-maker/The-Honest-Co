@@ -16,8 +16,8 @@ function Footer() {
                 </h2>
               </header>
             </article>
-            <h5 className="text-white footer-content">
-              High level experience in web design and development knowledge, producing quality work.
+            <h5 className="footer-content">
+              <a href="" className="cool-link text-white">Click here to start elevating your physical and digital customer experiences.</a>
             </h5>
           </div>
           <div className="col-12 col-md-3 col-lg-3"></div>
