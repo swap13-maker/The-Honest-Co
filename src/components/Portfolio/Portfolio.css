@@ -60,21 +60,76 @@
   text-decoration-line: underline !important;
   text-transform: uppercase;
 }
-.proj-heading{
-    color: #1A1A1A;
-    font-family: Barlow;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-bottom: 10px;
+.w-40 {
+  width: 40%;
 }
-.proj-content{
-    color: rgba(0, 0, 0, 0.90);
-font-family: Barlow;
+.w-80 {
+  width: 80%;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.proj-heading {
+  color: #1a1a1a;
+  font-family: Barlow;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+.proj-sub-heading {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.proj-content {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.proj-link {
+  color: #000;
+font-family: Inter;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-letter-spacing: 0.36px;
+text-decoration-line: underline;
+text-transform: uppercase;
+}
+.newsletter {
+  color: #1a1a1a;
+  font-family: Barlow;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.idea {
+  font-family: Barlow;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+p {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
 }

@@ -203,6 +203,12 @@ h1 {
   font-weight: 600;
   color: #000;
 }
+.text-align-center {
+  text-align: center;
+}
+.text-align-end {
+  text-align: end;
+}
 /* ================================================= Services */
 .button {
   font: inherit;
