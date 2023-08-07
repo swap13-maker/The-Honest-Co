@@ -60,7 +60,7 @@ function Project1() {
         <img src={demo10} alt="" className="w-100 my-4" />
         {/* section 1 */}
         <section className="container">
-          <div className="row">
+          <div className="row py-5">
             <div className="col-12 col-md-6 px-5">
               <div className="proj-heading">
                 Scope
