@@ -40,7 +40,9 @@ function Header() {
             <Nav.Link className="text-black menu-link" href="#">about</Nav.Link>
             <Nav.Link className="text-black menu-link" href="#">services</Nav.Link>
             <Nav.Link className="text-black menu-link" href="#">team</Nav.Link>
-            <Nav.Link className="text-black menu-link" href="#">portfolio</Nav.Link>
+            <Nav.Link className="text-black menu-link">
+              <Link to="/portfolio/project1">portfolio</Link>
+            </Nav.Link>
             <Nav.Link className="text-black menu-link" href="#">resources</Nav.Link>
             <Nav.Link className="text-black nav-btn-area" href="#">
               <Link to="/get-in-touch"><button className="nav-sticky-button">get in touch</button></Link>

@@ -34,7 +34,7 @@ function Hero() {
                 <Nav.Link href="#" className="menu-link">about</Nav.Link>
                 <Nav.Link href="#" className="menu-link">services</Nav.Link>
                 <Nav.Link href="#" className="menu-link">team</Nav.Link>
-                <Nav.Link href="#" className="menu-link">portfolio</Nav.Link>
+                <Nav.Link href="#" className="menu-link"><Link to="/portfolio/project1">portfolio</Link></Nav.Link>
                 <Nav.Link href="#" className="menu-link">resources</Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
                   <Link to="/get-in-touch"><button className="nav-button">get in touch</button></Link>
