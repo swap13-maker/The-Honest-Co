@@ -112,7 +112,7 @@ figure.effect-sadie h2 {
   font-style: normal;
   word-spacing: 2px;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
@@ -193,7 +193,8 @@ figure.effect-sadie:hover p {
   font-size: 1em;
   text-transform: uppercase;
   padding: 1em 2em;
-  color: #000 !impo;
+  color: #000 !important;
+  left: 7%;
   background-color: #fff;
   border: none;
   cursor: pointer;

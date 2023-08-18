@@ -1,18 +1,18 @@
 .nav-pills {
   text-align: left !important;
 }
-..nav-link {
+/* .nav-link {
   text-transform: capitalize;
   color: #000 !important;
   font-weight: 600 !important;
   text-align: left !important;
-}
+} */
 .nav-pills .nav-link {
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 21px !important;
   line-height: 96% !important;
-  color: #000000 !important;
+  color: #000 !important;
   opacity: 0.8 !important;
   background: #fff !important;
   text-align: left !important;

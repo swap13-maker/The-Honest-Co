@@ -22,7 +22,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={`header glass height-85 ${showHeader ? 'sticky' : ''}`}>
+    <header className={`header glass mobile-d-none height-85 ${showHeader ? 'sticky' : ''}`}>
       <Navbar
         className="container py-3"
         expand="lg"

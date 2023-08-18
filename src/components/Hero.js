@@ -5,7 +5,7 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import logo from "../images/logo.png";
 import logoIcon from "../images/logo-icon.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Hero() {
   useEffect(() => {
@@ -31,13 +31,25 @@ function Hero() {
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav" className="justify-content-end">
               <Nav>
-                <Nav.Link href="#" className="menu-link">about</Nav.Link>
-                <Nav.Link href="#" className="menu-link">services</Nav.Link>
-                <Nav.Link href="#" className="menu-link">team</Nav.Link>
-                <Nav.Link href="#" className="menu-link"><Link to="/portfolio/project1">portfolio</Link></Nav.Link>
-                <Nav.Link href="#" className="menu-link">resources</Nav.Link>
+                <Nav.Link href="#" className="menu-link">
+                  about
+                </Nav.Link>
+                <Nav.Link href="#" className="menu-link">
+                  services
+                </Nav.Link>
+                <Nav.Link href="#" className="menu-link">
+                  team
+                </Nav.Link>
+                <Nav.Link href="#" className="menu-link">
+                  <Link to="/portfolio/project1">portfolio</Link>
+                </Nav.Link>
+                <Nav.Link href="#" className="menu-link">
+                  resources
+                </Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
-                  <Link to="/get-in-touch"><button className="nav-button">get in touch</button></Link>
+                  <Link to="/get-in-touch">
+                    <button className="nav-button">get in touch</button>
+                  </Link>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -46,11 +58,13 @@ function Hero() {
           <main className="content">
             <div className="row">
               <div className="col-md-8 col-12 p-absolute text-align-media-left">
-                <div><img
-                  className="heading-logo d-md-none d-blade"
-                  src={logo}
-                  alt="The Honest Company logo"
-                /></div>
+                <div>
+                  <img
+                    className="heading-logo d-md-none d-blade"
+                    src={logo}
+                    alt="The Honest Company logo"
+                  />
+                </div>
                 <h2 className="heading-quote">
                   We help <span className="bg-elipse">businesses</span>
                   <br />{" "}
