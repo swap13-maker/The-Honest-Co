@@ -153,7 +153,6 @@ p {
   flex-wrap: wrap;
   gap: 1px; /* Adjust the gap width as needed */
 }
-
 .custom-button {
   flex-grow: 1;
   width: calc(14.28% - 1px); /* Adjust to evenly distribute buttons (100% / 7 buttons) */
@@ -163,22 +162,29 @@ p {
   text-overflow: ellipsis;
   position: relative;
   cursor: pointer;
-  padding: 10px; /* Add padding to style the button */
-  background-color: transparent; /* Remove the background color */
+  padding: 10px 4px;
+  color: #000;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96%; /* 13.44px */
+  opacity: 0.6;
 }
-
 .custom-button.active {
-  font-weight: bold !important; /* Apply bold font weight to active button */
-  color: #000; /* Change text color for active button */
+  opacity: 1;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96%; /* 13.44px */
 }
-
 .custom-button:not(:last-child)::after {
-  content: "|"; /* Add a vertical line after each button, except the last one */
+  content: "|";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   width: 1px;
-  background-color: #000; /* Adjust the line color as needed */
+  background: linear-gradient(to bottom, #2b2a2a, transparent);
 }
-
