@@ -16,6 +16,7 @@ function CustomerContact() {
   const [contact, setContact] = useState("");
   const [project, setProject] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
+  const [more, setMore] = useState("");
 
   const handleNameChange = (newName) => {
     setName(newName);
@@ -39,6 +40,10 @@ function CustomerContact() {
 
   const handleRadioChange = (newOption) => {
     setSelectedOption(newOption);
+  };
+
+  const handleMoreChange = (newMore) => {
+    setMore(newMore);
   };
 
   const [step, setStep] = useState(1);
@@ -87,9 +92,7 @@ function CustomerContact() {
             <div className={`progress-step ${step >= 4 ? "active" : ""}`}>
               4. Area of interest
               <ul className="sub-progress-step">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li id="name">{more}</li>
               </ul>
             </div>
           </div>
@@ -114,7 +117,11 @@ function CustomerContact() {
                     />
                   )}
                   {step === 3 && <ContactForm3 />}
-                  {step === 4 && <ContactForm4 />}
+                  {step === 4 && (
+                    <ContactForm4
+                      onMoreChange={handleMoreChange}
+                    />
+                  )}
                 </Form>
                 <div
                   className="buttons"

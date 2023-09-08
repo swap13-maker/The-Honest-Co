@@ -31,6 +31,15 @@
   font-weight: 400;
   line-height: normal;
 }
+.top-sub-heading{
+  color: rgba(0, 0, 0, 0.90);
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
 .top-works {
   list-style: none;
   padding-left: 0;
@@ -133,3 +142,43 @@ p {
   line-height: normal;
   letter-spacing: 0.32px;
 }
+
+
+
+
+
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px; /* Adjust the gap width as needed */
+}
+
+.custom-button {
+  flex-grow: 1;
+  width: calc(14.28% - 1px); /* Adjust to evenly distribute buttons (100% / 7 buttons) */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  cursor: pointer;
+  padding: 10px; /* Add padding to style the button */
+  background-color: transparent; /* Remove the background color */
+}
+
+.custom-button.active {
+  font-weight: bold !important; /* Apply bold font weight to active button */
+  color: #000; /* Change text color for active button */
+}
+
+.custom-button:not(:last-child)::after {
+  content: "|"; /* Add a vertical line after each button, except the last one */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #000; /* Adjust the line color as needed */
+}
+

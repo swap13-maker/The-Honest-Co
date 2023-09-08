@@ -32,6 +32,21 @@ function ContactForm3() {
 
       </div>
 
+
+      <div>
+          <div class="cat action">
+            <label>
+                <input type="radio" name="category" value="action" /> <span>Action</span>
+            </label>
+        </div>
+
+        <div class="cat comedy">
+            <label>
+                <input type="radio" name="category" value="comedy" /> <span>Comedy</span>
+            </label>
+        </div>
+      </div>
+
       
     </div>
   );
