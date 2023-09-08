@@ -31,8 +31,8 @@
   font-weight: 400;
   line-height: normal;
 }
-.top-sub-heading{
-  color: rgba(0, 0, 0, 0.90);
+.top-sub-heading {
+  color: rgba(0, 0, 0, 0.9);
   font-family: Barlow;
   font-size: 20px;
   font-style: normal;
@@ -108,13 +108,13 @@
 }
 .proj-link {
   color: #000;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: underline;
-text-transform: uppercase;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
 }
 .newsletter {
   color: #1a1a1a;
@@ -142,12 +142,50 @@ p {
   line-height: normal;
   letter-spacing: 0.32px;
 }
-
-
-
-
-
-
+.zoom-effect-container {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 340px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.wrapper:hover .zoom-effect-container {
+  height: 400px;
+}
+.res-zoom-effect-container {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.wrapper:hover .res-zoom-effect-container {
+  height: 240px;
+}
+.image-card img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.blog-logo, .blog-title {
+  opacity: 1;
+  transition: opacity 0.3s ease; 
+}
+.wrapper:hover .blog-hide {
+  opacity: 0;
+}
+.wrapper:hover .blog-logo {
+  opacity: 0;
+}
+.wrapper:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
 .button-container {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +193,9 @@ p {
 }
 .custom-button {
   flex-grow: 1;
-  width: calc(14.28% - 1px); /* Adjust to evenly distribute buttons (100% / 7 buttons) */
+  width: calc(
+    14.28% - 1px
+  ); /* Adjust to evenly distribute buttons (100% / 7 buttons) */
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -187,4 +227,41 @@ p {
   bottom: 0;
   width: 1px;
   background: linear-gradient(to bottom, #2b2a2a, transparent);
+}
+.portfolio-heading{
+  color: #1A1A1A;
+  font-family: Barlow;
+  font-size: 50px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+}
+.portfolio-sub-heading a{
+  color: #000;
+  font-family: Barlow;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.portfolio-heading:before,
+.portfolio-heading:after {
+  flex: 1;
+  height: 1px;
+  content: "";
+  background-color: currentColor;
+}
+.portfolio-heading::after {
+  margin-left: 34px;
+}
+.portfolio-heading.left-aligned::before {
+  flex: 0;
+  margin-right: 0;
+}
+.portfolio-heading.right-aligned::after {
+  flex: 0;
+  margin-left: 0;
 }
