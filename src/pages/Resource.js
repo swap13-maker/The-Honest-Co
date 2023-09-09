@@ -49,7 +49,7 @@ const Resource = () => {
 
           <div className="py-4">
             <div className="button-container py-5">
-              <div
+              {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
                 }`}
@@ -59,7 +59,7 @@ const Resource = () => {
                 }}
               >
                 All
-              </div>
+              </div> */}
               <div
                 className={`custom-button ${
                   activeCategory === "tab1" ? "active" : ""
@@ -69,7 +69,7 @@ const Resource = () => {
                   getItem("tab1");
                 }}
               >
-                D2C & E-Commerce
+                Case Studies
               </div>
               <div
                 className={`custom-button ${
@@ -80,7 +80,7 @@ const Resource = () => {
                   getItem("tab2");
                 }}
               >
-                Banking & Finance
+                Articles
               </div>
               <div
                 className={`custom-button ${
@@ -91,7 +91,7 @@ const Resource = () => {
                   getItem("tab3");
                 }}
               >
-                Healthcare Technology
+                White Papers
               </div>
               <div
                 className={`custom-button ${
@@ -102,7 +102,7 @@ const Resource = () => {
                   getItem("tab4");
                 }}
               >
-                Staffing & Recruitment
+                Industrial Insights
               </div>
               <div
                 className={`custom-button ${
@@ -113,7 +113,7 @@ const Resource = () => {
                   getItem("tab5");
                 }}
               >
-                Educational Technology
+                Tutorials
               </div>
               <div
                 className={`custom-button ${
@@ -124,7 +124,7 @@ const Resource = () => {
                   getItem("tab6");
                 }}
               >
-                Misc.
+                Reports
               </div>
             </div>
 

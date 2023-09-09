@@ -49,7 +49,7 @@ const Portfolio = () => {
 
           <div className="py-4">
             <div className="button-container py-5">
-              <div
+              {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
                 }`}
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 }}
               >
                 All
-              </div>
+              </div> */}
               <div
                 className={`custom-button ${
                   activeCategory === "tab1" ? "active" : ""
