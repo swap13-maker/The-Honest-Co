@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import Filter from "./../components/Resource/Filter";
+import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
+import { Link } from "react-router-dom";
 
 const Resource = () => {
   const [item, setItem] = useState(Filter);
@@ -22,13 +24,13 @@ const Resource = () => {
   return (
     <section>
       {/* Header */}
-      <section className="header"></section>
+      <InnerHeader/>
       {/* mian content */}
       <section>
         <div className="container">
           <ul class="breadcrumb-navigation">
             <li>
-              <a href="home">Home</a>
+            <Link to="/">Home</Link>
             </li>
             <li className="current">Resources</li>
           </ul>
@@ -47,8 +49,8 @@ const Resource = () => {
             </div>
           </div>
 
-          <div className="py-4">
-            <div className="button-container py-5">
+          <div className="py-4 mb-5">
+            <div className="button-container border-top">
               {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
@@ -126,6 +128,15 @@ const Resource = () => {
               >
                 Reports
               </div>
+            </div>
+            <div
+              className={`custom-remove-button mb-5`}
+              onClick={() => {
+                setActiveCategory("All");
+                setItem(Filter);
+              }}
+            >
+              Remove Filter
             </div>
 
             <div className="row">

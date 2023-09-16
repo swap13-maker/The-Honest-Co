@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import Filter from "./../components/Portfolio/Filter";
+import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState(null);
+  const [isPortfolioAniHidden, setIsPortfolioAniHidden] = useState(false);
+  const [filteredIndex, setFilteredIndex] = useState(0);
+
+  const togglePortfolioAni = () => {
+    setIsPortfolioAniHidden(!isPortfolioAniHidden);
+  };
 
   const handleButtonClick = (category) => {
     setActiveCategory(category);
+    setFilteredIndex(0); // Reset the index
   };
 
   const getItem = (cat) => {
@@ -17,25 +28,48 @@ const Portfolio = () => {
       return items.category === cat;
     });
     setItem(updatedValue);
+    setFilteredIndex(0); // Reset the index
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      offset: 200, // Offset (in pixels) from the element's position to trigger the animation
+      easing: "ease-in-out", // Animation easing (CSS transition-timing-function)
+      delay: 0, // Delay (in milliseconds) before the animation starts
+      once: true, // Whether the animation should occur only once or every time the element is scrolled into view
+      mirror: false, // Whether elements with the same data-aos value should animate individually or together
+    });
+  }, []);
 
   return (
     <section>
       {/* Header */}
-      <section className="header"></section>
+      <InnerHeader/>
       {/* mian content */}
       <section>
         <div className="container">
           <ul class="breadcrumb-navigation">
             <li>
-              <a href="home">Home</a>
+            <Link to="/">Home</Link>
             </li>
             <li className="current">Portfolio</li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7">
-                <div className="top-heading">The Projects</div>
+                <div className="top-heading" onClick={togglePortfolioAni}>
+                  The{" "}
+                  <span
+                    className={`portfolio-ani ${
+                      isPortfolioAniHidden ? "portfolio-ani-hidden" : ""
+                    }`}
+                  >
+                    honest
+                  </span>{" "}
+                  Projects
+                </div>
+                {/* <div className="top-heading">The <span className="portfolio-ani">honest</span> Projects</div> */}
                 <div className="top-sub-heading py-4">
                   Our services have been divided into four categories based on
                   the kind of work we have done in the past.
@@ -47,8 +81,8 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="py-4">
-            <div className="button-container py-5">
+          <div className="py-4 mb-5">
+            <div className="button-container border-top">
               {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
@@ -126,14 +160,47 @@ const Portfolio = () => {
               >
                 Misc.
               </div>
+            </div>             
+            <div
+              className={`custom-remove-button mb-5`}
+              onClick={() => {
+                setActiveCategory("All");
+                setItem(Filter);
+              }}
+            >
+              Remove Filter
             </div>
 
-            <div className="row">
+            <div className="row custom-row">
               {item.map((data, index) => {
                 const { name, logo, category, image, description } = data;
+                const cardClass = index % 2 === 0 ? 'odd-card' : 'even-card';
+                const svgElement = cardClass === 'odd-card' ? (
+                  <svg className="svgEle odd-svgEle" xmlns="http://www.w3.org/2000/svg" width="115%" height="2" viewBox="0 0 711 2" fill="none">
+                    <path d="M711 1L-1.32918e-05 1.00006" stroke="url(#paint0_linear_2536_7529)" stroke-width="0.579291"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_2536_7529" x1="711" y1="0.5" x2="-4.37115e-08" y2="0.500062" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white"/>
+                        <stop offset="0.0001" stop-color="#131313" stop-opacity="0.985565"/>
+                        <stop offset="0.723958" stop-opacity="0.984375"/>
+                        <stop offset="1" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                ) : <svg className="svgEle even-svgEle" xmlns="http://www.w3.org/2000/svg" width="115%" height="2" viewBox="0 0 711 2" fill="none">
+                  <path d="M0 1L711 1.00006" stroke="url(#paint0_linear_2536_7530)" stroke-width="0.579291"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_2536_7530" x1="4.37114e-08" y1="0.5" x2="711" y2="0.500062" gradientUnits="userSpaceOnUse">
+                      <stop offset="0.208333" stop-color="#131313" stop-opacity="0.985565"/>
+                      <stop offset="0.28125" stop-opacity="0.984375"/>
+                      <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>;
+
                 return (
-                  <div className="col-md-6 col-12 py-3">
-                    <div class="wrapper">
+                  <div className={`col-md-6 col-12 py-3 ${cardClass}`} key={index}>
+                    <div class="wrapper" data-aos="fade-up">
                       <div class="zoom-effect-container">
                         <div class="image-card">
                           <img className="card-img-top" src={image} />
@@ -161,6 +228,7 @@ const Portfolio = () => {
                         </div>
                         <img className="blog-logo blog-hide" src={logo} />
                       </div>
+                      {svgElement}
                     </div>
                   </div>
                 );

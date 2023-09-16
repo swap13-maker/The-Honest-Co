@@ -1,35 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Hero.css";
 
-function Header() {
-  const [showHeader, setShowHeader] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+const InnerHeader = () => {
   return (
-    <header
-      className={`header glass mobile-d-none height-85 ${
-        showHeader ? "sticky" : ""
-      }`}
-    >
-      <Navbar className="container py-3" expand="lg" variant="dark" sticky="">
+    <header className="container">
+      <Navbar className="py-4" expand="lg">
         <Link to="/">
-          <Navbar.Brand>
+          <Navbar.Brand href="#">
             <span className="font-weight-800 text-black">the</span>
             <span className="font-weight-600 text-black"> honest</span>
             <span className="font-weight-400 text-black"> company</span>
@@ -63,6 +41,6 @@ function Header() {
       </Navbar>
     </header>
   );
-}
+};
 
-export default Header;
+export default InnerHeader;

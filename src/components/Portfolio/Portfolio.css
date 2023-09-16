@@ -186,6 +186,21 @@ p {
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
 }
+.svgEle{
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.wrapper:hover .svgEle{
+  margin-top: -35%;
+}
+.odd-svgEle{
+  position: relative;
+  left: -10%;
+}
+.even-svgEle{
+  position: relative;
+  left: -2%;
+}
 .button-container {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +224,19 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 96%; /* 13.44px */
+  opacity: 0.6;
+}
+.custom-remove-button {
+  text-align: right;
+  position: relative;
+  cursor: pointer;
+  padding: 30px 0 0 0;
+  color: #000;
+  font-family: Barlow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96%;
   opacity: 0.6;
 }
 .custom-button.active {
@@ -246,7 +274,6 @@ p {
   line-height: normal;
   text-decoration-line: underline;
 }
-
 .portfolio-heading:before,
 .portfolio-heading:after {
   flex: 1;
@@ -264,4 +291,29 @@ p {
 .portfolio-heading.right-aligned::after {
   flex: 0;
   margin-left: 0;
+}
+.portfolio-ani{
+  color: #fff;
+  background-color: #000;
+  border-radius: 38px;
+  padding: 3px 30px 8px 30px;
+  font-size: 50px;
+  font-weight: 200;
+}
+/* Portfolio.css */
+.portfolio-ani {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+.portfolio-ani-hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks on hidden element */
+  transition: opacity 0.5s ease-in-out, display 0s 0.5s; /* Delay display change */
+  display: inline-block; /* Keep it inline to maintain layout */
+}
+.custom-row{
+  --bs-gutter-x: 5rem !important;;
+}
+.even-card > .wrapper{
+  padding-top: 6.5rem;
 }

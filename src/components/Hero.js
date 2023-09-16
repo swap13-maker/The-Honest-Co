@@ -23,11 +23,13 @@ function Hero() {
             variant="dark"
             sticky=""
           >
-            <Navbar.Brand href="#">
-              <span className="font-weight-800">the</span>
-              <span className="font-weight-600"> honest</span>
-              <span className="font-weight-400"> company</span>
-            </Navbar.Brand>
+            <Link to="/">
+              <Navbar.Brand>
+                <span className="font-weight-800">the</span>
+                <span className="font-weight-600"> honest</span>
+                <span className="font-weight-400"> company</span>
+              </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav" className="justify-content-end">
               <Nav>
@@ -41,10 +43,10 @@ function Hero() {
                   team
                 </Nav.Link>
                 <Nav.Link href="#" className="menu-link">
-                  <Link to="/portfolio/project1">portfolio</Link>
+                  <Link to="/portfolio">portfolio</Link>
                 </Nav.Link>
                 <Nav.Link href="#" className="menu-link">
-                  resources
+                <Link to="/resources">resources</Link>
                 </Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
                   <Link to="/get-in-touch">
