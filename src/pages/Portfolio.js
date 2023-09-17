@@ -175,6 +175,7 @@ const Portfolio = () => {
               {item.map((data, index) => {
                 const { name, logo, category, image, description } = data;
                 const cardClass = index % 2 === 0 ? 'odd-card' : 'even-card';
+                const marginTopClass = index === 0 || index === 1 ? '' : 'margin-port';
                 const svgElement = cardClass === 'odd-card' ? (
                   <svg className="svgEle odd-svgEle" xmlns="http://www.w3.org/2000/svg" width="115%" height="2" viewBox="0 0 711 2" fill="none">
                     <path d="M711 1L-1.32918e-05 1.00006" stroke="url(#paint0_linear_2536_7529)" stroke-width="0.579291"/>
@@ -199,7 +200,7 @@ const Portfolio = () => {
                 </svg>;
 
                 return (
-                  <div className={`col-md-6 col-12 py-3 ${cardClass}`} key={index}>
+                  <div className={`col-md-6 col-12 py-3 ${cardClass} ${marginTopClass}`} key={index}>
                     <div class="wrapper" data-aos="fade-up">
                       <div class="zoom-effect-container">
                         <div class="image-card">

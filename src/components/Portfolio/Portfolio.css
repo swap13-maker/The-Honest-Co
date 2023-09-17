@@ -195,11 +195,11 @@ p {
 }
 .odd-svgEle{
   position: relative;
-  left: -10%;
+  left: -8.4%;
 }
 .even-svgEle{
   position: relative;
-  left: -2%;
+  left: -6.6%;
 }
 .button-container {
   display: flex;
@@ -316,4 +316,20 @@ p {
 }
 .even-card > .wrapper{
   padding-top: 6.5rem;
+}
+.even-card{
+  border-left: 1px solid #dee2e6;
+}
+.odd-res{
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+.odd-res > .wrapper{
+  padding-top: 6.5rem;
+}
+.margin-res > .wrapper {
+  margin-top: -35%;
+}
+.margin-port > .wrapper {
+  margin-top: -15%;
 }

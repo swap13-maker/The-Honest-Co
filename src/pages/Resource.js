@@ -1,17 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import Filter from "./../components/Resource/Filter";
 import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Resource = () => {
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState(null);
+  const [filteredIndex, setFilteredIndex] = useState(0);
 
   const handleButtonClick = (category) => {
     setActiveCategory(category);
+    setFilteredIndex(0); // Reset the index
   };
 
   const getItem = (cat) => {
@@ -19,7 +23,19 @@ const Resource = () => {
       return items.category === cat;
     });
     setItem(updatedValue);
+    setFilteredIndex(0); // Reset the index
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      offset: 200, // Offset (in pixels) from the element's position to trigger the animation
+      easing: "ease-in-out", // Animation easing (CSS transition-timing-function)
+      delay: 0, // Delay (in milliseconds) before the animation starts
+      once: true, // Whether the animation should occur only once or every time the element is scrolled into view
+      mirror: false, // Whether elements with the same data-aos value should animate individually or together
+    });
+  }, []);
 
   return (
     <section>
@@ -139,12 +155,16 @@ const Resource = () => {
               Remove Filter
             </div>
 
-            <div className="row">
+            <div className="row custom-row">
               {item.map((data, index) => {
                 const { name, logo, category, image, description } = data;
+                // Check if the index is 1, 4, 7, 10, 13, etc.
+                const cardClass = index % 3 === 1 ? 'odd-res' : 'even-res';
+                const marginTopClass = index === 0 || index === 1 || index === 2 ? '' : 'margin-res';
+
                 return (
-                  <div className="col-md-4 col-12">
-                    <div class="wrapper">
+                  <div className={`col-md-4 col-12 py-3 ${cardClass} ${marginTopClass}`} key={index}>
+                    <div class="wrapper" data-aos="fade-up">
                       <div class="res-zoom-effect-container">
                         <div class="image-card">
                           <img className="card-img-top" src={image} />

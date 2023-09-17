@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Industry from '../components/Industry';
 import Services from '../components/Services';
+import Work from '../components/Work';
 import ServicesMob from '../components/ServicesMob';
 import Story from '../components/Story';
 import Resource from '../components/Resource';
@@ -19,6 +20,7 @@ function LandingPage() {
       <Counter />
       <Services />
       <ServicesMob />
+      <Work/>
       <Industry />
       <Contact />
       <Resource />
