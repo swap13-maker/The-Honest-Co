@@ -208,7 +208,6 @@ h1 {
 }
 .text-align-center {
   text-align: center;
-  background-color: green;
 }
 .text-align-end {
   text-align: end;
@@ -633,7 +632,6 @@ input[type=checkbox]:before {
   width: 100%;
   object-position: top;
 }
-
 .gallery__item--hor {
   grid-column: span 2;
 }
@@ -654,4 +652,31 @@ input[type=checkbox]:before {
 }
 .gallery__item--hor3 {
   grid-column: span 2;
+}
+.work-heading {
+  color: #1A1A1A;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+.work-subheading {
+  color: #1A1A1A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.5;
+}
+.work-redirect {
+  color: #000;
+  font-family: Barlow;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 }
