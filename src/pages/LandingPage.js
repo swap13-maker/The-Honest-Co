@@ -10,6 +10,7 @@ import Resource from '../components/Resource';
 import Counter from '../components/Counter';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import ChatComponent from '../components/ChatComponent';
 
 function LandingPage() {
   return (
@@ -25,6 +26,7 @@ function LandingPage() {
       <Contact />
       <Resource />
       <Footer />
+      <ChatComponent />
     </div>
   );
 }
