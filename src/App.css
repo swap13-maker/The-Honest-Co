@@ -404,12 +404,17 @@ h1 {
 .slick-track {
   display: flex;
 }
-
 .slick-slide > div {
   flex: 0 0 auto;
   padding: 0 30px; /* Adjust the padding as needed */
 }
-
+.creator-sub-heading {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 .slick-dots {
   position: absolute;
   bottom: 10px;
