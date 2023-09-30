@@ -33,7 +33,7 @@ function ContactForm3() {
       </div>
 
 
-      <div>
+      <div className="d-none">
           <div class="cat action">
             <label>
                 <input type="radio" name="category" value="action" /> <span>Action</span>

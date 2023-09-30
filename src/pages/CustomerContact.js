@@ -97,62 +97,55 @@ function CustomerContact() {
             </div>
           </div>
         </div>
-        <div className="col-md-9 col-12 border-element">
-          <div>
-            <Container>
-              <div className="form-content">
-                <Form>
-                  {step === 1 && (
-                    <ContactForm1
-                      onNameChange={handleNameChange}
-                      onOrganizationChange={handleOrganizationChange}
-                      onEmailChange={handleEmailChange}
-                      onContactChange={handleContactChange}
-                    />
-                  )}
-                  {step === 2 && (
-                    <ContactForm2
-                      onProjectChange={handleProjectChange}
-                      onRadioChange={handleRadioChange}
-                    />
-                  )}
-                  {step === 3 && <ContactForm3 />}
-                  {step === 4 && (
-                    <ContactForm4
-                      onMoreChange={handleMoreChange}
-                    />
-                  )}
-                </Form>
-                <div
-                  className="buttons"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  {step > 1 && (
-                    <button
-                      className="previous-button form-btn-prev"
-                      onClick={handlePrevious}
-                    >
-                      <img className="w-50" src={Prev} />
-                    </button>
-                  )}
-
-                  {step < 4 && (
-                    <button
-                      className="next-button form-btn"
-                      onClick={handleNext}
-                    >
-                      Continue
-                    </button>
-                  )}
-
-                  {step === 4 && (
-                    <button className="submit-button form-btn">Submit</button>
-                  )}
-                </div>
-              </div>
-            </Container>
+        <Container className="col-md-9 col-12 border-element form-content">
+          <div
+            class="d-flex align-items-start flex-column"
+            style={{ height: "85%" }}
+          >
+            <Form className="px-4 w-100">
+              {step === 1 && (
+                <ContactForm1
+                  onNameChange={handleNameChange}
+                  onOrganizationChange={handleOrganizationChange}
+                  onEmailChange={handleEmailChange}
+                  onContactChange={handleContactChange}
+                />
+              )}
+              {step === 2 && (
+                <ContactForm2
+                  onProjectChange={handleProjectChange}
+                  onRadioChange={handleRadioChange}
+                />
+              )}
+              {step === 3 && <ContactForm3 />}
+              {step === 4 && <ContactForm4 onMoreChange={handleMoreChange} />}
+            </Form>
           </div>
-        </div>
+
+          <div
+            class="d-flex align-items-end px-4"
+            style={{ height: "10%", justifyContent: "space-between" }}
+          >
+            {step > 1 && (
+              <a
+                className="previous-button form-btn-prev"
+                onClick={handlePrevious}
+              >
+                <img className="w-50" src={Prev} />
+              </a>
+            )}
+
+            {step < 4 && (
+              <a className="next-button form-btn" onClick={handleNext}>
+                Continue
+              </a>
+            )}
+
+            {step === 4 && (
+              <button className="submit-button form-btn">Submit</button>
+            )}
+          </div>
+        </Container>
       </div>
     </Container>
   );

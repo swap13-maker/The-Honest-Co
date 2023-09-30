@@ -2,6 +2,19 @@ import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
 function CreatorForm4() {
+  const [selectedValue, setSelectedValue] = useState(
+    localStorage.getItem("selectedValue") || ""
+  );
+
+  const handleRadioChange = (event) => {
+    const { value } = event.target;
+
+    // Update the state with the selected value
+    setSelectedValue(value);
+
+    // Update localStorage with the selected value
+    localStorage.setItem("selectedValue", value);
+  };
   return (
     <div className="py-4 flex-direction-column">
       <div className="contact-heading">
@@ -27,6 +40,35 @@ function CreatorForm4() {
         <div className="creator-sub-heading text-black pt-4">
           Become a part of our community
         </div>
+        {/* test */}
+        <div className="pt-4">
+          <div className="cat action">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                value="Open Position"
+                checked={selectedValue === "Open Position"}
+                onChange={handleRadioChange}
+              />{" "}
+              <span>Open Position</span>
+            </label>
+          </div>
+
+          <div className="cat comedy">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                value="Internship"
+                checked={selectedValue === "Internship"}
+                onChange={handleRadioChange}
+              />{" "}
+              <span>Internship</span>
+            </label>
+          </div>
+        </div>
+        {/* test end */}
       </div>
     </div>
   );

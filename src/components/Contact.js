@@ -9,6 +9,7 @@ import Cta1Hover from "../images/Cta1-hover.jpg";
 import Cta2 from "../images/Cta2.jpg";
 import Cta2Hover from "../images/Cta2-hover.jpg";
 import backgroundFooter from "../images/background.png";
+import { Link } from "react-router-dom";
 
 function Contact() {
 
@@ -41,7 +42,7 @@ function Contact() {
         <div className="row">
           <div className="col-md-2"></div>
           <div className="col-md-4 pt-4" data-aos="fade-up" data-aos-duration="1000">
-            <div className="grid p-3 px-md-0">
+            <Link to="/get-in-touch" className="grid p-3 px-md-0">
               <figure class="effect-sadie">
                 <img className="w-100 img-1" src={Cta1} alt="" />
                 <img className="w-100 img-1-hover" src={Cta1Hover} alt="" />
@@ -59,10 +60,10 @@ function Contact() {
                   </p>
                 </figcaption>
               </figure>
-            </div>
+            </Link>
           </div>
           <div className="col-md-4 pt-4" data-aos="fade-up" data-aos-duration="1000">
-            <div className="grid p-3 px-md-0">
+            <Link to="/get-in-touch/creator" className="grid p-3 px-md-0">
               <figure class="effect-sadie">
                 <img className="w-100 img-1" src={Cta2} alt="" />
                 <img className="w-100 img-1-hover" src={Cta2Hover} alt="" />
@@ -80,7 +81,7 @@ function Contact() {
                   </p>
                 </figcaption>
               </figure>
-            </div>
+            </Link>
           </div>
           <div className="col-md-2"></div>
         </div>
