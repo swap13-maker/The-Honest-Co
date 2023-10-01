@@ -66,12 +66,13 @@ function CreatorContact() {
                 <li id="name">{name}</li>
                 <li id="organization">{organization}</li>
                 <li id="email">{email}</li>
+                <li id="contact">{contact}</li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 2 ? "active" : ""}`}>
               2. Area of interest
               <ul className="sub-progress-step">
-                <li></li>
+                <li id="project">{project}</li>
                 <li></li>
                 <li></li>
                 <li></li>
