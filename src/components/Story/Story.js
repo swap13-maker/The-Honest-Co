@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./../App.css";
-import "./Slider.css";
+import "../../App.css";
+import "../Slider.css";
+import "./story.css";
+
 import Slider from "react-slick";
-import icon1 from "../images/icon1.png";
-import icon2 from "../images/icon2.png";
-import icon3 from "../images/icon3.png";
-import icon4 from "../images/icon4.png";
-import IconArrow from "../icons/IconArrow.tsx";
+import icon1 from "../../images/icon1.png";
+import icon2 from "../../images/icon2.png";
+import icon3 from "../../images/icon3.png";
+import icon4 from "../../images/icon4.png";
+import IconArrow from "../../icons/IconArrow";
 
 function Story() {
   const settings = {
@@ -36,7 +38,7 @@ function Story() {
 
   return (
     <>
-      <section className="container pt-5 d-none">
+      <section className="container pt-5 pb-5 story__container">
         <div className="row" data-aos="fade-up">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
@@ -58,9 +60,9 @@ function Story() {
           </div>
         </div>
       </section>
-      <div className="row slider-container d-none">
+      <div className="row slider-container">
         <div className="col-md-2 col-12 slider-container-left">
-          <img src={icon1} className="card-icon" />
+          <img src={icon1} className="card-icon story__left__icon" />
         </div>
         <div
           className="col-md-10 col-12 "
@@ -69,7 +71,7 @@ function Story() {
         >
           <Slider {...settings}>
             <div className="bg-white" style={{ width: 440 }}>
-              <div className="py-3 story-icon">
+              <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon" />
               </div>
               <div className="bg-dark py-4 px-3">
@@ -80,7 +82,7 @@ function Story() {
                     us too, all began with an idea.
                   </p>
                 </div>
-                <div className="">
+                <div className="mt-5">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     initiation
                   </h3>
@@ -93,7 +95,7 @@ function Story() {
               style={{ width: 440 }}
               data-aos="fade-left"
             >
-              <div className="py-3 story-icon">
+              <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon" />
               </div>
               <div className="bg-dark py-4 px-3">
@@ -105,7 +107,7 @@ function Story() {
                     <br />
                   </p>
                 </div>
-                <div className="">
+                <div className="mt-5">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     ideation
                   </h3>
@@ -118,7 +120,7 @@ function Story() {
               style={{ width: 440 }}
               data-aos="fade-left"
             >
-              <div className="py-3 story-icon">
+              <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon" />
               </div>
               <div className="bg-dark py-4 px-3">
@@ -130,7 +132,7 @@ function Story() {
                     <br />
                   </p>
                 </div>
-                <div className="">
+                <div className="mt-5">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     buildt up
                   </h3>
@@ -143,7 +145,7 @@ function Story() {
               style={{ width: 440 }}
               data-aos="fade-left"
             >
-              <div className="py-3 story-icon last-icon">
+              <div className="py-4 story-icon last-icon">
                 <img src={icon1} className="card-icon" />
               </div>
               <div className="bg-dark py-4 px-3">
@@ -155,7 +157,7 @@ function Story() {
                     <br />
                   </p>
                 </div>
-                <div className="">
+                <div className="mt-5">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     present
                   </h3>
