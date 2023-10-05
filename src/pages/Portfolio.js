@@ -7,6 +7,7 @@ import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../components/Portfolio/Portfolio.css";
 
 const Portfolio = () => {
   const [item, setItem] = useState(Filter);
@@ -31,27 +32,16 @@ const Portfolio = () => {
     setFilteredIndex(0); // Reset the index
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // Animation duration in milliseconds
-      offset: 200, // Offset (in pixels) from the element's position to trigger the animation
-      easing: "ease-in-out", // Animation easing (CSS transition-timing-function)
-      delay: 0, // Delay (in milliseconds) before the animation starts
-      once: true, // Whether the animation should occur only once or every time the element is scrolled into view
-      mirror: false, // Whether elements with the same data-aos value should animate individually or together
-    });
-  }, []);
-
   return (
     <section>
       {/* Header */}
-      <InnerHeader/>
+      <InnerHeader />
       {/* mian content */}
       <section>
         <div className="container">
           <ul class="breadcrumb-navigation">
             <li>
-            <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="current">Portfolio</li>
           </ul>
@@ -160,7 +150,7 @@ const Portfolio = () => {
               >
                 Misc.
               </div>
-            </div>             
+            </div>
             <div
               className={`custom-remove-button mb-5`}
               onClick={() => {
@@ -173,63 +163,46 @@ const Portfolio = () => {
 
             <div className="row custom-row">
               {item.map((data, index) => {
-                const { name, logo, category, image, description } = data;
-                const cardClass = index % 2 === 0 ? 'odd-card' : 'even-card';
-                const marginTopClass = index === 0 || index === 1 ? '' : 'margin-port';
-                const svgElement = cardClass === 'odd-card' ? (
-                  <svg className="svgEle odd-svgEle" xmlns="http://www.w3.org/2000/svg" width="115%" height="2" viewBox="0 0 711 2" fill="none">
-                    <path d="M711 1L-1.32918e-05 1.00006" stroke="url(#paint0_linear_2536_7529)" stroke-width="0.579291"/>
-                    <defs>
-                      <linearGradient id="paint0_linear_2536_7529" x1="711" y1="0.5" x2="-4.37115e-08" y2="0.500062" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white"/>
-                        <stop offset="0.0001" stop-color="#131313" stop-opacity="0.985565"/>
-                        <stop offset="0.723958" stop-opacity="0.984375"/>
-                        <stop offset="1" stop-opacity="0"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                ) : <svg className="svgEle even-svgEle" xmlns="http://www.w3.org/2000/svg" width="115%" height="2" viewBox="0 0 711 2" fill="none">
-                  <path d="M0 1L711 1.00006" stroke="url(#paint0_linear_2536_7530)" stroke-width="0.579291"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_2536_7530" x1="4.37114e-08" y1="0.5" x2="711" y2="0.500062" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.208333" stop-color="#131313" stop-opacity="0.985565"/>
-                      <stop offset="0.28125" stop-opacity="0.984375"/>
-                      <stop offset="1" stop-opacity="0"/>
-                    </linearGradient>
-                  </defs>
-                </svg>;
+                const { name, logo, image, description } = data;
+                const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
+                const marginTopClass =
+                  index === 0 || index === 1 ? "" : "margin-port";
 
                 return (
-                  <div className={`col-md-6 col-12 py-3 ${cardClass} ${marginTopClass}`} key={index}>
-                    <div class="wrapper" data-aos="fade-up">
-                      <div class="zoom-effect-container">
-                        <div class="image-card">
-                          <img className="card-img-top" src={image} />
+                  <div
+                    className={`col-md-6 col-12 py-3 portfolio__card ${cardClass} ${marginTopClass}`}
+                    key={index}
+                  >
+                    <div className="border__fade">
+                      <div class="wrapper">
+                        <div class="zoom-effect-container">
+                          <div class="image-card">
+                            <img className="card-img-top" src={image} />
+                          </div>
+                          <div className="pb-5 translate__down">
+                            <div className="blog-heading">
+                              {name}
+                              <svg
+                                width="20"
+                                height="14"
+                                viewBox="-10 0 25 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  id="Vector"
+                                  d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                                  fill="black"
+                                />
+                              </svg>
+                            </div>
+                            <div className="blog-title blog-hide w-75">
+                              {description}
+                            </div>
+                            <img className="blog-logo blog-hide" src={logo} />
+                          </div>
                         </div>
                       </div>
-                      <div className="pb-5">
-                        <div className="blog-heading">
-                          {name}
-                          <svg
-                            width="20"
-                            height="14"
-                            viewBox="-10 0 25 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              id="Vector"
-                              d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                              fill="black"
-                            />
-                          </svg>
-                        </div>
-                        <div className="blog-title blog-hide w-75">
-                          {description}
-                        </div>
-                        <img className="blog-logo blog-hide" src={logo} />
-                      </div>
-                      {svgElement}
                     </div>
                   </div>
                 );
@@ -243,7 +216,11 @@ const Portfolio = () => {
         <div className="row py-5">
           <div className="col-12 col-md-7 col-lg-7">
             <div className="text-uppercase">
-              <h1 className="left-aligned portfolio-heading">Want to build one<br/>for yourself ?</h1>
+              <h1 className="left-aligned portfolio-heading">
+                Want to build one
+                <br />
+                for yourself ?
+              </h1>
             </div>
           </div>
           <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">

@@ -50,7 +50,7 @@ h6 {
   box-shadow: 0em 0em #000;
   transform: translate(0.25em, 0.25em);
 }
-a{
+a {
   text-decoration: none !important;
 }
 /* heading-- industry */
@@ -246,7 +246,7 @@ h1 {
     padding-top: 60px;
   }
   h1 {
-    font-size: 4.5rem !important;
+    font-size: 4.5rem;
   }
   .industry-card {
     padding-right: 16%;
@@ -262,7 +262,7 @@ h1 {
   .section-heading {
     font-style: normal;
     font-weight: 400;
-    font-size: 55px !important;
+    font-size: 55px;
   }
 }
 /*mobile only media view*/
@@ -503,43 +503,41 @@ FormControl:focus {
   }
 }
 
-
-
 /* label test */
-input[type=checkbox] {
+input[type="checkbox"] {
   position: relative;
-	border: 2px solid #000;
-	border-radius: 2px;
-	background: none;
-	cursor: pointer;
-	line-height: 0;
-	margin: 0 .6em 0 0;
-	outline: 0;
-	padding: 0 !important;
-	vertical-align: text-top;
-	height: 20px;
-	width: 20px;
-	-webkit-appearance: none;
-  opacity: .5;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  opacity: 0.5;
 }
 
-input[type=checkbox]:hover {
+input[type="checkbox"]:hover {
   opacity: 1;
 }
 
-input[type=checkbox]:checked {
+input[type="checkbox"]:checked {
   background-color: #000;
   opacity: 1;
 }
 
-input[type=checkbox]:before {
-  content: '';
+input[type="checkbox"]:before {
+  content: "";
   position: absolute;
   right: 50%;
   top: 50%;
   width: 4px;
   height: 10px;
-  border: solid #FFF;
+  border: solid #fff;
   border-width: 0 2px 2px 0;
   margin: -1px -1px 0 -1px;
   transform: rotate(45deg) translate(-50%, -50%);
@@ -547,7 +545,7 @@ input[type=checkbox]:before {
 }
 .cat {
   margin-right: 6px;
-  background-color: #D1D1D1;
+  background-color: #d1d1d1;
   border-radius: 4px;
   border: 1px solid #fff;
   overflow: hidden;
@@ -558,9 +556,9 @@ input[type=checkbox]:before {
 }
 .cat label {
   float: left;
-  line-height: 3.0em;
+  line-height: 3em;
   width: 10em;
-  height: 3.0em;
+  height: 3em;
 }
 
 .cat label span {
@@ -589,11 +587,11 @@ input[type=checkbox]:before {
 }
 
 .action input:checked + span {
-  background-color: #1A1A1A33;
+  background-color: #1a1a1a33;
 }
 
 .comedy input:checked + span {
-  background-color: #1A1A1A33;
+  background-color: #1a1a1a33;
 }
 
 /* work */
@@ -642,7 +640,7 @@ input[type=checkbox]:before {
   grid-column: span 2;
 }
 .work-heading {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: Barlow;
   font-size: 14px;
   font-style: normal;
@@ -652,7 +650,7 @@ input[type=checkbox]:before {
   padding-top: 12px;
 }
 .work-subheading {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
