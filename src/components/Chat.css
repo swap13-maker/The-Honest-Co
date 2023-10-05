@@ -1,3 +1,42 @@
+.chat-heading {
+  color: #1A1A1A;
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.chat-sub-heading {
+  color: #1A1A1A;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+.flex-box {
+  display: table;
+  position: relative;
+  max-width: 30rem;
+  padding: 1em 1em 1em 0;
+}
+.icon {
+  display: block;
+  width: 20%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.text {
+  display: block;
+  width: 80%;
+  display: table-cell;
+  vertical-align:middle;
+}
+
+
+
 .open-button {
     background-color: #FFFFFF;
     color: white;
@@ -16,7 +55,7 @@
   .chat-popup {
     /* display: none; */
     position: fixed;
-    bottom: 0;
+    bottom: 8px;
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
@@ -24,28 +63,16 @@
   
   /* Add styles to the form container */
   .form-container {
-    max-width: 300px;
-    padding: 10px;
+    max-width: 380px;
+    padding: 0px 10px 20px 10px;
     background-color: white;
+    box-shadow: rgb(0 0 0) 8px 8px 0px -1px, rgb(255 255 255) 8px 8px;
   }
-  
-  /* Full-width textarea */
-  .form-container textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    resize: none;
-    min-height: 200px;
-  }
-  
-  /* When the textarea gets focus, do something */
-  .form-container textarea:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
+  .chat-label > label {
+    font-size: 13px;
+    position: relative;
+    top: -3px;
+  } 
   /* Set a style for the submit/send button */
   .form-container .btn {
     color: white;
