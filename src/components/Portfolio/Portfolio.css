@@ -333,3 +333,47 @@ p {
 .margin-port > .wrapper {
   margin-top: -15%;
 }
+
+.border__fade {
+  position: relative;
+}
+
+.border__fade::before,
+.border__fade::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+}
+
+.odd-card .border__fade::after {
+  right: -3px;
+  height: 1px;
+  background-image: linear-gradient(to left, #b7b7b7, #f6f6f6);
+  background-image: -webkit-linear-gradient(to left, #bda6a6, #f6f6f6);
+  background-image: -moz-linear-gradient(left, #000, transparent);
+  background-image: -o-linear-gradient(left, #000, transparent);
+}
+
+.even-card .border__fade::after {
+  right: -3px;
+  height: 1px;
+  background-image: linear-gradient(to right, #b7b7b7, #f6f6f6);
+  background-image: -webkit-linear-gradient(to right, #bda6a6, #f6f6f6);
+  background-image: -moz-linear-gradient(right, #000, transparent);
+  background-image: -o-linear-gradient(right, #000, transparent);
+}
+
+.portfolio__card {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.border__fade .wrapper {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.portfolio__card:nth-child(2) {
+  border-top: 100px solid transparent;
+}
