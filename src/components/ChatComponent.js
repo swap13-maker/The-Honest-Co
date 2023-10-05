@@ -40,14 +40,14 @@ const ChatComponent = () => {
 
             <Form.Group controlId="formName">
               <Form.Floating>
-                <Form.Control type="text" placeholder="Enter your name" />
+                <Form.Control type="text" placeholder="Enter your name" name="name" />
                 <Form.Label>Name</Form.Label>
               </Form.Floating>
             </Form.Group>
 
             <Form.Group controlId="formEmail">
               <Form.Floating>
-                <Form.Control type="email" placeholder="Enter your email" />
+                <Form.Control type="email" placeholder="Enter your email" name="email" />
                 <Form.Label>Email</Form.Label>
               </Form.Floating>
             </Form.Group>
@@ -58,6 +58,7 @@ const ChatComponent = () => {
                   type="number"
                   placeholder="Enter your contact"
                   maxLength={10}
+                  name="mobile"
                 />
                 <Form.Label>Contact Number</Form.Label>
               </Form.Floating>
@@ -65,7 +66,7 @@ const ChatComponent = () => {
 
             <Form.Group controlId="formQuery">
               <Form.Floating>
-                <Form.Control type="text" placeholder="Enter your query" />
+                <Form.Control type="text" placeholder="Enter your query" name="query" />
                 <Form.Label>Query</Form.Label>
               </Form.Floating>
             </Form.Group>
