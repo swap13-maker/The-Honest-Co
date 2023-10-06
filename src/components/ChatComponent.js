@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 import chatImg from "../images/chat.png";
 import logo from "../images/logo.png";
+import cross from "../images/cross.png";
 import "./Chat.css";
 
 const ChatComponent = () => {
@@ -18,7 +19,7 @@ const ChatComponent = () => {
   return (
     <div>
       <button className="open-button" onClick={openForm}>
-        <img src={chatImg} />
+        <img src={chatImg} width={35} />
       </button>
 
       {isChatOpen && (
@@ -119,13 +120,13 @@ const ChatComponent = () => {
             >
               Get started with us!
             </button>
-            {/* <button
+            <a
               type="button"
-              className="btn btn-danger"
+              className="close-btn"
               onClick={closeForm}
             >
-              Close
-            </button> */}
+              <img src={cross} />
+            </a>
           </form>
         </div>
       )}

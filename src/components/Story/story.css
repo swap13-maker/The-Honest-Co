@@ -6,7 +6,8 @@
 .story__left__icon {
   position: absolute;
   top: 35%;
-  right: 25%;
+  right: 12%;
+  width: 100px;
 }
 
 .slider-container-left {
