@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import Filter from "./../components/Portfolio/Filter";
 import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "../components/Portfolio/Portfolio.css";
 
 const Portfolio = () => {
@@ -17,11 +15,6 @@ const Portfolio = () => {
 
   const togglePortfolioAni = () => {
     setIsPortfolioAniHidden(!isPortfolioAniHidden);
-  };
-
-  const handleButtonClick = (category) => {
-    setActiveCategory(category);
-    setFilteredIndex(0); // Reset the index
   };
 
   const getItem = (cat) => {
@@ -170,7 +163,7 @@ const Portfolio = () => {
 
                 return (
                   <div
-                    className={`col-md-6 col-12 py-3 portfolio__card ${cardClass} ${marginTopClass}`}
+                    className={`col-md-6 col-12 pb-3 portfolio__card ${cardClass} ${marginTopClass}`}
                     key={index}
                   >
                     <div className="border__fade">
