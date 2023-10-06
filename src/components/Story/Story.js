@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import "../../App.css";
 import "../Slider.css";
 import "./story.css";
-
 import Slider from "react-slick";
 import icon1 from "../../images/icon1.png";
 import icon2 from "../../images/icon2.png";
@@ -60,7 +59,7 @@ function Story() {
           </div>
         </div>
       </section>
-      <div className="row slider-container">
+      <div className="row slider-container w-100">
         <div className="col-md-2 col-12 slider-container-left">
           <img src={icon1} className="card-icon story__left__icon" />
         </div>
@@ -70,7 +69,7 @@ function Story() {
           data-aos-duration="1000"
         >
           <Slider {...settings}>
-            <div className="bg-white" style={{ width: 440 }}>
+            <div className="bg-white" style={{ width: 440 }} data-aos="fade-left">
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon" />
               </div>
