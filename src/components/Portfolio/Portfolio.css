@@ -329,6 +329,15 @@ p {
 }
 .even-card {
   border-left: 1px solid #dee2e6;
+  padding-top: 50px;
+}
+
+.odd-card:not(:first-child) .border__fade {
+  margin-top: -100px;
+}
+
+.odd-card:nth-child(2) {
+  margin-top: -100px;
 }
 .odd-res {
   border-left: 1px solid #dee2e6;
@@ -356,7 +365,7 @@ p {
   left: 0px;
 }
 
-.odd-card .border__fade::after {
+.odd-card .border__fade:after {
   right: 0px;
   height: 1px;
   background-image: linear-gradient(to left, #b7b7b7, #f6f6f6);
@@ -386,4 +395,8 @@ p {
 
 .portfolio__card:nth-child(2) {
   border-top: 100px solid transparent;
+}
+
+.portfolio__card:last-child .border__fade::after {
+  content: none;
 }
