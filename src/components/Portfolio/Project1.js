@@ -3,7 +3,7 @@ import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
 import Slider from "react-slick";
-
+import myFooterLogo from "../../images/footer-logo.png";
 import demo2 from "../../images/demo2.png";
 import demo3 from "../../images/demo3.png";
 import demo4 from "../../images/demo4.png";
@@ -235,7 +235,7 @@ function Project1() {
         </div>
       </section>
 
-      <section className="other__work__container">
+      <section className="other__work__container border-white">
         <div className="container">
           <div className="heading__wrapper">
             <h5>
@@ -270,9 +270,29 @@ function Project1() {
               })}
             </Slider>
           </div>
+
+          {/* Inner Footer */}
+          <div className="row py-md-5 align-items-end">
+            <div className="col-12 col-md-6 col-lg-6">
+              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
+              <article class="c-article">
+                <header class="c-article__header">
+                  <h2 class="c-article__title footer-title">
+                    <span class="footer-title">Honest Edge.</span>
+                  </h2>
+                </header>
+              </article>
+              <h5 className="footer-content">
+                <a href="" className="cool-link text-white">Click here to start elevating your physical and digital customer experiences.</a>
+              </h5>
+            </div>
+            <div className="col-12 col-md-3 col-lg-3"></div>
+            <div className="col-12 col-md-3 col-lg-3">
+              <img className="w-90 d-md-block d-none" src={myFooterLogo} alt="Footer Logo" />
+            </div>
+          </div>
         </div>
       </section>
-      <Footer />
     </section>
   );
 }

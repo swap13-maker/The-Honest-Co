@@ -146,13 +146,15 @@ h1 {
 .resource-hover:hover > .resource-image {
   padding: 0;
 }
+.border-white{
+  border: 6px solid #fff;
+}
 /*========================================Footer*/
 .cool-link {
   text-decoration: none;
 }
 .footer {
   /* height: 100vh; */
-  border: 6px solid #fff;
   background: #1a1a1a !important;
 }
 .bg-dark {
@@ -193,7 +195,7 @@ h1 {
 }
 .c-article__title {
   color: #fc3735;
-  background: -webkit-linear-gradient(left, #7296ff, #c9bbea, #7296ff);
+  background: -webkit-linear-gradient(left, #AA9FEB, #D7BBE5, #E0F9C1, #C0B7E6, #B9DFE5, #AA9FEB, #D7BBE5, #E0F9C1, #C0B7E6, #B9DFE5, #AA9FEB, #D7BBE5, #E0F9C1, #C0B7E6, #B9DFE5);
   background-size: 1600px 200px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
