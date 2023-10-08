@@ -10,7 +10,7 @@ import icon2 from "../../images/icon2.png";
 import icon3 from "../../images/icon3.png";
 import icon4 from "../../images/icon4.png";
 import IconArrow from "../../icons/IconArrow";
-import storyGif from '../../images/story.gif';
+import storyGif from "../../images/story.gif";
 
 function Story() {
   const settings = {
@@ -62,7 +62,11 @@ function Story() {
       </section>
       <div className="row slider-container w-100">
         <div className="col-md-2 col-12 slider-container-left">
-          <img src={storyGif} className="card-icon story__left__icon" width="100" />
+          <img
+            src={storyGif}
+            className="card-icon story__left__icon"
+            width="100"
+          />
         </div>
         <div
           className="col-md-10 col-12 "
@@ -70,7 +74,11 @@ function Story() {
           data-aos-duration="1000"
         >
           <Slider {...settings}>
-            <div className="bg- pt-1" style={{ width: 440 }} data-aos="fade-left">
+            <div
+              className="bg- pt-1"
+              style={{ width: 440 }}
+              data-aos="fade-left"
+            >
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon py-3" />
               </div>
@@ -172,7 +180,7 @@ function Story() {
 }
 
 // Custom component for previous arrow
-const PrevArrow = (props) => {
+export const PrevArrow = (props) => {
   const { onClick } = props;
 
   return (
@@ -183,7 +191,7 @@ const PrevArrow = (props) => {
 };
 
 // Custom component for next arrow
-const NextArrow = (props) => {
+export const NextArrow = (props) => {
   const { onClick } = props;
 
   return (

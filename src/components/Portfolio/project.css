@@ -1,0 +1,72 @@
+.other__work__container {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.heading__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  margin-block-end: 60px;
+}
+
+.other__work__container .heading__wrapper h5 {
+  font-family: Barlow;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.other__work__container .heading__wrapper span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.other__work__container .blog-heading,
+.other__work__container .blog-title {
+  color: #fff;
+}
+
+.other__work__container .border__fade::before,
+.other__work__container .border__fade::after {
+  content: none;
+}
+
+.other__work__container .portfolio__card:nth-child(2) {
+  border-top: none;
+}
+
+.other__work__container .portfolio__card {
+  padding: 0 !important;
+}
+
+.other__work__container .even-card {
+  border: none;
+}
+
+.other__work__container .border__fade .wrapper {
+  padding: 0;
+}
+
+.other__work__container .slick-next {
+  left: 160px;
+}
+
+.other__work__container .slick-prev {
+  left: 65px;
+}
+
+.other__work__container .slick-prev,
+.other__work__container .slick-next {
+  bottom: -75px;
+  filter: invert();
+}
+
+.other__work__container .slick-slide > div {
+  padding: 0;
+  margin: 0 30px;
+}
+
+.other__work__container .slick-slider {
+  margin: 0 -30px;
+}
