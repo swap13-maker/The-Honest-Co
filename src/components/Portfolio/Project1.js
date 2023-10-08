@@ -1,6 +1,9 @@
 import React from "react";
 import "./../../App.css";
 import "./Portfolio.css";
+import "./project.css";
+import Slider from "react-slick";
+
 import demo2 from "../../images/demo2.png";
 import demo3 from "../../images/demo3.png";
 import demo4 from "../../images/demo4.png";
@@ -11,8 +14,21 @@ import demo8 from "../../images/demo8.png";
 import demo9 from "../../images/demo9.png";
 import demo10 from "../../images/demo10.png";
 import Footer from "./../Footer";
+import Filter from "./Filter";
+import ProjectCards from "../ProjectCards";
+import { NextArrow, PrevArrow } from "../Story/Story";
 
 function Project1() {
+  const settings = {
+    className: "slider variable-width",
+    dots: false,
+    arrows: true, // Add this line to enable arrows
+    prevArrow: <PrevArrow />, // Custom component for previous arrow
+    nextArrow: <NextArrow />, // Custom component for next arrow
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+  };
   return (
     <section>
       {/* Header */}
@@ -215,6 +231,44 @@ function Project1() {
             <div className="col-12 col-md-5 d-flex">
               <div className="d-flex mx-auto align-items-center">video</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="other__work__container">
+        <div className="container">
+          <div className="heading__wrapper">
+            <h5>
+              Our Other <strong>Work</strong>
+            </h5>
+            <span>View All of Our Work</span>
+          </div>
+
+          <div className="row custom-row">
+            <Slider {...settings}>
+              {Filter.map((data, index) => {
+                const { name, logo, image, description } = data;
+                const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
+                const marginTopClass =
+                  index === 0 || index === 1 ? "" : "margin-port";
+
+                const newImageUrl = `../${image}`;
+                const newLogoUrl = `../${logo}`;
+
+                return (
+                  <ProjectCards
+                    description={description}
+                    marginTopClass={marginTopClass}
+                    cardClass={cardClass}
+                    name={name}
+                    logo={newLogoUrl}
+                    image={newImageUrl}
+                    key={index}
+                    width={12}
+                  />
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </section>

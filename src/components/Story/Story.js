@@ -69,7 +69,11 @@ function Story() {
           data-aos-duration="1000"
         >
           <Slider {...settings}>
-            <div className="bg-white" style={{ width: 440 }} data-aos="fade-left">
+            <div
+              className="bg-white"
+              style={{ width: 440 }}
+              data-aos="fade-left"
+            >
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon" />
               </div>
@@ -171,7 +175,7 @@ function Story() {
 }
 
 // Custom component for previous arrow
-const PrevArrow = (props) => {
+export const PrevArrow = (props) => {
   const { onClick } = props;
 
   return (
@@ -182,7 +186,7 @@ const PrevArrow = (props) => {
 };
 
 // Custom component for next arrow
-const NextArrow = (props) => {
+export const NextArrow = (props) => {
   const { onClick } = props;
 
   return (
