@@ -276,3 +276,43 @@ p {
 .custom-row {
   --bs-gutter-x: 5rem !important;
 }
+
+.zoom-effect-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.res-zoom-effect-container {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.wrapper:hover .res-zoom-effect-container {
+  height: 240px;
+}
+
+.image-card {
+  height: 400px;
+}
+.translate__down {
+  transition: all 0.4s ease;
+}
+.wrapper:hover .translate__down {
+  transform: translateY(160px);
+}
+.image-card img {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  max-height: 400px;
+  object-fit: cover;
+  height: 545px;
+}
