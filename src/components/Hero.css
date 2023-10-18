@@ -189,6 +189,15 @@
   box-shadow: 0em 0em #fff;
   transform: translate(0.25em, 0.25em);
 }
+.headerVisible{
+  visibility: visible;
+  transition: all 0.3s;
+}
+.headerHidden {
+  visibility: hidden;
+  transition: all 0.3s;
+  transform: translateY(-100%);
+}
 /*mobile*/
 @media (max-width: 768px) {
   .nav-foot-button {

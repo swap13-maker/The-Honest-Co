@@ -4,22 +4,24 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Header() {
-  const [showHeader, setShowHeader] = useState(false);
 
+  const [showHeader, setShowHeader] = useState(true);
+  const [scrollPos, setScrollPos] = useState(0);
+  const handleScroll = () => {
+    console.log(document.body.getBoundingClientRect().top);
+    setScrollPos(document.body.getBoundingClientRect().top);
+    setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
+    if(scrollPos >=-712){
+      setShowHeader(false)
+    }
+  };
+  
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <header
