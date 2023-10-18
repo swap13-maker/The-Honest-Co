@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import "./Hero.css";
 import "./../App.css";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
@@ -11,17 +11,33 @@ function Hero() {
   useEffect(() => {
     localStorage.clear();
   }, []);
+  const [showHeader, setShowHeader] = useState(true);
+  const [scrollPos, setScrollPos] = useState(0);
+  
+
+  const handleScroll = () => {
+    console.log(document.body.getBoundingClientRect().top);
+    setScrollPos(document.body.getBoundingClientRect().top);
+    setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
   return (
     <section id="hero">
       <Container>
         <div className="app-container pt-2">
           {/*navbar*/}
+          
           <Navbar
-            className="border-bottom py-4"
+            className={`border-bottom py-4 ${showHeader ? "headerVisible" : "headerHidden"}`}
             expand="lg"
             variant="dark"
-            sticky=""
+            
           >
             <Link to="/">
               <Navbar.Brand>
@@ -56,7 +72,7 @@ function Hero() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
+          
           <main className="content">
             <div className="row">
               <div className="col-md-8 col-12 p-absolute text-align-media-left">
