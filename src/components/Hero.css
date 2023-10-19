@@ -43,6 +43,7 @@
 }
 .heading-logo {
   width: 100%;
+  margin-left: 62px;
 }
 
 .bottom-section {
@@ -192,6 +193,7 @@
 .headerVisible{
   visibility: visible;
   transition: all 0.3s;
+  border-bottom: 2px solid #fff !important;
 }
 .headerHidden {
   visibility: hidden;
