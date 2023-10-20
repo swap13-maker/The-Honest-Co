@@ -34,10 +34,9 @@ function Hero() {
           {/*navbar*/}
           
           <Navbar
-            className={`border-bottom py-4 ${showHeader ? "headerVisible" : "headerHidden"}`}
+            className={`py-4 ${showHeader ? "headerVisible" : "headerHidden"}`}
             expand="lg"
             variant="dark"
-            
           >
             <Link to="/">
               <Navbar.Brand>
