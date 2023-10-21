@@ -8,7 +8,7 @@ function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
   const handleScroll = () => {
-    console.log(document.body.getBoundingClientRect().top);
+   
     setScrollPos(document.body.getBoundingClientRect().top);
     setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
     if(scrollPos >=-712){
@@ -21,9 +21,10 @@ function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  },[scrollPos,handleScroll]);
 
   return (
+    (scrollPos <=-712) &&(
     <header
       className={`header glass mobile-d-none height-85 ${
         showHeader ? "sticky" : ""
@@ -64,6 +65,7 @@ function Header() {
         </Navbar.Collapse>
       </Navbar>
     </header>
+    )
   );
 }
 

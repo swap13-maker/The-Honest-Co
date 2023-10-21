@@ -157,7 +157,7 @@
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(8px);
   z-index: 9999;
-  border-bottom: 1px solid #f1eeee;
+  /* border-bottom: 1px solid #f1eeee; */
 }
 .glass::before {
   position: absolute;
@@ -195,10 +195,14 @@
   transition: all 0.3s;
   border-bottom: 2px solid #fff !important;
 }
+
 .headerHidden {
   visibility: hidden;
   transition: all 0.3s;
   transform: translateY(-100%);
+}
+.with-border-top {
+  border-top: 2px solid #fff; 
 }
 /*mobile*/
 @media (max-width: 768px) {

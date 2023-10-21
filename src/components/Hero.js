@@ -104,11 +104,11 @@ function Hero() {
           </main>
 
           {/*bottom*/}
-          <div className="bottom-section">
+          <div className="bottom-section with-border-top">
             <div className="border-top">
               <div className="row">
                 <div className="col-12 col-md-8">
-                  <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15">
+                  <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15 ">
                     We are a community of creators who make really cool things
                     for new businesses that help them succeed.
                   </p>

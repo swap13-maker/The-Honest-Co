@@ -42,7 +42,7 @@ h6 {
 }
 .indistryImage {
   width: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
   box-shadow: rgb(255, 255, 255) 8px 8px 0px -1px, rgb(000, 000, 000) 8px 8px;
   transition: all 0.25s ease-in-out;
 }
@@ -151,7 +151,7 @@ h1 {
 }
 /*========================================Footer*/
 .cool-link {
-  text-decoration: none;
+  text-decoration-line: underline;
 }
 .footer {
   /* height: 100vh; */
@@ -373,6 +373,10 @@ h1 {
   flex-basis: 80%;
   flex-shrink: 0;
 }
+.animated-svg:hover {
+  transition: translate3d(0px,-5px,0px)
+}
+
 
 /*  slider slick */
 
@@ -667,4 +671,23 @@ input[type="checkbox"]:before {
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+}
+
+.animated-svg {
+  animation: moveUpAndDown 1.6s ease-in  infinite;
+  
+}
+@keyframes moveUpAndDown {
+  0%{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, -31.4956%, 0);
+  }
+  50%,100%{
+   opacity: 0;
+    transform: translate3d(0, -61.4956%, 0);
+  }
+ 
 }

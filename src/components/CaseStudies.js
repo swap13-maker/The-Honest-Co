@@ -35,6 +35,7 @@ function CaseStudies() {
                     viewBox="-10 0 25 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="animated-svg"
                   >
                     <path
                       id="Vector"
@@ -65,6 +66,7 @@ function CaseStudies() {
                     viewBox="-10 0 25 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="animated-svg"
                   >
                     <path
                       id="Vector"
