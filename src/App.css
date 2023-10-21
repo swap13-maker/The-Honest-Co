@@ -199,7 +199,7 @@ h1 {
   background-size: 1600px 200px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation-duration: 8s;
+  animation-duration: 60s;
   animation-name: animationgradienttitle;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;

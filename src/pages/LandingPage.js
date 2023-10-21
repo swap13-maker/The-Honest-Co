@@ -21,8 +21,9 @@ function LandingPage() {
       <Counter />
       <Services />
       <ServicesMob />
-      <Work />
       <Industry />
+      {/* <Work /> */}
+      
       <Contact />
       <Resource />
       <Footer />
