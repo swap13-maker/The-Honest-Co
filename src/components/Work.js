@@ -100,13 +100,14 @@ function Work() {
 	  <div className="text-align-center pt-5">
 	  	<Link to="/">
 			<div className="work-redirect">
-			View All of Our Work
+       View Our Portfolio
 			<svg
 				width="30"
 				height="16"
 				viewBox="-10 0 25 14"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
+        className="animated-svg"
 				>
 				<path
 					id="Vector"
