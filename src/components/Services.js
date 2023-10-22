@@ -50,52 +50,21 @@ function Services() {
           <MDBRow>
             <MDBCol size="5" className="py-5">
               <MDBTabs pills className="flex-column text-center">
-                <MDBTabsItem>
+                <MDBTabsItem className="pb-3">
                   <MDBTabsLink
                     onClick={() => handleVerticalClick("tab1")}
                     active={verticalActive === "tab1"}
                   >
                     <div className="d-flex align-items-center">
                       <img className="tab-icon" src={arrow} />
-                      <span className="px-3">Architecture</span>
-                    </div>
-                    <div className="sub-heading-tab">
-                      Robust and intuitive digital solutions that help you
-                      connect with your customers.
-                    </div>
-                  </MDBTabsLink>
-                </MDBTabsItem>
-                <MDBTabsItem>
-                  <MDBTabsLink
-                    onClick={() => handleVerticalClick("tab2")}
-                    active={verticalActive === "tab2"}
-                  >
-                    <div className="d-flex align-items-center">
-                      <img className="tab-icon" src={arrow} />
-                      <span className="px-3">Industry Design</span>
-                    </div>
-                    <div className="sub-heading-tab">
-                      From concept to production, we create beautiful and
-                      functional products that resonate with your audience.
-                    </div>
-                  </MDBTabsLink>
-                </MDBTabsItem>
-                <MDBTabsItem>
-                  <MDBTabsLink
-                    onClick={() => handleVerticalClick("tab3")}
-                    active={verticalActive === "tab3"}
-                  >
-                    <div className="d-flex align-items-center">
-                      <img className="tab-icon" src={arrow} />
                       <span className="px-3">Web & Mobile Development</span>
                     </div>
                     <div className="sub-heading-tab">
-                      Our services have been divided into four categories based
-                      on the kind of work we have done.
+                      Our services have been divided into four categories based on the kind of work we have done
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
-                <MDBTabsItem>
+                <MDBTabsItem className="pb-3">
                   <MDBTabsLink
                     onClick={() => handleVerticalClick("tab4")}
                     active={verticalActive === "tab4"}
@@ -107,6 +76,21 @@ function Services() {
                     <div className="sub-heading-tab">
                       Our services have been divided into four categories based
                       on the kind of work we have done.
+                    </div>
+                  </MDBTabsLink>
+                </MDBTabsItem>
+                <MDBTabsItem className="pb-3">
+                  <MDBTabsLink
+                    onClick={() => handleVerticalClick("tab2")}
+                    active={verticalActive === "tab2"}
+                  >
+                    <div className="d-flex align-items-center">
+                      <img className="tab-icon" src={arrow} />
+                      <span className="px-3">Industry Design</span>
+                    </div>
+                    <div className="sub-heading-tab">
+                      From concept to production, we create beautiful and
+                      functional products that resonate with your audience.
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
