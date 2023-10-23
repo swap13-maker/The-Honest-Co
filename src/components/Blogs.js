@@ -20,7 +20,8 @@ function Blogs() {
       <div className="col-md-9">
         <div className="main-content">
           <div className="row blog-border py-5">
-            <div className="col-md-6 border-top">
+            <div className="col-md-6 right_border">
+            <div className="top_border"></div>
               <div className="blog-card px-4 pt-4">
                 <div className="blog-heading">
                   Find your Fashion
@@ -47,7 +48,7 @@ function Blogs() {
                 <div className="blog-thumbnail">
                   <img className="w-100" src={blog1} title="" alt="" />
                 </div>
-              </div>
+              </div>     
               <div className="blog-card px-4 pt-4">
                 <div className="blog-heading">
                   Find your Fashion
@@ -105,9 +106,9 @@ function Blogs() {
             </div>
 
             <div className="col-md-6 border-top mt-5 pt-5">
-              <div className="blog-card px-4 pt-4">
+              <div className="blog_left px-4 pt-4">
                 <div className="blog-heading">
-                  Find your Fashion
+                  Find your Fashion1
                   <svg
                     width="20"
                     height="14"
@@ -132,7 +133,7 @@ function Blogs() {
                   <img className="w-100" src={blog4} title="" alt="" />
                 </div>
               </div>
-              <div className="blog-card px-4 pt-4">
+              <div className="blog_left px-4 pt-4">
                 <div className="blog-heading">
                   Find your Fashion
                   <svg
@@ -162,7 +163,7 @@ function Blogs() {
             </div>
           </div>
         </div>
-      </div>
+      </div>    
     </section>
   );
 }

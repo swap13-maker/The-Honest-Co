@@ -214,6 +214,38 @@ h1 {
 .text-align-end {
   text-align: end;
 }
+.right_border {
+  border-right: 1px solid #ccc;
+}
+ .top_border {
+  border-top: 1px solid #ccc;
+  position: relative; 
+  width: 110%;
+  left: -35px;
+  background: -o-linear-gradient(left, #000, transparent);
+  background: -webkit-linear-gradient(to left, #bda6a6, #f6f6f6);
+  background: -moz-linear-gradient(left, #000, transparent);
+  background: -o-linear-gradient(left, #000, transparent); 
+} 
+.top_border ::before{
+  background: #ccc;
+  content: "";
+  position: absolute;
+  left: -80px;
+  right: 0px;
+  height: 1px;
+  width: 120%;
+  background: linear-gradient(to left, #b7b7b7, #f6f6f6);
+  background: -webkit-linear-gradient(to left, #bda6a6, #f6f6f6);
+  background: -moz-linear-gradient(left, #000, transparent);
+  background: -o-linear-gradient(left, #000, transparent);
+}
+.left_border {
+  border-left: 1px solid #ccc;
+}
+.extra-border-left{
+  border-left: 1px solid #ccc;
+}
 /* ================================================= Services */
 .button {
   font: inherit;
@@ -233,6 +265,29 @@ h1 {
 .button:hover {
   box-shadow: 0em 0em #000;
   transform: translate(0.25em, 0.25em);
+}
+
+.blog_left{
+  position: relative;
+}
+.blog_left::before,.blog_left::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+   left: -12px;
+  right: 0px;
+  height: 1px;
+  width: 120%;
+  background-image: linear-gradient(to right, #b7b7b7, #f6f6f6);
+  background-image: -webkit-linear-gradient(to right, #bda6a6, #f6f6f6);
+  background-image: -moz-linear-gradient(right, #000, transparent);
+  background-image: -o-linear-gradient(right, #000, transparent); 
+}
+.blog_left:hover > .blog-thumbnail > img {
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  width: 100%;
 }
 
 /*desktop only media view*/
