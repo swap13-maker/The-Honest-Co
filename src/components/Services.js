@@ -56,7 +56,11 @@ function Services() {
                     active={verticalActive === "tab1"}
                   >
                     <div className="d-flex align-items-center">
-                      <img className="tab-icon" src={arrow} />
+                      {verticalActive === "tab1" ? (
+                        <div className="loading"></div>
+                      ) : (
+                        <img className="tab-icon" src={arrow} />
+                      )}
                       <span className="px-3">Web & Mobile Development</span>
                     </div>
                     <div className="sub-heading-tab">
@@ -70,7 +74,11 @@ function Services() {
                     active={verticalActive === "tab4"}
                   >
                     <div className="d-flex align-items-center">
-                      <img className="tab-icon" src={arrow} />
+                      {verticalActive === "tab4" ? (
+                        <div className="loading"></div>
+                      ) : (
+                        <img className="tab-icon" src={arrow} />
+                      )}
                       <span className="px-3">Content & Adversiting</span>
                     </div>
                     <div className="sub-heading-tab">
@@ -85,7 +93,11 @@ function Services() {
                     active={verticalActive === "tab2"}
                   >
                     <div className="d-flex align-items-center">
-                      <img className="tab-icon" src={arrow} />
+                      {verticalActive === "tab2" ? (
+                        <div className="loading"></div>
+                      ) : (
+                        <img className="tab-icon" src={arrow} />
+                      )}
                       <span className="px-3">Industry Design</span>
                     </div>
                     <div className="sub-heading-tab">

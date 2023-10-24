@@ -4,11 +4,13 @@ import Blogs from "./Blogs";
 import CaseStudies1 from "./CaseStudies1";
 import CaseStudies from "./CaseStudies";
 import resourceGif from '../images/resource.gif';
+import Lottie from "lottie-react";
+import loader from "../images/ResourcesSectionLanding.json";
 
 function Resource() {
   return (
     <section className="container py-5">
-      <div className="row border-bottom-bold pb-4 d-flex align-items-center">
+      <div className="row border-bottom-bold py-4 d-flex align-items-center">
         <div className="col-10 col-md-6 col-lg-6 px-0">
           <div className="text-uppercase">
             <h1>
@@ -17,8 +19,8 @@ function Resource() {
             </h1>
           </div>
         </div>
-        <div className="col-2 col-md-6 col-lg-6 d-flex align-items-center justify-content-end">
-          <div><img src={resourceGif} alt="Resource GIF" width="120px" /></div>
+        <div className="col-2 col-md-6 col-lg-6 d-flex ml-auto justify-content-end">
+            <Lottie animationData={loader} autoplay loop className="w-20"/>
         </div>
       </div>
 

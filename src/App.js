@@ -6,6 +6,7 @@ import CreatorContact from './pages/CreatorContact';
 import Portfolio from './pages/Portfolio.js';
 import Resource from './pages/Resource.js';
 import Project1 from './components/Portfolio/Project1.js';
+import Article1 from './components/Articles/Article1.js';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resources" element={<Resource />} />
         <Route path="/portfolio/project1" element={<Project1 />} />
+        <Route path="/resources/articles/article1" element={<Article1 />} />
       </Routes>
     </Router>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from 'react';
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import Filter from "./../components/Portfolio/Filter";
@@ -7,8 +8,14 @@ import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
 import "../components/Portfolio/Portfolio.css";
 import ProjectCards from "../components/ProjectCards";
+import Lottie from "lottie-react";
+import loader from "../images/PortfolioListing.json";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState(null);
   const [isPortfolioAniHidden, setIsPortfolioAniHidden] = useState(false);
@@ -60,7 +67,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="col-12 col-md-5 d-flex">
-                <div className="d-flex mx-auto align-items-start">video</div>
+                <div className="d-flex ml-auto align-items-start"><Lottie animationData={loader} autoplay loop className="w-50 d-flex ml-auto margin-top--35" /></div>
               </div>
             </div>
           </div>

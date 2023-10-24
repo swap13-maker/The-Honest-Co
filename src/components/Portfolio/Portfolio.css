@@ -316,3 +316,6 @@ p {
   object-fit: cover;
   height: 545px;
 }
+.margin-top--35{
+  margin-top: -35px;
+}
