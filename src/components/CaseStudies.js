@@ -16,10 +16,9 @@ function CaseStudies() {
       </div>
       <div className="col-md-9 col-12">
         <div className="main-content">
-
           <div className="row case-card">
-            <div className="col-12 col-md-6 col-lg-6 border px-0 mx-0">
-              <div className="">
+            <div className="col-12 col-md-6 col-lg-6 px-0 mx-0">
+              <div className="case-thumbnail-wrapper">
                 <div className="case-thumbnail">
                   <img className="w-100" src={case1} title="" alt="" />
                 </div>
@@ -53,8 +52,6 @@ function CaseStudies() {
             </div>
           </div>
 
-
-
           <div className="row case-card">
             <div className="col-12 col-md-6 col-lg-6">
               <div className="">
@@ -82,15 +79,14 @@ function CaseStudies() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-6 border px-0 mx-0">
-              <div className="case-card">
+            <div className="col-12 col-md-6 col-lg-6 px-0 mx-0">
+              <div className="case-card case-thumbnail-wrapper">
                 <div className="case-thumbnail">
                   <img className="w-100" src={case2} title="" alt="" />
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

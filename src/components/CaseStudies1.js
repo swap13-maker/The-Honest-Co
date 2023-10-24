@@ -17,10 +17,9 @@ function CaseStudies1() {
       </div>
       <div className="col-md-9">
         <div className="main-content">
-
           <div className="row case-card">
-            <div className="col-12 col-md-6 col-lg-6 border px-0 mx-0">
-              <div className="">
+            <div className="col-12 col-md-6 col-lg-6 px-0 mx-0">
+              <div className="case-thumbnail-wrapper">
                 <div className="case-thumbnail">
                   <img className="w-100" src={studies1} title="" alt="" />
                 </div>
@@ -79,8 +78,8 @@ function CaseStudies1() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-6 border px-0 mx-0">
-              <div className="case-card">
+            <div className="col-12 col-md-6 col-lg-6 px-0 mx-0">
+              <div className="case-card case-thumbnail-wrapper">
                 <div className="case-thumbnail">
                   <img className="w-100" src={studies2} title="" alt="" />
                 </div>
@@ -89,8 +88,8 @@ function CaseStudies1() {
           </div>
 
           <div className="row case-card">
-            <div className="col-12 col-md-6 col-lg-6 border px-0 mx-0">
-              <div className="">
+            <div className="col-12 col-md-6 col-lg-6 px-0 mx-0">
+              <div className="case-thumbnail-wrapper">
                 <div className="case-thumbnail">
                   <img className="w-100" src={studies3} title="" alt="" />
                 </div>
@@ -122,7 +121,6 @@ function CaseStudies1() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
