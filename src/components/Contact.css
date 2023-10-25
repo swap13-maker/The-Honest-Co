@@ -253,3 +253,63 @@ figure.effect-sadie:hover p {
 .previous-button {
   cursor: pointer;
 }
+.top_Side{
+  position: relative;
+  width: 112%;
+  left: -55px;
+  background: #ccc;
+  height: 1px;
+  bottom: 1px;
+  background: linear-gradient(to left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: -webkit-linear-gradient(to left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: -moz-linear-gradient(left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: -o-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+}
+
+.container {
+  position: relative;
+}
+
+.bottom_Side {
+  position: relative;
+  width: 84.5%;
+  top: -60px;
+  left: 260px;
+  background: #ccc;
+  height: 1px;
+  bottom: 1px;
+  background: linear-gradient(to left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+background: -webkit-linear-gradient(to left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+background: -moz-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+background: -o-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+
+  
+}
+
+.right_Side {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  /* left: -10px; */
+  width: 1.2px;
+  height: 95%; /* Takes full height of the container */
+  background: #ccc;
+  background: linear-gradient(to top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+background: -webkit-linear-gradient(to top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+background: -moz-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  transform: translateX(-50px);
+}
+.Left_Side {
+  position: absolute;
+  top: -40px;
+  left: 60px;
+  width: 1px; /* Adjust the width as needed */
+  height: 115%; /* Takes full height of the container */
+  background: #ccc; /* Background color for the left-side border */
+  background: linear-gradient(to top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: -webkit-linear-gradient(to top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: -moz-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  transform: translateX(-50px);
+}

@@ -605,13 +605,22 @@ input[type="checkbox"]:before {
   z-index: 2;
 }
 .cat {
-  margin-right: 6px;
-  background-color: #d1d1d1;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  overflow: hidden;
+  margin-right: 40px;
+  background-color: #ffffff;
+  /* border-radius: 4px; */
+  /* border: 0.5px solid #000; */
+  /* border-bottom: 0.5px solid #000; */
+  /* overflow: hidden; */
   float: left;
 }
+.cat label input + span {
+  border: 0.5px solid #000;
+  transition: border 0.3s; 
+}
+.cat input:checked + span {
+  border: none;
+}
+
 .height-70px {
   height: 70px;
 }
@@ -634,7 +643,6 @@ input[type="checkbox"]:before {
 }
 
 .cat label input + span {
-  color: #000;
   opacity: 0.5;
   font-size: 16px;
   font-style: normal;
@@ -654,7 +662,9 @@ input[type="checkbox"]:before {
 .comedy input:checked + span {
   background-color: #1a1a1a33;
 }
-
+.cat label input:checked + span {
+  border: none;
+}
 /* work */
 .gallery {
   display: grid;

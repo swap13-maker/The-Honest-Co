@@ -118,7 +118,7 @@ function CreatorContact() {
                 </Form>
             </div>
 
-            <div class="d-flex align-items-end px-4" style={{height: "10%", justifyContent: "space-between"}}>
+            <div className="d-flex align-items-end custom-padding" style={{height: "10%", justifyContent: "space-between"}}>
                 {step > 1 && (
                 <a
                     className="previous-button form-btn-prev"
