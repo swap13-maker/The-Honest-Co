@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   MDBTabs,
   MDBTabsItem,
@@ -14,12 +14,28 @@ import arrow from "../images/arrow.png";
 
 function Services() {
   const [verticalActive, setVerticalActive] = useState("tab1");
+  let currentTabIndex = 0; // Variable to track the current tab index
 
-  const handleVerticalClick = (value: string) => {
+  // Define an array of tabs you want to cycle through.
+  const tabs = ["tab1", "tab2", "tab3"];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      // Update the active tab based on the current index
+      setVerticalActive(tabs[currentTabIndex]);
+      currentTabIndex = (currentTabIndex + 1) % tabs.length; // Cycle through tabs
+    }, 4000); // 3 seconds interval
+
+    // Clear the timer when the component unmounts to prevent memory leaks.
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  const handleVerticalClick = (value) => {
     if (value === verticalActive) {
       return;
     }
-
     setVerticalActive(value);
   };
 
@@ -70,11 +86,11 @@ function Services() {
                 </MDBTabsItem>
                 <MDBTabsItem className="pb-3">
                   <MDBTabsLink
-                    onClick={() => handleVerticalClick("tab4")}
-                    active={verticalActive === "tab4"}
+                    onClick={() => handleVerticalClick("tab2")}
+                    active={verticalActive === "tab2"}
                   >
                     <div className="d-flex align-items-center">
-                      {verticalActive === "tab4" ? (
+                      {verticalActive === "tab2" ? (
                         <div className="loading"></div>
                       ) : (
                         <img className="tab-icon" src={arrow} />
@@ -89,11 +105,11 @@ function Services() {
                 </MDBTabsItem>
                 <MDBTabsItem className="pb-3">
                   <MDBTabsLink
-                    onClick={() => handleVerticalClick("tab2")}
-                    active={verticalActive === "tab2"}
+                    onClick={() => handleVerticalClick("tab3")}
+                    active={verticalActive === "tab3"}
                   >
                     <div className="d-flex align-items-center">
-                      {verticalActive === "tab2" ? (
+                      {verticalActive === "tab3" ? (
                         <div className="loading"></div>
                       ) : (
                         <img className="tab-icon" src={arrow} />
