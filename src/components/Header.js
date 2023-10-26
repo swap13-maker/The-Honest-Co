@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Header() {
-
   const [showHeader, setShowHeader] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
-  const handleScroll = () => {
-   
+  const handleScroll = () => {   
     setScrollPos(document.body.getBoundingClientRect().top);
     setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
     if(scrollPos >=-712){

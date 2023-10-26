@@ -7,8 +7,14 @@ import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Lottie from "lottie-react";
+import loader from "../images/ResourceListing.json";
 
 const Resource = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState(null);
   const [filteredIndex, setFilteredIndex] = useState(0);
@@ -60,7 +66,9 @@ const Resource = () => {
                 </div>
               </div>
               <div className="col-12 col-md-5 d-flex">
-                <div className="d-flex mx-auto align-items-start">video</div>
+                <div className="d-flex ml-auto align-items-start">
+                  <Lottie animationData={loader} autoplay loop className="w-75 d-flex ml-auto margin-top--35" />
+                </div>
               </div>
             </div>
           </div>

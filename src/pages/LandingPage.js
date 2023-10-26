@@ -17,12 +17,12 @@ function LandingPage() {
     <div>
       <Hero />
       <Header />
-      <Story />
-      <Counter />
+      <Story />      
       <Services />
       <ServicesMob />
       <Work />
       <Industry />
+      <Counter />
       <Contact />
       <Resource />
       <Footer />
