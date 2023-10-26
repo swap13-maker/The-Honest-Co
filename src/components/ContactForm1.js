@@ -57,7 +57,7 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
   };
 
   return (
-    <div className="py-4">
+    <div className="py-4" style={{paddingRight:'40px'}}>
       <div className="contact-heading">
         <span className="font-weight-600 text-black">Got ideas?</span> We have
         got the skills. <br />

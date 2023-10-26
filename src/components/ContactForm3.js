@@ -12,7 +12,10 @@ function ContactForm3({ onRadioChange }) {
 
   const handleRadioChange = (event, stateUpdater) => {
     const { value } = event.target;
-
+    document.querySelectorAll(`input[type="radio"][name="${event.target.name}"]`).forEach((radio) => {
+      radio.classList.remove("selected");
+    });
+    event.target.classList.add("selected");
     // Update the state with the selected value
     stateUpdater(value);
 

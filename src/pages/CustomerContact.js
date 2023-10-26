@@ -98,7 +98,14 @@ function CustomerContact() {
             </div>
           </div>
         </div>
-        <Container className="col-md-9 col-12 border-element form-content">
+        
+        <Container className="col-md-9 col-12 border-element form-content" style={{border:'none'}}>
+          <div className="top_Side">
+          </div>
+          <div className="Left_Side">
+    
+          </div>
+         
           <div
             class="d-flex align-items-start flex-column"
             style={{ height: "85%" }}
@@ -124,8 +131,8 @@ function CustomerContact() {
           </div>
 
           <div
-            class="d-flex align-items-end px-4"
-            style={{ height: "10%", justifyContent: "space-between" }}
+            class="d-flex align-items-end custom-padding"
+            style={{ height: "10%", justifyContent: "space-between", marginLeft:'30px',marginRight:'40px'}}
           >
             {step > 1 && (
               <a
@@ -148,6 +155,12 @@ function CustomerContact() {
           </div>
         </Container>
       </div>
+      
+      
+  <div class="bottom_Side"></div>
+  <div class="right_Side"></div>
+
+
     </Container>
   );
 }
