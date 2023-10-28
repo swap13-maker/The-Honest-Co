@@ -1,10 +1,27 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import './InnerHeader.css'
 
 const InnerHeader = () => {
+  const [showHeader, setShowHeader] = useState(true);
+  const [scrollPos, setScrollPos] = useState(0);
+
+  const handleScroll = () => {   
+    setScrollPos(document.body.getBoundingClientRect().top);
+    setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
+   
+    
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPos, handleScroll]);
   return (
-    <header className="container">
+    <header className={`container header glass mobile-d-none height-85 InnerHeader ${showHeader ? 'sticky' : ''}`}>
       <Navbar className="py-4" expand="lg">
         <Link to="/">
           <Navbar.Brand href="#">
