@@ -103,7 +103,7 @@ function CustomerContact() {
           <div className="top_Side">
           </div>
           <div className="Left_Side">
-    
+
           </div>
          
           <div
@@ -160,7 +160,7 @@ function CustomerContact() {
   <div class="bottom_Side"></div>
   <div class="right_Side"></div>
 
-
+  
     </Container>
   );
 }

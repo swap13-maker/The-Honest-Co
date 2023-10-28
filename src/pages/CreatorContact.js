@@ -8,6 +8,7 @@ import { Container } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import Prev from "../images/form-prev.png";
 import { Link } from "react-router-dom";
+import "./CreatorContact.css";
 
 function CreatorContact() {
   const [name, setName] = useState("");
@@ -94,54 +95,59 @@ function CreatorContact() {
             </div>
           </div>
         </div>
-        <Container className="col-md-9 col-12 border-element form-content">
-            <div class="d-flex align-items-start flex-column" style={{height: "85%"}}>
-                <Form className="px-4 w-100">
-                    {step === 1 && (
-                    <CreatorForm1
-                        onNameChange={handleNameChange}
-                        onOrganizationChange={handleOrganizationChange}
-                        onEmailChange={handleEmailChange}
-                        onContactChange={handleContactChange}
-                    />
-                    )}
-                    {step === 2 && (
-                    <CreatorForm2
-                        onProjectChange={handleProjectChange}
-                        onRadioChange={handleRadioChange}
-                    />
-                    )}
-                    {step === 3 && <ContactForm3 />}
-                    {step === 4 && (
-                    <CreatorForm4 />
-                    )}
-                </Form>
-            </div>
+        <Container
+          className="col-md-9 col-12 border-element form-content"
+          style={{ border: "none" }}
+        >
+          <div className="creator_top_Side"></div>
+          <div className="creator_Left_Side"></div>
+          <div
+            class="d-flex align-items-start flex-column"
+            style={{ height: "85%" }}
+          >
+            <Form className="px-4 w-100">
+              {step === 1 && (
+                <CreatorForm1
+                  onNameChange={handleNameChange}
+                  onOrganizationChange={handleOrganizationChange}
+                  onEmailChange={handleEmailChange}
+                  onContactChange={handleContactChange}
+                />
+              )}
+              {step === 2 && (
+                <CreatorForm2
+                  onProjectChange={handleProjectChange}
+                  onRadioChange={handleRadioChange}
+                />
+              )}
+              {step === 3 && <ContactForm3 />}
+              {step === 4 && <CreatorForm4 />}
+            </Form>
+          </div>
 
-            <div className="d-flex align-items-end custom-padding" style={{height: "10%", justifyContent: "space-between"}}>
-                {step > 1 && (
-                <a
-                    className="previous-button form-btn-prev"
-                    onClick={handlePrevious}
-                >
-                    <img className="w-50" src={Prev} />
-                </a>
-                )}
+          <div
+            className="d-flex align-items-end custom-padding"
+            style={{ height: "10%", justifyContent: "space-between" }}
+          >
+            {step > 1 && (
+              <a
+                className="previous-button form-btn-prev"
+                onClick={handlePrevious}
+              >
+                <img className="w-50" src={Prev} />
+              </a>
+            )}
 
-                {step < 4 && (
-                <a
-                    className="next-button form-btn"
-                    onClick={handleNext}
-                >
-                    Continue
-                </a>
-                )}
+            {step < 4 && (
+              <a className="next-button form-btn" onClick={handleNext}>
+                Continue
+              </a>
+            )}
 
-                {step === 4 && (
-                <a className="submit-button form-btn">Submit</a>
-                )}
-            </div>
-
+            {step === 4 && <a className="submit-button form-btn">Submit</a>}
+          </div>
+          <div class="creator_right_Side"></div>
+          <div class="creator_bottom_Side"></div>
         </Container>
       </div>
     </Container>
