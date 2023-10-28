@@ -1,0 +1,58 @@
+.header {
+    position: fixed;
+    /* top: -100px; */
+    left: 80px;
+    width: 110%;
+    height: 72px;
+    z-index: 1;
+    background: inherit;
+    color: #1a1a1a;
+    /* overflow: hidden; */
+    transition: top 0.3s;
+    z-index: 1;
+  }
+  .glass {
+    background-color: rgba(238, 238, 238, 0.30);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    /* border-bottom: 1px solid #f1eeee; */
+  }
+  .glass::before {
+    position: absolute;
+    top: 0;
+    left: 60;
+    z-index: -1;
+    width: 110%;
+    height: 100%;
+    content: "";
+  }
+  .header.sticky {
+    position: fixed;
+    top: 0;
+    width: 110%;
+    z-index: 100;
+  }
+  .nav-sticky-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 0.8em 1em;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 8px 8px 0px -1px, rgb(0, 0, 0) 8px 8px;
+    transition: all 0.25s ease-in-out;
+  }
+  .nav-sticky-button:hover {
+    color: #fff;
+    box-shadow: 0em 0em #fff;
+    transform: translate(0.25em, 0.25em);
+  }
+  .InnerHeader{
+    width: 110%;
+    padding-left: 50px;
+  }
