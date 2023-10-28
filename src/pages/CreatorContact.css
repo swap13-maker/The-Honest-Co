@@ -1,0 +1,156 @@
+.creator_top_Side {
+  position: relative;
+  width: 114%;
+  left: -65px;
+  background: #ccc;
+  height: 1px;
+  bottom: 1px;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+}
+
+.container {
+  position: relative;
+}
+
+.creator_bottom_Side {
+  position: relative;
+  width: 114%;
+  top: 30px;
+  /* left: 20px; */
+  right: 70px;
+  background: #ccc;
+  height: 1px;
+  bottom: 1px;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+}
+
+.creator_right_Side {
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  /* left: -10px; */
+  width: 0.8px;
+  height: 110%; /* Takes full height of the container */
+  background: #ccc;
+  background: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  transform: translateX(-50px);
+}
+
+.creator_Left_Side {
+  position: absolute;
+  top: -40px;
+  left: 50px;
+  width: 1.1px; /* Adjust the width as needed */
+  height: 115%; /* Takes full height of the container */
+  background: #ccc; /* Background color for the left-side border */
+  background: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  transform: translateX(-50px);
+}
