@@ -1,8 +1,7 @@
 import React,{useState,useEffect} from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import './InnerHeader.css'
-
+import "./InnerHeader.css"
 const InnerHeader = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
@@ -21,7 +20,7 @@ const InnerHeader = () => {
     };
   }, [scrollPos, handleScroll]);
   return (
-    <header className={`container header glass mobile-d-none height-85 InnerHeader ${showHeader ? 'sticky' : ''}`}>
+    <header className={`container InnerHeader glass1 mobile-d-none height-85 ${showHeader ? 'sticky' : ''}`}>
       <Navbar className="py-4" expand="lg">
         <Link to="/">
           <Navbar.Brand href="#">
@@ -50,7 +49,7 @@ const InnerHeader = () => {
             </Nav.Link>
             <Nav.Link className="text-black nav-btn-area" href="#">
               <Link to="/get-in-touch">
-                <button className="nav-sticky-button">get in touch</button>
+                <button className="nav1-sticky1-button">get in touch</button>
               </Link>
             </Nav.Link>
           </Nav>
