@@ -20,8 +20,9 @@ const InnerHeader = () => {
     };
   }, [scrollPos, handleScroll]);
   return (
-    <header className={`container InnerHeader glass1 mobile-d-none height-85 ${showHeader ? 'sticky' : ''}`}>
-      <Navbar className="py-4" expand="lg">
+    <header className={`container InnerHeader glass1 mobile-d-none height-85 ${showHeader ? 'sticky' : ''}`}
+    style={{marginLeft:'100px'}}>
+      <Navbar className="py-3" expand="lg">
         <Link to="/">
           <Navbar.Brand href="#">
             <span className="font-weight-800 text-black">the</span>

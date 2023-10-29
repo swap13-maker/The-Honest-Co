@@ -10,7 +10,6 @@
   overflow: hidden;
   transition: top 0.3s;
   z-index: 9;
-  margin-left: 100px;
   
 }
 .glass1 {
@@ -50,10 +49,9 @@
   box-shadow: 0em 0em #fff;
   transform: translate(0.25em, 0.25em);
 }
-.InnerHeader.sticky {
+.sticky {
   position: fixed;
   top: 0;
   width: 110%;
   z-index: 100;
-  margin-left: 100px;
 }
