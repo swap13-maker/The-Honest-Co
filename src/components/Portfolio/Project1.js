@@ -36,7 +36,7 @@ function Project1() {
       {/* mian content */}
       <section>
         <div className="container">
-          <ul class="breadcrumb-navigation">
+          <ul className="breadcrumb-navigation">
             <li>
               <a href="home">Home</a>
             </li>
@@ -275,10 +275,10 @@ function Project1() {
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
               <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
-              <article class="c-article">
-                <header class="c-article__header">
-                  <h2 class="c-article__title footer-title">
-                    <span class="footer-title">Honest Edge.</span>
+              <article className="c-article">
+                <header className="c-article__header">
+                  <h2 className="c-article__title footer-title">
+                    <span className="footer-title">Honest Edge.</span>
                   </h2>
                 </header>
               </article>

@@ -40,7 +40,7 @@ const Portfolio = () => {
       {/* mian content */}
       <section>
         <div className="container">
-          <ul class="breadcrumb-navigation">
+          <ul className="breadcrumb-navigation">
             <li>
               <Link to="/">Home</Link>
             </li>
