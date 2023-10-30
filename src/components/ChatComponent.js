@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import chatImg from "../images/chat.png";
 import logo from "../images/logo.png";
+import succLogo from "../images/succLogo.png";
 import cross from "../images/cross.png";
 import "./Chat.css";
 
@@ -14,13 +15,16 @@ const ChatComponent = () => {
     query: "",
     interests: [],
   });
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const openForm = () => {
     setIsChatOpen(true);
+    setFormSubmitted(false);
   };
 
   const closeForm = () => {
     setIsChatOpen(false);
+    setFormSubmitted(false);
   };
 
   const handleInputChange = (e) => {
@@ -53,27 +57,36 @@ const ChatComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!formData.name || !formData.email || !formData.mobile || !formData.query) {
+      alert("Name, Email, Mobile, and Query are required fields.");
+      return;
+    }
+
+    // Show the formSubmitted message
+    setIsChatOpen(false);
+    setFormSubmitted(true);
+
     // Send data to the API
-    fetch("http://localhost/honest/public/api/test.php", {
+    fetch("http://thehonestco.in/test.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // Handle the response data here
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error("There was a problem with the fetch operation:", error);
-      });
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // Handle the response data here
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
   };
 
   return (
@@ -84,7 +97,11 @@ const ChatComponent = () => {
 
       {isChatOpen && (
         <div className="chat-popup">
-          <form method="POST" className="form-container" onSubmit={handleSubmit}>
+          <form
+            method="POST"
+            className="form-container"
+            onSubmit={handleSubmit}
+          >
             <div className="flex-box">
               <img src={logo} width={100} alt="Logo" />
               <div className="text">
@@ -204,14 +221,33 @@ const ChatComponent = () => {
             >
               Get started with us!
             </button>
-            <a
-              type="button"
-              className="close-btn"
-              onClick={closeForm}
-            >
+            <a type="button" className="close-btn" onClick={closeForm}>
               <img src={cross} alt="Close" />
             </a>
           </form>
+        </div>
+      )}
+
+      {formSubmitted && (
+        <div className="chat-popup">
+          <div className="form-container">
+
+            <div className="row py-4">
+              <div className="col-12 resp-succ-img"><img src={succLogo} width={100} /></div>
+              <div className="col-12 resp-succ-head pb-3">Your inquiry has been<br/>received!</div>
+              <div className="col-12 resp-succ-bottom">and we're ready to bring your idea to life!</div>
+            </div>
+
+            <button
+              onClick={closeForm}
+              className="d-flex mx-auto w-100 justify-content-center form-btn"
+            >
+              Have another query?
+            </button>
+            <a type="button" className="close-btn" onClick={closeForm}>
+              <img src={cross} alt="Close" />
+            </a>
+          </div>
         </div>
       )}
     </div>
