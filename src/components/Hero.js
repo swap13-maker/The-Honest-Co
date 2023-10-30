@@ -16,7 +16,6 @@ function Hero() {
   
 
   const handleScroll = () => {
-    console.log(document.body.getBoundingClientRect().top);
     setScrollPos(document.body.getBoundingClientRect().top);
     setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
   };
