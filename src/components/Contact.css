@@ -1,12 +1,12 @@
 #contact-section {
   border-left: 6px solid #fff;
   border-right: 6px solid #fff;
-  /* background-color: #000; */
-  background-image: url("../images/background.png");
-  height: 180vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#contact-section > .bg-dark {
+  background-color: #1a1a1a !important;
 }
 .sub-heading {
   font-style: normal;

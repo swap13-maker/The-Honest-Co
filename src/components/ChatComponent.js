@@ -25,6 +25,13 @@ const ChatComponent = () => {
   const closeForm = () => {
     setIsChatOpen(false);
     setFormSubmitted(false);
+    setFormData({ // Clear the form data
+      name: "",
+      email: "",
+      mobile: "",
+      query: "",
+      interests: [],
+    });
   };
 
   const handleInputChange = (e) => {
@@ -83,7 +90,14 @@ const ChatComponent = () => {
     .then((data) => {
       // Handle the response data here
       // Testing
-      console.log(data);
+      // console.log(data);
+      setFormData({ // Clear the form data
+        name: "",
+        email: "",
+        mobile: "",
+        query: "",
+        interests: [],
+      });
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
@@ -233,8 +247,8 @@ const ChatComponent = () => {
         <div className="chat-popup">
           <div className="form-container">
 
-            <div className="row py-4">
-              <div className="col-12 resp-succ-img"><img src={succLogo} width={100} /></div>
+            <div className="row pb-4">
+              <div className="col-12 resp-succ-img py-3"><img src={succLogo} width={80} /></div>
               <div className="col-12 resp-succ-head pb-3">Your inquiry has been<br/>received!</div>
               <div className="col-12 resp-succ-bottom">and we're ready to bring your idea to life!</div>
             </div>
