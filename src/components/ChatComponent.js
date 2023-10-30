@@ -82,6 +82,7 @@ const ChatComponent = () => {
     })
     .then((data) => {
       // Handle the response data here
+      // Testing
       console.log(data);
     })
     .catch((error) => {
