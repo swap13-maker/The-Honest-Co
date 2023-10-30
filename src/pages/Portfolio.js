@@ -39,8 +39,8 @@ const Portfolio = () => {
       <InnerHeader />
       {/* mian content */}
       <section>
-        <div className="container pt-5">
-          <ul class="breadcrumb-navigation">
+        <div className="container">
+          <ul className="breadcrumb-navigation">
             <li>
               <Link to="/">Home</Link>
             </li>

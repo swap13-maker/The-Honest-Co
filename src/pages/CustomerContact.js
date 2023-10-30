@@ -107,7 +107,7 @@ function CustomerContact() {
           </div>
          
           <div
-            class="d-flex align-items-start flex-column"
+            className="d-flex align-items-start flex-column"
             style={{ height: "85%" }}
           >
             <Form className="px-4 w-100">
@@ -131,7 +131,7 @@ function CustomerContact() {
           </div>
 
           <div
-            class="d-flex align-items-end custom-padding"
+            className="d-flex align-items-end custom-padding"
             style={{ height: "10%", justifyContent: "space-between", marginLeft:'30px',marginRight:'40px'}}
           >
             {step > 1 && (
@@ -157,8 +157,8 @@ function CustomerContact() {
       </div>
       
       
-  <div class="bottom_Side"></div>
-  <div class="right_Side"></div>
+  <div className="bottom_Side"></div>
+  <div className="right_Side"></div>
 
   
     </Container>

@@ -43,7 +43,7 @@ function Contact() {
           <div className="col-md-2"></div>
           <div className="col-md-4 pt-4" data-aos="fade-up" data-aos-duration="1000">
             <Link to="/get-in-touch" className="grid p-3 px-md-0">
-              <figure class="effect-sadie">
+              <figure className="effect-sadie">
                 <img className="w-100 img-1" src={Cta1} alt="" />
                 <img className="w-100 img-1-hover" src={Cta1Hover} alt="" />
                 <figcaption>
@@ -64,7 +64,7 @@ function Contact() {
           </div>
           <div className="col-md-4 pt-4" data-aos="fade-up" data-aos-duration="1000">
             <Link to="/get-in-touch/creator" className="grid p-3 px-md-0">
-              <figure class="effect-sadie">
+              <figure className="effect-sadie">
                 <img className="w-100 img-1" src={Cta2} alt="" />
                 <img className="w-100 img-1-hover" src={Cta2Hover} alt="" />
                 <figcaption>

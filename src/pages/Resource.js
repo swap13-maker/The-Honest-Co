@@ -49,8 +49,8 @@ const Resource = () => {
       <InnerHeader/>
       {/* mian content */}
       <section>
-        <div className="container pt-5">
-          <ul class="breadcrumb-navigation">
+        <div className="container">
+          <ul className="breadcrumb-navigation">
             <li>
             <Link to="/">Home</Link>
             </li>
@@ -172,9 +172,9 @@ const Resource = () => {
 
                 return (
                   <div className={`col-md-4 col-12 py-3 ${cardClass} ${marginTopClass}`} key={index}>
-                    <div class="wrapper" data-aos="fade-up">
-                      <div class="res-zoom-effect-container">
-                        <div class="image-card">
+                    <div className="wrapper" data-aos="fade-up">
+                      <div className="res-zoom-effect-container">
+                        <div className="image-card">
                           <img className="card-img-top" src={image} />
                         </div>
                       </div>

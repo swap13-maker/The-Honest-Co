@@ -102,7 +102,7 @@ function CreatorContact() {
           <div className="creator_top_Side"></div>
           <div className="creator_Left_Side"></div>
           <div
-            class="d-flex align-items-start flex-column"
+            className="d-flex align-items-start flex-column"
             style={{ height: "85%" }}
           >
             <Form className="px-4 w-100">
@@ -146,8 +146,8 @@ function CreatorContact() {
 
             {step === 4 && <a className="submit-button form-btn">Submit</a>}
           </div>
-          <div class="creator_right_Side"></div>
-          <div class="creator_bottom_Side"></div>
+          <div className="creator_right_Side"></div>
+          <div className="creator_bottom_Side"></div>
         </Container>
       </div>
     </Container>

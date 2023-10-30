@@ -42,7 +42,7 @@ function Story() {
         <div className="row" data-aos="fade-up">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
-              <h1 class="left-aligned section-heading">
+              <h1 className="left-aligned section-heading">
                 <span className="text-light-color text-light-space">OUR</span>{" "}
                 STORY
               </h1>
@@ -50,7 +50,7 @@ function Story() {
           </div>
           <div className="col-12 col-md-7 col-lg-7 d-flex">
             <div className="sub-heading d-flex align-items-center">
-              <p class="m-0">
+              <p className="m-0">
                 It all began with a group of friends coming together to execute
                 a project. The Honest Co. was formed to umbrella our common
                 vision of providing high-quality services and building long-term

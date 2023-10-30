@@ -13,10 +13,10 @@ function Footer() {
               src={myFooterLogo}
               alt="Footer Logo"
             />
-            <article class="c-article">
-              <header class="c-article__header">
-                <h2 class="c-article__title footer-title">
-                  <span class="footer-title">Honest Edge.</span>
+            <article className="c-article">
+              <header className="c-article__header">
+                <h2 className="c-article__title footer-title">
+                  <span className="footer-title">Honest Edge.</span>
                 </h2>
               </header>
             </article>

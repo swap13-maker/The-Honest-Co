@@ -23,14 +23,14 @@ function Work() {
       </div>
 
       <div className="gallery">
-        <div class="gallery__item gallery__item--hor d-block">
+        <div className="gallery__item gallery__item--hor d-block">
           <img src={work1} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing
           </div>
         </div>
-        <div class="gallery__item d-block">
+        <div className="gallery__item d-block">
           <img src={work2} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
@@ -40,21 +40,21 @@ function Work() {
       </div>
 
       <div className="gallery pt-5">
-        <div class="gallery__item gallery__item--lg2 d-block">
+        <div className="gallery__item gallery__item--lg2 d-block">
           <img src={work3} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing
           </div>
         </div>
-        <div class="gallery__item gallery__item--hor3 d-block pb-5">
+        <div className="gallery__item gallery__item--hor3 d-block pb-5">
           <img src={work4} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing
           </div>
         </div>
-        <div class="gallery__item gallery__item--hor3 d-block">
+        <div className="gallery__item gallery__item--hor3 d-block">
           <img src={work5} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
@@ -64,14 +64,14 @@ function Work() {
       </div>
 
       <div className="gallery pt-5">
-        <div class="gallery__item gallery__item--hor d-block">
+        <div className="gallery__item gallery__item--hor d-block">
           <img src={work6} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing
           </div>
         </div>
-        <div class="gallery__item d-block">
+        <div className="gallery__item d-block">
           <img src={work7} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
@@ -81,7 +81,7 @@ function Work() {
       </div>
 
       <div className="gallery pt-5">
-        <div class="gallery__item d-block">
+        <div className="gallery__item d-block">
           <img src={work8} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">

@@ -57,7 +57,7 @@ export default function App() {
       {/* mian content */}
       <section>
         <div className="container">
-          <ul class="breadcrumb-navigation">
+          <ul className="breadcrumb-navigation">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -358,7 +358,7 @@ export default function App() {
                       viewBox="-10 0 25 14"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="animated-svg"
+                      className="animated-svg"
                     >
                       <path
                         id="Vector"

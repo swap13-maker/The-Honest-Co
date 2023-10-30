@@ -80,7 +80,7 @@ function CaseStudies() {
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-6 px-0 mx-0">
-              <div className="case-card case-thumbnail-wrapper">
+              <div className="case-card case-thumbnail-wrapper even">
                 <div className="case-thumbnail">
                   <img className="w-100" src={case2} title="" alt="" />
                 </div>

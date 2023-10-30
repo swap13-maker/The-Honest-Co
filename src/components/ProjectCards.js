@@ -14,9 +14,9 @@ const ProjectCards = ({
       } col-12 pb-3 portfolio__card ${cardClass} ${marginTopClass}`}
     >
       <div className="border__fade">
-        <div class="wrapper">
-          <div class="zoom-effect-container">
-            <div class="image-card">
+        <div className="wrapper">
+          <div className="zoom-effect-container">
+            <div className="image-card">
               <img className="card-img-top" src={image} />
             </div>
             <div className="pb-5 translate__down">
