@@ -74,7 +74,7 @@ const ChatComponent = () => {
     setFormSubmitted(true);
 
     // Send data to the API
-    fetch("http://thehonestco.in/test.php", {
+    fetch("https://thehonestco.in/test.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const ChatComponent = () => {
     .then((data) => {
       // Handle the response data here
       // Testing
-      // console.log(data);
+      console.log(data);
       setFormData({ // Clear the form data
         name: "",
         email: "",
