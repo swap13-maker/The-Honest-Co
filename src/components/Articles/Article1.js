@@ -7,7 +7,8 @@ import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.png";
+import articleImg1 from "../../images/articleImg1.jpg";
+import articleImg2 from "../../images/articleImg2.jpg";
 
 export default function App() {
   const section1Ref = useRef();
@@ -19,32 +20,32 @@ export default function App() {
 
   const navHeader = [
     {
-      headerTitle: "Mobile wallets",
+      headerTitle: "Current Landscape",
       headerRef: section1Ref,
       headerID: "section1",
     },
     {
-      headerTitle: "Benefits of mobile wallets",
+      headerTitle: "The Paradigm Shift",
       headerRef: section2Ref,
       headerID: "section2",
     },
     {
-      headerTitle: "Instant Transfers",
+      headerTitle: "Crypto Currency In Global Trade",
       headerRef: section3Ref,
       headerID: "section3",
     },
     {
-      headerTitle: "Payments without passwords - biometric authentication",
+      headerTitle: "AI & ML for Predictive Commerce",
       headerRef: section4Ref,
       headerID: "section4",
     },
     {
-      headerTitle: "The benefits of biometric authentication",
+      headerTitle: "Seamless Money Transfer",
       headerRef: section5Ref,
       headerID: "section5",
     },
     {
-      headerTitle: "The rise of mPOS",
+      headerTitle: "Navigate Global Commerce with Ease",
       headerRef: section6Ref,
       headerID: "section6",
     },
@@ -57,7 +58,7 @@ export default function App() {
       {/* mian content */}
       <section>
         <div className="container">
-          <ul className="breadcrumb-navigation pt-5">
+          <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -70,12 +71,13 @@ export default function App() {
             <div className="row">
               <div className="col-12 text-align-center">
                 <div className="article-heading">
-                  Top Payment Innovations <br /> & Technologies To Watch in 2023
+                  Global Commerce Made Easy, The Role of Remittance <br />{" "}
+                  Applications in Business Expansion
                 </div>
                 <div className="article-sub-heading pt-4">
-                  <span className="px-2">Carthick Nath</span> &bull;{" "}
-                  <span className="px-2">Banking & Finance</span> &bull;{" "}
-                  <span className="px-2">May 19, 2023</span>
+                  <span className="px-2">May 19, 2023</span> &bull;{" "}
+                  <span className="px-2">Custom Application Development</span>{" "}
+                  &bull; <span className="px-2">Banking & Finance</span>
                 </div>
                 <img src={article} className="w-100 pt-5" />
               </div>
@@ -83,256 +85,144 @@ export default function App() {
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
                   <p className="main-article-content">
-                    From mobile wallets to biometric authentication and smart
-                    speaker payments, these new technologies are revolutionizing
-                    the way people purchase and exchange funds.
+                    In today's digital-first landscape, global commerce is
+                    witnessing a revolution. As businesses expand their
+                    horizons, the need for seamless, secure, and efficient money
+                    transfer mechanisms has become paramount.
                   </p>
                   <p className="light-article-content">
-                    The world of payments is constantly evolving, and payment
-                    innovations are shaping the future of how we transact. Let’s
-                    dive into the top payment innovations and understand what’s
-                    driving their growth, as well as their impact on the
-                    payments industry.
+                    When we talk of global commerce, seamless money transfer is
+                    at its heart. The growth of money transfer software
+                    development showcases the pressing need for reliable and
+                    swift transaction solutions. It's no longer about
+                    transferring funds but doing so instantly, securely, and
+                    with minimal fees. Platforms built on low code banking
+                    principles offer a combination of agility and
+                    customizability, making them indispensable in today's
+                    fast-paced commerce world
                   </p>
-                  <br />
-                  <br />
-                  <p className="main-article-content">
-                    Mobile wallets: A dominant force
-                  </p>
-                  <p className="light-article-content">
-                    At the end of 2020, there were over 2.8 billion mobile
-                    wallets in use, and it is projected this number to increase
-                    by nearly 74% over the next five years, to reach 4.8 billion
-                    by the end of 2025.
-                    <br />
-                    Forecasts indicate that the utilisation of applications like
-                    Apple Pay or Google Pay in North America is expected to
-                    experience a twofold increase between 2020 and 2025.
-                    However, it is important to note that Asia's market size
-                    will surpass North America's by a significant margin. The
-                    aforementioned figures encompass applications like PayPal or
-                    Google Wallet, which allow users to store their credit or
-                    debit card information on their mobile devices for
-                    convenient online or in-store purchases.
-                    <br />
-                    China has been widely recognised as the global leader in
-                    proximity mobile payments, which involve using smartphones
-                    for contactless transactions. This distinction can be
-                    attributed to the popularity of prominent platforms such as
-                    Alipay and Tenpay in the country.
-                    <br />
-                    <br />
-                    According to Statistics study conducted in 2022 across
-                    various regions Mobile wallet adoption in 39 countries and
-                    territories worldwide:
-                    <ul className="pt-4">
-                      <li>
-                        Asia exhibited significantly higher mobile wallet usage
-                        compared to Europe. In fact, out of the top ten
-                        countries with the highest mobile wallet adoption rates,
-                        nine were located in the Asia-Pacific region, with the
-                        top two originating from Southeast Asia.
-                      </li>
-                      <li>
-                        Saudi Arabia was the first non-Asian country to appear
-                        on the list, securing the ninth position. It wasn't
-                        until the 22nd spot that Sweden, representing Europe,
-                        made its appearance in the survey.
-                      </li>
-                      <li>
-                        Unlike in Asia-Pacific and the Middle East, where mobile
-                        wallets have gained prominence as the primary digital
-                        payment method, Europe and North America face
-                        competition from well-established digital payment
-                        systems like credit and debit cards.
-                      </li>
-                      <li>
-                        In emerging economies, mobile wallets represent the
-                        first introduction to digital payment solutions.
-                      </li>
-                    </ul>
-                  </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
                   <p className="main-article-content">
-                    Mobile wallets: A dominant force
+                    The Paradigm Shift: From Traditional to Digital Transfers
                   </p>
                   <p className="light-article-content">
-                    At the end of 2020, there were over 2.8 billion mobile
-                    wallets in use, and it is projected this number to increase
-                    by nearly 74% over the next five years, to reach 4.8 billion
-                    by the end of 2025.
+                    In this age of smartphones, banking apps development and
+                    money management applications have transformed the way
+                    businesses and consumers interact. Whether it's a personal
+                    finance management application or a specialised crypto
+                    exchange app development, having a mobile strategy is
+                    crucial. These apps bridge the gap between enterprises and
+                    global customers, offering personalised experiences and
+                    real-time engagement.
                     <br />
-                    Forecasts indicate that the utilisation of applications like
-                    Apple Pay or Google Pay in North America is expected to
-                    experience a twofold increase between 2020 and 2025.
-                    However, it is important to note that Asia's market size
-                    will surpass North America's by a significant margin. The
-                    aforementioned figures encompass applications like PayPal or
-                    Google Wallet, which allow users to store their credit or
-                    debit card information on their mobile devices for
-                    convenient online or in-store purchases.
-                    <br />
-                    China has been widely recognised as the global leader in
-                    proximity mobile payments, which involve using smartphones
-                    for contactless transactions. This distinction can be
-                    attributed to the popularity of prominent platforms such as
-                    Alipay and Tenpay in the country.
-                    <br />
-                    <br />
-                    According to Statistics study conducted in 2022 across
-                    various regions Mobile wallet adoption in 39 countries and
-                    territories worldwide:
-                    <ul className="pt-4">
-                      <li>
-                        Asia exhibited significantly higher mobile wallet usage
-                        compared to Europe. In fact, out of the top ten
-                        countries with the highest mobile wallet adoption rates,
-                        nine were located in the Asia-Pacific region, with the
-                        top two originating from Southeast Asia.
-                      </li>
-                      <li>
-                        Saudi Arabia was the first non-Asian country to appear
-                        on the list, securing the ninth position. It wasn't
-                        until the 22nd spot that Sweden, representing Europe,
-                        made its appearance in the survey.
-                      </li>
-                      <li>
-                        Unlike in Asia-Pacific and the Middle East, where mobile
-                        wallets have gained prominence as the primary digital
-                        payment method, Europe and North America face
-                        competition from well-established digital payment
-                        systems like credit and debit cards.
-                      </li>
-                      <li>
-                        In emerging economies, mobile wallets represent the
-                        first introduction to digital payment solutions.
-                      </li>
-                    </ul>
+                    Historically, international money transfers were cumbersome,
+                    expensive, and time-consuming. But with the rise of money
+                    transfer software development, businesses can now facilitate
+                    transactions within minutes. Moreover, the security and
+                    transparency offered by these platforms have garnered the
+                    trust of millions of users globally. The world is smaller
+                    than ever before. No, the physical boundaries haven’t
+                    shrunk, but digital advancements have blurred geographical
+                    lines, opening the gates to global commerce like never
+                    before. In an era where every enterprise aims for global
+                    outreach, digital development plays a pivotal role in making
+                    worldwide trade not just feasible but efficient and
+                    user-friendly.
                   </p>
                   <img src={articleImg1} className="w-100 pt-5" />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <p className="main-article-content">
-                    Mobile wallets: A dominant force
+                    The Role of Cryptocurrency in Global Trade
                   </p>
                   <p className="light-article-content">
-                    At the end of 2020, there were over 2.8 billion mobile
-                    wallets in use, and it is projected this number to increase
-                    by nearly 74% over the next five years, to reach 4.8 billion
-                    by the end of 2025.
+                    With the rise of decentralised finance, cryptocurrency
+                    exchange software development and white label crypto
+                    exchange software have emerged as key players. Their ability
+                    to offer quick, borderless transactions without the often
+                    hefty international transfer fees makes them a favourite
+                    among global traders. Enterprises looking to tap into this
+                    growing market segment can benefit from white label
+                    cryptocurrency exchange development, ensuring they have a
+                    platform that’s both robust and tailored to their brand.
                     <br />
-                    Forecasts indicate that the utilisation of applications like
-                    Apple Pay or Google Pay in North America is expected to
-                    experience a twofold increase between 2020 and 2025.
-                    However, it is important to note that Asia's market size
-                    will surpass North America's by a significant margin. The
-                    aforementioned figures encompass applications like PayPal or
-                    Google Wallet, which allow users to store their credit or
-                    debit card information on their mobile devices for
-                    convenient online or in-store purchases.
+                    The global intrigue around cryptocurrencies is not just
+                    limited to investments. Cryptocurrency exchange software
+                    development and white label crypto exchange software have
+                    birthed remittance solutions that offer swift, low-cost
+                    international transfers. For businesses operating in
+                    multiple countries, this is a game-changer.
                     <br />
-                    China has been widely recognised as the global leader in
-                    proximity mobile payments, which involve using smartphones
-                    for contactless transactions. This distinction can be
-                    attributed to the popularity of prominent platforms such as
-                    Alipay and Tenpay in the country.
-                    <br />
-                    <br />
-                    According to Statistics study conducted in 2022 across
-                    various regions Mobile wallet adoption in 39 countries and
-                    territories worldwide:
-                    <ul className="pt-4">
-                      <li>
-                        Asia exhibited significantly higher mobile wallet usage
-                        compared to Europe. In fact, out of the top ten
-                        countries with the highest mobile wallet adoption rates,
-                        nine were located in the Asia-Pacific region, with the
-                        top two originating from Southeast Asia.
-                      </li>
-                      <li>
-                        Saudi Arabia was the first non-Asian country to appear
-                        on the list, securing the ninth position. It wasn't
-                        until the 22nd spot that Sweden, representing Europe,
-                        made its appearance in the survey.
-                      </li>
-                      <li>
-                        Unlike in Asia-Pacific and the Middle East, where mobile
-                        wallets have gained prominence as the primary digital
-                        payment method, Europe and North America face
-                        competition from well-established digital payment
-                        systems like credit and debit cards.
-                      </li>
-                      <li>
-                        In emerging economies, mobile wallets represent the
-                        first introduction to digital payment solutions.
-                      </li>
-                    </ul>
                   </p>
                   <img src={articleImg1} className="w-100 pt-5" />
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
                   <p className="main-article-content">
-                    Mobile wallets: A dominant force
+                    Leveraging AI & ML for Predictive Commerce
                   </p>
                   <p className="light-article-content">
-                    At the end of 2020, there were over 2.8 billion mobile
-                    wallets in use, and it is projected this number to increase
-                    by nearly 74% over the next five years, to reach 4.8 billion
-                    by the end of 2025.
+                    The potential of AI in financial services is vast. From
+                    understanding market trends to predicting customer buying
+                    behaviour, artificial intelligence in banking and finance
+                    offers insights that were previously thought impossible.
+                    Solutions driven by machine learning in banking can forecast
+                    market fluctuations, helping businesses strategize and make
+                    informed decisions.
                     <br />
-                    Forecasts indicate that the utilisation of applications like
-                    Apple Pay or Google Pay in North America is expected to
-                    experience a twofold increase between 2020 and 2025.
-                    However, it is important to note that Asia's market size
-                    will surpass North America's by a significant margin. The
-                    aforementioned figures encompass applications like PayPal or
-                    Google Wallet, which allow users to store their credit or
-                    debit card information on their mobile devices for
-                    convenient online or in-store purchases.
-                    <br />
-                    China has been widely recognised as the global leader in
-                    proximity mobile payments, which involve using smartphones
-                    for contactless transactions. This distinction can be
-                    attributed to the popularity of prominent platforms such as
-                    Alipay and Tenpay in the country.
-                    <br />
-                    <br />
-                    According to Statistics study conducted in 2022 across
-                    various regions Mobile wallet adoption in 39 countries and
-                    territories worldwide:
-                    <ul className="pt-4">
-                      <li>
-                        Asia exhibited significantly higher mobile wallet usage
-                        compared to Europe. In fact, out of the top ten
-                        countries with the highest mobile wallet adoption rates,
-                        nine were located in the Asia-Pacific region, with the
-                        top two originating from Southeast Asia.
-                      </li>
-                      <li>
-                        Saudi Arabia was the first non-Asian country to appear
-                        on the list, securing the ninth position. It wasn't
-                        until the 22nd spot that Sweden, representing Europe,
-                        made its appearance in the survey.
-                      </li>
-                      <li>
-                        Unlike in Asia-Pacific and the Middle East, where mobile
-                        wallets have gained prominence as the primary digital
-                        payment method, Europe and North America face
-                        competition from well-established digital payment
-                        systems like credit and debit cards.
-                      </li>
-                      <li>
-                        In emerging economies, mobile wallets represent the
-                        first introduction to digital payment solutions.
-                      </li>
-                    </ul>
+                    With artificial intelligence in banking, remittance
+                    applications are becoming smarter. By analysing transaction
+                    data, these apps can offer predictive exchange rates,
+                    suggest optimal transfer times, or even detect fraudulent
+                    activities. The marriage of artificial intelligence in
+                    financial services with remittance applications holds great
+                    promise for global commerce.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
                 </div>
-                <div className="pt-5" ref={section5Ref} id="section5"></div>
-                <div className="pt-5" ref={section6Ref} id="section6"></div>
+                <div className="pt-5" ref={section5Ref} id="section5">
+                  <p className="main-article-content">
+                    Seamless Money Transfer with Cutting-edge Software
+                  </p>
+                  <p className="light-article-content">
+                    When we talk of global commerce, hassle free money transfer
+                    is at its heart. The growth of money transfer software
+                    development showcases the pressing need for reliable and
+                    swift transaction solutions. It's no longer about
+                    transferring funds but doing so instantly, securely, and
+                    with minimal fees. Platforms built on low code banking
+                    principles offer a combination of agility and
+                    customizability, making them indispensable in today's
+                    fast-paced commerce world.
+                    <br />
+                    One of the key drivers behind the rapid adoption of
+                    remittance applications is the use of pre made applications
+                    and payment banking platforms. These platforms allow for
+                    quick customization based on the unique needs of each
+                    business. Whether it's currency preferences, regional
+                    compliance, or user experience, these platforms offer
+                    unparalleled flexibility.
+                  </p>
+                  <img src={articleImg2} className="w-100 pt-5" />
+                </div>
+                <div className="pt-5" ref={section6Ref} id="section6">
+                  <p className="main-article-content">
+                    At The Honest Company, we're at the forefront of this
+                    remittance revolution. Our expertise in financial management
+                    tool development and our commitment to innovation ensure
+                    that businesses receive top-notch solutions tailored for
+                    their expansion goals.
+                  </p>
+                  <p className="light-article-content">
+                    Get a free consultation to understand how we can make global
+                    trade simpler and more efficient for you. Whether you need
+                    an advanced financial management tool or aim to explore
+                    blockchain financial management, we're here to guide. Our
+                    dedication lies in merging creativity with technology. We
+                    grasp the nuances of global commerce, offering digital
+                    solutions that resonate with your brand's ethos and meet the
+                    demands of a global audience.
+                  </p>
+                </div>
               </div>
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="border p-4 bg-white sticky-top">
@@ -342,7 +232,7 @@ export default function App() {
                     className="sticky-top"
                   />
                 </div>
-                <div className="border p-4 mt-5 bg-white sticky">
+                <div className="border p-4 mt-5 bg-white">
                   <div className="side-article-heading">
                     Want to build one for yourself?
                   </div>
