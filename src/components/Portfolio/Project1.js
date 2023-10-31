@@ -36,7 +36,7 @@ function Project1() {
       {/* mian content */}
       <section>
         <div className="container">
-          <ul className="breadcrumb-navigation">
+          <ul className="breadcrumb-navigation pt-6">
             <li>
               <a href="home">Home</a>
             </li>

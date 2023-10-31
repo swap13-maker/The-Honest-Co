@@ -1,5 +1,6 @@
 .breadcrumb-navigation {
   padding: 20px 0;
+  padding-top: 80px;
 }
 .breadcrumb-navigation > li {
   display: inline;

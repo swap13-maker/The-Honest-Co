@@ -2,12 +2,12 @@
   position: fixed;
   top: -100px;
   left: 0;
-  width: 110%;
+  width: 117%;
   height: 72px;
   z-index: 1;
   background: inherit;
   color: #1a1a1a;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: top 0.3s;
   z-index: 9;
   
@@ -17,7 +17,8 @@
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(8px);
   z-index: 9999;
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  width: 117%;
   /* border-bottom: 1px solid #f1eeee; */
 }
 .glass1::before {
@@ -25,10 +26,10 @@
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
+  width: 117%;
   height: 100%;
   content: "";
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .nav1-sticky1-button {
   font-style: normal;
@@ -52,6 +53,5 @@
 .sticky {
   position: fixed;
   top: 0;
-  width: 110%;
   z-index: 100;
 }
