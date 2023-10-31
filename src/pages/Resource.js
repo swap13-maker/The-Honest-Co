@@ -50,7 +50,7 @@ const Resource = () => {
       {/* mian content */}
       <section>
         <div className="container">
-          <ul className="breadcrumb-navigation">
+          <ul className="breadcrumb-navigation pt-7">
             <li>
             <Link to="/">Home</Link>
             </li>
@@ -242,6 +242,7 @@ const Resource = () => {
       </section>
       <Footer />
     </section>
+   
   );
 };
 
