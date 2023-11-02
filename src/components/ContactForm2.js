@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
-function ContactForm2({ onProjectChange, onRadioChange }) {
+function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
   const [project, setProject] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
+  const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
 
   useEffect(() => {
     const storedProject = localStorage.getItem("project");
     const storedOption = localStorage.getItem("selectedOption");
+    const storedSelectedCheckboxes = JSON.parse(localStorage.getItem("selectedCheckboxes"));
+
     if (storedProject) setProject(storedProject);
     if (storedOption) setSelectedOption(storedOption);
+    if (storedSelectedCheckboxes) setSelectedCheckboxes(storedSelectedCheckboxes);
   }, []);
 
   const handleProjectChange = (event) => {
@@ -26,6 +30,29 @@ function ContactForm2({ onProjectChange, onRadioChange }) {
     localStorage.setItem("selectedOption", newOption);
   };
 
+  const handleCheckboxChange = (event) => {
+    const value = event.target.value;
+    const updatedCheckboxes = [...selectedCheckboxes];
+
+    if (event.target.checked) {
+      updatedCheckboxes.push(value);
+    } else {
+      const index = updatedCheckboxes.indexOf(value);
+      if (index !== -1) {
+        updatedCheckboxes.splice(index, 1);
+      }
+    }
+
+    setSelectedCheckboxes(updatedCheckboxes);
+    onCheckboxesChange(updatedCheckboxes); // Trigger the parent component
+    localStorage.setItem("selectedCheckboxes", JSON.stringify(updatedCheckboxes));
+  };
+
+  // Use this effect to trigger CustomerContact when checkboxes change
+  useEffect(() => {
+    onCheckboxesChange(selectedCheckboxes);
+  }, [selectedCheckboxes]);
+
   return (
     <div className="py-4">
       <div className="contact-heading">
@@ -37,20 +64,44 @@ function ContactForm2({ onProjectChange, onRadioChange }) {
         <div className="row">
           <div className="col-md-4 col-12">
             <Form.Group className="pt-4" controlId="architectural">
-              <Form.Check type="checkbox" value="Architectural" label="Architectural" />
+              <Form.Check
+                type="checkbox"
+                value="Architectural"
+                label="Architectural"
+                checked={selectedCheckboxes.includes("Architectural")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
 
             <Form.Group className="pt-4" controlId="industrial">
-              <Form.Check type="checkbox" value="Industrial" label="Industrial" />
+              <Form.Check
+                type="checkbox"
+                value="Industrial"
+                label="Industrial"
+                checked={selectedCheckboxes.includes("Industrial")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
           </div>
           <div className="col-md-4 col-12">
             <Form.Group className="pt-4" controlId="applicationDevelopment">
-              <Form.Check type="checkbox" value="Application Development" label="Application Development" />
+              <Form.Check
+                type="checkbox"
+                value="Application Development"
+                label="Application Development"
+                checked={selectedCheckboxes.includes("Application Development")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
 
             <Form.Group className="pt-4" controlId="contentCreation">
-              <Form.Check type="checkbox" value="Content Creation" label="Content Creation" />
+              <Form.Check
+                type="checkbox"
+                value="Content Creation"
+                label="Content Creation"
+                checked={selectedCheckboxes.includes("Content Creation")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
           </div>
         </div>

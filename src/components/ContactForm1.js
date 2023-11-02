@@ -13,11 +13,15 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
     const storedOrganization = localStorage.getItem("organization");
     const storedEmail = localStorage.getItem("email");
     const storedContact = localStorage.getItem("contact");
+    const isContactChecked = localStorage.getItem("isContactChecked");
 
     if (storedName) setName(storedName);
     if (storedOrganization) setOrganization(storedOrganization);
     if (storedEmail) setEmail(storedEmail);
     if (storedContact) setContact(storedContact);
+    if (isContactChecked === "true") {
+      setShowContactForm(true);
+    }
   }, []);
 
   const handleNameChange = (event) => {
@@ -52,8 +56,9 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
     setShowContactForm(event.target.checked);
     if (!event.target.checked) {
       setContact('');
-      localStorage.removeItem('email');
+      localStorage.removeItem('contact');
     }
+    localStorage.setItem("isContactChecked", event.target.checked);
   };
 
   return (
@@ -96,7 +101,7 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
         )}
 
         <Form.Group className="pt-4" controlId="formCheckbox">
-            <Form.Check type="checkbox" label="You will be contacted via the entered number" onChange={handleCheckboxChange} />
+            <Form.Check type="checkbox" label="You will be contacted via the entered number" checked={showContactForm} onChange={handleCheckboxChange} />
         </Form.Group>
 
       </div>

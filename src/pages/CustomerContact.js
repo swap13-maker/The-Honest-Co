@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ContactForm1 from "../components/ContactForm1";
 import ContactForm2 from "../components/ContactForm2";
 import ContactForm3 from "../components/ContactForm3";
@@ -15,8 +15,11 @@ function CustomerContact() {
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [project, setProject] = useState("");
+  const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
   const [selectedOption, setSelectedOption] = useState("");
   const [more, setMore] = useState("");
+  const [selectedTimeline, setSelectedTimeline] = useState("");
+  const [selectedBudget, setSelectedBudget] = useState("");
 
   const handleNameChange = (newName) => {
     setName(newName);
@@ -46,12 +49,79 @@ function CustomerContact() {
     setMore(newMore);
   };
 
+  const handleTimelineChange = (newTimeline) => {
+    setSelectedTimeline(newTimeline);
+  };
+
+  const handleBudgetChange = (newBudget) => {
+    setSelectedBudget(newBudget);
+  };
+
+  const handleCheckboxChange = (updatedCheckboxes) => {
+    setSelectedCheckboxes(updatedCheckboxes);
+  };
+
   const [step, setStep] = useState(1);
   const handleNext = () => {
     setStep((prevStep) => prevStep + 1);
   };
   const handlePrevious = () => {
     setStep((prevStep) => prevStep - 1);
+  };
+
+  useEffect(() => {
+    // Load project data from local storage if needed
+    const storedProject = localStorage.getItem("project");
+    if (storedProject) {
+      setProject(storedProject);
+    }
+
+    // Fetch selectedCheckboxes data from local storage
+    const storedCheckboxes = localStorage.getItem("selectedCheckboxes");
+    if (storedCheckboxes) {
+      setSelectedCheckboxes(JSON.parse(storedCheckboxes));
+    }
+  }, []);
+
+  const handleSubmission = () => {
+    // Collect the data from localStorage
+    const formData = {
+      name,
+      organization,
+      email,
+      contact,
+      project,
+      selectedCheckboxes,
+      selectedOption,
+      more,
+      selectedTimeline,
+      selectedBudget
+    };
+
+    // Send the data to the specified URL
+    fetch("https://thehonestco.in/mail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Handle the response data here
+        console.log(data);
+
+        // Remove all local storage data (if needed)
+        localStorage.clear();
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
   };
 
   return (
@@ -76,34 +146,32 @@ function CustomerContact() {
             <div className={`progress-step ${step >= 2 ? "active" : ""}`}>
               2. Area of interest
               <ul className="sub-progress-step">
+                {selectedCheckboxes.map((checkbox) => (
+                  <li key={checkbox}>{checkbox}</li>
+                ))}
                 <li id="project">{project}</li>
-                <li></li>
-                <li></li>
-                <li></li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 3 ? "active" : ""}`}>
-              3. General Information
+              3. Project Details
               <ul className="sub-progress-step">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Timeline: {selectedTimeline}</li>
+                <li>Budget: {selectedBudget}</li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 4 ? "active" : ""}`}>
-              4. Area of interest
+              4. Additional Info
               <ul className="sub-progress-step">
-                <li id="name">{more}</li>
+                <li>{more}</li>
               </ul>
             </div>
           </div>
         </div>
-        
+
         <Container className="col-md-9 col-12 border-element form-content" style={{border:'none'}}>
           <div className="top_Side">
           </div>
           <div className="Left_Side">
-
           </div>
          
           <div
@@ -123,9 +191,15 @@ function CustomerContact() {
                 <ContactForm2
                   onProjectChange={handleProjectChange}
                   onRadioChange={handleRadioChange}
+                  onCheckboxesChange={handleCheckboxChange}
                 />
               )}
-              {step === 3 && <ContactForm3 />}
+              {step === 3 && (
+                <ContactForm3
+                  onTimelineChange={handleTimelineChange}
+                  onBudgetChange={handleBudgetChange}
+                />
+              )}
               {step === 4 && <ContactForm4 onMoreChange={handleMoreChange} />}
             </Form>
           </div>
@@ -139,7 +213,7 @@ function CustomerContact() {
                 className="previous-button form-btn-prev"
                 onClick={handlePrevious}
               >
-                <img className="w-50" src={Prev} />
+                <img className="w-50" src={Prev} alt="Previous" />
               </a>
             )}
 
@@ -150,17 +224,14 @@ function CustomerContact() {
             )}
 
             {step === 4 && (
-              <button className="submit-button form-btn">Submit</button>
+              <button className="submit-button form-btn" onClick={handleSubmission}>Submit</button>
             )}
           </div>
         </Container>
       </div>
       
-      
-  <div className="bottom_Side"></div>
-  <div className="right_Side"></div>
-
-  
+      <div className="bottom_Side"></div>
+      <div className="right_Side"></div>
     </Container>
   );
 }
