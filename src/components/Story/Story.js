@@ -61,7 +61,7 @@ function Story() {
         </div>
       </section>
       <div className="row slider-container w-100">
-        <div className="col-md-2 col-12 slider-container-left">
+        <div className="col-md-2 col-12 slider-container-left d-none d-md-block">
           <img
             src={storyGif}
             className="card-icon story__left__icon"

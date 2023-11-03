@@ -3,7 +3,7 @@ import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
 
 export default function ServicesMob() {
   return (
-    <div className="container d-block d-md-none">
+    <div className="container my-5 d-block d-md-none">
       <MDBAccordion initialActive={1}>
         <MDBAccordionItem collapseId={1} headerTitle="Architecture">
           <div className="accordian-header">

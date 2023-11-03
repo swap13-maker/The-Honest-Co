@@ -8,7 +8,7 @@ function CaseStudies() {
   return (
     <section className="row py-5">
       <div className="col-md-3 col-12">
-        <div className="sidebar-btn-section sticky-top">
+        <div className="sidebar-btn-section sidebar-btn-section--3 sticky-top">
           <button className="bg-dark text-uppercase text-white font-weight-300 button">
             VIEW All CASE STUDIES
           </button>

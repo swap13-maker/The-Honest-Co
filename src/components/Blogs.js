@@ -11,7 +11,7 @@ function Blogs() {
   return (
     <section className="row py-5">
       <div className="col-md-3">
-        <div className="sidebar-btn-section sticky-top">
+        <div className="sidebar-btn-section sidebar-btn-section--2 sticky-top">
           <button className="bg-dark text-uppercase text-white font-weight-300 resource-button">
             VIEW All BLOGS
           </button>
@@ -21,7 +21,7 @@ function Blogs() {
         <div className="main-content">
           <div className="row blog-border py-5">
             <div className="col-md-6 right_border">
-            <div className="top_border"></div>
+              <div className="top_border d-none d-md-block"></div>
               <div className="blog-card px-4 pt-4">
                 <div className="blog-heading">
                   Find your Fashion

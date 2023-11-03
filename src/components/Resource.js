@@ -12,7 +12,7 @@ function Resource() {
     <section className="container py-5">
       <div className="row border-bottom-bold py-4 d-flex align-items-center">
         <div className="col-10 col-md-6 col-lg-6 px-0">
-          <div className="text-uppercase">
+          <div className="text-uppercase pl-xs-2">
             <h1>
               <span className="text-light-color text-light-space">OUR</span>{" "}
               RESOURCES
@@ -20,7 +20,7 @@ function Resource() {
           </div>
         </div>
         <div className="col-2 col-md-6 col-lg-6 d-flex ml-auto justify-content-end">
-            <Lottie animationData={loader} autoplay loop className="w-20"/>
+            <Lottie animationData={loader} autoplay loop className="w-xs-100 w-md-12"/>
         </div>
       </div>
 
