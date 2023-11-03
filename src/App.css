@@ -844,3 +844,6 @@ input[type="checkbox"]:before {
   line-height: normal;
   text-decoration-line: underline;
 }
+.sticky-top-with-padding {
+  top: 80px !important;
+}
