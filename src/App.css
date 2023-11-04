@@ -281,8 +281,7 @@ h1 {
 .blog_left {
   position: relative;
 }
-.blog_left::before,
-.blog_left::after {
+.blog_left::before {
   content: "";
   position: absolute;
   bottom: -10px;
