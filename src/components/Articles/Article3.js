@@ -1,0 +1,256 @@
+import React, { useRef, useEffect } from "react";
+import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
+import "./../../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import InnerHeader from "../InnerHeader.js";
+import Footer from "../Footer";
+import { Link } from "react-router-dom";
+import article from "../../images/article1.png";
+import articleImg1 from "../../images/articleImg1.png";
+import article3Img1 from "../../images/Article3Img3.jpg";
+import articleImg2 from "../../images/articleImg2.jpg";
+import article2Img3 from "../../images/Article2Img3.png";
+
+export default function App() {
+  const section1Ref = useRef();
+  const section2Ref = useRef();
+  const section3Ref = useRef();
+  const section4Ref = useRef();
+  const section5Ref = useRef();
+  const section6Ref = useRef();
+
+  const navHeader = [
+    {
+      headerTitle: "Agriculture Technology",
+      headerRef: section1Ref,
+      headerID: "section1",
+    },
+    {
+      headerTitle: "Battle with Plant Diseases",
+      headerRef: section2Ref,
+      headerID: "section2",
+    },
+    {
+      headerTitle: "Solutions and Precentative Measures",
+      headerRef: section3Ref,
+      headerID: "section3",
+    },
+    {
+      headerTitle: "Empowering Farmers with knowledge",
+      headerRef: section4Ref,
+      headerID: "section4",
+    },
+    {
+      headerTitle: "AI in Agro-Healthcare",
+      headerRef: section5Ref,
+      headerID: "section5",
+    },
+  ];
+
+  return (
+    <section>
+      {/* Header */}
+      <InnerHeader />
+      {/* mian content */}
+      <section>
+        <div className="container">
+          <ul className="breadcrumb-navigation pt-7">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/resources">Resources</Link>
+            </li>
+            <li className="current">Articles</li>
+          </ul>
+          <div className="py-4">
+            <div className="row">
+              <div className="col-12 text-align-center">
+                <div className="article-heading">
+                  Leveraging AI and ML Models To Help Farmers Early Detect Plant
+                  Diseases
+                </div>
+                <div className="article-sub-heading pt-4">
+                  <span className="px-2">May 19, 2023</span> &bull;{" "}
+                  <span className="px-2">Custom Application Development</span>{" "}
+                  &bull; <span className="px-2">Healthcare Technology</span>
+                </div>
+                <img src={article3Img1} className="w-100 pt-5" />
+              </div>
+
+              <div className="col-md-9">
+                <div className="pt-5" ref={section1Ref} id="section1">
+                  <p className="main-article-content">
+                    Agriculture, for millennia, has been at the heart of human
+                    civilization. With changing times, the techniques have
+                    evolved, but the challenges remain as daunting as ever.
+                  </p>
+                  <p className="light-article-content">
+                    Among these challenges, one that stands out is the battle
+                    against plant diseases. With the advent of the digital age,
+                    Artificial Intelligence (AI) and Machine Learning (ML) are
+                    now poised to transform the agricultural sector,
+                    particularly in the domain of early plant disease detection.
+                  </p>
+                </div>
+                <div className="pt-5" ref={section2Ref} id="section2">
+                  <p className="main-article-content">
+                    The Age-old Battle with Plant Diseases
+                  </p>
+                  <p className="light-article-content">
+                    Farmers have always grappled with plant diseases that can
+                    decimate entire crops. From fungi to pests, multiple
+                    adversaries can compromise the health of plants. Traditional
+                    methods, though valuable, often rely on late-stage visual
+                    symptoms or require specialised knowledge, making early
+                    detection a challenge.
+                    <br />
+                    <br />
+                    The latter has historically devastated crops, often leaving
+                    farmers helpless and at the mercy of nature. But what if
+                    there was a way to foresee these crop diseases and combat
+                    them proactively? Enter the realm of Artificial Intelligence
+                    (AI) and Machine Learning (ML) - transforming traditional
+                    farming into precision agriculture..
+                  </p>
+                  <p className="main-article-content">
+                    The Process: From Image Capture to Intervention
+                  </p>
+                  <p className="light-article-content">
+                    Using sophisticated algorithms, AI models can process
+                    thousands of images, identifying minute changes or patterns
+                    that suggest the onset of a disease. ML models, fed with
+                    vast datasets, can predict potential disease outbreaks based
+                    on current plant conditions, historical data, and
+                    environmental factors.
+                    <br />
+                    <br />
+                    Upon detection, these systems provide immediate feedback to
+                    farmers, outlining not just the diagnosis but also
+                    suggesting actionable solutions. Advanced cameras or even
+                    farmer-friendly mobile applications can click pictures of
+                    the crops and can be used for the same.
+                    <br />
+                  </p>
+                  <p className="main-article-content">Real-time Analysis</p>
+                  <p className="light-article-content">
+                    These images feed into a sophisticated AI model trained on
+                    machine learning in healthcare. It identifies patterns,
+                    color variations, and other subtle indicators that might be
+                    invisible to the naked eye.
+                    <br />
+                  </p>
+                  <img src={articleImg1} className="w-100 pt-5" />
+                  <br />
+                  <br />
+                  <p className="main-article-content">
+                    Disease Detection and Prediction
+                  </p>
+                  <p className="light-article-content">
+                    On recognizing a pattern consistent with a known plant
+                    disease or even the early onset of one, the system alerts
+                    the farmer. But it doesn't stop at mere identification.
+                  </p>
+                </div>
+                <div className="pt-5" ref={section3Ref} id="section3">
+                  <p className="main-article-content">
+                    Solutions and Preventative Measures
+                  </p>
+                  <p className="light-article-content">
+                    The model suggests actionable solutions - whether it's a
+                    specific treatment, a change in watering schedules, or
+                    recommendations for pest control. It’s like having a plant
+                    healthcare specialist on call, 24/7.
+                  </p>
+                  <img src={articleImg1} className="w-100 pt-5" />
+                </div>
+                <div className="pt-5" ref={section4Ref} id="section5">
+                  <p className="main-article-content">
+                    Based on the detected disease, AI systems can recommend
+                    treatments, ensuring quick action and minimal damage. By
+                    analysing recurrent patterns, ML models can suggest
+                    preventive measures, from altered watering schedules to
+                    specific soil treatments
+                  </p>
+                  <p className="light-article-content">
+                    The fusion of agriculture with AI and ML signifies a
+                    promising future for farmers worldwide. With more accurate
+                    early detection systems, reduced crop loss, and enhanced
+                    yield, the dream of sustainable and efficient farming seems
+                    closer than ever.
+                    <br />
+                  </p>
+                  <img src={article2Img3} className="w-100 pt-5" />
+                </div>
+                <div className="pt-5" ref={section5Ref} id="section6">
+                  <p className="main-article-content">
+                    The Bigger Picture: AI in Agro-Healthcare
+                  </p>
+                  <p className="light-article-content">
+                    This innovative application of ai in health insurance of
+                    crops is a testament to how technology can enhance
+                    industries traditionally thought to be beyond its purview.
+                    We're on the brink of an agro-revolution where tech ensures
+                    that food on our plates is healthier, more abundant, and
+                    sustainably produced. 
+                    <br />
+                    <br/>
+                    Craft your agro - tech future with The
+                    Honest Company. Delve into the intricate world where
+                    technology meets agriculture. At The Honest Company, we
+                    don’t just see technological advancements, we envision
+                    holistic solutions harmonising industries with innovation.
+                    Whether you're a farmer looking to safeguard your fields or
+                    an enterprise aiming to pioneer agro-tech solutions, we’re
+                    your collaborators.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3 pt-5 pl-md-5">
+                <div className="bg-white sticky-top sticky-top-with-padding">
+                  <div className="border p-4 d-none d-md-block">
+                    <ScrollHighlightNabbar
+                      section1Ref={section1Ref}
+                      navHeader={navHeader}
+                      className="sticky-top"
+                    />
+                  </div>
+                  <div className="border p-4 mt-5 bg-white">
+                    <div className="side-article-heading">
+                      Want to build one for yourself?
+                    </div>
+                    <div className="side-article-subheading pt-3">
+                      Let us help you with your dream project and some other
+                      text that will go here.
+                    </div>
+                    <div className="side-article-download pt-3">
+                      Download
+                      <svg
+                        width="20"
+                        height="14"
+                        viewBox="-10 0 25 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="animated-svg"
+                      >
+                        <path
+                          id="Vector"
+                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container bg-white py-4"></section>
+      <Footer />
+    </section>
+  );
+}

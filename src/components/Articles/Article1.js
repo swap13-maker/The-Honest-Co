@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import article from "../../images/article1.png";
 import articleImg1 from "../../images/articleImg1.jpg";
 import articleImg2 from "../../images/articleImg2.jpg";
+import './Article.css'
 
 export default function App() {
   const section1Ref = useRef();
@@ -227,14 +228,20 @@ export default function App() {
               </div>
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">
-                  <div className="border p-4 d-none d-md-block">
+                  <div className="p-4 d-none d-md-block">
+                  <div className="Side_border-top"></div>
+                  <div className="border-right"></div>
                     <ScrollHighlightNabbar
                       section1Ref={section1Ref}
                       navHeader={navHeader}
                       className="sticky-top"
                     />
+                  <div className="border-left"></div>  
+                  <div className="Side_border-bottom"></div>
                   </div>
-                  <div className="border p-4 mt-5 bg-white">
+                  <div className="p-4 mt-5 bg-white">
+                  <div className="Side_border-top"></div>
+                  <div className="box-bottom-right"></div>
                     <div className="side-article-heading">
                       Want to build one for yourself?
                     </div>
@@ -258,6 +265,9 @@ export default function App() {
                           fill="black"
                         ></path>
                       </svg>
+                      
+                      <div className="box-bottom-left"></div>  
+                  <div className="Side_border-bottom"></div>
                     </div>
                   </div>
                 </div>
