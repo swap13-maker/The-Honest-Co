@@ -51,7 +51,7 @@ const Resource = () => {
       <InnerHeader />
       {/* mian content */}
       <section>
-        <div className="container">
+        <div className="container resource__page">
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>

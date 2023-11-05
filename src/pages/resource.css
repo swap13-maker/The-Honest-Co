@@ -1,16 +1,16 @@
-.image-card img {
+.resource__page .image-card img {
   max-height: 180px;
 }
 
-.image-card {
+.resource__page .image-card {
   height: 150px;
 }
 
-.wrapper:hover .image-card img {
+.resource__page .wrapper:hover .image-card img {
   transform: scale(1);
   max-height: 325px;
 }
 
-.wrapper:hover .image-card {
+.resource__page .wrapper:hover .image-card {
   height: 150px;
 }
