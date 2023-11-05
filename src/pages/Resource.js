@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
+import "./resource.css";
+
 import Filter from "./../components/Resource/Filter";
 import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
@@ -14,7 +16,7 @@ const Resource = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState(null);
   const [filteredIndex, setFilteredIndex] = useState(0);
@@ -46,13 +48,13 @@ const Resource = () => {
   return (
     <section>
       {/* Header */}
-      <InnerHeader/>
+      <InnerHeader />
       {/* mian content */}
       <section>
         <div className="container">
           <ul className="breadcrumb-navigation pt-7">
             <li>
-            <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="current">Resources</li>
           </ul>
@@ -67,7 +69,12 @@ const Resource = () => {
               </div>
               <div className="col-12 col-md-5 d-flex">
                 <div className="d-flex ml-auto align-items-start">
-                  <Lottie animationData={loader} autoplay loop className="w-75 d-flex ml-auto margin-top--35" />
+                  <Lottie
+                    animationData={loader}
+                    autoplay
+                    loop
+                    className="w-75 d-flex ml-auto margin-top--35"
+                  />
                 </div>
               </div>
             </div>
@@ -167,40 +174,42 @@ const Resource = () => {
               {item.map((data, index) => {
                 const { name, logo, category, image, description } = data;
                 // Check if the index is 1, 4, 7, 10, 13, etc.
-                const cardClass = index % 3 === 1 ? 'odd-res' : 'even-res';
-                const marginTopClass = index === 0 || index === 1 || index === 2 ? '' : 'margin-res';
+                const cardClass = index % 3 === 1 ? "odd-res" : "even-res";
+                const marginTopClass =
+                  index === 0 || index === 1 || index === 2 ? "" : "margin-res";
 
                 return (
-                  <div className={`col-md-4 col-12 py-3 ${cardClass} ${marginTopClass}`} key={index}>
+                  <div
+                    className={`col-md-4 col-12 py-3 ${cardClass} ${marginTopClass}`}
+                    key={index}
+                  >
                     <div className="wrapper" data-aos="fade-up">
-                      <div className="res-zoom-effect-container">
+                      <div className="zoom-effect-container">
                         <div className="image-card">
                           <img className="card-img-top" src={image} />
                         </div>
-                      </div>
-                      <div className="py-4">
-                        <div className="blog-heading">
-                          {name}
-                        </div>
-                        <div className="blog-title">
-                          {description}
-                          <div className="pt-3 text-decoration-underline">
-                            Read More
-                            <svg
+                        <div className="py-4 translate__down">
+                          <div className="blog-heading">{name}</div>
+                          <div className="blog-title">
+                            {description}
+                            <div className="pt-3 text-decoration-underline">
+                              Read More
+                              <svg
                                 width="20"
                                 height="14"
                                 viewBox="-10 0 25 14"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
-                            >
+                              >
                                 <path
-                                id="Vector"
-                                d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                                fill="black"
+                                  id="Vector"
+                                  d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                                  fill="black"
                                 />
-                            </svg>
+                              </svg>
+                            </div>
                           </div>
-                        </div>                        
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -215,7 +224,11 @@ const Resource = () => {
         <div className="row py-5">
           <div className="col-12 col-md-7 col-lg-7">
             <div className="text-uppercase">
-              <h1 className="left-aligned portfolio-heading">Want to build one<br/>for yourself ?</h1>
+              <h1 className="left-aligned portfolio-heading">
+                Want to build one
+                <br />
+                for yourself ?
+              </h1>
             </div>
           </div>
           <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
@@ -242,7 +255,6 @@ const Resource = () => {
       </section>
       <Footer />
     </section>
-   
   );
 };
 

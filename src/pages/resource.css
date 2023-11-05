@@ -1,0 +1,16 @@
+.image-card img {
+  max-height: 180px;
+}
+
+.image-card {
+  height: 150px;
+}
+
+.wrapper:hover .image-card img {
+  transform: scale(1);
+  max-height: 325px;
+}
+
+.wrapper:hover .image-card {
+  height: 150px;
+}
