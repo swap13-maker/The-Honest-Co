@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "../../App.css";
 import "../Slider.css";
 import "./story.css";
@@ -25,21 +23,10 @@ function Story() {
     variableWidth: true,
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // Animation duration in milliseconds
-      offset: 200, // Offset (in pixels) from the element's position to trigger the animation
-      easing: "ease-in-out", // Animation easing (CSS transition-timing-function)
-      delay: 0, // Delay (in milliseconds) before the animation starts
-      once: true, // Whether the animation should occur only once or every time the element is scrolled into view
-      mirror: false, // Whether elements with the same data-aos value should animate individually or together
-    });
-  }, []);
-
   return (
     <>
       <section className="container pt-5 pb-5 story__container">
-        <div className="row" data-aos="fade-up">
+        <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
               <h1 className="left-aligned section-heading">
@@ -70,14 +57,11 @@ function Story() {
         </div>
         <div
           className="col-md-10 col-12 "
-          data-aos="fade-up"
-          data-aos-duration="1000"
         >
           <Slider {...settings}>
             <div
               className="bg- pt-1"
               style={{ width: 440 }}
-              data-aos="fade-left"
             >
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon py-3" />
@@ -101,7 +85,6 @@ function Story() {
             <div
               className="bg-white"
               style={{ width: 440 }}
-              data-aos="fade-left"
             >
               <div className="py-4 story-icon">
                 <img src={icon2} className="card-icon py-2" />
@@ -126,7 +109,6 @@ function Story() {
             <div
               className="bg-white"
               style={{ width: 440 }}
-              data-aos="fade-left"
             >
               <div className="py-4 story-icon">
                 <img src={icon3} className="card-icon pt-3 pb-2" />
@@ -151,7 +133,6 @@ function Story() {
             <div
               className="bg-white"
               style={{ width: 440 }}
-              data-aos="fade-left"
             >
               <div className="py-4 story-icon last-icon">
                 <img src={icon4} className="card-icon" />
