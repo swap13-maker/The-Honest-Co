@@ -183,9 +183,9 @@ const Resource = () => {
                     className={`col-md-4 col-12 py-3 ${cardClass} ${marginTopClass}`}
                     key={index}
                   >
-                    <div className="wrapper" data-aos="fade-up">
+                    <div data-aos="fade-up">
                       <div className="zoom-effect-container">
-                        <div className="image-card">
+                        <div className="image__wrapper">
                           <img className="card-img-top" src={image} />
                         </div>
                         <div className="py-4 translate__down">

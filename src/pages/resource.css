@@ -1,16 +1,12 @@
-.resource__page .image-card img {
-  max-height: 180px;
+.resource__page .image__wrapper {
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
-.resource__page .image-card {
-  height: 150px;
+.resource__page .image__wrapper img {
+  transition: all 0.5s ease;
 }
 
-.resource__page .wrapper:hover .image-card img {
-  transform: scale(1);
-  max-height: 325px;
-}
-
-.resource__page .wrapper:hover .image-card {
-  height: 150px;
+.resource__page .image__wrapper img:hover {
+  scale: 1.2;
 }
