@@ -99,7 +99,7 @@ function CustomerContact() {
     };
 
     // Send the data to the specified URL
-    fetch("https://thehonestco.in/mail.php", {
+    fetch("https://thehonestco.in/mailCustomer.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -115,9 +115,10 @@ function CustomerContact() {
       .then((data) => {
         // Handle the response data here
         console.log(data);
-
         // Remove all local storage data (if needed)
         localStorage.clear();
+        // redirect to home
+        window.location.href = '/';
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
