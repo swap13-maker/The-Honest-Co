@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
-function CreatorForm2({ onProjectChange, onRadioChange }) {
+function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
   const [project, setProject] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
+  const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
 
   useEffect(() => {
     const storedProject = localStorage.getItem("project");
     const storedOption = localStorage.getItem("selectedOption");
+    const storedSelectedCheckboxes = JSON.parse(localStorage.getItem("selectedCheckboxes"));
+
     if (storedProject) setProject(storedProject);
     if (storedOption) setSelectedOption(storedOption);
+    if (storedSelectedCheckboxes) setSelectedCheckboxes(storedSelectedCheckboxes);
   }, []);
 
   const handleProjectChange = (event) => {
@@ -26,6 +30,29 @@ function CreatorForm2({ onProjectChange, onRadioChange }) {
     localStorage.setItem("selectedOption", newOption);
   };
 
+  const handleCheckboxChange = (event) => {
+    const value = event.target.value;
+    const updatedCheckboxes = [...selectedCheckboxes];
+
+    if (event.target.checked) {
+      updatedCheckboxes.push(value);
+    } else {
+      const index = updatedCheckboxes.indexOf(value);
+      if (index !== -1) {
+        updatedCheckboxes.splice(index, 1);
+      }
+    }
+
+    setSelectedCheckboxes(updatedCheckboxes);
+    onCheckboxesChange(updatedCheckboxes); // Trigger the parent component
+    localStorage.setItem("selectedCheckboxes", JSON.stringify(updatedCheckboxes));
+  };
+
+  // Use this effect to trigger CustomerContact when checkboxes change
+  useEffect(() => {
+    onCheckboxesChange(selectedCheckboxes);
+  }, [selectedCheckboxes]);
+
   return (
     <div className="py-4">
       <div className="contact-heading">
@@ -36,18 +63,36 @@ function CreatorForm2({ onProjectChange, onRadioChange }) {
       <div className="contact-form py-4">
         <div className="row">
           <div className="col-md-4 col-12">
-            <Form.Group className="pt-4" controlId="creative">
-              <Form.Check type="checkbox" value="Creative" label="Creative" />
+            <Form.Group className="pt-4" controlId="Creative">
+              <Form.Check
+                type="checkbox"
+                value="Creative"
+                label="Creative"
+                checked={selectedCheckboxes.includes("Creative")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
           </div>
           <div className="col-md-4 col-12">
-            <Form.Group className="pt-4" controlId="technology">
-              <Form.Check type="checkbox" value="Technology" label="Technology" />
+            <Form.Group className="pt-4" controlId="Technology">
+              <Form.Check
+                type="checkbox"
+                value="Technology"
+                label="Technology"
+                checked={selectedCheckboxes.includes("Technology")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
           </div>
           <div className="col-md-4 col-12">
-            <Form.Group className="pt-4" controlId="management">
-              <Form.Check type="checkbox" value="Management" label="Management" />
+            <Form.Group className="pt-4" controlId="Management">
+              <Form.Check
+                type="checkbox"
+                value="Management"
+                label="Management"
+                checked={selectedCheckboxes.includes("Management")}
+                onChange={handleCheckboxChange}
+              />
             </Form.Group>
           </div>
         </div>
@@ -68,7 +113,8 @@ function CreatorForm2({ onProjectChange, onRadioChange }) {
 
       <div className="contact-form py-4">
         <div className="contact-heading">
-          <span className="font-weight-600 text-black"> Become a Partner</span>
+          How can we
+          <span className="font-weight-600 text-black"> help you!</span>
         </div>
 
         <Form.Group className="pt-4" controlId="radioGroup1">
@@ -76,8 +122,8 @@ function CreatorForm2({ onProjectChange, onRadioChange }) {
             type="radio"
             name="radioGroup"
             id="option1"
-            value="Lorem Ipsum 1"
-            label="Lorem Ipsum 1"
+            value="Option 1"
+            label="Need assistance with getting started?"
             checked={selectedOption === "Option 1"}
             onChange={handleRadioChange}
           />
@@ -88,8 +134,8 @@ function CreatorForm2({ onProjectChange, onRadioChange }) {
             type="radio"
             name="radioGroup"
             id="option2"
-            value="Lorem Ipsum 2"
-            label="Lorem Ipsum 2"
+            value="Option 2"
+            label="Have a plan, need a team to execute?"
             checked={selectedOption === "Option 2"}
             onChange={handleRadioChange}
           />

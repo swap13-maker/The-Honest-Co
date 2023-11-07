@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CreatorForm1 from "../components/CreatorForm1";
 import CreatorForm2 from "../components/CreatorForm2";
-import ContactForm3 from "../components/ContactForm3";
+import CreatorForm3 from "../components/CreatorForm3";
 import CreatorForm4 from "../components/CreatorForm4";
 import "../components/Contact.css";
 import { Container } from "react-bootstrap";
@@ -16,8 +16,10 @@ function CreatorContact() {
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [project, setProject] = useState("");
+  const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
   const [selectedOption, setSelectedOption] = useState("");
   const [more, setMore] = useState("");
+  const [selectedPosition, setSelectedPosition] = useState("");
 
   const handleNameChange = (newName) => {
     setName(newName);
@@ -43,12 +45,79 @@ function CreatorContact() {
     setSelectedOption(newOption);
   };
 
+  const handleMoreChange = (newMore) => {
+    setMore(newMore);
+  };
+
+  const handlePositionChange = (newPosition) => {
+    setSelectedPosition(newPosition);
+  };
+
+  const handleCheckboxChange = (updatedCheckboxes) => {
+    setSelectedCheckboxes(updatedCheckboxes);
+  };
+
   const [step, setStep] = useState(1);
   const handleNext = () => {
     setStep((prevStep) => prevStep + 1);
   };
   const handlePrevious = () => {
     setStep((prevStep) => prevStep - 1);
+  };
+
+  useEffect(() => {
+    // Load project data from local storage if needed
+    const storedProject = localStorage.getItem("project");
+    if (storedProject) {
+      setProject(storedProject);
+    }
+
+    // Fetch selectedCheckboxes data from local storage
+    const storedCheckboxes = localStorage.getItem("selectedCheckboxes");
+    if (storedCheckboxes) {
+      setSelectedCheckboxes(JSON.parse(storedCheckboxes));
+    }
+  }, []);
+
+  const handleSubmission = () => {
+    // Collect the data from localStorage
+    const formData = {
+      name,
+      organization,
+      email,
+      contact,
+      project,
+      selectedCheckboxes,
+      selectedOption,
+      more,
+      selectedPosition,
+    };
+
+    // Send the data to the specified URL
+    fetch("https://thehonestco.in/mailCustomer.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Handle the response data here
+        console.log(data);
+        // Remove all local storage data (if needed)
+        localStorage.clear();
+        // redirect to home
+        window.location.href = '/';
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
   };
 
   return (
@@ -73,34 +142,33 @@ function CreatorContact() {
             <div className={`progress-step ${step >= 2 ? "active" : ""}`}>
               2. Area of interest
               <ul className="sub-progress-step">
+                {selectedCheckboxes.map((checkbox) => (
+                  <li key={checkbox}>{checkbox}</li>
+                ))}
                 <li id="project">{project}</li>
-                <li></li>
-                <li></li>
-                <li></li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 3 ? "active" : ""}`}>
               3. Persona Creation
               <ul className="sub-progress-step">
                 <li></li>
-                <li></li>
-                <li></li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 4 ? "active" : ""}`}>
-              4. Area of interest
+              4. Additional Info
               <ul className="sub-progress-step">
-                <li id="name">{more}</li>
+                <li>Position: {selectedPosition}</li>
               </ul>
             </div>
           </div>
         </div>
-        <Container
-          className="col-md-9 col-12 border-element form-content"
-          style={{ border: "none" }}
-        >
-          <div className="creator_top_Side"></div>
-          <div className="creator_Left_Side"></div>
+
+        <Container className="col-md-9 col-12 border-element form-content" style={{border:'none'}}>
+          <div className="top_Side">
+          </div>
+          <div className="Left_Side">
+          </div>
+         
           <div
             className="d-flex align-items-start flex-column"
             style={{ height: "85%" }}
@@ -118,23 +186,27 @@ function CreatorContact() {
                 <CreatorForm2
                   onProjectChange={handleProjectChange}
                   onRadioChange={handleRadioChange}
+                  onCheckboxesChange={handleCheckboxChange}
                 />
               )}
-              {step === 3 && <ContactForm3 />}
-              {step === 4 && <CreatorForm4 />}
+              {step === 3 && (
+                <CreatorForm3
+                />
+              )}
+              {step === 4 && <CreatorForm4 onPositionChange={handlePositionChange} />}
             </Form>
           </div>
 
           <div
             className="d-flex align-items-end custom-padding"
-            style={{ height: "10%", justifyContent: "space-between" }}
+            style={{ height: "10%", justifyContent: "space-between", marginLeft:'30px',marginRight:'40px'}}
           >
             {step > 1 && (
               <a
                 className="previous-button form-btn-prev"
                 onClick={handlePrevious}
               >
-                <img className="w-50" src={Prev} />
+                <img className="w-50" src={Prev} alt="Previous" />
               </a>
             )}
 
@@ -144,12 +216,15 @@ function CreatorContact() {
               </a>
             )}
 
-            {step === 4 && <a className="submit-button form-btn">Submit</a>}
+            {step === 4 && (
+              <button className="submit-button form-btn" onClick={handleSubmission}>Submit</button>
+            )}
           </div>
-          <div className="creator_right_Side"></div>
-          <div className="creator_bottom_Side"></div>
         </Container>
       </div>
+      
+      <div className="bottom_Side"></div>
+      <div className="right_Side"></div>
     </Container>
   );
 }

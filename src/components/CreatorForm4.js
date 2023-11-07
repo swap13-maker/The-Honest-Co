@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
-function CreatorForm4() {
-  const [selectedValue, setSelectedValue] = useState(
-    localStorage.getItem("selectedValue") || ""
+function CreatorForm4({ onPositionChange }) {
+  const [selectedPosition, setSelectedPosition] = useState(
+    localStorage.getItem("selectedPosition") || ""
   );
 
-  const handleRadioChange = (event) => {
+  const handlePositionChange = (event) => {
     const { value } = event.target;
-
-    // Update the state with the selected value
-    setSelectedValue(value);
+    setSelectedPosition(value);
 
     // Update localStorage with the selected value
-    localStorage.setItem("selectedValue", value);
+    localStorage.setItem("selectedPosition", value);
+
+    // Call the parent component's handler
+    onPositionChange(value);
   };
   
   return (
@@ -47,10 +48,10 @@ function CreatorForm4() {
             <label>
               <input
                 type="radio"
-                name="category"
+                name="position"
                 value="Open Position"
-                checked={selectedValue === "Open Position"}
-                onChange={handleRadioChange}
+                checked={selectedPosition === "Open Position"}
+                onChange={handlePositionChange}
               />{" "}
               <span>Open Position</span>
             </label>
@@ -60,10 +61,10 @@ function CreatorForm4() {
             <label>
               <input
                 type="radio"
-                name="category"
+                name="position"
                 value="Internship"
-                checked={selectedValue === "Internship"}
-                onChange={handleRadioChange}
+                checked={selectedPosition === "Internship"}
+                onChange={handlePositionChange}
               />{" "}
               <span>Internship</span>
             </label>
