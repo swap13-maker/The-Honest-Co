@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import Filter from "./../components/Portfolio/Filter";
@@ -67,13 +67,20 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="col-12 col-md-5 d-flex">
-                <div className="d-flex ml-auto align-items-start"><Lottie animationData={loader} autoplay loop className="w-50 d-flex ml-auto margin-top--35" /></div>
+                <div className="d-flex ml-auto align-items-start">
+                  <Lottie
+                    animationData={loader}
+                    autoplay
+                    loop
+                    className="w-50 d-flex ml-auto margin-top--35"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
           <div className="py-4 mb-5">
-            <div className="button-container border-top">
+            <div className="button-container filter__container">
               {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""

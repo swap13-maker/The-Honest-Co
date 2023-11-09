@@ -81,7 +81,7 @@ const Resource = () => {
           </div>
 
           <div className="py-4 mb-5">
-            <div className="button-container border-top">
+            <div className="button-container filter__container">
               {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""

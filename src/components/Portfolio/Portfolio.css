@@ -179,6 +179,18 @@ p {
   flex-wrap: wrap;
   gap: 1px; /* Adjust the gap width as needed */
 }
+
+.filter__container .custom-button {
+  border-top: 1px solid #cbcbcb;
+}
+
+.filter__container .custom-button.active {
+  border-top-color: #333;
+}
+
+.filter__container .custom-button.active::after {
+  background: linear-gradient(to bottom, #000000, transparent);
+}
 .custom-button {
   flex-grow: 1;
   width: calc(
@@ -317,6 +329,6 @@ p {
   object-fit: cover;
   height: 545px;
 }
-.margin-top--35{
+.margin-top--35 {
   margin-top: -35px;
 }
