@@ -46,6 +46,7 @@ code {
 .portfolio__card {
   padding-right: 0 !important;
   padding-left: 0 !important;
+  position: relative;
 }
 
 .border__fade .wrapper {
@@ -65,8 +66,18 @@ code {
   padding-top: 6.5rem;
 }
 .even-card {
-  border-left: 1px solid #dee2e6;
+  border-left: 1px solid #b7b7b7;
   padding-top: 50px;
+}
+
+.portfolio__card.odd-card:last-child::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  height: 100%;
+  width: 1px;
+  background-image: linear-gradient(to bottom, #b7b7b7, #f6f6f6);
+  top: 0;
 }
 
 .odd-card:not(:first-child) .border__fade {
