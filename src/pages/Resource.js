@@ -81,7 +81,7 @@ const Resource = () => {
           </div>
 
           <div className="py-4 mb-5">
-            <div className="button-container border-top">
+            <div className="button-container filter__container">
               {/* <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
@@ -180,15 +180,15 @@ const Resource = () => {
 
                 return (
                   <div
-                    className={`col-md-4 col-12 py-3 ${cardClass} ${marginTopClass}`}
+                    className={`col-md-4 col-12 no__padding ${cardClass} ${marginTopClass}`}
                     key={index}
                   >
-                    <div data-aos="fade-up">
+                    <div className="wrapper">
                       <div className="zoom-effect-container">
                         <div className="image__wrapper">
                           <img className="card-img-top" src={image} />
                         </div>
-                        <div className="py-4 translate__down">
+                        <div className="py-4">
                           <div className="blog-heading">{name}</div>
                           <div className="blog-title">
                             {description}
