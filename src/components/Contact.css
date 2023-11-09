@@ -313,3 +313,17 @@ background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff
   background: -o-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
   transform: translateX(-50px);
 }
+.label-with-underline {
+  border-bottom: 2px solid #ccc !important; 
+  border-radius: 0px !important;
+}
+
+.custom-checkbox + .custom-control-label::before {
+  background-color: #000;
+  border-color: #ccc;
+}
+
+.custom-checkbox:checked + .custom-control-label::before {
+  background-color: red;
+  border-color: orange;
+}

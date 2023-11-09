@@ -72,21 +72,21 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
       <div className="contact-form py-5">
         <Form.Group controlId="formName">
           <Form.Floating>
-            <Form.Control className="w-75" type="text" placeholder="Enter your name" value={name} onChange={handleNameChange} />
+            <Form.Control className="w-75 label-with-underline" type="text" placeholder="Enter your name" value={name} onChange={handleNameChange} />
             <Form.Label>Name</Form.Label>
           </Form.Floating>
         </Form.Group>
 
         <Form.Group controlId="formOrganization">
           <Form.Floating>
-            <Form.Control className="w-75" type="text" placeholder="Enter your organization" value={organization} onChange={handleOrganizationChange} />
+            <Form.Control className="w-75 label-with-underline" type="text" placeholder="Enter your organization" value={organization} onChange={handleOrganizationChange} />
             <Form.Label>Organization</Form.Label>
           </Form.Floating>
         </Form.Group>
 
         <Form.Group controlId="formEmail">
           <Form.Floating>
-            <Form.Control className="w-75" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
+            <Form.Control className="w-75 label-with-underline" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
             <Form.Label>Email</Form.Label>
           </Form.Floating>
         </Form.Group>
@@ -94,14 +94,16 @@ function ContactForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
         {showContactForm && (
         <Form.Group controlId="formContact">
           <Form.Floating>
-            <Form.Control className="w-75" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
+            <Form.Control className="w-75 label-with-underline" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
             <Form.Label>Contact Number</Form.Label>
           </Form.Floating>
         </Form.Group>
         )}
 
         <Form.Group className="pt-4" controlId="formCheckbox">
-            <Form.Check type="checkbox" label="You will be contacted via the entered number" checked={showContactForm} onChange={handleCheckboxChange} />
+        
+            <Form.Check type="checkbox" label="You will be contacted via the entered number" checked={showContactForm} onChange={handleCheckboxChange} 
+             />
         </Form.Group>
 
       </div>
