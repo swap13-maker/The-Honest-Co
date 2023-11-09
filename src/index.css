@@ -70,7 +70,7 @@ code {
   padding-top: 50px;
 }
 
-.portfolio__card.odd-card:last-child::after {
+.portfolio__page .portfolio__card.odd-card:last-child::after {
   content: "";
   position: absolute;
   right: -1px;
@@ -90,6 +90,11 @@ code {
 .odd-res {
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
+}
+
+.resource__page .odd-res {
+  border-left: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
 }
 .odd-res > .wrapper {
   padding-top: 6.5rem;
@@ -133,6 +138,11 @@ code {
   height: 545px;
 }
 
+.wrapper:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  max-height: 545px;
+}
 .zoom-effect-container {
   position: relative;
   width: 100%;

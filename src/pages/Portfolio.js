@@ -39,7 +39,7 @@ const Portfolio = () => {
       <InnerHeader />
       {/* mian content */}
       <section>
-        <div className="container">
+        <div className="container portfolio__page">
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>

@@ -70,3 +70,15 @@
 .other__work__container .slick-slider {
   margin: 0 -30px;
 }
+
+.other__work__container .wrapper:hover .image-card img {
+  max-height: 450px;
+}
+
+.other__work__container .image-card {
+  height: 350px;
+}
+
+.other__work__container .image-card img {
+  max-height: 350px;
+}

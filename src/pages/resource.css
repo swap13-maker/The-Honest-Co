@@ -24,6 +24,14 @@
   bottom: 60px;
 }
 
+.resource__page .odd-res .wrapper::after {
+  background-image: linear-gradient(to left, #b7b7b7, #b7b7b7);
+}
+
+.resource__page .no__padding:nth-child(3n) .wrapper::after {
+  background-image: linear-gradient(to right, #b7b7b7, #f6f6f6);
+}
+
 .resource__page .wrapper {
   position: relative;
 }
