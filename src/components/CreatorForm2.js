@@ -113,8 +113,7 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
 
       <div className="contact-form py-4">
         <div className="contact-heading">
-          How can we
-          <span className="font-weight-600 text-black"> help you!</span>
+          <span className="font-weight-600 text-black"> Become a Partner</span>
         </div>
 
         <Form.Group className="pt-4" controlId="radioGroup1">

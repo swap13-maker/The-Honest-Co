@@ -2,82 +2,99 @@ import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
 function CreatorForm3({
-  onStudentNameChange,
-  onStudentOrganizationChange,
-  onStudentEmailChange,
-  onStudentContactChange,
+  onCourseTypeChange,
+  onCourseNameChange,
+  onStudentInstitutionChange,
+  onStudentLocationChange,
+  onCompanyNameChange,
+  onDesignationChange,
+  onExperienceChange,
+  onRadioTypeChange
 }) {
-  const [studentName, setStudentName] = useState("");
-  const [studentOrganization, setStudentOrganization] = useState("");
-  const [studentEmail, setStudentEmail] = useState("");
-  const [studentContact, setStudentContact] = useState("");
-  const [showStudentContactForm, setShowStudentContactForm] = useState(false);
+  const [courseType, setCourseType] = useState("");
+  const [courseName, setCourseName] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [designation, setDesignation] = useState("");
+  const [experience, setExperience] = useState("");
+  const [studentInstitution, setStudentInstitution] = useState("");
+  const [studentLocation, setStudentLocation] = useState("");
   const [selectedType, setSelectedType] = useState("");
 
   useEffect(() => {
-    const storedStudentName = localStorage.getItem("StudentName");
-    const storedStudentOrganization = localStorage.getItem(
-      "studentOrganization"
+    const storedCourseType = localStorage.getItem("courseType");
+    const storedCourseName = localStorage.getItem("courseName");
+    const storedCompanyName = localStorage.getItem("companyName");
+    const storedDesignation = localStorage.getItem("designation");
+    const storedExperience = localStorage.getItem("experience");
+    const storedStudentInstitution = localStorage.getItem(
+      "studentInstitution"
     );
-    const storedStudentEmail = localStorage.getItem("studentEmail");
-    const storedStudentContact = localStorage.getItem("studentContact");
-    const isStudentContactChecked = localStorage.getItem(
-      "isStudentContactChecked"
-    );
+    const storedStudentLocation = localStorage.getItem("studentLocation");
     const storedType = localStorage.getItem("selectedType");
 
-    if (storedStudentName) setStudentName(storedStudentName);
-    if (storedStudentOrganization)
-      setStudentOrganization(storedStudentOrganization);
-    if (storedStudentEmail) setStudentEmail(storedStudentEmail);
-    if (storedStudentContact) setStudentContact(storedStudentContact);
-    if (isStudentContactChecked === "true") {
-      setShowStudentContactForm(true);
-    }
+    if (storedCourseType) setCourseType(storedCourseType);
+    if (storedCourseName) setCourseName(storedCourseName);
+    if (storedCompanyName) setCompanyName(storedCompanyName);
+    if (storedDesignation) setDesignation(storedDesignation);
+    if (storedExperience) setExperience(storedExperience);
+    if (storedStudentInstitution) setStudentInstitution(storedStudentInstitution);
+    if (storedStudentLocation) setStudentLocation(storedStudentLocation);
     if (storedType) setSelectedType(storedType);
   }, []);
 
-  const handleStudentNameChange = (event) => {
-    const newStudentName = event.target.value;
-    setStudentName(newStudentName);
-    onStudentNameChange(newStudentName);
-    localStorage.setItem("studentName", newStudentName);
+  const handleCourseTypeChange = (event) => {
+    const newCourseType = event.target.value;
+    setCourseType(newCourseType);
+    onCourseTypeChange(newCourseType);
+    localStorage.setItem("courseType", newCourseType);
   };
 
-  const handleStudentOrganizationChange = (event) => {
-    const newStudentOrganization = event.target.value;
-    setStudentOrganization(newStudentOrganization);
-    onStudentOrganizationChange(newStudentOrganization);
-    localStorage.setItem("studentOrganization", newStudentOrganization);
+  const handleCourseNameChange = (event) => {
+    const newCourseName = event.target.value;
+    setCourseName(newCourseName);
+    onCourseNameChange(newCourseName);
+    localStorage.setItem("courseName", newCourseName);
   };
 
-  const handleStudentEmailChange = (event) => {
-    const newStudentEmail = event.target.value;
-    setStudentEmail(newStudentEmail);
-    onStudentEmailChange(newStudentEmail);
-    localStorage.setItem("studentEmail", newStudentEmail);
+  const handleCompanyNameChange = (event) => {
+    const newCompanyName = event.target.value;
+    setCompanyName(newCompanyName);
+    onCompanyNameChange(newCompanyName);
+    localStorage.setItem("companyName", newCompanyName);
   };
 
-  const handleStudentContactChange = (event) => {
-    const newStudentContact = event.target.value;
-    setStudentContact(newStudentContact);
-    onStudentContactChange(newStudentContact);
-    localStorage.setItem("studentContact", newStudentContact);
+  const handleDesignationChange = (event) => {
+    const newDesignation = event.target.value;
+    setDesignation(newDesignation);
+    onDesignationChange(newDesignation);
+    localStorage.setItem("designation", newDesignation);
   };
 
-  const handleStudentCheckboxChange = (event) => {
-    setShowStudentContactForm(event.target.checked);
-    if (!event.target.checked) {
-      setStudentContact("");
-      localStorage.removeItem("studentContact");
-    }
-    localStorage.setItem("isStudentContactChecked", event.target.checked);
+  const handleExperienceChange = (event) => {
+    const newExperience = event.target.value;
+    setExperience(newExperience);
+    onExperienceChange(newExperience);
+    localStorage.setItem("experience", newExperience);
+  };
+
+  const handleStudentInstitutionChange = (event) => {
+    const newStudentInstitution = event.target.value;
+    setStudentInstitution(newStudentInstitution);
+    onStudentInstitutionChange(newStudentInstitution);
+    localStorage.setItem("studentInstitution", newStudentInstitution);
+  };
+
+  const handleStudentLocationChange = (event) => {
+    const newStudentLocation = event.target.value;
+    setStudentLocation(newStudentLocation);
+    onStudentLocationChange(newStudentLocation);
+    localStorage.setItem("studentLocation", newStudentLocation);
   };
 
   const handleRadioTypeChange = (event) => {
     const newType = event.target.value;
     setSelectedType(newType);
-    // onRadioChange(newType);
+    onRadioTypeChange(newType);
     localStorage.setItem("selectedType", newType);
   };
 
@@ -89,8 +106,8 @@ function CreatorForm3({
       <div className="creator-sub-heading text-black pt-4">
         Tell us about yourself
       </div>
-      <div className="d-flex">
-        <Form.Group className="pt-4 w-50" controlId="radioGroup1">
+      <div className="d-flex pb-4">
+        <Form.Group className="py-3 w-50" controlId="radioGroup1">
           <Form.Check
             type="radio"
             name="radioTypeGroup"
@@ -101,7 +118,7 @@ function CreatorForm3({
             onChange={handleRadioTypeChange}
           />
         </Form.Group>
-        <Form.Group className="pt-4 w-50" controlId="radioGroup2">
+        <Form.Group className="py-3 w-50" controlId="radioGroup2">
           <Form.Check
             type="radio"
             name="radioTypeGroup"
@@ -115,144 +132,137 @@ function CreatorForm3({
       </div>
       <div id="forStudent" style={{ display: selectedType === "Student" ? "block" : "none" }}>
         <div className="contact-heading">
-          <span className="font-weight-600 text-black">Are you a student?</span>
+          Are you a
+          <span className="font-weight-600 text-black"> Student?</span>
         </div>
-        <div className="py-4">
-          <Form.Group controlId="formOrganization">
+        <div className="pt-2">
+          <Form.Group controlId="formInstitution">
             <Form.Floating>
               <Form.Control
                 className="w-75"
                 type="text"
-                placeholder="Enter your organization"
-                value={studentOrganization}
-                onChange={handleStudentOrganizationChange}
+                placeholder="Enter your institution name"
+                value={studentInstitution}
+                onChange={handleStudentInstitutionChange}
               />
               <Form.Label>Institution name</Form.Label>
             </Form.Floating>
           </Form.Group>
 
-          <Form.Group controlId="formName">
+          <Form.Group controlId="formCourseType">
             <Form.Floating>
               <Form.Control
                 className="w-75"
                 type="text"
-                placeholder="Enter your name"
-                value={studentName}
-                onChange={handleStudentNameChange}
+                placeholder="Enter course type"
+                value={courseType}
+                onChange={handleCourseTypeChange}
               />
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Course Type</Form.Label>
             </Form.Floating>
           </Form.Group>
 
-          <Form.Group controlId="formEmail">
+          <Form.Group controlId="formCourseName">
             <Form.Floating>
               <Form.Control
                 className="w-75"
-                type="email"
-                placeholder="Enter your email"
-                value={studentEmail}
-                onChange={handleStudentEmailChange}
+                type="text"
+                placeholder="Enter Course name"                
+                value={courseName}
+                onChange={handleCourseNameChange}
               />
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Course Name</Form.Label>
             </Form.Floating>
           </Form.Group>
 
-          {showStudentContactForm && (
-            <Form.Group controlId="formContact">
+            <Form.Group controlId="formLocation">
               <Form.Floating>
                 <Form.Control
                   className="w-75"
-                  type="number"
-                  placeholder="Enter your contact"
-                  maxLength={10}
-                  value={studentContact}
-                  onChange={handleStudentContactChange}
+                  type="text"
+                  placeholder="Enter your location"
+                  value={studentLocation}
+                  onChange={handleStudentLocationChange}
                 />
-                <Form.Label>Contact Number</Form.Label>
+                <Form.Label>Location</Form.Label>
               </Form.Floating>
             </Form.Group>
-          )}
-
-          <Form.Group className="pt-4" controlId="formCheckbox">
-            <Form.Check
-              type="checkbox"
-              label="Check if you want to communicate via Whatsapp"
-              checked={showStudentContactForm}
-              onChange={handleStudentCheckboxChange}
-            />
-          </Form.Group>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div id="forProfessional" style={{ display: selectedType === "Professional" ? "block" : "none" }}>
         <div className="contact-heading">
-          <span className="font-weight-600 text-black">
-            Are you a Working Professional?
-          </span>
+          Are you a
+          <span className="font-weight-600 text-black"> Working Professional?</span>
         </div>
         <div className="py-4">
-          <Form.Group controlId="formOrganization">
+          <Form.Group controlId="formCompanyName">
             <Form.Floating>
               <Form.Control
                 className="w-75"
                 type="text"
-                placeholder="Personal Details"
-                value={studentOrganization}
-                onChange={handleStudentOrganizationChange}
+                placeholder="Enter your Company name"
+                value={companyName}
+                onChange={handleCompanyNameChange}
               />
-              <Form.Label>Personal Details</Form.Label>
+              <Form.Label>Company Name</Form.Label>
             </Form.Floating>
           </Form.Group>
 
-          <Form.Group controlId="formName">
+          <Form.Group controlId="formLocation">
             <Form.Floating>
               <Form.Control
                 className="w-75"
                 type="text"
-                placeholder="Enter your name"
-                value={studentName}
-                onChange={handleStudentNameChange}
+                placeholder="Enter your location"
+                value={studentLocation}
+                onChange={handleStudentLocationChange}
               />
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Current Location</Form.Label>
             </Form.Floating>
           </Form.Group>
 
-          <Form.Group controlId="formEmail">
+          <Form.Group controlId="formDesignation">
             <Form.Floating>
               <Form.Control
                 className="w-75"
-                type="email"
-                placeholder="Enter your email"
-                value={studentEmail}
-                onChange={handleStudentEmailChange}
+                type="text"
+                placeholder="Enter your designation"
+                value={designation}
+                onChange={handleDesignationChange}
               />
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Designation</Form.Label>
             </Form.Floating>
           </Form.Group>
 
-          {showStudentContactForm && (
-            <Form.Group controlId="formContact">
+            <Form.Group controlId="formExperience">
               <Form.Floating>
                 <Form.Control
                   className="w-75"
-                  type="number"
-                  placeholder="Enter your contact"
-                  maxLength={10}
-                  value={studentContact}
-                  onChange={handleStudentContactChange}
+                  type="text"
+                  placeholder="Enter your experience"
+                  value={experience}
+                  onChange={handleExperienceChange}
                 />
-                <Form.Label>Contact Number</Form.Label>
+                <Form.Label>Total Experience</Form.Label>
               </Form.Floating>
             </Form.Group>
-          )}
-
-          <Form.Group className="pt-4" controlId="formCheckbox">
-            <Form.Check
-              type="checkbox"
-              label="Check if you want to communicate via Whatsapp"
-              checked={showStudentContactForm}
-              onChange={handleStudentCheckboxChange}
-            />
-          </Form.Group>
         </div>
       </div>
     </div>

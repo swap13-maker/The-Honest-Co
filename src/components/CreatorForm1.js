@@ -1,27 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
-function CreatorForm1({ onNameChange, onOrganizationChange, onEmailChange, onContactChange }) {
+function CreatorForm1({ onNameChange, onEmailChange, onContactChange }) {
   const [name, setName] = useState("");
-  const [organization, setOrganization] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
-  const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
     const storedName = localStorage.getItem("name");
-    const storedOrganization = localStorage.getItem("organization");
     const storedEmail = localStorage.getItem("email");
     const storedContact = localStorage.getItem("contact");
     const isContactChecked = localStorage.getItem("isContactChecked");
 
     if (storedName) setName(storedName);
-    if (storedOrganization) setOrganization(storedOrganization);
     if (storedEmail) setEmail(storedEmail);
     if (storedContact) setContact(storedContact);
-    if (isContactChecked === "true") {
-      setShowContactForm(true);
-    }
   }, []);
 
   const handleNameChange = (event) => {
@@ -29,13 +22,6 @@ function CreatorForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
     setName(newName);
     onNameChange(newName);
     localStorage.setItem("name", newName);
-  };
-
-  const handleOrganizationChange = (event) => {
-    const newOrganization = event.target.value;
-    setOrganization(newOrganization);
-    onOrganizationChange(newOrganization);
-    localStorage.setItem("organization", newOrganization);
   };
 
   const handleEmailChange = (event) => {
@@ -50,15 +36,6 @@ function CreatorForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
     setContact(newContact);
     onContactChange(newContact);
     localStorage.setItem("contact", newContact);
-  };
-
-  const handleCheckboxChange = (event) => {
-    setShowContactForm(event.target.checked);
-    if (!event.target.checked) {
-      setContact('');
-      localStorage.removeItem('contact');
-    }
-    localStorage.setItem("isContactChecked", event.target.checked);
   };
 
   return (
@@ -77,13 +54,6 @@ function CreatorForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
           </Form.Floating>
         </Form.Group>
 
-        <Form.Group controlId="formOrganization">
-          <Form.Floating>
-            <Form.Control className="w-75" type="text" placeholder="Enter your organization" value={organization} onChange={handleOrganizationChange} />
-            <Form.Label>Organization</Form.Label>
-          </Form.Floating>
-        </Form.Group>
-
         <Form.Group controlId="formEmail">
           <Form.Floating>
             <Form.Control className="w-75" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
@@ -91,19 +61,12 @@ function CreatorForm1({ onNameChange, onOrganizationChange, onEmailChange, onCon
           </Form.Floating>
         </Form.Group>
 
-        {showContactForm && (
         <Form.Group controlId="formContact">
           <Form.Floating>
             <Form.Control className="w-75" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
             <Form.Label>Contact Number</Form.Label>
           </Form.Floating>
         </Form.Group>
-        )}
-
-        <Form.Group className="pt-4" controlId="formCheckbox">
-            <Form.Check type="checkbox" label="You will be contacted via the entered number" checked={showContactForm} onChange={handleCheckboxChange} />
-        </Form.Group>
-
       </div>
     </div>
   );

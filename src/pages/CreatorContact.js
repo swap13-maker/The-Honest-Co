@@ -12,21 +12,23 @@ import "./CreatorContact.css";
 
 function CreatorContact() {
   const [name, setName] = useState("");
-  const [organization, setOrganization] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [project, setProject] = useState("");
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
   const [selectedOption, setSelectedOption] = useState("");
-  const [more, setMore] = useState("");
+  const [selectedType, setSelectedType] = useState("");
+  const [studentInstitution, setStudentInstitution] = useState("");
+  const [courseType, setCourseType] = useState("");
+  const [courseName, setCourseName] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [designation, setDesignation] = useState("");
+  const [experience, setExperience] = useState("");
+  const [studentLocation, setStudentLocation] = useState("");
   const [selectedPosition, setSelectedPosition] = useState("");
 
   const handleNameChange = (newName) => {
     setName(newName);
-  };
-
-  const handleOrganizationChange = (newOrganization) => {
-    setOrganization(newOrganization);
   };
 
   const handleEmailChange = (newEmail) => {
@@ -45,8 +47,8 @@ function CreatorContact() {
     setSelectedOption(newOption);
   };
 
-  const handleMoreChange = (newMore) => {
-    setMore(newMore);
+  const handleRadioTypeChange = (newType) => {
+    setSelectedType(newType);
   };
 
   const handlePositionChange = (newPosition) => {
@@ -55,6 +57,34 @@ function CreatorContact() {
 
   const handleCheckboxChange = (updatedCheckboxes) => {
     setSelectedCheckboxes(updatedCheckboxes);
+  };
+
+  const handleStudentInstitutionChange = (newStudentInstitution) => {
+    setStudentInstitution(newStudentInstitution);
+  };
+
+  const handleCourseTypeChange = (newCourseType) => {
+    setCourseType(newCourseType);
+  };
+
+  const handleCourseNameChange = (newCourseName) => {
+    setCourseName(newCourseName);
+  };
+
+  const handleCompanyNameChange = (newCompanyName) => {
+    setCompanyName(newCompanyName);
+  };
+
+  const handleDesignationChange = (newDesignation) => {
+    setDesignation(newDesignation);
+  };
+
+  const handleExperienceChange = (newExperience) => {
+    setExperience(newExperience);
+  };
+
+  const handleStudentLocationChange = (newStudentLocation) => {
+    setStudentLocation(newStudentLocation);
   };
 
   const [step, setStep] = useState(1);
@@ -83,18 +113,24 @@ function CreatorContact() {
     // Collect the data from localStorage
     const formData = {
       name,
-      organization,
       email,
       contact,
       project,
       selectedCheckboxes,
       selectedOption,
-      more,
+      selectedType,
       selectedPosition,
+      studentInstitution,
+      courseType,
+      courseName,
+      companyName,
+      designation,
+      experience,
+      studentLocation,
     };
 
     // Send the data to the specified URL
-    fetch("https://thehonestco.in/mailCustomer.php", {
+    fetch("https://thehonestco.in/mailCreator.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -134,7 +170,6 @@ function CreatorContact() {
               1. General Information
               <ul className="sub-progress-step">
                 <li id="name">{name}</li>
-                <li id="organization">{organization}</li>
                 <li id="email">{email}</li>
                 <li id="contact">{contact}</li>
               </ul>
@@ -177,7 +212,6 @@ function CreatorContact() {
               {step === 1 && (
                 <CreatorForm1
                   onNameChange={handleNameChange}
-                  onOrganizationChange={handleOrganizationChange}
                   onEmailChange={handleEmailChange}
                   onContactChange={handleContactChange}
                 />
@@ -191,6 +225,14 @@ function CreatorContact() {
               )}
               {step === 3 && (
                 <CreatorForm3
+                  onCourseTypeChange={handleCourseTypeChange}
+                  onCourseNameChange={handleCourseNameChange}
+                  onStudentInstitutionChange={handleStudentInstitutionChange}
+                  onStudentLocationChange={handleStudentLocationChange}
+                  onCompanyNameChange={handleCompanyNameChange}
+                  onDesignationChange={handleDesignationChange}
+                  onExperienceChange={handleExperienceChange}
+                  onRadioTypeChange={handleRadioTypeChange}
                 />
               )}
               {step === 4 && <CreatorForm4 onPositionChange={handlePositionChange} />}
