@@ -91,6 +91,11 @@ code {
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
 }
+
+.resource__page .odd-res {
+  border-left: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
+}
 .odd-res > .wrapper {
   padding-top: 6.5rem;
 }
