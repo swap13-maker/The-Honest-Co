@@ -12,19 +12,9 @@ function Hero() {
     localStorage.clear();
   }, []);
   const [showHeader, setShowHeader] = useState(true);
-  const [scrollPos, setScrollPos] = useState(0);
+  
   
 
-  const handleScroll = () => {
-    setScrollPos(document.body.getBoundingClientRect().top);
-    setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
 
   return (
     <section id="hero">
@@ -33,7 +23,7 @@ function Hero() {
           {/*navbar*/}
           
           <Navbar
-            className={`py-4 ${showHeader ? "headerVisible" : "headerHidden"}`}
+            className={`py-4 ${showHeader ? "headerVisible" : ""}`}
             expand="lg"
             variant="dark"
           >
