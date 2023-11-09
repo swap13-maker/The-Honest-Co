@@ -70,7 +70,7 @@ code {
   padding-top: 50px;
 }
 
-.portfolio__card.odd-card:last-child::after {
+.portfolio__page .portfolio__card.odd-card:last-child::after {
   content: "";
   position: absolute;
   right: -1px;
@@ -133,6 +133,11 @@ code {
   height: 545px;
 }
 
+.wrapper:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  max-height: 545px;
+}
 .zoom-effect-container {
   position: relative;
   width: 100%;
