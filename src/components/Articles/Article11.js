@@ -1,0 +1,289 @@
+import React, { useRef, useEffect } from "react";
+import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
+import "./../../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import InnerHeader from "../InnerHeader.js";
+import Footer from "../Footer";
+import { Link } from "react-router-dom";
+import article from "../../images/article1.png";
+import articleImg1 from "../../images/articleImg1.jpg";
+import articleImg2 from "../../images/articleImg2.jpg";
+import "./Article.css";
+
+export default function Article11() {
+  const section1Ref = useRef();
+  const section2Ref = useRef();
+  const section3Ref = useRef();
+  const section4Ref = useRef();
+  const section5Ref = useRef();
+  const section6Ref = useRef();
+
+  const navHeader = [
+    {
+      headerTitle: "Operational Digitization",
+      headerRef: section1Ref,
+      headerID: "section1",
+    },
+    {
+      headerTitle: "Bespoke Vs Off the Shelf Solutions",
+      headerRef: section2Ref,
+      headerID: "section2",
+    },
+    {
+      headerTitle: "Operations Made Easy via Mobile Devices",
+      headerRef: section3Ref,
+      headerID: "section3",
+    },
+    {
+      headerTitle: "All in One Solution",
+      headerRef: section4Ref,
+      headerID: "section4",
+    },
+    {
+      headerTitle: "Catalogue & Inventory Management",
+      headerRef: section5Ref,
+      headerID: "section5",
+    },
+    {
+      headerTitle: "Optimum Technical Partner",
+      headerRef: section6Ref,
+      headerID: "section6",
+    },
+  ];
+
+  return (
+    <section>
+      {/* Header */}
+      <InnerHeader />
+      {/* mian content */}
+      <section>
+        <div className="container">
+          <ul className="breadcrumb-navigation pt-7">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/resources">Resources</Link>
+            </li>
+            <li className="current">Articles</li>
+          </ul>
+          <div className="py-4">
+            <div className="row">
+              <div className="col-12 text-align-center">
+                <div className="article-heading">
+                  Custom CRM Development For E-Commerce <br /> Industries &
+                  Businesses
+                </div>
+                <div className="article-sub-heading pt-4">
+                  <span className="px-2">May 19, 2023</span> &bull;{" "}
+                  <span className="px-2">Custom Development</span> &bull;{" "}
+                  <span className="px-2">D2C & E-Commerce</span>
+                </div>
+                <img src={article} className="w-100 pt-5" />
+              </div>
+
+              <div className="col-md-9">
+                <div className="pt-5" ref={section1Ref} id="section1">
+                  <p className="main-article-content">
+                    In the competitive sphere of manufacturing, businesses
+                    constantly strive for an edge to enhance customer relations,
+                    streamline operations, and maximise revenue.
+                  </p>
+                  <p className="light-article-content">
+                    This begins with the digitization of operations, a process
+                    that can make or break an e-commerce enterprise. As the
+                    digital landscape continues to evolve, e-commerce companies
+                    increasingly turn to custom Customer Relationship Management
+                    (CRM) systems to streamline their operations. A custom CRM
+                    provides tailored solutions that align with the unique
+                    requirements of e-commerce, enabling businesses to digitize
+                    and optimize their operations seamlessly. It's a
+                    game-changer that empowers e-commerce businesses to operate
+                    efficiently, stay competitive, and deliver exceptional
+                    customer experiences.
+                  </p>
+                </div>
+                <div className="pt-5" ref={section2Ref} id="section2">
+                  <p className="main-article-content">
+                    Bespoke Vs Off the Shelf Solutions
+                  </p>
+                  <p className="light-article-content">
+                    In the realm of e-commerce, choosing the right CRM solution
+                    can be a pivotal decision that impacts the efficiency and
+                    success of the business. Off-the-shelf CRM solutions,
+                    readily available and often marketed as convenient, may seem
+                    like a tempting choice. These pre-packaged solutions offer a
+                    generic set of features that are designed to cater to a wide
+                    range of industries. However, when it comes to e-commerce,
+                    the unique intricacies and dynamic nature of the industry
+                    often demand a tailored approach.
+                    <br />
+                    <br />
+                    This is where bespoke CRM solutions come into play. Custom
+                    CRM development allows e-commerce businesses to craft a CRM
+                    system that is purpose-built to align with their specific
+                    workflows, challenges, and goals. Unlike off-the-shelf
+                    solutions, bespoke CRMs offer the flexibility to incorporate
+                    industry-specific features, seamlessly integrate with
+                    existing tools, and evolve with the business. It's an
+                    investment in precision and adaptability that positions
+                    e-commerce businesses for success in the highly competitive
+                    landscape.
+                  </p>
+                  <img src={articleImg1} className="w-100 pt-5" />
+                </div>
+                <div className="pt-5" ref={section3Ref} id="section3">
+                  <p className="main-article-content">
+                    Operations Made Easy via Mobile Devices
+                  </p>
+                  <p className="light-article-content">
+                    In today's e-commerce landscape, the ability to manage
+                    operations on-the-go is invaluable. Custom CRM development
+                    takes this into account and ensures that operations are made
+                    easy via mobile devices. E-commerce businesses can equip
+                    their sales and service teams with CRM functions through
+                    dedicated mobile apps.
+                    <br />
+                    Whether it's managing customer interactions, processing
+                    orders, tracking inventory levels, or responding to customer
+                    inquiries, mobile CRM apps enable e-commerce professionals
+                    to stay on top of their tasks anytime, anywhere. The ability
+                    to operate on-the-go not only enhances productivity but also
+                    translates into improved customer service. Sales teams can
+                    access customer data and preferences during client meetings,
+                    while customer support staff can promptly respond to
+                    inquiries. In the fast-paced world of e-commerce, every
+                    minute counts, and custom CRM solutions ensure that
+                    operations are never constrained by location. E-commerce
+                    businesses can embrace mobility, responsiveness, and
+                    agility, delivering the level of service that modern
+                    customers expect.
+                    <br />
+                  </p>
+                </div>
+                <div className="pt-5" ref={section4Ref} id="section4">
+                  <p className="main-article-content">
+                    In this ever-evolving landscape, having an all-in-one
+                    solution is a game-changer. With custom CRM development,
+                    e-commerce businesses can craft a CRM system that serves as
+                    a hub for all their operational needs.
+                  </p>
+                  <p className="light-article-content">
+                    One of the standout advantages is the ability to tailor this
+                    CRM system to the specific requirements of the business.
+                    Rather than juggling multiple tools and software
+                    applications, an all-in-one custom CRM streamlines
+                    operations by bringing various functions under one roof.
+                    E-commerce businesses can integrate sales management,
+                    customer support, inventory control, order processing, and
+                    more into a single unified system. This approach eliminates
+                    the need for switching between disparate software
+                    applications, reducing the risk of errors, saving time, and
+                    enhancing productivity.
+                    <br />
+                  </p>
+                  <img src={articleImg2} className="w-100 pt-5" />
+                </div>
+                <div className="pt-5" ref={section5Ref} id="section5">
+                  <p className="main-article-content">
+                    Catalogue & Inventory Management
+                  </p>
+                  <p className="light-article-content">
+                    In the world of e-commerce, effective catalogue and
+                    inventory management is a linchpin for success. Each
+                    business, even within the same industry, may have unique
+                    processes, products, and operational needs. This is where
+                    custom CRM development shines, particularly in the domain of
+                    catalogue and inventory management.
+                    <br />
+                    <br />
+                    Custom CRM solutions are designed to adapt to the distinct
+                    requirements of individual businesses, allowing for the
+                    replication of unique processes and workflows. When it comes
+                    to catalogue and inventory management, this flexibility
+                    means that e-commerce businesses can create a system that
+                    aligns precisely with their specific product catalog and
+                    inventory needs.
+                  </p>
+                </div>
+                <div className="pt-5" ref={section6Ref} id="section6">
+                  <p className="main-article-content">
+                    In the fast-evolving landscape of e-commerce, having the
+                    right technical partner is a decisive factor in achieving
+                    digital excellence. The Honest Company stands as the epitome
+                    of such a partner, offering businesses the means to create
+                    custom solutions that harness the full potential of digital
+                    development.
+                  </p>
+                  <p className="light-article-content">
+                    At the core of this partnership lies an unwavering
+                    commitment to crafting tailored solutions that align
+                    precisely with each business's unique objectives and
+                    industry-specific needs. In a world where adaptability,
+                    precision, and innovation are paramount, The Honest Company
+                    stands as the optimum technical partner that can transform
+                    e-commerce businesses. The synergy of creativity and
+                    technology ensures that the solutions crafted are not just
+                    digital tools but growth platforms. The result is a
+                    transformative journey that allows businesses to elevate
+                    their e-commerce operations, embrace the future, and excel
+                    in the digital age.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3 pt-5 pl-md-5">
+                <div className="bg-white sticky-top sticky-top-with-padding">
+                  <div className="p-4 d-none d-md-block">
+                    <div className="Side_border-top"></div>
+                    <div className="border-right"></div>
+                    <ScrollHighlightNabbar
+                      section1Ref={section1Ref}
+                      navHeader={navHeader}
+                      className="sticky-top"
+                    />
+                    <div className="border-left"></div>
+                    <div className="Side_border-bottom"></div>
+                  </div>
+                  <div className="p-4 mt-5 bg-white">
+                    <div className="Side_border-top"></div>
+                    <div className="box-bottom-right"></div>
+                    <div className="side-article-heading">
+                      Want to build one for yourself?
+                    </div>
+                    <div className="side-article-subheading pt-3">
+                      Let us help you with your dream project and some other
+                      text that will go here.
+                    </div>
+                    <div className="side-article-download pt-3">
+                      Download
+                      <svg
+                        width="20"
+                        height="14"
+                        viewBox="-10 0 25 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="animated-svg"
+                      >
+                        <path
+                          id="Vector"
+                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                      <div className="box-bottom-left"></div>
+                      <div className="Side_border-bottom"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container bg-white py-4"></section>
+      <Footer />
+    </section>
+  );
+}
