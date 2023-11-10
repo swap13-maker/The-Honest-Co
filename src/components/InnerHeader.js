@@ -9,7 +9,9 @@ const InnerHeader = () => {
   const handleScroll = () => {   
     setScrollPos(document.body.getBoundingClientRect().top);
     setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
-   
+   if(scrollPos >= -300){
+    setShowHeader(true)
+   }
     
   };
 
