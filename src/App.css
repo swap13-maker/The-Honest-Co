@@ -202,7 +202,6 @@ h1 {
     #e0f9c1,
     #c0b7e6,
     #b9dfe5,
-    #b9dfe5,
     #c0b7e6,
     #e0f9c1,
     #d7bbe5,
@@ -297,6 +296,12 @@ h1 {
 
 /*desktop only media view*/
 @media (min-width: 768px) {
+  .main-container {
+    max-width: 1140px !important;
+  }
+  .custom-row {
+    --bs-gutter-x: 5rem !important;
+  }
   .col-md-custom-2 {
     flex: 0 0 auto !important;
     width: 20% !important;

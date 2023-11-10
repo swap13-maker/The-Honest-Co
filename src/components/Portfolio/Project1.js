@@ -35,7 +35,7 @@ function Project1() {
       <section className="header"></section>
       {/* mian content */}
       <section>
-        <div className="container">
+        <div className="container main-container">
           <ul className="breadcrumb-navigation pt-6">
             <li>
               <a href="home">Home</a>
@@ -75,9 +75,9 @@ function Project1() {
         </div>
         <img src={demo10} alt="" className="w-100 my-4" />
         {/* section 1 */}
-        <section className="container">
+        <section className="container main-container">
           <div className="row py-5">
-            <div className="col-12 col-md-6 px-5">
+            <div className="col-12 col-md-6">
               <div className="proj-heading">
                 Scope
                 <hr className="w-40" />
@@ -167,7 +167,7 @@ function Project1() {
         </section>
       </section>
       {/* section 3 */}
-      <section className="container">
+      <section className="container main-container">
         <div className="row">
           <div className="col-12">
             <div className="proj-heading">The Honest Edge</div>
@@ -215,7 +215,7 @@ function Project1() {
       <img src={demo10} alt="" className="w-100" />
       {/* newsletter */}
       <section className="bg-white py-4">
-        <div className="container py-5">
+        <div className="container main-container py-5">
           <div className="row">
             <div className="col-12 col-md-7">
               <div className="newsletter">
@@ -236,7 +236,7 @@ function Project1() {
       </section>
 
       <section className="other__work__container border-white">
-        <div className="container">
+        <div className="container main-container">
           <div className="heading__wrapper">
             <h5>
               Our Other <strong>Work</strong>
@@ -270,11 +270,15 @@ function Project1() {
               })}
             </Slider>
           </div>
-
-          {/* Inner Footer */}
+        </div>
+        <div className="container">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
+              <img
+                className="w-50 pb-4 d-md-none d-block"
+                src={myFooterLogo}
+                alt="Footer Logo"
+              />
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">
@@ -283,12 +287,19 @@ function Project1() {
                 </header>
               </article>
               <h5 className="footer-content">
-                <a href="" className="cool-link text-white">Click here to start elevating your physical and digital customer experiences.</a>
+                <a href="" className="cool-link text-white">
+                  Click here to start elevating your physical and digital
+                  customer experiences.
+                </a>
               </h5>
             </div>
             <div className="col-12 col-md-3 col-lg-3"></div>
             <div className="col-12 col-md-3 col-lg-3">
-              <img className="w-90 d-md-block d-none" src={myFooterLogo} alt="Footer Logo" />
+              <img
+                className="w-90 d-md-block d-none"
+                src={myFooterLogo}
+                alt="Footer Logo"
+              />
             </div>
           </div>
         </div>

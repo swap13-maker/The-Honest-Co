@@ -54,7 +54,7 @@ export default function App() {
       <InnerHeader />
       {/* mian content */}
       <section>
-        <div className="container">
+        <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>
@@ -216,7 +216,7 @@ export default function App() {
                       className="sticky-top"
                     />
                   </div>
-                  <div className="border p-4 mt-5 bg-white">
+                  <div className="border p-4 mt-5 bg-white d-none d-md-block">
                     <div className="side-article-heading">
                       Want to build one for yourself?
                     </div>

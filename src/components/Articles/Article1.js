@@ -57,8 +57,8 @@ export default function App() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
-      <section>
-        <div className="container">
+      <section className="container main-container">
+        <div className="">
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>
@@ -239,7 +239,7 @@ export default function App() {
                   <div className="border-left"></div>  
                   <div className="Side_border-bottom"></div>
                   </div>
-                  <div className="p-4 mt-5 bg-white">
+                  <div className="p-4 mt-5 bg-white d-none d-md-block">
                   <div className="Side_border-top"></div>
                   <div className="box-bottom-right"></div>
                     <div className="side-article-heading">
@@ -276,8 +276,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      <section className="container bg-white py-4"></section>
       <Footer />
     </section>
   );

@@ -273,10 +273,26 @@ p {
   padding: 3px 30px 8px 30px;
   font-size: 50px;
   font-weight: 200;
-}
 
-.custom-row {
-  --bs-gutter-x: 5rem !important;
+  /* background: -webkit-linear-gradient(
+    left,
+    #aa9feb,
+    #d7bbe5,
+    #e0f9c1,
+    #c0b7e6,
+    #b9dfe5,
+    #c0b7e6,
+    #e0f9c1,
+    #d7bbe5,
+    #aa9feb
+  );
+  background-size: 1600px 2000px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 8s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards; */
 }
 
 .zoom-effect-container {

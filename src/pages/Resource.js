@@ -50,8 +50,8 @@ const Resource = () => {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
-      <section>
-        <div className="container resource__page">
+      <section className="container main-container">
+        <div className="resource__page">
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>
@@ -68,7 +68,7 @@ const Resource = () => {
                 </div>
               </div>
               <div className="col-12 col-md-5 d-flex">
-                <div className="d-flex ml-auto align-items-start">
+                <div className="d-none d-md-flex ml-auto align-items-start">
                   <Lottie
                     animationData={loader}
                     autoplay
@@ -218,37 +218,37 @@ const Resource = () => {
             </div>
           </div>
         </div>
-      </section>
 
-      <section className="container bg-white py-4">
-        <div className="row py-5">
-          <div className="col-12 col-md-7 col-lg-7">
-            <div className="text-uppercase">
-              <h1 className="left-aligned portfolio-heading">
-                Want to build one
-                <br />
-                for yourself ?
-              </h1>
+        <div className="bg-white py-4">
+          <div className="row py-5">
+            <div className="col-12 col-md-7 col-lg-7">
+              <div className="text-uppercase">
+                <h1 className="left-aligned portfolio-heading">
+                  Want to build one
+                  <br />
+                  for yourself ?
+                </h1>
+              </div>
             </div>
-          </div>
-          <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
-            <div className="portfolio-sub-heading d-flex align-items-center">
-              <a href="" className="m-0 font-size-15 text-decoration-underline">
-                Start your dream project with us
-                <svg
-                  width="20"
-                  height="14"
-                  viewBox="-10 0 25 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Vector"
-                    d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
+            <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
+              <div className="portfolio-sub-heading d-flex align-items-center">
+                <a href="" className="m-0 font-size-15 text-decoration-underline">
+                  Start your dream project with us
+                  <svg
+                    width="20"
+                    height="14"
+                    viewBox="-10 0 25 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="Vector"
+                      d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

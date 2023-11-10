@@ -1,18 +1,17 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./InnerHeader.css"
+import "./InnerHeader.css";
+
 const InnerHeader = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
-
-  const handleScroll = () => {   
+  const handleScroll = () => {
     setScrollPos(document.body.getBoundingClientRect().top);
     setShowHeader(document.body.getBoundingClientRect().top > scrollPos);
-   if(scrollPos >= -300){
-    setShowHeader(true)
-   }
-    
+    if (scrollPos >= -300) {
+      setShowHeader(true);
+    }
   };
 
   useEffect(() => {
@@ -21,12 +20,16 @@ const InnerHeader = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPos, handleScroll]);
+
   return (
-    <header className={`glass1 InnerHeader mobile-d-none height-85 ${showHeader ? 'sticky' : ''}`}
-    style={{marginLeft:'0px'}}>
-      <Navbar className="container py-3" expand="lg" style={{marginLeft:'100px'}}>
+    <header
+      className={`header glass mobile-d-none height-85 ${
+        showHeader ? "sticky" : ""
+      }`}
+    >
+      <Navbar className="container py-3" expand="lg" variant="dark" sticky="">
         <Link to="/">
-          <Navbar.Brand href="#">
+          <Navbar.Brand>
             <span className="font-weight-800 text-black">the</span>
             <span className="font-weight-600 text-black"> honest</span>
             <span className="font-weight-400 text-black"> company</span>
@@ -52,7 +55,7 @@ const InnerHeader = () => {
             </Nav.Link>
             <Nav.Link className="text-black nav-btn-area" href="#">
               <Link to="/get-in-touch">
-                <button className="nav1-sticky1-button">get in touch</button>
+                <button className="nav-sticky-button">get in touch</button>
               </Link>
             </Nav.Link>
           </Nav>

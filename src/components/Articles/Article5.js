@@ -58,7 +58,7 @@ export default function Article5() {
       <InnerHeader />
       {/* mian content */}
       <section>
-        <div className="container">
+        <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>
@@ -247,7 +247,7 @@ export default function Article5() {
                     <div className="border-left"></div>
                     <div className="Side_border-bottom"></div>
                   </div>
-                  <div className="p-4 mt-5 bg-white">
+                  <div className="p-4 mt-5 bg-white d-none d-md-block">
                     <div className="Side_border-top"></div>
                     <div className="box-bottom-right"></div>
                     <div className="side-article-heading">

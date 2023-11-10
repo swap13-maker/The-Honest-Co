@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 import article from "../../images/article1.png";
 import articleImg1 from "../../images/articleImg1.png";
 import articleImg2 from "../../images/articleImg2.jpg";
-import article2Img1 from "../../images/Article2Image1.jpg"
-import article2Img3 from "../../images/Article2Img3.png"
-import './Article.css'
+import article2Img1 from "../../images/Article2Image1.jpg";
+import article2Img3 from "../../images/Article2Img3.png";
+import "./Article.css";
 
 export default function Article2() {
   const section1Ref = useRef();
@@ -59,8 +59,8 @@ export default function Article2() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
-      <section>
-        <div className="container">
+      <section className="container main-container">
+        <div>
           <ul className="breadcrumb-navigation pt-7">
             <li>
               <Link to="/">Home</Link>
@@ -229,21 +229,21 @@ export default function Article2() {
                 </div>
               </div>
               <div className="col-md-3 pt-5 pl-md-5">
-              <div className="bg-white sticky-top sticky-top-with-padding">
+                <div className="bg-white sticky-top sticky-top-with-padding">
                   <div className="p-4 d-none d-md-block">
-                  <div className="Side_border-top"></div>
-                  <div className="border-right"></div>
+                    <div className="Side_border-top"></div>
+                    <div className="border-right"></div>
                     <ScrollHighlightNabbar
                       section1Ref={section1Ref}
                       navHeader={navHeader}
                       className="sticky-top"
                     />
-                  <div className="border-left"></div>  
-                  <div className="Side_border-bottom"></div>
+                    <div className="border-left"></div>
+                    <div className="Side_border-bottom"></div>
                   </div>
-                  <div className="p-4 mt-5 bg-white">
-                  <div className="Side_border-top"></div>
-                  <div className="box-bottom-right"></div>
+                  <div className="p-4 mt-5 bg-white d-none d-md-block">
+                    <div className="Side_border-top"></div>
+                    <div className="box-bottom-right"></div>
                     <div className="side-article-heading">
                       Want to build one for yourself?
                     </div>
@@ -267,9 +267,8 @@ export default function Article2() {
                           fill="black"
                         ></path>
                       </svg>
-                      
-                      <div className="box-bottom-left"></div>  
-                  <div className="Side_border-bottom"></div>
+                      <div className="box-bottom-left"></div>
+                      <div className="Side_border-bottom"></div>
                     </div>
                   </div>
                 </div>
@@ -278,7 +277,6 @@ export default function Article2() {
           </div>
         </div>
       </section>
-      <section className="container bg-white py-4"></section>
       <Footer />
     </section>
   );
