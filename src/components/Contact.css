@@ -352,8 +352,8 @@ background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff
 }
 .form-check-input[type="radio"]::-ms-ticks-after {
   background-color: black;
-  border-color: black; /* Change this to your preferred color */
-  box-shadow: none; /* Removes the box shadow when hovered */
+  border-color: black; 
+  box-shadow: none; 
 }
 .form-check-input[type="radio"] {
   background-color: #fff; 
