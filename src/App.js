@@ -5,6 +5,7 @@ import CustomerContact from './pages/CustomerContact';
 import CreatorContact from './pages/CreatorContact';
 import Portfolio from './pages/Portfolio.js';
 import Resource from './pages/Resource.js';
+import Thanks from './pages/Thanks.js';
 import Project1 from './components/Portfolio/Project1.js';
 import Article1 from './components/Articles/Article1.js';
 import Article2 from './components/Articles/Article2';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/resources/articles/article10" element={<Article10 />} />
         <Route path="/resources/articles/article11" element={<Article11 />} />
         <Route path="/resources/articles/article12" element={<Article12 />} />
+        <Route path="/thankyou" element={<Thanks />} />
       </Routes>
     </Router>
   );

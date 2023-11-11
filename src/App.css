@@ -12,6 +12,17 @@ h6 {
   font-family: "Barlow", sans-serif;
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  overflow: auto;
+}
+
+/* Webkit */
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* optional: hide scrollbar track */
+}
+
 .font-size-15 {
   font-size: 15px;
 }
@@ -257,6 +268,63 @@ h1 {
 .extra-border-left {
   border-left: 1px solid #ccc;
 }
+/* ================================================= Thank you */
+.button-thanks {
+  font: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 1em 4em;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgb(255, 255, 255) 8px 8px 0px -1px, rgb(000, 000, 000) 8px 8px;
+  transition: all 0.25s ease-in-out;
+}
+.button-thanks:hover {
+  box-shadow: 0em 0em #000;
+  transform: translate(0.25em, 0.25em);
+}
+.view-projects {
+  color: #1A1A1A;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 13.714px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 131.25% */
+  text-transform: uppercase;
+}
+.thank-you {
+  color: #1A1A1A;
+  text-align: center;
+  font-family: Inter;
+  font-size: 159.62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: -webkit-linear-gradient(
+    left,
+    #aa9feb,
+    #d7bbe5,
+    #e0f9c1,
+    #c0b7e6,
+    #b9dfe5,
+    #c0b7e6,
+    #e0f9c1,
+    #d7bbe5,
+    #aa9feb
+  );
+  background-size: 1600px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 8s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
 /* ================================================= Services */
 .button {
   font: inherit;
@@ -342,6 +410,15 @@ h1 {
 @media (max-width: 768px) {
   .top-heading {
     font-size: 42px !important;
+  }
+  .thank-you {
+    font-size: 80px;
+  }
+  .button-thanks {
+    width: 100%;
+  }
+  .view-projects {
+
   }
   .portfolio-heading {
     font-size: 24px !important;

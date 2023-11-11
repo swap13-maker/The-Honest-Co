@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./../App.css";
 import "./../components/Portfolio/Portfolio.css";
 import "./resource.css";
-
 import Filter from "./../components/Resource/Filter";
 import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
