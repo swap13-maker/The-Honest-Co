@@ -15,6 +15,7 @@ import Article6 from './components/Articles/Article6';
 import Article7 from './components/Articles/Article7.js';
 import Article8 from './components/Articles/Article8';
 import Article9 from './components/Articles/Article9.js';
+import Article10 from './components/Articles/Article10.js';
 import Article11 from './components/Articles/Article11';
 import Article12 from './components/Articles/Article12.js';
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/resources/articles/article7" element={<Article7 />} />
         <Route path="/resources/articles/article8" element={<Article8 />} />
         <Route path="/resources/articles/article9" element={<Article9 />} />
+        <Route path="/resources/articles/article10" element={<Article10 />} />
         <Route path="/resources/articles/article11" element={<Article11 />} />
         <Route path="/resources/articles/article12" element={<Article12 />} />
       </Routes>
