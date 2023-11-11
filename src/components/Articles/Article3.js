@@ -32,20 +32,26 @@ export default function App() {
       headerID: "section2",
     },
     {
-      headerTitle: "Solutions and Precentative Measures",
+      headerTitle: "Image Capture to Interventions",
       headerRef: section3Ref,
+      headerID: "section6",
+    },
+    {
+      headerTitle: "Solutions and Precentative Measures",
+      headerRef: section4Ref,
       headerID: "section3",
     },
     {
       headerTitle: "Empowering Farmers with knowledge",
-      headerRef: section4Ref,
+      headerRef: section5Ref,
       headerID: "section4",
     },
     {
       headerTitle: "AI in Agro-Healthcare",
-      headerRef: section5Ref,
+      headerRef: section6Ref,
       headerID: "section5",
     },
+    
   ];
 
   return (
@@ -114,6 +120,8 @@ export default function App() {
                     (AI) and Machine Learning (ML) - transforming traditional
                     farming into precision agriculture..
                   </p>
+                </div>
+                <div className="pt-5" ref={section3Ref} id="section3">
                   <p className="main-article-content">
                     The Process: From Image Capture to Intervention
                   </p>
@@ -135,25 +143,34 @@ export default function App() {
                   </p>
                   <p className="main-article-content">Real-time Analysis</p>
                   <p className="light-article-content">
-                    These images feed into a sophisticated AI model trained on
-                    machine learning in healthcare. It identifies patterns,
-                    color variations, and other subtle indicators that might be
-                    invisible to the naked eye.
+                    These images feed into a sophisticated AI model trained to
+                    detect the plants and the subsequent diseases. The process
+                    begins with the collection of data, often in the form of
+                    images captured from the field. These images contain vital
+                    information about the condition of the plants. AI
+                    algorithms, which have been meticulously trained on vast
+                    datasets, swing into action. They swiftly analyse the
+                    images, dissecting every detail to spot even the most subtle
+                    indicators of disease.
                     <br />
+                    <br />
+                    These indicators encompass a wide range of factors,
+                    including color variations, patterns, and deviations that
+                    might be imperceptible to the naked eye. It's like having a
+                    team of experts tirelessly scrutinizing every plant in the
+                    field, 24/7, with unmatched precision. Moreover, these AI
+                    and ML models don't merely stop at disease identification.
+                    They go a step further by providing actionable insights to
+                    farmers. This includes not only diagnosing the problem but
+                    also suggesting specific solutions. Whether it's a tailored
+                    treatment plan, recommendations for altering watering
+                    schedules, or strategies for pest control, the system offers
+                    valuable guidance for precise intervention.
                   </p>
                   <img src={articleImg1} className="w-100 pt-5" />
                   <br />
-                  <br />
-                  <p className="main-article-content">
-                    Disease Detection and Prediction
-                  </p>
-                  <p className="light-article-content">
-                    On recognizing a pattern consistent with a known plant
-                    disease or even the early onset of one, the system alerts
-                    the farmer. But it doesn't stop at mere identification.
-                  </p>
                 </div>
-                <div className="pt-5" ref={section3Ref} id="section3">
+                <div className="pt-5" ref={section4Ref} id="section3">
                   <p className="main-article-content">
                     Solutions and Preventative Measures
                   </p>
@@ -165,7 +182,7 @@ export default function App() {
                   </p>
                   <img src={articleImg1} className="w-100 pt-5" />
                 </div>
-                <div className="pt-5" ref={section4Ref} id="section5">
+                <div className="pt-5" ref={section5Ref} id="section5">
                   <p className="main-article-content">
                     Based on the detected disease, AI systems can recommend
                     treatments, ensuring quick action and minimal damage. By
@@ -180,10 +197,20 @@ export default function App() {
                     yield, the dream of sustainable and efficient farming seems
                     closer than ever.
                     <br />
+                    <br />
+                    The fusion of agriculture with AI and ML signifies a
+                    promising future for farmers worldwide. With more accurate
+                    early detection systems, reduced crop loss, and enhanced
+                    yield, the dream of sustainable and efficient farming seems
+                    closer than ever. These technologies offer a powerful ally
+                    in the fight against plant diseases, ensuring that
+                    agriculture evolves into a proactive and resilient industry,
+                    well-equipped to feed our growing global population while
+                    safeguarding the environment.
                   </p>
                   <img src={article2Img3} className="w-100 pt-5" />
                 </div>
-                <div className="pt-5" ref={section5Ref} id="section6">
+                <div className="pt-5" ref={section6Ref} id="section6">
                   <p className="main-article-content">
                     The Bigger Picture: AI in Agro-Healthcare
                   </p>
@@ -193,17 +220,16 @@ export default function App() {
                     industries traditionally thought to be beyond its purview.
                     We're on the brink of an agro-revolution where tech ensures
                     that food on our plates is healthier, more abundant, and
-                    sustainably produced. 
+                    sustainably produced.
                     <br />
-                    <br/>
-                    Craft your agro - tech future with The
-                    Honest Company. Delve into the intricate world where
-                    technology meets agriculture. At The Honest Company, we
-                    don’t just see technological advancements, we envision
-                    holistic solutions harmonising industries with innovation.
-                    Whether you're a farmer looking to safeguard your fields or
-                    an enterprise aiming to pioneer agro-tech solutions, we’re
-                    your collaborators.
+                    <br />
+                    Craft your agro - tech future with The Honest Company. Delve
+                    into the intricate world where technology meets agriculture.
+                    At The Honest Company, we don’t just see technological
+                    advancements, we envision holistic solutions harmonising
+                    industries with innovation. Whether you're a farmer looking
+                    to safeguard your fields or an enterprise aiming to pioneer
+                    agro-tech solutions, we’re your collaborators.
                   </p>
                 </div>
               </div>
