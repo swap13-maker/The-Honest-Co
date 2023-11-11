@@ -233,7 +233,7 @@ p {
 .portfolio-heading {
   color: #1a1a1a;
   font-family: Barlow;
-  font-size: 50px !important;
+  font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -317,14 +317,20 @@ p {
 .wrapper:hover .res-zoom-effect-container {
   height: 240px;
 }
-
 .translate__down {
   transition: all 0.4s ease;
 }
 .wrapper:hover .translate__down {
   transform: translateY(160px);
 }
-
 .margin-top--35 {
   margin-top: -35px;
+}
+.margin-portolio > .wrapper {
+  margin-top: -15%;
+}
+@media (max-width: 768px) {
+  .margin-portolio > .wrapper {
+    margin-top: 0 !important;
+  }
 }

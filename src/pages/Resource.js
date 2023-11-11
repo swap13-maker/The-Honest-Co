@@ -176,7 +176,7 @@ const Resource = () => {
                 // Check if the index is 1, 4, 7, 10, 13, etc.
                 const cardClass = index % 3 === 1 ? "odd-res" : "even-res";
                 const marginTopClass =
-                  index === 0 || index === 1 || index === 2 ? "" : "margin-res";
+                  index === 0 || index === 1 || index === 2 ? "" : "margin-resourse";
 
                 return (
                   <div

@@ -43,3 +43,15 @@
 .resource__page .no__padding {
   padding: 0;
 }
+.margin-resourse > .wrapper {
+  margin-top: -35%;
+}
+@media (max-width: 768px) {
+  .margin-resourse > .wrapper {
+    margin-top: 0 !important;
+  }
+  .resource__page .wrapper::after {
+    content: none !important;
+    bottom: 0;
+  }
+}

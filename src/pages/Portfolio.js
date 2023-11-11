@@ -174,7 +174,7 @@ const Portfolio = () => {
                 const { name, logo, image, description } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
                 const marginTopClass =
-                  index === 0 || index === 1 ? "" : "margin-port";
+                  index === 0 || index === 1 ? "" : "margin-portolio";
 
                 return (
                   <ProjectCards
