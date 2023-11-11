@@ -42,7 +42,7 @@ function ContactForm4({onMoreChange}) {
         <div className="contact-sub-heading font-weight-600 text-black"> Send us more information and let us get back to you</div>
         <Form.Group controlId="formName">
           <Form.Floating>
-            <Form.Control className="w-75" type="text" placeholder="Type here" value={more} onChange={handleMoreChange} />
+            <Form.Control className="w-75 label-with-underline" type="text" placeholder="Type here" value={more} onChange={handleMoreChange} />
             <Form.Label>Type here</Form.Label>
           </Form.Floating>
         </Form.Group>

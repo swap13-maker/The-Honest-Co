@@ -323,7 +323,52 @@ background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff
   border-color: #ccc;
 }
 
-.custom-checkbox:checked + .custom-control-label::before {
-  background-color: red;
-  border-color: orange;
+#custom-checkbox:checked + .custom-control-label::before {
+  --bs-form-check-bg-image: none !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
+  opacity: 1 !important;
+}
+
+.form-check-input[type="checkbox"] {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-check-input[type="checkbox"] {
+  box-shadow: 3px 3px 0px 0px #000;
+  transition: all 0.25s ease-in-out;
+  border-radius: 0px;
+}
+.form-check-input:checked[type="checkbox"] {
+  --bs-form-check-bg-image: none !important;
+  background-color: #000 !important; 
+  border-color: #000 !important;
+  opacity: 1 !important;
+  box-shadow: none;
+  border-radius: 0px;
+  transition: all 0.25s ease-in-out;
+  
+}
+.form-check-input[type="radio"]::-ms-ticks-after {
+  background-color: black;
+  border-color: black; 
+  box-shadow: none; 
+}
+.form-check-input[type="radio"] {
+  background-color: #fff; 
+}
+
+
+.form-check-input[type="radio"] {
+  border-color: #000; 
+}
+
+
+.form-check-input:checked[type="radio"] {
+  background-color: #000; 
+}
+.form-check-input:checked[type="radio"] {
+  border-color: #000;
+  --bs-blue: none;
 }
