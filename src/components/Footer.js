@@ -53,105 +53,93 @@ function Footer() {
         </div>
         <div className="row pt-md-5 pb-4">
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Architecture </div>
+            <div className="footer-heading mb-2">About</div>
             <ul>
               <li>
-                <a href="#">Architectural Design</a>
+                <a href="#">Our Story</a>
               </li>
               <li>
-                <a href="#">Building Information Modelling (BIM)</a>
+                <a href="#">Our Services</a>
               </li>
               <li>
-                <a href="#">Interior Design</a>
-              </li>
-              <li>
-                <a href="#">Feasibility Studies & Site Analysis</a>
-              </li>
-              <li>
-                <a href="#">Renovation & Restorations</a>
+                <a href="#">Our Work</a>
               </li>
             </ul>
           </div>
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Industrial Design </div>
+            <div className="footer-heading mb-2">Application Development </div>
             <ul>
               <li>
-                <a href="#">Product Design</a>
-              </li>
-              <li>
-                <a href="#">Concept Development & Prototyping</a>
-              </li>
-              <li>
-                <a href="#">Branding & Identify Design</a>
-              </li>
-              <li>
-                <a href="#">Manufacturing Support</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2">
-              {" "}
-              Web & Mobile development{" "}
-            </div>
-            <ul>
-              <li>
-                <a href="#">Customer Software Development</a>
+                <a href="#">Custom Software Development</a>
               </li>
               <li>
                 <a href="#">Mobile Application Development</a>
               </li>
               <li>
-                <a href="#">Ai & ML solutions</a>
+                <a href="#">AI & ML solutions</a>
               </li>
               <li>
-                <a href="#">Web3 & Blockchain Application Development</a>
+                <a href="#">Web3 & Blockchain</a>
               </li>
             </ul>
           </div>
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2">
               {" "}
-              Marketing & Content creation{" "}
+             Content Creation{" "}
             </div>
             <ul>
               <li>
                 <a href="#">Motion Graphics</a>
               </li>
               <li>
-                <a href="#">Content Creation</a>
+                <a href="#">2D/ 3D Graphics Design</a>
               </li>
               <li>
-                <a href="#">Branding & Identify Designs</a>
+                <a href="#">Advertisements</a>
               </li>
               <li>
-                <a href="#">Advertisement</a>
+                <a href="#">Branding & Identify Design</a>
               </li>
             </ul>
           </div>
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Get started with us </div>
+            <div className="footer-heading mb-2">
+              {" "}
+             Industrial Design{" "}
+            </div>
             <ul>
               <li>
-                <a href="#">Get Started</a>
+                <a href="#">Product Design</a>
               </li>
               <li>
-                <a href="#">Looking for opportunities?</a>
+                <a href="#">Concept Development & Development</a>
               </li>
               <li>
-                <a href="#">Looking for a team to execute?</a>
+                <a href="#">Manufacturing Support</a>
               </li>
               <li>
-                <a href="#">Looking to ideate your solution?</a>
+                <a href="#">Merchandizing & Packaging Designe</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+            <div className="footer-heading mb-2"> Industrial </div>
+            <ul>
+              <li>
+                <a href="#">D2C& E-Commerce</a>
               </li>
               <li>
-                <a href="#">Get in touch with us</a>
+                <a href="#">Banking & Finance</a>
               </li>
               <li>
-                <a href="#">Set up a call</a>
+                <a href="#">Healthcare Technology</a>
               </li>
               <li>
-                <a href="#">Send us your enquiry</a>
+                <a href="#">Staffing & Recruitment</a>
+              </li>
+              <li>
+                <a href="#">Educational Technology</a>
               </li>
             </ul>
           </div>
@@ -159,22 +147,53 @@ function Footer() {
 
         <div className="row pt-2 pb-5">
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> About </div>
+            <div className="footer-heading mb-2"> Resources </div>
             <ul>
               <li>
-                <a href="#">Our Story</a>
+                <a href="#">Case Studies</a>
               </li>
               <li>
-                <a href="#">Our Offering</a>
+                <a href="#">Articles</a>
               </li>
               <li>
-                <a href="#">Journey till now</a>
+                <a href="#">White Papers</a>
+              </li>
+              <li>
+                <a href="#">Tutorials</a>
+              </li>
+              <li>
+                <a href="#">Infographics</a>
+              </li>
+              <li>
+                <a href="#">Reports</a>
               </li>
             </ul>
-            <div className="footer-heading mt-5"> Partners </div>
+          </div>
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+            <div className="footer-heading mb-2">Portfolio</div>
             <ul>
               <li>
-                <a href="#">Become our partners</a>
+                <a href="#">Application Development</a>
+              </li>
+              <li>
+                <a href="#">Content Creation</a>
+              </li>
+              <li>
+                <a href="#">Industrial Design</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+            <div className="footer-heading mb-2"> Connect With Us</div>
+            <ul>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#">WhatsApp</a>
+              </li>
+              <li>
+                <a href="#">Email</a>
               </li>
               <li>
                 <a href="#">Get in touch</a>
@@ -182,95 +201,20 @@ function Footer() {
             </ul>
           </div>
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Team </div>
+            <div className="footer-heading mb-2">Get In Touch </div>
             <ul>
               <li>
-                <a href="#">Creative</a>
+                <a href="#">Are you a Customer</a>
               </li>
               <li>
-                <a href="#">Technology</a>
-              </li>
-              <li>
-                <a href="#">Human Resources</a>
-              </li>
-              <li>
-                <a href="#">Management</a>
-              </li>
-              <li>
-                <a href="#">Operations</a>
-              </li>
-              <li>
-                <a href="#">Become our partners</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-              <li>
-                <a href="#">Join our team</a>
+                <a href="#">Are you a creator?</a>
               </li>
             </ul>
           </div>
+          
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> White Papers </div>
-            <ul>
-              <li>
-                <a href="#">Recent</a>
-              </li>
-              <li>
-                <a href="#">Search by category</a>
-              </li>
-            </ul>
-            <div className="footer-heading mt-4"> Case Studies </div>
-            <ul>
-              <li>
-                <a href="#">Architecture</a>
-              </li>
-              <li>
-                <a href="#">Industrial Design</a>
-              </li>
-              <li>
-                <a href="#">Web & Mobile Applications</a>
-              </li>
-              <li>
-                <a href="#">Marketing & Content Creation</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Portfolio </div>
-            <ul>
-              <li>
-                <a href="#">Our Work</a>
-              </li>
-              <li>
-                <a href="#">Service Grid</a>
-              </li>
-              <li>
-                <a href="#">Get Started</a>
-              </li>
-              <li>
-                <a href="#">Case Studies</a>
-              </li>
-            </ul>
-            <div className="footer-heading mt-4 pt-2"> Term & Conditions </div>
-            <div className="footer-heading mt-2"> Privacy Policy </div>
-          </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <div className="footer-heading mb-2"> Blogs </div>
-            <ul>
-              <li>
-                <a href="#">Recent</a>
-              </li>
-              <li>
-                <a href="#">Hot</a>
-              </li>
-              <li>
-                <a href="#">Medium</a>
-              </li>
-              <li>
-                <a href="#">LinkedIn</a>
-              </li>
-            </ul>
+            <div className="footer-heading mb-2"> hello@thehonestco.in </div>
+            <div className="footer-heading mb-2"> Terms & Conditions </div>
           </div>
         </div>
         <p className="post-footer pt-3 border-top text-center">
