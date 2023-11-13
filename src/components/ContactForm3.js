@@ -97,7 +97,7 @@ function ContactForm3({ onTimelineChange, onBudgetChange }) {
         </div>
       </section>
 
-      <div className="pt-4">
+      <section className="media-pt-6">
         <div className="contact-sub-heading font-weight-600 text-black">
           Tentative budget for the project
         </div>
@@ -155,7 +155,7 @@ function ContactForm3({ onTimelineChange, onBudgetChange }) {
             </label>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   );
 }

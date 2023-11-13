@@ -68,7 +68,7 @@ function ContactForm1({
   };
 
   return (
-    <div className="py-4" style={{ paddingRight: "40px" }}>
+    <div className="py-4 pr-40px">
       <div className="contact-heading">
         <span className="font-weight-600 text-black">Got ideas?</span> We have
         got the skills. <br />
@@ -79,7 +79,7 @@ function ContactForm1({
         <Form.Group controlId="formName">
           <Form.Floating>
             <Form.Control
-              className="w-75 label-with-underline"
+              className="w-md-75 label-with-underline"
               type="text"
               placeholder="Enter your name"
               value={name}
@@ -92,7 +92,7 @@ function ContactForm1({
         <Form.Group controlId="formOrganization">
           <Form.Floating>
             <Form.Control
-              className="w-75 label-with-underline"
+              className="w-md-75 label-with-underline"
               type="text"
               placeholder="Enter your organization"
               value={organization}
@@ -105,7 +105,7 @@ function ContactForm1({
         <Form.Group controlId="formEmail">
           <Form.Floating>
             <Form.Control
-              className="w-75 label-with-underline"
+              className="w-md-75 label-with-underline"
               type="email"
               placeholder="Enter your email"
               value={email}
@@ -119,7 +119,7 @@ function ContactForm1({
           <Form.Group controlId="formContact">
             <Form.Floating>
               <Form.Control
-                className="w-75 label-with-underline"
+                className="w-md-75 label-with-underline"
                 type="number"
                 placeholder="Enter your contact"
                 maxLength={10}

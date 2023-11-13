@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 
-function ContactForm4({onMoreChange}) {
+function ContactForm4({ onMoreChange }) {
   const [more, setMore] = useState("");
 
   useEffect(() => {
@@ -39,17 +39,30 @@ function ContactForm4({onMoreChange}) {
         </svg>
       </div>
       <div className="pt-4">
-        <div className="contact-sub-heading font-weight-600 text-black"> Send us more information and let us get back to you</div>
+        <div className="contact-sub-heading font-weight-600 text-black">
+          {" "}
+          Send us more information and let us get back to you
+        </div>
         <Form.Group controlId="formName">
           <Form.Floating>
-            <Form.Control className="w-75 label-with-underline" type="text" placeholder="Type here" value={more} onChange={handleMoreChange} />
+            <Form.Control
+              className="w-md-75 label-with-underline"
+              type="text"
+              placeholder="Type here"
+              value={more}
+              onChange={handleMoreChange}
+            />
             <Form.Label>Type here</Form.Label>
           </Form.Floating>
         </Form.Group>
       </div>
 
       <Form.Group className="pt-4" controlId="formCheckbox">
-          <Form.Check className="w-100 d-flex" type="checkbox" label="Click here to download a Work Document of our sample NDA. We prefer to keep the NDA in place while conceptulizing details of your project" />
+        <Form.Check
+          className="w-100 d-flex media-checkbox"
+          type="checkbox"
+          label="Click here to download a Work Document of our sample NDA. We prefer to keep the NDA in place while conceptulizing details of your project"
+        />
       </Form.Group>
     </div>
   );

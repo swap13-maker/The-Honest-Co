@@ -60,14 +60,15 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
         <span className="font-weight-600 text-black"> Areas of interest!</span>
       </div>
 
-      <div className="contact-form py-4">
+      <div className="contact-form py-md-4">
         <div className="row">
-          <div className="col-md-4 col-12">
+          <div className="col-md-4 col-5">
             <Form.Group className="pt-4" controlId="architectural">
               <Form.Check
                 type="checkbox"
                 value="Architectural"
                 label="Architectural"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Architectural")}
                 onChange={handleCheckboxChange}
               />
@@ -78,17 +79,19 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
                 type="checkbox"
                 value="Industrial"
                 label="Industrial"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Industrial")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>
           </div>
-          <div className="col-md-4 col-12">
+          <div className="col-md-4 col-7">
             <Form.Group className="pt-4" controlId="applicationDevelopment">
               <Form.Check
                 type="checkbox"
                 value="Application Development"
                 label="Application Development"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Application Development")}
                 onChange={handleCheckboxChange}
               />
@@ -99,6 +102,7 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
                 type="checkbox"
                 value="Content Creation"
                 label="Content Creation"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Content Creation")}
                 onChange={handleCheckboxChange}
               />
@@ -113,6 +117,7 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
               name="project"
               placeholder="Tell us about your project"
               value={project}
+              className="w-md-75 label-with-underline"
               onChange={handleProjectChange}
             />
             <Form.Label>Tell us about your project</Form.Label>
@@ -120,7 +125,7 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
         </Form.Group>
       </div>
 
-      <div className="contact-form py-4">
+      <div className="contact-form py-md-4">
         <div className="contact-heading">
           How can we
           <span className="font-weight-600 text-black"> help you!</span>

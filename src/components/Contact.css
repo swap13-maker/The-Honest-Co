@@ -253,17 +253,41 @@ figure.effect-sadie:hover p {
 .previous-button {
   cursor: pointer;
 }
-.top_Side{
+.top_Side {
   position: relative;
   width: 112%;
   left: -55px;
   background: #ccc;
   height: 1px;
   bottom: 1px;
-  background: linear-gradient(to left,#ffffff 0%, #b1aeae 12%, #b1aeae 90%, #ffffff 100%);
-  background: -webkit-linear-gradient(to left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-  background: -moz-linear-gradient(left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-  background: -o-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 12%,
+    #b1aeae 90%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
 }
 
 .container {
@@ -278,12 +302,34 @@ figure.effect-sadie:hover p {
   background: #ccc;
   height: 1px;
   bottom: 1px;
-  background: linear-gradient(to left,#ffffff 0%, #b1aeae 12%, #b1aeae 90%, #ffffff 100%);
-background: -webkit-linear-gradient(to left,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-background: -moz-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-background: -o-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-
-  
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 12%,
+    #b1aeae 90%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
 }
 
 .right_Side {
@@ -294,10 +340,34 @@ background: -o-linear-gradient(left, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffff
   width: 1.2px;
   height: 96%; /* Takes full height of the container */
   background: #ccc;
-  background: linear-gradient(to top, #ffffff 0%, #b1aeae 12%, #b1aeae 95%, #ffffff 100%);
-background: -webkit-linear-gradient(to top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-background: -moz-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 12%,
+    #b1aeae 95%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
   transform: translateX(-50px);
 }
 .Left_Side {
@@ -307,14 +377,38 @@ background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff
   width: 1.1px; /* Adjust the width as needed */
   height: 115%; /* Takes full height of the container */
   background: #ccc; /* Background color for the left-side border */
-  background: linear-gradient(to top,#ffffff 0%, #b1aeae 12%, #b1aeae 95%, #ffffff 100%);
-  background: -webkit-linear-gradient(to top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-  background: -moz-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
-  background: -o-linear-gradient(top, #ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff 100%);
+  background: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 12%,
+    #b1aeae 95%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    #ffffff 0%,
+    #b1aeae 15%,
+    #b1aeae 85%,
+    #ffffff 100%
+  );
   transform: translateX(-50px);
 }
 .label-with-underline {
-  border-bottom: 2px solid #ccc !important; 
+  border-bottom: 2px solid #ccc !important;
   border-radius: 0px !important;
 }
 
@@ -334,41 +428,90 @@ background: -o-linear-gradient(top,#ffffff 0%, #b1aeae 15%, #b1aeae 85%, #ffffff
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-
 .form-check-input[type="checkbox"] {
   box-shadow: 3px 3px 0px 0px #000;
   transition: all 0.25s ease-in-out;
-  border-radius: 0px;
+  border-radius: 0px !important;
 }
 .form-check-input:checked[type="checkbox"] {
   --bs-form-check-bg-image: none !important;
-  background-color: #000 !important; 
+  background-color: #000 !important;
   border-color: #000 !important;
   opacity: 1 !important;
   box-shadow: none;
   border-radius: 0px;
   transition: all 0.25s ease-in-out;
-  
 }
 .form-check-input[type="radio"]::-ms-ticks-after {
   background-color: black;
-  border-color: black; 
-  box-shadow: none; 
+  border-color: black;
+  box-shadow: none;
 }
 .form-check-input[type="radio"] {
-  background-color: #fff; 
+  background-color: #fff;
 }
-
 
 .form-check-input[type="radio"] {
-  border-color: #000; 
+  border-color: #000;
 }
-
 
 .form-check-input:checked[type="radio"] {
-  background-color: #000; 
+  background-color: #000;
 }
 .form-check-input:checked[type="radio"] {
   border-color: #000;
   --bs-blue: none;
+}
+.w-md-75 {
+  width: 75% !important;
+}
+.height-85pec {
+  height: 85%;
+}
+/* desktop */
+@media (min-width: 768px) {
+  .pr-40px {
+    padding-right: 40px;
+  }
+  .form-margins {
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+  .py-md-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .media-pt-6 {
+    padding-top: 1.5rem !important;
+  }
+}
+/* mobile */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .w-md-75 {
+    width: 100% !important;
+  }
+  .media-label-font-14 {
+    font-size: 14px !important;
+  }
+  .media-checkbox > .form-check-input {
+    width: 54px !important;
+  }
+  .height-85pec {
+    height: 95%;
+  }
+  .py-md-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .cat {
+    margin-right: 15px !important;
+    margin-top: 15px !important;
+  }
+  .media-pt-6 {
+    padding-top: 6rem !important;
+  }
 }

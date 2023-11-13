@@ -128,7 +128,7 @@ function CustomerContact() {
   return (
     <Container>
       <div className="row height-100vh">
-        <div className="col-md-3 col-12">
+        <div className="col-md-3 col-12 d-none d-md-block">
           <Link to="/" className="contact-logo">
             <span className="font-weight-800">the</span>
             <span className="font-weight-600"> honest</span>
@@ -170,16 +170,15 @@ function CustomerContact() {
         </div>
 
         <Container className="col-md-9 col-12 border-element form-content" style={{border:'none'}}>
-          <div className="top_Side">
+          <div className="top_Side mobile-none">
           </div>
-          <div className="Left_Side">
+          <div className="Left_Side mobile-none">
           </div>
          
           <div
-            className="d-flex align-items-start flex-column"
-            style={{ height: "85%" }}
+            className="d-flex align-items-start flex-column height-85pec"
           >
-            <Form className="px-4 w-100">
+            <Form className="px-md-4 w-100">
               {step === 1 && (
                 <ContactForm1
                   onNameChange={handleNameChange}
@@ -206,8 +205,8 @@ function CustomerContact() {
           </div>
 
           <div
-            className="d-flex align-items-end custom-padding"
-            style={{ height: "10%", justifyContent: "space-between", marginLeft:'30px',marginRight:'40px'}}
+            className="d-flex align-items-end custom-padding form-margins"
+            style={{ height: "10%", justifyContent: "space-between"}}
           >
             {step > 1 && (
               <a
@@ -231,8 +230,8 @@ function CustomerContact() {
         </Container>
       </div>
       
-      <div className="bottom_Side"></div>
-      <div className="right_Side"></div>
+      <div className="bottom_Side mobile-none"></div>
+      <div className="right_Side mobile-none"></div>
     </Container>
   );
 }

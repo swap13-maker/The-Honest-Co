@@ -6,7 +6,6 @@ import "./../App.css";
 
 function Thanks() {
   return (
-    
     <section>
         <InnerHeader />
         <Container>
