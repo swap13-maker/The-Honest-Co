@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import "./../App.css";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
@@ -6,22 +6,27 @@ import { Row, Col } from "react-bootstrap";
 import logo from "../images/logo.png";
 import logoIcon from "../images/logo-icon.png";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 function Hero() {
   useEffect(() => {
     localStorage.clear();
   }, []);
   const [showHeader, setShowHeader] = useState(true);
-  
-  
 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleToggle = () => {
+    setMenuOpen(!isMenuOpen);
+    $("#toggle").toggleClass("active");
+    $("#overlay").toggleClass("open");
+  };
 
   return (
     <section id="hero">
       <Container>
         <div className="app-container pt-2">
-          {/*navbar*/}
-          
+          {/* Desktop header */}
           <Navbar
             className={`py-4 ${showHeader ? "headerVisible" : ""}`}
             expand="lg"
@@ -50,7 +55,7 @@ function Hero() {
                   <Link to="/portfolio">portfolio</Link>
                 </Nav.Link>
                 <Nav.Link href="#" className="menu-link">
-                <Link to="/resources">resources</Link>
+                  <Link to="/resources">resources</Link>
                 </Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
                   <Link to="/get-in-touch">
@@ -60,7 +65,65 @@ function Hero() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          
+
+
+
+
+
+
+
+          {/* Mobile header */}
+          <Navbar className="py-4 mobile-navbar-container">
+            <Link to="/">
+              <Navbar.Brand>
+                <span className="font-weight-800 text-white">the</span>
+                <span className="font-weight-600 text-white"> honest</span>
+                <span className="font-weight-400 text-white"> company</span>
+              </Navbar.Brand>
+            </Link>
+            <Navbar.Toggle aria-controls="navbar-nav" />
+
+            <div
+              id="navbar-nav toggle" className="justify-content-end"
+              className={`button_container ${isMenuOpen ? "active" : ""}`}
+              onClick={handleToggle}
+            >
+              <span className="top"></span>
+              <span className="middle"></span>
+              <span className="bottom"></span>
+            </div>
+
+            <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
+              <nav className="overlay-menu">
+                <div className="pl-6">
+                  Menu
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">Resources</a>
+                  </li>
+                  <li>
+                    <Link to="/get-in-touch">
+                      <button className="nav-button">get in touch</button>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </Navbar>
+
           <main className="content">
             <div className="row">
               <div className="col-md-8 col-12 p-absolute text-align-media-left">
