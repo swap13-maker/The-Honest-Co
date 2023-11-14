@@ -1,8 +1,7 @@
 .other__work__container {
   background: #1a1a1a;
   color: #fff;
-  padding: 80px 0;
-
+  /* padding: 80px 0; */
 }
 .custom_padding{
   padding-bottom: 100px;
@@ -110,6 +109,9 @@
 }
 .heading_line{
   opacity: 1.25;
+}
+.paddingLeft-even {
+  padding-left: 7%;
 }
 @media screen and (max-width: 560px) {
   .baner_size{

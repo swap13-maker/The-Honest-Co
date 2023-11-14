@@ -51,7 +51,7 @@ function Footer() {
             />
           </div>
         </div>
-        <div className="row pt-md-5 pb-4">
+        <div className="row pt-md-6 pb-4">
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2">About</div>
             <ul>
@@ -145,7 +145,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="row pt-2 pb-5">
+        <div className="row pt-5 pb-5">
           <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <div className="footer-heading mb-2"> Resources </div>
             <ul>

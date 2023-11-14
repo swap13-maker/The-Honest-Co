@@ -167,7 +167,6 @@ h1 {
 .footer {
   /* height: 100vh; */
   background: #1a1a1a !important;
-  border: none;
 }
 .bg-dark {
   background-color: #1a1a1a !important;
@@ -301,7 +300,7 @@ h1 {
 .thank-you {
   color: #1A1A1A;
   text-align: center;
-  font-family:  "Barlow", sans-serif;
+  font-family: Barlow;
   font-size: 159.62px;
   font-style: normal;
   font-weight: 400;
@@ -367,6 +366,12 @@ h1 {
 @media (min-width: 768px) {
   .main-container {
     max-width: 1140px !important;
+  }
+  .pt-md-6 {
+    padding-top: 0.8rem !important;
+  }
+  .pt-md-7 {
+    padding-top: 7rem;
   }
   .custom-row {
     --bs-gutter-x: 5rem !important;
