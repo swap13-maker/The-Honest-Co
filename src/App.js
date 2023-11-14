@@ -19,6 +19,7 @@ import Article9 from './components/Articles/Article9.js';
 import Article10 from './components/Articles/Article10.js';
 import Article11 from './components/Articles/Article11';
 import Article12 from './components/Articles/Article12.js';
+import Project2 from './components/Portfolio/Project2.js';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resources" element={<Resource />} />
         <Route path="/portfolio/project1" element={<Project1 />} />
+        <Route path="/portfolio/project2" element={<Project2 />} />
         <Route path="/resources/articles/article1" element={<Article1 />} />
         <Route path="/resources/articles/article2" element={<Article2 />} />
         <Route path="/resources/articles/article3" element={<Article3 />} />

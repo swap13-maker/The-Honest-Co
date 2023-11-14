@@ -5,7 +5,7 @@
 .breadcrumb-navigation > li {
   display: inline;
   color: #000;
-  font-family: Inter;
+  font-family:  "Barlow", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -19,6 +19,7 @@
 .breadcrumb-navigation > li.current {
   font-weight: 500;
   opacity: 1;
+  font-family: "Barlow", sans-serif;
 }
 .breadcrumb-navigation li + li:before {
   padding: 4px;
@@ -31,6 +32,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: max-content;
 }
 .top-sub-heading {
   color: rgba(0, 0, 0, 0.9);
@@ -48,21 +50,22 @@
 .top-works > li {
   color: #000;
   text-align: right;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   opacity: 0.8;
+  font-family: "Barlow", sans-serif;
 }
 .top-topics {
   display: flex;
   list-style: none;
   padding: 0;
+  width: max-content;
 }
 .top-topics > li > a {
   color: #000;
-  font-family: Inter;
+  font-family:  "Barlow", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -72,6 +75,7 @@
 }
 .w-40 {
   width: 40%;
+  opacity: 0.5 !important;
 }
 .w-80 {
   width: 80%;
@@ -86,6 +90,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-top: 60px;
   padding-bottom: 10px;
 }
 .proj-sub-heading {
@@ -107,9 +112,15 @@
   line-height: normal;
   letter-spacing: 0.36px;
 }
+@media (max-width: 575.98px) {
+  .proj-content {
+    width: 140%; /* Set width to 100% on small screens */
+  }
+}
+
 .proj-link {
   color: #000;
-  font-family: Inter;
+  font-family:  "Barlow", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -334,3 +345,4 @@ p {
     margin-top: 0 !important;
   }
 }
+/*  */
