@@ -167,6 +167,7 @@ h1 {
 .footer {
   /* height: 100vh; */
   background: #1a1a1a !important;
+  border: none;
 }
 .bg-dark {
   background-color: #1a1a1a !important;
@@ -300,7 +301,7 @@ h1 {
 .thank-you {
   color: #1A1A1A;
   text-align: center;
-  font-family: Inter;
+  font-family:  "Barlow", sans-serif;
   font-size: 159.62px;
   font-style: normal;
   font-weight: 400;

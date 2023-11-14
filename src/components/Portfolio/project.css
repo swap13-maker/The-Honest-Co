@@ -2,6 +2,10 @@
   background: #1a1a1a;
   color: #fff;
   padding: 80px 0;
+
+}
+.custom_padding{
+  padding-bottom: 100px;
 }
 
 .heading__wrapper {
@@ -9,17 +13,22 @@
   justify-content: space-between;
   font-size: 32px;
   margin-block-end: 60px;
+  font-weight: 400px !important;
 }
 
 .other__work__container .heading__wrapper h5 {
-  font-family: Barlow;
+  font-family: "Barlow", sans-serif;
   font-size: inherit;
   text-transform: uppercase;
 }
 
 .other__work__container .heading__wrapper span {
-  text-decoration: underline;
+  text-decoration: none;
+ padding-top: 1px;
   cursor: pointer;
+  font-size: 28px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
 }
 
 .other__work__container .blog-heading,
@@ -81,4 +90,36 @@
 
 .other__work__container .image-card img {
   max-height: 350px;
+}
+.Image_size{
+  padding: 40px;
+  width: 1122px;
+  height: 550px;
+}
+.Image_baner{
+  padding-bottom: 60px;
+}
+.text_containe{
+  padding-top: 30px !important;
+}
+.content_text{
+  padding-left: 45px;
+}
+.custom_left_text{
+  padding-right: 45px;
+}
+.heading_line{
+  opacity: 1.25;
+}
+@media screen and (max-width: 560px) {
+  .baner_size{
+    width: 140%;
+  }
+  .Image_size{
+    width: 375px !important;
+    height: 181.558px;
+  }
+  .Image_baner{
+    width: 140%;
+  }
 }

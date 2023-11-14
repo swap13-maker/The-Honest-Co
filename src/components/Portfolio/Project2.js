@@ -3,6 +3,11 @@ import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
 import Slider from "react-slick";
+import myFooterLogo from "../../images/footer-logo.png";
+import demo2 from "../../images/demo2.png";
+import demo3 from "../../images/demo3.png";
+import demo4 from "../../images/demo4.png";
+import demo5 from "../../images/demo5.png";
 import demo6 from "../../images/demo6.png";
 import demo7 from "../../images/demo7.png";
 import demo8 from "../../images/demo8.png";
@@ -12,9 +17,13 @@ import Footer from "./../Footer";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
+import Banner from '../../images/Banner.jpg'
 import Grid from '../../images/Grid1.jpg'
+import secondGrid from '../../images/Secondary Banner.jpg'
+import webGrid from '../../images/Web Grid Web View.jpg'
+import conslusion from '../../images/Conclusion.jpg'
 
-function Project1() {
+function Project2() {
   const settings = {
     className: "slider variable-width",
     dots: false,
@@ -39,7 +48,7 @@ function Project1() {
             <li>
               <a href="">Portfolio</a>
             </li>
-            <li className="current">Project 1</li>
+            <li className="current">Project 2</li>
           </ul>
           <div className="py-4">
             <div className="row">
@@ -59,10 +68,10 @@ function Project1() {
               </div>
               <div className="py-4">
                 <ul className="top-topics">
-                  <li className="d-inline-block mb-2 mb-md-0 mr-md-2">
+                  <li className="d-block d-md-inline px-2">
                     <a>Artificial Inteligance</a>
                   </li>
-                  <li className="px-4 d-inline-block">
+                  <li className="px-4 d-block d-md-inline px-2">
                     <a>Application Development</a>
                   </li>
                 </ul>
@@ -70,7 +79,7 @@ function Project1() {
             </div>
           </div>
         </div>
-        <img src={demo10} alt="" className="img-fluid w-100 my-4 py-3" />
+        <img src={Banner} alt="" className="w-100 my-4 pb-5" />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
@@ -97,33 +106,31 @@ function Project1() {
               </div>
             </div>
             <div className="col-12">
-              {/* <img src={demo7} alt="" className="w-100 py-5" /> */}
               <img src={Grid} alt="" className="w-100 py-5" />
             </div>
           </div>
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
-              <div className="proj-heading" style={{paddingTop:'0px'}}>
-                One For All
+              <div className="proj-heading " style={{paddingTop:'0px'}}>
+                The Honest Edge
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-                A unique mobile application that allows users to pay almost all
-                of their online bills. The platform allows the user to pay
-                online via the multiple payment gateways and service channels.
-                The application offers a one for all bills payment solutions
-                allowing the user hassel free utility bills settelment.
+              We work with clients across a range of industries, helping them 
+              to succeed and thrive in today's competitive marketplace by 
+              providing. We work with clients across a range of industries.
+              We work with industries, helping them to succeed and thrive
               </div>
             </div>
             <div className="col-12 Image_size">
-              <img src={demo6} alt="" className="w-100 py-5 Image_baner" />
+              <img src={secondGrid} alt="" className="w-100 py-5  Image_baner" />
             </div>
           </div>
           {/* section2 */}
-          <div className="row py-5 pb-3">
-            <div className="col-12 col-md-6 py-5">
-              <div className="custom_left_text">
+          {/* <div className="row py-5 pb-5">
+            <div className="col-12 col-md-6 pt-5">
+              <div>
                 We work with clients across a range of industries, helping them
                 to succeed and thrive in today's competitive marketplace by
                 providing. We work with clients across a range of industries.
@@ -133,16 +140,16 @@ function Project1() {
               </div>
             </div>
             <div className="col-12 col-md-6 d-flex">
-              <div className="proj-heading d-flex align-items-center ml-auto py-5">
+              <div className="proj-heading d-flex align-items-center ml-auto">
                 The Honest Edge
               </div>
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={demo7} alt="" className="w-100 py-5" />
             </div>
-          </div>
+          </div> */}
           {/* section3 */}
-          <div className="row py-4">
+          <div className="row py-5">
             <div className="col-12 text-align-center">
               <div className="proj-heading">The Best out of It</div>
               <div className="proj-sub-heading py-3">
@@ -152,9 +159,8 @@ function Project1() {
                 achieve their business goals
               </div>
             </div>
-            <div className="col-12 d-flex">
-              <img src={demo8} alt="" className="w-40 px-4 py-4" />
-              <img src={demo9} alt="" className="w-100 px-4 py-4" />
+            <div className="col-12">
+              <img src={webGrid} alt="" className="w-100 py-5" />
             </div>
           </div>
         </section>
@@ -163,10 +169,10 @@ function Project1() {
       <section className="container main-container custom_padding">
         <div className="row">
           <div className="col-12">
-            <div className="proj-heading">The Honest Edge</div>
+            <div className="proj-heading">The Conclusion</div>
             <hr className="heading_line"/>
           </div>
-          <div className="col-12 col-md-5 py-2">
+          <div className="col-12 col-md-5 py-4">
             <div className="w-100">
               We work with clients across a range of industries, helping them to
               succeed and thrive in today's competitive marketplace by
@@ -192,42 +198,17 @@ function Project1() {
             </div>
           </div> */}
           <div className="col-12 d-flex">
-            <img src={demo8} alt="" className="w-40 px-4 py-4" />
-            <img src={demo9} alt="" className="w-100 px-4 py-4" />
+            <img src={conslusion} alt=""  className="w-100 py-5" />
           </div>
           <div className="col-12 text-align-center">
-            <p className="px-5 py-3 text_containe">
+            <p className="px-5 py-3 pt-3 text_containe">
               We work with clients across a range of industries, helping them to
-              succeed and thrive in today's <br />competitive marketplace by
+              succeed and thrive in today's competitive <br />marketplace by
               providing.
             </p>
           </div>
         </div>
       </section>
-      {/* section 4 */}
-      {/* <img src={demo10} alt="" className="w-100" /> */}
-      {/* newsletter */}
-      {/* <section className="bg-white py-4">
-        <div className="container main-container py-5">
-          <div className="row">
-            <div className="col-12 col-md-7">
-              <div className="newsletter">
-                Have an <span className="idea">idea</span>? <br />
-                Turn it into <span className="idea">reality</span>!
-              </div>
-              <div className="py-5">
-                <button className="bg-dark text-uppercase text-white font-weight-300 button">
-                  get started with us !
-                </button>
-              </div>
-            </div>
-            <div className="col-12 col-md-5 d-flex">
-              <div className="d-flex mx-auto align-items-center">video</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="other__work__container border-white">
         <div className="container main-container">
           <div className="heading__wrapper">
@@ -303,4 +284,4 @@ function Project1() {
   );
 }
 
-export default Project1;
+export default Project2;
