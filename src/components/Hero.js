@@ -161,8 +161,8 @@ function Hero() {
               <div className="row">
                 <div className="col-12 col-md-8">
                   <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15 ">
-                    We are a community of creators who make really cool things
-                    for new businesses that help them succeed.
+                  We are a community of creators who make really cool things for businesses
+                  that help them succeed.
                   </p>
                   <Link to="/get-in-touch">
                     <button className="nav-foot-button">

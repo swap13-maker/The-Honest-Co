@@ -38,10 +38,10 @@ function Story() {
           <div className="col-12 col-md-7 col-lg-7 d-flex">
             <div className="sub-heading d-flex align-items-center">
               <p className="m-0">
-                It all began with a group of friends coming together to execute
-                a project. The Honest Co. was formed to umbrella our common
-                vision of providing high-quality services and building long-term
-                relationships with our clients.
+                It all began with a group of friends coming together to bring a
+                shared vision to life. The Honest Company was formed to umbrella
+                our common vision of delivering high-quality services and
+                cultivating long-term relationships with our clients.
               </p>
             </div>
           </div>
@@ -55,14 +55,9 @@ function Story() {
             width="100"
           />
         </div>
-        <div
-          className="col-md-10 col-12 "
-        >
+        <div className="col-md-10 col-12 ">
           <Slider {...settings}>
-            <div
-              className="bg- pt-1"
-              style={{ width: 440 }}
-            >
+            <div className="bg- pt-1" style={{ width: 440 }}>
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon py-3" />
               </div>
@@ -82,10 +77,7 @@ function Story() {
               </div>
             </div>
 
-            <div
-              className="bg-white"
-              style={{ width: 440 }}
-            >
+            <div className="bg-white" style={{ width: 440 }}>
               <div className="py-4 story-icon">
                 <img src={icon2} className="card-icon py-2" />
               </div>
@@ -106,10 +98,7 @@ function Story() {
               </div>
             </div>
 
-            <div
-              className="bg-white"
-              style={{ width: 440 }}
-            >
+            <div className="bg-white" style={{ width: 440 }}>
               <div className="py-4 story-icon">
                 <img src={icon3} className="card-icon pt-3 pb-2" />
               </div>
@@ -130,10 +119,27 @@ function Story() {
               </div>
             </div>
 
-            <div
-              className="bg-white"
-              style={{ width: 440 }}
-            >
+            <div className="bg-white" style={{ width: 440 }}>
+              <div className="py-4 story-icon">
+                <img src={icon4} className="card-icon" />
+              </div>
+              <div className="bg-dark py-4 px-3">
+                <div className="px-4 py-4">
+                  <p className="text-white card-text">
+                    At The Honest Company, we believe in the power of technology
+                    and creativity to transform businesses and impact lives. 
+                    <br />
+                    <br />
+                  </p>
+                </div>
+                <div className="mt-5">
+                  <h3 className="text-uppercase text-white px-4 card-heading">
+                    present
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white" style={{ width: 440 }}>
               <div className="py-4 story-icon last-icon">
                 <img src={icon4} className="card-icon" />
               </div>
