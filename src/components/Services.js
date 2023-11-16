@@ -45,10 +45,10 @@ function Services() {
         <div className="col-12 col-md-7 col-lg-7 d-flex">
           <div className="sub-heading d-flex align-items-center">
             <p className="m-0">
-              Whether it's developing a new software application, designing a
-              product, or crafting compelling marketing content, we are
-              committed to delivering exceptional results that exceed
-              expectations.{" "}
+              Whether it's developing a software application, designing a new
+              product or creating compelling marketing content, our commitment
+              is unwavering, to deliver exceptional results that consistently
+              exceed expectations.{" "}
               <span className="font-weight-300">HONEST EXPERIENCES!</span>
             </p>
           </div>
@@ -77,10 +77,11 @@ function Services() {
                       ) : (
                         <img className="tab-icon" src={arrow} />
                       )}
-                      <span className="px-3">Web & Mobile Development</span>
+                      <span className="px-3">Application Development</span>
                     </div>
                     <div className="sub-heading-tab">
-                      Our services have been divided into four categories based on the kind of work we have done
+                      Crafting customized, user-centric applications across
+                      platforms, leveraging the best of digital development.
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
@@ -95,11 +96,11 @@ function Services() {
                       ) : (
                         <img className="tab-icon" src={arrow} />
                       )}
-                      <span className="px-3">Content & Adversiting</span>
+                      <span className="px-3">Content Creation</span>
                     </div>
                     <div className="sub-heading-tab">
-                      Our services have been divided into four categories based
-                      on the kind of work we have done.
+                      Curating powerful storytelling and creating captivating
+                      visuals driving meaningful connections.
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
@@ -114,18 +115,18 @@ function Services() {
                       ) : (
                         <img className="tab-icon" src={arrow} />
                       )}
-                      <span className="px-3">Industry Design</span>
+                      <span className="px-3">Industrial Design</span>
                     </div>
                     <div className="sub-heading-tab">
-                      From concept to production, we create beautiful and
-                      functional products that resonate with your audience.
+                      Transforming ideas into tangible products, from
+                      prototyping to packaging, creating market fit products.
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
               </MDBTabs>
               <div className="pt-5">
                 <button className="bg-dark text-uppercase text-white font-weight-300 button">
-                  GET STARTED WITH US !
+                  Start Creating Now !
                 </button>
               </div>
             </MDBCol>
@@ -139,7 +140,9 @@ function Services() {
                         <div className="circle">
                           <div className="circle__inner">
                             <div className="circle__wrapper">
-                              <div className="circle__content">Interior Design</div>
+                              <div className="circle__content">
+                                Interior Design
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -207,7 +210,9 @@ function Services() {
                         <div className="circle">
                           <div className="circle__inner">
                             <div className="circle__wrapper">
-                              <div className="circle__content">concept & prototyping</div>
+                              <div className="circle__content">
+                                concept & prototyping
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -219,7 +224,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                              product design
+                                product design
                               </div>
                             </div>
                           </div>
@@ -302,7 +307,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                Web 3 & Blockchain 
+                                Web 3 & Blockchain
                               </div>
                             </div>
                           </div>
@@ -319,7 +324,9 @@ function Services() {
                         <div className="circle">
                           <div className="circle__inner">
                             <div className="circle__wrapper">
-                              <div className="circle__content">motion graphics</div>
+                              <div className="circle__content">
+                                motion graphics
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -356,7 +363,9 @@ function Services() {
                         <div className="circle">
                           <div className="circle__inner">
                             <div className="circle__wrapper">
-                              <div className="circle__content">advertisement</div>
+                              <div className="circle__content">
+                                advertisement
+                              </div>
                             </div>
                           </div>
                         </div>

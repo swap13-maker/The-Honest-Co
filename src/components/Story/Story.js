@@ -25,7 +25,7 @@ function Story() {
 
   return (
     <>
-      <section className="container pt-5 pb-5 story__container">
+      <section className="container py-5 mt-5 story__container">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
@@ -64,9 +64,9 @@ function Story() {
               <div className="bg-dark py-4 px-3">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
-                    Our experiences and projects we have worked with have shaped
-                    the way we look at the world now. As it does in usual with
-                    us too, all began with an idea.
+                    Our journey began by fostering a community of like-minded
+                    individuals dedicated to transparency, integrity, and the
+                    delivery of high-quality services.
                   </p>
                 </div>
                 <div className="mt-5">
@@ -84,10 +84,9 @@ function Story() {
               <div className="bg-dark py-4 px-3">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
-                    At The Honest Company, we believe in the power of technology
-                    and creativity to transform businesses and impact lives. 
-                    <br />
-                    <br />
+                    We envisioned setting up a service brand exceeding industry
+                    expectations with focus on creating a comprehensive,
+                    efficient solution hub for clients. 
                   </p>
                 </div>
                 <div className="mt-5">
@@ -105,10 +104,9 @@ function Story() {
               <div className="bg-dark py-4 px-3">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
-                    At The Honest Company, we believe in the power of technology
-                    and creativity to transform businesses and impact lives. 
-                    <br />
-                    <br />
+                    The Honest Co. was established with the vision of delivering
+                    top-notch services in field of application development,
+                    content creation & industrial design.
                   </p>
                 </div>
                 <div className="mt-5">
@@ -126,10 +124,10 @@ function Story() {
               <div className="bg-dark py-4 px-3">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
-                    At The Honest Company, we believe in the power of technology
-                    and creativity to transform businesses and impact lives. 
-                    <br />
-                    <br />
+                    Presently operational in 3 cities, The Honest Co. has served
+                    more than 40 clients and have successfully delivered more
+                    than 70 projects.
+                    
                   </p>
                 </div>
                 <div className="mt-5">
@@ -146,15 +144,14 @@ function Story() {
               <div className="bg-dark py-4 px-3">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
-                    At The Honest Company, we believe in the power of technology
-                    and creativity to transform businesses and impact lives. 
-                    <br />
-                    <br />
+                    We aspire to globalize our community by collaborating with
+                    the finest creators and deliver unparalleled services to
+                    businesses worldwide.
                   </p>
                 </div>
                 <div className="mt-5">
                   <h3 className="text-uppercase text-white px-4 card-heading">
-                    present
+                    future
                   </h3>
                 </div>
               </div>
