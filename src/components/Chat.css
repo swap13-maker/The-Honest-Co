@@ -125,3 +125,25 @@
   text-transform: capitalize;
   text-align: center;
 }
+/* mobile */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 100%;
+    padding: 0px 15px 20px 15px;
+    background-color: white;
+    box-shadow: none;
+  }
+  .chat-popup {
+    /* display: none; */
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    border: none;
+    z-index: 9999;
+    background-color: #fff;
+  }
+  .close-btn {
+    display: none;
+  }
+}

@@ -236,6 +236,12 @@ const ChatComponent = () => {
             >
               Get started with us!
             </button>
+            <a
+              onClick={closeForm}
+              className="d-flex mx-auto w-100 justify-content-center form-btn mt-4 d-block d-md-none"
+            >
+              Close
+            </a>
             <a type="button" className="close-btn" onClick={closeForm}>
               <img src={cross} alt="Close" />
             </a>

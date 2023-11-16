@@ -60,36 +60,39 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
         <span className="font-weight-600 text-black"> Areas of interest!</span>
       </div>
 
-      <div className="contact-form py-4">
+      <div className="contact-form py-md-4">
         <div className="row">
-          <div className="col-md-4 col-12">
-            <Form.Group className="pt-4" controlId="Creative">
+          <div className="col-md-4 col-6">
+            <Form.Group className="pt-md-4 pt-2" controlId="Creative">
               <Form.Check
                 type="checkbox"
                 value="Creative"
                 label="Creative"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Creative")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>
           </div>
-          <div className="col-md-4 col-12">
-            <Form.Group className="pt-4" controlId="Technology">
+          <div className="col-md-4 col-6">
+            <Form.Group className="pt-md-4 pt-2" controlId="Technology">
               <Form.Check
                 type="checkbox"
                 value="Technology"
                 label="Technology"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Technology")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>
           </div>
-          <div className="col-md-4 col-12">
-            <Form.Group className="pt-4" controlId="Management">
+          <div className="col-md-4 col-6">
+            <Form.Group className="pt-md-4 pt-2" controlId="Management">
               <Form.Check
                 type="checkbox"
                 value="Management"
                 label="Management"
+                className="media-label-font-14"
                 checked={selectedCheckboxes.includes("Management")}
                 onChange={handleCheckboxChange}
               />
@@ -97,11 +100,12 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
           </div>
         </div>
 
-        <Form.Group className="pt-4" controlId="formProject">
+        <Form.Group className="pt-md-4 pt-2" controlId="formProject">
           <Form.Floating>
             <Form.Control
               type="text"
               name="project"
+              className="w-md-75 label-with-underline"
               placeholder="Tell us about your project"
               value={project}
               onChange={handleProjectChange}
@@ -111,12 +115,12 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
         </Form.Group>
       </div>
 
-      <div className="contact-form py-4">
+      <div className="contact-form py-md-4">
         <div className="contact-heading">
           <span className="font-weight-600 text-black"> Become a Partner</span>
         </div>
 
-        <Form.Group className="pt-4" controlId="radioGroup1">
+        <Form.Group className="pt-md-4 pt-2" controlId="radioGroup1">
           <Form.Check
             type="radio"
             name="radioGroup"
@@ -128,7 +132,7 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
           />
         </Form.Group>
 
-        <Form.Group className="pt-4" controlId="radioGroup2">
+        <Form.Group className="pt-md-4 pt-2" controlId="radioGroup2">
           <Form.Check
             type="radio"
             name="radioGroup"

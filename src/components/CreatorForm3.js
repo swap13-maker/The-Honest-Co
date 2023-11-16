@@ -106,7 +106,7 @@ function CreatorForm3({
       <div className="creator-sub-heading text-black pt-4">
         Tell us about yourself
       </div>
-      <div className="d-flex pb-4">
+      <div className="d-flex pb-md-4 pb-0">
         <Form.Group className="py-3 w-50" controlId="radioGroup1">
           <Form.Check
             type="radio"
@@ -135,11 +135,11 @@ function CreatorForm3({
           Are you a
           <span className="font-weight-600 text-black"> Student?</span>
         </div>
-        <div className="pt-2">
+        <div className="pt-md-2 pt-0">
           <Form.Group controlId="formInstitution">
             <Form.Floating>
               <Form.Control
-                className="w-75"
+                className="w-md-75 label-with-underline"
                 type="text"
                 placeholder="Enter your institution name"
                 value={studentInstitution}
@@ -152,7 +152,7 @@ function CreatorForm3({
           <Form.Group controlId="formCourseType">
             <Form.Floating>
               <Form.Control
-                className="w-75"
+                className="w-md-75 label-with-underline"
                 type="text"
                 placeholder="Enter course type"
                 value={courseType}
@@ -165,7 +165,7 @@ function CreatorForm3({
           <Form.Group controlId="formCourseName">
             <Form.Floating>
               <Form.Control
-                className="w-75"
+                className="w-md-75 label-with-underline"
                 type="text"
                 placeholder="Enter Course name"                
                 value={courseName}
@@ -178,7 +178,7 @@ function CreatorForm3({
             <Form.Group controlId="formLocation">
               <Form.Floating>
                 <Form.Control
-                  className="w-75"
+                  className="w-md-75 label-with-underline"
                   type="text"
                   placeholder="Enter your location"
                   value={studentLocation}
@@ -190,32 +190,16 @@ function CreatorForm3({
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div id="forProfessional" style={{ display: selectedType === "Professional" ? "block" : "none" }}>
         <div className="contact-heading">
           Are you a
           <span className="font-weight-600 text-black"> Working Professional?</span>
         </div>
-        <div className="py-4">
+        <div className="pt-md-2 pt-0">
           <Form.Group controlId="formCompanyName">
             <Form.Floating>
               <Form.Control
-                className="w-75"
+                className="w-md-75 label-with-underline"
                 type="text"
                 placeholder="Enter your Company name"
                 value={companyName}
@@ -228,7 +212,7 @@ function CreatorForm3({
           <Form.Group controlId="formLocation">
             <Form.Floating>
               <Form.Control
-                className="w-75"
+                className="w-md-75 label-with-underline"
                 type="text"
                 placeholder="Enter your location"
                 value={studentLocation}
@@ -241,7 +225,7 @@ function CreatorForm3({
           <Form.Group controlId="formDesignation">
             <Form.Floating>
               <Form.Control
-                className="w-75"
+                className="w-md-75 label-with-underline"
                 type="text"
                 placeholder="Enter your designation"
                 value={designation}
@@ -254,7 +238,7 @@ function CreatorForm3({
             <Form.Group controlId="formExperience">
               <Form.Floating>
                 <Form.Control
-                  className="w-75"
+                  className="w-md-75 label-with-underline"
                   type="text"
                   placeholder="Enter your experience"
                   value={experience}

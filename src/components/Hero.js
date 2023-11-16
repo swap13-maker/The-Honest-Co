@@ -66,12 +66,6 @@ function Hero() {
             </Navbar.Collapse>
           </Navbar>
 
-
-
-
-
-
-
           {/* Mobile header */}
           <Navbar className="py-4 mobile-navbar-container">
             <Link to="/">
@@ -81,8 +75,6 @@ function Hero() {
                 <span className="font-weight-400 text-white"> company</span>
               </Navbar.Brand>
             </Link>
-            <Navbar.Toggle aria-controls="navbar-nav" />
-
             <div
               id="navbar-nav toggle" className="justify-content-end"
               className={`button_container ${isMenuOpen ? "active" : ""}`}
@@ -92,6 +84,7 @@ function Hero() {
               <span className="middle"></span>
               <span className="bottom"></span>
             </div>
+            <Navbar.Toggle aria-controls="navbar-nav" />
 
             <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
               <nav className="overlay-menu">
@@ -109,10 +102,10 @@ function Hero() {
                     <a href="#">Team</a>
                   </li>
                   <li>
-                    <a href="#">Portfolio</a>
+                    <Link to="/portfolio">Portfolio</Link>
                   </li>
                   <li>
-                    <a href="#">Resources</a>
+                    <Link to="/resources">Resources</Link>
                   </li>
                   <li>
                     <Link to="/get-in-touch">

@@ -81,8 +81,6 @@ const InnerHeader = () => {
             <span className="font-weight-400 text-dark"> company</span>
           </Navbar.Brand>
         </Link>
-        <Navbar.Toggle aria-controls="navbar-nav" />
-
         <div
           id="navbar-nav toggle"
           className="justify-content-end"
@@ -93,6 +91,7 @@ const InnerHeader = () => {
           <span className="middle"></span>
           <span className="bottom"></span>
         </div>
+        <Navbar.Toggle aria-controls="navbar-nav" />
 
         <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
           <nav className="overlay-menu">

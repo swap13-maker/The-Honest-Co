@@ -293,7 +293,6 @@
 	 top: 40%;
 	 left: 0;
 	 margin: 0 auto;
-	 font-family: 'Varela Round', sans-serif;
 }
  .mobile-navbar-container a {
 	 /* display: inline-block;
@@ -310,17 +309,13 @@
 }
  .button_container {
 	 position: fixed;
-	 top: 8.5%;
+	 top: auto;
 	 right: 5%;
-	 height: 27px;
 	 width: 35px;
+   margin-bottom: 2%;
 	 cursor: pointer;
 	 z-index: 100;
 	 transition: opacity 0.25s ease;
-}
-.button_container_inner {
-  top: 6.8% !important;
-	right: 5% !important;
 }
  .button_container:hover {
 	 opacity: 1;
@@ -347,6 +342,18 @@
   background: #fff !important;
 }
 .button_container_inner span {
+  background: #1a1a1a !important;
+}
+
+.button_container_contact.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #fff !important;
+}
+.button_container_contact.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #fff !important;
+}
+.button_container_contact span {
   background: #1a1a1a !important;
 }
  .button_container span {

@@ -514,4 +514,13 @@ figure.effect-sadie:hover p {
   .media-pt-6 {
     padding-top: 6rem !important;
   }
+  .mobile-contact-headings {
+    color: #1A1A1A;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
 }

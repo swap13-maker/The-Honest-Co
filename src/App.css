@@ -364,6 +364,11 @@ h1 {
 
 /*desktop only media view*/
 @media (min-width: 768px) {
+  .height-100vh {
+    height: 100vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
   .mobile-navbar-container {
     display: none !important;
   }
@@ -423,8 +428,17 @@ h1 {
 } */
 /*mobile only media view*/
 @media (max-width: 768px) {
+  .gallery {
+    grid-gap: 54px !important;
+  }
   .top-heading {
     font-size: 42px !important;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+  .mobile-h-65vh {
+    height: 65vh;
   }
   .mobile-none {
     display: none;
@@ -469,7 +483,7 @@ h1 {
   }
   .media-w-100 {
     grid-column: span 2 !important;
-    padding-right: 10px !important;
+    /* padding-right: 10px !important; */
   }
   .mobile-d-none {
     display: none;
@@ -655,11 +669,6 @@ h1 {
   background-color: #000;
 }
 /*wizard*/
-.height-100vh {
-  height: 100vh;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
 .contact-logo {
   font-style: normal;
   font-weight: 800;

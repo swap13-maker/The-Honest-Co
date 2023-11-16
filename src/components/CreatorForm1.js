@@ -39,7 +39,7 @@ function CreatorForm1({ onNameChange, onEmailChange, onContactChange }) {
   };
 
   return (
-    <div className="py-4" style={{paddingRight:'40px'}}>
+    <div className="py-4 pr-40px">
       <div className="contact-heading">
         <span className="font-weight-600 text-black">Got ideas?</span> We have
         got the skills. <br />
@@ -49,21 +49,21 @@ function CreatorForm1({ onNameChange, onEmailChange, onContactChange }) {
       <div className="contact-form py-5">
         <Form.Group controlId="formName">
           <Form.Floating>
-            <Form.Control className="w-75" type="text" placeholder="Enter your name" value={name} onChange={handleNameChange} />
+            <Form.Control className="w-md-75 label-with-underline" type="text" placeholder="Enter your name" value={name} onChange={handleNameChange} />
             <Form.Label>Name</Form.Label>
           </Form.Floating>
         </Form.Group>
 
         <Form.Group controlId="formEmail">
           <Form.Floating>
-            <Form.Control className="w-75" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
+            <Form.Control className="w-md-75 label-with-underline" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
             <Form.Label>Email</Form.Label>
           </Form.Floating>
         </Form.Group>
 
         <Form.Group controlId="formContact">
           <Form.Floating>
-            <Form.Control className="w-75" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
+            <Form.Control className="w-md-75 label-with-underline" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
             <Form.Label>Contact Number</Form.Label>
           </Form.Floating>
         </Form.Group>

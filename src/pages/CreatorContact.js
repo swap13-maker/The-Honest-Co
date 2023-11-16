@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import CreatorForm1 from "../components/CreatorForm1";
 import CreatorForm2 from "../components/CreatorForm2";
 import CreatorForm3 from "../components/CreatorForm3";
@@ -9,6 +10,8 @@ import { Form } from "react-bootstrap";
 import Prev from "../images/form-prev.png";
 import { Link } from "react-router-dom";
 import "./CreatorContact.css";
+import "../components/InnerHeader.css";
+import $ from "jquery";
 
 function CreatorContact() {
   const [name, setName] = useState("");
@@ -95,6 +98,14 @@ function CreatorContact() {
     setStep((prevStep) => prevStep - 1);
   };
 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleToggle = () => {
+    setMenuOpen(!isMenuOpen);
+    $("#toggle").toggleClass("active");
+    $("#overlay").toggleClass("open");
+  };
+
   useEffect(() => {
     // Load project data from local storage if needed
     const storedProject = localStorage.getItem("project");
@@ -159,7 +170,7 @@ function CreatorContact() {
   return (
     <Container>
       <div className="row height-100vh">
-        <div className="col-md-3 col-12">
+        <div className="col-md-3 col-12 d-none d-md-block">
           <Link to="/" className="contact-logo">
             <span className="font-weight-800">the</span>
             <span className="font-weight-600"> honest</span>
@@ -197,18 +208,75 @@ function CreatorContact() {
             </div>
           </div>
         </div>
+        {/* mobile-header */}
+        <Navbar className="pb-4 mobile-navbar-container">
+          <Link to="/">
+            <Navbar.Brand>
+              <span className="font-weight-800 text-dark">the</span>
+              <span className="font-weight-600 text-dark"> honest</span>
+              <span className="font-weight-400 text-dark"> company</span>
+            </Navbar.Brand>
+          </Link>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+
+          <div
+            id="navbar-nav toggle"
+            className="justify-content-end"
+            className={`button_container button_container_contact ${isMenuOpen ? "active" : ""}`}
+            onClick={handleToggle}
+          >
+            <span className="top"></span>
+            <span className="middle"></span>
+            <span className="bottom"></span>
+          </div>
+
+          <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
+            <nav className="overlay-menu">
+              <div className="pl-6">Menu</div>
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Team</a>
+                </li>
+                <li>
+                  <Link to="/portfolio">Portfolio</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Resources</Link>
+                </li>
+                <li>
+                  <Link to="/get-in-touch">
+                    <button className="nav-button">get in touch</button>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </Navbar>
+        {/* mobile */}
+        <div className="d-block d-md-none">
+          <div className="row align-items-center">
+            <div className="col-3 mobile-contact-headings"><div>{step === 1 ? ( <>General <br /> Information</> ) : '1'}</div></div>
+            <div className="col-3 mobile-contact-headings"><div>{step === 2 ? ( <>Area of <br/>interest</> ) : '2'}</div></div>
+            <div className="col-3 mobile-contact-headings">{step === 3 ? ( <>Persona <br/>Creation</> ) : '3'}</div>
+            <div className="col-3 mobile-contact-headings">{step === 4 ? ( <>Additional <br/>Info</> ) : '4'}</div>
+          </div>
+        </div>
 
         <Container className="col-md-9 col-12 border-element form-content" style={{border:'none'}}>
-          <div className="top_Side">
+          <div className="top_Side mobile-none">
           </div>
-          <div className="Left_Side">
+          <div className="Left_Side mobile-none">
           </div>
          
           <div
-            className="d-flex align-items-start flex-column"
-            style={{ height: "85%" }}
-          >
-            <Form className="px-4 w-100">
+            className="d-flex align-items-start flex-column height-85pec">
+            <Form className="px-md-4 w-100 mobile-h-65vh">
               {step === 1 && (
                 <CreatorForm1
                   onNameChange={handleNameChange}
@@ -240,8 +308,8 @@ function CreatorContact() {
           </div>
 
           <div
-            className="d-flex align-items-end custom-padding"
-            style={{ height: "10%", justifyContent: "space-between", marginLeft:'30px',marginRight:'40px'}}
+            className="d-flex align-items-end custom-padding form-margins"
+            style={{ height: "10%", justifyContent: "space-between"}}
           >
             {step > 1 && (
               <a
@@ -265,8 +333,8 @@ function CreatorContact() {
         </Container>
       </div>
       
-      <div className="bottom_Side"></div>
-      <div className="right_Side"></div>
+      <div className="bottom_Side mobile-none"></div>
+      <div className="right_Side mobile-none"></div>
     </Container>
   );
 }
