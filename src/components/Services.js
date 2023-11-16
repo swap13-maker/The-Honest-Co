@@ -132,7 +132,7 @@ function Services() {
             <MDBCol size="7">
               <MDBTabsContent>
                 {/*Tab 1*/}
-                <MDBTabsPane show={verticalActive === "tab1"}>
+                <MDBTabsPane show={verticalActive === "tab4"}>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="tab1-ele1">
@@ -200,14 +200,14 @@ function Services() {
                   </div>
                 </MDBTabsPane>
                 {/*Tab 2*/}
-                <MDBTabsPane show={verticalActive === "tab2"}>
+                <MDBTabsPane show={verticalActive === "tab3"}>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="tab2-ele1">
                         <div className="circle">
                           <div className="circle__inner">
                             <div className="circle__wrapper">
-                              <div className="circle__content">product design</div>
+                              <div className="circle__content">concept & prototyping</div>
                             </div>
                           </div>
                         </div>
@@ -219,7 +219,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                concept development & prototyping
+                              product design
                               </div>
                             </div>
                           </div>
@@ -255,7 +255,7 @@ function Services() {
                   </div>
                 </MDBTabsPane>
                 {/*Tab 3*/}
-                <MDBTabsPane show={verticalActive === "tab3"}>
+                <MDBTabsPane show={verticalActive === "tab1"}>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="tab3-ele1">
@@ -302,7 +302,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                Web3 & Blockchain Application Development
+                                Web 3 & Blockchain 
                               </div>
                             </div>
                           </div>
@@ -312,7 +312,7 @@ function Services() {
                   </div>
                 </MDBTabsPane>
                 {/*Tab 4*/}
-                <MDBTabsPane show={verticalActive === "tab4"}>
+                <MDBTabsPane show={verticalActive === "tab2"}>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="tab4-ele1">
