@@ -220,6 +220,9 @@
   .headerVisible {
     display: none !important;
   }
+  .navbar-brand {
+    padding-left: 0.6rem;
+  }
 }
 
 
@@ -315,6 +318,10 @@
 	 z-index: 100;
 	 transition: opacity 0.25s ease;
 }
+.button_container_inner {
+  top: 6.8% !important;
+	right: 5% !important;
+}
  .button_container:hover {
 	 opacity: 1;
 }
@@ -329,6 +336,18 @@
  .button_container.active .bottom {
 	 transform: translateY(-11px) translateX(0) rotate(-45deg);
 	 background: #fff;
+}
+
+.button_container_inner.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #fff !important;
+}
+.button_container_inner.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #fff !important;
+}
+.button_container_inner span {
+  background: #1a1a1a !important;
 }
  .button_container span {
 	 background: #fff;

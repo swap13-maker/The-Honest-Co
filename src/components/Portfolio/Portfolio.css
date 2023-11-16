@@ -1,7 +1,3 @@
-.breadcrumb-navigation {
-  padding: 20px 0;
-  padding-top: 80px;
-}
 .breadcrumb-navigation > li {
   display: inline;
   color: #000;
@@ -340,6 +336,16 @@ p {
 .margin-portolio > .wrapper {
   margin-top: -15%;
 }
+.breadcrumb-navigation {
+  padding: 20px 0;
+}
+/* desktop */
+@media (min-width: 768px) {
+  .breadcrumb-navigation {
+    padding-top: 80px;
+  }
+}
+/* mobile */
 @media (max-width: 768px) {
   .margin-portolio > .wrapper {
     margin-top: 0 !important;

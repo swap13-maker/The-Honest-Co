@@ -535,8 +535,13 @@ h1 {
     background: #1a1a1a;
     z-index: 9999;
   }
-  nav {
+  .bg-dark {
     background: #1a1a1a;
+  }
+  .text-dark {
+    color: #1a1a1a;
+  }
+  nav {
     z-index: 9999;
   }
   .card-text {

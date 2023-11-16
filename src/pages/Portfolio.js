@@ -49,7 +49,7 @@ const Portfolio = () => {
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7">
-                <div className="top-heading" onClick={togglePortfolioAni}>
+                <div className="top-heading d-none d-md-block" onClick={togglePortfolioAni}>
                   The{" "}
                   <span
                     className={`portfolio-ani ${
@@ -58,6 +58,18 @@ const Portfolio = () => {
                   >
                     honest
                   </span>{" "}
+                  Projects
+                </div>
+
+                <div className="top-heading d-block d-md-none" onClick={togglePortfolioAni}>
+                  The
+                  <span
+                    className={`portfolio-ani ${
+                      isPortfolioAniHidden ? "portfolio-ani-hidden" : ""
+                    }`}
+                  >
+                    honest
+                  </span><br/>
                   Projects
                 </div>
                 {/* <div className="top-heading">The <span className="portfolio-ani">honest</span> Projects</div> */}
