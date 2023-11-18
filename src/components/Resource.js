@@ -9,7 +9,7 @@ import loader from "../images/ResourcesSectionLanding.json";
 
 function Resource() {
   return (
-    <section className="container py-5">
+    <section className="container py-md-5 pt-5">
       <div className="row border-bottom-bold py-4 d-flex align-items-center">
         <div className="col-10 col-md-6 col-lg-6 px-0">
           <div className="text-uppercase pl-xs-2">
@@ -34,8 +34,8 @@ function Resource() {
         </div>
       </div>      
       <CaseStudies1 />
-      <Blogs />
-      <CaseStudies />
+      {/* <Blogs /> */}
+      {/* <CaseStudies /> */}
     </section>
   );
 }

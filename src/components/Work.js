@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 function Work() {
   return (
-    <section className="container py-5">
+    <section className="container overflow-x-hidden pt-5">
       <div className="row">
         <div className="col-12 mx-auto text-center">
           <h1 className="text-uppercase d-block section-heading">
@@ -22,7 +22,7 @@ function Work() {
         </div>
       </div>
 
-      <div className="gallery">
+      <div className="gallery pb-md-5 pb-5">
         <div className="gallery__item gallery__item--hor media-w-100 d-block">
           <img src={work1} />
           <div className="work-heading">Architectural Drawing</div>
@@ -39,7 +39,7 @@ function Work() {
         </div>
       </div>
 
-      <div className="gallery pt-5">
+      <div className="gallery pb-md-5 pb-5">
         <div className="gallery__item gallery__item--lg2 media-w-100 d-block">
           <img src={work3} />
           <div className="work-heading">Architectural Drawing</div>
@@ -47,7 +47,7 @@ function Work() {
             D2C & E-commerce · Branding · UI Design · Marketing
           </div>
         </div>
-        <div className="gallery__item gallery__item--hor3 media-w-100 d-block pb-5">
+        <div className="gallery__item gallery__item--hor3 media-w-100 d-block">
           <img src={work4} />
           <div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
@@ -63,7 +63,7 @@ function Work() {
         </div>
       </div>
 
-      <div className="gallery pt-5">
+      <div className="gallery pb-md-5 pb-5">
         <div className="gallery__item gallery__item--hor media-w-100 d-block">
           <img src={work6} />
           <div className="work-heading">Architectural Drawing</div>
@@ -80,7 +80,7 @@ function Work() {
         </div>
       </div>
 
-      <div className="gallery pt-5">
+      <div className="gallery pb-md-5 pb-5">
         <div className="gallery__item media-w-100 d-block">
           <img src={work8} />
           <div className="work-heading">Architectural Drawing</div>

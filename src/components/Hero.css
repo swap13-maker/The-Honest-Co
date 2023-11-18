@@ -209,6 +209,13 @@
 }
 /*mobile*/
 @media (max-width: 768px) {
+  #hero {
+    height: 85vh;
+  }
+  .app-container {
+    min-height: 85vh;
+    position: relative;
+  }
   .nav-foot-button {
     font-size: 12px;
   }

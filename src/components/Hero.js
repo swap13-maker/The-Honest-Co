@@ -3,7 +3,7 @@ import "./Hero.css";
 import "./../App.css";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
-import logo from "../images/logo.png";
+import logo from "../images/logo.svg";
 import logoIcon from "../images/logo-icon.png";
 import { Link } from "react-router-dom";
 import $ from "jquery";
@@ -67,7 +67,7 @@ function Hero() {
           </Navbar>
 
           {/* Mobile header */}
-          <Navbar className="py-4 mobile-navbar-container">
+          <Navbar className="pb-4 mobile-navbar-container">
             <Link to="/">
               <Navbar.Brand>
                 <span className="font-weight-800 text-white">the</span>

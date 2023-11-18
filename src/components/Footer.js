@@ -1,6 +1,6 @@
 import React from "react";
 import "./../App.css";
-import myFooterLogo from "../images/footer-logo.png";
+import myFooterLogo from "../images/footer-logo.svg";
 
 function Footer() {
   return (
@@ -52,7 +52,7 @@ function Footer() {
           </div>
         </div>
         <div className="row pt-md-6 pb-4">
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-1 footer-card">
             <div className="footer-heading mb-2">About</div>
             <ul>
               <li>
@@ -66,7 +66,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-2 footer-card">
             <div className="footer-heading mb-2">Application Development </div>
             <ul>
               <li>
@@ -83,7 +83,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-3 footer-card">
             <div className="footer-heading mb-2">
               {" "}
              Content Creation{" "}
@@ -103,7 +103,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-4 footer-card">
             <div className="footer-heading mb-2">
               {" "}
              Industrial Design{" "}
@@ -123,7 +123,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-5 footer-card">
             <div className="footer-heading mb-2"> Industrial </div>
             <ul>
               <li>
@@ -145,8 +145,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="row pt-5 pb-5">
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+        <div className="row pt-md-5 pt-0 pb-5">
+          <div className="col-6 pt-media-4 col-md-custom-footer-1 footer-card">
             <div className="footer-heading mb-2"> Resources </div>
             <ul>
               <li>
@@ -169,7 +169,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-2 footer-card">
             <div className="footer-heading mb-2">Portfolio</div>
             <ul>
               <li>
@@ -183,7 +183,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-3 footer-card">
             <div className="footer-heading mb-2"> Connect With Us</div>
             <ul>
               <li>
@@ -200,7 +200,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-4 footer-card">
             <div className="footer-heading mb-2">Get In Touch </div>
             <ul>
               <li>
@@ -212,7 +212,7 @@ function Footer() {
             </ul>
           </div>
           
-          <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
+          <div className="col-6 pt-media-4 col-md-custom-footer-5 footer-card">
             <div className="footer-heading mb-2"> hello@thehonestco.in </div>
             <div className="footer-heading mb-2"> Terms & Conditions </div>
           </div>

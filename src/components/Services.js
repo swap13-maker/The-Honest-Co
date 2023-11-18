@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   MDBTabs,
   MDBTabsItem,
@@ -14,29 +14,42 @@ import arrow from "../images/arrow.png";
 
 function Services() {
   const [verticalActive, setVerticalActive] = useState("tab1");
-  let currentTabIndex = 0; // Variable to track the current tab index
+  const [autoSwitching, setAutoSwitching] = useState(true);
+  const currentTabIndexRef = useRef(0); // Use ref to persist the current tab index across renders
 
   // Define an array of tabs you want to cycle through.
   const tabs = ["tab1", "tab2", "tab3"];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      // Update the active tab based on the current index
-      setVerticalActive(tabs[currentTabIndex]);
-      currentTabIndex = (currentTabIndex + 1) % tabs.length; // Cycle through tabs
-    }, 4000); // 3 seconds interval
+      if (autoSwitching) {
+        // Update the active tab based on the current index
+        setVerticalActive(tabs[currentTabIndexRef.current]);
+        currentTabIndexRef.current =
+          (currentTabIndexRef.current + 1) % tabs.length; // Cycle through tabs
+      }
+    }, 4000); // 4 seconds interval
 
     // Clear the timer when the component unmounts to prevent memory leaks.
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  }, [autoSwitching, tabs]);
 
   const handleVerticalClick = (value) => {
     if (value === verticalActive) {
       return;
     }
     setVerticalActive(value);
+    setAutoSwitching(false); // Pause auto-switching when a tab is manually clicked
+  };
+
+  const handleTabsMouseEnter = () => {
+    setAutoSwitching(false); // Pause auto-switching on hover
+  };
+
+  const handleTabsMouseLeave = () => {
+    setAutoSwitching(true); // Resume auto-switching on mouse leave
   };
 
   return (
@@ -130,7 +143,11 @@ function Services() {
                 </button>
               </div>
             </MDBCol>
-            <MDBCol size="7">
+            <MDBCol
+              size="7"
+              onMouseEnter={handleTabsMouseEnter}
+              onMouseLeave={handleTabsMouseLeave}
+            >
               <MDBTabsContent>
                 {/*Tab 1*/}
                 <MDBTabsPane show={verticalActive === "tab4"}>

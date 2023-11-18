@@ -127,7 +127,6 @@ figure.effect-sadie p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
-
 figure.effect-sadie p {
   position: absolute;
   bottom: 14%;
@@ -138,7 +137,6 @@ figure.effect-sadie p {
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
 }
-
 figure.effect-sadie:hover h2 {
   color: #fff;
   -webkit-transform: translate3d(5%, -100%, 0) translate3d(0, -100%, 0);
@@ -147,9 +145,12 @@ figure.effect-sadie:hover h2 {
 }
 figure.effect-sadie:hover h2 > span {
   position: relative;
-  left: 11% !important;
+  left: 9.5% !important;
 }
-
+figure.effect-sadie-2:hover h2 > span {
+  position: relative;
+  left: 7.5% !important;
+}
 .img-1 {
   transition: all 0.25s ease-in-out;
   display: block;

@@ -388,6 +388,26 @@ h1 {
     flex: 0 0 auto !important;
     width: 20% !important;
   }
+  .col-md-custom-footer-1 {
+    flex: 0 0 auto !important;
+    width: 15% !important;
+  }
+  .col-md-custom-footer-2 {
+    flex: 0 0 auto !important;
+    width: 24% !important;
+  }
+  .col-md-custom-footer-3 {
+    flex: 0 0 auto !important;
+    width: 22% !important;
+  }
+  .col-md-custom-footer-4 {
+    flex: 0 0 auto !important;
+    width: 25% !important;
+  }
+  .col-md-custom-footer-5 {
+    flex: 0 0 auto !important;
+    width: 14% !important;
+  }
   .w-md-12 {
     width: 15% !important;
   }
@@ -428,14 +448,31 @@ h1 {
 } */
 /*mobile only media view*/
 @media (max-width: 768px) {
+  .pb-sm-0 {
+    padding-bottom: 0px !important;
+  }
+  h1, .h1 {
+    font-size: calc(1.375rem + 3.5vw) !important;
+  }
+  .marTop--20per {
+    margin-top: -20% !important;
+  }
+  .marTop--15per {
+    margin-top: -15% !important;
+  }
   .gallery {
-    grid-gap: 54px !important;
+    grid-gap: 85px !important;
+    grid-auto-rows: auto !important;
+    margin: 30px auto !important;
+  }
+  .gallery__item > img {
+    max-height: 250px;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .top-heading {
     font-size: 42px !important;
-  }
-  .container {
-    overflow-x: hidden;
   }
   .mobile-h-65vh {
     height: 65vh;
@@ -519,7 +556,7 @@ h1 {
     font-style: normal;
   }
   .sub-heading p {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .section-heading:before,
   .section-heading:after {
@@ -559,7 +596,7 @@ h1 {
     z-index: 9999;
   }
   .card-text {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   figure.effect-sadie h2 {
     font-size: 27px !important;

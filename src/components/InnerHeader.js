@@ -73,7 +73,7 @@ const InnerHeader = () => {
         </Navbar>
       </header>
 
-      <Navbar className="py-4 mobile-navbar-container">
+      <Navbar className="pb-4 mobile-navbar-container">
         <Link to="/">
           <Navbar.Brand>
             <span className="font-weight-800 text-dark">the</span>

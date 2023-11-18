@@ -13,7 +13,7 @@ function Blogs() {
       <div className="col-md-3">
         <div className="sidebar-btn-section sidebar-btn-section--2 sticky-top">
           <button className="bg-dark text-uppercase text-white font-weight-300 resource-button">
-            VIEW All BLOGS
+            VIEW All ARTICLES
           </button>
         </div>
       </div>

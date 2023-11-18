@@ -25,7 +25,7 @@ function Story() {
 
   return (
     <>
-      <section className="container py-5 mt-5 story__container">
+      <section className="container pb-sm-0 pt-5 pb-md-5 mt-md-5 mt-0 story__container">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
@@ -111,7 +111,7 @@ function Story() {
                 </div>
                 <div className="mt-5">
                   <h3 className="text-uppercase text-white px-4 card-heading">
-                    buildt up
+                    built up
                   </h3>
                 </div>
               </div>
