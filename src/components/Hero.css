@@ -364,7 +364,9 @@
   background: #1a1a1a !important;
 }
  .button_container span {
-	 background: #fff;
+	 background: inherit;
+   filter: invert(1);
+   mix-blend-mode: difference;
 	 border: none;
 	 height: 2px;
 	 width: 100%;
