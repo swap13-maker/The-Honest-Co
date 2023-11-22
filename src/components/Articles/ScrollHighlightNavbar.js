@@ -77,20 +77,20 @@ export default function ScrollHighlightNavbar({ navHeader }) {
 
   return (
     <div className="sticky-top bg-white">
-      {navHeader.map((header, index) => (
-        <a
-          key={index + header.headerID}
-          className={
-            activeIndex === index
-              ? "d-block py-2 articleNavlink active"
-              : "d-block py-2 articleNavlink"
-          }
-          href={`#${header.headerID}`}
-        >
-          {header.headerTitle}
-        </a>
-      ))}
-    </div>
+    {navHeader.map((header, index) => (
+      <h2 
+        key={index + header.headerID}
+        className={ activeIndex === index
+          ? "d-block articleNavlink active"
+          : "d-block articleNavlink"}
+        onClick={() => {
+          document.querySelector(`#${header.headerID}`).scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        {header.headerTitle}
+      </h2>
+    ))}
+  </div>
   );
 }
 

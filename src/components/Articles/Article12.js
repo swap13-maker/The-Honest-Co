@@ -6,10 +6,13 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 12.jpg'
+import B12a from '../../images/B12a.jpg'
+import B12b from '../../images/B12b.jpg'
+import B12c from '../../images/B12c.jpg'
+import {Article12Banner,Article12B12a,Article12B12b,Article12B12c} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article12() {
   const section1Ref = useRef();
@@ -57,6 +60,20 @@ export default function Article12() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>AI Fleet Management for Effective Route Planning</title>
+        <meta
+          name="description"
+          content="Enhance route planning and fleet management with artificial intelligence. 
+          Optimize operations for efficient and cost-effective logistics"
+        />
+        <meta
+          name="keywords"
+          content="fleet management softwares cab hailing mobile applications 
+                  google maps integrations ai & ml technologies ev cab mobile app"
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,26 +88,27 @@ export default function Article12() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
+                <div>
+                <h1 className="article-heading">
                   Effective Route Planning & Fleet Management By <br />{" "}
-                  Airiticifal Inteligence Models
+                  Airiticifal Inteligence Models</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">AI & ML Solutions</span> &bull;{" "}
-                  <span className="px-2">Logistics & Transportation</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
+                  <h2 className="px-2">Logistics & Transportation</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article12Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Fleet management has long been a cornerstone of the
                     transportation and logistics industry, relying heavily on
                     traditional techniques and manual inputs for route planning
                     and operational oversight.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     However, the landscape is rapidly evolving, much like how AI
                     in ecommerce and AI in education are reshaping their
@@ -102,9 +120,9 @@ export default function Article12() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     How AI & ML Models are Pioneering a Shift
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The historical reliance on manual inputs and predictions for
                     route planning in the logistics sector has been a familiar
@@ -129,12 +147,12 @@ export default function Article12() {
                     real-time changes and evolving requirements.
                   </p>
                   <br />
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B12a} className="w-100 pt-5" alt={Article12B12a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Frameworks & Technologies at Play
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The transition to AI and ML in fleet management is
                     underpinned by a range of advanced technologies and
@@ -155,15 +173,15 @@ export default function Article12() {
                     technology that is redefining traditional approaches and
                     driving the future of fleet management.
                     <br />
-                    <img src={articleImg1} className="w-100 pt-5" />
+                    <img src={B12b} className="w-100 pt-5" alt={Article12B12b}/>
                   </p>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     AI and ML are revolutionizing fleet management by
                     introducing predictive analytics for traffic management,
                     much like the trends observed in AI inventory management.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     These predictive models leverage historical traffic data and
                     anticipate potential bottlenecks in real-time, allowing for
@@ -183,9 +201,9 @@ export default function Article12() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Future of Fleet Management
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The future of fleet management is unfolding with limitless
                     possibilities, much like the transformative impact of AI in
@@ -210,10 +228,10 @@ export default function Article12() {
                     innovation and adaptability, much like AI and ML are shaping
                     the future in other sectors.
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B12c} className="w-100 pt-5" alt={Article12B12c}/>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">The Vision Ahead</p>
+                  <h2 className="main-article-content">The Vision Ahead</h2>
                   <p className="light-article-content">
                     At The Honest Company, we recognize the transformative
                     potential of AI and ML integration in the realm of fleet

@@ -6,11 +6,11 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.png";
-import article3Img1 from "../../images/Article3Img3.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
-import article2Img3 from "../../images/Article2Img3.png";
+import Banner from "../../images/Banner 3.jpg";
+import B3a from "../../images/B3a.jpg";
+import B3b from "../../images/B3b.jpg";
+import { Article3Banner, Article1B3a, Article1B3b } from "./Constant.js";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const section1Ref = useRef();
@@ -51,7 +51,6 @@ export default function App() {
       headerRef: section6Ref,
       headerID: "section5",
     },
-    
   ];
 
   return (
@@ -59,6 +58,20 @@ export default function App() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Precision Agriculture, AI & ML Plant Disease Detection</title>
+        <meta
+          name="description"
+          content="Transform agriculture with AI and ML. Detect plant diseases early for sustainable farming. Explore our cutting-edge solutions.
+          Low-Code Platforms for E-Commerce"
+        />
+        <meta
+          name="keywords"
+          content="plant diseases detection via mobile app 
+            agriculture technology advanced farming artificial intelligence machine learning"
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -73,25 +86,27 @@ export default function App() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Leveraging AI and ML Models To Help Farmers Early Detect Plant
-                  Diseases
+                <div>
+                  <h1 className="article-heading">
+                    Leveraging AI and ML Models To Help Farmers Early <br />{" "}
+                    Detect Plant Diseases
+                  </h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Custom Application Development</span>{" "}
-                  &bull; <span className="px-2">Healthcare Technology</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Custom Application Development</h2>{" "}
+                  &bull; <h2 className="px-2">Healthcare Technology</h2>
                 </div>
-                <img src={article3Img1} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article3Banner} />
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Agriculture, for millennia, has been at the heart of human
                     civilization. With changing times, the techniques have
                     evolved, but the challenges remain as daunting as ever.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Among these challenges, one that stands out is the battle
                     against plant diseases. With the advent of the digital age,
@@ -101,9 +116,9 @@ export default function App() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Age-old Battle with Plant Diseases
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Farmers have always grappled with plant diseases that can
                     decimate entire crops. From fungi to pests, multiple
@@ -122,9 +137,9 @@ export default function App() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Process: From Image Capture to Intervention
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Using sophisticated algorithms, AI models can process
                     thousands of images, identifying minute changes or patterns
@@ -141,7 +156,7 @@ export default function App() {
                     the crops and can be used for the same.
                     <br />
                   </p>
-                  <p className="main-article-content">Real-time Analysis</p>
+                  <h2 className="main-article-content">Real-time Analysis</h2>
                   <p className="light-article-content">
                     These images feed into a sophisticated AI model trained to
                     detect the plants and the subsequent diseases. The process
@@ -167,29 +182,29 @@ export default function App() {
                     schedules, or strategies for pest control, the system offers
                     valuable guidance for precise intervention.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B3a} className="w-100 pt-5" alt={Article1B3a} />
                   <br />
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Solutions and Preventative Measures
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The model suggests actionable solutions - whether it's a
                     specific treatment, a change in watering schedules, or
                     recommendations for pest control. It’s like having a plant
                     healthcare specialist on call, 24/7.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  {/* <img src={articleImg1} className="w-100 pt-5" /> */}
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Based on the detected disease, AI systems can recommend
                     treatments, ensuring quick action and minimal damage. By
                     analysing recurrent patterns, ML models can suggest
                     preventive measures, from altered watering schedules to
                     specific soil treatments
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The fusion of agriculture with AI and ML signifies a
                     promising future for farmers worldwide. With more accurate
@@ -208,12 +223,12 @@ export default function App() {
                     well-equipped to feed our growing global population while
                     safeguarding the environment.
                   </p>
-                  <img src={article2Img3} className="w-100 pt-5" />
+                  <img src={B3b} className="w-100 pt-5" alt={Article1B3b} />
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Bigger Picture: AI in Agro-Healthcare
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     This innovative application of ai in health insurance of
                     crops is a testament to how technology can enhance

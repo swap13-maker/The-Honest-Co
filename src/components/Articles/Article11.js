@@ -6,10 +6,12 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 11.jpg'
+import B11a from '../../images/B11a.jpg'
+import B11b from '../../images/B11b.jpg'
+import {Article11Banner,Article11B11a,Article11B11b} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article11() {
   const section1Ref = useRef();
@@ -57,6 +59,20 @@ export default function Article11() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+       <Helmet>
+        <title>Tailored CRM for E-Commerce Businesses</title>
+        <meta
+          name="description"
+          content="Boost e-commerce efficiency with custom CRM development. Tailored solutions for enhanced customer relationship management and business growth.
+                  Effective Route Planning with AI Fleet Management"
+        />
+        <meta
+          name="keywords"
+          content="custom crm hire php developers 
+                   mobile app development e-commerce business advancements in ecommerce "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,25 +87,26 @@ export default function Article11() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Custom CRM Development For E-Commerce <br /> Industries &
-                  Businesses
+                <div>
+                <h1 className="article-heading">
+                  Custom CRM Development For E-Commerce <br />{" "}
+                   Industries & Businesses</h1>
                 </div>
                 <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Custom Development</span> &bull;{" "}
-                  <span className="px-2">D2C & E-Commerce</span>
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Custom Development</h2> &bull;{" "}
+                  <h2 className="px-2">D2C & E-Commerce</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article11Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the competitive sphere of manufacturing, businesses
                     constantly strive for an edge to enhance customer relations,
                     streamline operations, and maximise revenue.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     This begins with the digitization of operations, a process
                     that can make or break an e-commerce enterprise. As the
@@ -105,9 +122,9 @@ export default function Article11() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Bespoke Vs Off the Shelf Solutions
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In the realm of e-commerce, choosing the right CRM solution
                     can be a pivotal decision that impacts the efficiency and
@@ -131,12 +148,12 @@ export default function Article11() {
                     e-commerce businesses for success in the highly competitive
                     landscape.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B11a} className="w-100 pt-5" alt={Article11B11a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Operations Made Easy via Mobile Devices
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In today's e-commerce landscape, the ability to manage
                     operations on-the-go is invaluable. Custom CRM development
@@ -163,12 +180,12 @@ export default function Article11() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In this ever-evolving landscape, having an all-in-one
                     solution is a game-changer. With custom CRM development,
                     e-commerce businesses can craft a CRM system that serves as
                     a hub for all their operational needs.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     One of the standout advantages is the ability to tailor this
                     CRM system to the specific requirements of the business.
@@ -183,12 +200,12 @@ export default function Article11() {
                     enhancing productivity.
                     <br />
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B11b} className="w-100 pt-5" alt={Article11B11b}/>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Catalogue & Inventory Management
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In the world of e-commerce, effective catalogue and
                     inventory management is a linchpin for success. Each
@@ -208,14 +225,14 @@ export default function Article11() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the fast-evolving landscape of e-commerce, having the
                     right technical partner is a decisive factor in achieving
                     digital excellence. The Honest Company stands as the epitome
                     of such a partner, offering businesses the means to create
                     custom solutions that harness the full potential of digital
                     development.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     At the core of this partnership lies an unwavering
                     commitment to crafting tailored solutions that align

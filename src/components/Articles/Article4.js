@@ -6,10 +6,13 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 4.jpg'
+import B4a from '../../images/B4a.jpg'
+import B4b from '../../images/B4b.jpg'
+import B4c from '../../images/B4c.jpg'
+import {Article4Banner,Article4B4a,Article4B4b,Article4B4c} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article4() {
   const section1Ref = useRef();
@@ -57,6 +60,20 @@ export default function Article4() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Elevate E-Commerce, Low-Code Store Creation</title>
+        <meta
+          name="description"
+          content="Revolutionize your online presence with low-code platforms. Simplify e-commerce store creation and enhance customer engagement.
+                   AI & ML for Forecasting and Targeting"
+        />
+        <meta
+          name="keywords"
+          content="ecommerce app development ecommerce store via wordpress
+                  shopify development online store inventory & warehouse management"
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,25 +88,26 @@ export default function Article4() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Simplifying E-Commerce Store Creation with Low-Code Platforms
+                <div>
+                  <h1 className="article-heading">Simplifying E-Commerce Store Creation with<br />{" "} 
+                    Low-Code Platforms</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Custom Application Development</span>{" "}
-                  &bull; <span className="px-2">D2C & E-Commerce</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Custom Application Development</h2>{" "}
+                  &bull; <h2 className="px-2">D2C & E-Commerce</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article4Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The realm of e-commerce is expanding rapidly. With the
                     proliferation of online stores, entrepreneurs and
                     established businesses are continually seeking agile,
                     cost-effective solutions to establish their online presence.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Particularly in the era where Shopify and WordPress dominate
                     the demand for light, efficient and low-code platforms are
@@ -102,9 +120,9 @@ export default function Article4() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Benefits of Low-Code E-Commerce Platforms
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     With a plethora of plugins available, both platforms can be
                     tailored to meet specific ecommerce software needs, from
@@ -137,12 +155,12 @@ export default function Article4() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B4a} className="w-100 pt-5" alt={Article4B4a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Inventory and Warehouse Management
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     With an increase in products and orders, maintaining
                     inventory can become daunting. Leveraging best inventory
@@ -159,14 +177,14 @@ export default function Article4() {
                     reorder products nearing depletion.
                     <br />
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B4b} className="w-100 pt-5" alt={Article4B4b}/>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     From mobile wallets to biometric authentication and smart
                     speaker payments, these new technologies are revolutionizing
                     the way people purchase and exchange funds.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The world of payments is constantly evolving, and payment
                     innovations are shaping the future of how we transact. Let’s
@@ -181,10 +199,10 @@ export default function Article4() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Selecting the Right Set of Technologies for E-Commerce
                     Business
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     According to Statistics study conducted in 2022 across
                     various regions Mobile wallet adoption in 39 countries and
@@ -218,14 +236,14 @@ export default function Article4() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B4c} className="w-100 pt-5" alt={Article4B4c}/>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     From mobile wallets to biometric authentication and smart
                     speaker payments, these new technologies are revolutionizing
                     the way people purchase and exchange funds.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The world of payments is constantly evolving, and payment
                     innovations are shaping the future of how we transact. Let’s

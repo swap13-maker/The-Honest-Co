@@ -7,9 +7,14 @@ import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import articleImg1 from "../../images/articleImg1.jpg"
+import Banner from '../../images/Banner 6.jpg'
+import B6a from '../../images/B6a.jpg'
+import B6b from '../../images/B6b.jpg'
+import B6c from '../../images/B6c.jpg'
+import {Article6Banner,Article6B6a,Article6B6b,Article6B6c} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article6() {
   const section1Ref = useRef();
@@ -57,6 +62,20 @@ export default function Article6() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Secure Pre-School App, Parental Tracking & More</title>
+        <meta
+          name="description"
+          content="Experience comprehensive pre-school mobile app. Ensure secure parental tracking and smooth transits. Elevate your child's learning journey.
+                  Adaptive Course Modules with Deep Learning"
+        />
+        <meta
+          name="keywords"
+          content="geofencing gps tracking uber like app development 
+                   hybrid application development educational technology"
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,26 +90,27 @@ export default function Article6() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Comprehensive Pre-School Mobile Application For
-                  <br />
+                <div>
+                <h1 className="article-heading">
+                  Comprehensive Pre-School Mobile Application For<br />{" "}
                   Secure Parental Tracking & Transits
+                  </h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Mobile App Development</span> &bull;{" "}
-                  <span className="px-2">Educational Technology</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Mobile App Development</h2> &bull;{" "}
+                  <h2 className="px-2">Educational Technology</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article6Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In today's digital era, parents are increasingly concerned
                     about the safety and well-being of their children,
                     especially during their formative preschool years.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The challenge of ensuring children's security during
                     transits to and from school and keeping parents informed has
@@ -102,9 +122,9 @@ export default function Article6() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Real-Time GPS Tracking and Monitoring
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Parents can use the student information system app to track
                     the school bus or any other transit vehicle in real time.
@@ -144,12 +164,12 @@ export default function Article6() {
 
                     </ul>
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B6a} className="w-100 pt-5" alt={Article6B6a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Digital Attendance System: Enhancing Parental Engagement
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Incorporating a digital attendance system into the preschool
                     mobile application streamlines the attendance tracking
@@ -167,12 +187,12 @@ export default function Article6() {
                     preschool experience for both children and their families.
                     <br />
                   </p>
-                  {/* <img src={articleImg1} className="w-100 pt-5" /> */}
+                 
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Web 3 Education Systems
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In the realm of early education, the integration of Web 3
                     education systems marks a revolutionary stride towards a
@@ -209,15 +229,15 @@ export default function Article6() {
                     transparency, and collaboration within the educational
                     landscape.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B6b} className="w-100 pt-5" alt={Article6B6b}/>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the digital age, educational technology continues to
                     transform the landscape of early education, providing a host
                     of innovative tools and resources that enhance the learning
                     experience.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     These advancements in educational technology have a profound
                     impact on not only how children engage with educational
@@ -232,12 +252,12 @@ export default function Article6() {
                     child's development using dedicated mobile applications
                     <br />
                   </p>
-                  {/* <img src={articleImg2} className="w-100 pt-5" /> */}
+                  <img src={B6c} className="w-100 pt-5" alt={Article6B6c}/>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Building a Custom LMS Solution
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     At The Honest Company, we specialize in crafting custom
                     Learning Management Systems that are as unique as your
