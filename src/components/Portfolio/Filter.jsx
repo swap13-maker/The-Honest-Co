@@ -1,60 +1,81 @@
 // import Project8Image from "../../images/"
+import Portfolio1 from "../../images/portfolio_1.jpg"
+import Portfolio2 from "../../images/portfolio_2.jpg"
+import Portfolio3 from "../../images/portfolio_3.jpg"
+import Portfolio4 from "../../images/portfolio_4.jpg"
+import Portfolio5 from '../../images/Portfolio_5.jpg'
+import Portfolio6 from "../../images/portfolio_6.jpg"
+import Portfolio8 from "../../images/portfolio_8.jpg"
 
 const Filter = [
   {
     id: 1,
-    image: "project8.png",
-    name: "Webshocker - Matjaz Valentar",
+    image: Portfolio1,
+    name: "Online D2C E-Commerce Store",
     category: "tab1",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Revolutionizing seafood sales, enhanced D2C experience with a mobile app development. Expanding reach via enhanced digital development.",
+    url:"",
+    alt:"mobile app for d2c businesses "  
   },
 
   {
     id: 2,
-    image: "project7.png",
-    name: "Webshocker - Matjaz Valentar",
-    category: "tab1",
+    image: Portfolio2,
+    name: "P2P Money Remittance Mobile Application",
+    category: "tab2",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Experience seamless P2P money transfer and utility payments with our intuitive mobile app, providing a hassle-free financial solution for users.",
+    url:"",
+    alt:"peer to peer money remittance app "
+
   },
   {
     id: 3,
-    image: "project6.png",
-    name: "Webshocker - Matjaz Valentar",
-    category: "tab2",
+    image: Portfolio3,
+    name: "Travel & Cab Hailing Platform ",
+    category: "tab6",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Empower travelers with our innovative cab booking app, revolutionizing journey planning and management for a smooth and efficient travel experience.",
+    url:"",
+    alt:"Travel and itinerary app with cab booking "  
   },
   {
     id: 4,
-    image: "project5.png",
-    name: "Webshocker - Matjaz Valentar",
-    category: "tab2",
+    image: Portfolio4,
+    name: "SOS & Location Sharing Application ",
+    category: "tab6",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Enhance safety with our comprehensive location sharing and SOS app, offering real-time tracking features that provide peace of mind and security for users.",
+    url:"",
+    alt:"location sharing and tracking with SOS calls"
+
   },
   {
     id: 5,
-    image: "project4.png",
-    name: "Webshocker - Matjaz Valentar",
+    image: Portfolio5,
+    name: "Pill and Appointment Reminder Mobile App",
     category: "tab3",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Prioritize health with our user-friendly app, tracking medicines and appointments to ensure optimal wellness and simplify healthcare management for individuals.",
+    url:"",
+    alt:"medicine and appointment reminder mobile app "  
   },
   {
     id: 6,
-    image: "project3.png",
-    name: "Webshocker - Matjaz Valentar",
-    category: "tab3",
+    image: Portfolio6,
+    name: "Online Photo Sharing with E-Commerce ",
+    category: "tab1",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Celebrate every moment with our exclusive photo-sharing app integrated with e-commerce capabilities, allowing users to cherish and share memories seamlessly.",
+    url:"",
+    alt:"photo sharing app and ecommerce "  
   },
   {
     id: 7,
@@ -64,24 +85,30 @@ const Filter = [
     logo: "react.svg",
     description:
       "Our services have been divided into four categories based on the kind of work we have done in the past.",
+    url:"",
+    alt:""  
   },
   {
     id: 8,
-    image: "project1.png",
-    name: "Webshocker - Matjaz Valentar",
+    image: Portfolio8,
+    name: "Interview Scheduling & Job Tracking App",
     category: "tab4",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Simplify HR processes with our efficient app, streamlining job tracking and interview scheduling to enhance recruitment management for both employers and applicants.",
+    url:"",
+    alt:"interview scheduling and job tracking mobile app "  
   },
   {
     id: 9,
     image: "project1.png",
-    name: "Webshocker - Matjaz Valentar",
+    name: "Custom School Learning Platform ",
     category: "tab5",
     logo: "react.svg",
     description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
+      "Transform education with our custom learning platform, optimizing curriculum management and providing a versatile solution for educational institutions to thrive in the digital era.",
+    url:"",
+    alt:""  
   },
 ];
 

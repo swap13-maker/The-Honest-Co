@@ -1,14 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
 import Banner from '../../images/Banner 8.jpg'
 import B8a from '../../images/B8a.jpg'
 import B8b from '../../images/B8b.jpg'

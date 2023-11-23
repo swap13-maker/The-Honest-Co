@@ -171,7 +171,8 @@ const Resource = () => {
 
             <div className="row custom-row">
               {item.map((data, index) => {
-                const { name, logo, category, image, description } = data;
+                const { name, logo, category, image, description,url,alt } = data;
+                console.log(data,'resourse')
                 // Check if the index is 1, 4, 7, 10, 13, etc.
                 const cardClass = index % 3 === 1 ? "odd-res" : "even-res";
                 const marginTopClass =
@@ -185,13 +186,16 @@ const Resource = () => {
                     <div className="wrapper">
                       <div className="zoom-effect-container">
                         <div className="image__wrapper">
-                          <img className="card-img-top" src={image} />
+                        <Link to={url}>
+                          <img className="card-img-top" src={image} alt={alt}/>
+                        </Link>  
                         </div>
                         <div className="py-4">
                           <div className="blog-heading">{name}</div>
                           <div className="blog-title">
                             {description}
-                            <div className="pt-3 text-decoration-underline">
+                            <Link to={url} style={{color:'black'}}>
+                            <div className="pt-3 text-decoration-underline cursor-pointer">
                               Read More
                               <svg
                                 width="20"
@@ -207,6 +211,7 @@ const Resource = () => {
                                 />
                               </svg>
                             </div>
+                            </Link>
                           </div>
                         </div>
                       </div>
