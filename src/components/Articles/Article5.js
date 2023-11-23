@@ -6,10 +6,13 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 5.jpg'
+import B5a from '../../images/B5a.jpg'
+import B5b from '../../images/B5b.jpg'
+import B5c from '../../images/B5c.jpg'
+import {Article5Banner,Article5B5a,Article5B5b,Article5B5c} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article5() {
   const section1Ref = useRef();
@@ -57,6 +60,20 @@ export default function Article5() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Strategic Growth, AI & ML Forecasting Solutions</title>
+        <meta
+          name="description"
+          content="Optimize business strategy with AI and ML solutions. 
+          Enhance forecasting and customer targeting for sustainable and impactful growth"
+        />
+        <meta
+          name="keywords"
+          content="product forecasting customer segmentation python ai models 
+                    product recommendations custom ai & ml development "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,25 +88,25 @@ export default function Article5() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Optimizing Forecasting and Customer Targeting <br />
-                  with AI and ML Solutions
+                <div>
+                  <h1 className="article-heading">Optimizing Forecasting and Customer Targeting <br />{" "}
+                  with AI and ML Solutions</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">AI & ML Solutions</span> &bull;{" "}
-                  <span className="px-2">D2C & E-Commerce</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
+                  <h2 className="px-2">D2C & E-Commerce</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article5Banner} />
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the ever-evolving landscape of e-commerce, businesses
                     face the challenge of staying a step ahead of dynamic
                     customer preferences and market fluctuations.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Forecasting and targeting, once rooted in human intuition
                     and basic predictive analytics, have now been supercharged
@@ -101,9 +118,9 @@ export default function Article5() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Personalised Product Recommendations
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     By analysing browsing patterns, search histories, and
                     purchase histories, AI models craft individualised shopping
@@ -139,15 +156,15 @@ export default function Article5() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B5a} className="w-100 pt-5" alt={Article5B5a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     With machine learning, e-commerce platforms can delve deep
                     into past sales data, seasonal trends, and customer
                     behaviours. This, in turn, helps businesses predict future
                     demand with a higher degree of accuracy.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     While the benefits of integrating AI and ML solutions in
                     e-commerce are profound, their true potential is unlocked
@@ -159,12 +176,12 @@ export default function Article5() {
                     <br />
                     <br />
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B5b} className="w-100 pt-5" alt={Article5B5b}/>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Making Data Driven Decisions with Ai
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Traditional forecasting models can falter during unexpected
                     market changes. With AI, businesses can analyse vast amounts
@@ -187,12 +204,12 @@ export default function Article5() {
                     on images that customers view or upload, tapping into
                     unstated preferences.
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B5c} className="w-100 pt-5" alt={Article5B5c}/>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Chatbots and Virtual Assistants
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     At the end of 2020, there were over 2.8 billion mobile
                     wallets in use, and it is projected this number to increase
@@ -217,12 +234,12 @@ export default function Article5() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     With machine learning, e-commerce platforms can delve deep
                     into past sales data, seasonal trends, and customer
                     behaviours. This, in turn, helps businesses predict future
                     demand with a higher degree of accuracy.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     While the benefits of integrating AI and ML solutions in
                     e-commerce are profound, their true potential is unlocked

@@ -6,11 +6,12 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.png";
-import articleImg2 from "../../images/articleImg2.jpg";
-import article2Img1 from "../../images/Article2Image1.jpg";
-import article2Img3 from "../../images/Article2Img3.png";
+import Banner from '../../images/Banner 2.jpg'
+import B2a from '../../images/B2a.jpg'
+import B2b from '../../images/B2b.jpg'
+import B2c from '../../images/B2c.jpg'
+import { Article2Banner,Article1B2a,Article1B2b,Article1B2c } from './Constant.js'
+import { Helmet } from "react-helmet";
 import "./Article.css";
 
 export default function Article2() {
@@ -59,6 +60,17 @@ export default function Article2() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Smart Crypto Trading, AI & ML Bot Solutions</title>
+        <meta name="description" content="Empower your trading with AI and ML. Explore our crypto trading bot for intelligent and automated strategies in the dynamic market.
+         AI & ML for Early Plant Disease Detection"/>
+         <meta
+          name="keywords"
+          content="finance & technology artificial intelligence machine learning custom app development 
+                   crypto bot development "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section className="container main-container">
         <div>
           <ul className="breadcrumb-navigation pt-7">
@@ -73,25 +85,25 @@ export default function Article2() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Artificial Intelligence and Machine Learning based Crypto
-                  Trading Bot
+                <div>
+                  <h1 className="article-heading">Artificial Intelligence and Machine Learning based <br />{" "} 
+                  Crypto Trading Bot</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">AI & ML Solutions</span> &bull;{" "}
-                  <span className="px-2">Banking & Finance</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
+                  <h2 className="px-2">Banking & Finance</h2>
                 </div>
-                <img src={article2Img1} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article2Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The buzzwords `Cryptocurrency` and `Blockchain` have not
                     only reshaped the financial ecosystem but have also
                     introduced revolutionary Trading mechanisms.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Among these, crypto trading bots powered by Artificial
                     Intelligence(AI) and Machine Learning (ML) have emerged as
@@ -108,9 +120,9 @@ export default function Article2() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Machine Learning's Role in Financial Decision Making
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Machine learning,a subset of AI, is instrumental in
                     fine-tuning financial strategies,By studying and learning
@@ -127,12 +139,12 @@ export default function Article2() {
                     been particularly transformative in investment banking and
                     financial trading services.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B2a} className="w-100 pt-5" alt={Article1B2a} />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Benefits of AI in Crypto Trading
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     As we navigate the complexities of modern financial markets,
                     the introduction of Artificial Intelligence(AI) and Machine
@@ -170,15 +182,15 @@ export default function Article2() {
                     </ul>
                     <br />
                   </p>
-                  <img src={article2Img3} className="w-100 pt-5" />
+                  <img src={B2b} className="w-100 pt-5" alt={Article1B2b}/>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Beyound AI and ML, crypto trading bots are immensely reliant
                     on blockchain technology. Blockchain technology in banking
                     ensure transparent, secure, and immutable transaction
                     records.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The integration of Web 3 in banking further empowers these
                     bots, enabling decentralised trading without intermediaries,
@@ -187,13 +199,13 @@ export default function Article2() {
                     level of security and trustworthiness. Web 3 and banking
                     integrations provide firther transactional transparency that
                     allows better decision making for substantial profits.
-                    <img src={articleImg2} className="w-100 pt-5" />
+                    <img src={B2c} className="w-100 pt-5" alt={Article1B2c} />
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Rise of the Crypto Trading Bot
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Among the various applications of AI in finance, one that
                     has captured the attention of both novice and seasoned
@@ -212,12 +224,12 @@ export default function Article2() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     At The Honest Company, we don't just recognize trends; we
                     act on them. Our innovative solutions, from crypto exchange
                     app development to banking application development, reflect
                     our commitment to pushing boundaries.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Get a free consultation understand how our expertise can
                     benefit your business. Our unique blend of creativity and

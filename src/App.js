@@ -33,18 +33,18 @@ function App() {
         <Route path="/resources" element={<Resource />} />
         <Route path="/portfolio/project1" element={<Project1 />} />
         <Route path="/portfolio/project2" element={<Project2 />} />
-        <Route path="/resources/articles/article1" element={<Article1 />} />
-        <Route path="/resources/articles/article2" element={<Article2 />} />
-        <Route path="/resources/articles/article3" element={<Article3 />} />
-        <Route path="/resources/articles/article4" element={<Article4 />} />
-        <Route path="/resources/articles/article5" element={<Article5 />} />
-        <Route path="/resources/articles/article6" element={<Article6 />} />
-        <Route path="/resources/articles/article7" element={<Article7 />} />
-        <Route path="/resources/articles/article8" element={<Article8 />} />
-        <Route path="/resources/articles/article9" element={<Article9 />} />
-        <Route path="/resources/articles/article10" element={<Article10 />} />
-        <Route path="/resources/articles/article11" element={<Article11 />} />
-        <Route path="/resources/articles/article12" element={<Article12 />} />
+        <Route path="/resources/articles/global-commerce-remittance-mobile-applications-business-expansion" element={<Article1 />} />
+        <Route path="/resources/articles/artificial-intelligence-machine-learning-crypto-trading-bot" element={<Article2 />} />
+        <Route path="/resources/articles/leveraging-ai-ml-models-farmers-early-detect-plant-diseases" element={<Article3 />} />
+        <Route path="/resources/articles/simplifying-ecommerce-store-creation-low-code-platforms" element={<Article4 />} />
+        <Route path="/resources/articles/optimizing-forecasting-customer-targeting-ai-ml-solutions" element={<Article5 />} />
+        <Route path="/resources/articles/comprehensive-preschool-mobile-application-parental-tracking-transits" element={<Article6 />} />
+        <Route path="/resources/articles/curating-adaptive-course-modules-deep-learning-algorithms" element={<Article7 />} />
+        <Route path="/resources/articles/contract-management-modules-automating-contracts-custom-app-development" element={<Article8 />} />
+        <Route path="/resources/articles/modernizing-interview-scheduling-mobile-apps-enhancing-team-efficiency-applicant-experience" element={<Article9 />} />
+        <Route path="/resources/articles/machine-learning-models-streamlining-application-filterization-shortlisting-hr-operations" element={<Article10 />} />
+        <Route path="/resources/articles/custom-crm-development-ecommerce-industries-businesses" element={<Article11 />} />
+        <Route path="/resources/articles/effective-route-planning-fleet-management-airiticifal-intelligence-models" element={<Article12 />} />
         <Route path="/thankyou" element={<Thanks />} />
       </Routes>
     </Router>
