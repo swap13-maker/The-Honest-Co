@@ -1,15 +1,17 @@
 import React, { useRef, useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 8.jpg'
+import B8a from '../../images/B8a.jpg'
+import B8b from '../../images/B8b.jpg'
+import B8c from '../../images/B8c.jpg'
+import {Article8Banner,Article8B8a,Article8B8b,Article8B8c} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article8() {
   const section1Ref = useRef();
@@ -57,6 +59,20 @@ export default function Article8() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Easy Contract Management, Custom App Solutions</title>
+        <meta
+          name="description"
+          content="Simplify contract management with custom app development. Explore automated solutions for seamless and efficient contract processes.
+                   Mobile Apps for Efficient Interview Scheduling"
+        />
+        <meta
+          name="keywords"
+          content="digital development erp software development 
+                  advancements in ed-tech mobile app development contract management softwares "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,26 +87,27 @@ export default function Article8() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
+                <div>
+                <h1 className="article-heading">
                   Contract Management Modules, Automating <br /> Contracts Made
-                  Easy Via Custom App Development
+                  Easy Via Custom App Development</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Custom Development</span> &bull;{" "}
-                  <span className="px-2">Staffing & Recruitment</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Custom Development</h2> &bull;{" "}
+                  <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article8Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Recruitment and HR operations have taken a leap into the
                     digital age. As firms juggle multiple contracts, agreements,
                     and employee documentation, there's a mounting need to
                     streamline these processes.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     While there are several pre-made solutions in the market,
                     custom app development, tailored to specific business needs,
@@ -101,9 +118,9 @@ export default function Article8() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Why Custom Over Premade?
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In a world where businesses are constantly evolving, the
                     choice between custom and premade solutions can be a
@@ -153,12 +170,12 @@ export default function Article8() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B8a} className="w-100 pt-5" alt={Article8B8a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Features of Custom Template Modules
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Custom template modules offer a holistic solution for
                     businesses seeking to streamline their manual operational
@@ -212,15 +229,15 @@ export default function Article8() {
                     </ul>
                     <br />
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B8b} className="w-100 pt-5" alt={Article8B8b} />
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the HR industry, the efficient management of contracts
                     and workforce documentation is crucial. Custom template
                     modules have emerged as a game-changer, offering tailored
                     solutions to meet the unique demands of HR operations
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     These modules handle a variety of HR-related contracts, such
                     as employment contracts, onboarding and offboarding
@@ -237,9 +254,9 @@ export default function Article8() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Mobile Applications for Swift Operations
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In today's dynamic work environment, access on the go is
                     essential. Mobile responsive softwares and mobile
@@ -250,14 +267,14 @@ export default function Article8() {
                     accessibility of your contract management processes.
                     <br />
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B8c} className="w-100 pt-5" alt={Article8B8c}/>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     At The Honest Company, we specialize in crafting bespoke
                     software solutions that empower organizations to navigate
                     the complex landscape of contract management with ease.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     We understand that in the HR industry, compliance,
                     precision, and efficiency are non-negotiable. Our team of
@@ -319,7 +336,6 @@ export default function Article8() {
           </div>
         </div>
       </section>
-
       <section className="container bg-white py-4"></section>
       <Footer />
     </section>

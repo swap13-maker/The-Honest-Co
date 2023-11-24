@@ -6,11 +6,12 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 10.jpg'
+import B10a from '../../images/B10a.jpg'
+import B10b from '../../images/B10b.jpg'
+import {Article10Banner,Article10B10a,Article10B10b} from './Constant.js'
 import "./Article.css";
-
+import { Helmet } from "react-helmet";
 export default function Article10() {
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -57,6 +58,20 @@ export default function Article10() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>ML Models for Streamlined HR Operations</title>
+        <meta
+          name="description"
+          content="Optimize HR operations with machine learning models. Streamline application filterization and shortlisting for efficient and effective hiring.
+                  Custom CRM Development for E-Commerce"
+        />
+        <meta
+          name="keywords"
+          content="staffing & recruitment machine learning 
+                  artificial intelligence build an hr software digital development "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,28 +86,29 @@ export default function Article10() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
+                <div>
+                <h1 className="article-heading">
                   Machine Learning Models Streamlining Application <br />{" "}
-                  Filtration and Shortlisting in HR Operations
+                  Filtration and Shortlisting in HR Operations</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">AI & ML Solutions</span> &bull;{" "}
-                  <span className="px-2">Staffing & Recruitment</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
+                  <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article10Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the vast realm of staffing and recruitment, it's critical
                     for companies to rapidly identify and connect with the most
                     suitable talent. With a deluge of applications arriving for
                     every role, especially in popular sectors, manually
                     filtering and shortlisting candidates becomes a
                     time-consuming and often fallible process.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     However, with advancements in AI in HR and machine learning
                     in human resource management, we're witnessing a
@@ -101,9 +117,9 @@ export default function Article10() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Understanding Machine Learning in Recruitment
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In the dynamic landscape of recruitment, the application of
                     Machine Learning (ML) has paved the way for a more efficient
@@ -147,15 +163,15 @@ export default function Article10() {
                       </li>
                       <br />
                     </ul>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B10a} className="w-100 pt-5" alt={Article10B10a} />
                   </p>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the realm of recruitment, the integration of machine
                     learning is revolutionizing and streamlining processes,
                     offering innovative solutions to traditional challenges.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The arduous task of sifting through numerous applications is
                     now met with efficiency and precision, transforming how
@@ -175,9 +191,9 @@ export default function Article10() {
                   {/* <img src={articleImg1} className="w-100 pt-5" /> */}
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Boosting Productivity and Efficiency
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The integration of Artificial Intelligence (AI) and Machine
                     Learning (ML) into the recruitment process brings forth a
@@ -209,13 +225,13 @@ export default function Article10() {
                     selected have a higher probability of success based on
                     historical performance trends.
                    
-                    <img src={articleImg1} className="w-100 pt-5" />
+                    <img src={B10b} className="w-100 pt-5" alt={Article10B10b}/>
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Future is Ai-Powered
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The future of staffing and recruitment is undoubtedly
                     AI-powered, representing a paradigm shift in how companies
@@ -237,13 +253,13 @@ export default function Article10() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Ready to redefine your recruitment strategy and embrace the
                     power of AI and machine learning in your HR operations?
                     Connect with our experts at The Honest Company, and let's
                     chart a course toward enhanced efficiency and productivity
                     in your talent acquisition endeavours.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     At The Honest Company, we recognize the transformative
                     potential of integrating AI with HR processes. Our

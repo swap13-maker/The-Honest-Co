@@ -970,9 +970,10 @@ input[type="checkbox"]:before {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  justify-content: center;
 }
 .article-sub-heading,
-.article-sub-heading > span {
+.article-sub-heading > h2 {
   color: rgba(0, 0, 0, 0.9);
   font-family: Barlow;
   font-size: 18px;
@@ -980,10 +981,12 @@ input[type="checkbox"]:before {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.36px;
+  display: flex;
+  justify-content: center;
 }
 .main-article-content {
   color: #1a1a1a;
-  font-family: Barlow;
+  font-family: "Barlow", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -998,22 +1001,25 @@ input[type="checkbox"]:before {
   line-height: 24px; /* 133.333% */
   opacity: 0.8;
 }
+
 .sticky {
   position: sticky;
   top: 45%;
 }
 .articleNavlink {
   color: #1a1a1a;
-  font-family: Barlow;
+  font-family: "Barlow", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   opacity: 0.5;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .articleNavlink.active {
   color: #1a1a1a;
-  font-family: Barlow;
+  font-family: "Barlow", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

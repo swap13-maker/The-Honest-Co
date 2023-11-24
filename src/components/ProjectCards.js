@@ -6,6 +6,8 @@ const ProjectCards = ({
   description,
   logo,
   width,
+  alt,
+  url
 }) => {
   return (
     <div
@@ -17,7 +19,7 @@ const ProjectCards = ({
         <div className="wrapper">
           <div className="zoom-effect-container">
             <div className="image-card">
-              <img className="card-img-top" src={image} />
+              <img className="card-img-top" src={image} alt={alt}/>
             </div>
             <div className="pb-5 translate__down">
               <div className="blog-heading">

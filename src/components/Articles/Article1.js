@@ -6,10 +6,18 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
-import './Article.css'
+import {
+  ArticleBanner,
+  Article1B1a,
+  Article1B1b,
+  Article1B1c,
+} from "./Constant.js";
+import Banner from "../../images/Banner 1.jpg";
+import B1a from "../../images/B1a.jpg";
+import B1b from "../../images/B1b.jpg";
+import B1c from "../../images/B1c.jpg";
+import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const section1Ref = useRef();
@@ -57,6 +65,20 @@ export default function App() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Global Commerce & Remittance Solutions for Businesses</title>
+        <meta
+          name="description"
+          content="Unlock seamless global transactions with our expert mobile app development. Explore the role of remittance applications in business expansion
+           AI and ML Crypto Trading Bot"
+        />
+        <meta
+          name="keywords"
+          content="money transfer app development custom software development 
+                   mobile app development Online payments Finance "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section className="container main-container">
         <div className="">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,26 +93,28 @@ export default function App() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Global Commerce Made Easy, The Role of Remittance <br />{" "}
-                  Applications in Business Expansion
+                <div>
+                  <h1 className="article-heading">
+                    Global Commerce Made Easy, The Role of Remittance <br />{" "}
+                    Applications in Business Expansion
+                  </h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Custom Application Development</span>{" "}
-                  &bull; <span className="px-2">Banking & Finance</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Custom Application Development</h2>{" "}
+                  &bull; <h2 className="px-2">Banking & Finance</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={ArticleBanner} />
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In today's digital-first landscape, global commerce is
                     witnessing a revolution. As businesses expand their
                     horizons, the need for seamless, secure, and efficient money
                     transfer mechanisms has become paramount.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     When we talk of global commerce, seamless money transfer is
                     at its heart. The growth of money transfer software
@@ -104,9 +128,9 @@ export default function App() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Paradigm Shift: From Traditional to Digital Transfers
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In this age of smartphones, banking apps development and
                     money management applications have transformed the way
@@ -131,12 +155,12 @@ export default function App() {
                     worldwide trade not just feasible but efficient and
                     user-friendly.
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B1a} className="w-100 pt-5" alt={Article1B1a} />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Role of Cryptocurrency in Global Trade
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     With the rise of decentralised finance, cryptocurrency
                     exchange software development and white label crypto
@@ -156,12 +180,12 @@ export default function App() {
                     multiple countries, this is a game-changer.
                     <br />
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B1b} className="w-100 pt-5" alt={Article1B1b} />
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Leveraging AI & ML for Predictive Commerce
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The potential of AI in financial services is vast. From
                     understanding market trends to predicting customer buying
@@ -181,9 +205,9 @@ export default function App() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Seamless Money Transfer with Cutting-edge Software
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     When we talk of global commerce, hassle free money transfer
                     is at its heart. The growth of money transfer software
@@ -204,16 +228,16 @@ export default function App() {
                     compliance, or user experience, these platforms offer
                     unparalleled flexibility.
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     At The Honest Company, we're at the forefront of this
                     remittance revolution. Our expertise in financial management
                     tool development and our commitment to innovation ensure
                     that businesses receive top-notch solutions tailored for
                     their expansion goals.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Get a free consultation to understand how we can make global
                     trade simpler and more efficient for you. Whether you need
@@ -229,19 +253,19 @@ export default function App() {
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">
                   <div className="p-4 d-none d-md-block">
-                  <div className="Side_border-top"></div>
-                  <div className="border-right"></div>
+                    <div className="Side_border-top"></div>
+                    <div className="border-right"></div>
                     <ScrollHighlightNabbar
                       section1Ref={section1Ref}
                       navHeader={navHeader}
                       className="sticky-top"
                     />
-                  <div className="border-left"></div>  
-                  <div className="Side_border-bottom"></div>
+                    <div className="border-left"></div>
+                    <div className="Side_border-bottom"></div>
                   </div>
                   <div className="p-4 mt-5 bg-white d-none d-md-block">
-                  <div className="Side_border-top"></div>
-                  <div className="box-bottom-right"></div>
+                    <div className="Side_border-top"></div>
+                    <div className="box-bottom-right"></div>
                     <div className="side-article-heading">
                       Want to build one for yourself?
                     </div>
@@ -265,9 +289,8 @@ export default function App() {
                           fill="black"
                         ></path>
                       </svg>
-                      
-                      <div className="box-bottom-left"></div>  
-                  <div className="Side_border-bottom"></div>
+                      <div className="box-bottom-left"></div>
+                      <div className="Side_border-bottom"></div>
                     </div>
                   </div>
                 </div>

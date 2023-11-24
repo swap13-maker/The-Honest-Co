@@ -6,10 +6,13 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 9.jpg'
+import B9a from '../../images/B9a.jpg'
+import B9b from '../../images/B9b.jpg'
+import B9c from '../../images/B9c.jpg'
+import {Article9Banner,Article9B9a,Article9B9b,Article9B9c} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article9() {
   const section1Ref = useRef();
@@ -57,6 +60,20 @@ export default function Article9() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Efficient Interview Scheduling with Mobile Apps</title>
+        <meta
+          name="description"
+          content="Modernize interview scheduling with mobile apps. Enhance team efficiency and applicant experience. Elevate your recruitment process.
+                   Streamlining HR Operations with ML Models"
+        />
+        <meta
+          name="keywords"
+          content="calendly like app development online interview scheduling custom hrms development 
+                  digital development in HR industry software development "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,27 +88,28 @@ export default function Article9() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Modernizing Interview Scheduling, Mobile Apps Enhancing Team
-                  Efficiency and Applicant Experience
+                <div>
+                <h1 className="article-heading">
+                  Modernizing Interview Scheduling, Mobile Apps<br />{" "} 
+                  Enhancing Team Efficiency and Applicant Experience</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">Mobile App Development</span> &bull;{" "}
-                  <span className="px-2">Staffing & Recruitment</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Mobile App Development</h2> &bull;{" "}
+                  <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article9Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the rapidly evolving landscape of staffing and
                     recruitment, ensuring seamless interview processes is
                     paramount. The traditional methods of scheduling and
                     tracking interviews have often been fraught with human
                     errors, miscommunications, and logistical challenges.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Modern mobile apps have emerged as powerful tools that not
                     only refine the interview scheduling process but also
@@ -105,9 +123,9 @@ export default function Article9() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     A Paradigm Shift in Interview Scheduling
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     The process of interview scheduling has always been a
                     complex jigsaw puzzle, especially for large corporations and
@@ -144,12 +162,12 @@ export default function Article9() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B9a} className="w-100 pt-5" alt={Article9B9a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Driving Team Efficiency with Automation
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     In the fast-paced world of HR, time is of the essence, and
                     the efficiency of your team can make all the difference.
@@ -173,16 +191,16 @@ export default function Article9() {
                     the team.
                     <br />
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B9b} className="w-100 pt-5" alt={Article9B9b}/>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In the ever-evolving landscape of recruitment, one facet
                     that stands out as pivotal is the experience of the
                     applicants. Today's candidates expect transparency in the
                     recruitment process, and mobile apps have made this a
                     reality.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Modern job seekers, especially the tech-savvy millennial and
                     Gen Z workforce, bring with them a set of expectations that
@@ -200,9 +218,9 @@ export default function Article9() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Power of Mobile Applications in Recruitment
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Mobile applications provide HR professionals with the
                     flexibility to access critical recruitment data and tools
@@ -247,12 +265,12 @@ export default function Article9() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg2} className="w-100 pt-5" />
+                  <img src={B9c} className="w-100 pt-5" alt={Article9B9c}/>
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Redefine Your Human Resource Processes
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     At The Honest Company, we understand the significance of
                     automation in HR and can assist you in developing custom

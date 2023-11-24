@@ -183,7 +183,7 @@ const Portfolio = () => {
 
             <div className="row custom-row">
               {item.map((data, index) => {
-                const { name, logo, image, description } = data;
+                const { name, logo, image, description,alt,url } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
                 const marginTopClass =
                   index === 0 || index === 1 ? "" : "margin-portolio";
@@ -197,6 +197,9 @@ const Portfolio = () => {
                     logo={logo}
                     image={image}
                     key={index}
+                    alt={alt}
+                    url={url}
+
                   />
                 );
               })}

@@ -6,10 +6,12 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import article from "../../images/article1.png";
-import articleImg1 from "../../images/articleImg1.jpg";
-import articleImg2 from "../../images/articleImg2.jpg";
+import Banner from '../../images/Banner 7.jpg'
+import B7a from '../../images/B7a.jpg'
+import B7b from '../../images/B7b.jpg'
+import {Article7Banner,Article7B7a,Article7B7b} from './Constant.js'
 import "./Article.css";
+import { Helmet } from "react-helmet";
 
 export default function Article7() {
   const section1Ref = useRef();
@@ -57,6 +59,20 @@ export default function Article7() {
       {/* Header */}
       <InnerHeader />
       {/* mian content */}
+      <Helmet>
+        <title>Deep Learning for Adaptive Course Modules</title>
+        <meta
+          name="description"
+          content="Transform education with adaptive course modules powered by deep learning algorithms. Tailor learning experiences for enhanced outcomes.
+                   Automating Contracts with Custom App Development"
+        />
+        <meta
+          name="keywords"
+          content="adaptive learning courses ai in educational technology ed-tech 
+                   custom lms development learning management solutions "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section>
         <div className="container main-container">
           <ul className="breadcrumb-navigation pt-7">
@@ -71,27 +87,27 @@ export default function Article7() {
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
-                <div className="article-heading">
-                  Curating Adaptive Course Modules Made Viable By <br /> Deep
-                  Learning Algorithms
+                <div>
+                <h1 className="article-heading">Curating Adaptive Course Modules Made Viable By <br />{" "} 
+                Deep Learning Algorithms</h1>
                 </div>
-                <div className="article-sub-heading pt-4">
-                  <span className="px-2">May 19, 2023</span> &bull;{" "}
-                  <span className="px-2">AI & ML Solutions</span> &bull;{" "}
-                  <span className="px-2">Educational Technology</span>
+                <div className="article-sub-heading pt-3">
+                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
+                  <h2 className="px-2">Educational Technology</h2>
                 </div>
-                <img src={article} className="w-100 pt-5" />
+                <img src={Banner} className="w-100 pt-5" alt={Article7Banner}/>
               </div>
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     In today's dynamic educational landscape, the traditional
                     one-size-fits-all approach to learning is rapidly becoming
                     outdated. Students, with their diverse backgrounds and
                     learning preferences, demand personalised experiences that
                     cater to their unique strengths and weaknesses.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Adaptive course modules, driven by the prowess of deep
                     learning algorithms, are emerging as the gold standard in
@@ -103,9 +119,9 @@ export default function Article7() {
                   </p>
                 </div>
                 <div className="pt-5" ref={section2Ref} id="section2">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Adaptive Course Modules: The Future of Learning
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Adaptive learning refers to educational methodologies that
                     modify content in real-time, based on the student's
@@ -153,12 +169,12 @@ export default function Article7() {
                       </li>
                     </ul>
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B7a} className="w-100 pt-5" alt={Article7B7a}/>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     Role of Deep Learning in Educational Technology
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     Deep learning, a subset of machine learning and artificial
                     intelligence, employs neural networks with many layers to
@@ -206,11 +222,11 @@ export default function Article7() {
                   {/* <img src={articleImg1} className="w-100 pt-5" /> */}
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The convergence of deep learning and adaptive course modules
                     in LMS is a testament to the incredible potential of
                     technology in reshaping education.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     By ensuring that each student's unique learning journey is
                     acknowledged and catered to, we're not just enhancing the
@@ -225,12 +241,12 @@ export default function Article7() {
                     deserve.
                     <br />
                   </p>
-                  <img src={articleImg1} className="w-100 pt-5" />
+                  <img src={B7b} className="w-100 pt-5" alt={Article7B7b}/>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     The Power of Data-Driven Decisions in Education
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     One key aspect of data-driven decisions is the ability to
                     create personalized learning pathways for students. By
@@ -253,14 +269,13 @@ export default function Article7() {
                     greatly enhanced through data-driven decisions, allowing
                     educators to allocate resources where they are most needed.
                   </p>
-                  {/* <img src={articleImg2} className="w-100 pt-5" /> */}
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="main-article-content">
+                  <h2 className="main-article-content">
                     From mobile wallets to biometric authentication and smart
                     speaker payments, these new technologies are revolutionizing
                     the way people purchase and exchange funds.
-                  </p>
+                  </h2>
                   <p className="light-article-content">
                     At The Honest Company, we're at the forefront of integrating
                     AI and machine learning in education. Our tailored solutions
