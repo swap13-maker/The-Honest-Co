@@ -7,15 +7,15 @@ import Footer from "./../Footer";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
-import Banner from "../../images/pro2Banner.jpg";
+import Banner from "../../images/pro3Banner.jpg";
 import Grid from "../../images/Grid1.jpg";
-import secondGrid from "../../images/pro2SecondaryBanner.jpg";
+import secondGrid from "../../images/pro3SecondaryBanner.jpg";
 import webGrid from "../../images/Web Grid Web View.jpg";
 import conslusion from "../../images/Conclusion.jpg";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
-function Project2() {
+function Project3() {
   const settings = {
     className: "slider variable-width",
     dots: false,
@@ -30,14 +30,14 @@ function Project2() {
     <section>
       {/* Header */}
       <Helmet>
-        <title>P2P Money Remittance Mobile Application </title>
+        <title>Travel & Cab Hailing Platform </title>
         <meta
           name="description"
-          content="Experience seamless P2P money transfer and utility payments with our intuitive mobile app, providing a hassle-free financial solution for users."
+          content="Empower travelers with our innovative cab booking app, revolutionizing journey planning and management for a smooth and efficient travel experience."
         />
         <meta
           name="keywords"
-          content="Banking & Finance · Mobile Apps · P2P Payments · Utilities Payment"
+          content="Travel & Hospitality Custom Softwares Cab Hailing Platform Itinerary Management"
         ></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
@@ -50,18 +50,18 @@ function Project2() {
               <a href="home">Home</a>
             </li>
             <li>
-            <Link to="portfolio">Portfolio</Link>
+              <Link to="portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 2</li>
+            <li className="current">Project 3</li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                  Peer To Peer Payments <br />
-                  Through Money Remittance
+                Bespoke Application Enhancing<br />
+                End User Experience For
                   <br />
-                  Platforms.
+                  Hospitality Business
                   <img
                     class="blog-logo blog-hide"
                     src={`https://thehonestco.in/react.svg`}
@@ -71,9 +71,9 @@ function Project2() {
               <div className="col-12 col-md-5">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4 d-none d-sm-block"> P2P Payments</li>
+                    <li className="pt-4 d-none d-sm-block"> Cab Hailing Platform</li>
                     <li className="pt-4 d-none d-sm-block">
-                      Utilities Payment
+                    Itinerary Management
                     </li>
                   </ul>
                 </div>
@@ -81,10 +81,10 @@ function Project2() {
               <div className="py-4">
                 <ul className="top-topics">
                   <li className="d-block d-md-inline px-2">
-                    <a>Banking & Finance</a>
+                    <a>Travel & Hospitality</a>
                   </li>
                   <li className="px-4 d-block d-md-inline px-2">
-                    <a>Mobile Apps</a>
+                    <a>Custom Softwares</a>
                   </li>
                 </ul>
               </div>
@@ -146,24 +146,26 @@ function Project2() {
             </div>
           </div>
           {/* section2 */}
-          <div className="row py-5 pb-5">
+          {/* <div className="row py-5 pb-5">
             <div className="col-12 col-md-6 pt-5">
               <div>
-                The mobile application allows the user to manage all the payment
-                and also allows them to pay from their multiple banks allowing
-                the application to be a one-stop platform for all of their bills
-                and utilities payment.
+                We work with clients across a range of industries, helping them
+                to succeed and thrive in today's competitive marketplace by
+                providing. We work with clients across a range of industries.
+                <br />
+                <br />
+                We work with industries, helping them to succeed and thrive.
               </div>
             </div>
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading d-flex align-items-center ml-auto">
-                Seamless User Experience
+                The Honest Edge
               </div>
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={demo7} alt="" className="w-100 py-5" />
             </div>
-          </div>
+          </div> */}
           {/* section3 */}
           <div className="row py-5">
             <div className="col-12 text-align-center">
@@ -173,6 +175,7 @@ function Project2() {
                 and also allows them to pay from their multiple banks allowing
                 the application to be a one-stop platform for all of their bills
                 and utilities payment.
+                
               </div>
             </div>
             <div className="col-12">
@@ -190,10 +193,9 @@ function Project2() {
           </div>
           <div className="col-12 col-md-5 py-4">
             <div className="w-100">
-              Our team was able to successfully deliver this application for the
-              African Market where special attention was given to the security
-              and compliance measures with a swift customer support ticketing
-              module to solve user querries.
+              We work with clients across a range of industries, helping them to
+              succeed and thrive in today's competitive marketplace by
+              providing.
             </div>
           </div>
           {/* <div className="col-12 col-md-7 py-4">
@@ -300,4 +302,4 @@ function Project2() {
   );
 }
 
-export default Project2;
+export default Project3;

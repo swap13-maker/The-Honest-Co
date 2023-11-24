@@ -7,15 +7,15 @@ import Footer from "./../Footer";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
-import Banner from "../../images/pro2Banner.jpg";
+import Banner from "../../images/pro6Banner.jpg";
 import Grid from "../../images/Grid1.jpg";
-import secondGrid from "../../images/pro2SecondaryBanner.jpg";
+import secondGrid from "../../images/pro6SecondaryBanner.jpg";
 import webGrid from "../../images/Web Grid Web View.jpg";
 import conslusion from "../../images/Conclusion.jpg";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
-function Project2() {
+function Project9() {
   const settings = {
     className: "slider variable-width",
     dots: false,
@@ -30,14 +30,14 @@ function Project2() {
     <section>
       {/* Header */}
       <Helmet>
-        <title>P2P Money Remittance Mobile Application </title>
+        <title>Custom School Learning Platform </title>
         <meta
           name="description"
-          content="Experience seamless P2P money transfer and utility payments with our intuitive mobile app, providing a hassle-free financial solution for users."
+          content="Transform education with our custom learning platform, optimizing curriculum management and providing a versatile solution for educational institutions to thrive in the digital era."
         />
         <meta
           name="keywords"
-          content="Banking & Finance · Mobile Apps · P2P Payments · Utilities Payment"
+          content="Educational Technology · AI & ML · Adaptive Modules · Accounting and Reporting"
         ></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
@@ -50,18 +50,19 @@ function Project2() {
               <a href="home">Home</a>
             </li>
             <li>
-            <Link to="portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 2</li>
+            <li className="current">Project 9</li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                  Peer To Peer Payments <br />
-                  Through Money Remittance
+                Custom LMS Development
                   <br />
-                  Platforms.
+                  For Enhanced End User
+                  <br />
+                  Experience
                   <img
                     class="blog-logo blog-hide"
                     src={`https://thehonestco.in/react.svg`}
@@ -71,20 +72,18 @@ function Project2() {
               <div className="col-12 col-md-5">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4 d-none d-sm-block"> P2P Payments</li>
-                    <li className="pt-4 d-none d-sm-block">
-                      Utilities Payment
-                    </li>
+                    <li className="pt-4 d-none d-sm-block">Adaptive Modules</li>
+                    <li className="pt-4 d-none d-sm-block">Accounting and Reporting</li>
                   </ul>
                 </div>
               </div>
               <div className="py-4">
                 <ul className="top-topics">
                   <li className="d-block d-md-inline px-2">
-                    <a>Banking & Finance</a>
+                    <a>Educational Technology</a>
                   </li>
                   <li className="px-4 d-block d-md-inline px-2">
-                    <a>Mobile Apps</a>
+                    <a>AI & ML</a>
                   </li>
                 </ul>
               </div>
@@ -101,10 +100,9 @@ function Project2() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4 w-80">
-                A single platform allowing users to send money and execute
-                utilities payment via an online mobile application to enhance
-                day to day transactions and better track bill payments and
-                finances.
+                An exclusive invite only social media platform for families to
+                better share memories and moments and make the best of
+                technology to stay connected via online gifting. .
               </div>
             </div>
             <div className="col-12 col-md-6 px-3">
@@ -113,9 +111,10 @@ function Project2() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4 w-80">
-                Development of a cutting edge mobile based platform allowing
-                user to semmlessly transfer money and effortlessly manage their
-                finances ehancing the overall user experience and satisfaction.
+                Creation of a mobile application with an e-commerce and
+                community based content sharing module which allows the users to
+                interact with their friends and and purchase or gift products
+                listed over the platform.
               </div>
             </div>
             <div className="col-12">
@@ -125,16 +124,15 @@ function Project2() {
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading " style={{ paddingTop: "0px" }}>
-                One For All
+                Social E-Commerce
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-                A unique mobile application that allows users to pay almost all
-                of their online bills. The platform allows the user to pay
-                online via the multiple payment gateways and service channels.
-                The application offers a one for all bills payment solutions
-                allowing the user hassel free utility bills settelment.
+                Our team created an invite only community modules which allows
+                the user to personally invite users to join their family tree.
+                Once invited, the users would have the ability to gift products
+                available on the platform
               </div>
             </div>
             <div className="col-12 Image_size">
@@ -149,15 +147,15 @@ function Project2() {
           <div className="row py-5 pb-5">
             <div className="col-12 col-md-6 pt-5">
               <div>
-                The mobile application allows the user to manage all the payment
-                and also allows them to pay from their multiple banks allowing
-                the application to be a one-stop platform for all of their bills
-                and utilities payment.
+                Once the user has been invited to a family tree, the users on
+                the platform would have the ability to create a new gifting
+                request wihich would allow the respective users to dutch & gift
+                products available off the platform
               </div>
             </div>
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading d-flex align-items-center ml-auto">
-                Seamless User Experience
+                Dutch & Gift Together
               </div>
             </div>
             <div className="col-12">
@@ -167,12 +165,14 @@ function Project2() {
           {/* section3 */}
           <div className="row py-5">
             <div className="col-12 text-align-center">
-              <div className="proj-heading">Seamless User Experience </div>
+              <div className="proj-heading">Make Moments Count</div>
               <div className="proj-sub-heading py-3">
-                The mobile application allows the user to manage all the payment
-                and also allows them to pay from their multiple banks allowing
-                the application to be a one-stop platform for all of their bills
-                and utilities payment.
+                There exists a lot of applications which allows the users to
+                share, like and interact with the media but few of them offers a
+                private circle where one can decide whom to invite and then
+                gift. The user would have the ability to select from the
+                different category section and link the purchase request to a
+                moment.
               </div>
             </div>
             <div className="col-12">
@@ -190,10 +190,10 @@ function Project2() {
           </div>
           <div className="col-12 col-md-5 py-4">
             <div className="w-100">
-              Our team was able to successfully deliver this application for the
-              African Market where special attention was given to the security
-              and compliance measures with a swift customer support ticketing
-              module to solve user querries.
+              Our Electronic Health platform, with its user-friendly mobile
+              application, empowers individuals to take control of their health
+              by efficiently managing medications and consultations all via an
+              intitutive mobile application.
             </div>
           </div>
           {/* <div className="col-12 col-md-7 py-4">
@@ -300,4 +300,4 @@ function Project2() {
   );
 }
 
-export default Project2;
+export default Project9;
