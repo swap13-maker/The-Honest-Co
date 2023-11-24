@@ -3,17 +3,17 @@ import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
 import Slider from "react-slick";
-import demo6 from "../../images/demo6.png";
-import demo7 from "../../images/demo7.png";
 import demo8 from "../../images/demo8.png";
 import demo9 from "../../images/demo9.png";
-import demo10 from "../../images/demo10.png";
-import FooterWithSlider from "./../FooterWithSlider";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
-import Grid from '../../images/Grid1.jpg'
+import Grid from "../../images/Grid1.jpg";
 import myFooterLogo from "../../images/footer-logo.png";
+import { Helmet } from "react-helmet";
+import Banner from '../../images/Pro1Banner.jpg'
+import secondGrid from '../../images/pro1SecondaryBanner.jpg'
+import { Link } from "react-router-dom";
 
 function Project1() {
   const settings = {
@@ -29,6 +29,18 @@ function Project1() {
   return (
     <section>
       {/* Header */}
+      <Helmet>
+        <title>Online D2C E-Commerce Store</title>
+        <meta
+          name="description"
+          content="Revolutionizing seafood sales, enhanced D2C experience with a mobile app development. Expanding reach via enhanced digital development."
+        />
+        <meta
+          name="keywords"
+          content="D2C & E-Commerce  Mobile Apps  Online Store  Swift Order Tracking "
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <section className="header"></section>
       {/* mian content */}
       <section>
@@ -38,7 +50,7 @@ function Project1() {
               <a href="home">Home</a>
             </li>
             <li>
-              <a href="">Portfolio</a>
+            <Link to="#/portfolio">Portfolio</Link>
             </li>
             <li className="current">Project 1</li>
           </ul>
@@ -46,32 +58,39 @@ function Project1() {
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                Creative Project with<br />the Ultimate AI-Powered<br />Pattern.
-                  <img class="blog-logo blog-hide" src={`http://localhost:3000/react.svg`}></img>
+                  D2C E-Commerce Made
+                  <br /> Easy Via Mobile Applicationbr
+                  <br /> Development
+                  <img
+                    class="blog-logo blog-hide"
+                    src={`https://thehonestco.in/react.svg`}
+                  ></img>
                 </div>
               </div>
               <div className="col-12 col-md-5">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4 d-none d-sm-block">UI Redesign</li>
-                    <li className="pt-4 d-none d-sm-block">Minimalistic Design</li>
+                    <li className="pt-4 d-none d-sm-block">Online Store</li>
+                    <li className="pt-4 d-none d-sm-block">
+                      Swift Order Tracking{" "}
+                    </li>
                   </ul>
                 </div>
               </div>
               <div className="py-4">
                 <ul className="top-topics">
                   <li className="d-inline-block mb-2 mb-md-0 mr-md-2">
-                    <a>Artificial Inteligance</a>
+                    <a>D2C & E-Commerce</a>
                   </li>
                   <li className="px-4 d-inline-block">
-                    <a>Application Development</a>
+                    <a>Mobile Apps</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <img src={demo10} alt="" className="img-fluid w-100 my-4 py-3" />
+        <img src={Banner} alt="" className="img-fluid w-100 my-4 py-3" />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
@@ -81,9 +100,9 @@ function Project1() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4 w-80">
-                A single platform allowing users to send money and utilities
-                payment via an online mobile application to enhance day to day
-                transactions and better track bill payments and finances.
+                Enhancing the online buying experience by developing a mobile
+                application and a mobile responsive website for one of our
+                customers in the consumer food industry.
               </div>
             </div>
             <div className="col-12 col-md-6 px-3">
@@ -92,50 +111,46 @@ function Project1() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4 w-100 paddingLeft-even">
-                Development of a cutting edge mobile based platform allowing
-                user to semmlessly transfer money and effortlessly manage their
-                finances ehancing the overall user experience and satisfaction.
+                Providing a seamless online buying experience by creating a
+                online digital platform for customers using the best of hybrid
+                mobile application development technologies.
               </div>
             </div>
             <div className="col-12">
-              {/* <img src={demo7} alt="" className="w-100 py-5" /> */}
               <img src={Grid} alt="" className="w-100 py-5" />
             </div>
           </div>
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
-              <div className="proj-heading" style={{paddingTop:'0px'}}>
-                One For All
+              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+                Swift Online Purchasing
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-                A unique mobile application that allows users to pay almost all
-                of their online bills. The platform allows the user to pay
-                online via the multiple payment gateways and service channels.
-                The application offers a one for all bills payment solutions
-                allowing the user hassel free utility bills settelment.
+                Easy to use online purchasing flow allows the user to browse
+                through the menu and categories, select the best option and
+                proceed to cart to purchase the items. The profile section
+                allows the user to better track their orders and statues.
               </div>
             </div>
             <div className="col-12 Image_size">
-              <img src={demo6} alt="" className="w-100 py-5 Image_baner" />
+              <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
             </div>
           </div>
           {/* section2 */}
           <div className="row py-5 pb-3">
             <div className="col-12 col-md-6 py-5">
               <div className="custom_left_text">
-                We work with clients across a range of industries, helping them
-                to succeed and thrive in today's competitive marketplace by
-                providing. We work with clients across a range of industries.
+                The enhanced order purchsing and cart payment flow allows the
+                user to easiily add multiple products and single click re-order
+                from the list of previous orders placed.
                 <br />
-                <br />
-                We work with industries, helping them to succeed and thrive.
               </div>
             </div>
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
-                The Honest Edge
+                Order and Reorder
               </div>
             </div>
             <div className="col-12">
@@ -145,12 +160,16 @@ function Project1() {
           {/* section3 */}
           <div className="row py-4">
             <div className="col-12 text-align-center">
-              <div className="proj-heading">The Best out of It</div>
+              <div className="proj-heading">
+                Order Updates at Your Fingertips
+              </div>
               <div className="proj-sub-heading py-3">
-                We work with clients across a range of industries, d solutions
-                to help them
-                <br />
-                achieve their business goals
+                From the orders section, the user would be able to easily track
+                the order status from the mobile application and take action on
+                the same.
+                <br />A multi-address management module would allow the user to
+                save multiple addresses and select the relevant one at the time
+                of order.
               </div>
             </div>
             <div className="col-12 d-flex">
@@ -164,14 +183,14 @@ function Project1() {
       <section className="container main-container custom_padding">
         <div className="row">
           <div className="col-12">
-            <div className="proj-heading">The Honest Edge</div>
-            <hr className="heading_line"/>
+            <div className="proj-heading">The Conclusion</div>
+            <hr className="heading_line" />
           </div>
           <div className="col-12 col-md-5 py-2">
             <div className="w-100">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's competitive marketplace by
-              providing.
+              In the digital age, businesses must stand out online. With a clean
+              and optimized UI, we successfully delivered this project that sets
+              our customer apart in terms of online purchasing experience.
             </div>
           </div>
           {/* <div className="col-12 col-md-7 py-4">
@@ -199,8 +218,8 @@ function Project1() {
           <div className="col-12 text-align-center">
             <p className="px-5 py-3 text_containe">
               We work with clients across a range of industries, helping them to
-              succeed and thrive in today's <br />competitive marketplace by
-              providing.
+              succeed and thrive in today's <br />
+              competitive marketplace by providing.
             </p>
           </div>
         </div>
@@ -270,10 +289,7 @@ function Project1() {
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img
-                className="w-50 pb-4 d-md-none d-block"
-                alt="Footer Logo"
-              />
+              <img className="w-50 pb-4 d-md-none d-block" alt="Footer Logo" />
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">
@@ -283,23 +299,23 @@ function Project1() {
               </article>
               <h5 className="footer-content cool-link text-white">
                 <a href="" className="text-white">
-                  Click here to start elevating your physical and digital customer
-                  experiences.
-                <svg
-                  width="30"
-                  height="16"
-                  viewBox="-10 0 25 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="animated-svg"
-                  style={{marginLeft:'-6px'}}
-                >
-                  <path
-                    id="Vector"
-                    d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                    fill="white"
-                  />
-                </svg>
+                  Click here to start elevating your physical and digital
+                  customer experiences.
+                  <svg
+                    width="30"
+                    height="16"
+                    viewBox="-10 0 25 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="animated-svg"
+                    style={{ marginLeft: "-6px" }}
+                  >
+                    <path
+                      id="Vector"
+                      d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                      fill="white"
+                    />
+                  </svg>
                 </a>
               </h5>
             </div>
@@ -328,7 +344,9 @@ function Project1() {
               </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-              <div className="footer-heading mb-2">Application Development </div>
+              <div className="footer-heading mb-2">
+                Application Development{" "}
+              </div>
               <ul>
                 <li>
                   <a href="#">Custom Software Development</a>
@@ -345,10 +363,7 @@ function Project1() {
               </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-              <div className="footer-heading mb-2">
-                {" "}
-              Content Creation{" "}
-              </div>
+              <div className="footer-heading mb-2"> Content Creation </div>
               <ul>
                 <li>
                   <a href="#">Motion Graphics</a>
@@ -365,10 +380,7 @@ function Project1() {
               </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-              <div className="footer-heading mb-2">
-                {" "}
-              Industrial Design{" "}
-              </div>
+              <div className="footer-heading mb-2"> Industrial Design </div>
               <ul>
                 <li>
                   <a href="#">Product Design</a>
@@ -472,7 +484,7 @@ function Project1() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> hello@thehonestco.in </div>
               <div className="footer-heading mb-2"> Terms & Conditions </div>
@@ -481,8 +493,8 @@ function Project1() {
           <p className="post-footer pt-3 border-top text-center">
             &copy; 2023 - The Honest Company
           </p>
-        </div>        
-      </section>     
+        </div>
+      </section>
     </section>
   );
 }

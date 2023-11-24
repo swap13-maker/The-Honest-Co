@@ -20,6 +20,12 @@ import Article10 from './components/Articles/Article10.js';
 import Article11 from './components/Articles/Article11';
 import Article12 from './components/Articles/Article12.js';
 import Project2 from './components/Portfolio/Project2.js';
+import Project3 from './components/Portfolio/Project3.js';
+import Project4 from './components/Portfolio/Project4.js';
+import Project5 from './components/Portfolio/Project5.js';
+import Project6 from './components/Portfolio/Project6';
+import Project8 from './components/Portfolio/Project8';
+import Project9 from './components/Portfolio/Project9';
 
 
 function App() {
@@ -31,8 +37,14 @@ function App() {
         <Route path="/get-in-touch/creator" element={<CreatorContact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resources" element={<Resource />} />
-        <Route path="/portfolio/project1" element={<Project1 />} />
-        <Route path="/portfolio/project2" element={<Project2 />} />
+        <Route path="/portfolio/online-d2c-ecommerce-store" element={<Project1 />} />
+        <Route path="/portfolio/p2p-money-remittance-mobile-application" element={<Project2 />} />
+        <Route path="/portfolio/cab-hailing-travel-itinerary-platform" element={<Project3 />} />
+        <Route path="/portfolio/location-sharing-sos-notifications-mobile-app" element={<Project4 />} />
+        <Route path="/portfolio/pill-reminder-doctor-appointment-platform" element={<Project5 />} />
+        <Route path="/portfolio/photo-sharing-online-ecommerce-platform" element={<Project6 />} />
+        <Route path="/portfolio/interview-scheduling-job-tracking-app" element={<Project8 />} />
+        <Route path="/portfolio/custom-school-learning-management-platform" element={<Project9 />} />
         <Route path="/resources/articles/global-commerce-remittance-mobile-applications-business-expansion" element={<Article1 />} />
         <Route path="/resources/articles/artificial-intelligence-machine-learning-crypto-trading-bot" element={<Article2 />} />
         <Route path="/resources/articles/leveraging-ai-ml-models-farmers-early-detect-plant-diseases" element={<Article3 />} />

@@ -7,15 +7,15 @@ import Footer from "./../Footer";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
-import Banner from "../../images/pro2Banner.jpg";
+import Banner from "../../images/pro5Banner.jpg";
 import Grid from "../../images/Grid1.jpg";
-import secondGrid from "../../images/pro2SecondaryBanner.jpg";
+import secondGrid from "../../images/pro5SecondaryBanner.jpg";
 import webGrid from "../../images/Web Grid Web View.jpg";
 import conslusion from "../../images/Conclusion.jpg";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
-function Project2() {
+function Project5() {
   const settings = {
     className: "slider variable-width",
     dots: false,
@@ -30,14 +30,14 @@ function Project2() {
     <section>
       {/* Header */}
       <Helmet>
-        <title>P2P Money Remittance Mobile Application </title>
+        <title>Pill and Appointment Reminder Mobile App</title>
         <meta
           name="description"
-          content="Experience seamless P2P money transfer and utility payments with our intuitive mobile app, providing a hassle-free financial solution for users."
+          content="Prioritize health with our user-friendly app, tracking medicines and appointments to ensure optimal wellness and simplify healthcare management for individuals."
         />
         <meta
           name="keywords"
-          content="Banking & Finance · Mobile Apps · P2P Payments · Utilities Payment"
+          content="Healthcare Technology · Custom Softwares · Medicine Reminder · Personalized Notifications"
         ></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
@@ -50,18 +50,19 @@ function Project2() {
               <a href="home">Home</a>
             </li>
             <li>
-            <Link to="portfolio">Portfolio</Link>
+              <Link to="portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 2</li>
+            <li className="current">Project 3</li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                  Peer To Peer Payments <br />
-                  Through Money Remittance
+                  Tracking Medicines and
                   <br />
-                  Platforms.
+                  Appointments Made Easy Via
+                  <br />
+                  Application Development
                   <img
                     class="blog-logo blog-hide"
                     src={`https://thehonestco.in/react.svg`}
@@ -71,9 +72,12 @@ function Project2() {
               <div className="col-12 col-md-5">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4 d-none d-sm-block"> P2P Payments</li>
                     <li className="pt-4 d-none d-sm-block">
-                      Utilities Payment
+                      {" "}
+                      Medicine Reminder
+                    </li>
+                    <li className="pt-4 d-none d-sm-block">
+                      Personalized Notifications
                     </li>
                   </ul>
                 </div>
@@ -81,10 +85,10 @@ function Project2() {
               <div className="py-4">
                 <ul className="top-topics">
                   <li className="d-block d-md-inline px-2">
-                    <a>Banking & Finance</a>
+                    <a>Healthcare Technology</a>
                   </li>
                   <li className="px-4 d-block d-md-inline px-2">
-                    <a>Mobile Apps</a>
+                    <a>Custom Softwares</a>
                   </li>
                 </ul>
               </div>
@@ -101,10 +105,9 @@ function Project2() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4 w-80">
-                A single platform allowing users to send money and execute
-                utilities payment via an online mobile application to enhance
-                day to day transactions and better track bill payments and
-                finances.
+                A digital platform for efficient medication management and
+                tracking. Addressing the need of a dedicated online platform for
+                timely monitoring of consultations and lab reports.
               </div>
             </div>
             <div className="col-12 col-md-6 px-3">
@@ -113,9 +116,10 @@ function Project2() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4 w-80">
-                Development of a cutting edge mobile based platform allowing
-                user to semmlessly transfer money and effortlessly manage their
-                finances ehancing the overall user experience and satisfaction.
+                Development of a mobile and web based application for storing
+                and managing users' medication data. The platform aimed to serve
+                as a centralized repository for prescriptions and all medical
+                information..
               </div>
             </div>
             <div className="col-12">
@@ -125,16 +129,15 @@ function Project2() {
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading " style={{ paddingTop: "0px" }}>
-                One For All
+                Health Care & IT
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-                A unique mobile application that allows users to pay almost all
-                of their online bills. The platform allows the user to pay
-                online via the multiple payment gateways and service channels.
-                The application offers a one for all bills payment solutions
-                allowing the user hassel free utility bills settelment.
+                With features like centralized prescription management and
+                comprehensive medical information storage, patients gain
+                convenience, accuracy, and improved medication adherence for
+                enhanced health outcomes.
               </div>
             </div>
             <div className="col-12 Image_size">
@@ -149,15 +152,15 @@ function Project2() {
           <div className="row py-5 pb-5">
             <div className="col-12 col-md-6 pt-5">
               <div>
-                The mobile application allows the user to manage all the payment
-                and also allows them to pay from their multiple banks allowing
-                the application to be a one-stop platform for all of their bills
-                and utilities payment.
+                The dedicated notification module built for this application
+                allows the user to modify the notifications settings and
+                preferences as per their own convivence. Now never miss your
+                medicine refill day or your consultations!
               </div>
             </div>
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading d-flex align-items-center ml-auto">
-                Seamless User Experience
+                Take Control of Your Health
               </div>
             </div>
             <div className="col-12">
@@ -167,12 +170,16 @@ function Project2() {
           {/* section3 */}
           <div className="row py-5">
             <div className="col-12 text-align-center">
-              <div className="proj-heading">Seamless User Experience </div>
+              <div className="proj-heading">
+                Management Made Easy Via Dashboards
+              </div>
               <div className="proj-sub-heading py-3">
-                The mobile application allows the user to manage all the payment
-                and also allows them to pay from their multiple banks allowing
-                the application to be a one-stop platform for all of their bills
-                and utilities payment.
+                The custom dashboard built with the sole purpose of swift
+                tracking the new users, medication requests and the pharmacy
+                vendors onboarded the platform By leveraging the best of
+                application development methodologies our objective was to
+                design the admin panel allowing the user to do most in the least
+                number of clicks.
               </div>
             </div>
             <div className="col-12">
@@ -190,10 +197,10 @@ function Project2() {
           </div>
           <div className="col-12 col-md-5 py-4">
             <div className="w-100">
-              Our team was able to successfully deliver this application for the
-              African Market where special attention was given to the security
-              and compliance measures with a swift customer support ticketing
-              module to solve user querries.
+              Our Electronic Health platform, with its user-friendly mobile
+              application, empowers individuals to take control of their health
+              by efficiently managing medications and consultations all via an
+              intitutive mobile application.
             </div>
           </div>
           {/* <div className="col-12 col-md-7 py-4">
@@ -300,4 +307,4 @@ function Project2() {
   );
 }
 
-export default Project2;
+export default Project5;

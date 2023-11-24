@@ -172,7 +172,7 @@ const Resource = () => {
             <div className="row custom-row">
               {item.map((data, index) => {
                 const { name, logo, category, image, description,url,alt } = data;
-                console.log(data,'resourse')
+                
                 // Check if the index is 1, 4, 7, 10, 13, etc.
                 const cardClass = index % 3 === 1 ? "odd-res" : "even-res";
                 const marginTopClass =

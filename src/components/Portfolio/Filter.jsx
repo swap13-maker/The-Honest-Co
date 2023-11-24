@@ -16,7 +16,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Revolutionizing seafood sales, enhanced D2C experience with a mobile app development. Expanding reach via enhanced digital development.",
-    url:"",
+    url:"/portfolio/online-d2c-ecommerce-store",
     alt:"mobile app for d2c businesses "  
   },
 
@@ -28,7 +28,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Experience seamless P2P money transfer and utility payments with our intuitive mobile app, providing a hassle-free financial solution for users.",
-    url:"",
+    url:"/portfolio/p2p-money-remittance-mobile-application",
     alt:"peer to peer money remittance app "
 
   },
@@ -40,7 +40,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Empower travelers with our innovative cab booking app, revolutionizing journey planning and management for a smooth and efficient travel experience.",
-    url:"",
+    url:"/portfolio/cab-hailing-travel-itinerary-platform",
     alt:"Travel and itinerary app with cab booking "  
   },
   {
@@ -51,7 +51,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Enhance safety with our comprehensive location sharing and SOS app, offering real-time tracking features that provide peace of mind and security for users.",
-    url:"",
+    url:"/portfolio/location-sharing-sos-notifications-mobile-app",
     alt:"location sharing and tracking with SOS calls"
 
   },
@@ -63,7 +63,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Prioritize health with our user-friendly app, tracking medicines and appointments to ensure optimal wellness and simplify healthcare management for individuals.",
-    url:"",
+    url:"/portfolio/pill-reminder-doctor-appointment-platform",
     alt:"medicine and appointment reminder mobile app "  
   },
   {
@@ -74,7 +74,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Celebrate every moment with our exclusive photo-sharing app integrated with e-commerce capabilities, allowing users to cherish and share memories seamlessly.",
-    url:"",
+    url:"/portfolio/photo-sharing-online-ecommerce-platform",
     alt:"photo sharing app and ecommerce "  
   },
   {
@@ -96,7 +96,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Simplify HR processes with our efficient app, streamlining job tracking and interview scheduling to enhance recruitment management for both employers and applicants.",
-    url:"",
+    url:"/portfolio/interview-scheduling-job-tracking-app",
     alt:"interview scheduling and job tracking mobile app "  
   },
   {
@@ -107,7 +107,7 @@ const Filter = [
     logo: "react.svg",
     description:
       "Transform education with our custom learning platform, optimizing curriculum management and providing a versatile solution for educational institutions to thrive in the digital era.",
-    url:"",
+    url:"/portfolio/custom-school-learning-management-platform",
     alt:""  
   },
 ];

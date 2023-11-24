@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const ProjectCards = ({
   cardClass,
   marginTopClass,
@@ -18,9 +19,11 @@ const ProjectCards = ({
       <div className="border__fade">
         <div className="wrapper">
           <div className="zoom-effect-container">
+          <Link to={url}>
             <div className="image-card">
               <img className="card-img-top" src={image} alt={alt}/>
             </div>
+            </Link>
             <div className="pb-5 translate__down">
               <div className="blog-heading">
                 {name}
