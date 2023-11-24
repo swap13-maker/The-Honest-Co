@@ -14,23 +14,23 @@ function Counter() {
               <div className="counter-text">Clients served</div>
             </div>
             <div className="col-lg-3 p-0 border counter-height align-items-end">
-              <div className="counter-number counter-number1">8+</div>
+              <div className="counter-number counter-number1">12+</div>
             </div>
             <div className="col-lg-3 p-0 border counter-height align-items-end z-index-2 bg-white">
               <div className="counter-text">Projects Executed</div>
             </div>
             <div className="col-lg-3 p-0 border counter-height align-items-end">
-              <div className="counter-number counter-number2">25+</div>
+              <div className="counter-number counter-number2">65+</div>
             </div>
 
             <div className="col-lg-3 p-0 border counter-height">
-              <div className="counter-number counter-number3">50+</div>
+              <div className="counter-number counter-number3">35+</div>
             </div>
             <div className="col-lg-3 p-0 border counter-height z-index-2 bg-white">
               <div className="counter-text">Year's Experience</div>
             </div>
             <div className="col-lg-3 p-0 border counter-height">
-              <div className="counter-number counter-number4">100+</div>
+              <div className="counter-number counter-number4">80+</div>
             </div>
             <div className="col-lg-3 p-0 border counter-height z-index-2 bg-white">
               <div className="counter-text">Community Strength</div>

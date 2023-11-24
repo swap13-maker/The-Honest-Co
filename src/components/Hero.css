@@ -364,8 +364,7 @@
   background: #1a1a1a !important;
 }
  .button_container span {
-	 background: inherit;
-   filter: invert(1);
+	 background: #fff;
    mix-blend-mode: difference;
 	 border: none;
 	 height: 2px;
@@ -451,4 +450,7 @@
 }
  .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
 	 width: 100%;
+}
+.font-weight-100 {
+  font-weight: 100 !important;
 }

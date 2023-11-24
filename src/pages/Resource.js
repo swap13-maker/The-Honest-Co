@@ -187,7 +187,7 @@ const Resource = () => {
                         <div className="image__wrapper">
                           <img className="card-img-top" src={image} />
                         </div>
-                        <div className="py-4">
+                        <div className="pb-4">
                           <div className="blog-heading">{name}</div>
                           <div className="blog-title">
                             {description}

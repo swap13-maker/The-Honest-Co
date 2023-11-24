@@ -89,17 +89,17 @@ function Hero() {
             <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
               <nav className="overlay-menu">
                 <div className="pl-6">
-                  Menu
+                  <span to="/">Home</span>
                 </div>
                 <ul>
                   <li>
-                    <a href="#">About</a>
+                    <a href="#" className="font-weight-100">About</a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="#" className="font-weight-100">Services</a>
                   </li>
                   <li>
-                    <a href="#">Team</a>
+                    <a href="#" className="font-weight-100">Team</a>
                   </li>
                   <li>
                     <Link to="/portfolio">Portfolio</Link>

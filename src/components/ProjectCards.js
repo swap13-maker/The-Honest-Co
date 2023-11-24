@@ -36,7 +36,7 @@ const ProjectCards = ({
                   />
                 </svg>
               </div>
-              <div className="blog-title blog-hide w-75">{description}</div>
+              <div className="blog-title blog-hide w-85">{description}</div>
               <img className="blog-logo blog-hide" src={logo} />
             </div>
           </div>

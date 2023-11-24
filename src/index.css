@@ -97,7 +97,7 @@ code {
   border-right: 1px solid #b7b7b7;
 }
 .odd-res > .wrapper {
-  padding-top: 6.5rem;
+  padding-top: 2.5rem;
 }
 .margin-res > .wrapper {
   margin-top: -35%;
@@ -131,8 +131,8 @@ code {
   transform: translateY(160px);
 }
 .image-card img {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
   max-height: 400px;
   object-fit: cover;
   height: 545px;

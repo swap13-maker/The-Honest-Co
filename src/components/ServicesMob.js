@@ -17,7 +17,7 @@ export default function ServicesMob() {
           <div className="col-12 col-md-7 col-lg-7 d-flex">
             <div className="sub-heading d-flex align-items-center">
               <p className="m-0">
-              Whether it's developing a software application, designing a new product or creating compelling marketing content, our commitment is unwavering, to deliver exceptional results that consistently exceed expectations. <strong>HONEST EXPERIENCES!</strong>
+              Whether it's developing a software application, designing a new product or creating compelling marketing content, our commitment is unwavering, to deliver exceptional results that consistently exceed expectations.
               </p>
             </div>
           </div>

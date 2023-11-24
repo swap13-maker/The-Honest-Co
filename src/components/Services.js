@@ -61,8 +61,7 @@ function Services() {
               Whether it's developing a software application, designing a new
               product or creating compelling marketing content, our commitment
               is unwavering, to deliver exceptional results that consistently
-              exceed expectations.{" "}
-              <span className="font-weight-300">HONEST EXPERIENCES!</span>
+              exceed expectations.
             </p>
           </div>
         </div>

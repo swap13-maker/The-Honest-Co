@@ -97,7 +97,7 @@ function Work() {
         </div>
       </div>
 
-	  <div className="text-align-center pt-5">
+	  <div className="text-align-center py-md-1 py-4">
 	  	<Link to="/">
 			<div className="work-redirect">
        View Our Portfolio

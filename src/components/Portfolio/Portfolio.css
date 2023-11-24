@@ -302,16 +302,16 @@ p {
   animation-fill-mode: forwards; */
 }
 
-.zoom-effect-container {
+/* .zoom-effect-container {
   position: relative;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-}
+} */
 
-.res-zoom-effect-container {
+/* .res-zoom-effect-container {
   float: left;
   position: relative;
   width: 100%;
@@ -320,12 +320,12 @@ p {
   overflow: hidden;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-}
+} */
 .wrapper:hover .res-zoom-effect-container {
   height: 240px;
 }
 .translate__down {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 .wrapper:hover .translate__down {
   transform: translateY(160px);

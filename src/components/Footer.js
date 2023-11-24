@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer pt-4 border-white">
       <div className="container">
-        <div className="row py-md-5 align-items-end">
+        <div className="row pb-md-5 align-items-end">
           <div className="col-12 col-md-6 col-lg-6">
             <img
               className="w-50 pb-4 d-md-none d-block"
