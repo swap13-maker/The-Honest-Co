@@ -55,9 +55,9 @@ function Story() {
             width="100"
           />
         </div>
-        <div className="col-md-10 col-12 ">
+        <div className="col-md-10 col-12 p-0">
           <Slider {...settings}>
-            <div className="bg- pt-1" style={{ width: 440 }}>
+            <div className="bg-white pt-1 w-440">
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon py-3" />
               </div>
@@ -77,7 +77,7 @@ function Story() {
               </div>
             </div>
 
-            <div className="bg-white" style={{ width: 440 }}>
+            <div className="bg-white w-440">
               <div className="py-4 story-icon">
                 <img src={icon2} className="card-icon py-2" />
               </div>
@@ -97,7 +97,7 @@ function Story() {
               </div>
             </div>
 
-            <div className="bg-white" style={{ width: 440 }}>
+            <div className="bg-white w-440">
               <div className="py-4 story-icon">
                 <img src={icon3} className="card-icon pt-3 pb-2" />
               </div>
@@ -117,7 +117,7 @@ function Story() {
               </div>
             </div>
 
-            <div className="bg-white" style={{ width: 440 }}>
+            <div className="bg-white w-440">
               <div className="py-4 story-icon">
                 <img src={icon4} className="card-icon" />
               </div>
@@ -137,7 +137,7 @@ function Story() {
                 </div>
               </div>
             </div>
-            <div className="bg-white" style={{ width: 440 }}>
+            <div className="bg-white w-440">
               <div className="py-4 story-icon last-icon">
                 <img src={icon4} className="card-icon" />
               </div>

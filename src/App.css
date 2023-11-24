@@ -38,6 +38,9 @@ body::-webkit-scrollbar {
 .w-90 {
   width: 90%;
 }
+.w-80 {
+  width: 80%;
+}
 /*===============================Custom CSS================================*/
 /* ========================================industry */
 .indistryHeading {
@@ -288,7 +291,7 @@ h1 {
   transform: translate(0.25em, 0.25em);
 }
 .view-projects {
-  color: #1A1A1A;
+  color: #1a1a1a;
   text-align: center;
   font-family: Barlow;
   font-size: 13.714px;
@@ -298,7 +301,7 @@ h1 {
   text-transform: uppercase;
 }
 .thank-you {
-  color: #1A1A1A;
+  color: #1a1a1a;
   text-align: center;
   font-family: Barlow;
   font-size: 159.62px;
@@ -369,11 +372,14 @@ h1 {
     padding-top: 8vh;
     padding-bottom: 8vh;
   }
+  .desktop-d-none {
+    display: none !important;
+  }
+  .text-align-right {
+    text-align: -webkit-right !important;
+  }
   .w-85 {
     width: 85% !important;
-  }
-  .mobile-navbar-container {
-    display: none !important;
   }
   .main-container {
     max-width: 1140px !important;
@@ -439,8 +445,19 @@ h1 {
     font-weight: 500;
     font-size: 60px;
   }
+  .section-heading-only {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+  }
   .pl-md-5 {
     padding-left: 3rem !important;
+  }
+  .mobile-navbar-container {
+    display: none !important;
+  }
+  .w-440 {
+    width: 400px !important;
   }
 }
 /* .form-floating > label {
@@ -454,10 +471,22 @@ h1 {
   .pb-sm-0 {
     padding-bottom: 0px !important;
   }
+  .w-440 {
+    width: 300px !important;
+  }
+  .mobile-d-none {
+    display: none !important;
+  }
+  .heading-logo {
+    width: 65% !important;
+    padding-bottom: 10%;
+    margin-left: 0px !important;
+  }
   .work-heading {
     padding-top: 20px;
   }
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: calc(1.375rem + 3.5vw) !important;
   }
   .marTop--20per {
@@ -528,9 +557,6 @@ h1 {
     grid-column: span 2 !important;
     /* padding-right: 10px !important; */
   }
-  .mobile-d-none {
-    display: none;
-  }
   .footer-content {
     font-size: 0.8rem;
   }
@@ -581,13 +607,9 @@ h1 {
     font-size: 7vw !important;
     line-height: 30px !important;
   }
-  .heading-logo {
-    width: 80% !important;
-    padding-bottom: 10% !important;
-  }
-  .content {
+  /* .content {
     bottom: 40% !important;
-  }
+  } */
   .navbar-collapse {
     background: #1a1a1a;
     z-index: 9999;
@@ -665,14 +687,6 @@ h1 {
   min-height: 1px;
   overflow: hidden;
 }
-
-/*.slick-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}*/
-
 .slick-track {
   display: flex;
 }

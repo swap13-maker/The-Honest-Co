@@ -2,6 +2,7 @@ import React from "react";
 import "./../App.css";
 import Blogs from "./Blogs";
 import CaseStudies1 from "./CaseStudies1";
+import CaseStudies1Mobile from "./CaseStudies1Mobile";
 import CaseStudies from "./CaseStudies";
 import resourceGif from '../images/resource.gif';
 import Lottie from "lottie-react";
@@ -13,7 +14,7 @@ function Resource() {
       <div className="row border-bottom-bold py-4 d-flex align-items-center">
         <div className="col-10 col-md-6 col-lg-6 px-0">
           <div className="text-uppercase pl-xs-2">
-            <h1>
+            <h1 className="left-aligned section-heading-only">
               <span className="text-light-color text-light-space">OUR</span>{" "}
               RESOURCES
             </h1>
@@ -33,7 +34,8 @@ function Resource() {
           </div>
         </div>
       </div>      
-      <CaseStudies1 />
+      <CaseStudies1 /> {/* Desktop View only */}
+      <CaseStudies1Mobile /> {/* Mobile View only */}
       {/* <Blogs /> */}
       {/* <CaseStudies /> */}
     </section>

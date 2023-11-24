@@ -5,7 +5,7 @@ import myFooterLogo from "../images/footer-logo.svg";
 function Footer() {
   return (
     <footer className="footer pt-4 border-white">
-      <div className="container">
+      <div className="container py-4">
         <div className="row pb-md-5 align-items-end">
           <div className="col-12 col-md-6 col-lg-6">
             <img
@@ -44,11 +44,13 @@ function Footer() {
           </div>
           <div className="col-12 col-md-3 col-lg-3"></div>
           <div className="col-12 col-md-3 col-lg-3">
-            <img
-              className="w-90 d-md-block d-none"
-              src={myFooterLogo}
-              alt="Footer Logo"
-            />
+            <div className="text-align-right">
+              <img
+                className="d-md-block d-none"
+                src={myFooterLogo}
+                alt="Footer Logo"
+              />
+            </div>
           </div>
         </div>
         <div className="row pt-md-6 pb-4">

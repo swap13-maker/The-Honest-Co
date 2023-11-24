@@ -10,7 +10,7 @@ function Industries() {
   return (
     <section className="py-md-5 mb-5 bg-white">
       <div className="container" >
-        <div className="row py-5">
+        <div className="row py-md-5 pt-5">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
               <h1 className="left-aligned section-heading">Industries</h1>

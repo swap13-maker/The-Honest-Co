@@ -22,7 +22,8 @@ function Work() {
         </div>
       </div>
 
-      <div className="gallery pb-md-5 pb-5">
+      {/* Desktop mode */}
+      <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item gallery__item--hor media-w-100 d-block">
           <img src={work1} />
           <div className="work-heading">Architectural Drawing</div>
@@ -38,8 +39,7 @@ function Work() {
           </div>
         </div>
       </div>
-
-      <div className="gallery pb-md-5 pb-5">
+      <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item gallery__item--lg2 media-w-100 d-block">
           <img src={work3} />
           <div className="work-heading">Architectural Drawing</div>
@@ -62,8 +62,7 @@ function Work() {
           </div>
         </div>
       </div>
-
-      <div className="gallery pb-md-5 pb-5">
+      <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item gallery__item--hor media-w-100 d-block">
           <img src={work6} />
           <div className="work-heading">Architectural Drawing</div>
@@ -79,8 +78,7 @@ function Work() {
           </div>
         </div>
       </div>
-
-      <div className="gallery pb-md-5 pb-5">
+      <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item media-w-100 d-block">
           <img src={work8} />
           <div className="work-heading">Architectural Drawing</div>
@@ -96,28 +94,94 @@ function Work() {
           </div>
         </div>
       </div>
+      {/* Mobile mode */}
+      <div className="desktop-d-none">
+        <div className="pb-5">
+          <img src={work1} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work2} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work3} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work4} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work5} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work6} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work7} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work8} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+        <div className="pb-5">
+          <img src={work9} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div>
+          <div className="work-subheading">
+            D2C & E-commerce · Branding · UI Design · Marketing
+          </div>
+        </div>
+      </div>
 
-	  <div className="text-align-center py-md-1 py-4">
-	  	<Link to="/">
-			<div className="work-redirect">
-       View Our Portfolio
-			<svg
-				width="30"
-				height="16"
-				viewBox="-10 0 25 14"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-        className="animated-svg"
-				>
-				<path
-					id="Vector"
-					d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-					fill="black"
-				/>
-				</svg>
-			</div>
+      <div className="text-align-center py-md-1 py-4">
+        <Link to="/">
+          <div className="work-redirect">
+            View Our Portfolio
+            <svg
+              width="30"
+              height="16"
+              viewBox="-10 0 25 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="animated-svg"
+            >
+              <path
+                id="Vector"
+                d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                fill="black"
+              />
+            </svg>
+          </div>
         </Link>
-	  </div>
+      </div>
     </section>
   );
 }

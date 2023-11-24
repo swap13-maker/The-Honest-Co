@@ -230,7 +230,7 @@
   transform: translate(0.25em, 0.25em);
 }
 .margin-top--3 {
-  margin-top: -40% !important;
+  margin-top: -48% !important;
 }
 .animated-svg {
   animation: moveUpAndDown 1.6s ease-in infinite;
@@ -265,5 +265,11 @@
   }
   .sidebar-btn-section--3 {
     top: -95px !important;
+  }
+  .blog-heading {
+    padding-top: 15px;
+  }
+  .blog-title {
+    padding-top: 10px;
   }
 }
