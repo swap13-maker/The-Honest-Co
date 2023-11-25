@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
@@ -29,6 +30,7 @@ function Project6() {
   return (
     <section>
       {/* Header */}
+      <InnerHeader />
       <Helmet>
         <title>Online Photo Sharing with E-Commerce </title>
         <meta

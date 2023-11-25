@@ -17,7 +17,7 @@ const Resource = () => {
   }, []);
 
   const [item, setItem] = useState(Filter);
-  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeCategory, setActiveCategory] = useState('All');
   const [filteredIndex, setFilteredIndex] = useState(0);
 
   const handleButtonClick = (category) => {
@@ -72,7 +72,7 @@ const Resource = () => {
                     animationData={loader}
                     autoplay
                     loop
-                    className="w-75 d-flex ml-auto margin-top--35"
+                    className="w-75 d-flex ml-auto margin-top--50"
                   />
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Resource = () => {
 
           <div className="py-4 mb-5">
             <div className="button-container filter__container">
-              {/* <div
+              <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
                 }`}
@@ -91,7 +91,7 @@ const Resource = () => {
                 }}
               >
                 All
-              </div> */}
+              </div>
               <div
                 className={`custom-button ${
                   activeCategory === "tab1" ? "active" : ""
@@ -159,17 +159,8 @@ const Resource = () => {
                 Reports
               </div>
             </div>
-            <div
-              className={`custom-remove-button mb-5`}
-              onClick={() => {
-                setActiveCategory("All");
-                setItem(Filter);
-              }}
-            >
-              Remove Filter
-            </div>
 
-            <div className="row custom-row">
+            <div className="row custom-row mt-5 px-3">
               {item.map((data, index) => {
                 const { name, logo, category, image, description,url,alt } = data;
                 

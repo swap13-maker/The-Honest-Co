@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
@@ -16,6 +17,10 @@ import secondGrid from '../../images/pro1SecondaryBanner.jpg'
 import { Link } from "react-router-dom";
 
 function Project1() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const settings = {
     className: "slider variable-width",
     dots: false,
@@ -29,6 +34,7 @@ function Project1() {
   return (
     <section>
       {/* Header */}
+      <InnerHeader />
       <Helmet>
         <title>Online D2C E-Commerce Store</title>
         <meta

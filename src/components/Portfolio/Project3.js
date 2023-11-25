@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
@@ -29,6 +30,7 @@ function Project3() {
   return (
     <section>
       {/* Header */}
+      <InnerHeader />
       <Helmet>
         <title>Travel & Cab Hailing Platform </title>
         <meta

@@ -17,7 +17,7 @@ const Portfolio = () => {
   }, []);
 
   const [item, setItem] = useState(Filter);
-  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeCategory, setActiveCategory] = useState('All');
   const [isPortfolioAniHidden, setIsPortfolioAniHidden] = useState(false);
   const [filteredIndex, setFilteredIndex] = useState(0);
 
@@ -92,8 +92,8 @@ const Portfolio = () => {
           </div>
 
           <div className="py-4 mb-5">
-            <div className="button-container filter__container">
-              {/* <div
+            <div className="button-container filter__container d-flex">
+              <div
                 className={`custom-button ${
                   activeCategory === "All" ? "active" : ""
                 }`}
@@ -103,7 +103,7 @@ const Portfolio = () => {
                 }}
               >
                 All
-              </div> */}
+              </div>
               <div
                 className={`custom-button ${
                   activeCategory === "tab1" ? "active" : ""
@@ -171,7 +171,7 @@ const Portfolio = () => {
                 Misc.
               </div>
             </div>
-            <div
+            {/* <div
               className={`custom-remove-button mb-5`}
               onClick={() => {
                 setActiveCategory("All");
@@ -179,9 +179,9 @@ const Portfolio = () => {
               }}
             >
               Remove Filter
-            </div>
+            </div> */}
 
-            <div className="row custom-row">
+            <div className="row custom-row mt-5 px-3">
               {item.map((data, index) => {
                 const { name, logo, image, description,alt,url } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";

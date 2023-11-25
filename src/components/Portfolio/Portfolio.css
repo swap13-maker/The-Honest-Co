@@ -179,63 +179,30 @@ p {
 }
 .button-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1px; /* Adjust the gap width as needed */
+  width: 100%;
+  justify-content: space-between;
 }
-
-.filter__container .custom-button {
-  border-top: 1px solid #cbcbcb;
-}
-
 .custom-button {
-  flex-grow: 1;
-  width: calc(
-    14.28% - 1px
-  ); /* Adjust to evenly distribute buttons (100% / 7 buttons) */
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: relative;
-  cursor: pointer;
-  padding: 10px 4px;
   color: #000;
+  text-align: center;
   font-family: Barlow;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 96%; /* 13.44px */
-  opacity: 0.6;
-}
-.custom-remove-button {
-  text-align: right;
-  position: relative;
-  cursor: pointer;
-  padding: 30px 0 0 0;
-  color: #000;
-  font-family: Barlow;
-  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 96%;
-  opacity: 0.6;
+  opacity: 0.7;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 .custom-button.active {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: red;
+  font-weight: 600;
+  border-radius: 32px;
+  background: #F4F4F4;
   opacity: 1;
-  font-family: Barlow;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 96%; /* 13.44px */
-}
-.custom-button:not(:last-child)::after {
-  content: "|";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(to bottom, #2b2a2a, transparent);
 }
 .portfolio-heading {
   color: #1a1a1a;
@@ -331,7 +298,10 @@ p {
   transform: translateY(160px);
 }
 .margin-top--35 {
-  margin-top: -35px;
+  margin-top: -10%;
+}
+.margin-top--50 {
+  margin-top: -18%;
 }
 .margin-portolio > .wrapper {
   margin-top: -15%;
@@ -349,6 +319,10 @@ p {
 @media (max-width: 768px) {
   .margin-portolio > .wrapper {
     margin-top: 0 !important;
+  }
+  .button-container {
+    white-space: nowrap;
+    overflow: scroll;
   }
 }
 /*  */

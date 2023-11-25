@@ -10,7 +10,7 @@ import {
 } from "mdb-react-ui-kit";
 import "./../App.css";
 import "./Service.css";
-import arrow from "../images/arrow.png";
+import arrow from "../images/arrow.svg";
 
 function Services() {
   const [verticalActive, setVerticalActive] = useState("tab1");
@@ -85,7 +85,7 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab1" ? (
-                        <div className="loading"></div>
+                        <img className="tab-icon" src={arrow} />
                       ) : (
                         <img className="tab-icon" src={arrow} />
                       )}
@@ -104,7 +104,7 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab2" ? (
-                        <div className="loading"></div>
+                        <img className="tab-icon" src={arrow} />
                       ) : (
                         <img className="tab-icon" src={arrow} />
                       )}
@@ -123,7 +123,7 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab3" ? (
-                        <div className="loading"></div>
+                        <img className="tab-icon" src={arrow} />
                       ) : (
                         <img className="tab-icon" src={arrow} />
                       )}

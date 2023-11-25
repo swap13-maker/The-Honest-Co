@@ -314,7 +314,7 @@
 	 top: auto;
 	 right: 5%;
 	 width: 35px;
-   margin-bottom: 2%;
+   margin-bottom: 0%;
 	 cursor: pointer;
 	 z-index: 100;
 	 transition: opacity 0.25s ease;
@@ -323,7 +323,7 @@
 	 opacity: 1;
 }
  .button_container.active .top {
-	 transform: translateY(11px) translateX(0) rotate(45deg);
+	 transform: translateY(8px) translateX(0) rotate(45deg);
 	 background: #fff;
 }
  .button_container.active .middle {
@@ -331,16 +331,16 @@
 	 background: #fff;
 }
  .button_container.active .bottom {
-	 transform: translateY(-11px) translateX(0) rotate(-45deg);
+	 transform: translateY(-8px) translateX(0) rotate(-45deg);
 	 background: #fff;
 }
 
 .button_container_inner.active .top {
-  transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(8px) translateX(0) rotate(45deg);
   background: #fff !important;
 }
 .button_container_inner.active .bottom {
-  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-8px) translateX(0) rotate(-45deg);
   background: #fff !important;
 }
 .button_container_inner span {
@@ -348,21 +348,21 @@
 }
 
 .button_container_contact.active .top {
-  transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(8px) translateX(0) rotate(45deg);
   background: #fff !important;
 }
 .button_container_contact.active .bottom {
-  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-8px) translateX(0) rotate(-45deg);
   background: #fff !important;
 }
 .button_container_contact span {
   background: #1a1a1a !important;
 }
  .button_container span {
-	 background: #fff;
+	 background: #1a1a1a;
    mix-blend-mode: difference;
 	 border: none;
-	 height: 2px;
+	 height: 1px;
 	 width: 100%;
 	 position: absolute;
 	 top: 0;
@@ -371,10 +371,10 @@
 	 cursor: pointer;
 }
  .button_container span:nth-of-type(2) {
-	 top: 11px;
+	 top: 8px;
 }
  .button_container span:nth-of-type(3) {
-	 top: 22px;
+	 top: 16px;
 }
  .overlay {
 	 position: fixed;

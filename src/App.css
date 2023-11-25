@@ -457,7 +457,7 @@ h1 {
     display: none !important;
   }
   .w-440 {
-    width: 400px !important;
+    width: 380px !important;
   }
 }
 /* .form-floating > label {
@@ -1068,4 +1068,5 @@ input[type="checkbox"]:before {
 }
 .sticky-top-with-padding {
   top: 80px !important;
+  z-index: 1 !important;
 }

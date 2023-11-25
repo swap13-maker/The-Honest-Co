@@ -61,7 +61,7 @@ function Story() {
               <div className="py-4 story-icon">
                 <img src={icon1} className="card-icon py-3" />
               </div>
-              <div className="bg-dark py-4 px-3">
+              <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
                     Our journey began by fostering a community of like-minded
@@ -69,7 +69,7 @@ function Story() {
                     delivery of high-quality services.
                   </p>
                 </div>
-                <div className="mt-5">
+                <div className="mt-md-5 mt-4">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     initiation
                   </h3>
@@ -81,7 +81,7 @@ function Story() {
               <div className="py-4 story-icon">
                 <img src={icon2} className="card-icon py-2" />
               </div>
-              <div className="bg-dark py-4 px-3">
+              <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
                     We envisioned setting up a service brand exceeding industry
@@ -89,7 +89,7 @@ function Story() {
                     efficient solution hub for clients. 
                   </p>
                 </div>
-                <div className="mt-5">
+                <div className="mt-md-5 mt-4">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     ideation
                   </h3>
@@ -101,7 +101,7 @@ function Story() {
               <div className="py-4 story-icon">
                 <img src={icon3} className="card-icon pt-3 pb-2" />
               </div>
-              <div className="bg-dark py-4 px-3">
+              <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
                     The Honest Co. was established with the vision of delivering
@@ -109,7 +109,7 @@ function Story() {
                     content creation & industrial design.
                   </p>
                 </div>
-                <div className="mt-5">
+                <div className="mt-md-5 mt-4">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     built up
                   </h3>
@@ -121,7 +121,7 @@ function Story() {
               <div className="py-4 story-icon">
                 <img src={icon4} className="card-icon" />
               </div>
-              <div className="bg-dark py-4 px-3">
+              <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
                     Presently operational in 3 cities, The Honest Co. has served
@@ -130,7 +130,7 @@ function Story() {
                     
                   </p>
                 </div>
-                <div className="mt-5">
+                <div className="mt-md-5 mt-4">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     present
                   </h3>
@@ -141,7 +141,7 @@ function Story() {
               <div className="py-4 story-icon last-icon">
                 <img src={icon4} className="card-icon" />
               </div>
-              <div className="bg-dark py-4 px-3">
+              <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
                   <p className="text-white card-text">
                     We aspire to globalize our community by collaborating with
@@ -149,7 +149,7 @@ function Story() {
                     businesses worldwide.
                   </p>
                 </div>
-                <div className="mt-5">
+                <div className="mt-md-5 mt-4">
                   <h3 className="text-uppercase text-white px-4 card-heading">
                     future
                   </h3>

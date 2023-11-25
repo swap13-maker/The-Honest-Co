@@ -42,7 +42,7 @@
 }
 
 .counter-number.counter-number1::before {
-  content: "8+";
+  content: "12+";
   position: absolute;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -50,11 +50,11 @@
   top: 0;
   left: 0;
   width: 0%;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.5s;
 }
 .counter-number.counter-number2::before {
-  content: "25+";
+  content: "65+";
   position: absolute;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -62,11 +62,11 @@
   top: 0;
   left: 0;
   width: 0%;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.5s;
 }
 .counter-number.counter-number3::before {
-  content: "50+";
+  content: "35+";
   position: absolute;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -74,11 +74,11 @@
   top: 0;
   left: 0;
   width: 0%;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.5s;
 }
 .counter-number.counter-number4::before {
-  content: "100+";
+  content: "80+";
   position: absolute;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -86,7 +86,7 @@
   top: 0;
   left: 0;
   width: 0%;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.5s;
 }
 #counter:hover .counter-number::before {
