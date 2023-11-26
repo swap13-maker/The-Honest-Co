@@ -241,6 +241,7 @@
   display: table;
   width: 100%;
   height: 100%;
+  cursor: none;
 }
 .circle__content {
   display: table-cell;

@@ -11,6 +11,7 @@ import {
 import "./../App.css";
 import "./Service.css";
 import arrow from "../images/arrow.svg";
+import { Link } from "react-router-dom";
 
 function Services() {
   const [verticalActive, setVerticalActive] = useState("tab1");
@@ -137,9 +138,11 @@ function Services() {
                 </MDBTabsItem>
               </MDBTabs>
               <div className="pt-5">
+              <Link to="/get-in-touch/customer-inquiry">
                 <button className="bg-dark text-uppercase text-white font-weight-300 button">
                   Start Creating Now !
                 </button>
+                </Link>
               </div>
             </MDBCol>
             <MDBCol

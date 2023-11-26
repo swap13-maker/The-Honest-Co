@@ -33,8 +33,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/get-in-touch" element={<CustomerContact />} />
-        <Route path="/get-in-touch/creator" element={<CreatorContact />} />
+        <Route path="/get-in-touch/customer-inquiry" element={<CustomerContact />} />
+        <Route path="/get-in-touch/creator-inquiry" element={<CreatorContact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resources" element={<Resource />} />
         <Route path="/portfolio/online-d2c-ecommerce-store" element={<Project1 />} />

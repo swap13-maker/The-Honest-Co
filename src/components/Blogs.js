@@ -6,16 +6,19 @@ import blog2 from "../images/blog2.jpg";
 import blog3 from "../images/blog3.jpg";
 import blog4 from "../images/blog4.jpg";
 import blog5 from "../images/blog5.jpg";
+import { Link } from "react-router-dom";
 
 function Blogs() {
   return (
     <section className="row py-5">
       <div className="col-md-3">
+      <Link to="/resources">
         <div className="sidebar-btn-section sidebar-btn-section--2 sticky-top">
           <button className="bg-dark text-uppercase text-white font-weight-300 resource-button">
             VIEW All ARTICLES
           </button>
         </div>
+        </Link>
       </div>
       <div className="col-md-9">
         <div className="main-content blogs__container">

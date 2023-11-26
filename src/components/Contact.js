@@ -29,7 +29,7 @@ function Contact() {
           <div className="row">
             <div className="col-md-1"></div>
             <div className="col-md-5 pt-4 px-4" >
-              <Link to="/get-in-touch" className="grid p-3 px-md-0">
+              <Link to="/get-in-touch/customer-inquiry" className="grid p-3 px-md-0">
                 <figure className="effect-sadie">
                   <img className="w-100 img-1" src={Cta1} alt="" />
                   <img className="w-100 img-1-hover" src={Cta1Hover} alt="" />
@@ -50,7 +50,7 @@ function Contact() {
               </Link>
             </div>
             <div className="col-md-5 pt-4 px-4" >
-              <Link to="/get-in-touch/creator" className="grid p-3 px-md-0">
+              <Link to="/get-in-touch/creator-inquiry" className="grid p-3 px-md-0">
                 <figure className="effect-sadie effect-sadie-2">
                   <img className="w-100 img-1" src={Cta2} alt="" />
                   <img className="w-100 img-1-hover" src={Cta2Hover} alt="" />
