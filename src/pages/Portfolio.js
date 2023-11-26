@@ -10,6 +10,7 @@ import "../components/Portfolio/Portfolio.css";
 import ProjectCards from "../components/ProjectCards";
 import Lottie from "lottie-react";
 import loader from "../images/PortfolioListing.json";
+import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -35,6 +36,18 @@ const Portfolio = () => {
 
   return (
     <section>
+    <Helmet>
+        <title>Our Digital Solutions | Honest Digital Services </title>
+        <meta
+          name="description"
+          content="Our portfolio of digital products created for businesses all across the world. Digitally transforming Banking & Finance, D2C & ECommerce, HealthCare, Staffing & Recruitment and other sectors for achieving business goals. "
+        />
+        <meta
+          name="keywords"
+          content=""
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       {/* Header */}
       <InnerHeader />
       {/* mian content */}

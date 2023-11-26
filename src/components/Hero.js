@@ -58,7 +58,7 @@ function Hero() {
                   <Link to="/resources">resources</Link>
                 </Nav.Link>
                 <Nav.Link href="#" className="nav-btn-area">
-                  <Link to="/get-in-touch">
+                  <Link to="/get-in-touch/customer-inquiry">
                     <button className="nav-button">get in touch</button>
                   </Link>
                 </Nav.Link>
@@ -157,7 +157,7 @@ function Hero() {
                   We are a community of creators who make really cool things for businesses
                   that help them succeed.
                   </p>
-                  <Link to="/get-in-touch">
+                  <Link to="/get-in-touch/customer-inquiry">
                     <button className="nav-foot-button">
                       Get started with us !
                     </button>

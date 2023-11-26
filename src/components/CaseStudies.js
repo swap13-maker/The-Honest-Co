@@ -3,16 +3,19 @@ import "./../App.css";
 import "./Blogs.css";
 import case1 from "../images/case1.png";
 import case2 from "../images/case2.png";
+import { Link } from "react-router-dom";
 
 function CaseStudies() {
   return (
     <section className="row py-5">
       <div className="col-md-3 col-12">
+      <Link to="/resources">
         <div className="sidebar-btn-section sidebar-btn-section--3 sticky-top">
           <button className="bg-dark text-uppercase text-white font-weight-300 button">
-            VIEW All CASE STUDIES
+            VIEW All ARTICLES
           </button>
         </div>
+        </Link>
       </div>
       <div className="col-md-9 col-12">
         <div className="main-content">

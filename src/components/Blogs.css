@@ -233,7 +233,7 @@
   margin-top: -48% !important;
 }
 .animated-svg {
-  animation: moveUpAndDown 1.6s ease-in infinite;
+  animation: moveUpAndDown 3s ease-in-out infinite;
 }
 @keyframes moveUpAndDown {
   0% {
@@ -248,6 +248,9 @@
     opacity: 0;
     transform: translate3d(0, -61.4956%, 0);
   }
+}
+.arrowlottie{
+  margin-left: 20%;
 }
 /*mobile only media view*/
 @media (max-width: 768px) {
@@ -271,5 +274,8 @@
   }
   .blog-title {
     padding-top: 10px;
+  }
+  .arrowlottie{
+    margin-left: 94%;
   }
 }

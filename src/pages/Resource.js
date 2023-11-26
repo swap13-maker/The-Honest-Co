@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Lottie from "lottie-react";
 import loader from "../images/ResourceListing.json";
+import { Helmet } from "react-helmet";
 
 const Resource = () => {
   useEffect(() => {
@@ -47,6 +48,18 @@ const Resource = () => {
   return (
     <section>
       {/* Header */}
+      <Helmet>
+        <title>Our Resources | Honest Digital Services </title>
+        <meta
+          name="description"
+          content="Our resources by the team of The Honest Company in the process of executing our projects for the digital product developments."
+        />
+        <meta
+          name="keywords"
+          content=""
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <InnerHeader />
       {/* mian content */}
       <section className="container main-container">

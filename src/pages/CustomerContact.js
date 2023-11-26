@@ -11,6 +11,7 @@ import Prev from "../images/form-prev.png";
 import { Link } from "react-router-dom";
 import "../components/InnerHeader.css";
 import $ from "jquery";
+import { Helmet } from "react-helmet";
 
 function CustomerContact() {
   const [name, setName] = useState("");
@@ -138,6 +139,18 @@ function CustomerContact() {
 
   return (
     <Container>
+     <Helmet>
+        <title>Customer Inquiry | Honest Digital Services </title>
+        <meta
+          name="description"
+          content=""
+        />
+        <meta
+          name="keywords"
+          content=""
+        ></meta>
+        <meta name="author" content="Karthik Nath"></meta>
+      </Helmet>
       <div className="row height-100vh">
         <div className="col-md-3 col-12 d-none d-md-block">
           <Link to="/" className="contact-logo">
@@ -221,7 +234,7 @@ function CustomerContact() {
                   <Link to="/resources">Resources</Link>
                 </li>
                 <li>
-                  <Link to="/get-in-touch">
+                  <Link to="/get-in-touch/customer-inquiry">
                     <button className="nav-button">get in touch</button>
                   </Link>
                 </li>

@@ -1,15 +1,27 @@
 import React from "react";
 import "./../App.css";
-import work1 from "../images/work1.png";
-import work2 from "../images/work2.png";
-import work3 from "../images/work3.png";
-import work4 from "../images/work4.png";
-import work5 from "../images/work5.png";
-import work6 from "../images/work6.png";
-import work7 from "../images/work7.png";
-import work8 from "../images/work8.png";
-import work9 from "../images/work9.png";
+import work1 from "../images/OurWork_IFC.jpg";
+import mobwork1 from '../images/mobOurWork_IFC.png'
+import webwork2 from '../images/webOurWork_2.jpg'
+import mobwork2 from '../images/mobOurWork_2.jpg'
+import webwork3 from '../images/webOurWork_3.jpg'
+import mobmork3 from '../images/mobOurWork_3.jpg'
+import webwork4 from '../images/webOurWork_4.jpg'
+import mobwork4 from '../images/moobOurWork_4.jpg'
+import webwork5 from '../images/webOurWork_5.jpg'
+import mobwork5 from '../images/mobOurWork_5.png'
+import webwork6 from '../images/webOurWork_Giftly6.jpg'
+import mobwork6 from '../images/mobOurWork_Giftly6.png'
+import webwork8 from '../images/webOurWork_8.jpg'
+import mobwork8 from '../images/mobOurWork_8.png'
+import webwork9 from '../images/webOurWork_9.jpg'
+import mobwork9 from '../images/mobOurWork_9.png'
 import { Link } from "react-router-dom";
+import work7 from "../images/work7.png";
+
+import Lottie from "lottie-react";
+import Arrow from '../images/Arrow.json'
+
 
 function Work() {
   return (
@@ -25,147 +37,155 @@ function Work() {
       {/* Desktop mode */}
       <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item gallery__item--hor media-w-100 d-block">
-          <img src={work1} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={work1} alt={"mobile app for d2c businesses "}/>
+          <Link to="/portfolio/online-d2c-ecommerce-store"><div className="work-heading">Online D2C E-Commerce Store</div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          D2C & E-Commerce · Mobile Apps · Online Store · Swift Order Tracking 
+          </div></Link>
         </div>
         <div className="gallery__item media-w-100 d-block">
-          <img src={work2} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork2} alt="peer to peer money remittance app"/>
+          <Link to="/portfolio/p2p-money-remittance-mobile-application"><div className="work-heading">P2P Money Remittance Mobile Application </div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          Banking & Finance · Mobile Apps · P2P Payments 
+          </div></Link>
         </div>
       </div>
       <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item gallery__item--lg2 media-w-100 d-block">
-          <img src={work3} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork3} alt="Travel and itinerary app with cab booking "/>
+          <Link to="/portfolio/cab-hailing-travel-itinerary-platform"><div className="work-heading">Travel & Cab Hailing Platform </div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          Travel & Hospitality · Custom Softwares · Cab Hailing Platform 
+          </div></Link>
         </div>
         <div className="gallery__item gallery__item--hor3 media-w-100 d-block">
-          <img src={work4} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork4} alt="location sharing and tracking with SOS calls"/>
+          <Link to="/portfolio/location-sharing-sos-notifications-mobile-app"><div className="work-heading">SOS & Location Sharing Application </div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          Location Sharing & Security · AI & ML · Live Tracking · SOS Mobile App 
+          </div></Link>
         </div>
         <div className="gallery__item gallery__item--hor3 media-w-100 d-block">
-          <img src={work5} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork5} alt="medicine and appointment reminder mobile app "/>
+          <Link to="/portfolio/pill-reminder-doctor-appointment-platform"><div className="work-heading">Pill and Appointment Reminder Mobile App</div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          Healthcare Technology · Custom Softwares · Medicine Reminder · Personalized Notifications
+          </div></Link>
         </div>
       </div>
       <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item gallery__item--hor media-w-100 d-block">
-          <img src={work6} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork6} alt="image sharing and kids ecommerce app "/>
+          <Link to="/portfolio/photo-sharing-online-ecommerce-platform"><div className="work-heading">Online Photo Sharing with E-Commerce </div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          D2C & E-Commerce · Custom Softwares · Image Sharing · Payment Gateways
+          </div></Link>
         </div>
         <div className="gallery__item media-w-100 d-block">
           <img src={work7} />
-          <div className="work-heading">Architectural Drawing</div>
+         <Link><div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          </div></Link> 
         </div>
       </div>
       <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <div className="gallery__item media-w-100 d-block">
-          <img src={work8} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork8} alt="interview scheduling and job tracking mobile app"/>
+          <Link to="/portfolio/interview-scheduling-job-tracking-app"><div className="work-heading">Interview Scheduling & Job Tracking App</div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          Staffing and Recruitment · Custom Softwares · Job Search Portal 
+          </div></Link>
         </div>
         <div className="gallery__item gallery__item--hor2 media-w-100 d-block">
-          <img src={work9} />
-          <div className="work-heading">Architectural Drawing</div>
+          <img src={webwork9} alt="custom LMS softwares for schools"/>
+          <Link to="/portfolio/custom-school-learning-management-platform"><div className="work-heading">Custom School Learning Platform </div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
+          Educational Technology · AI & ML · Adaptive Modules · Accounting and Reporting
           </div>
+          </Link>
         </div>
       </div>
       {/* Mobile mode */}
       <div className="desktop-d-none">
         <div className="pb-5">
-          <img src={work1} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
+         <Link to="/portfolio/online-d2c-ecommerce-store"><img src={mobwork1} className="w-100" alt="mobile app for d2c businesses"/>
+          <div className="work-heading">Online D2C E-Commerce Store</div></Link> 
+          <div className="work-subheading">
+          D2C & E-Commerce · Mobile Apps · Online Store · Swift Order Tracking 
+          </div>
+        </div>
+        <div className="pb-5">
+         <Link to="/portfolio/p2p-money-remittance-mobile-application"><img src={mobwork2} className="w-100" alt="peer to peer money remittance app "/>
+          <div className="work-heading">P2P Money Remittance Mobile Application </div></Link> 
+          <div className="work-subheading">
+          Banking & Finance · Mobile Apps · P2P Payments 
+          </div>
+        </div>
+        <div className="pb-5">
+          <Link to="/portfolio/cab-hailing-travel-itinerary-platform"><img src={mobmork3} className="w-100" alt="Travel and itinerary app with cab booking"/>
+          <div className="work-heading">Travel & Cab Hailing Platform </div></Link>
+          <div className="work-subheading">
+          Travel & Hospitality · Custom Softwares · Cab Hailing Platform
+          </div>
+        </div>
+        <div className="pb-5">
+         <Link to="/portfolio/location-sharing-sos-notifications-mobile-app"><img src={mobwork4} className="w-100" alt="location sharing and tracking with SOS calls "/>
+          <div className="work-heading">SOS & Location Sharing Application </div></Link> 
+          <div className="work-subheading">
+          Location Sharing & Security · AI & ML · Live Tracking · SOS Mobile App 
+          </div>
+        </div>
+        <div className="pb-5">
+        <Link to="/portfolio/pill-reminder-doctor-appointment-platform">  <img src={mobwork5} className="w-100" alt="medicine and appointment reminder mobile app "/>
+          <div className="work-heading">Pill and Appointment Reminder Mobile App</div></Link>
+          <div className="work-subheading">
+          Healthcare Technology · Custom Softwares · Medicine Reminder · Personalized Notifications
+          </div>
+        </div>
+        <div className="pb-5">
+          <Link to="/portfolio/photo-sharing-online-ecommerce-platform"><img src={mobwork6} className="w-100" alt="image sharing and kids ecommerce app "/>
+          <div className="work-heading">Online Photo Sharing with E-Commerce </div></Link>
+          <div className="work-subheading">
+          D2C & E-Commerce · Custom Softwares · Image Sharing · Payment Gateways
+          </div>
+        </div>
+        <div className="pb-5">
+        <Link><img src={work7} className="w-100" />
+          <div className="work-heading">Architectural Drawing</div></Link>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing
           </div>
         </div>
         <div className="pb-5">
-          <img src={work2} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
+         <Link to="/portfolio/interview-scheduling-job-tracking-app"> <img src={mobwork8} className="w-100" alt="interview scheduling and job tracking mobile app"/>
+          <div className="work-heading">Interview Scheduling & Job Tracking App</div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          Staffing and Recruitment · Custom Softwares · Job Search Portal 
+          </div></Link>
         </div>
         <div className="pb-5">
-          <img src={work3} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
+        <Link to="/portfolio/custom-school-learning-management-platform">
+          <img src={mobwork9} className="w-100" alt="custom LMS softwares for schools"/>
+          <div className="work-heading">Custom School Learning Platform</div>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
+          Educational Technology · AI & ML · Adaptive Modules · Accounting and Reporting
           </div>
-        </div>
-        <div className="pb-5">
-          <img src={work4} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
-          <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
-        </div>
-        <div className="pb-5">
-          <img src={work5} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
-          <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
-        </div>
-        <div className="pb-5">
-          <img src={work6} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
-          <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
-        </div>
-        <div className="pb-5">
-          <img src={work7} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
-          <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
-        </div>
-        <div className="pb-5">
-          <img src={work8} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
-          <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
-        </div>
-        <div className="pb-5">
-          <img src={work9} className="w-100" />
-          <div className="work-heading">Architectural Drawing</div>
-          <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
-          </div>
+          </Link>
         </div>
       </div>
 
       <div className="text-align-center py-md-1 py-4">
-        <Link to="/">
+        <Link to="/portfolio">
           <div className="work-redirect">
-            View Our Portfolio
-            <svg
+          <div className="d-flex align-items-center justify-content-center ml-4">
+        <span className="arrowlottie text-nowrap py-md-1 py-4">View Our Portfolio</span>
+            <div className="col-12 col-md-8 col-lg-3 d-flex justify-content-start" style={{marginLeft:'5px'}}>
+            <Lottie animationData={Arrow} autoplay loop className="w-xs-100 w-md-12 lottioArrow"/>
+          </div>  
+            </div>
+            {/* <svg
               width="30"
               height="16"
               viewBox="-10 0 25 14"
@@ -178,7 +198,7 @@ function Work() {
                 d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
                 fill="black"
               />
-            </svg>
+            </svg> */}
           </div>
         </Link>
       </div>

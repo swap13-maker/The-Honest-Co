@@ -64,7 +64,7 @@ const InnerHeader = () => {
                 <Link to="/resources">resources</Link>
               </Nav.Link>
               <Nav.Link className="text-black nav-btn-area" href="#">
-                <Link to="/get-in-touch">
+                <Link to="/get-in-touch/customer-inquiry">
                   <button className="nav-sticky-button">get in touch</button>
                 </Link>
               </Nav.Link>
@@ -115,7 +115,7 @@ const InnerHeader = () => {
                 <Link to="/resources">Resources</Link>
               </li>
               <li>
-                <Link to="/get-in-touch">
+                <Link to="/get-in-touch/customer-inquiry">
                   <button className="nav-button">get in touch</button>
                 </Link>
               </li>
