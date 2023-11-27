@@ -124,4 +124,8 @@
   .Image_baner{
     width: 140%;
   }
+  .content_text{
+    padding-left: 0px;
+    padding-top: 20px;
+  }
 }
