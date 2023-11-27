@@ -10,6 +10,7 @@ import "../components/Portfolio/Portfolio.css";
 import ProjectCards from "../components/ProjectCards";
 import Lottie from "lottie-react";
 import loader from "../images/PortfolioListing.json";
+import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
@@ -257,6 +258,7 @@ const Portfolio = () => {
         </div>
       </section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 };
