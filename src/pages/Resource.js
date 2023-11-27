@@ -6,10 +6,9 @@ import Filter from "./../components/Resource/Filter";
 import InnerHeader from "../components/InnerHeader.js";
 import Footer from "./../components/Footer";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Lottie from "lottie-react";
 import loader from "../images/ResourceListing.json";
+import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
 
 const Resource = () => {
@@ -33,17 +32,6 @@ const Resource = () => {
     setItem(updatedValue);
     setFilteredIndex(0); // Reset the index
   };
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // Animation duration in milliseconds
-      offset: 200, // Offset (in pixels) from the element's position to trigger the animation
-      easing: "ease-in-out", // Animation easing (CSS transition-timing-function)
-      delay: 0, // Delay (in milliseconds) before the animation starts
-      once: true, // Whether the animation should occur only once or every time the element is scrolled into view
-      mirror: false, // Whether elements with the same data-aos value should animate individually or together
-    });
-  }, []);
 
   return (
     <section>
@@ -262,6 +250,7 @@ const Resource = () => {
         </div>
       </section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 };

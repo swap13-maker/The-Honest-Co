@@ -153,7 +153,7 @@ function Hero() {
             <div className="border-top">
               <div className="row">
                 <div className="col-12 col-md-8">
-                  <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15 ">
+                  <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15 px-md-0 px-2">
                   We are a community of creators who make really cool things for businesses
                   that help them succeed.
                   </p>

@@ -183,7 +183,7 @@ const ChatComponent = () => {
             <div className="row py-4">
               <div className="col-md-12 col-12">Area of Interest</div>
               <div className="col-md-4 col-12">
-                <Form.Group className="pt-1" controlId="architectural">
+                {/* <Form.Group className="pt-1" controlId="architectural">
                   <Form.Check
                     className="chat-label"
                     type="checkbox"
@@ -192,7 +192,7 @@ const ChatComponent = () => {
                     name="interests"
                     onChange={handleInputChange}
                   />
-                </Form.Group>
+                </Form.Group> */}
 
                 <Form.Group className="pt-1" controlId="industrial">
                   <Form.Check

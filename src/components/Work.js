@@ -36,13 +36,13 @@ function Work() {
 
       {/* Desktop mode */}
       <div className="gallery pb-md-5 pb-5 mobile-d-none">
-        <div className="gallery__item gallery__item--hor media-w-100 d-block">
+        <Link to="/portfolio/online-d2c-ecommerce-store" className="gallery__item gallery__item--hor media-w-100 d-block">
           <img src={work1} alt={"mobile app for d2c businesses "}/>
-          <Link to="/portfolio/online-d2c-ecommerce-store"><div className="work-heading">Online D2C E-Commerce Store</div>
+          <div className="work-heading">Online D2C E-Commerce Store</div>
           <div className="work-subheading">
           D2C & E-Commerce · Mobile Apps · Online Store · Swift Order Tracking 
-          </div></Link>
-        </div>
+          </div>
+        </Link>
         <div className="gallery__item media-w-100 d-block">
           <img src={webwork2} alt="peer to peer money remittance app"/>
           <Link to="/portfolio/p2p-money-remittance-mobile-application"><div className="work-heading">P2P Money Remittance Mobile Application </div>

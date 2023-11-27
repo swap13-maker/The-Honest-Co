@@ -131,7 +131,7 @@ function Story() {
                   </p>
                 </div>
                 <div className="mt-md-5 mt-4">
-                  <h3 className="text-uppercase text-white px-4 card-heading">
+                  <h3 className="text-uppercase text-white px-4 card-heading mob-pt-2">
                     present
                   </h3>
                 </div>
@@ -150,7 +150,7 @@ function Story() {
                   </p>
                 </div>
                 <div className="mt-md-5 mt-4">
-                  <h3 className="text-uppercase text-white px-4 card-heading">
+                  <h3 className="text-uppercase text-white px-4 card-heading mob-pt-2">
                     future
                   </h3>
                 </div>
