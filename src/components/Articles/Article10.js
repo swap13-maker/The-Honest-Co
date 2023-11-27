@@ -81,7 +81,7 @@ export default function Article10() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">ML Models for Streamlined HR Operations</li>
           </ul>
           <div className="py-4">
             <div className="row">

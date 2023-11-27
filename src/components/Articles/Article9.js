@@ -83,7 +83,7 @@ export default function Article9() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Efficient Interview Scheduling with Mobile Apps</li>
           </ul>
           <div className="py-4">
             <div className="row">

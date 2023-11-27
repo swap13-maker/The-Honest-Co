@@ -81,7 +81,7 @@ export default function App() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Precision Agriculture, AI & ML Plant Disease Detection</li>
           </ul>
           <div className="py-4">
             <div className="row">

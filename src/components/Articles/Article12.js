@@ -83,7 +83,7 @@ export default function Article12() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">AI Fleet Management for Effective Route Planning</li>
           </ul>
           <div className="py-4">
             <div className="row">

@@ -9,9 +9,9 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro3Banner.jpg";
-import Grid from "../../images/Grid1.jpg";
+import Grid from "../../images/Web Grid Tourway.jpg";
 import secondGrid from "../../images/pro3SecondaryBanner.jpg";
-import webGrid from "../../images/Web Grid Web View.jpg";
+import webGrid from "../../images/Mobile Grid TourWay.jpg";
 import conslusion from "../../images/Conclusion.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -49,12 +49,12 @@ function Project3() {
         <div className="container-fluid main-container">
           <ul className="breadcrumb-navigation pt-6">
             <li>
-              <a href="home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 3</li>
+            <li className="current">Travel & Cab Hailing Platform</li>
           </ul>
           <div className="py-4">
             <div className="row">

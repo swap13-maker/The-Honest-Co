@@ -83,7 +83,7 @@ export default function Article5() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Strategic Growth, AI & ML Forecasting Solutions</li>
           </ul>
           <div className="py-4">
             <div className="row">

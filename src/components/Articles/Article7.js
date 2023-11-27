@@ -82,7 +82,7 @@ export default function Article7() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Deep Learning for Adaptive Course Modules</li>
           </ul>
           <div className="py-4">
             <div className="row">

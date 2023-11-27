@@ -10,6 +10,7 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Grid from "../../images/Grid1.jpg";
+import Grid2 from '../../images/Grid12.jpg'
 import myFooterLogo from "../../images/footer-logo.png";
 import { Helmet } from "react-helmet";
 import Banner from '../../images/Pro1Banner.jpg'
@@ -53,12 +54,12 @@ function Project1() {
         <div className="container-fluid main-container">
           <ul className="breadcrumb-navigation pt-6">
             <li>
-              <a href="home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="#/portfolio">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 1</li>
+            <li className="current">Online D2C E-Commerce Store</li>
           </ul>
           <div className="py-4">
             <div className="row">
@@ -160,7 +161,7 @@ function Project1() {
               </div>
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={Grid2} alt="" className="w-100 py-5" />
             </div>
           </div>
           {/* section3 */}
