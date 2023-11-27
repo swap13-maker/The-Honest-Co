@@ -90,7 +90,7 @@ export default function App() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Global Commerce & Remittance Solutions for Businesses</li>
           </ul>
           <div className="py-4">
             <div className="row">

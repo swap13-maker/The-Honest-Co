@@ -82,7 +82,7 @@ export default function Article8() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Easy Contract Management, Custom App Solutions</li>
           </ul>
           <div className="py-4">
             <div className="row">
