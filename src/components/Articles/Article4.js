@@ -83,7 +83,7 @@ export default function Article4() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Elevate E-Commerce, Low-Code Store Creation</li>
           </ul>
           <div className="py-4">
             <div className="row">

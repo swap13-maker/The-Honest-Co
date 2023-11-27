@@ -49,12 +49,12 @@ function Project9() {
         <div className="container-fluid main-container">
           <ul className="breadcrumb-navigation pt-6">
             <li>
-              <a href="home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 9</li>
+            <li className="current">Custom School Learning Platform</li>
           </ul>
           <div className="py-4">
             <div className="row">

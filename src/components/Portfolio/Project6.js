@@ -9,9 +9,10 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro6Banner.jpg";
-import Grid from "../../images/Grid1.jpg";
+import Grid from "../../images/Mobile Grid Giftly.jpg";
+import Grid2 from '../../images/Mobile Grid 2 Giftly.jpg'
 import secondGrid from "../../images/pro6SecondaryBanner.jpg";
-import webGrid from "../../images/Web Grid Web View.jpg";
+import webGrid from "../../images/Web Grid Giftly.jpg";
 import conslusion from "../../images/Conclusion.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -49,12 +50,12 @@ function Project6() {
         <div className="container-fluid main-container">
           <ul className="breadcrumb-navigation pt-6">
             <li>
-              <a href="home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 6</li>
+            <li className="current">Online Photo Sharing with E-Commerce</li>
           </ul>
           <div className="py-4">
             <div className="row">
@@ -161,7 +162,7 @@ function Project6() {
               </div>
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={Grid2} alt="" className="w-100 py-5" />
             </div>
           </div>
           {/* section3 */}

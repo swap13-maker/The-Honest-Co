@@ -48,13 +48,13 @@ function Project2() {
       <section>
         <div className="container-fluid main-container">
           <ul className="breadcrumb-navigation pt-6">
-            <li>
-              <a href="home">Home</a>
+             <li>
+              <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="portfolio">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Project 2</li>
+            <li className="current">P2P Money Remittance Mobile Application</li>
           </ul>
           <div className="py-4">
             <div className="row">

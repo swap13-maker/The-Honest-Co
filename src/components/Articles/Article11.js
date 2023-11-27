@@ -82,7 +82,7 @@ export default function Article11() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Tailored CRM for E-Commerce Businesse</li>
           </ul>
           <div className="py-4">
             <div className="row">

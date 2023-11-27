@@ -82,7 +82,7 @@ export default function Article6() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Articles</li>
+            <li className="current">Secure Pre-School App, Parental Tracking & More</li>
           </ul>
           <div className="py-4">
             <div className="row">
