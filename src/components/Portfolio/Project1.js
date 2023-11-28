@@ -16,6 +16,14 @@ import { Helmet } from "react-helmet";
 import Banner from '../../images/Pro1Banner.jpg'
 import secondGrid from '../../images/pro1SecondaryBanner.jpg'
 import { Link } from "react-router-dom";
+import mob1 from '../../images/project1/MobileGrida.jpg'
+import mob2 from '../../images/project1/MobileGridb.jpg'
+import mob3 from '../../images/project1/MobileGridc.jpg'
+import mob4 from '../../images/project1/MobileGridd.jpg'
+import mob5 from '../../images/project1/WebGrida.jpg'
+import mob6 from '../../images/project1/WebGridb.jpg'
+import mob8 from '../../images/project1/WebGridd.jpg'
+import conclusion from '../../images/project1/conclusion.jpg'
 
 function Project1() {
   useEffect(() => {
@@ -65,10 +73,10 @@ function Project1() {
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
                   D2C E-Commerce Made
-                  <br /> Easy Via Mobile Applicationbr
+                  <br /> Easy Via Mobile Application
                   <br /> Development
                   <img
-                    class="blog-logo blog-hide"
+                    className="blog-logo blog-hide mx-3 d-none d-md-block"
                     src={`https://thehonestco.in/react.svg`}
                   ></img>
                 </div>
@@ -100,7 +108,7 @@ function Project1() {
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 pb-4">
               <div className="proj-heading">
                 Scope
                 <hr className="w-40" />
@@ -110,6 +118,14 @@ function Project1() {
                 application and a mobile responsive website for one of our
                 customers in the consumer food industry.
               </div>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob1}
+              ></img>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob2}
+              ></img>
             </div>
             <div className="col-12 col-md-6 px-3">
               <div className="proj-heading paddingLeft-even">
@@ -121,6 +137,14 @@ function Project1() {
                 online digital platform for customers using the best of hybrid
                 mobile application development technologies.
               </div>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob3}
+              ></img>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob4}
+              ></img>
             </div>
             <div className="col-12">
               <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
@@ -143,6 +167,9 @@ function Project1() {
             <div className="col-12 Image_size d-none d-md-block">
               <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
             </div>
+            <div className="col-12 pt-4 d-block d-md-none">
+              <img src={secondGrid} alt="" className="w-100" />
+            </div>
           </div>
           {/* section2 */}
           <div className="row py-md-5 py-4 pb-md-3 pb-0">
@@ -159,6 +186,7 @@ function Project1() {
                 <br />
               </div>
             </div>
+            {/* desktop only */}
             <div className="col-12 col-md-6 d-none d-md-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
                 Order and Reorder
@@ -167,9 +195,16 @@ function Project1() {
             <div className="col-12 d-none d-md-block">
               <img src={Grid2} alt="" className="w-100 py-5" />
             </div>
+            {/* mobile only */}
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob5} alt="" className="w-100" />
+            </div>
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob6} alt="" className="w-100" />
+            </div>
           </div>
           {/* section3 */}
-          <div className="row py-4">
+          <div className="row py-4 d-none">
             <div className="col-12 text-align-center mobile-text-align-left">
               <div className="proj-heading">
                 Order Updates at Your Fingertips
@@ -183,9 +218,14 @@ function Project1() {
                 of order.
               </div>
             </div>
+            {/* desktop */}
             <div className="col-12 d-none d-md-flex">
               <img src={demo8} alt="" className="w-40 px-4 py-4" />
               <img src={demo9} alt="" className="w-100 px-4 py-4" />
+            </div>
+            {/* mobile */}
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob8} alt="" className="w-100" />
             </div>
           </div>
         </section>
@@ -204,16 +244,8 @@ function Project1() {
               our customer apart in terms of online purchasing experience.
             </div>
           </div>
-          <div className="col-12 d-none d-md-flex">
-            <img src={demo8} alt="" className="w-40 px-4 py-4" />
-            <img src={demo9} alt="" className="w-100 px-4 py-4" />
-          </div>
-          <div className="col-12 text-align-center">
-            <p className="px-md-5 p-0 py-3 text_containe">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's <br />
-              competitive marketplace by providing.
-            </p>
+          <div className="col-12">
+            <img src={conclusion} alt="" className="w-100 pt-3" />
           </div>
         </div>
       </section>

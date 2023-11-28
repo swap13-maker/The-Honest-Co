@@ -335,5 +335,8 @@ p {
   .proj-sub-heading {
     text-align: left;
   }
+  .proj-heading {
+    font-size: 6.8vw;
+  }
 }
 /*  */
