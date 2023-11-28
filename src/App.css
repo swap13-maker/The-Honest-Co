@@ -367,6 +367,14 @@ h1 {
 .lottioArrow{
   width: 20% !important;
 }
+.form-floating > label {
+  padding: 1rem 0rem !important;
+}
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .form-control-plaintext:focus, .form-floating > .form-control-plaintext:not(:placeholder-shown) {
+  padding-top: 1.625rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
 
 /*desktop only media view*/
 @media (min-width: 768px) {
