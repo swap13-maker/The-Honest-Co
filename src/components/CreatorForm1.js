@@ -49,24 +49,38 @@ function CreatorForm1({ onNameChange, onEmailChange, onContactChange }) {
       <div className="contact-form py-5">
         <Form.Group controlId="formName">
           <Form.Floating>
-            <Form.Control className="w-md-75 label-with-underline" type="text" placeholder="Enter your name" value={name} onChange={handleNameChange} />
+            <Form.Control className="w-md-75 label-with-underline" type="text" placeholder="Enter your name" maxLength={30} value={name} onChange={handleNameChange} />
             <Form.Label>Name</Form.Label>
           </Form.Floating>
         </Form.Group>
 
         <Form.Group controlId="formEmail">
           <Form.Floating>
-            <Form.Control className="w-md-75 label-with-underline" type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} />
+            <Form.Control className="w-md-75 label-with-underline" type="email" placeholder="Enter your email" maxLength={40} value={email} onChange={handleEmailChange} />
             <Form.Label>Email</Form.Label>
           </Form.Floating>
         </Form.Group>
 
         <Form.Group controlId="formContact">
-          <Form.Floating>
-            <Form.Control className="w-md-75 label-with-underline" type="number" placeholder="Enter your contact" maxLength={10} value={contact} onChange={handleContactChange} />
-            <Form.Label>Contact Number</Form.Label>
-          </Form.Floating>
-        </Form.Group>
+            <Form.Floating>
+              <Form.Control
+                className="w-md-75 label-with-underline"
+                type="text"
+                placeholder="Enter your contact"
+                maxLength={10}
+                value={contact}
+                onChange={handleContactChange}
+                onKeyPress={(e) => {
+                  // Allow only numeric input
+                  const isNumeric = /^[0-9]*$/;
+                  if (!isNumeric.test(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
+              />
+              <Form.Label>Contact Number</Form.Label>
+            </Form.Floating>
+          </Form.Group>
       </div>
     </div>
   );

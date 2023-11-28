@@ -84,6 +84,7 @@ function ContactForm1({
               placeholder="Enter your name"
               value={name}
               onChange={handleNameChange}
+              maxLength={20}
             />
             <Form.Label>Name</Form.Label>
           </Form.Floating>
@@ -97,6 +98,7 @@ function ContactForm1({
               placeholder="Enter your organization"
               value={organization}
               onChange={handleOrganizationChange}
+              maxLength={40}
             />
             <Form.Label>Organization</Form.Label>
           </Form.Floating>
@@ -110,6 +112,7 @@ function ContactForm1({
               placeholder="Enter your email"
               value={email}
               onChange={handleEmailChange}
+              maxLength={40}
             />
             <Form.Label>Email</Form.Label>
           </Form.Floating>
@@ -120,11 +123,18 @@ function ContactForm1({
             <Form.Floating>
               <Form.Control
                 className="w-md-75 label-with-underline"
-                type="number"
+                type="text"
                 placeholder="Enter your contact"
                 maxLength={10}
                 value={contact}
                 onChange={handleContactChange}
+                onKeyPress={(e) => {
+                  // Allow only numeric input
+                  const isNumeric = /^[0-9]*$/;
+                  if (!isNumeric.test(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
               />
               <Form.Label>Contact Number</Form.Label>
             </Form.Floating>
