@@ -12,8 +12,10 @@ import { Link } from "react-router-dom";
 import "../components/InnerHeader.css";
 import $ from "jquery";
 import { Helmet } from "react-helmet";
+import { useNavigate } from 'react-router-dom';
 
 function CustomerContact() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [organization, setOrganization] = useState("");
   const [email, setEmail] = useState("");
@@ -119,6 +121,10 @@ function CustomerContact() {
       selectedTimeline,
       selectedBudget,
     };
+
+    setTimeout(() => {
+      navigate('/thankyou');
+    }, 1000);
 
     // Send the data to the specified URL
     fetch("https://thehonestco.in/mailCustomer.php", {

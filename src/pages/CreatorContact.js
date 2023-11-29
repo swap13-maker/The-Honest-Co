@@ -13,8 +13,10 @@ import "./CreatorContact.css";
 import "../components/InnerHeader.css";
 import $ from "jquery";
 import { Helmet } from "react-helmet";
+import { useNavigate } from 'react-router-dom';
 
 function CreatorContact() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
@@ -150,6 +152,10 @@ function CreatorContact() {
       experience,
       studentLocation,
     };
+
+    setTimeout(() => {
+      navigate('/thankyou');
+    }, 1000);
 
     // Send the data to the specified URL
     fetch("https://thehonestco.in/mailCreator.php", {
