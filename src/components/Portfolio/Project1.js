@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -69,7 +69,8 @@ function Project1() {
                   <br /> Easy Via Mobile Applicationbr
                   <br /> Development
                   <img
-                    class="blog-logo blog-hide"
+                    alt=""
+                    className="blog-logo blog-hide"
                     src={`https://thehonestco.in/react.svg`}
                   ></img>
                 </div>

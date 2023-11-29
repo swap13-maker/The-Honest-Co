@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import "./../App.css";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../images/logo.svg";
 import logoIcon from "../images/logo-icon.png";
 import { Link } from "react-router-dom";
@@ -76,8 +75,8 @@ function Hero() {
               </Navbar.Brand>
             </Link>
             <div
-              id="navbar-nav toggle" className="justify-content-end"
-              className={`button_container ${isMenuOpen ? "active" : ""}`}
+              id="navbar-nav toggle"
+              className={`justify-content-end button_container ${isMenuOpen ? "active" : ""}`}
               onClick={handleToggle}
             >
               <span className="top"></span>
@@ -93,13 +92,13 @@ function Hero() {
                 </div>
                 <ul>
                   <li>
-                    <a href="#" className="font-weight-100">About</a>
+                    <Link to="/" className="font-weight-100">About</Link>
                   </li>
                   <li>
-                    <a href="#" className="font-weight-100">Services</a>
-                  </li>
+                    <Link to="/" className="font-weight-100">Services</Link>
+    /            </li>
                   <li>
-                    <a href="#" className="font-weight-100">Team</a>
+                    <Link to="/" className="font-weight-100">Team</Link>
                   </li>
                   <li>
                     <Link to="/portfolio">Portfolio</Link>
@@ -131,7 +130,7 @@ function Hero() {
                   We help <span className="bg-elipse">businesses</span>
                   <br />{" "}
                   <span className="px-md-4 px-2 heading-icon">
-                    <img className="rotate" src={logoIcon} />
+                    <img alt="" className="rotate" src={logoIcon} />
                   </span>{" "}
                   create digital & physical
                   <br />

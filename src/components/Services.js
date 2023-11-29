@@ -86,9 +86,9 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab1" ? (
-                        <img className="tab-icon" src={arrow} />
+                        <img className="tab-icon" src={arrow} alt="tab" />
                       ) : (
-                        <img className="tab-icon" src={arrow} />
+                        <img className="tab-icon" src={arrow} alt="tab-icon"/>
                       )}
                       <span className="px-3">Application Development</span>
                     </div>
@@ -105,9 +105,9 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab2" ? (
-                        <img className="tab-icon" src={arrow} />
+                        <img className="tab-icon" src={arrow} alt=""/>
                       ) : (
-                        <img className="tab-icon" src={arrow} />
+                        <img className="tab-icon" src={arrow} alt=""/>
                       )}
                       <span className="px-3">Content Creation</span>
                     </div>
@@ -124,9 +124,9 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab3" ? (
-                        <img className="tab-icon" src={arrow} />
+                        <img className="tab-icon" src={arrow} alt=""/>
                       ) : (
-                        <img className="tab-icon" src={arrow} />
+                        <img className="tab-icon" src={arrow} alt=""/>
                       )}
                       <span className="px-3">Industrial Design</span>
                     </div>

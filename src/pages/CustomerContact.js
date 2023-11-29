@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import ContactForm1 from "../components/ContactForm1";
 import ContactForm2 from "../components/ContactForm2";
 import ContactForm3 from "../components/ContactForm3";
@@ -205,8 +205,7 @@ function CustomerContact() {
 
           <div
             id="navbar-nav toggle"
-            className="justify-content-end"
-            className={`button_container button_container_contact ${isMenuOpen ? "active" : ""}`}
+            className={`justify-content-end button_container button_container_contact ${isMenuOpen ? "active" : ""}`}
             onClick={handleToggle}
           >
             <span className="top"></span>
@@ -219,13 +218,13 @@ function CustomerContact() {
               <div className="pl-6">Menu</div>
               <ul>
                 <li>
-                  <a href="#">About</a>
+                  <Link to="/">About</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link to="/">Services</Link>
                 </li>
                 <li>
-                  <a href="#">Team</a>
+                  <Link to="/">Team</Link>
                 </li>
                 <li>
                   <Link to="/portfolio">Portfolio</Link>
@@ -291,18 +290,18 @@ function CustomerContact() {
             style={{ height: "10%", justifyContent: "space-between" }}
           >
             {step > 1 && (
-              <a
+              <Link
                 className="previous-button form-btn-prev"
                 onClick={handlePrevious}
               >
                 <img className="w-50" src={Prev} alt="Previous" />
-              </a>
+              </Link>
             )}
 
             {step < 4 && (
-              <a className="next-button form-btn" onClick={handleNext}>
+              <Link className="next-button form-btn" onClick={handleNext}>
                 Continue
-              </a>
+              </Link>
             )}
 
             {step === 4 && (

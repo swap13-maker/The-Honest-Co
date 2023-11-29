@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import CreatorForm1 from "../components/CreatorForm1";
 import CreatorForm2 from "../components/CreatorForm2";
 import CreatorForm3 from "../components/CreatorForm3";
@@ -234,8 +234,7 @@ function CreatorContact() {
 
           <div
             id="navbar-nav toggle"
-            className="justify-content-end"
-            className={`button_container button_container_contact ${isMenuOpen ? "active" : ""}`}
+            className={`justify-content-end button_container button_container_contact ${isMenuOpen ? "active" : ""}`}
             onClick={handleToggle}
           >
             <span className="top"></span>

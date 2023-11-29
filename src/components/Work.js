@@ -83,7 +83,7 @@ function Work() {
           </div></Link>
         </div>
         <div className="gallery__item media-w-100 d-block">
-          <img src={work7} />
+          <img src={work7} alt=""/>
          <Link><div className="work-heading">Architectural Drawing</div>
           <div className="work-subheading">
             D2C & E-commerce · Branding · UI Design · Marketing

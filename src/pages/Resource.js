@@ -18,19 +18,19 @@ const Resource = () => {
 
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState('All');
-  const [filteredIndex, setFilteredIndex] = useState(0);
+  // const [filteredIndex, setFilteredIndex] = useState(0);
 
-  const handleButtonClick = (category) => {
-    setActiveCategory(category);
-    setFilteredIndex(0); // Reset the index
-  };
+  // const handleButtonClick = (category) => {
+  //   setActiveCategory(category);
+  //   setFilteredIndex(0); // Reset the index
+  // };
 
   const getItem = (cat) => {
     var updatedValue = Filter.filter((items) => {
       return items.category === cat;
     });
     setItem(updatedValue);
-    setFilteredIndex(0); // Reset the index
+    // setFilteredIndex(0); // Reset the index
   };
 
   return (
@@ -163,7 +163,7 @@ const Resource = () => {
 
             <div className="row custom-row mt-5 px-3">
               {item.map((data, index) => {
-                const { name, logo, category, image, description,url,alt } = data;
+                const { name, image, description,url,alt } = data;
                 
                 // Check if the index is 1, 4, 7, 10, 13, etc.
                 const cardClass = index % 3 === 1 ? "odd-res" : "even-res";
@@ -228,7 +228,7 @@ const Resource = () => {
             </div>
             <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
               <div className="portfolio-sub-heading d-flex align-items-center">
-                <a href="" className="m-0 font-size-15 text-decoration-underline">
+                <Link to="" className="m-0 font-size-15 text-decoration-underline">
                   Start your dream project with us
                   <svg
                     width="20"
@@ -243,7 +243,7 @@ const Resource = () => {
                       fill="black"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

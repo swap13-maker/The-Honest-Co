@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -66,7 +66,8 @@ function Project5() {
                   <br />
                   Application Development
                   <img
-                    class="blog-logo blog-hide"
+                    alt=""
+                    className="blog-logo blog-hide"
                     src={`https://thehonestco.in/react.svg`}
                   ></img>
                 </div>

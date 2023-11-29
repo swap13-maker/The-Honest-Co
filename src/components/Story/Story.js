@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../../App.css";
 import "../Slider.css";
 import "./story.css";
@@ -53,13 +53,14 @@ function Story() {
             src={storyGif}
             className="card-icon story__left__icon"
             width="100"
+            alt=""
           />
         </div>
         <div className="col-md-10 col-12 p-0">
           <Slider {...settings}>
             <div className="bg-white pt-1 w-440">
               <div className="py-4 story-icon">
-                <img src={icon1} className="card-icon py-3" />
+                <img src={icon1} className="card-icon py-3" alt=""/>
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -79,7 +80,7 @@ function Story() {
 
             <div className="bg-white w-440">
               <div className="py-4 story-icon">
-                <img src={icon2} className="card-icon py-2" />
+                <img src={icon2} className="card-icon py-2" alt=""/>
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -99,7 +100,7 @@ function Story() {
 
             <div className="bg-white w-440">
               <div className="py-4 story-icon">
-                <img src={icon3} className="card-icon pt-3 pb-2" />
+                <img src={icon3} className="card-icon pt-3 pb-2" alt="" />
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -119,7 +120,7 @@ function Story() {
 
             <div className="bg-white w-440">
               <div className="py-4 story-icon">
-                <img src={icon4} className="card-icon" />
+                <img src={icon4} className="card-icon" alt=""/>
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -139,7 +140,7 @@ function Story() {
             </div>
             <div className="bg-white w-440">
               <div className="py-4 story-icon last-icon">
-                <img src={icon4} className="card-icon" />
+                <img src={icon4} className="card-icon" alt=""/>
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">

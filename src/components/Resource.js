@@ -1,10 +1,7 @@
 import React from "react";
 import "./../App.css";
-import Blogs from "./Blogs";
 import CaseStudies1 from "./CaseStudies1";
 import CaseStudies1Mobile from "./CaseStudies1Mobile";
-import CaseStudies from "./CaseStudies";
-import resourceGif from '../images/resource.gif';
 import Lottie from "lottie-react";
 import loader from "../images/ResourcesSectionLanding.json";
 

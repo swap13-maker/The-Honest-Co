@@ -74,7 +74,7 @@ function Contact() {
           </div>
         </Container>
       </div>
-      <img src={backgroundFooter} width="100%" className="p-0 m-0" />
+      <img src={backgroundFooter} width="100%" className="p-0 m-0" alt="backfooter"/>
     </section>
   );
 }
