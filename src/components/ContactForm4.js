@@ -46,15 +46,17 @@ function ContactForm4({ onMoreChange }) {
         <Form.Group controlId="formName">
           <Form.Floating>
             <Form.Control
+              as="textarea"
               className="w-md-75 label-with-underline"
-              type="text"
               placeholder="Type here"
               value={more}
               onChange={handleMoreChange}
+              maxLength={200}
             />
             <Form.Label>Type here</Form.Label>
           </Form.Floating>
         </Form.Group>
+
       </div>
 
       <Form.Group className="pt-4" controlId="formCheckbox">

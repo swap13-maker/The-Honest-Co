@@ -103,12 +103,13 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
         <Form.Group className="pt-md-4 pt-2" controlId="formProject">
           <Form.Floating>
             <Form.Control
-              type="text"
+              as="textarea"
               name="project"
-              className="w-md-75 label-with-underline"
               placeholder="Tell us about your project"
               value={project}
+              className="w-md-75 label-with-underline"
               onChange={handleProjectChange}
+              maxLength={250}
             />
             <Form.Label>Tell us about your project</Form.Label>
           </Form.Floating>

@@ -144,6 +144,7 @@ function CreatorForm3({
                 placeholder="Enter your institution name"
                 value={studentInstitution}
                 onChange={handleStudentInstitutionChange}
+                maxLength={40}
               />
               <Form.Label>Institution name</Form.Label>
             </Form.Floating>
@@ -157,6 +158,7 @@ function CreatorForm3({
                 placeholder="Enter course type"
                 value={courseType}
                 onChange={handleCourseTypeChange}
+                maxLength={40}
               />
               <Form.Label>Course Type</Form.Label>
             </Form.Floating>
@@ -170,6 +172,7 @@ function CreatorForm3({
                 placeholder="Enter Course name"                
                 value={courseName}
                 onChange={handleCourseNameChange}
+                maxLength={40}
               />
               <Form.Label>Course Name</Form.Label>
             </Form.Floating>
@@ -183,6 +186,7 @@ function CreatorForm3({
                   placeholder="Enter your location"
                   value={studentLocation}
                   onChange={handleStudentLocationChange}
+                  maxLength={40}
                 />
                 <Form.Label>Location</Form.Label>
               </Form.Floating>
@@ -204,6 +208,7 @@ function CreatorForm3({
                 placeholder="Enter your Company name"
                 value={companyName}
                 onChange={handleCompanyNameChange}
+                maxLength={40}
               />
               <Form.Label>Company Name</Form.Label>
             </Form.Floating>
@@ -217,6 +222,7 @@ function CreatorForm3({
                 placeholder="Enter your location"
                 value={studentLocation}
                 onChange={handleStudentLocationChange}
+                maxLength={40}
               />
               <Form.Label>Current Location</Form.Label>
             </Form.Floating>
@@ -230,6 +236,7 @@ function CreatorForm3({
                 placeholder="Enter your designation"
                 value={designation}
                 onChange={handleDesignationChange}
+                maxLength={40}
               />
               <Form.Label>Designation</Form.Label>
             </Form.Floating>
@@ -243,6 +250,7 @@ function CreatorForm3({
                   placeholder="Enter your experience"
                   value={experience}
                   onChange={handleExperienceChange}
+                  maxLength={40}
                 />
                 <Form.Label>Total Experience</Form.Label>
               </Form.Floating>

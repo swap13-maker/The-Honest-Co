@@ -16,6 +16,14 @@ import { Helmet } from "react-helmet";
 import Banner from '../../images/Pro1Banner.jpg'
 import secondGrid from '../../images/pro1SecondaryBanner.jpg'
 import { Link } from "react-router-dom";
+import mob1 from '../../images/project1/MobileGrida.jpg'
+import mob2 from '../../images/project1/MobileGridb.jpg'
+import mob3 from '../../images/project1/MobileGridc.jpg'
+import mob4 from '../../images/project1/MobileGridd.jpg'
+import mob5 from '../../images/project1/WebGrida.jpg'
+import mob6 from '../../images/project1/WebGridb.jpg'
+import mob8 from '../../images/project1/WebGridd.jpg'
+import conclusion from '../../images/project1/conclusion.jpg'
 
 function Project1() {
   useEffect(() => {
@@ -48,7 +56,6 @@ function Project1() {
         ></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
-      <section className="header"></section>
       {/* mian content */}
       <section>
         <div className="container-fluid main-container">
@@ -66,20 +73,19 @@ function Project1() {
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
                   D2C E-Commerce Made
-                  <br /> Easy Via Mobile Applicationbr
+                  <br /> Easy Via Mobile Application
                   <br /> Development
                   <img
-                    alt=""
-                    className="blog-logo blog-hide"
+                    className="blog-logo blog-hide mx-3 d-none d-md-block"
                     src={`https://thehonestco.in/react.svg`}
                   ></img>
                 </div>
               </div>
-              <div className="col-12 col-md-5">
+              <div className="col-12 col-md-5 d-none d-sm-block">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4 d-none d-sm-block">Online Store</li>
-                    <li className="pt-4 d-none d-sm-block">
+                    <li className="pt-4">Online Store</li>
+                    <li className="pt-4">
                       Swift Order Tracking{" "}
                     </li>
                   </ul>
@@ -98,34 +104,50 @@ function Project1() {
             </div>
           </div>
         </div>
-        <img src={Banner} alt="" className="img-fluid w-100 my-4 py-3" />
+        <img src={Banner} alt="" className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0" />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 pb-4">
               <div className="proj-heading">
                 Scope
                 <hr className="w-40" />
               </div>
-              <div className="proj-content pb-4 w-80">
+              <div className="proj-content pb-4">
                 Enhancing the online buying experience by developing a mobile
                 application and a mobile responsive website for one of our
                 customers in the consumer food industry.
               </div>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob1}
+              ></img>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob2}
+              ></img>
             </div>
             <div className="col-12 col-md-6 px-3">
               <div className="proj-heading paddingLeft-even">
                 Solution
-                <hr className="w-40" />
+                <hr className="w-50" />
               </div>
               <div className="proj-content pb-4 w-100 paddingLeft-even">
                 Providing a seamless online buying experience by creating a
                 online digital platform for customers using the best of hybrid
                 mobile application development technologies.
               </div>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob3}
+              ></img>
+              <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob4}
+              ></img>
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
             </div>
           </div>
           <div className="row py-5">
@@ -142,13 +164,21 @@ function Project1() {
                 allows the user to better track their orders and statues.
               </div>
             </div>
-            <div className="col-12 Image_size">
+            <div className="col-12 Image_size d-none d-md-block">
               <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
+            </div>
+            <div className="col-12 pt-4 d-block d-md-none">
+              <img src={secondGrid} alt="" className="w-100" />
             </div>
           </div>
           {/* section2 */}
-          <div className="row py-5 pb-3">
-            <div className="col-12 col-md-6 py-5">
+          <div className="row py-md-5 py-4 pb-md-3 pb-0">
+            <div className="col-12 col-md-6 d-md-none d-flex">
+              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+                Order and Reorder
+              </div>
+            </div>
+            <div className="col-12 col-md-6 py-md-5 py-0">
               <div className="custom_left_text">
                 The enhanced order purchsing and cart payment flow allows the
                 user to easiily add multiple products and single click re-order
@@ -156,18 +186,26 @@ function Project1() {
                 <br />
               </div>
             </div>
-            <div className="col-12 col-md-6 d-flex">
+            {/* desktop only */}
+            <div className="col-12 col-md-6 d-none d-md-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
                 Order and Reorder
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-12 d-none d-md-block">
               <img src={Grid2} alt="" className="w-100 py-5" />
+            </div>
+            {/* mobile only */}
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob5} alt="" className="w-100" />
+            </div>
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob6} alt="" className="w-100" />
             </div>
           </div>
           {/* section3 */}
-          <div className="row py-4">
-            <div className="col-12 text-align-center">
+          <div className="row py-4 d-none">
+            <div className="col-12 text-align-center mobile-text-align-left">
               <div className="proj-heading">
                 Order Updates at Your Fingertips
               </div>
@@ -180,9 +218,14 @@ function Project1() {
                 of order.
               </div>
             </div>
-            <div className="col-12 d-flex">
+            {/* desktop */}
+            <div className="col-12 d-none d-md-flex">
               <img src={demo8} alt="" className="w-40 px-4 py-4" />
               <img src={demo9} alt="" className="w-100 px-4 py-4" />
+            </div>
+            {/* mobile */}
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob8} alt="" className="w-100" />
             </div>
           </div>
         </section>
@@ -201,61 +244,11 @@ function Project1() {
               our customer apart in terms of online purchasing experience.
             </div>
           </div>
-          {/* <div className="col-12 col-md-7 py-4">
-            <div className="proj-link text-align-end">
-              See our other work
-              <svg
-                width="20"
-                height="14"
-                viewBox="-10 0 25 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Vector"
-                  d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </div> */}
-          <div className="col-12 d-flex">
-            <img src={demo8} alt="" className="w-40 px-4 py-4" />
-            <img src={demo9} alt="" className="w-100 px-4 py-4" />
-          </div>
-          <div className="col-12 text-align-center">
-            <p className="px-5 py-3 text_containe">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's <br />
-              competitive marketplace by providing.
-            </p>
+          <div className="col-12">
+            <img src={conclusion} alt="" className="w-100 pt-3" />
           </div>
         </div>
       </section>
-      {/* section 4 */}
-      {/* <img src={demo10} alt="" className="w-100" /> */}
-      {/* newsletter */}
-      {/* <section className="bg-white py-4">
-        <div className="container main-container py-5">
-          <div className="row">
-            <div className="col-12 col-md-7">
-              <div className="newsletter">
-                Have an <span className="idea">idea</span>? <br />
-                Turn it into <span className="idea">reality</span>!
-              </div>
-              <div className="py-5">
-                <button className="bg-dark text-uppercase text-white font-weight-300 button">
-                  get started with us !
-                </button>
-              </div>
-            </div>
-            <div className="col-12 col-md-5 d-flex">
-              <div className="d-flex mx-auto align-items-center">video</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="other__work__container border-white">
         <div className="container main-container pb-5 pt-md-7">
           <div className="heading__wrapper">

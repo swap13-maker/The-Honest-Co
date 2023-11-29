@@ -6,7 +6,6 @@
 .custom_padding{
   padding-bottom: 100px;
 }
-
 .heading__wrapper {
   display: flex;
   justify-content: space-between;
@@ -123,5 +122,12 @@
   }
   .Image_baner{
     width: 140%;
+  }
+  .content_text{
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  .custom_padding{
+    padding-bottom: 40px;
   }
 }

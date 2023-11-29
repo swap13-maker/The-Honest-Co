@@ -89,8 +89,6 @@ const ChatComponent = () => {
     })
     .then((data) => {
       // Handle the response data here
-      // Testing
-      console.log(data);
       setFormData({ // Clear the form data
         name: "",
         email: "",
@@ -131,10 +129,12 @@ const ChatComponent = () => {
               <Form.Floating>
                 <Form.Control
                   type="text"
+                  className="label-with-underline"
                   placeholder="Enter your name"
                   name="name"
                   onChange={handleInputChange}
                   value={formData.name}
+                  required
                 />
                 <Form.Label>Name</Form.Label>
               </Form.Floating>
@@ -144,10 +144,12 @@ const ChatComponent = () => {
               <Form.Floating>
                 <Form.Control
                   type="email"
+                  className="label-with-underline"
                   placeholder="Enter your email"
                   name="email"
                   onChange={handleInputChange}
                   value={formData.email}
+                  required
                 />
                 <Form.Label>Email</Form.Label>
               </Form.Floating>
@@ -157,11 +159,13 @@ const ChatComponent = () => {
               <Form.Floating>
                 <Form.Control
                   type="number"
+                  className="label-with-underline"
                   placeholder="Enter your contact"
                   maxLength={10}
                   name="mobile"
                   onChange={handleInputChange}
                   value={formData.mobile}
+                  required
                 />
                 <Form.Label>Contact Number</Form.Label>
               </Form.Floating>
@@ -171,18 +175,20 @@ const ChatComponent = () => {
               <Form.Floating>
                 <Form.Control
                   type="text"
+                  className="label-with-underline"
                   placeholder="Enter your query"
                   name="query"
                   onChange={handleInputChange}
                   value={formData.query}
+                  required
                 />
                 <Form.Label>Query</Form.Label>
               </Form.Floating>
             </Form.Group>
 
             <div className="row py-4">
-              <div className="col-md-12 col-12">Area of Interest</div>
-              <div className="col-md-4 col-12">
+              <div className="col-md-12 col-12 pb-3">Area of Interest</div>
+              <div className="col-md-6 col-12">
                 {/* <Form.Group className="pt-1" controlId="architectural">
                   <Form.Check
                     className="chat-label"
@@ -204,8 +210,6 @@ const ChatComponent = () => {
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-              </div>
-              <div className="col-md-8 col-12">
                 <Form.Group className="pt-1" controlId="applicationDevelopment">
                   <Form.Check
                     className="chat-label"
@@ -216,7 +220,8 @@ const ChatComponent = () => {
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-
+              </div>
+              <div className="col-md-6 col-12">
                 <Form.Group className="pt-1" controlId="contentCreation">
                   <Form.Check
                     className="chat-label"

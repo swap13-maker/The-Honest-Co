@@ -67,6 +67,16 @@ function CustomerContact() {
 
   const [step, setStep] = useState(1);
   const handleNext = () => {
+    if (step === 1 && (!name || !email)) {
+      alert("Name and Email are required.");
+      return;
+    }
+
+    if (step === 2 && selectedCheckboxes.length === 0) {
+      alert("Select at least one area of interest.");
+      return;
+    }
+
     setStep((prevStep) => prevStep + 1);
   };
   const handlePrevious = () => {
@@ -299,7 +309,17 @@ function CustomerContact() {
             )}
 
             {step < 4 && (
-              <Link className="next-button form-btn" onClick={handleNext}>
+              <Link
+                className={`next-button form-btn ${
+                  (step === 1 && (!name || !email)) ||
+                  (step === 2 && selectedCheckboxes.length === 0) ? "disabled" : ""
+                }`}
+                disabled={
+                  (step === 1 && (!name || !email)) ||
+                  (step === 2 && selectedCheckboxes.length === 0)
+                }
+                onClick={handleNext}
+              >
                 Continue
               </Link>
             )}
@@ -308,6 +328,7 @@ function CustomerContact() {
               <button
                 className="submit-button form-btn"
                 onClick={handleSubmission}
+                disabled={!name || !email}
               >
                 Submit
               </button>

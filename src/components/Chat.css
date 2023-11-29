@@ -129,7 +129,7 @@
 @media (max-width: 768px) {
   .form-container {
     max-width: 100%;
-    padding: 0px 15px 20px 15px;
+    padding: 0px 15px 35px 15px;
     background-color: white;
     box-shadow: none;
   }
@@ -141,5 +141,14 @@
     border: none;
     z-index: 9999;
     background-color: #fff;
+  }
+  .flex-box {
+    padding: 1em 1em 2em 0;
+  }
+  .chat-label {
+    padding: 4px 0;
+  }
+  .form-floating {
+    padding: 5px 0;
   }
 }
