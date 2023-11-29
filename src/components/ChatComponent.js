@@ -253,7 +253,7 @@ const ChatComponent = () => {
           <div className="form-container">
 
             <div className="row pb-4">
-              <div className="col-12 resp-succ-img py-3"><img src={succLogo} width={80} /></div>
+              <div className="col-12 resp-succ-img py-3"><img src={succLogo} width={80} alt="logo"/></div>
               <div className="col-12 resp-succ-head pb-3">Your inquiry has been<br/>received!</div>
               <div className="col-12 resp-succ-bottom">and we're ready to bring your idea to life!</div>
             </div>

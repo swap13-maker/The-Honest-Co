@@ -21,7 +21,7 @@ const Portfolio = () => {
   const [item, setItem] = useState(Filter);
   const [activeCategory, setActiveCategory] = useState('All');
   const [isPortfolioAniHidden, setIsPortfolioAniHidden] = useState(false);
-  const [filteredIndex, setFilteredIndex] = useState(0);
+  // const [filteredIndex, setFilteredIndex] = useState(0);
 
   const togglePortfolioAni = () => {
     setIsPortfolioAniHidden(!isPortfolioAniHidden);
@@ -32,7 +32,7 @@ const Portfolio = () => {
       return items.category === cat;
     });
     setItem(updatedValue);
-    setFilteredIndex(0); // Reset the index
+    // setFilteredIndex(0); // Reset the index
   };
 
   return (
@@ -233,8 +233,8 @@ const Portfolio = () => {
             </div>
             <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
               <div className="portfolio-sub-heading d-flex align-items-center">
-                <a
-                  href=""
+                <Link
+                  to=""
                   className="m-0 font-size-15 text-decoration-underline"
                 >
                   Start your dream project with us
@@ -251,7 +251,7 @@ const Portfolio = () => {
                       fill="black"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
