@@ -9,10 +9,16 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro3Banner.jpg";
-import Grid from "../../images/Web Grid Tourway.jpg";
+import Grid from "../../images/tourway/Grid/Web Grid Tourway.jpg";
 import secondGrid from "../../images/pro3SecondaryBanner.jpg";
 import webGrid from "../../images/Mobile Grid TourWay.jpg";
-import conslusion from "../../images/Conclusion.jpg";
+import conslusion from "../../images/tourway/Conclusion.jpg";
+import mob1 from '../../images/tourway/Mobile Grid a.jpg'
+import mob2 from '../../images/tourway/Mobile Grid b.jpg'
+import mob3 from '../../images/tourway/Mobile Grid c.jpg'
+import mob5 from '../../images/tourway/Web Grid a.jpg'
+import mob6 from '../../images/tourway/Web Grid b.jpg'
+import mob7 from '../../images/tourway/Web Grid d.jpg'
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -41,6 +47,7 @@ function Project3() {
           name="keywords"
           content="Travel & Hospitality Custom Softwares Cab Hailing Platform Itinerary Management"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="header"></section>
@@ -98,31 +105,50 @@ function Project3() {
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 pb-4">
               <div className="proj-heading">
                 Scope
                 <hr className="w-40" />
               </div>
-              <div className="proj-content pb-4 w-80">
+              <div className="proj-content pb-4">
                 A single platform allowing users to send money and execute
                 utilities payment via an online mobile application to enhance
                 day to day transactions and better track bill payments and
                 finances.
               </div>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob1}
+              ></img>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob2}
+              ></img>
             </div>
             <div className="col-12 col-md-6 px-3">
-              <div className="proj-heading">
+              <div className="proj-heading paddingLeft-even">
                 Solution
-                <hr className="w-40" />
+                <hr className="w-50" />
               </div>
-              <div className="proj-content pb-4 w-80">
+              <div className="proj-content pb-4 w-100 paddingLeft-even">
                 Development of a cutting edge mobile based platform allowing
                 user to semmlessly transfer money and effortlessly manage their
                 finances ehancing the overall user experience and satisfaction.
               </div>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob3}
+              ></img>
+              {/* <img
+                className="d-block d-md-none w-100 py-2"
+                src={mob4}
+              ></img> */}
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
             </div>
           </div>
           <div className="row py-5">
@@ -140,35 +166,49 @@ function Project3() {
                 allowing the user hassel free utility bills settelment.
               </div>
             </div>
-            <div className="col-12 Image_size">
+            <div className="col-12 Image_size d-none d-md-block">
               <img
                 src={secondGrid}
                 alt=""
                 className="w-100 py-5  Image_baner"
               />
             </div>
+            <div className="col-12 pt-4 d-block d-md-none">
+              <img src={secondGrid} alt="" className="w-100" />
+            </div>
           </div>
           {/* section2 */}
-          {/* <div className="row py-5 pb-5">
-            <div className="col-12 col-md-6 pt-5">
-              <div>
-                We work with clients across a range of industries, helping them
-                to succeed and thrive in today's competitive marketplace by
-                providing. We work with clients across a range of industries.
-                <br />
-                <br />
-                We work with industries, helping them to succeed and thrive.
+          <div className="row py-md-5 py-4 pb-md-3 pb-0">
+            <div className="col-12 col-md-6 d-md-none d-flex">
+              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+                Order and Reorder
               </div>
             </div>
-            <div className="col-12 col-md-6 d-flex">
-              <div className="proj-heading d-flex align-items-center ml-auto">
-                The Honest Edge
+            <div className="col-12 col-md-6 py-md-5 py-0">
+              <div className="custom_left_text">
+                The enhanced order purchsing and cart payment flow allows the
+                user to easiily add multiple products and single click re-order
+                from the list of previous orders placed.
+                <br />
               </div>
             </div>
-            <div className="col-12">
-              <img src={demo7} alt="" className="w-100 py-5" />
+            {/* desktop only */}
+            <div className="col-12 col-md-6 d-none d-md-flex">
+              <div className="proj-heading d-flex align-items-center ml-auto py-5">
+                Order and Reorder
+              </div>
             </div>
-          </div> */}
+            {/* <div className="col-12 d-none d-md-block">
+              <img src={Grid2} alt="" className="w-100 py-5" />
+            </div> */}
+            {/* mobile only */}
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob5} alt="" className="w-100" />
+            </div>
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob6} alt="" className="w-100" />
+            </div>
+          </div>
           {/* section3 */}
           <div className="row py-5">
             <div className="col-12 text-align-center">
@@ -194,40 +234,15 @@ function Project3() {
             <div className="proj-heading">The Conclusion</div>
             <hr className="heading_line" />
           </div>
-          <div className="col-12 col-md-5 py-4">
+          <div className="col-12 col-md-5 py-2">
             <div className="w-100">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's competitive marketplace by
-              providing.
+              In the digital age, businesses must stand out online. With a clean
+              and optimized UI, we successfully delivered this project that sets
+              our customer apart in terms of online purchasing experience.
             </div>
           </div>
-          {/* <div className="col-12 col-md-7 py-4">
-            <div className="proj-link text-align-end">
-              See our other work
-              <svg
-                width="20"
-                height="14"
-                viewBox="-10 0 25 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Vector"
-                  d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </div> */}
-          <div className="col-12 d-flex">
-            <img src={conslusion} alt="" className="w-100 py-5" />
-          </div>
-          <div className="col-12 text-align-center">
-            <p className="px-5 py-3 pt-3 text_containe">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's competitive <br />
-              marketplace by providing.
-            </p>
+          <div className="col-12">
+            <img src={conslusion} alt="" className="w-100 pt-3" />
           </div>
         </div>
       </section>

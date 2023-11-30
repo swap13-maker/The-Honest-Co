@@ -9,10 +9,16 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro4Banner.jpg";
-import Grid from "../../images/Mobile Grid SOS.jpg";
-import secondGrid from "../../images/pro4SecondaryBanner.jpg";
+import Grid from "../../images/SOS+/Grid/Mobile Grid SOS.jpg";
+import Grid2 from '../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg'
+import secondGrid from "../../images/SOS+/Secondary Banner.jpg"
 import webGrid from "../../images/Mobile Grid 2 SOS.jpg";
 import conslusion from "../../images/Conclusion.jpg";
+import mob1 from '../../images/SOS+/Mobile Grid 1 a.jpg'
+import mob2 from '../../images/SOS+/Mobile Grid 1 b.jpg'
+import mob3 from '../../images/SOS+/Mobile Grid 1 c.jpg'
+import mob4 from '../../images/SOS+/Mobile Grid 2 a.jpg'
+import mob5 from '../../images/SOS+/Mobile Grid 2 b.jpg'
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -41,6 +47,7 @@ function Project4() {
           name="keywords"
           content="Location Sharing & Security · AI & ML · Live Tracking · SOS Mobile App "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="header"></section>
@@ -52,7 +59,7 @@ function Project4() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
             </li>
             <li className="current">SOS & Location Sharing Application </li>
           </ul>
@@ -66,27 +73,27 @@ function Project4() {
                   Online Platform
                   <img
                     alt=""
-                    className="blog-logo blog-hide"
+                    className="blog-logo blog-hide mx-3 d-none d-md-block"
                     src={`https://thehonestco.in/react.svg`}
                   ></img>
                 </div>
               </div>
-              <div className="col-12 col-md-5">
+              <div className="col-12 col-md-5 d-none d-sm-block">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4 d-none d-sm-block"> Live Tracking</li>
-                    <li className="pt-4 d-none d-sm-block">
-                    SOS Mobile App
+                    <li className="pt-4">Live Tracking</li>
+                    <li className="pt-4">
+                    SOS Mobile App{" "}
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="py-4">
                 <ul className="top-topics">
-                  <li className="d-block d-md-inline px-2">
+                  <li className="d-inline-block mb-2 mb-md-0 mr-md-2">
                     <a>Location Sharing & Security</a>
                   </li>
-                  <li className="px-4 d-block d-md-inline px-2">
+                  <li className="px-4 d-inline-block">
                     <a>AI & ML</a>
                   </li>
                 </ul>
@@ -94,96 +101,132 @@ function Project4() {
             </div>
           </div>
         </div>
-        <img src={Banner} alt="" className="w-100 my-4 pb-5" />
+        <img src={Banner} alt="" className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0" />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 pb-4">
               <div className="proj-heading">
                 Scope
                 <hr className="w-40" />
               </div>
-              <div className="proj-content pb-4 w-80">
-                A single platform allowing users to send money and execute
+              <div className="proj-content pb-4">
+              A single platform allowing users to send money and execute
                 utilities payment via an online mobile application to enhance
                 day to day transactions and better track bill payments and
                 finances.
               </div>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob1}
+              ></img>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob2}
+              ></img>
             </div>
             <div className="col-12 col-md-6 px-3">
-              <div className="proj-heading">
+              <div className="proj-heading paddingLeft-even">
                 Solution
-                <hr className="w-40" />
+                <hr className="w-50" />
               </div>
-              <div className="proj-content pb-4 w-80">
-                Development of a cutting edge mobile based platform allowing
+              <div className="proj-content pb-4 w-100 paddingLeft-even">
+              Development of a cutting edge mobile based platform allowing
                 user to semmlessly transfer money and effortlessly manage their
                 finances ehancing the overall user experience and satisfaction.
               </div>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob3}
+              ></img>
+              <img
+                alt=""
+                className="d-block d-md-none w-100 py-2"
+                src={mob4}
+              ></img>
             </div>
             <div className="col-12">
-              <img src={Grid} alt="" className="w-100 py-5" />
+              <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
             </div>
           </div>
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
-              <div className="proj-heading " style={{ paddingTop: "0px" }}>
-                One For All
+              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+              One For All
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-                A unique mobile application that allows users to pay almost all
+              A unique mobile application that allows users to pay almost all
                 of their online bills. The platform allows the user to pay
                 online via the multiple payment gateways and service channels.
                 The application offers a one for all bills payment solutions
                 allowing the user hassel free utility bills settelment.
               </div>
             </div>
-            <div className="col-12 Image_size">
-              <img
-                src={secondGrid}
-                alt=""
-                className="w-100 py-5  Image_baner"
-              />
+            <div className="col-12 Image_size d-none d-md-block">
+              <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
+            </div>
+            <div className="col-12 pt-4 d-block d-md-none">
+              <img src={secondGrid} alt="" className="w-100" />
             </div>
           </div>
           {/* section2 */}
-          {/* <div className="row py-5 pb-5">
-            <div className="col-12 col-md-6 pt-5">
-              <div>
-                We work with clients across a range of industries, helping them
-                to succeed and thrive in today's competitive marketplace by
-                providing. We work with clients across a range of industries.
-                <br />
-                <br />
-                We work with industries, helping them to succeed and thrive.
+          <div className="row py-md-5 py-4 pb-md-3 pb-0">
+            <div className="col-12 col-md-6 d-md-none d-flex">
+              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+                Order and Reorder
               </div>
             </div>
-            <div className="col-12 col-md-6 d-flex">
-              <div className="proj-heading d-flex align-items-center ml-auto">
-                The Honest Edge
+            <div className="col-12 col-md-6 py-md-5 py-0">
+              <div className="custom_left_text">
+                The enhanced order purchsing and cart payment flow allows the
+                user to easiily add multiple products and single click re-order
+                from the list of previous orders placed.
+                <br />
               </div>
             </div>
-            <div className="col-12">
-              <img src={demo7} alt="" className="w-100 py-5" />
+            {/* desktop only */}
+            <div className="col-12 col-md-6 d-none d-md-flex">
+              <div className="proj-heading d-flex align-items-center ml-auto py-5">
+                Order and Reorder
+              </div>
             </div>
-          </div> */}
+            <div className="col-12 d-none d-md-block">
+              <img src={Grid2} alt="" className="w-100 py-5" />
+            </div>
+            {/* mobile only */}
+            <div className="col-12 d-block d-md-none py-2">
+              <img src={mob5} alt="" className="w-100" />
+            </div>
+            {/* <div className="col-12 d-block d-md-none py-2">
+              <img src={mob6} alt="" className="w-100" />
+            </div> */}
+          </div>
           {/* section3 */}
-          <div className="row py-5">
-            <div className="col-12 text-align-center">
-              <div className="proj-heading">Seamless User Experience </div>
+          <div className="row py-4 d-none">
+            <div className="col-12 text-align-center mobile-text-align-left">
+              <div className="proj-heading">
+              Seamless User Experience
+              </div>
               <div className="proj-sub-heading py-3">
-                The mobile application allows the user to manage all the payment
+              The mobile application allows the user to manage all the payment
                 and also allows them to pay from their multiple banks allowing
                 the application to be a one-stop platform for all of their bills
                 and utilities payment.
-                
               </div>
             </div>
-            <div className="col-12">
-              <img src={webGrid} alt="" className="w-100 py-5" />
+            {/* desktop */}
+            <div className="col-12 d-none d-md-flex">
+            <img src={webGrid} alt="" className="w-100 py-5" />
             </div>
+            {/* mobile */}
+            {/* <div className="col-12 d-block d-md-none py-2">
+              <img src={mob8} alt="" className="w-100" />
+            </div> */}
           </div>
         </section>
       </section>

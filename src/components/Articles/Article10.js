@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
@@ -12,6 +12,9 @@ import {Article10Banner,Article10B10a,Article10B10b} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";
 export default function Article10() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();

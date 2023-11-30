@@ -24,6 +24,7 @@ import mob5 from '../../images/project1/WebGrida.jpg'
 import mob6 from '../../images/project1/WebGridb.jpg'
 import mob8 from '../../images/project1/WebGridd.jpg'
 import conclusion from '../../images/project1/conclusion.jpg'
+import Footer from "../Footer.js";
 
 function Project1() {
   useEffect(() => {
@@ -54,6 +55,7 @@ function Project1() {
           name="keywords"
           content="D2C & E-Commerce  Mobile Apps  Online Store  Swift Order Tracking "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       {/* mian content */}
@@ -76,6 +78,7 @@ function Project1() {
                   <br /> Easy Via Mobile Application
                   <br /> Development
                   <img
+                    alt=""
                     className="blog-logo blog-hide mx-3 d-none d-md-block"
                     src={`https://thehonestco.in/react.svg`}
                   ></img>
@@ -119,10 +122,12 @@ function Project1() {
                 customers in the consumer food industry.
               </div>
               <img
+                alt=""
                 className="d-block d-md-none w-100 py-2"
                 src={mob1}
               ></img>
               <img
+                alt=""
                 className="d-block d-md-none w-100 py-2"
                 src={mob2}
               ></img>
@@ -138,10 +143,12 @@ function Project1() {
                 mobile application development technologies.
               </div>
               <img
+                alt=""
                 className="d-block d-md-none w-100 py-2"
                 src={mob3}
               ></img>
               <img
+                alt=""
                 className="d-block d-md-none w-100 py-2"
                 src={mob4}
               ></img>
@@ -285,7 +292,7 @@ function Project1() {
             </Slider>
           </div>
         </div>
-
+        {/* <Footer/> */}
         {/* footer */}
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
