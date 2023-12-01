@@ -1,19 +1,22 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 8.jpg'
-import B8a from '../../images/B8a.jpg'
-import B8b from '../../images/B8b.jpg'
-import B8c from '../../images/B8c.jpg'
+import Banner from '../../images/Article/Article8/Banner 8.jpg'
+import B8a from '../../images/Article/Article8/B8a.jpg'
+import B8b from '../../images/Article/Article8/B8b.jpg'
+import B8c from '../../images/Article/Article8/B8c.jpg'
 import {Article8Banner,Article8B8a,Article8B8b,Article8B8c} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
 export default function Article8() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
@@ -71,6 +74,7 @@ export default function Article8() {
           content="digital development erp software development 
                   advancements in ed-tech mobile app development contract management softwares "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

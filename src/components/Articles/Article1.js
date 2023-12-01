@@ -10,10 +10,10 @@ import {
   Article1B1b,
   Article1B1c,
 } from "./Constant.js";
-import Banner from "../../images/Banner 1.jpg";
-import B1a from "../../images/B1a.jpg";
-import B1b from "../../images/B1b.jpg";
-import B1c from "../../images/B1c.jpg";
+import Banner from "../../images/Article/Article1/Banner 1.jpg";
+import B1a from "../../images/Article/Article1/B1a.jpg";
+import B1b from "../../images/Article/Article1/B1b.jpg";
+import B1c from "../../images/Article/Article1/B1c.jpg";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
@@ -79,6 +79,7 @@ export default function App() {
           content="money transfer app development custom software development 
                    mobile app development Online payments Finance "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="container main-container">

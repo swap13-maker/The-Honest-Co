@@ -1,18 +1,21 @@
-import React, { useRef } from "react";
+import React, { useRef ,useEffect} from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 11.jpg'
-import B11a from '../../images/B11a.jpg'
-import B11b from '../../images/B11b.jpg'
+import Banner from '../../images/Article/Article11/Banner 11.jpg'
+import B11a from '../../images/Article/Article11/B11a.jpg'
+import B11b from '../../images/Article/Article11/B11b.jpg'
 import {Article11Banner,Article11B11a,Article11B11b} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
 export default function Article11() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
@@ -70,6 +73,7 @@ export default function Article11() {
           content="custom crm hire php developers 
                    mobile app development e-commerce business advancements in ecommerce "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

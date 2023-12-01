@@ -1,19 +1,22 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 6.jpg'
-import B6a from '../../images/B6a.jpg'
-import B6b from '../../images/B6b.jpg'
-import B6c from '../../images/B6c.jpg'
+import Banner from '../../images/Article/Article6/Banner 6.jpg'
+import B6a from '../../images/Article/Article6/B6a.jpg'
+import B6b from '../../images/Article/Article6/B6b.jpg'
+import B6c from '../../images/Article/Article6/B6c.jpg'
 import {Article6Banner,Article6B6a,Article6B6b,Article6B6c} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
 export default function Article6() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
@@ -71,6 +74,7 @@ export default function Article6() {
           content="geofencing gps tracking uber like app development 
                    hybrid application development educational technology"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

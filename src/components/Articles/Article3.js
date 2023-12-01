@@ -1,17 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef ,useEffect} from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from "../../images/Banner 3.jpg";
-import B3a from "../../images/B3a.jpg";
-import B3b from "../../images/B3b.jpg";
+import Banner from "../../images/Article/Article3/Banner 3.jpg";
+import B3a from "../../images/Article/Article3/B3a.jpg";
+import B3b from "../../images/Article/Article3/B3b.jpg";
 import { Article3Banner, Article1B3a, Article1B3b } from "./Constant.js";
 import { Helmet } from "react-helmet";
 
 export default function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
@@ -69,6 +72,7 @@ export default function App() {
           content="plant diseases detection via mobile app 
             agriculture technology advanced farming artificial intelligence machine learning"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

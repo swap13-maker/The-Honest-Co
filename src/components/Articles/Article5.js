@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 5.jpg'
-import B5a from '../../images/B5a.jpg'
-import B5b from '../../images/B5b.jpg'
-import B5c from '../../images/B5c.jpg'
+import Banner from '../../images/Article/Article5/Banner 5.jpg'
+import B5a from '../../images/Article/Article5/B5a.jpg'
+import B5b from '../../images/Article/Article5/B5b.jpg'
+import B5c from '../../images/Article/Article5/B5c.jpg'
 import {Article5Banner,Article5B5a,Article5B5b,Article5B5c} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";
@@ -71,6 +71,7 @@ export default function Article5() {
           content="product forecasting customer segmentation python ai models 
                     product recommendations custom ai & ml development "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

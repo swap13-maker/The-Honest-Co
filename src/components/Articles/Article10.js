@@ -1,17 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 10.jpg'
-import B10a from '../../images/B10a.jpg'
-import B10b from '../../images/B10b.jpg'
+import Banner from '../../images/Article/Article10/Banner 10.jpg'
+import B10a from '../../images/Article/Article10/B10a.jpg'
+import B10b from '../../images/Article/Article10/B10b.jpg'
 import {Article10Banner,Article10B10a,Article10B10b} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";
 export default function Article10() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
@@ -69,6 +72,7 @@ export default function Article10() {
           content="staffing & recruitment machine learning 
                   artificial intelligence build an hr software digital development "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>
