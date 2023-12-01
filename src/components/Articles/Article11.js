@@ -73,6 +73,7 @@ export default function Article11() {
           content="custom crm hire php developers 
                    mobile app development e-commerce business advancements in ecommerce "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

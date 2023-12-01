@@ -74,6 +74,7 @@ export default function Article4() {
           content="ecommerce app development ecommerce store via wordpress
                   shopify development online store inventory & warehouse management"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

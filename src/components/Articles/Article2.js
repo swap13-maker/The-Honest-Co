@@ -71,6 +71,7 @@ export default function Article2() {
           content="finance & technology artificial intelligence machine learning custom app development 
                    crypto bot development "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="container main-container">

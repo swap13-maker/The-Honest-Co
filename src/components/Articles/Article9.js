@@ -74,6 +74,7 @@ export default function Article9() {
           content="calendly like app development online interview scheduling custom hrms development 
                   digital development in HR industry software development "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

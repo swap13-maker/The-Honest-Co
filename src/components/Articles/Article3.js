@@ -72,6 +72,7 @@ export default function App() {
           content="plant diseases detection via mobile app 
             agriculture technology advanced farming artificial intelligence machine learning"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

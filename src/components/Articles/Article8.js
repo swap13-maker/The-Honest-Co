@@ -74,6 +74,7 @@ export default function Article8() {
           content="digital development erp software development 
                   advancements in ed-tech mobile app development contract management softwares "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

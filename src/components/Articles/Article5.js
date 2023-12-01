@@ -71,6 +71,7 @@ export default function Article5() {
           content="product forecasting customer segmentation python ai models 
                     product recommendations custom ai & ml development "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

@@ -73,6 +73,7 @@ export default function Article7() {
           content="adaptive learning courses ai in educational technology ed-tech 
                    custom lms development learning management solutions "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

@@ -74,6 +74,7 @@ export default function Article6() {
           content="geofencing gps tracking uber like app development 
                    hybrid application development educational technology"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

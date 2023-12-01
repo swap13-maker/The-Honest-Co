@@ -72,6 +72,7 @@ export default function Article10() {
           content="staffing & recruitment machine learning 
                   artificial intelligence build an hr software digital development "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

@@ -79,6 +79,7 @@ export default function App() {
           content="money transfer app development custom software development 
                    mobile app development Online payments Finance "
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="container main-container">

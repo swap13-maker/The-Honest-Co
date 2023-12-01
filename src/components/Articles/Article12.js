@@ -74,6 +74,7 @@ export default function Article12() {
           content="fleet management softwares cab hailing mobile applications 
                   google maps integrations ai & ml technologies ev cab mobile app"
         ></meta>
+        <meta property="og:image" content={Banner} />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>
