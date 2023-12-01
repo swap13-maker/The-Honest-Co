@@ -306,7 +306,7 @@ function Project2() {
                 </header>
               </article>
               <h5 className="footer-content cool-link text-white">
-                <a href="" className="text-white">
+                <Link to="/get-in-touch/customer-inquiry" className="text-white">
                   Click here to start elevating your physical and digital
                   customer experiences.
                   <svg
@@ -324,7 +324,7 @@ function Project2() {
                       fill="white"
                     />
                   </svg>
-                </a>
+                </Link>
               </h5>
             </div>
             <div className="col-12 col-md-3 col-lg-3"></div>
@@ -356,53 +356,53 @@ function Project2() {
                 Application Development{" "}
               </div>
               <ul>
-                <li>
-                  <a href="#">Custom Software Development</a>
-                </li>
-                <li>
-                  <a href="#">Mobile Application Development</a>
-                </li>
-                <li>
-                  <a href="#">AI & ML solutions</a>
-                </li>
-                <li>
-                  <a href="#">Web3 & Blockchain</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="/portfolio">Custom Software Development</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Mobile Application Development</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">AI & ML solutions</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Web3 & Blockchain</Link>
+              </li>
+            </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Content Creation </div>
               <ul>
-                <li>
-                  <a href="#">Motion Graphics</a>
-                </li>
-                <li>
-                  <a href="#">2D/ 3D Graphics Design</a>
-                </li>
-                <li>
-                  <a href="#">Advertisements</a>
-                </li>
-                <li>
-                  <a href="#">Branding & Identify Design</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="/portfolio">Motion Graphics</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">2D/ 3D Graphics Design</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Advertisements</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Branding & Identify Design</Link>
+              </li>
+            </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Industrial Design </div>
               <ul>
-                <li>
-                  <a href="#">Product Design</a>
-                </li>
-                <li>
-                  <a href="#">Concept Development & Development</a>
-                </li>
-                <li>
-                  <a href="#">Manufacturing Support</a>
-                </li>
-                <li>
-                  <a href="#">Merchandizing & Packaging Designe</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="/portfolio">Product Design</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Concept Development & Development</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Manufacturing Support</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Merchandizing & Packaging Designe</Link>
+              </li>
+            </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Industrial </div>
@@ -430,72 +430,72 @@ function Project2() {
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Resources </div>
               <ul>
-                <li>
-                  <a href="#">Case Studies</a>
-                </li>
-                <li>
-                  <a href="#">Articles</a>
-                </li>
-                <li>
-                  <a href="#">White Papers</a>
-                </li>
-                <li>
-                  <a href="#">Tutorials</a>
-                </li>
-                <li>
-                  <a href="#">Infographics</a>
-                </li>
-                <li>
-                  <a href="#">Reports</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="/resources">Case Studies</Link>
+              </li>
+              <li>
+                <Link to="/resources">Articles</Link>
+              </li>
+              <li>
+                <Link to="/resources">White Papers</Link>
+              </li>
+              <li>
+                <Link to="/resources">Tutorials</Link>
+              </li>
+              <li>
+                <Link to="/resources">Infographics</Link>
+              </li>
+              <li>
+                <Link to="/resources">Reports</Link>
+              </li>
+            </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2">Portfolio</div>
               <ul>
-                <li>
-                  <a href="#">Application Development</a>
-                </li>
-                <li>
-                  <a href="#">Content Creation</a>
-                </li>
-                <li>
-                  <a href="#">Industrial Design</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="/portfolio">Application Development</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Content Creation</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Industrial Design</Link>
+              </li>
+            </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Connect With Us</div>
               <ul>
-                <li>
-                  <a href="#">LinkedIn</a>
-                </li>
-                <li>
-                  <a href="#">WhatsApp</a>
-                </li>
-                <li>
-                  <a href="#">Email</a>
-                </li>
-                <li>
-                  <a href="#">Get in touch</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="https://www.linkedin.com/company/the-honest-co">LinkedIn</Link>
+              </li>
+              <li>
+                <Link to="https://wa.me/917011242138">WhatsApp</Link>
+              </li>
+              <li>
+                <Link to="mailto:business@thehonestco.in">Email</Link>
+              </li>
+              <li>
+                <Link to="tel:+917011242138">Get in touch</Link>
+              </li>
+            </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2">Get In Touch </div>
               <ul>
-                <li>
-                  <a href="#">Are you a Customer</a>
-                </li>
-                <li>
-                  <a href="#">Are you a creator?</a>
-                </li>
-              </ul>
+              <li>
+                <Link to="/get-in-touch/customer-inquiry">Are you a Customer?</Link>
+              </li>
+              <li>
+                <Link to="/get-in-touch/creator-inquiry">Are you a creator?</Link>
+              </li>
+            </ul>
             </div>
 
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-              <div className="footer-heading mb-2"> hello@thehonestco.in </div>
-              <div className="footer-heading mb-2"> Terms & Conditions </div>
+            <Link to="mailto:business@thehonestco.in"><div className="footer-heading mb-2"> hello@thehonestco.in </div></Link>
+            <div className="footer-heading mb-2"> Terms & Conditions </div>
             </div>
           </div>
           <p className="post-footer pt-3 border-top text-center">
