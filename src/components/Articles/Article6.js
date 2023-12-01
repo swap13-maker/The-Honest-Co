@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 6.jpg'
-import B6a from '../../images/B6a.jpg'
-import B6b from '../../images/B6b.jpg'
-import B6c from '../../images/B6c.jpg'
+import Banner from '../../images/Article/Article6/Banner 6.jpg'
+import B6a from '../../images/Article/Article6/B6a.jpg'
+import B6b from '../../images/Article/Article6/B6b.jpg'
+import B6c from '../../images/Article/Article6/B6c.jpg'
 import {Article6Banner,Article6B6a,Article6B6b,Article6B6c} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";

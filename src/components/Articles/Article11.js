@@ -5,9 +5,9 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Banner 11.jpg'
-import B11a from '../../images/B11a.jpg'
-import B11b from '../../images/B11b.jpg'
+import Banner from '../../images/Article/Article11/Banner 11.jpg'
+import B11a from '../../images/Article/Article11/B11a.jpg'
+import B11b from '../../images/Article/Article11/B11b.jpg'
 import {Article11Banner,Article11B11a,Article11B11b} from './Constant.js'
 import "./Article.css";
 import { Helmet } from "react-helmet";

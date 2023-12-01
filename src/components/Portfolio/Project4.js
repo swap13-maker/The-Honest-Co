@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -23,6 +23,9 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function Project4() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const settings = {
     className: "slider variable-width",
     dots: false,
