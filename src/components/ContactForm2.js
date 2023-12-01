@@ -106,9 +106,8 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
               name="project"
               placeholder="Tell us about your project"
               value={project}
-              className="w-md-75 label-with-underline"
+              className="w-100 label-with-underline"
               onChange={handleProjectChange}
-              maxLength={250}
             />
             <Form.Label>Tell us about your project</Form.Label>
           </Form.Floating>

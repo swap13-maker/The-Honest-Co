@@ -190,7 +190,7 @@ function CustomerContact() {
                 {selectedCheckboxes.map((checkbox) => (
                   <li key={checkbox}>{checkbox}</li>
                 ))}
-                <li id="project">{project}</li>
+                <li id="project">{project && project.length > 130 ? project.substring(0, 130) + '...' : project}</li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 3 ? "active" : ""}`}>
@@ -203,7 +203,7 @@ function CustomerContact() {
             <div className={`progress-step ${step >= 4 ? "active" : ""}`}>
               4. Additional Info
               <ul className="sub-progress-step">
-                <li>{more}</li>
+                <li>{more && more.length > 130 ? more.substring(0, 130) + '...' : more}</li>
               </ul>
             </div>
           </div>
