@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import InnerHeader from "../components/InnerHeader.js";
 import "./../App.css";
 
-function Thanks() {
+function NotFound() {
   return (
     <section>
         <InnerHeader />
@@ -12,7 +12,7 @@ function Thanks() {
             <Row className="justify-content-center align-items-center vh-100">
                 <Col xs={11} sm={12} md={12}>
                 <div className="thanks-container text-center">
-                    <div className="thank-you">Thank You !</div>
+                    <div className="thank-you">OOPS !</div>
                     <div className="d-md-block d-grid">
                         <button className="bg-dark text-uppercase text-white font-weight-300 button-thanks mt-3">
                             <Link className="text-white" to="/">Go to home page</Link>
@@ -32,4 +32,5 @@ function Thanks() {
   );
 }
 
-export default Thanks;
+export default NotFound;
+

@@ -6,6 +6,7 @@ import CreatorContact from './pages/CreatorContact';
 import Portfolio from './pages/Portfolio.js';
 import Resource from './pages/Resource.js';
 import Thanks from './pages/Thanks.js';
+import NotFound from './pages/NotFound.js';
 import Project1 from './components/Portfolio/Project1.js';
 import Article1 from './components/Articles/Article1.js';
 import Article2 from './components/Articles/Article2';
@@ -26,7 +27,6 @@ import Project5 from './components/Portfolio/Project5.js';
 import Project6 from './components/Portfolio/Project6';
 import Project8 from './components/Portfolio/Project8';
 import Project9 from './components/Portfolio/Project9';
-
 
 function App() {
   return (
@@ -58,6 +58,7 @@ function App() {
         <Route path="/resources/articles/custom-crm-development-ecommerce-industries-businesses" element={<Article11 />} />
         <Route path="/resources/articles/effective-route-planning-fleet-management-airiticifal-intelligence-models" element={<Article12 />} />
         <Route path="/thankyou" element={<Thanks />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
