@@ -79,7 +79,7 @@ const Filter = [
   },
   {
     id: 7,
-    image: "project2.png",
+    image: Portfolio6,
     name: "Webshocker - Matjaz Valentar",
     category: "tab4",
     logo: "react.svg",
@@ -101,7 +101,7 @@ const Filter = [
   },
   {
     id: 9,
-    image: "project1.png",
+    image: Portfolio6,
     name: "Custom School Learning Platform ",
     category: "tab5",
     logo: "react.svg",
