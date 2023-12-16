@@ -1,21 +1,21 @@
 import React from "react";
 import "./../App.css";
-import work1 from "../images/OurWork_IFC.jpg";
-import mobwork1 from '../images/mobOurWork_IFC.png'
-import webwork2 from '../images/webOurWork_2.jpg'
-import mobwork2 from '../images/mobOurWork_2.jpg'
-import webwork3 from '../images/webOurWork_3.jpg'
-import mobmork3 from '../images/mobOurWork_3.jpg'
-import webwork4 from '../images/webOurWork_4.jpg'
-import mobwork4 from '../images/moobOurWork_4.jpg'
-import webwork5 from '../images/webOurWork_5.jpg'
-import mobwork5 from '../images/mobOurWork_5.png'
-import webwork6 from '../images/webOurWork_Giftly6.jpg'
-import mobwork6 from '../images/mobOurWork_Giftly6.png'
-import webwork8 from '../images/webOurWork_8.jpg'
-import mobwork8 from '../images/mobOurWork_8.png'
-import webwork9 from '../images/webOurWork_9.jpg'
-import mobwork9 from '../images/mobOurWork_9.png'
+import work1 from "../images/OurWork/OurWork_IFC.jpg";
+import mobwork1 from '../images/OurWork/mobOurWork_IFC.png'
+import webwork2 from '../images/OurWork/webOurWork_2.jpg'
+import mobwork2 from '../images/OurWork/mobOurWork_2.jpg'
+import webwork3 from '../images/OurWork/webOurWork_3.jpg'
+import mobmork3 from '../images/OurWork/mobOurWork_3.jpg'
+import webwork4 from '../images/OurWork/webOurWork_4.jpg'
+import mobwork4 from '../images/OurWork/moobOurWork_4.jpg'
+import webwork5 from '../images/OurWork/webOurWork_5.jpg'
+import mobwork5 from '../images/OurWork/mobOurWork_5.png'
+import webwork6 from '../images/OurWork/webOurWork_Giftly6.jpg'
+import mobwork6 from '../images/OurWork/mobOurWork_Giftly6.png'
+import webwork8 from '../images/OurWork/webOurWork_8.jpg'
+import mobwork8 from '../images/OurWork/mobOurWork_8.png'
+import webwork9 from '../images/OurWork/webOurWork_9.jpg'
+import mobwork9 from '../images/OurWork/mobOurWork_9.png'
 import { Link } from "react-router-dom";
 import work7 from "../images/work7.png";
 

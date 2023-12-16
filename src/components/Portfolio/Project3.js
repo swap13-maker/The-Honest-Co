@@ -11,7 +11,7 @@ import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro3Banner.jpg";
 import Grid from "../../images/tourway/Grid/Web Grid Tourway.jpg";
 import secondGrid from "../../images/pro3SecondaryBanner.jpg";
-import webGrid from "../../images/Mobile Grid TourWay.jpg";
+import webGrid from "../../images/tourway/Grid/Mobile Grid TourWay.jpg";
 import conclusion from "../../images/tourway/Conclusion.jpg";
 import mob1 from "../../images/tourway/Mobile Grid a.jpg";
 import mob2 from "../../images/tourway/Mobile Grid b.jpg";

@@ -1,11 +1,11 @@
 import React from "react";
 import "./../App.css";
 import "./Blogs.css";
-import blog1 from "../images/blog1.jpg";
-import blog2 from "../images/blog2.jpg";
-import blog3 from "../images/blog3.jpg";
-import blog4 from "../images/blog4.jpg";
-import blog5 from "../images/blog5.jpg";
+import blog1 from "../images/Blog/blog1.jpg";
+import blog2 from "../images/Blog/blog2.jpg";
+import blog3 from "../images/Blog/blog3.jpg";
+import blog4 from "../images/Blog/blog4.jpg";
+import blog5 from "../images/Blog/blog5.jpg";
 import { Link } from "react-router-dom";
 
 function Blogs() {
