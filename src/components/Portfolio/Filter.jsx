@@ -1,11 +1,11 @@
 // import Project8Image from "../../images/"
-import Portfolio1 from "../../images/portfolio_1.jpg"
-import Portfolio2 from "../../images/portfolio_2.jpg"
-import Portfolio3 from "../../images/portfolio_3.jpg"
-import Portfolio4 from "../../images/portfolio_4.jpg"
-import Portfolio5 from '../../images/Portfolio_5.jpg'
-import Portfolio6 from "../../images/portfolio_6.jpg"
-import Portfolio8 from "../../images/portfolio_8.jpg"
+import Portfolio1 from "../../images/Portfolio/portfolio_1.jpg"
+import Portfolio2 from "../../images/Portfolio/portfolio_2.jpg"
+import Portfolio3 from "../../images/Portfolio/portfolio_3.jpg"
+import Portfolio4 from "../../images/Portfolio/portfolio_4.jpg"
+import Portfolio5 from '../../images/Portfolio/Portfolio_5.jpg'
+import Portfolio6 from "../../images/Portfolio/portfolio_6.jpg"
+import Portfolio8 from "../../images/Portfolio/portfolio_8.jpg"
 
 const Filter = [
   {

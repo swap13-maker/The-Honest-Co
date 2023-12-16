@@ -1,9 +1,9 @@
 import React from "react";
-import indistry1 from "../images/indistry1.jpg";
-import indistry2 from "../images/indistry2.jpg";
-import indistry3 from "../images/indistry3.jpg";
-import indistry4 from "../images/indistry4.jpg";
-import indistry5 from "../images/indistry5.jpg";
+import indistry1 from "../images/Indistry/indistry1.jpg";
+import indistry2 from "../images/Indistry/indistry2.jpg";
+import indistry3 from "../images/Indistry/indistry3.jpg";
+import indistry4 from "../images/Indistry/indistry4.jpg";
+import indistry5 from "../images/Indistry/indistry5.jpg";
 import "aos/dist/aos.css";
 
 function Industries() {
