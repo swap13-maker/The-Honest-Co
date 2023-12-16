@@ -1,12 +1,12 @@
 import React from "react";
 import "./../App.css";
 import "./Blogs.css";
-import studies1 from "../images/Resources _01.jpg";
-import studies2 from "../images/Resources_02.jpg";
-import studies3 from "../images/Resources_03.jpg";
-import studies4 from "../images/Resources_04.jpg";
-import studies5 from "../images/Resources_05.jpg";
-import studies6 from "../images/Resources_06.jpg";
+import studies1 from "../images/Resources/Resources _01.jpg";
+import studies2 from "../images/Resources/Resources_02.jpg";
+import studies3 from "../images/Resources/Resources_03.jpg";
+import studies4 from "../images/Resources/Resources_04.jpg";
+import studies5 from "../images/Resources/Resources_05.jpg";
+import studies6 from "../images/Resources/Resources_06.jpg";
 import { Link } from "react-router-dom";
 
 function CaseStudies1() {

@@ -9,8 +9,8 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro6Banner.jpg";
-import Grid from "../../images/Mobile Grid Giftly.jpg";
-import Grid2 from '../../images/Mobile Grid 2 Giftly.jpg'
+import Grid from "../../images/GIftly/Grid/Mobile Grid Giftly.jpg";
+import Grid2 from '../../images/GIftly/Grid/Mobile Grid 2 Giftly.jpg'
 import mob1 from '../../images/GIftly/Mobile Grid 1 a.jpg'
 // import mob2 from '../../images/GIftly/Mobile Grid 1 b.jpg'
 import mob3 from '../../images/GIftly/Mobile Grid 1 c.jpg'
@@ -20,7 +20,7 @@ import mob6 from '../../images/GIftly/Web Grid b.jpg'
 import mob7 from '../../images/GIftly/Web Grid c.jpg'
 import mob8 from '../../images/GIftly/Web Grid d.jpg'
 import secondGrid from "../../images/pro6SecondaryBanner.jpg";
-import webGrid from "../../images/Web Grid Giftly.jpg";
+import webGrid from "../../images/GIftly/Web/Web Grid Giftly.jpg";
 import conclusion from "../../images/GIftly/Conclusion.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";

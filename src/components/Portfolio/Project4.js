@@ -13,7 +13,7 @@ import Banner from "../../images/pro4Banner.jpg";
 import Grid from "../../images/SOS+/Grid/Mobile Grid SOS.jpg";
 import Grid2 from '../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg'
 import secondGrid from "../../images/SOS+/Secondary Banner.jpg"
-import webGrid from "../../images/Mobile Grid 2 SOS.jpg";
+import webGrid from "../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg";
 import conslusion from "../../images/Conclusion.jpg";
 import mob1 from '../../images/SOS+/Mobile Grid 1 a.jpg'
 import mob2 from '../../images/SOS+/Mobile Grid 1 b.jpg'

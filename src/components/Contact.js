@@ -2,11 +2,11 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./../App.css";
 import "./Contact.css";
-import Cta1 from "../images/Cta1.jpg";
-import Cta1Hover from "../images/Cta1-hover.jpg";
-import Cta2 from "../images/Cta2.jpg";
-import Cta2Hover from "../images/Cta2-hover.jpg";
-import backgroundFooter from "../images/background.png";
+import Cta1 from "../images/LandingPages/Cta1.jpg";
+import Cta1Hover from "../images/LandingPages/Cta1-hover.jpg";
+import Cta2 from "../images/LandingPages/Cta2.jpg";
+import Cta2Hover from "../images/LandingPages/Cta2-hover.jpg";
+import backgroundFooter from "../images/LandingPages/background.png";
 import { Link } from "react-router-dom";
 
 function Contact() {

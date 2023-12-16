@@ -18,6 +18,9 @@ function LandingPage() {
     <div>
     <Helmet>
         <title>Honest Digital Services | Product Development Agency </title>
+        <meta property="og:title" content="Honest Digital Services | Product Development Agency"/>
+        <meta property="og:type" content=""/>
+        <meta property="og:description" content="Honest Digital Services | Product Development Agency"/>
         <meta
           name="description"
           content="Helping businesses create digital products. We specialize in creating taiored web and mobile app development, branding & content creation and packaing & industrial design."
