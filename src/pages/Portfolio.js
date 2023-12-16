@@ -19,7 +19,7 @@ const Portfolio = () => {
   }, []);
 
   const [item, setItem] = useState(Filter);
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
   const [isPortfolioAniHidden, setIsPortfolioAniHidden] = useState(false);
   // const [filteredIndex, setFilteredIndex] = useState(0);
 
@@ -37,16 +37,13 @@ const Portfolio = () => {
 
   return (
     <section>
-    <Helmet>
+      <Helmet>
         <title>Our Digital Solutions | Honest Digital Services </title>
         <meta
           name="description"
           content="Our portfolio of digital products created for businesses all across the world. Digitally transforming Banking & Finance, D2C & ECommerce, HealthCare, Staffing & Recruitment and other sectors for achieving business goals. "
         />
-        <meta
-          name="keywords"
-          content=""
-        ></meta>
+        <meta name="keywords" content=""></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       {/* Header */}
@@ -63,30 +60,7 @@ const Portfolio = () => {
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7">
-                <div className="top-heading d-none d-md-block" onClick={togglePortfolioAni}>
-                  The{" "}
-                  <span
-                    className={`portfolio-ani ${
-                      isPortfolioAniHidden ? "portfolio-ani-hidden" : ""
-                    }`}
-                  >
-                    honest
-                  </span>{" "}
-                  Projects
-                </div>
-
-                <div className="top-heading d-block d-md-none" onClick={togglePortfolioAni}>
-                  The
-                  <span
-                    className={`portfolio-ani ${
-                      isPortfolioAniHidden ? "portfolio-ani-hidden" : ""
-                    }`}
-                  >
-                    honest
-                  </span><br/>
-                  Projects
-                </div>
-                {/* <div className="top-heading">The <span className="portfolio-ani">honest</span> Projects</div> */}
+                <div className="top-heading">Honest Projects</div>
                 <div className="top-sub-heading py-4">
                   Our services have been divided into four categories based on
                   the kind of work we have done in the past.
@@ -197,7 +171,7 @@ const Portfolio = () => {
 
             <div className="row custom-row mt-5 px-3">
               {item.map((data, index) => {
-                const { name, logo, image, description,alt,url } = data;
+                const { name, logo, image, description, alt, url } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
                 const marginTopClass =
                   index === 0 || index === 1 ? "" : "margin-portolio";
@@ -213,7 +187,6 @@ const Portfolio = () => {
                     key={index}
                     alt={alt}
                     url={url}
-
                   />
                 );
               })}

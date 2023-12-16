@@ -39,6 +39,9 @@
   top: -45px;
   right: 0;
 }
+.close-btn > img {
+  width: 35px;
+}
 .open-button {
   background-color: #ffffff;
   color: white;

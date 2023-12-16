@@ -61,7 +61,7 @@ const Resource = () => {
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7">
-                <div className="top-heading">The Resources</div>
+                <div className="top-heading">Honest Resources</div>
                 <div className="top-sub-heading py-4">
                   Our services have been divided into four categories based on
                   the kind of work we have done in the past.
@@ -221,8 +221,7 @@ const Resource = () => {
               <div className="text-uppercase">
                 <h1 className="left-aligned portfolio-heading">
                   Want to build one
-                  <br />
-                  for yourself ?
+                  <br />for yourself ?
                 </h1>
               </div>
             </div>
