@@ -66,10 +66,10 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             <Form.Group className="pt-4" controlId="applicationDevelopment">
               <Form.Check
                 type="checkbox"
-                value="Application Development"
-                label="Application Development"
+                value="Custom Development"
+                label="Custom Development"
                 className="media-label-font-14"
-                checked={selectedCheckboxes.includes("Application Development")}
+                checked={selectedCheckboxes.includes("Custom Development")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>
@@ -77,10 +77,10 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             <Form.Group className="pt-4" controlId="contentCreation">
               <Form.Check
                 type="checkbox"
-                value="Content Creation"
-                label="Content Creation"
+                value="Mobile Application "
+                label="Mobile Application n"
                 className="media-label-font-14"
-                checked={selectedCheckboxes.includes("Content Creation")}
+                checked={selectedCheckboxes.includes("Mobile Application ")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>
@@ -89,10 +89,10 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             <Form.Group className="pt-4" controlId="industrial">
               <Form.Check
                 type="checkbox"
-                value="Industrial"
-                label="Industrial"
+                value="AI and ML Solutions  "
+                label="AI and ML Solutions  "
                 className="media-label-font-14"
-                checked={selectedCheckboxes.includes("Industrial")}
+                checked={selectedCheckboxes.includes("AI and ML Solutions  ")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>

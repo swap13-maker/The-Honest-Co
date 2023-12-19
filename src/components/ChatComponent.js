@@ -118,9 +118,9 @@ const ChatComponent = () => {
             <div className="flex-box">
               <img src={logo} width={100} alt="Logo" />
               <div className="text">
-                <div className="chat-heading">Unlock Answers</div>
+                <div className="chat-heading">Send us your inquiry! </div>
                 <div className="chat-sub-heading">
-                  Complete the inquiry form:
+                Someone from our team would reach out to you:
                 </div>
               </div>
             </div>
@@ -204,8 +204,8 @@ const ChatComponent = () => {
                   <Form.Check
                     className="chat-label"
                     type="checkbox"
-                    value="Industrial"
-                    label="Industrial"
+                    value="AI and ML Solutions  "
+                    label="AI and ML Solutions  "
                     name="interests"
                     onChange={handleInputChange}
                   />
@@ -214,8 +214,8 @@ const ChatComponent = () => {
                   <Form.Check
                     className="chat-label"
                     type="checkbox"
-                    value="Application Development"
-                    label="Application Development"
+                    value="Custom Development"
+                    label="Custom Development"
                     name="interests"
                     onChange={handleInputChange}
                   />
@@ -226,8 +226,8 @@ const ChatComponent = () => {
                   <Form.Check
                     className="chat-label"
                     type="checkbox"
-                    value="Content Creation"
-                    label="Content Creation"
+                    value="Mobile Application "
+                    label="Mobile Application "
                     name="interests"
                     onChange={handleInputChange}
                   />

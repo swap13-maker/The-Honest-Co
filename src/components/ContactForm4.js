@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function ContactForm4({ onMoreChange }) {
   const [more, setMore] = useState("");
@@ -23,7 +24,7 @@ function ContactForm4({ onMoreChange }) {
         How to <span className="font-weight-600 text-black"> Proceed!</span>
       </div>
       <div className="contact-main-heading font-weight-600 text-black text-decoration-underline text-uppercase pt-4">
-        SET UP cALL WITH US
+        <Link to="https://calendly.com/the-honest-co" className="text-black text-decoration-underline text-uppercase">SET UP cALL WITH US </Link>
         <svg
           width="20"
           height="14"

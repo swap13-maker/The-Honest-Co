@@ -108,11 +108,11 @@ function ContactForm3({ onTimelineChange, onBudgetChange }) {
               <input
                 type="radio"
                 name="budget"
-                value="< $50k"
-                checked={selectedBudget === "< $50k"}
+                value="< $ 5000"
+                checked={selectedBudget === "< $ 5000"}
                 onChange={handleBudgetChange}
               />{" "}
-              <span>&lt; $50k</span>
+              <span>{"< $ 5000"}</span>
             </label>
           </div>
 
@@ -121,11 +121,11 @@ function ContactForm3({ onTimelineChange, onBudgetChange }) {
               <input
                 type="radio"
                 name="budget"
-                value="$ 50k - 100k"
-                checked={selectedBudget === "$ 50k - 100k"}
+                value="$ 5K - 10K"
+                checked={selectedBudget === "$ 5K - 10K"}
                 onChange={handleBudgetChange}
               />{" "}
-              <span>$ 50k - 100k</span>
+              <span>{"$ 5K - 10K"}</span>
             </label>
           </div>
 
@@ -134,11 +134,11 @@ function ContactForm3({ onTimelineChange, onBudgetChange }) {
               <input
                 type="radio"
                 name="budget"
-                value="$ 100k - 200k"
-                checked={selectedBudget === "$ 100k - 200k"}
+                value="$ 10K - 25K"
+                checked={selectedBudget === "$ 10K - 25K"}
                 onChange={handleBudgetChange}
               />{" "}
-              <span>$ 100k - 200k</span>
+              <span>{"$ 10K - 25K"}</span>
             </label>
           </div>
 
@@ -147,11 +147,11 @@ function ContactForm3({ onTimelineChange, onBudgetChange }) {
               <input
                 type="radio"
                 name="budget"
-                value="< $200k +"
-                checked={selectedBudget === "< $200k +"}
+                value="> $ 25K"
+                checked={selectedBudget === "> $ 25K"}
                 onChange={handleBudgetChange}
               />{" "}
-              <span>&lt; $200k +</span>
+              <span>{"> $ 25K"}</span>
             </label>
           </div>
         </div>
