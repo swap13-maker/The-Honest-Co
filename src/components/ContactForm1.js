@@ -70,9 +70,9 @@ function ContactForm1({
   return (
     <div className="py-4 pr-40px">
       <div className="contact-heading">
-        <span className="font-weight-600 text-black">Got ideas?</span> We have
-        got the skills. <br />
-        <span className="font-weight-600 text-black">Let's team up.</span>
+        <span className="font-weight-600 text-black">Got ideas?</span> We have 
+        got the team. <br />
+        <span className="font-weight-600 text-black">Share your requirements with us.</span>
       </div>
 
       <div className="contact-form py-5">
