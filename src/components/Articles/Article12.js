@@ -1,15 +1,20 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Article/Article12/Banner 12.jpg'
-import B12a from '../../images/Article/Article12/B12a.jpg'
-import B12b from '../../images/Article/Article12/B12b.jpg'
-import B12c from '../../images/Article/Article12/B12c.jpg'
-import {Article12Banner,Article12B12a,Article12B12b,Article12B12c} from './Constant.js'
+import Banner from "../../images/Article/Article12/Banner 12.jpg";
+import B12a from "../../images/Article/Article12/B12a.jpg";
+import B12b from "../../images/Article/Article12/B12b.jpg";
+import B12c from "../../images/Article/Article12/B12c.jpg";
+import {
+  Article12Banner,
+  Article12B12a,
+  Article12B12b,
+  Article12B12c,
+} from "./Constant.js";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
@@ -86,22 +91,29 @@ export default function Article12() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">AI Fleet Management for Effective Route Planning</li>
+            <li className="current">
+              AI Fleet Management for Effective Route Planning
+            </li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
                 <div>
-                <h1 className="article-heading">
-                  Effective Route Planning & Fleet Management By <br />{" "}
-                  Airiticifal Inteligence Models</h1>
+                  <h1 className="article-heading">
+                    Effective Route Planning & Fleet Management By <br />{" "}
+                    Airiticifal Inteligence Models
+                  </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
                   <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
                   <h2 className="px-2">Logistics & Transportation</h2>
                 </div>
-                <img src={Banner} className="w-100 pt-5" alt={Article12Banner}/>
+                <img
+                  src={Banner}
+                  className="w-100 pt-5"
+                  alt={Article12Banner}
+                />
               </div>
 
               <div className="col-md-9">
@@ -136,7 +148,7 @@ export default function Article12() {
                     experiences, AI and ML are paving the way for transformative
                     changes in fleet management.
                     <br />
-                    <br/>
+                    <br />
                     AI and ML models offer a departure from the traditional
                     approaches, introducing real-time data analysis and pattern
                     recognition for instantaneous and accurate decision-making.
@@ -150,7 +162,7 @@ export default function Article12() {
                     real-time changes and evolving requirements.
                   </p>
                   <br />
-                  <img src={B12a} className="w-100 pt-5" alt={Article12B12a}/>
+                  <img src={B12a} className="w-100 pt-5" alt={Article12B12a} />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <h2 className="main-article-content">
@@ -176,7 +188,11 @@ export default function Article12() {
                     technology that is redefining traditional approaches and
                     driving the future of fleet management.
                     <br />
-                    <img src={B12b} className="w-100 pt-5" alt={Article12B12b}/>
+                    <img
+                      src={B12b}
+                      className="w-100 pt-5"
+                      alt={Article12B12b}
+                    />
                   </p>
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
@@ -231,7 +247,7 @@ export default function Article12() {
                     innovation and adaptability, much like AI and ML are shaping
                     the future in other sectors.
                   </p>
-                  <img src={B12c} className="w-100 pt-5" alt={Article12B12c}/>
+                  <img src={B12c} className="w-100 pt-5" alt={Article12B12c} />
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
                   <h2 className="main-article-content">The Vision Ahead</h2>
@@ -271,28 +287,30 @@ export default function Article12() {
                       Want to build one for yourself?
                     </div>
                     <div className="side-article-subheading pt-3">
-                      Let us help you with your dream project and some other
-                      text that will go here.
+                      Let us help you with your dream project, click below to
+                      send us your requirements.
                     </div>
-                    <div className="side-article-download pt-3">
-                      Download
-                      <svg
-                        width="20"
-                        height="14"
-                        viewBox="-10 0 25 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="animated-svg"
-                      >
-                        <path
-                          id="Vector"
-                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                      <div className="box-bottom-left"></div>
-                      <div className="Side_border-bottom"></div>
-                    </div>
+                    <Link to="/get-in-touch/customer-inquiry">
+                      <div className="side-article-download pt-3">
+                        Get In Touch
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="-10 0 25 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="animated-svg"
+                        >
+                          <path
+                            id="Vector"
+                            d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div className="box-bottom-left"></div>
+                        <div className="Side_border-bottom"></div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>

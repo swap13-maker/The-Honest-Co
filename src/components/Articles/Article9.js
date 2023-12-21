@@ -1,15 +1,20 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Article/Article9/Banner 9.jpg'
-import B9a from '../../images/Article/Article9/B9a.jpg'
-import B9b from '../../images/Article/Article9/B9b.jpg'
-import B9c from '../../images/Article/Article9/B9c.jpg'
-import {Article9Banner,Article9B9a,Article9B9b,Article9B9c} from './Constant.js'
+import Banner from "../../images/Article/Article9/Banner 9.jpg";
+import B9a from "../../images/Article/Article9/B9a.jpg";
+import B9b from "../../images/Article/Article9/B9b.jpg";
+import B9c from "../../images/Article/Article9/B9c.jpg";
+import {
+  Article9Banner,
+  Article9B9a,
+  Article9B9b,
+  Article9B9c,
+} from "./Constant.js";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
@@ -86,22 +91,25 @@ export default function Article9() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Efficient Interview Scheduling with Mobile Apps</li>
+            <li className="current">
+              Efficient Interview Scheduling with Mobile Apps
+            </li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
                 <div>
-                <h1 className="article-heading">
-                  Modernizing Interview Scheduling, Mobile Apps<br />{" "} 
-                  Enhancing Team Efficiency and Applicant Experience</h1>
+                  <h1 className="article-heading">
+                    Modernizing Interview Scheduling, Mobile Apps
+                    <br /> Enhancing Team Efficiency and Applicant Experience
+                  </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
                   <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Mobile App Development</h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
-                <img src={Banner} className="w-100 pt-5" alt={Article9Banner}/>
+                <img src={Banner} className="w-100 pt-5" alt={Article9Banner} />
               </div>
 
               <div className="col-md-9">
@@ -165,7 +173,7 @@ export default function Article9() {
                       </li>
                     </ul>
                   </p>
-                  <img src={B9a} className="w-100 pt-5" alt={Article9B9a}/>
+                  <img src={B9a} className="w-100 pt-5" alt={Article9B9a} />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <h2 className="main-article-content">
@@ -194,7 +202,7 @@ export default function Article9() {
                     the team.
                     <br />
                   </p>
-                  <img src={B9b} className="w-100 pt-5" alt={Article9B9b}/>
+                  <img src={B9b} className="w-100 pt-5" alt={Article9B9b} />
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
                   <h2 className="main-article-content">
@@ -268,7 +276,7 @@ export default function Article9() {
                       </li>
                     </ul>
                   </p>
-                  <img src={B9c} className="w-100 pt-5" alt={Article9B9c}/>
+                  <img src={B9c} className="w-100 pt-5" alt={Article9B9c} />
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
                   <h2 className="main-article-content">
@@ -308,28 +316,30 @@ export default function Article9() {
                       Want to build one for yourself?
                     </div>
                     <div className="side-article-subheading pt-3">
-                      Let us help you with your dream project and some other
-                      text that will go here.
+                      Let us help you with your dream project, click below to
+                      send us your requirements.
                     </div>
-                    <div className="side-article-download pt-3">
-                      Download
-                      <svg
-                        width="20"
-                        height="14"
-                        viewBox="-10 0 25 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="animated-svg"
-                      >
-                        <path
-                          id="Vector"
-                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                      <div className="box-bottom-left"></div>
-                      <div className="Side_border-bottom"></div>
-                    </div>
+                    <Link to="/get-in-touch/customer-inquiry">
+                      <div className="side-article-download pt-3">
+                        Get In Touch
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="-10 0 25 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="animated-svg"
+                        >
+                          <path
+                            id="Vector"
+                            d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div className="box-bottom-left"></div>
+                        <div className="Side_border-bottom"></div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>

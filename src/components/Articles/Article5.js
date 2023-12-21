@@ -5,11 +5,16 @@ import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Article/Article5/Banner 5.jpg'
-import B5a from '../../images/Article/Article5/B5a.jpg'
-import B5b from '../../images/Article/Article5/B5b.jpg'
-import B5c from '../../images/Article/Article5/B5c.jpg'
-import {Article5Banner,Article5B5a,Article5B5b,Article5B5c} from './Constant.js'
+import Banner from "../../images/Article/Article5/Banner 5.jpg";
+import B5a from "../../images/Article/Article5/B5a.jpg";
+import B5b from "../../images/Article/Article5/B5b.jpg";
+import B5c from "../../images/Article/Article5/B5c.jpg";
+import {
+  Article5Banner,
+  Article5B5a,
+  Article5B5b,
+  Article5B5c,
+} from "./Constant.js";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
@@ -83,14 +88,18 @@ export default function Article5() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Strategic Growth, AI & ML Forecasting Solutions</li>
+            <li className="current">
+              Strategic Growth, AI & ML Forecasting Solutions
+            </li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
                 <div>
-                  <h1 className="article-heading">Optimizing Forecasting and Customer Targeting <br />{" "}
-                  with AI and ML Solutions</h1>
+                  <h1 className="article-heading">
+                    Optimizing Forecasting and Customer Targeting <br /> with AI
+                    and ML Solutions
+                  </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
                   <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
@@ -156,7 +165,7 @@ export default function Article5() {
                       </li>
                     </ul>
                   </p>
-                  <img src={B5a} className="w-100 pt-5" alt={Article5B5a}/>
+                  <img src={B5a} className="w-100 pt-5" alt={Article5B5a} />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <h2 className="main-article-content">
@@ -176,7 +185,7 @@ export default function Article5() {
                     <br />
                     <br />
                   </p>
-                  <img src={B5b} className="w-100 pt-5" alt={Article5B5b}/>
+                  <img src={B5b} className="w-100 pt-5" alt={Article5B5b} />
                 </div>
                 <div className="pt-5" ref={section4Ref} id="section4">
                   <h2 className="main-article-content">
@@ -192,7 +201,7 @@ export default function Article5() {
                     a sudden surge in demand or external factors like regional
                     holidays.
                     <br />
-                    <br/>
+                    <br />
                     AI models can adjust sales forecasts in real-time,
                     responding dynamically to sudden market changes, be it a
                     global event affecting sales or a sudden surge in a
@@ -204,7 +213,7 @@ export default function Article5() {
                     on images that customers view or upload, tapping into
                     unstated preferences.
                   </p>
-                  <img src={B5c} className="w-100 pt-5" alt={Article5B5c}/>
+                  <img src={B5c} className="w-100 pt-5" alt={Article5B5c} />
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
                   <h2 className="main-article-content">
@@ -271,28 +280,30 @@ export default function Article5() {
                       Want to build one for yourself?
                     </div>
                     <div className="side-article-subheading pt-3">
-                      Let us help you with your dream project and some other
-                      text that will go here.
+                      Let us help you with your dream project, click below to
+                      send us your requirements.
                     </div>
-                    <div className="side-article-download pt-3">
-                      Download
-                      <svg
-                        width="20"
-                        height="14"
-                        viewBox="-10 0 25 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="animated-svg"
-                      >
-                        <path
-                          id="Vector"
-                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                      <div className="box-bottom-left"></div>
-                      <div className="Side_border-bottom"></div>
-                    </div>
+                    <Link to="/get-in-touch/customer-inquiry">
+                      <div className="side-article-download pt-3">
+                        Get In Touch
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="-10 0 25 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="animated-svg"
+                        >
+                          <path
+                            id="Vector"
+                            d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div className="box-bottom-left"></div>
+                        <div className="Side_border-bottom"></div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
