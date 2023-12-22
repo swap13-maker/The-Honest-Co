@@ -17,11 +17,12 @@ import B1c from "../../images/Article/Article1/B1c.jpg";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
+
 export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const section1Ref = useRef();
   const section2Ref = useRef();
   const section3Ref = useRef();
@@ -91,7 +92,9 @@ export default function App() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Global Commerce & Remittance Solutions for Businesses</li>
+            <li className="current">
+              Global Commerce & Remittance Solutions for Businesses
+            </li>
           </ul>
           <div className="py-4">
             <div className="row">
@@ -273,28 +276,30 @@ export default function App() {
                       Want to build one for yourself?
                     </div>
                     <div className="side-article-subheading pt-3">
-                      Let us help you with your dream project and some other
-                      text that will go here.
+                      Let us help you with your dream project, click below to
+                      send us your requirements.
                     </div>
-                    <div className="side-article-download pt-3">
-                      Download
-                      <svg
-                        width="20"
-                        height="14"
-                        viewBox="-10 0 25 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="animated-svg"
-                      >
-                        <path
-                          id="Vector"
-                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                      <div className="box-bottom-left"></div>
-                      <div className="Side_border-bottom"></div>
-                    </div>
+                    <Link to="/get-in-touch/customer-inquiry">
+                      <div className="side-article-download pt-3">
+                        Get In Touch
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="-10 0 25 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="animated-svg"
+                        >
+                          <path
+                            id="Vector"
+                            d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div className="box-bottom-left"></div>
+                        <div className="Side_border-bottom"></div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>

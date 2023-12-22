@@ -1,14 +1,14 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Article/Article10/Banner 10.jpg'
-import B10a from '../../images/Article/Article10/B10a.jpg'
-import B10b from '../../images/Article/Article10/B10b.jpg'
-import {Article10Banner,Article10B10a,Article10B10b} from './Constant.js'
+import Banner from "../../images/Article/Article10/Banner 10.jpg";
+import B10a from "../../images/Article/Article10/B10a.jpg";
+import B10b from "../../images/Article/Article10/B10b.jpg";
+import { Article10Banner, Article10B10a, Article10B10b } from "./Constant.js";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 export default function Article10() {
@@ -90,16 +90,21 @@ export default function Article10() {
             <div className="row">
               <div className="col-12 text-align-center">
                 <div>
-                <h1 className="article-heading">
-                  Machine Learning Models Streamlining Application <br />{" "}
-                  Filtration and Shortlisting in HR Operations</h1>
+                  <h1 className="article-heading">
+                    Machine Learning Models Streamlining Application <br />{" "}
+                    Filtration and Shortlisting in HR Operations
+                  </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
                   <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
-                <img src={Banner} className="w-100 pt-5" alt={Article10Banner}/>
+                <img
+                  src={Banner}
+                  className="w-100 pt-5"
+                  alt={Article10Banner}
+                />
               </div>
 
               <div className="col-md-9">
@@ -166,7 +171,11 @@ export default function Article10() {
                       </li>
                       <br />
                     </ul>
-                  <img src={B10a} className="w-100 pt-5" alt={Article10B10a} />
+                    <img
+                      src={B10a}
+                      className="w-100 pt-5"
+                      alt={Article10B10a}
+                    />
                   </p>
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
@@ -210,7 +219,7 @@ export default function Article10() {
                     crucial, especially in scenarios where HR teams are
                     inundated with a high volume of applications.
                     <br />
-                    <br/>
+                    <br />
                     Another notable benefit is the increased efficiency brought
                     about by machine algorithms. The automation of application
                     filtering minimizes human errors, ensuring a more accurate
@@ -227,8 +236,11 @@ export default function Article10() {
                     shortlisted applications, ensuring that the candidates
                     selected have a higher probability of success based on
                     historical performance trends.
-                   
-                    <img src={B10b} className="w-100 pt-5" alt={Article10B10b}/>
+                    <img
+                      src={B10b}
+                      className="w-100 pt-5"
+                      alt={Article10B10b}
+                    />
                   </p>
                 </div>
                 <div className="pt-5" ref={section5Ref} id="section5">
@@ -294,28 +306,30 @@ export default function Article10() {
                       Want to build one for yourself?
                     </div>
                     <div className="side-article-subheading pt-3">
-                      Let us help you with your dream project and some other
-                      text that will go here.
+                      Let us help you with your dream project, click below to
+                      send us your requirements.
                     </div>
-                    <div className="side-article-download pt-3">
-                      Download
-                      <svg
-                        width="20"
-                        height="14"
-                        viewBox="-10 0 25 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="animated-svg"
-                      >
-                        <path
-                          id="Vector"
-                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                      <div className="box-bottom-left"></div>
-                      <div className="Side_border-bottom"></div>
-                    </div>
+                    <Link to="/get-in-touch/customer-inquiry">
+                      <div className="side-article-download pt-3">
+                        Get In Touch
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="-10 0 25 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="animated-svg"
+                        >
+                          <path
+                            id="Vector"
+                            d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div className="box-bottom-left"></div>
+                        <div className="Side_border-bottom"></div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,15 +1,20 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import ScrollHighlightNabbar from "./ScrollHighlightNavbar";
 import "./../../App.css";
 import "aos/dist/aos.css";
 import InnerHeader from "../InnerHeader.js";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import Banner from '../../images/Article/Article8/Banner 8.jpg'
-import B8a from '../../images/Article/Article8/B8a.jpg'
-import B8b from '../../images/Article/Article8/B8b.jpg'
-import B8c from '../../images/Article/Article8/B8c.jpg'
-import {Article8Banner,Article8B8a,Article8B8b,Article8B8c} from './Constant.js'
+import Banner from "../../images/Article/Article8/Banner 8.jpg";
+import B8a from "../../images/Article/Article8/B8a.jpg";
+import B8b from "../../images/Article/Article8/B8b.jpg";
+import B8c from "../../images/Article/Article8/B8c.jpg";
+import {
+  Article8Banner,
+  Article8B8a,
+  Article8B8b,
+  Article8B8c,
+} from "./Constant.js";
 import "./Article.css";
 import { Helmet } from "react-helmet";
 
@@ -86,22 +91,25 @@ export default function Article8() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            <li className="current">Easy Contract Management, Custom App Solutions</li>
+            <li className="current">
+              Easy Contract Management, Custom App Solutions
+            </li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 text-align-center">
                 <div>
-                <h1 className="article-heading">
-                  Contract Management Modules, Automating <br /> Contracts Made
-                  Easy Via Custom App Development</h1>
+                  <h1 className="article-heading">
+                    Contract Management Modules, Automating <br /> Contracts
+                    Made Easy Via Custom App Development
+                  </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
                   <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Custom Development</h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
-                <img src={Banner} className="w-100 pt-5" alt={Article8Banner}/>
+                <img src={Banner} className="w-100 pt-5" alt={Article8Banner} />
               </div>
 
               <div className="col-md-9">
@@ -152,15 +160,16 @@ export default function Article8() {
                       </li>
                       <br />
                       <li>
-                        <b>Scalability:</b> As businesses grow, so do their demands.
-                        Custom applications have the advantage of evolving in
-                        tandem with the organization, ensuring longevity and
-                        relevance. This scalability is a significant contrast to
-                        premade solutions that may lack flexibility and could
-                        potentially entail costly upgrades. Whether your
-                        organization's HR requirements expand or contract,
-                        custom apps are poised to adapt effortlessly, ensuring
-                        that your workflow remains efficient.
+                        <b>Scalability:</b> As businesses grow, so do their
+                        demands. Custom applications have the advantage of
+                        evolving in tandem with the organization, ensuring
+                        longevity and relevance. This scalability is a
+                        significant contrast to premade solutions that may lack
+                        flexibility and could potentially entail costly
+                        upgrades. Whether your organization's HR requirements
+                        expand or contract, custom apps are poised to adapt
+                        effortlessly, ensuring that your workflow remains
+                        efficient.
                       </li>
                       <br />
                       <li>
@@ -174,7 +183,7 @@ export default function Article8() {
                       </li>
                     </ul>
                   </p>
-                  <img src={B8a} className="w-100 pt-5" alt={Article8B8a}/>
+                  <img src={B8a} className="w-100 pt-5" alt={Article8B8a} />
                 </div>
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <h2 className="main-article-content">
@@ -271,7 +280,7 @@ export default function Article8() {
                     accessibility of your contract management processes.
                     <br />
                   </p>
-                  <img src={B8c} className="w-100 pt-5" alt={Article8B8c}/>
+                  <img src={B8c} className="w-100 pt-5" alt={Article8B8c} />
                 </div>
                 <div className="pt-5" ref={section6Ref} id="section6">
                   <h2 className="main-article-content">
@@ -311,28 +320,30 @@ export default function Article8() {
                       Want to build one for yourself?
                     </div>
                     <div className="side-article-subheading pt-3">
-                      Let us help you with your dream project and some other
-                      text that will go here.
+                      Let us help you with your dream project, click below to
+                      send us your requirements.
                     </div>
-                    <div className="side-article-download pt-3">
-                      Download
-                      <svg
-                        width="20"
-                        height="14"
-                        viewBox="-10 0 25 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="animated-svg"
-                      >
-                        <path
-                          id="Vector"
-                          d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                      <div className="box-bottom-left"></div>
-                      <div className="Side_border-bottom"></div>
-                    </div>
+                    <Link to="/get-in-touch/customer-inquiry">
+                      <div className="side-article-download pt-3">
+                        Get In Touch
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="-10 0 25 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="animated-svg"
+                        >
+                          <path
+                            id="Vector"
+                            d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                        <div className="box-bottom-left"></div>
+                        <div className="Side_border-bottom"></div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
