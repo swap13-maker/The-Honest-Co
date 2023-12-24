@@ -10,6 +10,9 @@
  
 
 }
+.ArticlelottioArrow{
+  width: 50% !important;
+}
 .border-right{
     position: absolute;
     top: -8px;

@@ -198,6 +198,10 @@ h1 {
   font-size: 1.2rem;
   color: lightgrey;
 }
+.footerArrow{
+  margin-left: 100px;
+  width: 5%;
+}
 /* gradient effect */
 @keyframes animationgradienttitle {
   0% {
@@ -473,6 +477,11 @@ h1 {
   .lottioArrow{
     width: 9% !important;
   }
+  .footerArrow{
+    margin-left: 110px; 
+    margin-top: -25px;
+    width: 4% !important;
+  }
   .heading-logo {
     margin-left: 8%;
   }
@@ -487,6 +496,11 @@ h1 {
 @media (max-width: 768px) {
   .pb-sm-0 {
     padding-bottom: 0px !important;
+  }
+  .footerArrow{
+    margin-left: 125px; /* Override margin for mobile */
+    margin-top: -15px;
+    width: 5% !important;
   }
   .mob-pt-2 {
     padding-top: 1.3rem;

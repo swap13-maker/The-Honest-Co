@@ -18,6 +18,9 @@
   background: #000;
   transition: width 0.3s;
 }
+.CasestudiesArrow{
+  width: 35% !important;
+}
 
 .blog-card,
 .blog_left {
@@ -235,6 +238,12 @@
 .animated-svg {
   animation: moveUpAndDown 3s ease-in-out infinite;
 }
+/* .mobileArrow{
+  width: 9% !important;
+}
+.projectArrow{
+  width: 7% !important;
+} */
 @keyframes moveUpAndDown {
   0% {
     opacity: 1;

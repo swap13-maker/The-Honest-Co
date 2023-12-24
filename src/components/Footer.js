@@ -2,6 +2,8 @@ import React from "react";
 import "./../App.css";
 import myFooterLogo from "../images/footer-logo.svg";
 import { Link } from "react-router-dom";
+import Arrow from "../images/White_Arrow.json";
+import Lottie from "lottie-react";
 
 function Footer() {
   return (
@@ -25,21 +27,17 @@ function Footer() {
               <Link to="/get-in-touch/customer-inquiry" className="text-white">
                 Click here to start elevating your physical and digital customer
                 experiences.
-              <svg
-                width="30"
-                height="16"
-                viewBox="-10 0 25 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="animated-svg"
-                style={{marginLeft:'-6px'}}
-              >
-                <path
-                  id="Vector"
-                  d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                  fill="white"
-                />
-              </svg>
+                {/* <div
+                  className="col-12 col-md-8 col-lg-3 d-flex justify-content-start"
+                 
+                > */}
+                  <Lottie
+                    animationData={Arrow}
+                    autoplay
+                    loop
+                    className="w-xs-100 w-md-12 footerArrow"
+                  />
+                {/* </div> */}
               </Link>
             </h5>
           </div>
@@ -87,10 +85,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col-6 pt-media-4 col-md-custom-footer-3 footer-card">
-            <div className="footer-heading mb-2">
-              {" "}
-             Content Creation{" "}
-            </div>
+            <div className="footer-heading mb-2"> Content Creation </div>
             <ul>
               <li>
                 <Link to="/portfolio">Motion Graphics</Link>
@@ -107,10 +102,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col-6 pt-media-4 col-md-custom-footer-4 footer-card">
-            <div className="footer-heading mb-2">
-              {" "}
-             Industrial Design{" "}
-            </div>
+            <div className="footer-heading mb-2"> Industrial Design </div>
             <ul>
               <li>
                 <Link to="/portfolio">Product Design</Link>
@@ -190,7 +182,9 @@ function Footer() {
             <div className="footer-heading mb-2"> Connect With Us</div>
             <ul>
               <li>
-                <Link to="https://www.linkedin.com/company/the-honest-co">LinkedIn</Link>
+                <Link to="https://www.linkedin.com/company/the-honest-co">
+                  LinkedIn
+                </Link>
               </li>
               <li>
                 <Link to="https://wa.me/917011242138">WhatsApp</Link>
@@ -207,16 +201,22 @@ function Footer() {
             <div className="footer-heading mb-2">Get In Touch </div>
             <ul>
               <li>
-                <Link to="/get-in-touch/customer-inquiry">Are you a Customer?</Link>
+                <Link to="/get-in-touch/customer-inquiry">
+                  Are you a Customer?
+                </Link>
               </li>
               <li>
-                <Link to="/get-in-touch/creator-inquiry">Are you a creator?</Link>
+                <Link to="/get-in-touch/creator-inquiry">
+                  Are you a creator?
+                </Link>
               </li>
             </ul>
           </div>
-          
+
           <div className="col-6 pt-media-4 col-md-custom-footer-5 footer-card">
-            <Link to="mailto:business@thehonestco.in"><div className="footer-heading mb-2"> hello@thehonestco.in </div></Link>
+            <Link to="mailto:business@thehonestco.in">
+              <div className="footer-heading mb-2"> hello@thehonestco.in </div>
+            </Link>
             <div className="footer-heading mb-2"> Terms & Conditions </div>
           </div>
         </div>

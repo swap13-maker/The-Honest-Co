@@ -25,7 +25,7 @@ function Story() {
 
   return (
     <>
-      <section className="container pb-sm-0 pt-5 pb-md-5 mt-md-5 mt-0 story__container">
+      <section className="container pb-sm-0 pt-5 pb-md-5 mt-md-5 mt-0 story__container" id="Ourstory">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
