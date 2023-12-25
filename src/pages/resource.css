@@ -46,6 +46,9 @@
 .margin-resourse > .wrapper {
   margin-top: -20%;
 }
+.resourceArrow{
+  width: 5% !important;
+}
 @media (max-width: 768px) {
   .margin-resourse > .wrapper {
     margin-top: 0 !important;
@@ -53,5 +56,9 @@
   .resource__page .wrapper::after {
     content: none !important;
     bottom: 0;
+  }
+  .resourceArrow{
+    margin-left: 60px !important;
+    margin-top: -15px !important;
   }
 }

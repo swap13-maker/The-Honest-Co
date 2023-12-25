@@ -10,6 +10,7 @@ import Lottie from "lottie-react";
 import loader from "../images/ResourceListing.json";
 import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
+import Arrow from "../images/Arrow.json";
 
 const Resource = () => {
   useEffect(() => {
@@ -17,7 +18,7 @@ const Resource = () => {
   }, []);
 
   const [item, setItem] = useState(Filter);
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
   // const [filteredIndex, setFilteredIndex] = useState(0);
 
   // const handleButtonClick = (category) => {
@@ -42,11 +43,9 @@ const Resource = () => {
           name="description"
           content="Our resources by the team of The Honest Company in the process of executing our projects for the digital product developments."
         />
-        <meta
-          name="keywords"
-          content=""
-        ></meta>
+        <meta name="keywords" content=""></meta>
         <meta name="author" content="Karthik Nath"></meta>
+        
       </Helmet>
       <InnerHeader />
       {/* mian content */}
@@ -163,12 +162,14 @@ const Resource = () => {
 
             <div className="row custom-row mt-5 px-3">
               {item.map((data, index) => {
-                const { name, image, description,url,alt } = data;
-                
+                const { name, image, description, url, alt } = data;
+
                 // Check if the index is 1, 4, 7, 10, 13, etc.
                 const cardClass = index % 3 === 1 ? "odd-res" : "even-res";
                 const marginTopClass =
-                  index === 0 || index === 1 || index === 2 ? "" : "margin-resourse";
+                  index === 0 || index === 1 || index === 2
+                    ? ""
+                    : "margin-resourse";
 
                 return (
                   <div
@@ -178,31 +179,32 @@ const Resource = () => {
                     <div className="wrapper">
                       <div className="zoom-effect-container">
                         <div className="image__wrapper">
-                        <Link to={url}>
-                          <img className="card-img-top" src={image} alt={alt}/>
-                        </Link>  
+                          <Link to={url}>
+                            <img
+                              className="card-img-top"
+                              src={image}
+                              alt={alt}
+                            />
+                          </Link>
                         </div>
                         <div className="pb-4">
                           <div className="blog-heading">{name}</div>
                           <div className="blog-title">
                             {description}
-                            <Link to={url} style={{color:'black'}}>
-                            <div className="pt-3 text-decoration-underline cursor-pointer">
-                              Read More
-                              <svg
-                                width="20"
-                                height="14"
-                                viewBox="-10 0 25 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  id="Vector"
-                                  d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                                  fill="black"
+                            <Link to={url} style={{ color: "black" }}>
+                              <div className="pt-3 text-decoration-underline cursor-pointer">
+                                Read More
+                                <Lottie
+                                  style={{
+                                    marginLeft: "60px",
+                                    marginTop: "-15px",
+                                  }}
+                                  animationData={Arrow}
+                                  autoplay
+                                  loop
+                                  className="w-xs-100 w-md-12 ml-md-3 resourceArrow"
                                 />
-                              </svg>
-                            </div>
+                              </div>
                             </Link>
                           </div>
                         </div>
@@ -227,21 +229,21 @@ const Resource = () => {
             </div>
             <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
               <div className="portfolio-sub-heading d-flex align-items-center">
-                <Link to="" className="m-0 font-size-15 text-decoration-underline">
+                <Link
+                  to=""
+                  className="m-0 font-size-15 text-decoration-underline"
+                >
                   Start your dream project with us
-                  <svg
-                    width="20"
-                    height="14"
-                    viewBox="-10 0 25 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      id="Vector"
-                      d="M1.80778 13.8701L1.81026 13.8657L2.14145 13.5492L2.80382 12.9161L13.4018 2.78909L13.2658 8.77368L14.6105 8.80423L14.7986 0.523957L6.51835 0.335805L6.48779 1.68051L12.4724 1.81649L1.87444 11.9435L1.21207 12.5764L0.880888 12.8929L1.80778 13.8701Z"
-                      fill="black"
-                    />
-                  </svg>
+                  {/* <Lottie
+                    style={{
+                      marginLeft: "390px",
+                      marginTop: "-30px",
+                    }}
+                    animationData={Arrow}
+                    autoplay
+                    loop
+                    className="w-xs-100 w-md-12 ml-md-3 resourceArrow"
+                  /> */}
                 </Link>
               </div>
             </div>

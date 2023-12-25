@@ -5,6 +5,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../images/logo.svg";
 import logoIcon from "../images/logo-icon.png";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import $ from "jquery";
 
 function Hero() {
@@ -44,12 +45,16 @@ function Hero() {
                 <Nav.Link href="#" className="menu-link">
                   about
                 </Nav.Link>
+                <ScrollLink to="Services" smooth={true} duration={200}>
                 <Nav.Link href="#" className="menu-link">
                   services
                 </Nav.Link>
+                </ScrollLink>
+                <ScrollLink to="Ourstory" smooth={true} duration={200}>
                 <Nav.Link href="#" className="menu-link">
                   team
                 </Nav.Link>
+                </ScrollLink>
                 <Nav.Link href="#" className="menu-link">
                   <Link to="/portfolio">portfolio</Link>
                 </Nav.Link>
@@ -76,7 +81,9 @@ function Hero() {
             </Link>
             <div
               id="navbar-nav toggle"
-              className={`justify-content-end button_container ${isMenuOpen ? "active" : ""}`}
+              className={`justify-content-end button_container ${
+                isMenuOpen ? "active" : ""
+              }`}
               onClick={handleToggle}
             >
               <span className="top"></span>
@@ -88,17 +95,28 @@ function Hero() {
             <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
               <nav className="overlay-menu">
                 <div className="pl-6">
-                  <span to="/">Home</span>
+                  <Link to="/">Home</Link>
                 </div>
                 <ul>
                   <li>
-                    <Link to="/" className="font-weight-100">About</Link>
+                    <Link to="/" className="font-weight-100">
+                      About
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/" className="font-weight-100">Services</Link>
-    /            </li>
+                  <ScrollLink to="Services" smooth={true} duration={200}>
+                    <Link to="/" className="font-weight-100">
+                      Services
+                    </Link>
+                  </ScrollLink>  
+                    /{" "}
+                  </li>
                   <li>
-                    <Link to="/" className="font-weight-100">Team</Link>
+                  <ScrollLink to="Ourstory" smooth={true} duration={200}>
+                    <Link to="/" className="font-weight-100">
+                      Team
+                    </Link>
+                    </ScrollLink>  
                   </li>
                   <li>
                     <Link to="/portfolio">Portfolio</Link>
@@ -153,14 +171,14 @@ function Hero() {
               <div className="row">
                 <div className="col-12 col-md-8">
                   <p className="text-white pb-3 pt-4 text-uppercase bottom-header-text font-media-15 px-md-0 px-2">
-                  We are a community of creators who make really cool things for businesses
-                  that help them succeed.
+                    We are a community of creators who make really cool things
+                    for businesses that help them succeed.
                   </p>
-                  <Link to="/get-in-touch/customer-inquiry">
+                  <ScrollLink to="contact-section" smooth={true} duration={500}>
                     <button className="nav-foot-button">
-                      Get started with us !
+                      Get started with us!
                     </button>
-                  </Link>
+                  </ScrollLink>
                 </div>
               </div>
             </div>
