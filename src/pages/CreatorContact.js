@@ -269,7 +269,7 @@ function CreatorContact() {
                   <a href="#">Services</a>
                 </li>
                 <li>
-                  <a href="#">Team</a>
+                  <Link to="/get-in-touch/creator-inquiry">Team</Link>
                 </li>
                 <li>
                   <Link to="/portfolio">Portfolio</Link>

@@ -240,7 +240,7 @@ function CustomerContact() {
                   <Link to="/">Services</Link>
                 </li>
                 <li>
-                  <Link to="/">Team</Link>
+                  <Link to="/get-in-touch/creator-inquiry">Team</Link>
                 </li>
                 <li>
                   <Link to="/portfolio">Portfolio</Link>

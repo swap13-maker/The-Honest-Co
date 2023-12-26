@@ -106,7 +106,7 @@ const InnerHeader = () => {
                 <a href="#" className="font-weight-100">Services</a>
               </li>
               <li>
-                <a href="#" className="font-weight-100">Team</a>
+                <Link to="/get-in-touch/creator-inquiry">Team</Link>
               </li>
               <li>
                 <Link to="/portfolio">Portfolio</Link>

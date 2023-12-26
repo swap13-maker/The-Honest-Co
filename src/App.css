@@ -379,7 +379,9 @@ h1 {
   padding-bottom: 0rem !important;
   padding-left: 0rem !important;
 }
-
+.media-icon5 {
+  width: 74.5px !important;
+}
 /*desktop only media view*/
 @media (min-width: 768px) {
   .height-100vh {
@@ -496,6 +498,9 @@ h1 {
 @media (max-width: 768px) {
   .pb-sm-0 {
     padding-bottom: 0px !important;
+  }
+  .media-icon5 {
+    width: 58px !important;
   }
   .footerArrow{
     margin-left: 125px; /* Override margin for mobile */

@@ -42,19 +42,19 @@ function Hero() {
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav" className="justify-content-end">
               <Nav>
+                <ScrollLink to="Ourstory" smooth={true} duration={200}>
                 <Nav.Link href="#" className="menu-link">
                   about
                 </Nav.Link>
+                </ScrollLink>
                 <ScrollLink to="Services" smooth={true} duration={200}>
                 <Nav.Link href="#" className="menu-link">
                   services
                 </Nav.Link>
                 </ScrollLink>
-                <ScrollLink to="Ourstory" smooth={true} duration={200}>
                 <Nav.Link href="#" className="menu-link">
-                  team
+                  <Link to="/get-in-touch/creator-inquiry">team</Link>
                 </Nav.Link>
-                </ScrollLink>
                 <Nav.Link href="#" className="menu-link">
                   <Link to="/portfolio">portfolio</Link>
                 </Nav.Link>

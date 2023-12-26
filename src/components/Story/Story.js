@@ -7,6 +7,7 @@ import icon1 from "../../images/icon1.png";
 import icon2 from "../../images/icon2.png";
 import icon3 from "../../images/icon3.png";
 import icon4 from "../../images/icon4.png";
+import icon5 from "../../images/icon5.png";
 import IconArrow from "../../icons/IconArrow";
 import storyGif from "../../images/story.gif";
 
@@ -140,7 +141,7 @@ function Story() {
             </div>
             <div className="bg-white w-440">
               <div className="py-4 story-icon last-icon">
-                <img src={icon4} className="card-icon" alt=""/>
+                <img src={icon5} className="card-icon media-icon5" alt=""/>
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
