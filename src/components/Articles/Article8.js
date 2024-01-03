@@ -102,12 +102,12 @@ export default function Article8() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Contract Management Modules, Automating <br /> Contracts
+                    Contract Management Modules, Automating Contracts
                     Made Easy Via Custom App Development
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">July 4, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Custom Development</h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>

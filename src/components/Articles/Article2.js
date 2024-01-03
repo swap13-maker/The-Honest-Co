@@ -102,12 +102,12 @@ export default function Article2() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Artificial Intelligence and Machine Learning based <br />{" "}
+                    Artificial Intelligence and Machine Learning based
                     Crypto Trading Bot
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">May 25, 2023</h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
                   <h2 className="px-2">Banking & Finance</h2>
                 </div>

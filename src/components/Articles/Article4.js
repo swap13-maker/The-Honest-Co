@@ -103,11 +103,11 @@ export default function Article4() {
                 <div>
                   <h1 className="article-heading">
                     Simplifying E-Commerce Store Creation with
-                    <br /> Low-Code Platforms
+                    Low-Code Platforms
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Jun 7, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Custom Application Development</h2>{" "}
                   &bull; <h2 className="px-2">D2C & E-Commerce</h2>
                 </div>

@@ -102,7 +102,7 @@ export default function App() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Global Commerce Made Easy, The Role of Remittance <br />{" "}
+                    Global Commerce Made Easy, The Role of Remittance 
                     Applications in Business Expansion
                   </h1>
                 </div>

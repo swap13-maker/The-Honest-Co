@@ -99,14 +99,14 @@ export default function Article5() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Optimizing Forecasting and Customer Targeting <br /> with AI
+                    Optimizing Forecasting and Customer Targeting with AI
                     and ML Solutions
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
-                  <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
-                  <h2 className="px-2">D2C & E-Commerce</h2>
+                  <h2 className="px-2 px-sm-1">Jun 15, 2023</h2> &bull;{" "}
+                  <h2 className="px-2 px-sm-1">AI & ML Solutions</h2> &bull;{" "}
+                  <h2 className="px-2 px-sm-1">D2C & E-Commerce</h2>
                 </div>
                 <img src={Banner} className="w-100 pt-5" alt={Article5Banner} />
               </div>

@@ -103,11 +103,11 @@ export default function Article9() {
                 <div>
                   <h1 className="article-heading">
                     Modernizing Interview Scheduling, Mobile Apps
-                    <br /> Enhancing Team Efficiency and Applicant Experience
+                    Enhancing Team Efficiency and Applicant Experience
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">July 10, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Mobile App Development</h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>

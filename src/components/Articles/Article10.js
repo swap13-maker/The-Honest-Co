@@ -93,12 +93,12 @@ export default function Article10() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Machine Learning Models Streamlining Application <br />{" "}
+                    Machine Learning Models Streamlining Application
                     Filtration and Shortlisting in HR Operations
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">July 11, 2023</h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>
