@@ -101,12 +101,12 @@ export default function Article12() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Effective Route Planning & Fleet Management By <br />{" "}
+                    Effective Route Planning & Fleet Management By
                     Airiticifal Inteligence Models
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">July 24, 2023</h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
                   <h2 className="px-2">Logistics & Transportation</h2>
                 </div>

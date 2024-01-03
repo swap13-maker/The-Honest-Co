@@ -96,12 +96,12 @@ export default function Article7() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Curating Adaptive Course Modules Made Viable By <br /> Deep
+                    Curating Adaptive Course Modules Made Viable By Deep
                     Learning Algorithms
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Jun 28, 2023</h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions</h2> &bull;{" "}
                   <h2 className="px-2">Educational Technology</h2>
                 </div>

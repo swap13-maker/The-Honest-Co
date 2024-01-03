@@ -103,11 +103,11 @@ export default function Article6() {
                 <div>
                   <h1 className="article-heading">
                     Comprehensive Pre-School Mobile Application For
-                    <br /> Secure Parental Tracking & Transits
+                    Secure Parental Tracking & Transits
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Jun 21, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Mobile App Development</h2> &bull;{" "}
                   <h2 className="px-2">Educational Technology</h2>
                 </div>

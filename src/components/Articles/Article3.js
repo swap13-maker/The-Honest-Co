@@ -94,12 +94,12 @@ export default function App() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Leveraging AI and ML Models To Help Farmers Early <br />{" "}
+                    Leveraging AI and ML Models To Help Farmers Early
                     Detect Plant Diseases
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">Jun 1, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Custom Application Development</h2>{" "}
                   &bull; <h2 className="px-2">Healthcare Technology</h2>
                 </div>

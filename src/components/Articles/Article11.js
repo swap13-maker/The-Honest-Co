@@ -94,12 +94,12 @@ export default function Article11() {
               <div className="col-12 text-align-center">
                 <div>
                   <h1 className="article-heading">
-                    Custom CRM Development For E-Commerce <br /> Industries &
+                    Custom CRM Development For E-Commerce Industries &
                     Businesses
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-4">
-                  <h2 className="px-2">May 19, 2023</h2> &bull;{" "}
+                  <h2 className="px-2">July 17, 2023</h2> &bull;{" "}
                   <h2 className="px-2">Custom Development</h2> &bull;{" "}
                   <h2 className="px-2">D2C & E-Commerce</h2>
                 </div>

@@ -827,6 +827,28 @@ FormControl:focus {
   .slick-slide > div {
     padding: 0 12px; /* Adjust the padding as needed */
   }
+
+  .article-heading {
+    text-align: center;
+    font-size: 28px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    justify-content: center;
+  }
+  .article-sub-heading,
+  .article-sub-heading > h2 {
+    font-family: Barlow;
+    font-size: 12px !important;
+    padding-right: 0rem !important;
+    padding-left: 0px !important;
+    display: flex;
+    justify-content: space-evenly !important;
+    letter-spacing: 0.26px;
+  }
+  .article-heading > span:last-child {
+    display: inline-block;
+    text-align: right; /* Aligns the last word to the right */
+  }
 }
 
 /* label test */
