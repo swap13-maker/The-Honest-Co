@@ -12,7 +12,8 @@ import { Link } from "react-router-dom";
 import "../components/InnerHeader.css";
 import $ from "jquery";
 import { Helmet } from "react-helmet";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import NDA from "../images/NDA.pdf";
 
 function CustomerContact() {
   const navigate = useNavigate();
@@ -26,6 +27,11 @@ function CustomerContact() {
   const [more, setMore] = useState("");
   const [selectedTimeline, setSelectedTimeline] = useState("");
   const [selectedBudget, setSelectedBudget] = useState("");
+  const [downloadNDA, setDownloadNDA] = useState(false);
+
+  const handleCheckboxDownload = () => {
+    setDownloadNDA(!downloadNDA);
+  };
 
   const handleNameChange = (newName) => {
     setName(newName);
@@ -123,7 +129,7 @@ function CustomerContact() {
     };
 
     setTimeout(() => {
-      navigate('/thankyou');
+      navigate("/thankyou");
     }, 1000);
 
     // Send the data to the specified URL
@@ -152,19 +158,13 @@ function CustomerContact() {
         console.error("There was a problem with the fetch operation:", error);
       });
   };
-
+  console.log(downloadNDA, "downloadNDA");
   return (
     <Container>
-     <Helmet>
+      <Helmet>
         <title>Customer Inquiry | Honest Digital Services </title>
-        <meta
-          name="description"
-          content=""
-        />
-        <meta
-          name="keywords"
-          content=""
-        ></meta>
+        <meta name="description" content="" />
+        <meta name="keywords" content=""></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <div className="row height-100vh">
@@ -190,7 +190,11 @@ function CustomerContact() {
                 {selectedCheckboxes.map((checkbox) => (
                   <li key={checkbox}>{checkbox}</li>
                 ))}
-                <li id="project">{project && project.length > 130 ? project.substring(0, 130) + '...' : project}</li>
+                <li id="project">
+                  {project && project.length > 130
+                    ? project.substring(0, 130) + "..."
+                    : project}
+                </li>
               </ul>
             </div>
             <div className={`progress-step ${step >= 3 ? "active" : ""}`}>
@@ -203,7 +207,11 @@ function CustomerContact() {
             <div className={`progress-step ${step >= 4 ? "active" : ""}`}>
               4. Additional Info
               <ul className="sub-progress-step">
-                <li>{more && more.length > 130 ? more.substring(0, 130) + '...' : more}</li>
+                <li>
+                  {more && more.length > 130
+                    ? more.substring(0, 130) + "..."
+                    : more}
+                </li>
               </ul>
             </div>
           </div>
@@ -221,7 +229,9 @@ function CustomerContact() {
 
           <div
             id="navbar-nav toggle"
-            className={`justify-content-end button_container button_container_contact ${isMenuOpen ? "active" : ""}`}
+            className={`justify-content-end button_container button_container_contact ${
+              isMenuOpen ? "active" : ""
+            }`}
             onClick={handleToggle}
           >
             <span className="top"></span>
@@ -260,10 +270,49 @@ function CustomerContact() {
         {/* mobile */}
         <div className="d-block d-md-none">
           <div className="row align-items-center">
-            <div className="col-3 mobile-contact-headings"><div>{step === 1 ? ( <>General <br /> Information</> ) : '1'}</div></div>
-            <div className="col-3 mobile-contact-headings"><div>{step === 2 ? ( <>Area of <br/>interest</> ) : '2'}</div></div>
-            <div className="col-3 mobile-contact-headings">{step === 3 ? ( <>Project <br/>Details</> ) : '3'}</div>
-            <div className="col-3 mobile-contact-headings">{step === 4 ? ( <>Additional <br/>Info</> ) : '4'}</div>
+            <div className="col-3 mobile-contact-headings">
+              <div>
+                {step === 1 ? (
+                  <>
+                    General <br /> Information
+                  </>
+                ) : (
+                  "1"
+                )}
+              </div>
+            </div>
+            <div className="col-3 mobile-contact-headings">
+              <div>
+                {step === 2 ? (
+                  <>
+                    Area of <br />
+                    interest
+                  </>
+                ) : (
+                  "2"
+                )}
+              </div>
+            </div>
+            <div className="col-3 mobile-contact-headings">
+              {step === 3 ? (
+                <>
+                  Project <br />
+                  Details
+                </>
+              ) : (
+                "3"
+              )}
+            </div>
+            <div className="col-3 mobile-contact-headings">
+              {step === 4 ? (
+                <>
+                  Additional <br />
+                  Info
+                </>
+              ) : (
+                "4"
+              )}
+            </div>
           </div>
         </div>
 
@@ -297,7 +346,12 @@ function CustomerContact() {
                   onBudgetChange={handleBudgetChange}
                 />
               )}
-              {step === 4 && <ContactForm4 onMoreChange={handleMoreChange} />}
+              {step === 4 && (
+                <ContactForm4
+                  handleCheckboxDownload={handleCheckboxDownload}
+                  onMoreChange={handleMoreChange}
+                />
+              )}
             </Form>
           </div>
 
@@ -318,7 +372,9 @@ function CustomerContact() {
               <Link
                 className={`next-button form-btn ${
                   (step === 1 && (!name || !email)) ||
-                  (step === 2 && selectedCheckboxes.length === 0) ? "disabled" : ""
+                  (step === 2 && selectedCheckboxes.length === 0)
+                    ? "disabled"
+                    : ""
                 }`}
                 disabled={
                   (step === 1 && (!name || !email)) ||
@@ -331,13 +387,27 @@ function CustomerContact() {
             )}
 
             {step === 4 && (
-              <button
-                className="submit-button form-btn"
-                onClick={handleSubmission}
-                disabled={!name || !email}
-              >
-                Submit
-              </button>
+              <>
+                {downloadNDA ? (
+                  <a href={NDA} download="NDA">
+                    <button
+                      className="submit-button form-btn"
+                      onClick={handleSubmission}
+                      disabled={!name || !email}
+                    >
+                      Submit
+                    </button>
+                  </a>
+                ) : (
+                  <button
+                    className="submit-button form-btn"
+                    onClick={handleSubmission}
+                    disabled={!name || !email}
+                  >
+                    Submit
+                  </button>
+                )}
+              </>
             )}
           </div>
         </Container>

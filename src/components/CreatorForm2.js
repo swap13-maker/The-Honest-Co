@@ -126,7 +126,7 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             name="radioGroup"
             id="option1"
             value="Option 1"
-            label="Need assistance with getting started?"
+            label="Are you a manufacturer?"
             checked={selectedOption === "Option 1"}
             onChange={handleRadioChange}
           />
@@ -138,7 +138,7 @@ function CreatorForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             name="radioGroup"
             id="option2"
             value="Option 2"
-            label="Have a plan, need a team to execute?"
+            label="Are you an individual contributor?"
             checked={selectedOption === "Option 2"}
             onChange={handleRadioChange}
           />

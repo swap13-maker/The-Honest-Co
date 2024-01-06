@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./InnerHeader.css";
+import { Link as ScrollLink } from "react-scroll";
 import $ from "jquery";
 
 const InnerHeader = () => {
@@ -48,9 +49,11 @@ const InnerHeader = () => {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
+            <ScrollLink to="Ourstory" smooth={true} duration={200}>
               <Nav.Link className="text-black menu-link" href="#">
                 about
               </Nav.Link>
+              </ScrollLink>  
               <Nav.Link className="text-black menu-link" href="#">
                 services
               </Nav.Link>
@@ -83,8 +86,7 @@ const InnerHeader = () => {
         </Link>
         <div
           id="navbar-nav toggle"
-          className="justify-content-end"
-          className={`button_container button_container_inner ${isMenuOpen ? "active" : ""}`}
+          className={`justify-content-end button_container button_container_inner ${isMenuOpen ? "active" : ""}`}
           onClick={handleToggle}
         >
           <span className="top"></span>

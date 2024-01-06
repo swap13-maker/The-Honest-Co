@@ -66,10 +66,10 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             <Form.Group className="pt-4" controlId="applicationDevelopment">
               <Form.Check
                 type="checkbox"
-                value="Custom Development"
-                label="Custom Development"
+                value="Custom Software Development"
+                label="Custom Software Development"
                 className="media-label-font-14"
-                checked={selectedCheckboxes.includes("Custom Development")}
+                checked={selectedCheckboxes.includes("Custom Software Development")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>
@@ -77,10 +77,10 @@ function ContactForm2({ onProjectChange, onRadioChange, onCheckboxesChange }) {
             <Form.Group className="pt-4" controlId="contentCreation">
               <Form.Check
                 type="checkbox"
-                value="Mobile Application "
-                label="Mobile Application n"
+                value="Mobile Application Development"
+                label="Mobile Application Development"
                 className="media-label-font-14"
-                checked={selectedCheckboxes.includes("Mobile Application ")}
+                checked={selectedCheckboxes.includes("Mobile Application Development")}
                 onChange={handleCheckboxChange}
               />
             </Form.Group>

@@ -125,7 +125,7 @@ function Hero() {
                     <Link to="/resources">Resources</Link>
                   </li>
                   <li>
-                    <Link to="/get-in-touch">
+                    <Link to="/get-in-touch/customer-inquiry">
                       <button className="nav-button">get in touch</button>
                     </Link>
                   </li>

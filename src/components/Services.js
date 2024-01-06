@@ -88,7 +88,7 @@ function Services() {
                       {verticalActive === "tab1" ? (
                         <img className="tab-icon" src={arrow} alt="tab" />
                       ) : (
-                        <img className="tab-icon" src={arrow} alt="tab-icon"/>
+                        <img className="tab-icon" src={arrow} alt="tab-icon" />
                       )}
                       <span className="px-3">Application Development</span>
                     </div>
@@ -105,9 +105,9 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab2" ? (
-                        <img className="tab-icon" src={arrow} alt=""/>
+                        <img className="tab-icon" src={arrow} alt="" />
                       ) : (
-                        <img className="tab-icon" src={arrow} alt=""/>
+                        <img className="tab-icon" src={arrow} alt="" />
                       )}
                       <span className="px-3">Content Creation</span>
                     </div>
@@ -124,9 +124,9 @@ function Services() {
                   >
                     <div className="d-flex align-items-center">
                       {verticalActive === "tab3" ? (
-                        <img className="tab-icon" src={arrow} alt=""/>
+                        <img className="tab-icon" src={arrow} alt="" />
                       ) : (
-                        <img className="tab-icon" src={arrow} alt=""/>
+                        <img className="tab-icon" src={arrow} alt="" />
                       )}
                       <span className="px-3">Industrial Design</span>
                     </div>
@@ -138,10 +138,10 @@ function Services() {
                 </MDBTabsItem>
               </MDBTabs>
               <div className="pt-5">
-              <Link to="/get-in-touch/customer-inquiry">
-                <button className="bg-dark text-uppercase text-white font-weight-300 button">
-                  Start Creating Now !
-                </button>
+                <Link to="/get-in-touch/customer-inquiry">
+                  <button className="bg-dark text-uppercase text-white font-weight-300 button">
+                    Start Creating Now !
+                  </button>
                 </Link>
               </div>
             </MDBCol>
@@ -256,7 +256,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                branding & identity design
+                              Merchandising & Packaging
                               </div>
                             </div>
                           </div>
@@ -357,7 +357,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                content creation
+                                2D & 3D Graphics Design
                               </div>
                             </div>
                           </div>
@@ -383,7 +383,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                advertisement
+                                advertisements
                               </div>
                             </div>
                           </div>
