@@ -123,10 +123,10 @@ const InnerHeader = () => {
             </div>
             <ul>
               <li>
-                <Link onClick={handleAboutClick}>About</Link>
+                <Link to="/?scrollTo=Ourstory">About</Link>
               </li>
               <li>
-                <Link onClick={handleServicesClickMob}>Services</Link>
+                <Link to="/?scrollTo=ServicesMob">Services</Link>
               </li>
               <li>
                 <Link to="/get-in-touch/creator-inquiry">Team</Link>

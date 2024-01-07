@@ -120,7 +120,7 @@ function Hero() {
             <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
               <nav className="overlay-menu">
                 <div className="pl-6">
-                  <Link onClick={handleHome}>Home</Link>
+                  <span onClick={handleHome}>Home</span>
                 </div>
                 <ul>
                   <li>

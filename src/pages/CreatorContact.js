@@ -264,10 +264,10 @@ function CreatorContact() {
               <div className="pl-6">Menu</div>
               <ul>
                 <li>
-                  <a href="#">About</a>
+                  <Link to="/?scrollTo=Ourstory">About</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link to="/?scrollTo=ServicesMob">Services</Link>
                 </li>
                 <li>
                   <Link to="/get-in-touch/creator-inquiry">Team</Link>
