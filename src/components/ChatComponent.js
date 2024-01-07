@@ -25,7 +25,8 @@ const ChatComponent = () => {
   const closeForm = () => {
     setIsChatOpen(false);
     setFormSubmitted(false);
-    setFormData({ // Clear the form data
+    setFormData({
+      // Clear the form data
       name: "",
       email: "",
       mobile: "",
@@ -64,7 +65,12 @@ const ChatComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.mobile || !formData.query) {
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.mobile ||
+      !formData.query
+    ) {
       alert("Name, Email, Mobile, and Query are required fields.");
       return;
     }
@@ -81,25 +87,26 @@ const ChatComponent = () => {
       },
       body: JSON.stringify(formData),
     })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      // Handle the response data here
-      setFormData({ // Clear the form data
-        name: "",
-        email: "",
-        mobile: "",
-        query: "",
-        interests: [],
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Handle the response data here
+        setFormData({
+          // Clear the form data
+          name: "",
+          email: "",
+          mobile: "",
+          query: "",
+          interests: [],
+        });
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
       });
-    })
-    .catch((error) => {
-      console.error("There was a problem with the fetch operation:", error);
-    });
   };
 
   return (
@@ -120,7 +127,7 @@ const ChatComponent = () => {
               <div className="text">
                 <div className="chat-heading">Send us your inquiry! </div>
                 <div className="chat-sub-heading">
-                Someone from our team would reach out to you:
+                  Someone from our team would reach out to you:
                 </div>
               </div>
             </div>
@@ -188,50 +195,38 @@ const ChatComponent = () => {
 
             <div className="row py-4">
               <div className="col-md-12 col-12 pb-3">Area of Interest</div>
-              <div className="col-md-6 col-12">
-                {/* <Form.Group className="pt-1" controlId="architectural">
+              <div className="col-md-8 col-12">
+              <Form.Group className="pt-2" controlId="applicationDevelopment">
                   <Form.Check
                     className="chat-label"
                     type="checkbox"
-                    value="Architectural"
-                    label="Architectural"
-                    name="interests"
-                    onChange={handleInputChange}
-                  />
-                </Form.Group> */}
-
-                <Form.Group className="pt-1" controlId="industrial">
-                  <Form.Check
-                    className="chat-label"
-                    type="checkbox"
-                    value="AI and ML Solutions  "
-                    label="AI and ML Solutions  "
+                    value="Custom Software Development"
+                    label="Custom Software Development"
                     name="interests"
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-                <Form.Group className="pt-1" controlId="applicationDevelopment">
-                  <Form.Check
-                    className="chat-label"
-                    type="checkbox"
-                    value="Custom Development"
-                    label="Custom Development"
-                    name="interests"
-                    onChange={handleInputChange}
-                  />
-                </Form.Group>
-              </div>
-              <div className="col-md-6 col-12">
                 <Form.Group className="pt-1" controlId="contentCreation">
                   <Form.Check
                     className="chat-label"
                     type="checkbox"
-                    value="Mobile Application "
-                    label="Mobile Application "
+                    value="Mobile Application Development"
+                    label="Mobile Application Development"
                     name="interests"
                     onChange={handleInputChange}
                   />
                 </Form.Group>
+                <Form.Group className="pt-2" controlId="industrial">
+                  <Form.Check
+                    className="chat-label"
+                    type="checkbox"
+                    value="AI and ML Solutions"
+                    label="AI and ML Solutions"
+                    name="interests"
+                    onChange={handleInputChange}
+                  />
+                </Form.Group>
+                
               </div>
             </div>
 
@@ -251,11 +246,18 @@ const ChatComponent = () => {
       {formSubmitted && (
         <div className="chat-popup">
           <div className="form-container">
-
             <div className="row pb-4">
-              <div className="col-12 resp-succ-img py-3"><img src={succLogo} width={80} alt="logo"/></div>
-              <div className="col-12 resp-succ-head pb-3">Your inquiry has been<br/>received!</div>
-              <div className="col-12 resp-succ-bottom">and we're ready to bring your idea to life!</div>
+              <div className="col-12 resp-succ-img py-3">
+                <img src={succLogo} width={80} alt="logo" />
+              </div>
+              <div className="col-12 resp-succ-head pb-3">
+                Your inquiry has been
+                <br />
+                received!
+              </div>
+              <div className="col-12 resp-succ-bottom">
+                and we're ready to bring your idea to life!
+              </div>
             </div>
 
             <button

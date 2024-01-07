@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Industry from "../components/Industry";
@@ -12,11 +12,46 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
+import { scroller } from 'react-scroll';
+
 
 function LandingPage() {
+
+  // const dispatch = useDispatch()
+ 
+  const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollToSection = params.get("scrollTo");
+    if (scrollToSection === "Ourstory") {
+      // Use scroller to smoothly scroll to the element with ID "Ourstory"
+      scroller.scrollTo("Ourstory", {
+        smooth: true,
+        duration: 500,
+      });
+    }
+    if(scrollToSection === "ServicesMob"){
+      scroller.scrollTo("ServicesMob", {
+        smooth: true,
+        duration: 500,
+      });
+    }
+    if(scrollToSection === "Services"){
+      scroller.scrollTo("Services", {
+        smooth: true,
+        duration: 500,
+      });
+
+    }
+  }, [location.search]);
+  
+
+
+
   return (
     <div>
       <Helmet>
@@ -53,8 +88,8 @@ function LandingPage() {
       </Helmet>
       <Hero />
       <Header />
-      <Story />
-      <Services />
+      <Story id="Ourstory"/>
+      <Services id="Services"/>
       <ServicesMob />
       <Work />
       <Industry />

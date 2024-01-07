@@ -4,7 +4,7 @@ import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
 export default function ServicesMob() {
   return (
     <>
-      <section className="container d-block d-md-none">
+      <section className="container d-block d-md-none" id="ServicesMob">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
@@ -42,9 +42,9 @@ export default function ServicesMob() {
             </div>
             <ul className="py-4 accordian-list">
               <li>motion graphics</li>
-              <li>content creation</li>
+              <li>2D & 3D Graphics Design</li>
               <li>branding & identity design</li>
-              <li>advertisement</li>
+              <li>advertisements</li>
             </ul>
           </MDBAccordionItem>
           <MDBAccordionItem collapseId={3} headerTitle="Industrial Design">
@@ -54,7 +54,7 @@ export default function ServicesMob() {
             <ul className="py-4 accordian-list">
               <li>concept & prototyping</li>
               <li>product design</li>
-              <li>branding & identity design</li>
+              <li>Merchandising & Packaging</li>
               <li>manufacturing support</li>
             </ul>
           </MDBAccordionItem>

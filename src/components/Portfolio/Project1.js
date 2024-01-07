@@ -310,17 +310,17 @@ function Project1() {
                 <Link to="/get-in-touch/customer-inquiry" className="text-white">
                   Click here to start elevating your physical and digital
                   customer experiences.
-                  <div
+                  {/* <div
                   className="col-12 col-md-8 col-lg-3 d-flex justify-content-start"
-                  style={{ marginLeft: "110px", marginTop: "-22px" }}
-                >
+                  style={{ marginLeft: "-50px", marginTop: "-2px" }}
+                > */}
                   <Lottie
                     animationData={Arrow}
                     autoplay
                     loop
-                    className="w-xs-100 w-md-12 footerArrow"
+                    className="w-xs-100 w-md-12 projectFooterArrow"
                   />
-                </div>
+                {/* </div> */}
                 </Link>
               </h5>
             </div>
@@ -360,7 +360,7 @@ function Project1() {
                 <Link to="/portfolio">Mobile Application Development</Link>
               </li>
               <li>
-                <Link to="/portfolio">AI & ML solutions</Link>
+                <Link to="/portfolio">AI & ML Solutions</Link>
               </li>
               <li>
                 <Link to="/portfolio">Web3 & Blockchain</Link>
@@ -374,7 +374,7 @@ function Project1() {
                 <Link to="/portfolio">Motion Graphics</Link>
               </li>
               <li>
-                <Link to="/portfolio">2D/ 3D Graphics Design</Link>
+                <Link to="/portfolio">2D & 3D Graphics Design</Link>
               </li>
               <li>
                 <Link to="/portfolio">Advertisements</Link>
@@ -391,13 +391,13 @@ function Project1() {
                 <Link to="/portfolio">Product Design</Link>
               </li>
               <li>
-                <Link to="/portfolio">Concept Development & Development</Link>
+                <Link to="/portfolio">Concept & Prototyping</Link>
               </li>
               <li>
                 <Link to="/portfolio">Manufacturing Support</Link>
               </li>
               <li>
-                <Link to="/portfolio">Merchandizing & Packaging Designe</Link>
+                <Link to="/portfolio">Merchandising & Packaging</Link>
               </li>
             </ul>
             </div>
@@ -405,7 +405,7 @@ function Project1() {
               <div className="footer-heading mb-2"> Industrial </div>
               <ul>
                 <li>
-                  <a href="#">D2C& E-Commerce</a>
+                  <a href="#">D2C & E-Commerce</a>
                 </li>
                 <li>
                   <a href="#">Banking & Finance</a>
@@ -482,7 +482,7 @@ function Project1() {
               <div className="footer-heading mb-2">Get In Touch </div>
               <ul>
               <li>
-                <Link to="/get-in-touch/customer-inquiry">Are you a Customer?</Link>
+                <Link to="/get-in-touch/customer-inquiry">Are you a customer?</Link>
               </li>
               <li>
                 <Link to="/get-in-touch/creator-inquiry">Are you a creator?</Link>
@@ -492,11 +492,14 @@ function Project1() {
 
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
             <Link to="mailto:business@thehonestco.in"><div className="footer-heading mb-2"> hello@thehonestco.in </div></Link>
+            <Link to="tel:+91 120 246 2890">
+              <div className="footer-heading mb-2"> +91 120 246 2890</div>
+            </Link>
             <div className="footer-heading mb-2"> Terms & Conditions </div>
             </div>
           </div>
           <p className="post-footer pt-3 border-top text-center">
-            &copy; 2023 - The Honest Company
+            &copy; 2024 - Honest Digital Services Pvt. Ltd.
           </p>
         </div>
       </section>

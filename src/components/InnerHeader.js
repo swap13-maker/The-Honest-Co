@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./InnerHeader.css";
+import { Link as ScrollLink } from "react-scroll";
+import { useLocation,useNavigate } from 'react-router-dom';
 import $ from "jquery";
 
 const InnerHeader = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const [showHeader, setShowHeader] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
   const handleScroll = () => {
@@ -29,6 +34,23 @@ const InnerHeader = () => {
     $("#toggle").toggleClass("active");
     $("#overlay").toggleClass("open");
   };
+  const handleHome = () => {
+    navigate("/")
+  }
+  const handleAboutClick = () => {
+    setMenuOpen(!isMenuOpen);
+    navigate('/?scrollTo=Ourstory');
+  }
+  const handleServicesClick = () => {
+    setMenuOpen(!isMenuOpen)
+    navigate('/?scrollTo=Services')
+  }
+  const handleServicesClickMob = () =>{
+    setMenuOpen(!isMenuOpen);
+    navigate('/?scrollTo=ServicesMob')
+  }
+  
+  
 
   return (
     <section>
@@ -48,10 +70,12 @@ const InnerHeader = () => {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
-              <Nav.Link className="text-black menu-link" href="#">
+            <ScrollLink to="Ourstory" smooth={true} duration={200}>
+              <Nav.Link className="text-black menu-link" onClick={handleAboutClick}>
                 about
               </Nav.Link>
-              <Nav.Link className="text-black menu-link" href="#">
+              </ScrollLink>  
+              <Nav.Link className="text-black menu-link" onClick={handleServicesClick}>
                 services
               </Nav.Link>
               <Nav.Link className="text-black menu-link" href="#">
@@ -83,8 +107,7 @@ const InnerHeader = () => {
         </Link>
         <div
           id="navbar-nav toggle"
-          className="justify-content-end"
-          className={`button_container button_container_inner ${isMenuOpen ? "active" : ""}`}
+          className={`justify-content-end button_container button_container_inner ${isMenuOpen ? "active" : ""}`}
           onClick={handleToggle}
         >
           <span className="top"></span>
@@ -96,14 +119,14 @@ const InnerHeader = () => {
         <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
           <nav className="overlay-menu">
             <div className="pl-6">
-              <span to="/">Home</span>
+             <span onClick={handleHome}>Home</span>
             </div>
             <ul>
               <li>
-                <a href="#" className="font-weight-100">About</a>
+                <Link onClick={handleAboutClick}>About</Link>
               </li>
               <li>
-                <a href="#" className="font-weight-100">Services</a>
+                <Link onClick={handleServicesClickMob}>Services</Link>
               </li>
               <li>
                 <Link to="/get-in-touch/creator-inquiry">Team</Link>

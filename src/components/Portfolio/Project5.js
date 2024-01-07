@@ -1,4 +1,4 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -12,8 +12,8 @@ import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro5Banner.jpg";
-import Grid from "../../images/Healthtrak/Grid/Mobile Grid1 HealthTrak.jpg"
-import Grid2 from "../../images/Healthtrak/Grid/Mobile Grid2 HealthTrak.jpg"
+import Grid from "../../images/Healthtrak/Grid/Mobile Grid1 HealthTrak.jpg";
+import Grid2 from "../../images/Healthtrak/Grid/Mobile Grid2 HealthTrak.jpg";
 import secondGrid from "../../images/pro5SecondaryBanner.jpg";
 import webGrid from "../../images/Mobile Grid2 HealthTrak.jpg";
 import conclusion from "../../images/Conclusion.jpg";
@@ -71,9 +71,11 @@ function Project5() {
               <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Pill and Appointment Reminder Mobile App</li>
+            <li className="current">
+              Pill and Appointment Reminder Mobile App
+            </li>
           </ul>
           <div className="py-4">
             <div className="row">
@@ -95,9 +97,7 @@ function Project5() {
                 <div className="py-4">
                   <ul className="top-works">
                     <li className="pt-4"> Medicine Reminder</li>
-                    <li className="pt-4">
-                    Personalized Notifications{" "}
-                    </li>
+                    <li className="pt-4">Personalized Notifications </li>
                   </ul>
                 </div>
               </div>
@@ -114,7 +114,11 @@ function Project5() {
             </div>
           </div>
         </div>
-        <img src={Banner} alt="" className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0" />
+        <img
+          src={Banner}
+          alt=""
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+        />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
@@ -124,7 +128,7 @@ function Project5() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4">
-              A digital platform for efficient medication management and
+                A digital platform for efficient medication management and
                 tracking. Addressing the need of a dedicated online platform for
                 timely monitoring of consultations and lab reports.
               </div>
@@ -145,7 +149,7 @@ function Project5() {
                 <hr className="w-50" />
               </div>
               <div className="proj-content pb-4 w-100 paddingLeft-even">
-              Development of a mobile and web based application for storing
+                Development of a mobile and web based application for storing
                 and managing users' medication data. The platform aimed to serve
                 as a centralized repository for prescriptions and all medical
                 information.
@@ -168,12 +172,12 @@ function Project5() {
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
-              Health Care & IT
+                Health Care & IT
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-              With features like centralized prescription management and
+                With features like centralized prescription management and
                 comprehensive medical information storage, patients gain
                 convenience, accuracy, and improved medication adherence for
                 enhanced health outcomes.
@@ -190,12 +194,12 @@ function Project5() {
           <div className="row py-md-5 py-4 pb-md-3 pb-0">
             <div className="col-12 col-md-6 d-md-none d-flex">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
-              Take Control of Your Health
+                Take Control of Your Health
               </div>
             </div>
             <div className="col-12 col-md-6 py-md-5 py-0">
               <div className="custom_left_text">
-              The dedicated notification module built for this application
+                The dedicated notification module built for this application
                 allows the user to modify the notifications settings and
                 preferences as per their own convivence. Now never miss your
                 medicine refill day or your consultations!
@@ -223,10 +227,10 @@ function Project5() {
           <div className="row py-4 d-none">
             <div className="col-12 text-align-center mobile-text-align-left">
               <div className="proj-heading">
-                 Management Made Easy Via Dashboards
+                Management Made Easy Via Dashboards
               </div>
               <div className="proj-sub-heading py-3">
-              The custom dashboard built with the sole purpose of swift
+                The custom dashboard built with the sole purpose of swift
                 tracking the new users, medication requests and the pharmacy
                 vendors onboarded the platform By leveraging the best of
                 application development methodologies our objective was to
@@ -236,7 +240,7 @@ function Project5() {
             </div>
             {/* desktop */}
             <div className="col-12 d-none d-md-flex">
-            <img src={webGrid} alt="" className="w-100 py-5" />
+              <img src={webGrid} alt="" className="w-100 py-5" />
             </div>
             {/* mobile */}
             <div className="col-12 d-block d-md-none py-2">
@@ -254,7 +258,7 @@ function Project5() {
           </div>
           <div className="col-12 col-md-5 py-2">
             <div className="w-100">
-            Our Electronic Health platform, with its user-friendly mobile
+              Our Electronic Health platform, with its user-friendly mobile
               application, empowers individuals to take control of their health
               by efficiently managing medications and consultations all via an
               intitutive mobile application.
@@ -315,20 +319,18 @@ function Project5() {
                 </header>
               </article>
               <h5 className="footer-content cool-link text-white">
-                <Link to="/get-in-touch/customer-inquiry" className="text-white">
+                <Link
+                  to="/get-in-touch/customer-inquiry"
+                  className="text-white"
+                >
                   Click here to start elevating your physical and digital
                   customer experiences.
-                  <div
-                  className="col-12 col-md-8 col-lg-3 d-flex justify-content-start"
-                  style={{ marginLeft: "110px", marginTop: "-22px" }}
-                >
                   <Lottie
                     animationData={Arrow}
                     autoplay
                     loop
-                    className="w-xs-100 w-md-12 footerArrow"
+                    className="w-xs-100 w-md-12 projectFooterArrow"
                   />
-                </div>
                 </Link>
               </h5>
             </div>
@@ -361,59 +363,59 @@ function Project5() {
                 Application Development{" "}
               </div>
               <ul>
-              <li>
-                <Link to="/portfolio">Custom Software Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Mobile Application Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">AI & ML solutions</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Web3 & Blockchain</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Custom Software Development</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Mobile Application Development</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">AI & ML Solutions</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Web3 & Blockchain</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Content Creation </div>
               <ul>
-              <li>
-                <Link to="/portfolio">Motion Graphics</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">2D/ 3D Graphics Design</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Advertisements</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Branding & Identify Design</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Motion Graphics</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">2D & 3D Graphics Design</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Advertisements</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Branding & Identify Design</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Industrial Design </div>
               <ul>
-              <li>
-                <Link to="/portfolio">Product Design</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Concept Development & Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Manufacturing Support</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Merchandizing & Packaging Designe</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Product Design</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Concept & Prototyping</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Manufacturing Support</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Merchandising & Packaging</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Industrial </div>
               <ul>
                 <li>
-                  <a href="#">D2C& E-Commerce</a>
+                  <a href="#">D2C & E-Commerce</a>
                 </li>
                 <li>
                   <a href="#">Banking & Finance</a>
@@ -435,76 +437,90 @@ function Project5() {
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Resources </div>
               <ul>
-              <li>
-                <Link to="/resources">Case Studies</Link>
-              </li>
-              <li>
-                <Link to="/resources">Articles</Link>
-              </li>
-              <li>
-                <Link to="/resources">White Papers</Link>
-              </li>
-              <li>
-                <Link to="/resources">Tutorials</Link>
-              </li>
-              <li>
-                <Link to="/resources">Infographics</Link>
-              </li>
-              <li>
-                <Link to="/resources">Reports</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/resources">Case Studies</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Articles</Link>
+                </li>
+                <li>
+                  <Link to="/resources">White Papers</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Tutorials</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Infographics</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Reports</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2">Portfolio</div>
               <ul>
-              <li>
-                <Link to="/portfolio">Application Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Content Creation</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Industrial Design</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Application Development</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Content Creation</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Industrial Design</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Connect With Us</div>
               <ul>
-              <li>
-                <Link to="https://www.linkedin.com/company/the-honest-co">LinkedIn</Link>
-              </li>
-              <li>
-                <Link to="https://wa.me/917011242138">WhatsApp</Link>
-              </li>
-              <li>
-                <Link to="mailto:business@thehonestco.in">Email</Link>
-              </li>
-              <li>
-                <Link to="tel:+917011242138">Get in touch</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="https://www.linkedin.com/company/the-honest-co">
+                    LinkedIn
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://wa.me/917011242138">WhatsApp</Link>
+                </li>
+                <li>
+                  <Link to="mailto:business@thehonestco.in">Email</Link>
+                </li>
+                <li>
+                  <Link to="tel:+917011242138">Get in touch</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2">Get In Touch </div>
               <ul>
-              <li>
-                <Link to="/get-in-touch/customer-inquiry">Are you a Customer?</Link>
-              </li>
-              <li>
-                <Link to="/get-in-touch/creator-inquiry">Are you a creator?</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/get-in-touch/customer-inquiry">
+                    Are you a customer?
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/get-in-touch/creator-inquiry">
+                    Are you a creator?
+                  </Link>
+                </li>
+              </ul>
             </div>
 
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <Link to="mailto:business@thehonestco.in"><div className="footer-heading mb-2"> hello@thehonestco.in </div></Link>
-            <div className="footer-heading mb-2"> Terms & Conditions </div>
+              <Link to="mailto:business@thehonestco.in">
+                <div className="footer-heading mb-2">
+                  {" "}
+                  hello@thehonestco.in{" "}
+                </div>
+              </Link>
+              <Link to="tel:+91 120 246 2890">
+                <div className="footer-heading mb-2"> +91 120 246 2890</div>
+              </Link>
+              <div className="footer-heading mb-2"> Terms & Conditions </div>
             </div>
           </div>
           <p className="post-footer pt-3 border-top text-center">
-            &copy; 2023 - The Honest Company
+            &copy; 2024 - Honest Digital Services Pvt. Ltd.
           </p>
         </div>
       </section>

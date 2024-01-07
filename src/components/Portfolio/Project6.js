@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -10,15 +10,15 @@ import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro6Banner.jpg";
 import Grid from "../../images/GIftly/Grid/Mobile Grid Giftly.jpg";
-import Grid2 from '../../images/GIftly/Grid/Mobile Grid 2 Giftly.jpg'
-import mob1 from '../../images/GIftly/Mobile Grid 1 a.jpg'
+import Grid2 from "../../images/GIftly/Grid/Mobile Grid 2 Giftly.jpg";
+import mob1 from "../../images/GIftly/Mobile Grid 1 a.jpg";
 // import mob2 from '../../images/GIftly/Mobile Grid 1 b.jpg'
-import mob3 from '../../images/GIftly/Mobile Grid 1 c.jpg'
+import mob3 from "../../images/GIftly/Mobile Grid 1 c.jpg";
 // import mob4 from '../../images/GIftly/Mobile Grid 1 d.jpg'
-import mob5 from '../../images/GIftly/Web Grid a.jpg'
-import mob6 from '../../images/GIftly/Web Grid b.jpg'
-import mob7 from '../../images/GIftly/Web Grid c.jpg'
-import mob8 from '../../images/GIftly/Web Grid d.jpg'
+import mob5 from "../../images/GIftly/Web Grid a.jpg";
+import mob6 from "../../images/GIftly/Web Grid b.jpg";
+import mob7 from "../../images/GIftly/Web Grid c.jpg";
+import mob8 from "../../images/GIftly/Web Grid d.jpg";
 import secondGrid from "../../images/pro6SecondaryBanner.jpg";
 import webGrid from "../../images/GIftly/Web/Web Grid Giftly.jpg";
 import conclusion from "../../images/GIftly/Conclusion.jpg";
@@ -68,7 +68,7 @@ function Project6() {
               <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li className="current">Online Photo Sharing with E-Commerce</li>
           </ul>
@@ -76,7 +76,7 @@ function Project6() {
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                   Community Driver
+                  Community Driver
                   <br />
                   Content Sharing & E-Commerce
                   <br />
@@ -92,9 +92,7 @@ function Project6() {
                 <div className="py-4">
                   <ul className="top-works">
                     <li className="pt-4"> Image Sharing</li>
-                    <li className="pt-4">
-                    Payment Gateways{" "}
-                    </li>
+                    <li className="pt-4">Payment Gateways </li>
                   </ul>
                 </div>
               </div>
@@ -111,7 +109,11 @@ function Project6() {
             </div>
           </div>
         </div>
-        <img src={Banner} alt="" className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0" />
+        <img
+          src={Banner}
+          alt=""
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+        />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
@@ -121,7 +123,7 @@ function Project6() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4">
-              An exclusive invite only social media platform for families to
+                An exclusive invite only social media platform for families to
                 better share memories and moments and make the best of
                 technology to stay connected via online gifting. .
               </div>
@@ -142,7 +144,7 @@ function Project6() {
                 <hr className="w-50" />
               </div>
               <div className="proj-content pb-4 w-100 paddingLeft-even">
-              Creation of a mobile application with an e-commerce and
+                Creation of a mobile application with an e-commerce and
                 community based content sharing module which allows the users to
                 interact with their friends and and purchase or gift products
                 listed over the platform.
@@ -165,12 +167,12 @@ function Project6() {
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
-              Social E-Commerce
+                Social E-Commerce
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-              Our team created an invite only community modules which allows
+                Our team created an invite only community modules which allows
                 the user to personally invite users to join their family tree.
                 Once invited, the users would have the ability to gift products
                 available on the platform
@@ -187,12 +189,12 @@ function Project6() {
           <div className="row py-md-5 py-4 pb-md-3 pb-0">
             <div className="col-12 col-md-6 d-md-none d-flex">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
-              Dutch & Gift Together
+                Dutch & Gift Together
               </div>
             </div>
             <div className="col-12 col-md-6 py-md-5 py-0">
               <div className="custom_left_text">
-              Once the user has been invited to a family tree, the users on
+                Once the user has been invited to a family tree, the users on
                 the platform would have the ability to create a new gifting
                 request wihich would allow the respective users to dutch & gift
                 products available off the platform
@@ -202,7 +204,7 @@ function Project6() {
             {/* desktop only */}
             <div className="col-12 col-md-6 d-none d-md-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
-              Make Moments Count
+                Make Moments Count
               </div>
             </div>
             <div className="col-12 d-none d-md-block">
@@ -220,10 +222,10 @@ function Project6() {
           <div className="row py-4 d-none">
             <div className="col-12 text-align-center mobile-text-align-left">
               <div className="proj-heading">
-                 Management Made Easy Via Dashboards
+                Management Made Easy Via Dashboards
               </div>
               <div className="proj-sub-heading py-3">
-              There exists a lot of applications which allows the users to
+                There exists a lot of applications which allows the users to
                 share, like and interact with the media but few of them offers a
                 private circle where one can decide whom to invite and then
                 gift. The user would have the ability to select from the
@@ -233,7 +235,7 @@ function Project6() {
             </div>
             {/* desktop */}
             <div className="col-12 d-none d-md-flex">
-            <img src={webGrid} alt="" className="w-100 py-5" />
+              <img src={webGrid} alt="" className="w-100 py-5" />
             </div>
             {/* mobile */}
             <div className="col-12 d-block d-md-none py-2">
@@ -251,7 +253,7 @@ function Project6() {
           </div>
           <div className="col-12 col-md-5 py-2">
             <div className="w-100">
-            Our Electronic Health platform, with its user-friendly mobile
+              Our Electronic Health platform, with its user-friendly mobile
               application, empowers individuals to take control of their health
               by efficiently managing medications and consultations all via an
               intitutive mobile application.
@@ -315,17 +317,12 @@ function Project6() {
                 <a href="" className="text-white">
                   Click here to start elevating your physical and digital
                   customer experiences.
-                  <div
-                  className="col-12 col-md-8 col-lg-3 d-flex justify-content-start"
-                  style={{ marginLeft: "110px", marginTop: "-22px" }}
-                >
                   <Lottie
                     animationData={Arrow}
                     autoplay
                     loop
-                    className="w-xs-100 w-md-12 footerArrow"
+                    className="w-xs-100 w-md-12 projectFooterArrow"
                   />
-                </div>
                 </a>
               </h5>
             </div>
@@ -365,7 +362,7 @@ function Project6() {
                   <a href="#">Mobile Application Development</a>
                 </li>
                 <li>
-                  <a href="#">AI & ML solutions</a>
+                  <a href="#">AI & ML Solutions</a>
                 </li>
                 <li>
                   <a href="#">Web3 & Blockchain</a>
@@ -396,13 +393,13 @@ function Project6() {
                   <a href="#">Product Design</a>
                 </li>
                 <li>
-                  <a href="#">Concept Development & Development</a>
+                  <a href="#">Concept & Prototyping</a>
                 </li>
                 <li>
                   <a href="#">Manufacturing Support</a>
                 </li>
                 <li>
-                  <a href="#">Merchandizing & Packaging Designe</a>
+                  <a href="#">Merchandising & Packaging</a>
                 </li>
               </ul>
             </div>
@@ -410,7 +407,7 @@ function Project6() {
               <div className="footer-heading mb-2"> Industrial </div>
               <ul>
                 <li>
-                  <a href="#">D2C& E-Commerce</a>
+                  <a href="#">D2C & E-Commerce</a>
                 </li>
                 <li>
                   <a href="#">Banking & Finance</a>
@@ -487,7 +484,7 @@ function Project6() {
               <div className="footer-heading mb-2">Get In Touch </div>
               <ul>
                 <li>
-                  <a href="#">Are you a Customer</a>
+                  <a href="#">Are you a customer</a>
                 </li>
                 <li>
                   <a href="#">Are you a creator?</a>
@@ -496,12 +493,20 @@ function Project6() {
             </div>
 
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-              <div className="footer-heading mb-2"> hello@thehonestco.in </div>
+              <Link to="mailto:business@thehonestco.in">
+                <div className="footer-heading mb-2">
+                  {" "}
+                  business@thehonestco.in{" "}
+                </div>
+              </Link>
+              <Link to="tel:+91 120 246 2890">
+                <div className="footer-heading mb-2"> +91 120 246 2890</div>
+              </Link>
               <div className="footer-heading mb-2"> Terms & Conditions </div>
             </div>
           </div>
           <p className="post-footer pt-3 border-top text-center">
-            &copy; 2023 - The Honest Company
+            &copy; 2024 - Honest Digital Services Pvt. Ltd.
           </p>
         </div>
       </section>

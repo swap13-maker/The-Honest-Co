@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -11,15 +11,15 @@ import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/pro4Banner.jpg";
 import Grid from "../../images/SOS+/Grid/Mobile Grid SOS.jpg";
-import Grid2 from '../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg'
-import secondGrid from "../../images/SOS+/Secondary Banner.jpg"
+import Grid2 from "../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg";
+import secondGrid from "../../images/SOS+/Secondary Banner.jpg";
 import webGrid from "../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg";
 import conslusion from "../../images/Conclusion.jpg";
-import mob1 from '../../images/SOS+/Mobile Grid 1 a.jpg'
-import mob2 from '../../images/SOS+/Mobile Grid 1 b.jpg'
-import mob3 from '../../images/SOS+/Mobile Grid 1 c.jpg'
-import mob4 from '../../images/SOS+/Mobile Grid 2 a.jpg'
-import mob5 from '../../images/SOS+/Mobile Grid 2 b.jpg'
+import mob1 from "../../images/SOS+/Mobile Grid 1 a.jpg";
+import mob2 from "../../images/SOS+/Mobile Grid 1 b.jpg";
+import mob3 from "../../images/SOS+/Mobile Grid 1 c.jpg";
+import mob4 from "../../images/SOS+/Mobile Grid 2 a.jpg";
+import mob5 from "../../images/SOS+/Mobile Grid 2 b.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Arrow from "../../images/White_Arrow.json";
@@ -65,7 +65,7 @@ function Project4() {
               <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li className="current">SOS & Location Sharing Application </li>
           </ul>
@@ -73,8 +73,8 @@ function Project4() {
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                Enhanced Tracking &<br />
-                Surveillance Via Community Driven
+                  Enhanced Tracking &<br />
+                  Surveillance Via Community Driven
                   <br />
                   Online Platform
                   <img
@@ -88,9 +88,7 @@ function Project4() {
                 <div className="py-4">
                   <ul className="top-works">
                     <li className="pt-4">Live Tracking</li>
-                    <li className="pt-4">
-                    SOS Mobile App{" "}
-                    </li>
+                    <li className="pt-4">SOS Mobile App </li>
                   </ul>
                 </div>
               </div>
@@ -107,7 +105,11 @@ function Project4() {
             </div>
           </div>
         </div>
-        <img src={Banner} alt="" className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0" />
+        <img
+          src={Banner}
+          alt=""
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+        />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row py-5">
@@ -117,7 +119,7 @@ function Project4() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content pb-4">
-              A single platform allowing users to send money and execute
+                A single platform allowing users to send money and execute
                 utilities payment via an online mobile application to enhance
                 day to day transactions and better track bill payments and
                 finances.
@@ -139,7 +141,7 @@ function Project4() {
                 <hr className="w-50" />
               </div>
               <div className="proj-content pb-4 w-100 paddingLeft-even">
-              Development of a cutting edge mobile based platform allowing
+                Development of a cutting edge mobile based platform allowing
                 user to semmlessly transfer money and effortlessly manage their
                 finances ehancing the overall user experience and satisfaction.
               </div>
@@ -161,12 +163,12 @@ function Project4() {
           <div className="row py-5">
             <div className="col-12 col-md-6 d-flex">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
-              One For All
+                One For All
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="content_text">
-              A unique mobile application that allows users to pay almost all
+                A unique mobile application that allows users to pay almost all
                 of their online bills. The platform allows the user to pay
                 online via the multiple payment gateways and service channels.
                 The application offers a one for all bills payment solutions
@@ -215,11 +217,9 @@ function Project4() {
           {/* section3 */}
           <div className="row py-4 d-none">
             <div className="col-12 text-align-center mobile-text-align-left">
-              <div className="proj-heading">
-              Seamless User Experience
-              </div>
+              <div className="proj-heading">Seamless User Experience</div>
               <div className="proj-sub-heading py-3">
-              The mobile application allows the user to manage all the payment
+                The mobile application allows the user to manage all the payment
                 and also allows them to pay from their multiple banks allowing
                 the application to be a one-stop platform for all of their bills
                 and utilities payment.
@@ -227,7 +227,7 @@ function Project4() {
             </div>
             {/* desktop */}
             <div className="col-12 d-none d-md-flex">
-            <img src={webGrid} alt="" className="w-100 py-5" />
+              <img src={webGrid} alt="" className="w-100 py-5" />
             </div>
             {/* mobile */}
             {/* <div className="col-12 d-block d-md-none py-2">
@@ -310,20 +310,18 @@ function Project4() {
                 </header>
               </article>
               <h5 className="footer-content cool-link text-white">
-                <Link to="/get-in-touch/customer-inquiry" className="text-white">
+                <Link
+                  to="/get-in-touch/customer-inquiry"
+                  className="text-white"
+                >
                   Click here to start elevating your physical and digital
                   customer experiences.
-                  <div
-                  className="col-12 col-md-8 col-lg-3 d-flex justify-content-start"
-                  style={{ marginLeft: "110px", marginTop: "-22px" }}
-                >
                   <Lottie
                     animationData={Arrow}
                     autoplay
                     loop
-                    className="w-xs-100 w-md-12 footerArrow"
+                    className="w-xs-100 w-md-12 projectFooterArrow"
                   />
-                </div>
                 </Link>
               </h5>
             </div>
@@ -356,59 +354,59 @@ function Project4() {
                 Application Development{" "}
               </div>
               <ul>
-              <li>
-                <Link to="/portfolio">Custom Software Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Mobile Application Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">AI & ML solutions</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Web3 & Blockchain</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Custom Software Development</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Mobile Application Development</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">AI & ML Solutions</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Web3 & Blockchain</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Content Creation </div>
               <ul>
-              <li>
-                <Link to="/portfolio">Motion Graphics</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">2D/ 3D Graphics Design</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Advertisements</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Branding & Identify Design</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Motion Graphics</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">2D & 3D Graphics Design</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Advertisements</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Branding & Identify Design</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Industrial Design </div>
               <ul>
-              <li>
-                <Link to="/portfolio">Product Design</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Concept Development & Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Manufacturing Support</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Merchandizing & Packaging Designe</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Product Design</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Concept & Prototyping</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Manufacturing Support</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Merchandising & Packaging</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Industrial </div>
               <ul>
                 <li>
-                  <a href="#">D2C& E-Commerce</a>
+                  <a href="#">D2C & E-Commerce</a>
                 </li>
                 <li>
                   <a href="#">Banking & Finance</a>
@@ -430,79 +428,92 @@ function Project4() {
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Resources </div>
               <ul>
-              <li>
-                <Link to="/resources">Case Studies</Link>
-              </li>
-              <li>
-                <Link to="/resources">Articles</Link>
-              </li>
-              <li>
-                <Link to="/resources">White Papers</Link>
-              </li>
-              <li>
-                <Link to="/resources">Tutorials</Link>
-              </li>
-              <li>
-                <Link to="/resources">Infographics</Link>
-              </li>
-              <li>
-                <Link to="/resources">Reports</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/resources">Case Studies</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Articles</Link>
+                </li>
+                <li>
+                  <Link to="/resources">White Papers</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Tutorials</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Infographics</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Reports</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2">Portfolio</div>
               <ul>
-              <li>
-                <Link to="/portfolio">Application Development</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Content Creation</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Industrial Design</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/portfolio">Application Development</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Content Creation</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio">Industrial Design</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2"> Connect With Us</div>
               <ul>
-              <li>
-                <Link to="https://www.linkedin.com/company/the-honest-co">LinkedIn</Link>
-              </li>
-              <li>
-                <Link to="https://wa.me/917011242138">WhatsApp</Link>
-              </li>
-              <li>
-                <Link to="mailto:business@thehonestco.in">Email</Link>
-              </li>
-              <li>
-                <Link to="tel:+917011242138">Get in touch</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="https://www.linkedin.com/company/the-honest-co">
+                    LinkedIn
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://wa.me/917011242138">WhatsApp</Link>
+                </li>
+                <li>
+                  <Link to="mailto:business@thehonestco.in">Email</Link>
+                </li>
+                <li>
+                  <Link to="tel:+917011242138">Get in touch</Link>
+                </li>
+              </ul>
             </div>
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
               <div className="footer-heading mb-2">Get In Touch </div>
               <ul>
-              <li>
-                <Link to="/get-in-touch/customer-inquiry">Are you a Customer?</Link>
-              </li>
-              <li>
-                <Link to="/get-in-touch/creator-inquiry">Are you a creator?</Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/get-in-touch/customer-inquiry">
+                    Are you a customer?
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/get-in-touch/creator-inquiry">
+                    Are you a creator?
+                  </Link>
+                </li>
+              </ul>
             </div>
 
             <div className="col-6 pt-media-4 col-md-custom-2 footer-card">
-            <Link to="mailto:business@thehonestco.in"><div className="footer-heading mb-2"> hello@thehonestco.in </div></Link>
-            <div className="footer-heading mb-2"> Terms & Conditions </div>
+              <Link to="mailto:business@thehonestco.in">
+                <div className="footer-heading mb-2">
+                  {" "}
+                  hello@thehonestco.in{" "}
+                </div>
+              </Link>
+              <Link to="tel:+91 120 246 2890">
+                <div className="footer-heading mb-2"> +91 120 246 2890</div>
+              </Link>
+              <div className="footer-heading mb-2"> Terms & Conditions </div>
             </div>
           </div>
           <p className="post-footer pt-3 border-top text-center">
-            &copy; 2023 - The Honest Company
+            &copy; 2024 - Honest Digital Services Pvt. Ltd.
           </p>
         </div>
-        
       </section>
     </section>
   );

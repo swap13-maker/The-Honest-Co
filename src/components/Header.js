@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav} from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./Hero.css";
 
 function Header() {
@@ -39,12 +40,16 @@ function Header() {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
+          <ScrollLink to="Ourstory" smooth={true} duration={200}>
             <Nav.Link className="text-black menu-link" href="#">
               about
             </Nav.Link>
+          </ScrollLink>  
+          <ScrollLink to="Services" smooth={true} duration={200}>
             <Nav.Link className="text-black menu-link" href="#">
               services
             </Nav.Link>
+          </ScrollLink>  
             <Nav.Link className="text-black menu-link" href="#">
               team
             </Nav.Link>

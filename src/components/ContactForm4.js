@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function ContactForm4({ onMoreChange }) {
+function ContactForm4({ onMoreChange,handleCheckboxDownload }) {
   const [more, setMore] = useState("");
+  const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
     const storedMore = localStorage.getItem("more");
@@ -18,13 +19,25 @@ function ContactForm4({ onMoreChange }) {
     localStorage.setItem("more", newMore);
   };
 
+  const handleCheckboxChange = (event) => {
+    const checked = event.target.checked;
+    setIsChecked(checked);
+    handleCheckboxDownload(checked);
+  };
+
   return (
     <div className="py-4 flex-direction-column">
       <div className="contact-heading">
         How to <span className="font-weight-600 text-black"> Proceed!</span>
       </div>
       <div className="contact-main-heading font-weight-600 text-black text-decoration-underline text-uppercase pt-4">
-        <Link to="https://calendly.com/the-honest-co" className="text-black text-decoration-underline text-uppercase">SET UP cALL WITH US </Link>
+        <Link
+          target="_blank"
+          to="https://calendly.com/the-honest-co"
+          className="text-black text-decoration-underline text-uppercase"
+        >
+          SET UP cALL WITH US{" "}
+        </Link>
         <svg
           width="20"
           height="14"
@@ -56,14 +69,14 @@ function ContactForm4({ onMoreChange }) {
             <Form.Label>Type here</Form.Label>
           </Form.Floating>
         </Form.Group>
-
       </div>
 
       <Form.Group className="pt-4" controlId="formCheckbox">
         <Form.Check
           className="w-100 d-flex media-checkbox"
           type="checkbox"
-          label="Click here to download a Work Document of our sample NDA. We prefer to keep the NDA in place while conceptulizing details of your project"
+          label="Click here to download a of our sample NDA. We prefer to keep the NDA in place while conceptualising details of your project"
+          onChange={handleCheckboxChange}
         />
       </Form.Group>
     </div>
