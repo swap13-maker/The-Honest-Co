@@ -27,7 +27,6 @@ function LandingPage() {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const scrollToSection = params.get("scrollTo");
-    console.log(scrollToSection,"scrollToSection")
     if (scrollToSection === "Ourstory") {
       // Use scroller to smoothly scroll to the element with ID "Ourstory"
       scroller.scrollTo("Ourstory", {
