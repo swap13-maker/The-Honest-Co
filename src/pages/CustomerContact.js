@@ -244,10 +244,10 @@ function CustomerContact() {
               <div className="pl-6">Menu</div>
               <ul>
                 <li>
-                  <Link to="/">About</Link>
+                  <Link to="/?scrollTo=Ourstory">About</Link>
                 </li>
                 <li>
-                  <Link to="/">Services</Link>
+                  <Link to="/?scrollTo=ServicesMob">Services</Link>
                 </li>
                 <li>
                   <Link to="/get-in-touch/creator-inquiry">Team</Link>
