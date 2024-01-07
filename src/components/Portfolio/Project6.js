@@ -317,13 +317,12 @@ function Project6() {
                 <a href="" className="text-white">
                   Click here to start elevating your physical and digital
                   customer experiences.
-                  
-                    <Lottie
-                      animationData={Arrow}
-                      autoplay
-                      loop
-                      className="w-xs-100 w-md-12 footerArrow"
-                    />
+                  <Lottie
+                    animationData={Arrow}
+                    autoplay
+                    loop
+                    className="w-xs-100 w-md-12 projectFooterArrow"
+                  />
                 </a>
               </h5>
             </div>

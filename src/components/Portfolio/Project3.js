@@ -291,17 +291,12 @@ return (
                 <Link to="/get-in-touch/customer-inquiry" className="text-white">
                   Click here to start elevating your physical and digital
                   customer experiences.
-                  {/* <div
-                  className="col-12 col-md-8 col-lg-3 d-flex justify-content-start"
-                  style={{ marginLeft: "110px", marginTop: "-22px" }}
-                > */}
                   <Lottie
                     animationData={Arrow}
                     autoplay
                     loop
-                    className="w-xs-100 w-md-12 footerArrow"
+                    className="w-xs-100 w-md-12 projectFooterArrow"
                   />
-                {/* </div> */}
                 </Link>
               </h5>
             </div>

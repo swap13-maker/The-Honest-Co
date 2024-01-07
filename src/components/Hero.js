@@ -4,11 +4,12 @@ import "./../App.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../images/logo.svg";
 import logoIcon from "../images/logo-icon.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import $ from "jquery";
 
 function Hero() {
+  const navigate = useNavigate();
   useEffect(() => {
     localStorage.clear();
   }, []);
@@ -20,6 +21,30 @@ function Hero() {
     setMenuOpen(!isMenuOpen);
     $("#toggle").toggleClass("active");
     $("#overlay").toggleClass("open");
+  };
+  const handleHome = () =>{
+    setMenuOpen(!isMenuOpen);
+    navigate('/')
+  }
+  const handleAboutClick = () => {
+    setMenuOpen(!isMenuOpen);
+    navigate('/?scrollTo=Ourstory');
+  }
+  const handleServicesClickMob = () =>{
+    navigate('/?scrollTo=ServicesMob')
+    setMenuOpen(!isMenuOpen);
+   
+  }
+  const handleScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      setMenuOpen(!isMenuOpen);
+    }
   };
 
   return (
@@ -95,20 +120,20 @@ function Hero() {
             <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
               <nav className="overlay-menu">
                 <div className="pl-6">
-                  <Link to="/">Home</Link>
+                  <Link onClick={handleHome}>Home</Link>
                 </div>
                 <ul>
                   <li>
-                    <Link to="/" className="font-weight-100">
+                    <Link  onClick={() => handleScrollTo("Ourstory")} className="font-weight-100">
                       About
                     </Link>
                   </li>
                   <li>
-                  <ScrollLink to="Services" smooth={true} duration={200}>
-                    <Link to="/" className="font-weight-100">
+                  
+                    <Link onClick={() => handleScrollTo("ServicesMob")} className="font-weight-100">
                       Services
                     </Link>
-                  </ScrollLink>  
+                  
                     /{" "}
                   </li>
                   <li>

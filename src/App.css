@@ -202,6 +202,10 @@ h1 {
   margin-left: 100px;
   width: 5%;
 }
+.projectFooterArrow{
+  margin-left: 100px;
+  width: 5% !important;
+}
 /* gradient effect */
 @keyframes animationgradienttitle {
   0% {
@@ -484,6 +488,11 @@ h1 {
     margin-top: -25px;
     width: 4% !important;
   }
+  .projectFooterArrow{
+    margin-left: 110px; 
+    margin-top: -25px;
+    width: 4% !important;
+  }
   .heading-logo {
     margin-left: 8%;
   }
@@ -504,6 +513,11 @@ h1 {
   }
   .footerArrow{
     margin-left: 125px; /* Override margin for mobile */
+    margin-top: -15px;
+    width: 5% !important;
+  }
+  .projectFooterArrow{
+    margin-left: 70px; /* Override margin for mobile */
     margin-top: -15px;
     width: 5% !important;
   }

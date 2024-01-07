@@ -318,7 +318,7 @@ function Project1() {
                     animationData={Arrow}
                     autoplay
                     loop
-                    className="w-xs-100 w-md-12 footerArrow"
+                    className="w-xs-100 w-md-12 projectFooterArrow"
                   />
                 {/* </div> */}
                 </Link>

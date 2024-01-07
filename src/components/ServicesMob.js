@@ -4,7 +4,7 @@ import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
 export default function ServicesMob() {
   return (
     <>
-      <section className="container d-block d-md-none">
+      <section className="container d-block d-md-none" id="ServicesMob">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
