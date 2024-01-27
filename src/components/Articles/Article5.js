@@ -78,7 +78,13 @@ export default function Article5() {
           content="product forecasting customer segmentation python ai models 
                     product recommendations custom ai & ml development "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article5.b86640d5928d8b07bf7f.jpg" />
+        <meta property="og:title" content="Strategic Growth, AI & ML Forecasting Solutions" />
+        <meta
+          property="og:description"
+          content="Optimize business strategy with AI and ML solutions. 
+          Enhance forecasting and customer targeting for sustainable and impactful growth"
+        />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

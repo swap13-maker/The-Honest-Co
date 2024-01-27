@@ -81,7 +81,13 @@ export default function Article9() {
           content="calendly like app development online interview scheduling custom hrms development 
                   digital development in HR industry software development "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article9.6294d34a0d6c125be329.jpg" />
+        <meta
+          property="og:description"
+          content="Modernize interview scheduling with mobile apps. Enhance team efficiency and applicant experience. Elevate your recruitment process.
+                   Streamlining HR Operations with ML Models"
+        />
+         <meta property="og:title" content="Efficient Interview Scheduling with Mobile Apps" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

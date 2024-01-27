@@ -73,7 +73,13 @@ export default function App() {
           content="plant diseases detection via mobile app 
             agriculture technology advanced farming artificial intelligence machine learning"
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article3.0ca05ede927b4e07992e.jpg" />
+        <meta
+          property="og:description"
+          content="Transform agriculture with AI and ML. Detect plant diseases early for sustainable farming. Explore our cutting-edge solutions.
+          Low-Code Platforms for E-Commerce"
+        />
+        <meta property="og:title" content="Precision Agriculture, AI & ML Plant Disease Detection" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

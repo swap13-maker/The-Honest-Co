@@ -20,6 +20,7 @@ import Article9 from './components/Articles/Article9.js';
 import Article10 from './components/Articles/Article10.js';
 import Article11 from './components/Articles/Article11';
 import Article12 from './components/Articles/Article12.js';
+import Article13 from './components/Articles/Article13.js';
 import Project2 from './components/Portfolio/Project2.js';
 import Project3 from './components/Portfolio/Project3.js';
 import Project4 from './components/Portfolio/Project4.js';
@@ -28,6 +29,9 @@ import Project6 from './components/Portfolio/Project6';
 import Project8 from './components/Portfolio/Project8';
 import Project9 from './components/Portfolio/Project9';
 import { Helmet } from "react-helmet";
+import Article14 from './components/Articles/Article14.js';
+import Article15 from './components/Articles/Article15.js';
+import Article16 from './components/Articles/Article16.js';
 
 function App() {
   return (
@@ -70,6 +74,10 @@ function App() {
           <Route path="/resources/articles/machine-learning-models-streamlining-application-filterization-shortlisting-hr-operations" element={<Article10 />} />
           <Route path="/resources/articles/custom-crm-development-ecommerce-industries-businesses" element={<Article11 />} />
           <Route path="/resources/articles/effective-route-planning-fleet-management-airiticifal-intelligence-models" element={<Article12 />} />
+          <Route path="/resources/articles/digital-transformation-and-development-in-middle-eastern-healthcare" element={<Article13 />}/>
+          <Route path="/resources/articles/custom-solutions-for-cultural-sensitivity-in-health-tech" element={<Article14/>}/>
+          <Route path="/resources/articles/simplifying-payments-with-bespoke-prm-solutions" element={<Article15/>}/>
+          <Route path="/resources/articles/mental-health-support-through-messaging-platforms" element={<Article16 />} />
           <Route path="/thankyou" element={<Thanks />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -18,6 +18,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import Article1 from '../../images/Article/Article1/Article1.jpg'
 
 export default function App() {
   useEffect(() => {
@@ -81,7 +82,13 @@ export default function App() {
           content="money transfer app development custom software development 
                    mobile app development Online payments Finance "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article1.6bd756733d9fbd04e9fb.jpg" />
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:description" content="Unlock seamless global transactions with our expert mobile app development. Explore the role of remittance applications in business expansion
+           AI and ML Crypto Trading Bot"></meta>
+        <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+        <meta property="og:title" content="Global Commerce & Remittance Solutions for Businesses" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="container main-container">

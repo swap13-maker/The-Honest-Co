@@ -80,7 +80,13 @@ export default function Article12() {
           content="fleet management softwares cab hailing mobile applications 
                   google maps integrations ai & ml technologies ev cab mobile app"
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article12.fcf9f4609d3c2122e1f8.jpg" />
+        <meta
+          property="og:description"
+          content="Enhance route planning and fleet management with artificial intelligence. 
+          Optimize operations for efficient and cost-effective logistics"
+        />
+        <meta property="og:title" content="AI Fleet Management for Effective Route Planning" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

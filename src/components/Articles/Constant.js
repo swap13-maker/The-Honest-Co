@@ -55,4 +55,20 @@ export const Article12B12a = "artificial intelligence platforms in fleet managem
 export const Article12B12b = "Google Maps and how to build a cab business"
 export const Article12B12c ="advancements and future in fleet management"
 
+export const Article13Banner = " Digital Transformation in Middle East"
+export const Article13B1a = "develop custom PRM solutions"
+export const Article13B1b = "future of healthtech in middle east"
 
+export const Article14Banner = "multilingual mobile applications"
+export const Article14B1a = "user focused design "
+export const Article14B1b = "designing for diversity"
+export const Article14B1c = "Embracing Cultural Sensitivity"
+
+export const Article15Banner = "Patient Relationship Management softwares"
+export const Article15B1b = "payment gateway integration"
+export const Article15B1c = " Automated Billing Solutions"
+
+export const Article16Banner = "Continuous Care in Mental Health"
+export const Article16B1a = "Messaging Support in mobile apps"
+export const Article16B1b = "online doctor consultation"
+export const Article16B1c = "Mental Health Technology"

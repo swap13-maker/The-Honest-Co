@@ -10,6 +10,11 @@ import Article9 from '../../images/Article/Article9/Article9.jpg'
 import Article10 from '../../images/Article/Article10/Article10.jpg'
 import Article11 from '../../images/Article/Article11/Article11.jpg'
 import Article12 from '../../images/Article/Article12/Article12.jpg'
+import Article13 from '../../images/Article/Article13/Arrticle13.webp'
+import Article14 from '../../images/Article/Article14/Article14.webp'
+import Article15 from '../../images/Article/Article15/Article15.webp'
+import Article16 from '../../images/Article/Article16/Article16.webp'
+
 
 const Filter = [
     {
@@ -133,8 +138,50 @@ const Filter = [
       description: "Enhance route planning and fleet management with artificial intelligence. Optimize operations for efficient and cost-effective logistics.",
       url:"/resources/articles/effective-route-planning-fleet-management-airiticifal-intelligence-models",
       alt:"custom fleet management platform and softwares"
+    },
+    {
+      id: 13,
+      image: Article13,
+      name: "Digital Transformation in Middle Eastern Healthcare",
+      category: "tab2",
+      logo: "react.svg",
+      description: "In the Middle East, the healthcare sector is witnessing a pivotal transformation, driven by the rapid adoption of digital technologies.",
+      url:"/resources/articles/digital-transformation-and-development-in-middle-eastern-healthcare",
+      alt:"Digital Transformation in Middle East"
+    },
+    {
+      id: 14,
+      image: Article14,
+      name: "Cultural Sensitivity in Health Tech",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Adopting cultural sensitivity within healthcare technology ensuring meaningful and effective healthcare solutions for Middle Eastern businesses",
+      url:"/resources/articles/custom-solutions-for-cultural-sensitivity-in-health-tech",
+      alt:"multilingual mobile applications"
+    }, 
+    {
+      id: 15,
+      image: Article15,
+      name: "Simplifying Payments in Health Centers ",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Advanced patient relationship management (PRM) softwares streamlining payments benefiitng both healthcare providers and patients.",
+      url:"/resources/articles/simplifying-payments-with-bespoke-prm-solutions",
+      alt:"payment integrations in PRM softwares"
+    },
+    {
+      id: 16,
+      image: Article16,
+      name: "Mental Health Support Through Messaging Platforms",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Role of mobile application in providing continious support and care for individual seeking mental health support & services.",
+      url:"/resources/articles/mental-health-support-through-messaging-platforms",
+      alt:"mobile applications with mental health messaging"
     }
   ];
+
+  const ReversedFilter = [...Filter].reverse();
   
-  export default Filter;
+  export default ReversedFilter;
   

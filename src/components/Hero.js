@@ -124,13 +124,13 @@ function Hero() {
                 </div>
                 <ul>
                   <li>
-                    <Link  onClick={() => handleScrollTo("Ourstory")} className="font-weight-100">
+                    <Link  onClick={() => handleScrollTo("Ourstory")}>
                       About
                     </Link>
                   </li>
                   <li>
                   
-                    <Link onClick={() => handleScrollTo("ServicesMob")} className="font-weight-100">
+                    <Link onClick={() => handleScrollTo("ServicesMob")}>
                       Services
                     </Link>
                   

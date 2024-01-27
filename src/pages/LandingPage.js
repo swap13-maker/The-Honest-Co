@@ -14,6 +14,7 @@ import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import { scroller } from 'react-scroll';
+import TheHonest from '../images/The_honest.png'
 
 
 function LandingPage() {
@@ -65,6 +66,8 @@ function LandingPage() {
           property="og:description"
           content="Honest Digital Services | Product Development Agency"
         />
+         <meta property="og:image" content={TheHonest} />
+        {/* <meta property="og:title" content="Punto Pago | Cuberto Projects"></meta> */}
         <meta
           name="description"
           content="Helping businesses create digital products. We specialize in creating taiored web and mobile app development, branding & content creation and packaing & industrial design."
