@@ -75,7 +75,13 @@ export default function Article7() {
           content="adaptive learning courses ai in educational technology ed-tech 
                    custom lms development learning management solutions "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article7.99af7be0389ffbe8dac1.jpg" />
+        <meta
+          property="og:description"
+          content="Transform education with adaptive course modules powered by deep learning algorithms. Tailor learning experiences for enhanced outcomes.
+                   Automating Contracts with Custom App Development"
+        />
+        <meta property="og:title" content="Deep Learning for Adaptive Course Modules" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

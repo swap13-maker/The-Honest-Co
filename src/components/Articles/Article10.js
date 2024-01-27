@@ -74,7 +74,13 @@ export default function Article10() {
           content="staffing & recruitment machine learning 
                   artificial intelligence build an hr software digital development "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article10.993fbf7c79123d9f6f87.jpg" />
+        <meta
+          property="og:description"
+          content="Optimize HR operations with machine learning models. Streamline application filterization and shortlisting for efficient and effective hiring.
+                  Custom CRM Development for E-Commerce"
+        />
+        <meta property="og:title" content="ML Models for Streamlined HR Operations" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

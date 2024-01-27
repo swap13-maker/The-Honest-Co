@@ -75,7 +75,13 @@ export default function Article11() {
           content="custom crm hire php developers 
                    mobile app development e-commerce business advancements in ecommerce "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article11.d0476d5c5311f6d6cf75.jpg" />
+        <meta
+          property="og:description"
+          content="Boost e-commerce efficiency with custom CRM development. Tailored solutions for enhanced customer relationship management and business growth.
+                  Effective Route Planning with AI Fleet Management"
+        />
+        <meta property="og:title" content="Tailored CRM for E-Commerce Businesses" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

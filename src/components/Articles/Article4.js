@@ -81,7 +81,13 @@ export default function Article4() {
           content="ecommerce app development ecommerce store via wordpress
                   shopify development online store inventory & warehouse management"
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article4.7642f5a6686a48c49f25.jpg" />
+        <meta property="og:title" content="Elevate E-Commerce, Low-Code Store Creation" />
+        <meta
+          property="og:description"
+          content="Revolutionize your online presence with low-code platforms. Simplify e-commerce store creation and enhance customer engagement.
+                   AI & ML for Forecasting and Targeting"
+        />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

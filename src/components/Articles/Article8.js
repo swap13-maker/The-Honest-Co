@@ -81,7 +81,13 @@ export default function Article8() {
           content="digital development erp software development 
                   advancements in ed-tech mobile app development contract management softwares "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article8.0311ae47b50c3817926e.jpg" />
+        <meta
+          property="og:description"
+          content="Simplify contract management with custom app development. Explore automated solutions for seamless and efficient contract processes.
+                   Mobile Apps for Efficient Interview Scheduling"
+        />
+         <meta property="og:title" content="Easy Contract Management, Custom App Solutions" />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

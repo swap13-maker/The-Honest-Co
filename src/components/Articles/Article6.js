@@ -81,7 +81,13 @@ export default function Article6() {
           content="geofencing gps tracking uber like app development 
                    hybrid application development educational technology"
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article6.482c339d7971203ea441.jpg" />
+        <meta property="og:title" content="Secure Pre-School App, Parental Tracking & Mor" />
+        <meta
+          property="og:description"
+          content="Experience comprehensive pre-school mobile app. Ensure secure parental tracking and smooth transits. Elevate your child's learning journey.
+                  Adaptive Course Modules with Deep Learning"
+        />
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section>

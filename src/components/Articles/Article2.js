@@ -81,7 +81,10 @@ export default function Article2() {
           content="finance & technology artificial intelligence machine learning custom app development 
                    crypto bot development "
         ></meta>
-        <meta property="og:image" content={Banner} />
+        <meta property="og:image" content="http://www.thehonestco.in/static/media/Article2.8bed39ac4caadb699e88.jpg" />
+        <meta property="og:title" content="Smart Crypto Trading, AI & ML Bot Solutions" />
+        <meta property="og:description" content="Empower your trading with AI and ML. Explore our crypto trading bot for intelligent and automated strategies in the dynamic market.
+         AI & ML for Early Plant Disease Detection"></meta>
         <meta name="author" content="Karthik Nath"></meta>
       </Helmet>
       <section className="container main-container">
