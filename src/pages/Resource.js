@@ -151,7 +151,7 @@ const Resource = () => {
               </div>
 
               <div className="row custom-row mt-5 px-3 mobile-d-none">
-                {item.reverse().map((data, index) => {
+                {item.map((data, index) => {
                   const { name, image, description, url, alt } = data;
 
                   // Check if the index is 1, 4, 7, 10, 13, etc.
