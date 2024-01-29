@@ -1,16 +1,16 @@
-// import Project8Image from "../../images/"
-import Portfolio1 from "../../images/Portfolio/portfolio_1.jpg"
-import Portfolio2 from "../../images/Portfolio/portfolio_2.jpg"
-import Portfolio3 from "../../images/Portfolio/portfolio_3.jpg"
-import Portfolio4 from "../../images/Portfolio/portfolio_4.jpg"
-import Portfolio5 from '../../images/Portfolio/Portfolio_5.jpg'
-import Portfolio6 from "../../images/Portfolio/portfolio_6.jpg"
-import Portfolio8 from "../../images/Portfolio/portfolio_8.jpg"
+import mobwork1 from '../../images/OurWork/mobOurWork_IFC.png'
+import mobwork2 from '../../images/OurWork/mobOurWork_2.jpg'
+import mobwork3 from '../../images/OurWork/mobOurWork_3.jpg'
+import mobwork4 from '../../images/OurWork/moobOurWork_4.jpg'
+import mobwork5 from '../../images/OurWork/mobOurWork_5.png'
+import mobwork6 from '../../images/OurWork/mobOurWork_Giftly6.png'
+import mobwork8 from '../../images/OurWork/mobOurWork_8.png'
+import mobwork9 from '../../images/OurWork/mobOurWork_9.png'
 
 const Filter = [
   {
     id: 1,
-    image: Portfolio1,
+    image: mobwork1,
     name: "Online D2C E-Commerce Store",
     category: "tab1",
     logo: "react.svg",
@@ -22,7 +22,7 @@ const Filter = [
 
   {
     id: 2,
-    image: Portfolio2,
+    image: mobwork2,
     name: "P2P Money Remittance Mobile Application",
     category: "tab2",
     logo: "react.svg",
@@ -34,7 +34,7 @@ const Filter = [
   },
   {
     id: 3,
-    image: Portfolio3,
+    image: mobwork3,
     name: "Travel & Cab Hailing Platform ",
     category: "tab6",
     logo: "react.svg",
@@ -45,7 +45,7 @@ const Filter = [
   },
   {
     id: 4,
-    image: Portfolio4,
+    image: mobwork4,
     name: "SOS & Location Sharing Application ",
     category: "tab6",
     logo: "react.svg",
@@ -57,7 +57,7 @@ const Filter = [
   },
   {
     id: 5,
-    image: Portfolio5,
+    image: mobwork5,
     name: "Pill and Appointment Reminder Mobile App",
     category: "tab3",
     logo: "react.svg",
@@ -68,7 +68,7 @@ const Filter = [
   },
   {
     id: 6,
-    image: Portfolio6,
+    image: mobwork6,
     name: "Online Photo Sharing with E-Commerce ",
     category: "tab1",
     logo: "react.svg",
@@ -79,7 +79,7 @@ const Filter = [
   },
   {
     id: 7,
-    image: Portfolio6,
+    image: mobwork5,
     name: "Webshocker - Matjaz Valentar",
     category: "tab4",
     logo: "react.svg",
@@ -90,7 +90,7 @@ const Filter = [
   },
   {
     id: 8,
-    image: Portfolio8,
+    image: mobwork8,
     name: "Interview Scheduling & Job Tracking App",
     category: "tab4",
     logo: "react.svg",
@@ -101,7 +101,7 @@ const Filter = [
   },
   {
     id: 9,
-    image: Portfolio6,
+    image: mobwork9,
     name: "Custom School Learning Platform ",
     category: "tab5",
     logo: "react.svg",

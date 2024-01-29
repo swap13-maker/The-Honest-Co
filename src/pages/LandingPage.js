@@ -17,10 +17,7 @@ import { scroller } from 'react-scroll';
 import TheHonest from '../images/The_honest.png'
 
 
-function LandingPage() {
-
-  // const dispatch = useDispatch()
- 
+function LandingPage() { 
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
