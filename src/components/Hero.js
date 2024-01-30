@@ -138,9 +138,7 @@ function Hero() {
                   </li>
                   <li>
                   <ScrollLink to="Ourstory" smooth={true} duration={200}>
-                    <Link to="/" className="font-weight-100">
-                      Team
-                    </Link>
+                  <Link to="/get-in-touch/creator-inquiry">Team</Link>
                     </ScrollLink>  
                   </li>
                   <li>

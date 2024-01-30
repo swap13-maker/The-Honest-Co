@@ -12,7 +12,6 @@ import Lottie from "lottie-react";
 import loader from "../images/PortfolioListing.json";
 import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
-import Arrow from '../images/Arrow.json'
 
 const Portfolio = () => {
   useEffect(() => {
@@ -160,17 +159,8 @@ const Portfolio = () => {
                 Misc.
               </div>
             </div>
-            {/* <div
-              className={`custom-remove-button mb-5`}
-              onClick={() => {
-                setActiveCategory("All");
-                setItem(Filter);
-              }}
-            >
-              Remove Filter
-            </div> */}
 
-            <div className="row custom-row mt-5 px-3">
+            <div className="row custom-row mt-5 px-3 mobile-d-none">
               {item.map((data, index) => {
                 const { name, logo, image, description, alt, url } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
@@ -192,6 +182,27 @@ const Portfolio = () => {
                 );
               })}
             </div>
+            <div className="desktop-d-none">
+                {item.map((data, index) => (
+                  <div className="pb-5">
+                  <Link key={index} to={data.url}>
+                    {/* <div className="col-12 pb-2"> */}
+                      <img
+                        className="w-100"
+                        src={data.image}
+                        title={data.name}
+                        alt={data.alt}
+                      />
+                      
+                        <div className="work-heading">{data.name}</div>
+                        <div className="work-subheading">{data.description}</div>
+                     
+                    {/* </div> */}
+                  </Link>
+                  </div>
+                ))}
+            </div>
+
           </div>
         </div>
         <div className="bg-white py-4">
@@ -212,16 +223,6 @@ const Portfolio = () => {
                   className="m-0 font-size-15 text-decoration-underline"
                 >
                   Start your dream project with us
-                  {/* <Lottie
-                    style={{
-                      marginLeft: "390px",
-                      marginTop: "-30px",
-                    }}
-                    animationData={Arrow}
-                    autoplay
-                    loop
-                    className="w-xs-100 w-md-12 ml-md-3 portArrow"
-                  /> */}
                 </Link>
               </div>
             </div>
