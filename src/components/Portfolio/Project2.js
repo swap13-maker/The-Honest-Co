@@ -20,16 +20,16 @@ import Banner from "../../images/TranXat2/Web/Banner.webp";
 import Grid from "../../images/TranXat2/Web/Grid 1.webp";
 import Grid2 from "../../images/TranXat2/Web/Grid 2.webp";
 import secondGrid from "../../images/TranXat2/banner2.webp";
-import conclusion from "../../images/Conclusion.jpg";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
+import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 2.webp'
 
 function Project2() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const settings = {
     className: "slider variable-width",
@@ -104,7 +104,12 @@ function Project2() {
         <img
           src={Banner}
           alt=""
-          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-3 d-none d-md-block"
+        />
+        {/* mobile Banner */}
+        <img
+          className="w-100 d-block d-md-none"
+          src={mobwork1} 
         />
         {/* section 1 */}
         <section className="container main-container">

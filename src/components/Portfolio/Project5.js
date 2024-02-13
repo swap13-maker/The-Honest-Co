@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
 import Arrow from "../../images/White_Arrow.json";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
-import mobwork5 from "../../images/OurWork/mobOurWork_5.png";
+import mobwork5 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 5.webp";
 
 function Project5() {
   useEffect(() => {

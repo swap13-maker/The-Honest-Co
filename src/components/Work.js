@@ -17,7 +17,7 @@ import mobwork8 from "../images/OurWork/mobOurWork_8.png";
 import webwork9 from "../images/OurWork/webOurWork_9.jpg";
 import mobwork9 from "../images/OurWork/mobOurWork_9.png";
 import { Link } from "react-router-dom";
-import work7 from "../images/work7.png";
+import work7 from "../images/Portfolio/Portfolio/Portfoliolisting/Frame 8.webp";
 
 import Lottie from "lottie-react";
 import Arrow from "../images/Arrow.json";
@@ -132,14 +132,14 @@ function Work() {
         <Link className="gallery__item media-w-100 d-block">
           <img src={work7} alt="" />
           <Link>
-            <div className="work-heading">Architectural Drawing</div>
+            <div className="work-heading">Interview Scheduling & Job Tracking App</div>
             <div className="work-subheading">
-              D2C & E-commerce · Branding · UI Design · Marketing
+            Staffing and Recruitment · Custom Softwares · Job Search
             </div>
           </Link>
         </Link>
       </div>
-      <div className="gallery pb-md-5 pb-5 mobile-d-none">
+      {/* <div className="gallery pb-md-5 pb-5 mobile-d-none">
         <Link
           to="/portfolio/interview-scheduling-job-tracking-app"
           className="gallery__item media-w-100 d-block"
@@ -170,7 +170,7 @@ function Work() {
             </div>
           </Link>
         </Link>
-      </div>
+      </div> */}
       {/* Mobile mode */}
       <div className="desktop-d-none">
         <div className="pb-5">
@@ -266,13 +266,13 @@ function Work() {
         <div className="pb-5">
           <Link>
             <img src={work7} className="w-100" />
-            <div className="work-heading">Architectural Drawing</div>
+            <div className="work-heading">Interview Scheduling & Job Tracking App</div>
           </Link>
           <div className="work-subheading">
-            D2C & E-commerce · Branding · UI Design · Marketing
+          Staffing and Recruitment · Custom Softwares · Job Search
           </div>
         </div>
-        <div className="pb-5">
+        {/* <div className="pb-5">
           <Link to="/portfolio/interview-scheduling-job-tracking-app">
             {" "}
             <img
@@ -287,8 +287,8 @@ function Work() {
               Staffing and Recruitment · Custom Softwares · Job Search Portal
             </div>
           </Link>
-        </div>
-        <div className="pb-5">
+        </div> */}
+        {/* <div className="pb-5">
           <Link to="/portfolio/custom-school-learning-management-platform">
             <img
               src={mobwork9}
@@ -301,7 +301,7 @@ function Work() {
               and Reporting
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div className="text-align-center py-md-1 py-4">

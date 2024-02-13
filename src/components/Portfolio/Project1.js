@@ -25,7 +25,7 @@ import conclusion from "../../images/Portfolio/Portfolio/IFC/Conclusion.webp";
 import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
-import mobwork1 from '../../images/OurWork/mobOurWork_IFC.png'
+import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 1.webp'
 
 function Project1() {
   useEffect(() => {

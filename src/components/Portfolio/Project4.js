@@ -24,6 +24,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
+import mobwork1 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 4.webp"
 
 function Project4() {
   useEffect(() => {
@@ -103,13 +104,13 @@ function Project4() {
         <img
           src={Banner}
           alt=""
-          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-3 d-none d-md-block"
         />
         {/* mobile Banner */}
-        {/* <img
+        <img
           className="w-100 d-block d-md-none"
           src={mobwork1} 
-        /> */}
+        />
         {/* section 1 */}
         <section className="container main-container">
           <div className="row mt-md-5 mt-4">

@@ -4,26 +4,26 @@ import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
 import Slider from "react-slick";
-import Footer from "./../Footer";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
-import Banner from "../../images/pro6Banner.jpg";
-import Grid from "../../images/GIftly/Grid/Mobile Grid Giftly.jpg";
-import Grid2 from "../../images/GIftly/Grid/Mobile Grid 2 Giftly.jpg";
-import mob1 from "../../images/GIftly/Mobile Grid 1 a.jpg";
-// import mob2 from '../../images/GIftly/Mobile Grid 1 b.jpg'
-import mob3 from "../../images/GIftly/Mobile Grid 1 c.jpg";
-// import mob4 from '../../images/GIftly/Mobile Grid 1 d.jpg'
-import mob5 from "../../images/GIftly/Web Grid a.jpg";
-import mob6 from "../../images/GIftly/Web Grid b.jpg";
-import mob7 from "../../images/GIftly/Web Grid c.jpg";
-import mob8 from "../../images/GIftly/Web Grid d.jpg";
-import secondGrid from "../../images/pro6SecondaryBanner.jpg";
-import webGrid from "../../images/GIftly/Web/Web Grid Giftly.jpg";
-import conclusion from "../../images/GIftly/Conclusion.jpg";
+import Banner from "../../images/Portfolio/Portfolio/Giftly1/Web/Banner.webp";
+import Grid from "../../images/Portfolio/Portfolio/Giftly1/Web/Grid 1.webp";
+import Grid2 from "../../images/Portfolio/Portfolio/Giftly1/Web/Grid 2.webp";
+import Grid3 from "../../images/Portfolio/Portfolio/Giftly1/Web/Grid 3.webp"
+import mob1 from "../../images/Portfolio/Portfolio/Giftly/Mobile/Mobile Grid a.webp";
+import mob2 from "../../images/Portfolio/Portfolio/Giftly1/Mobile/Mobile Grid 2 b 1.webp";
+import mob3 from "../../images/Portfolio/Portfolio/Giftly1/Mobile/Web Grid a.webp";
+import mob4 from "../../images/Portfolio/Portfolio/Giftly/Mobile/Mobile Grid d.jpg";
+import mob5 from "../../images/Portfolio/Portfolio/Giftly1/Mobile/Mobile Grid c-1.webp";
+import mob6 from "../../images/Portfolio/Portfolio/Giftly1/Mobile/Mobile Grid 2 b 1.webp";
+import mob7 from "../../images/Portfolio/Portfolio/Giftly/Mobile/Web Grid c.jpg";
+import mob8 from "../../images/Portfolio/Portfolio/Giftly/Mobile/Web Grid d.jpg";
+import secondGrid from "../../images/Portfolio/Portfolio/Giftly/Secondary Banner.webp";
+import conclusion from "../../images/Portfolio/Portfolio/Giftly/Conclusion.webp";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import mobwork1 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 6.webp";
 import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
@@ -70,29 +70,22 @@ function Project6() {
             <li>
               <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li className="current">Online Photo Sharing with E-Commerce</li>
+            <li className="current">Online D2C E-Commerce Store</li>
           </ul>
           <div className="py-4">
             <div className="row">
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
-                  Community Driver
-                  <br />
-                  Content Sharing & E-Commerce
-                  <br />
-                  Platform
-                  <img
-                    alt=""
-                    className="blog-logo blog-hide mx-3 d-none d-md-block"
-                    src={`https://thehonestco.in/react.svg`}
-                  ></img>
+                  Community Driven
+                  <br />Content Sharing & E-Commerce
+                  <br />Platform
                 </div>
               </div>
               <div className="col-12 col-md-5 d-none d-sm-block">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4"> Image Sharing</li>
-                    <li className="pt-4">Payment Gateways </li>
+                    <li className="pt-4">Image Sharing</li>
+                    <li className="pt-4">Split Payments & Accounting</li>
                   </ul>
                 </div>
               </div>
@@ -102,143 +95,149 @@ function Project6() {
                     <a>D2C & E-Commerce</a>
                   </li>
                   <li className="px-4 d-inline-block">
-                    <a>Custom Softwares</a>
+                    <a>CUSTOM SOFTWARES</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        {/* desktop Banner */}
         <img
           src={Banner}
           alt=""
-          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-3 d-none d-md-block"
         />
+        {/* mobile Banner */}
+        <img className="w-100 d-block d-md-none" src={mobwork1} />
         {/* section 1 */}
         <section className="container main-container">
-          <div className="row py-5">
-            <div className="col-12 col-md-6 pb-4">
-              <div className="proj-heading">
+          <div className="row mt-md-5 mt-4">
+            <div className="col-12 col-md-6 mt-md-0 mt-4">
+              <div className="proj-heading mt-md-4 mt-3">
                 Scope
                 <hr className="w-40" />
               </div>
-              <div className="proj-content pb-4">
-                An exclusive invite only social media platform for families to
-                better share memories and moments and make the best of
-                technology to stay connected via online gifting. .
+              <div className="proj-content mt-md-4 mt-3">
+                An exclusive invite-only social media application for family
+                members to share posts and videos with an integrated e-commerce
+                section allowing the users to group purchase & gift products
+                over the platform.
               </div>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-3 mt-4"
                 src={mob1}
-              ></img>
-              {/* <img
+              />
+              <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-3 mt-3"
                 src={mob2}
-              ></img> */}
+              />
             </div>
-            <div className="col-12 col-md-6 px-3">
+            <div className="col-12 col-md-6 py-md-3 py-5 mt-md-0 mt-2">
               <div className="proj-heading paddingLeft-even">
                 Solution
                 <hr className="w-50" />
               </div>
-              <div className="proj-content pb-4 w-100 paddingLeft-even">
+              <div className="proj-content w-100 paddingLeft-even mt-md-4 mt-3">
                 Creation of a mobile application with an e-commerce and
-                community based content sharing module which allows the users to
-                interact with their friends and and purchase or gift products
-                listed over the platform.
+                community-based content sharing module, allowing users to
+                interact with their friends and purchase or gift products listed
+                on the platform.
               </div>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-0 mt-4"
                 src={mob3}
-              ></img>
-              {/* <img
+              />
+              <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-0 mt-3"
                 src={mob4}
-              ></img> */}
+              />
             </div>
             <div className="col-12">
               <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
             </div>
           </div>
-          <div className="row py-5">
-            <div className="col-12 col-md-6 d-flex">
+          <div className="row py-md-5 py-2">
+            <div className="col-12 col-md-6 d-flex mt-md-3 mt-0">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
                 Social E-Commerce
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="content_text">
-                Our team created an invite only community modules which allows
-                the user to personally invite users to join their family tree.
-                Once invited, the users would have the ability to gift products
-                available on the platform
+              <div className="proj-content paddingLeft-even mt-md-3 mt-2">
+                Our team created an invite-only community module that allows
+                users to personally invite others to join their family tree.
+                Once invited, users would have the ability to browse through the
+                posts to like, share and comment within their group.
               </div>
             </div>
             <div className="col-12 Image_size d-none d-md-block">
               <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
             </div>
-            <div className="col-12 pt-4 d-block d-md-none">
-              <img src={secondGrid} alt="" className="w-100" />
+            <div className="col-12 pt-4 d-block d-md-none mt-md-0 mt-1">
+              <img src={mob5} alt="" className="w-100" />
             </div>
           </div>
           {/* section2 */}
-          <div className="row py-md-5 py-4 pb-md-3 pb-0">
+          <div className="row py-md-5 py-5 pb-md-3 pb-0">
             <div className="col-12 col-md-6 d-md-none d-flex">
-              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+              <div
+                className="proj-heading mt-md-1"
+                style={{ paddingTop: "0px", direction: "rtl" }}
+              >
                 Dutch & Gift Together
               </div>
             </div>
-            <div className="col-12 col-md-6 py-md-5 py-0">
-              <div className="custom_left_text">
+            <div className="col-12 col-md-6 py-md-5">
+              <div className="proj-content mt-md-5 mt-2">
                 Once the user has been invited to a family tree, the users on
                 the platform would have the ability to create a new gifting
-                request wihich would allow the respective users to dutch & gift
-                products available off the platform
+                request, allowing the respective users to pool funds and gift
+                products available on the platform.
                 <br />
               </div>
             </div>
             {/* desktop only */}
-            <div className="col-12 col-md-6 d-none d-md-flex">
+            <div className="col-12 pt-5 col-md-6 d-none d-md-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
-                Make Moments Count
+                Dutch & Gift Together
               </div>
             </div>
-            <div className="col-12 d-none d-md-block">
-              <img src={Grid} alt="" className="w-100 py-5" />
+            <div className="col-12 d-none d-md-block position-relative pt-0">
+              <img src={Grid2} alt="" className="w-100 pt-4" />
             </div>
             {/* mobile only */}
-            <div className="col-12 d-block d-md-none py-2">
-              <img src={mob5} alt="" className="w-100" />
-            </div>
-            <div className="col-12 d-block d-md-none py-2">
+            <div className="col-12 d-block d-md-none py-2 mt-md-0 mt-3">
               <img src={mob6} alt="" className="w-100" />
+            </div>
+            <div className="col-12 d-block d-md-none py-2 mt-md-0 mt-3">
+              <img src={mob7} alt="" className="w-100" />
             </div>
           </div>
           {/* section3 */}
-          <div className="row py-4 d-none">
-            <div className="col-12 text-align-center mobile-text-align-left">
-              <div className="proj-heading">
-                Management Made Easy Via Dashboards
-              </div>
-              <div className="proj-sub-heading py-3">
-                There exists a lot of applications which allows the users to
-                share, like and interact with the media but few of them offers a
-                private circle where one can decide whom to invite and then
-                gift. The user would have the ability to select from the
-                different category section and link the purchase request to a
-                moment.
+          <div className="row py-md-5 py-2">
+            <div className="col-12 col-md-6 d-flex mt-md-3 mt-0">
+              <div className="proj-heading" style={{ paddingTop: "0px" }}>
+                Make Moments Count
               </div>
             </div>
-            {/* desktop */}
-            <div className="col-12 d-none d-md-flex">
-              <img src={webGrid} alt="" className="w-100 py-5" />
+            <div className="col-12 col-md-6">
+              <div className="proj-content paddingLeft-even mt-md-3 mt-2">
+                Users gain the ability to curate their experience by selecting
+                from various category sections and linking purchase requests to
+                cherished moments. Our platform offers personalization and
+                unique social interaction, ensuring a tailored and meaningful
+                gifting experience within a private and intimate circle.
+              </div>
             </div>
-            {/* mobile */}
-            <div className="col-12 d-block d-md-none py-2">
+            <div className="col-12 GridImages d-none d-md-block">
+              <img src={Grid3} alt="" className="w-100 py-5 " />
+            </div>
+            <div className="col-12 pt-4 d-block d-md-none mt-md-0 mt-1">
               <img src={mob8} alt="" className="w-100" />
             </div>
           </div>
@@ -246,21 +245,20 @@ function Project6() {
       </section>
       {/* section 3 */}
       <section className="container main-container custom_padding">
-        <div className="row">
-          <div className="col-12">
+        <div className="row py-md-3 py-5">
+          <div className="col-12 py-md-0 mt-2">
             <div className="proj-heading">The Conclusion</div>
             <hr className="heading_line" />
           </div>
-          <div className="col-12 col-md-5 py-2">
+          <div className="col-12 py-md-2">
             <div className="w-100">
-              Our Electronic Health platform, with its user-friendly mobile
-              application, empowers individuals to take control of their health
-              by efficiently managing medications and consultations all via an
-              intitutive mobile application.
+              In the digital age, businesses must stand out online. With a clean
+              and optimized UI, we successfully delivered this project that sets
+              our customer apart in terms of online purchasing experience.
             </div>
           </div>
-          <div className="col-12">
-            <img src={conclusion} alt="" className="w-100 pt-3" />
+          <div className="col-12 py-2">
+            <img src={conclusion} alt="" className="w-100 mt-md-4 mt-3" />
           </div>
         </div>
       </section>
@@ -314,7 +312,10 @@ function Project6() {
                 </header>
               </article>
               <h5 className="footer-content cool-link text-white">
-                <a href="" className="text-white">
+                <Link
+                  to="/get-in-touch/customer-inquiry"
+                  className="text-white"
+                >
                   Click here to start elevating your physical and digital
                   customer experiences.
                   <Lottie
@@ -323,7 +324,8 @@ function Project6() {
                     loop
                     className="w-xs-100 w-md-12 projectFooterArrow"
                   />
-                </a>
+                  {/* </div> */}
+                </Link>
               </h5>
             </div>
             <div className="col-12 col-md-3 col-lg-3"></div>
@@ -356,16 +358,16 @@ function Project6() {
               </div>
               <ul>
                 <li>
-                  <a href="#">Custom Software Development</a>
+                  <Link to="/portfolio">Custom Software Development</Link>
                 </li>
                 <li>
-                  <a href="#">Mobile Application Development</a>
+                  <Link to="/portfolio">Mobile Application Development</Link>
                 </li>
                 <li>
-                  <a href="#">AI & ML Solutions</a>
+                  <Link to="/portfolio">AI & ML Solutions</Link>
                 </li>
                 <li>
-                  <a href="#">Web3 & Blockchain</a>
+                  <Link to="/portfolio">Web3 & Blockchain</Link>
                 </li>
               </ul>
             </div>
@@ -373,16 +375,16 @@ function Project6() {
               <div className="footer-heading mb-2"> Content Creation </div>
               <ul>
                 <li>
-                  <a href="#">Motion Graphics</a>
+                  <Link to="/portfolio">Motion Graphics</Link>
                 </li>
                 <li>
-                  <a href="#">2D/ 3D Graphics Design</a>
+                  <Link to="/portfolio">2D & 3D Graphics Design</Link>
                 </li>
                 <li>
-                  <a href="#">Advertisements</a>
+                  <Link to="/portfolio">Advertisements</Link>
                 </li>
                 <li>
-                  <a href="#">Branding & Identify Design</a>
+                  <Link to="/portfolio">Branding & Identify Design</Link>
                 </li>
               </ul>
             </div>
@@ -390,16 +392,16 @@ function Project6() {
               <div className="footer-heading mb-2"> Industrial Design </div>
               <ul>
                 <li>
-                  <a href="#">Product Design</a>
+                  <Link to="/portfolio">Product Design</Link>
                 </li>
                 <li>
-                  <a href="#">Concept & Prototyping</a>
+                  <Link to="/portfolio">Concept & Prototyping</Link>
                 </li>
                 <li>
-                  <a href="#">Manufacturing Support</a>
+                  <Link to="/portfolio">Manufacturing Support</Link>
                 </li>
                 <li>
-                  <a href="#">Merchandising & Packaging</a>
+                  <Link to="/portfolio">Merchandising & Packaging</Link>
                 </li>
               </ul>
             </div>
@@ -430,22 +432,22 @@ function Project6() {
               <div className="footer-heading mb-2"> Resources </div>
               <ul>
                 <li>
-                  <a href="#">Case Studies</a>
+                  <Link to="/resources">Case Studies</Link>
                 </li>
                 <li>
-                  <a href="#">Articles</a>
+                  <Link to="/resources">Articles</Link>
                 </li>
                 <li>
-                  <a href="#">White Papers</a>
+                  <Link to="/resources">White Papers</Link>
                 </li>
                 <li>
-                  <a href="#">Tutorials</a>
+                  <Link to="/resources">Tutorials</Link>
                 </li>
                 <li>
-                  <a href="#">Infographics</a>
+                  <Link to="/resources">Infographics</Link>
                 </li>
                 <li>
-                  <a href="#">Reports</a>
+                  <Link to="/resources">Reports</Link>
                 </li>
               </ul>
             </div>
@@ -453,13 +455,13 @@ function Project6() {
               <div className="footer-heading mb-2">Portfolio</div>
               <ul>
                 <li>
-                  <a href="#">Application Development</a>
+                  <Link to="/portfolio">Application Development</Link>
                 </li>
                 <li>
-                  <a href="#">Content Creation</a>
+                  <Link to="/portfolio">Content Creation</Link>
                 </li>
                 <li>
-                  <a href="#">Industrial Design</a>
+                  <Link to="/portfolio">Industrial Design</Link>
                 </li>
               </ul>
             </div>
@@ -467,16 +469,18 @@ function Project6() {
               <div className="footer-heading mb-2"> Connect With Us</div>
               <ul>
                 <li>
-                  <a href="#">LinkedIn</a>
+                  <Link to="https://www.linkedin.com/company/the-honest-co">
+                    LinkedIn
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">WhatsApp</a>
+                  <Link to="https://wa.me/917011242138">WhatsApp</Link>
                 </li>
                 <li>
-                  <a href="#">Email</a>
+                  <Link to="mailto:business@thehonestco.in">Email</Link>
                 </li>
                 <li>
-                  <a href="#">Get in touch</a>
+                  <Link to="tel:+917011242138">Get in touch</Link>
                 </li>
               </ul>
             </div>
@@ -484,10 +488,14 @@ function Project6() {
               <div className="footer-heading mb-2">Get In Touch </div>
               <ul>
                 <li>
-                  <a href="#">Are you a customer</a>
+                  <Link to="/get-in-touch/customer-inquiry">
+                    Are you a customer?
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Are you a creator?</a>
+                  <Link to="/get-in-touch/creator-inquiry">
+                    Are you a creator?
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -496,7 +504,7 @@ function Project6() {
               <Link to="mailto:business@thehonestco.in">
                 <div className="footer-heading mb-2">
                   {" "}
-                  business@thehonestco.in{" "}
+                  hello@thehonestco.in{" "}
                 </div>
               </Link>
               <Link to="tel:+91 120 246 2890">

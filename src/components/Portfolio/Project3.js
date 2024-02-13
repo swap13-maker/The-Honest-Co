@@ -25,7 +25,7 @@ import { Helmet } from "react-helmet";
 import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
-import mobwork13 from "../../images/OurWork/mobOurWork_3.jpg";
+import mobwork13 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 3.webp";
 
 function Project3() {
   useEffect(() => {

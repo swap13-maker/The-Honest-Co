@@ -69,6 +69,22 @@
   text-decoration-line: underline !important;
   text-transform: uppercase;
 }
+.top-topics2 {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: max-content;
+}
+.top-topics2 > li > a {
+  color: #000;
+  font-family:  "Barlow", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline !important;
+  text-transform: uppercase;
+}
 .w-40 {
   width: 40%;
   opacity: 0.5 !important;
