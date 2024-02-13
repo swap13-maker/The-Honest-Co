@@ -62,8 +62,9 @@ const Portfolio = () => {
               <div className="col-12 col-md-7">
                 <div className="top-heading">Honest Projects</div>
                 <div className="top-sub-heading py-4">
-                  Our services have been divided into four categories based on
-                  the kind of work we have done in the past.
+                  Resources created by our team, covering past projects,
+                  industry trends, and latest in the field of digital
+                  transformation.
                 </div>
               </div>
               <div className="col-12 col-md-5 d-flex">
@@ -183,26 +184,25 @@ const Portfolio = () => {
               })}
             </div>
             <div className="desktop-d-none">
-                {item.map((data, index) => (
-                  <div className="pb-5">
+              {item.map((data, index) => (
+                <div className="pb-5">
                   <Link key={index} to={data.url}>
                     {/* <div className="col-12 pb-2"> */}
-                      <img
-                        className="w-100"
-                        src={data.image}
-                        title={data.name}
-                        alt={data.alt}
-                      />
-                      
-                        <div className="work-heading">{data.name}</div>
-                        <div className="work-subheading">{data.description}</div>
-                     
+                    <img
+                      className="w-100"
+                      src={data.image}
+                      title={data.name}
+                      alt={data.alt}
+                    />
+
+                    <div className="work-heading">{data.name}</div>
+                    <div className="work-subheading">{data.description}</div>
+
                     {/* </div> */}
                   </Link>
-                  </div>
-                ))}
+                </div>
+              ))}
             </div>
-
           </div>
         </div>
         <div className="bg-white py-4">

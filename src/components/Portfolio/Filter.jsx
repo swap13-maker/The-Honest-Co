@@ -1,11 +1,11 @@
-import mobwork1 from '../../images/OurWork/mobOurWork_IFC.png'
-import mobwork2 from '../../images/OurWork/mobOurWork_2.jpg'
-import mobwork3 from '../../images/OurWork/mobOurWork_3.jpg'
-import mobwork4 from '../../images/OurWork/moobOurWork_4.jpg'
-import mobwork5 from '../../images/OurWork/mobOurWork_5.png'
-import mobwork6 from '../../images/OurWork/mobOurWork_Giftly6.png'
-import mobwork8 from '../../images/OurWork/mobOurWork_8.png'
-import mobwork9 from '../../images/OurWork/mobOurWork_9.png'
+import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 1.webp'
+import mobwork2 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 2.webp'
+import mobwork3 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 3.webp'
+import mobwork4 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 4.webp'
+import mobwork5 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 5.webp'
+import mobwork6 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 6.webp'
+import mobwork8 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 7.webp'
+// import mobwork9 from '../../images/OurWork/mobOurWork_9.png'
 
 const Filter = [
   {
@@ -77,17 +77,17 @@ const Filter = [
     url:"/portfolio/photo-sharing-online-ecommerce-platform",
     alt:"photo sharing app and ecommerce "  
   },
-  {
-    id: 7,
-    image: mobwork5,
-    name: "Webshocker - Matjaz Valentar",
-    category: "tab4",
-    logo: "react.svg",
-    description:
-      "Our services have been divided into four categories based on the kind of work we have done in the past.",
-    url:"",
-    alt:""  
-  },
+  // {
+  //   id: 7,
+  //   image: mobwork5,
+  //   name: "Webshocker - Matjaz Valentar",
+  //   category: "tab4",
+  //   logo: "react.svg",
+  //   description:
+  //     "Our services have been divided into four categories based on the kind of work we have done in the past.",
+  //   url:"",
+  //   alt:""  
+  // },
   {
     id: 8,
     image: mobwork8,
@@ -99,17 +99,17 @@ const Filter = [
     url:"/portfolio/interview-scheduling-job-tracking-app",
     alt:"interview scheduling and job tracking mobile app "  
   },
-  {
-    id: 9,
-    image: mobwork9,
-    name: "Custom School Learning Platform ",
-    category: "tab5",
-    logo: "react.svg",
-    description:
-      "Transform education with our custom learning platform, optimizing curriculum management and providing a versatile solution for educational institutions to thrive in the digital era.",
-    url:"/portfolio/custom-school-learning-management-platform",
-    alt:""  
-  },
+  // {
+  //   id: 9,
+  //   image: mobwork9,
+  //   name: "Custom School Learning Platform ",
+  //   category: "tab5",
+  //   logo: "react.svg",
+  //   description:
+  //     "Transform education with our custom learning platform, optimizing curriculum management and providing a versatile solution for educational institutions to thrive in the digital era.",
+  //   url:"/portfolio/custom-school-learning-management-platform",
+  //   alt:""  
+  // },
 ];
 
 export default Filter;

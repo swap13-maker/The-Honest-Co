@@ -4,10 +4,7 @@ import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
 import Slider from "react-slick";
-import Footer from "./../Footer";
 import myFooterLogo from "../../images/footer-logo.png";
-import demo8 from "../../images/demo8.png";
-import demo9 from "../../images/demo9.png";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
@@ -16,20 +13,20 @@ import Grid from "../../images/Healthtrak/Grid/Mobile Grid1 HealthTrak.jpg";
 import Grid2 from "../../images/Healthtrak/Grid/Mobile Grid2 HealthTrak.jpg";
 import secondGrid from "../../images/pro5SecondaryBanner.jpg";
 import webGrid from "../../images/Mobile Grid2 HealthTrak.jpg";
-import conclusion from "../../images/Conclusion.jpg";
-import mob1 from "../../images/Healthtrak/Mobile Grid 1 a.jpg";
-import mob2 from "../../images/Healthtrak/Mobile Grid 1 b.jpg";
-import mob3 from "../../images/Healthtrak/Mobile Grid 1 c.jpg";
-import mob4 from "../../images/Healthtrak/Mobile Grid 1 d.jpg";
-import mob5 from "../../images/Healthtrak/Mobile Grid 2 a.jpg";
-import mob6 from "../../images/Healthtrak/Mobile Grid 2 b.jpg";
-import mob7 from "../../images/Healthtrak/Mobile Grid 2 c.jpg";
-import mob8 from "../../images/Healthtrak/Mobile Grid 2 d.jpg";
-// import conclusion from "../../images/Healthtrak";
+import conclusion from "../../images/Portfolio/Portfolio/HealthTrak/Tertiary Banner.webp";
+import mob1 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 1 a.webp";
+import mob2 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 1 b.webp";
+import mob3 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 1 c.webp";
+import mob4 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 1 d.webp";
+import mob5 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 2 a.webp";
+import mob6 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 2 b.webp";
+import mob7 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 2 c.webp";
+import mob8 from "../../images/Portfolio/Portfolio/HealthTrak/MobileView/Mobile Grid 2 d.webp";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import Arrow from "../../images/White_Arrow.json";
+import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
+import mobwork5 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 5.webp";
 
 function Project5() {
   useEffect(() => {
@@ -83,14 +80,9 @@ function Project5() {
                 <div className="top-heading">
                   Tracking Medicines and
                   <br />
-                  Appointments Made Easy Via
+                  Appointments Made Easy
                   <br />
-                  Application Development
-                  <img
-                    alt=""
-                    className="blog-logo blog-hide mx-3 d-none d-md-block"
-                    src={`https://thehonestco.in/react.svg`}
-                  ></img>
+                  Via Application Development
                 </div>
               </div>
               <div className="col-12 col-md-5 d-none d-sm-block">
@@ -117,66 +109,69 @@ function Project5() {
         <img
           src={Banner}
           alt=""
-          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-3 d-none d-md-block"
         />
+        {/*Mobile Banner */}
+        <img className="w-100 d-block d-md-none" src={mobwork5} />
+
         {/* section 1 */}
         <section className="container main-container">
-          <div className="row py-5">
-            <div className="col-12 col-md-6 pb-4">
-              <div className="proj-heading">
+          <div className="row mt-md-5 mt-4">
+            <div className="col-12 col-md-6 mt-md-0 mt-4">
+              <div className="proj-heading mt-md-4 mt-3">
                 Scope
                 <hr className="w-40" />
               </div>
-              <div className="proj-content pb-4">
+              <div className="proj-content mt-md-4 mt-3">
                 A digital platform for efficient medication management and
-                tracking. Addressing the need of a dedicated online platform for
-                timely monitoring of consultations and lab reports.
+                tracking, addressing the need for a dedicated online platform
+                for timely monitoring of consultations and lab reports.
               </div>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-3 mt-4"
                 src={mob1}
               ></img>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-3 mt-3"
                 src={mob2}
               ></img>
             </div>
-            <div className="col-12 col-md-6 px-3">
+            <div className="col-12 col-md-6 py-md-3 py-5 mt-md-0 mt-2">
               <div className="proj-heading paddingLeft-even">
                 Solution
                 <hr className="w-50" />
               </div>
-              <div className="proj-content pb-4 w-100 paddingLeft-even">
-                Development of a mobile and web based application for storing
+              <div className="proj-content pb-4 w-100 paddingLeft-even mt-md-4 mt-3">
+                Development of a mobile and web-based application for storing
                 and managing users' medication data. The platform aimed to serve
                 as a centralized repository for prescriptions and all medical
                 information.
               </div>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-0 mt-4"
                 src={mob3}
-              ></img>
+              />
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-0 mt-3"
                 src={mob4}
-              ></img>
+              />
             </div>
             <div className="col-12">
               <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
             </div>
           </div>
-          <div className="row py-5">
-            <div className="col-12 col-md-6 d-flex">
+          <div className="row py-md-5 py-2">
+            <div className="col-12 col-md-6 d-flex mt-md-3 mt-0">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
                 Health Care & IT
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="content_text">
+              <div className="proj-content paddingLeft-even mt-md-3 mt-2">
                 With features like centralized prescription management and
                 comprehensive medical information storage, patients gain
                 convenience, accuracy, and improved medication adherence for
@@ -186,41 +181,45 @@ function Project5() {
             <div className="col-12 Image_size d-none d-md-block">
               <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
             </div>
-            <div className="col-12 pt-4 d-block d-md-none">
-              <img src={secondGrid} alt="" className="w-100" />
+            <div className="col-12 pt-4 d-block d-md-none mt-md-0 mt-1">
+              <img src={mob5} alt="" className="w-100" />
             </div>
           </div>
           {/* section2 */}
-          <div className="row py-md-5 py-4 pb-md-3 pb-0">
+          <div className="row py-md-5 py-5 pb-md-3 pb-0">
             <div className="col-12 col-md-6 d-md-none d-flex">
-              <div className="proj-heading" style={{ paddingTop: "0px" }}>
-                Take Control of Your Health
+              <div
+                className="proj-heading mt-md-1"
+                style={{ paddingTop: "0px" }}
+              >
+                The Honest Edge
               </div>
             </div>
-            <div className="col-12 col-md-6 py-md-5 py-0">
-              <div className="custom_left_text">
-                The dedicated notification module built for this application
-                allows the user to modify the notifications settings and
-                preferences as per their own convivence. Now never miss your
-                medicine refill day or your consultations!
+            <div className="col-12 col-md-6 py-md-5">
+              <div className="proj-content mt-md-5 mt-2">
+                The dedicated notification module within this application allows
+                users to easily modify notification settings and preferences
+                according to their convenience. This ensures that crucial
+                events, such as medicine refill days or scheduled consultations,
+                are never overlooked.
                 <br />
               </div>
             </div>
             {/* desktop only */}
-            <div className="col-12 col-md-6 d-none d-md-flex">
+            <div className="col-12 pt-5 col-md-6 d-none d-md-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
-                Order and Reorder
+              The Honest Edge
               </div>
             </div>
-            <div className="col-12 d-none d-md-block">
-              <img src={Grid2} alt="" className="w-100 py-5" />
+            <div className="col-12 d-none d-md-block position-relative pt-0">
+              <img src={Grid2} alt="" className="w-100 pt-4" />
             </div>
             {/* mobile only */}
-            <div className="col-12 d-block d-md-none py-2">
-              <img src={mob5} alt="" className="w-100" />
-            </div>
-            <div className="col-12 d-block d-md-none py-2">
+            <div className="col-12 d-block d-md-none py-2 mt-md-0 mt-3">
               <img src={mob6} alt="" className="w-100" />
+            </div>
+            <div className="col-12 d-block d-md-none py-2 mt-md-0 mt-3">
+              <img src={mob7} alt="" className="w-100" />
             </div>
           </div>
           {/* section3 */}
@@ -239,11 +238,11 @@ function Project5() {
               </div>
             </div>
             {/* desktop */}
-            <div className="col-12 d-none d-md-flex">
+            {/* <div className="col-12 d-none d-md-flex">
               <img src={webGrid} alt="" className="w-100 py-5" />
-            </div>
+            </div> */}
             {/* mobile */}
-            <div className="col-12 d-block d-md-none py-2">
+            <div className="col-12 d-block d-md-none pb-3">
               <img src={mob8} alt="" className="w-100" />
             </div>
           </div>
@@ -251,12 +250,12 @@ function Project5() {
       </section>
       {/* section 3 */}
       <section className="container main-container custom_padding">
-        <div className="row">
-          <div className="col-12">
+        <div className="row py-md-3 py-5">
+          <div className="col-12 py-md-0 mt-2">
             <div className="proj-heading">The Conclusion</div>
             <hr className="heading_line" />
           </div>
-          <div className="col-12 col-md-5 py-2">
+          <div className="col-12 py-md-2">
             <div className="w-100">
               Our Electronic Health platform, with its user-friendly mobile
               application, empowers individuals to take control of their health
@@ -264,8 +263,8 @@ function Project5() {
               intitutive mobile application.
             </div>
           </div>
-          <div className="col-12">
-            <img src={conclusion} alt="" className="w-100 pt-3" />
+          <div className="col-12 py-2">
+            <img src={conclusion} alt="" className="w-100 mt-md-4 mt-3" />
           </div>
         </div>
       </section>

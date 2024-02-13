@@ -4,26 +4,27 @@ import "./../../App.css";
 import "./Portfolio.css";
 import "./project.css";
 import Slider from "react-slick";
-import Footer from "./../Footer";
 import myFooterLogo from "../../images/footer-logo.png";
 import Filter from "./Filter";
 import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
-import Banner from "../../images/pro4Banner.jpg";
-import Grid from "../../images/SOS+/Grid/Mobile Grid SOS.jpg";
-import Grid2 from "../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg";
+import Banner from "../../images/Portfolio/Portfolio/SOS+/Web/Banner.webp";
+import Grid from "../../images/Portfolio/Portfolio/SOS+/Web/grid 1.webp";
+import Grid2 from "../../images/Portfolio/Portfolio/SOS+/Web/grid 2.webp";
 import secondGrid from "../../images/SOS+/Secondary Banner.jpg";
 import webGrid from "../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg";
-import conslusion from "../../images/Conclusion.jpg";
-import mob1 from "../../images/SOS+/Mobile Grid 1 a.jpg";
-import mob2 from "../../images/SOS+/Mobile Grid 1 b.jpg";
-import mob3 from "../../images/SOS+/Mobile Grid 1 c.jpg";
-import mob4 from "../../images/SOS+/Mobile Grid 2 a.jpg";
+import conslusion from "../../images/Portfolio/Portfolio/SOS+/Web/Conclusion.webp";
+import mob1 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob1.webp";
+import mob2 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob2.webp";
+import mob3 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob3.webp";
+import mob4 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob4.webp";
 import mob5 from "../../images/SOS+/Mobile Grid 2 b.jpg";
+import mob6 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob6.webp";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
+import mobwork1 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 4.webp"
 
 function Project4() {
   useEffect(() => {
@@ -74,21 +75,16 @@ function Project4() {
               <div className="col-12 col-md-7 pb-3">
                 <div className="top-heading">
                   Enhanced Tracking &<br />
-                  Surveillance Via Community Driven
+                  Surveillance Via Community
                   <br />
-                  Online Platform
-                  <img
-                    alt=""
-                    className="blog-logo blog-hide mx-3 d-none d-md-block"
-                    src={`https://thehonestco.in/react.svg`}
-                  ></img>
+                  Driven Online Platform
                 </div>
               </div>
               <div className="col-12 col-md-5 d-none d-sm-block">
                 <div className="py-4">
                   <ul className="top-works">
-                    <li className="pt-4">Live Tracking</li>
-                    <li className="pt-4">SOS Mobile App </li>
+                    <li className="pt-4">SOS Mobile App</li>
+                    <li className="pt-4">Community Tracking & Messaging </li>
                   </ul>
                 </div>
               </div>
@@ -108,51 +104,55 @@ function Project4() {
         <img
           src={Banner}
           alt=""
-          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-0"
+          className="img-fluid w-100 my-md-4 my-0 py-md-3 py-3 d-none d-md-block"
+        />
+        {/* mobile Banner */}
+        <img
+          className="w-100 d-block d-md-none"
+          src={mobwork1} 
         />
         {/* section 1 */}
         <section className="container main-container">
-          <div className="row py-5">
-            <div className="col-12 col-md-6 pb-4">
-              <div className="proj-heading">
+          <div className="row mt-md-5 mt-4">
+            <div className="col-12 col-md-6 mt-md-0 mt-4">
+              <div className="proj-heading mt-md-4 mt-3">
                 Scope
                 <hr className="w-40" />
               </div>
-              <div className="proj-content pb-4">
-                A single platform allowing users to send money and execute
-                utilities payment via an online mobile application to enhance
-                day to day transactions and better track bill payments and
-                finances.
+              <div className="proj-content mt-md-4 mt-3">
+                A one of a kind community-driven SOS response mobile app
+                allowing users to add and build their community, enabling them
+                to stay connected and send tracking requests when in need.
               </div>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-3 mt-4"
                 src={mob1}
-              ></img>
+              />
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-3 mt-3"
                 src={mob2}
-              ></img>
+              />
             </div>
-            <div className="col-12 col-md-6 px-3">
+            <div className="col-12 col-md-6 py-md-3 py-5 mt-md-0 mt-2">
               <div className="proj-heading paddingLeft-even">
                 Solution
                 <hr className="w-50" />
               </div>
-              <div className="proj-content pb-4 w-100 paddingLeft-even">
-                Development of a cutting edge mobile based platform allowing
-                user to semmlessly transfer money and effortlessly manage their
-                finances ehancing the overall user experience and satisfaction.
+              <div className="proj-content pb-4 w-100 paddingLeft-even mt-md-4 mt-3">
+                Development of a mobile application for the end users allowing
+                them to add or invite their friends with the ability to track
+                their live location and notify the local authorities nearby.
               </div>
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-0 mt-4"
                 src={mob3}
-              ></img>
+              />
               <img
                 alt=""
-                className="d-block d-md-none w-100 py-2"
+                className="d-block d-md-none w-100 mt-md-0 mt-3"
                 src={mob4}
               ></img>
             </div>
@@ -160,55 +160,61 @@ function Project4() {
               <img src={Grid} alt="" className="w-100 py-5 d-none d-md-block" />
             </div>
           </div>
-          <div className="row py-5">
-            <div className="col-12 col-md-6 d-flex">
+          <div className="row py-md-5 py-2">
+            <div className="col-12 col-md-6 d-flex mt-md-3 mt-0">
               <div className="proj-heading" style={{ paddingTop: "0px" }}>
-                One For All
+                The Honest Edge
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="content_text">
-                A unique mobile application that allows users to pay almost all
-                of their online bills. The platform allows the user to pay
-                online via the multiple payment gateways and service channels.
-                The application offers a one for all bills payment solutions
-                allowing the user hassel free utility bills settelment.
+              <div className="proj-content paddingLeft-even mt-md-3 mt-2">
+                The mobile application allows users to add their friends and
+                build a community over the platform. The user would be able to
+                send tracking requests to their friends, who, in return, can
+                track the movements and would be able to notify the authorities
+                in case of an emergency.
               </div>
             </div>
             <div className="col-12 Image_size d-none d-md-block">
               <img src={secondGrid} alt="" className="w-100 py-5 Image_baner" />
             </div>
-            <div className="col-12 pt-4 d-block d-md-none">
-              <img src={secondGrid} alt="" className="w-100" />
+            <div className="col-12 pt-4 d-block d-md-none mt-md-0 mt-1">
+              <img src={mob5} alt="" className="w-100" />
             </div>
           </div>
           {/* section2 */}
           <div className="row py-md-5 py-4 pb-md-3 pb-0">
             <div className="col-12 col-md-6 d-md-none d-flex">
-              <div className="proj-heading" style={{ paddingTop: "0px" }}>
-                Order and Reorder
+              <div
+                className="proj-heading mt-md-1"
+                style={{ paddingTop: "0px" }}
+              >
+                Leveraging Mutual Connection
               </div>
             </div>
-            <div className="col-12 col-md-6 py-md-5 py-0">
-              <div className="custom_left_text">
-                The enhanced order purchsing and cart payment flow allows the
-                user to easiily add multiple products and single click re-order
-                from the list of previous orders placed.
+            <div className="col-12 col-md-6 py-md-5">
+              <div className="proj-content mt-md-5 mt-2">
+                The standout feature of the application was the ability to
+                notify the common connections of the users in case of an
+                emergency. When a user presses the SOS button, along with the
+                local authorities, all those who are the common connections in
+                the network would also get notified, offering an added layer of
+                tracking.
                 <br />
               </div>
             </div>
             {/* desktop only */}
             <div className="col-12 col-md-6 d-none d-md-flex">
               <div className="proj-heading d-flex align-items-center ml-auto py-5">
-                Order and Reorder
+                Leveraging Mutual Connection
               </div>
             </div>
-            <div className="col-12 d-none d-md-block">
-              <img src={Grid2} alt="" className="w-100 py-5" />
+            <div className="col-12 d-none d-md-block position-relative pt-0">
+              <img src={Grid2} alt="" className="w-100 pt-4" />
             </div>
             {/* mobile only */}
             <div className="col-12 d-block d-md-none py-2">
-              <img src={mob5} alt="" className="w-100" />
+              <img src={mob6} alt="" className="w-100" />
             </div>
             {/* <div className="col-12 d-block d-md-none py-2">
               <img src={mob6} alt="" className="w-100" />
@@ -226,9 +232,6 @@ function Project4() {
               </div>
             </div>
             {/* desktop */}
-            <div className="col-12 d-none d-md-flex">
-              <img src={webGrid} alt="" className="w-100 py-5" />
-            </div>
             {/* mobile */}
             {/* <div className="col-12 d-block d-md-none py-2">
               <img src={mob8} alt="" className="w-100" />
@@ -238,27 +241,22 @@ function Project4() {
       </section>
       {/* section 3 */}
       <section className="container main-container custom_padding">
-        <div className="row">
-          <div className="col-12">
+        <div className="row py-md-3 py-5">
+          <div className="col-12 py-md-0 mt-2">
             <div className="proj-heading">The Conclusion</div>
             <hr className="heading_line" />
           </div>
-          <div className="col-12 col-md-5 py-4">
+          <div className="col-12 py-md-2">
             <div className="w-100">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's competitive marketplace by
-              providing.
+              The mobile application was built on top of Google Maps APIs,
+              allowing the user to sync their Google accounts and add their
+              friends straight from their contact list. Built on complete hybrid
+              environments, the mobile application was launched for the European
+              market with GDPR compliance.
             </div>
           </div>
           <div className="col-12 d-flex">
             <img src={conslusion} alt="" className="w-100 py-5" />
-          </div>
-          <div className="col-12 text-align-center">
-            <p className="px-5 py-3 pt-3 text_containe">
-              We work with clients across a range of industries, helping them to
-              succeed and thrive in today's competitive <br />
-              marketplace by providing.
-            </p>
           </div>
         </div>
       </section>
