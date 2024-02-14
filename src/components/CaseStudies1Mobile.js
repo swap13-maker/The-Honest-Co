@@ -17,7 +17,7 @@ function CaseStudies1() {
       <div className="row">
         <div className="col-12 pb-5 mb-5">
           <button className="bg-dark text-uppercase text-white font-weight-300 button">
-            VIEW All CASE STUDIES
+           VIEW ALL RESOURCES
           </button>
         </div>
         <Link to="/resources/articles/global-commerce-remittance-mobile-applications-business-expansion">

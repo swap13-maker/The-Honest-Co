@@ -11,15 +11,15 @@ import Banner from "../../images/Portfolio/Portfolio/TourWay/Web/Main Banner.web
 import Grid from "../../images/Portfolio/Portfolio/TourWay/Web/Grid 1.webp";
 import Grid2 from "../../images/Portfolio/Portfolio/TourWay/Web/Grid 2.webp";
 import secondGrid from "../../images/pro3SecondaryBanner.jpg";
-import webGrid from "../../images/tourway/Grid/Mobile Grid TourWay.jpg";
 import conclusion from "../../images/Portfolio/Portfolio/TourWay/Colclusion.webp";
-import mob1 from "../../images/tourway/Mobile Grid a.jpg";
-import mob2 from "../../images/tourway/Mobile Grid b.jpg";
-import mob3 from "../../images/tourway/Mobile Grid c.jpg";
+import mob1 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob1.webp";
+import mob2 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob2.webp";
+import mob3 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob3.webp";
 import mob4 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob4.webp";
-import mob5 from "../../images/tourway/Web Grid a.jpg";
-import mob6 from "../../images/tourway/Web Grid b.jpg";
-import mob7 from "../../images/tourway/Web Grid d.jpg";
+import mob5 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob5.webp";
+import mob6 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob6.webp";
+import mob7 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob7.webp";
+import mob8 from "../../images/Portfolio/Portfolio/TourWay/Mobile/mob8.webp"
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import myFooterLogo from "../../images/footer-logo.png";
@@ -236,7 +236,7 @@ function Project3() {
             </div>
             {/* mobile */}
             <div className="col-12 d-block d-md-none pb-3">
-              <img src={mob7} alt="" className="w-100" />
+              <img src={mob8} alt="" className="w-100" />
             </div>
           </div>
         </section>
@@ -302,7 +302,7 @@ function Project3() {
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img className="w-50 pb-4 d-md-none d-block" alt="Footer Logo" />
+              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">

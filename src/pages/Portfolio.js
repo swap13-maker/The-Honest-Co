@@ -62,9 +62,8 @@ const Portfolio = () => {
               <div className="col-12 col-md-7">
                 <div className="top-heading">Honest Projects</div>
                 <div className="top-sub-heading py-4">
-                  Resources created by our team, covering past projects,
-                  industry trends, and latest in the field of digital
-                  transformation.
+                  Our services have been divided into four categories based on
+                  the kind of work we have done in the past.
                 </div>
               </div>
               <div className="col-12 col-md-5 d-flex">

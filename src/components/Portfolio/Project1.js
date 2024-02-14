@@ -22,9 +22,9 @@ import mob6 from "../../images/Portfolio/Portfolio/IFC/Mobile/Web Grid b.webp";
 import mob7 from "../../images/Portfolio/Portfolio/IFC/Mobile/Web Grid c.webp"
 import mob8 from "../../images/Portfolio/Portfolio/IFC/Mobile/Web Grid d.webp";
 import conclusion from "../../images/Portfolio/Portfolio/IFC/Conclusion.webp";
-import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
+import myFooterLogo from "../../images/footer-logo.png";
 import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 1.webp'
 
 function Project1() {
@@ -299,7 +299,7 @@ function Project1() {
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img className="w-50 pb-4 d-md-none d-block" alt="Footer Logo" />
+              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">
