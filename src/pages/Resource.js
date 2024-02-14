@@ -63,8 +63,9 @@ const Resource = () => {
                 <div className="col-12 col-md-7">
                   <div className="top-heading">Honest Resources</div>
                   <div className="top-sub-heading py-4">
-                    Our services have been divided into four categories based on
-                    the kind of work we have done in the past.
+                    Resources created by our team, covering past projects,
+                    industry trends, and latest in the field of digital
+                    transformation.
                   </div>
                 </div>
                 <div className="col-12 col-md-5 d-flex">
@@ -165,7 +166,6 @@ const Resource = () => {
                     <div
                       className={`col-md-4 col-12 no__padding ${cardClass} ${marginTopClass} mobile-d-none`}
                       key={index}
-                      
                     >
                       <div className="wrapper">
                         <div className="zoom-effect-container">

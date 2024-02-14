@@ -11,14 +11,13 @@ import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/Portfolio/Portfolio/SOS+/Web/Banner.webp";
 import Grid from "../../images/Portfolio/Portfolio/SOS+/Web/grid 1.webp";
 import Grid2 from "../../images/Portfolio/Portfolio/SOS+/Web/grid 2.webp";
-import secondGrid from "../../images/SOS+/Secondary Banner.jpg";
-import webGrid from "../../images/SOS+/Grid/Mobile Grid 2 SOS.jpg";
+import secondGrid from "../../images/Portfolio/Portfolio/SOS+/Secondary Banner.webp";
 import conslusion from "../../images/Portfolio/Portfolio/SOS+/Web/Conclusion.webp";
 import mob1 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob1.webp";
 import mob2 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob2.webp";
 import mob3 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob3.webp";
 import mob4 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob4.webp";
-import mob5 from "../../images/SOS+/Mobile Grid 2 b.jpg";
+import mob5 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob4.webp";
 import mob6 from "../../images/Portfolio/Portfolio/SOS+/Mobile/mob6.webp";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -299,7 +298,7 @@ function Project4() {
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img className="w-50 pb-4 d-md-none d-block" alt="Footer Logo" />
+              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">

@@ -303,7 +303,7 @@ function Project6() {
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img className="w-50 pb-4 d-md-none d-block" alt="Footer Logo" />
+              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">
