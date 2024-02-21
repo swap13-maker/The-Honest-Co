@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import InnerHeader from "../InnerHeader.js";
 import "./../../App.css";
 import "./Portfolio.css";
@@ -31,7 +31,7 @@ function Project1() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  const [item, setItem] = useState(Filter);
   const settings = {
     className: "slider variable-width",
     dots: false,
@@ -269,15 +269,13 @@ function Project1() {
 
           <div className="row custom-row">
             <Slider {...settings}>
-              {Filter.map((data, index) => {
-                const { name, logo, image, description } = data;
+              {item.map((data, index) => {
+                const { name, logo, image, description,url } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
                 const marginTopClass =
                   index === 0 || index === 1 ? "" : "margin-port";
 
-                const newImageUrl = `../${image}`;
                 const newLogoUrl = `../${logo}`;
-
                 return (
                   <ProjectCards
                     description={description}
@@ -285,9 +283,10 @@ function Project1() {
                     cardClass={cardClass}
                     name={name}
                     logo={newLogoUrl}
-                    image={newImageUrl}
+                    image={image}
                     key={index}
                     width={12}
+                    url={url}
                   />
                 );
               })}
