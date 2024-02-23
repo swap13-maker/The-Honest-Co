@@ -173,9 +173,9 @@ function Hero() {
                   <span className="px-md-4 px-2 heading-icon">
                     <img alt="" className="rotate" src={logoIcon} />
                   </span>{" "}
-                  create digital & physical
+                  create digital products
                   <br />
-                  experiences.
+                  & solutions.
                 </h2>
               </div>
               <div className="col-md-4 col-12 p-absolute d-md-block d-none">

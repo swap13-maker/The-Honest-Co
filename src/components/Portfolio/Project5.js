@@ -279,7 +279,7 @@ function Project5() {
           <div className="row custom-row">
             <Slider {...settings}>
               {Filter.map((data, index) => {
-                const { name, logo, image, description } = data;
+                const { name, logo, image, description, url } = data;
                 const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
                 const marginTopClass =
                   index === 0 || index === 1 ? "" : "margin-port";
@@ -294,9 +294,10 @@ function Project5() {
                     cardClass={cardClass}
                     name={name}
                     logo={newLogoUrl}
-                    image={newImageUrl}
+                    image={image}
                     key={index}
                     width={12}
+                    url={url}
                   />
                 );
               })}

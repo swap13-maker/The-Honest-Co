@@ -5,7 +5,6 @@ import mobwork4 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 4.
 import mobwork5 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 5.webp'
 import mobwork6 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 6.webp'
 import mobwork8 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 7.webp'
-// import mobwork9 from '../../images/OurWork/mobOurWork_9.png'
 
 const Filter = [
   {
