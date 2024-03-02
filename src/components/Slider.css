@@ -92,3 +92,8 @@ h3 {
     content: none;
   }
 }
+@media (max-width: 767px) {
+  .slick-track {
+    margin-left: 15px;
+  }
+}

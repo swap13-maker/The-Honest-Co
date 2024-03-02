@@ -39,9 +39,14 @@ function Project5() {
     prevArrow: <PrevArrow />, // Custom component for previous arrow
     nextArrow: <NextArrow />, // Custom component for next arrow
     infinite: false,
-    slidesToShow: 2,
     slidesToScroll: 1,
   };
+  if (window.innerWidth <= 768) {
+    settings.slidesToShow = 1;
+  } else {
+    settings.slidesToShow = 2;
+  }
+  const isMobileView = window.innerWidth <= 768;
   return (
     <section>
       {/* Header */}
@@ -273,7 +278,7 @@ function Project5() {
             <h5>
               Our Other <strong>Work</strong>
             </h5>
-            <span>View All of Our Work</span>
+            <span class="d-none d-md-inline-block">View All of Our Work</span>
           </div>
 
           <div className="row custom-row">
@@ -293,7 +298,6 @@ function Project5() {
                     marginTopClass={marginTopClass}
                     cardClass={cardClass}
                     name={name}
-                    logo={newLogoUrl}
                     image={image}
                     key={index}
                     width={12}
@@ -309,7 +313,7 @@ function Project5() {
         <div className="container pt-5">
           <div className="row py-md-5 align-items-end">
             <div className="col-12 col-md-6 col-lg-6">
-              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" />
+              <img className="w-50 pb-4 d-md-none d-block" src={myFooterLogo} alt="Footer Logo" style={{ marginLeft: isMobileView ? '7px' : 'auto' }}/>
               <article className="c-article">
                 <header className="c-article__header">
                   <h2 className="c-article__title footer-title">

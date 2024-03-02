@@ -27,9 +27,13 @@ function Project9() {
     prevArrow: <PrevArrow />, // Custom component for previous arrow
     nextArrow: <NextArrow />, // Custom component for next arrow
     infinite: false,
-    slidesToShow: 2,
     slidesToScroll: 1,
   };
+  if (window.innerWidth <= 768) {
+    settings.slidesToShow = 1;
+  } else {
+    settings.slidesToShow = 2;
+  }
   return (
     <section>
       {/* Header */}
@@ -238,7 +242,7 @@ function Project9() {
             <h5>
               Our Other <strong>Work</strong>
             </h5>
-            <span>View All of Our Work</span>
+            <span class="d-none d-md-inline-block">View All of Our Work</span>
           </div>
 
           <div className="row custom-row">
@@ -258,7 +262,6 @@ function Project9() {
                     marginTopClass={marginTopClass}
                     cardClass={cardClass}
                     name={name}
-                    logo={newLogoUrl}
                     image={image}
                     key={index}
                     width={12}

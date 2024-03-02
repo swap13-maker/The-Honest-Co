@@ -839,7 +839,7 @@ FormControl:focus {
 
 @media (max-width: 767px) {
   .slick-slide > div {
-    padding: 0 12px; /* Adjust the padding as needed */
+    padding: 0 12px; 
   }
 
   .article-heading {

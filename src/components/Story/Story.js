@@ -170,7 +170,7 @@ export const PrevArrow = (props) => {
   const { onClick } = props;
 
   return (
-    <div className="slick-arrow slick-prev" onClick={onClick}>
+    <div className="slick-arrow slick-prev" onClick={onClick} style={{ paddingTop: window.innerWidth <= 768 ? '100px' : 'auto' }}>
       <IconArrow />
     </div>
   );
@@ -181,7 +181,7 @@ export const NextArrow = (props) => {
   const { onClick } = props;
 
   return (
-    <div className="slick-arrow slick-next" onClick={onClick}>
+    <div className="slick-arrow slick-next" onClick={onClick} style={{ paddingBottom: window.innerWidth <= 768 ? '100px' : 'auto' }}>
       <IconArrow />
     </div>
   );
