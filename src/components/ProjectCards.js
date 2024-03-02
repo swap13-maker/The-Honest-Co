@@ -5,10 +5,9 @@ const ProjectCards = ({
   image,
   name,
   description,
-  logo,
   width,
   alt,
-  url
+  url,
 }) => {
   return (
     <div
@@ -19,10 +18,10 @@ const ProjectCards = ({
       <div className="border__fade">
         <div className="wrapper">
           <div className="zoom-effect-container">
-          <Link to={url}>
-            <div className="image-card">
-              <img className="card-img-top" src={image} alt={alt}/>
-            </div>
+            <Link to={url}>
+              <div className="image-card">
+                <img className="card-img-top img-fluid" src={image} alt={alt} />
+              </div>
             </Link>
             <div className="pb-5 translate__down">
               <div className="blog-heading">
@@ -42,7 +41,6 @@ const ProjectCards = ({
                 </svg>
               </div>
               <div className="blog-title blog-hide w-85">{description}</div>
-              <img className="blog-logo blog-hide" src={logo} alt="blog" />
             </div>
           </div>
         </div>
