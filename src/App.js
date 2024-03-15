@@ -32,6 +32,10 @@ import { Helmet } from "react-helmet";
 import Article14 from './components/Articles/Article14.js';
 import Article15 from './components/Articles/Article15.js';
 import Article16 from './components/Articles/Article16.js';
+import Article17 from './components/Articles/Article17.js';
+import Article18 from './components/Articles/Article18.js';
+import Article19 from './components/Articles/Article19.js';
+import Article20 from './components/Articles/Article20.js';
 
 function App() {
   return (
@@ -78,6 +82,10 @@ function App() {
           <Route path="/resources/articles/custom-solutions-for-cultural-sensitivity-in-health-tech" element={<Article14/>}/>
           <Route path="/resources/articles/simplifying-payments-with-bespoke-prm-solutions" element={<Article15/>}/>
           <Route path="/resources/articles/mental-health-support-through-messaging-platforms" element={<Article16 />} />
+          <Route path="/resources/articles/Digital-Transformation-Trends-in-BFSI-for-2024" element={<Article17 />} />
+          <Route path="/resources/articles/AI-in-Application-Development-for-BFSI-Businesses" element={<Article18 />} />
+          <Route path="/resources/articles/Customer-Centric-Digitization-End-User-Personalized-Experiences" element={<Article19 />} />
+          <Route path="/resources/articles/Digital-Transformation-&-Business-Processes-Automation-in-Banking-&-Finance" element={<Article20 />} />
           <Route path="/thankyou" element={<Thanks />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
