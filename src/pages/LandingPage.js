@@ -15,6 +15,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import { scroller } from 'react-scroll';
 import TheHonest from '../images/The_honest.png'
+import GoogleTagManager from "../GoogleTagManager";
 
 
 function LandingPage() { 
@@ -54,6 +55,7 @@ function LandingPage() {
     <div>
       <Helmet>
         <title>Honest Digital Services | Product Development Agency </title>
+        <GoogleTagManager />
         <meta
           property="og:title"
           content="Honest Digital Services | Product Development Agency"

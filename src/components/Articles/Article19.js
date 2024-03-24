@@ -18,6 +18,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article19() {
   useEffect(() => {
@@ -74,6 +75,7 @@ export default function Article19() {
           Customer-Centric Digitization, Building Next-Gen Applications for a
           Personalized Experiences
         </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Unlock seamless global transactions with our expert mobile app development. Explore the role of remittance applications in business expansion

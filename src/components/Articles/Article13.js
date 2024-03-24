@@ -16,6 +16,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article13() {
   useEffect(() => {
@@ -69,6 +70,7 @@ export default function Article13() {
       {/* mian content */}
       <Helmet>
         <title>Digital Transformation in Middle Eastern Healthcare</title>
+        <GoogleTagManager/>
         <meta
           name="description"
           content="In the Middle East, the healthcare sector is witnessing a pivotal transformation, driven by the rapid adoption of digital technologies."

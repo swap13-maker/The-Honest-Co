@@ -26,6 +26,7 @@ import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import mobwork13 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 3.webp";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project3() {
   useEffect(() => {
@@ -52,6 +53,7 @@ function Project3() {
       <InnerHeader />
       <Helmet>
         <title>Travel & Cab Hailing Platform </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Empower travelers with our innovative cab booking app, revolutionizing journey planning and management for a smooth and efficient travel experience."

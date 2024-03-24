@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article6() {
   useEffect(() => {
@@ -71,6 +72,7 @@ export default function Article6() {
       {/* mian content */}
       <Helmet>
         <title>Secure Pre-School App, Parental Tracking & More</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Experience comprehensive pre-school mobile app. Ensure secure parental tracking and smooth transits. Elevate your child's learning journey.

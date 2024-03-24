@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article4() {
   useEffect(() => {
@@ -71,6 +72,7 @@ export default function Article4() {
       {/* mian content */}
       <Helmet>
         <title>Elevate E-Commerce, Low-Code Store Creation</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Revolutionize your online presence with low-code platforms. Simplify e-commerce store creation and enhance customer engagement.

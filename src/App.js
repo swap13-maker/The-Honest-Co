@@ -36,11 +36,13 @@ import Article17 from './components/Articles/Article17.js';
 import Article18 from './components/Articles/Article18.js';
 import Article19 from './components/Articles/Article19.js';
 import Article20 from './components/Articles/Article20.js';
+import GoogleTagManager from './GoogleTagManager.js';
 
 function App() {
   return (
     <>
       <Helmet>
+        <GoogleTagManager />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0S7PV44D7"></script>
         <script>
           {`
@@ -52,6 +54,7 @@ function App() {
         </script>
       </Helmet>
       <Router>
+      <GoogleTagManager />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/get-in-touch/customer-inquiry" element={<CustomerContact />} />

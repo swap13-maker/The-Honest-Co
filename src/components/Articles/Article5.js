@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article5() {
   const section1Ref = useRef();
@@ -68,6 +69,7 @@ export default function Article5() {
       {/* mian content */}
       <Helmet>
         <title>Strategic Growth, AI & ML Forecasting Solutions</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Optimize business strategy with AI and ML solutions. 

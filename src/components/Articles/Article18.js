@@ -18,6 +18,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article18() {
   useEffect(() => {
@@ -74,6 +75,7 @@ export default function Article18() {
           Unlocking Efficiency, How AI is Revolutionizing Application
           Development in BFSI Businesses
         </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Unlock seamless global transactions with our expert mobile app development. Explore the role of remittance applications in business expansion

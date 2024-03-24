@@ -13,6 +13,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 export default function Article10() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -64,6 +65,7 @@ export default function Article10() {
       {/* mian content */}
       <Helmet>
         <title>ML Models for Streamlined HR Operations</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Optimize HR operations with machine learning models. Streamline application filterization and shortlisting for efficient and effective hiring.

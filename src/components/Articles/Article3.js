@@ -12,6 +12,7 @@ import { Article3Banner, Article1B3a, Article1B3b } from "./Constant.js";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -63,6 +64,7 @@ export default function App() {
       {/* mian content */}
       <Helmet>
         <title>Precision Agriculture, AI & ML Plant Disease Detection</title>
+        <GoogleTagManager/>
         <meta
           name="description"
           content="Transform agriculture with AI and ML. Detect plant diseases early for sustainable farming. Explore our cutting-edge solutions.

@@ -13,6 +13,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article11() {
   useEffect(() => {
@@ -65,6 +66,7 @@ export default function Article11() {
       {/* mian content */}
       <Helmet>
         <title>Tailored CRM for E-Commerce Businesses</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Boost e-commerce efficiency with custom CRM development. Tailored solutions for enhanced customer relationship management and business growth.

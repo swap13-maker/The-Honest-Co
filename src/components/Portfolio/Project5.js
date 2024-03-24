@@ -26,6 +26,7 @@ import Arrow from "../../images/White_Arrow.json";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import mobwork5 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 5.webp";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project5() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function Project5() {
       <InnerHeader />
       <Helmet>
         <title>Pill and Appointment Reminder Mobile App</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Prioritize health with our user-friendly app, tracking medicines and appointments to ensure optimal wellness and simplify healthcare management for individuals."

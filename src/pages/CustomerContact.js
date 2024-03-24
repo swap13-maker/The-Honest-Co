@@ -14,6 +14,7 @@ import $ from "jquery";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import NDA from "../images/NDA.pdf";
+import GoogleTagManager from "../GoogleTagManager";
 
 function CustomerContact() {
   const navigate = useNavigate();
@@ -163,6 +164,7 @@ function CustomerContact() {
     <Container>
       <Helmet>
         <title>Customer Inquiry | Honest Digital Services </title>
+        <GoogleTagManager />
         <meta name="description" content="" />
         <meta name="keywords" content=""></meta>
         <meta name="author" content="Karthik Nath"></meta>

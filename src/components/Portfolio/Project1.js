@@ -26,6 +26,7 @@ import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import myFooterLogo from "../../images/footer-logo.png";
 import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 1.webp'
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project1() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function Project1() {
       <InnerHeader />
       <Helmet>
         <title>Online D2C E-Commerce Store</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Revolutionizing seafood sales, enhanced D2C experience with a mobile app development. Expanding reach via enhanced digital development."

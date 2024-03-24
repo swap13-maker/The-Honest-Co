@@ -18,6 +18,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article20() {
   useEffect(() => {
@@ -64,6 +65,7 @@ export default function Article20() {
           Business Growth, Leveraging Digital Transformation & Automated
           Processes in BFSI for Success
         </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Unlock seamless global transactions with our expert mobile app development. Explore the role of remittance applications in business expansion

@@ -11,6 +11,7 @@ import loader from "../images/ResourceListing.json";
 import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
 import Arrow from "../images/Arrow.json";
+import GoogleTagManager from "../GoogleTagManager.js";
 
 const Resource = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const Resource = () => {
         {/* Header */}
         <Helmet>
           <title>Our Resources | Honest Digital Services </title>
+          <GoogleTagManager />
           <meta
             name="description"
             content="Our resources by the team of The Honest Company in the process of executing our projects for the digital product developments."

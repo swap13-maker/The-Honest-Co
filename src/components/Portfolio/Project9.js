@@ -15,6 +15,7 @@ import webGrid from "../../images/Web Grid Web View.jpg";
 import conslusion from "../../images/Conclusion.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project9() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function Project9() {
       <InnerHeader />
       <Helmet>
         <title>Custom School Learning Platform </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Transform education with our custom learning platform, optimizing curriculum management and providing a versatile solution for educational institutions to thrive in the digital era."

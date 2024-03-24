@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article14() {
   const section1Ref = useRef();
@@ -70,6 +71,7 @@ export default function Article14() {
         <title>
         Cultural Sensitivity in Health Tech
         </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Adopting cultural sensitivity within healthcare technology ensuring meaningful and effective healthcare solutions for Middle Eastern businesses."
