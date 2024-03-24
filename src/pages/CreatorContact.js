@@ -14,6 +14,7 @@ import "../components/InnerHeader.css";
 import $ from "jquery";
 import { Helmet } from "react-helmet";
 import { useNavigate } from 'react-router-dom';
+import GoogleTagManager from "../GoogleTagManager";
 
 
 function CreatorContact() {
@@ -189,6 +190,7 @@ function CreatorContact() {
     <Container>
     <Helmet>
         <title>Creator Inquiry | Honest Digital Services</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content=""

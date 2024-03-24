@@ -14,7 +14,10 @@ import Article13 from '../../images/Article/Article13/Arrticle13.webp'
 import Article14 from '../../images/Article/Article14/Article14.webp'
 import Article15 from '../../images/Article/Article15/Article15.webp'
 import Article16 from '../../images/Article/Article16/Article16.webp'
-
+import Article17 from '../../images/Article/Article18/Banner.webp'
+import Article18 from '../../images/Article/Article19/Banner.webp'
+import Article19 from '../../images/Article/Article20/Banner.webp'
+import Article20 from '../../images/Article/Article21/Banner.webp'
 
 const Filter = [
     {
@@ -178,6 +181,46 @@ const Filter = [
       description: "Role of mobile application in providing continious support and care for individual seeking mental health support & services.",
       url:"/resources/articles/mental-health-support-through-messaging-platforms",
       alt:"mobile applications with mental health messaging"
+    },
+    {
+      id: 17,
+      image: Article17,
+      name: "Digital Transformation Trends in BFSI for 2024",
+      category: "tab2",
+      logo: "react.svg",
+      description: "A digital revolution is surging through the BFSI sector, fuelled by ever-evolving customer demands and a thirst for innovation.",
+      url:"/resources/articles/Digital-Transformation-Trends-in-BFSI-for-2024",
+      alt:"Digital Transformation Trends in BFSI for 2024"
+    },
+    {
+      id: 18,
+      image: Article18,
+      name: "AI in Application Development for BFSI Businesses",
+      category: "tab2",
+      logo: "react.svg",
+      description: "By integrating AI into application development, BFSI companies are unlocking doors to a future of unprecedented efficiency, agility, and customer-eccentricity.",
+      url:"/resources/articles/AI-in-Application-Development-for-BFSI-Businesses",
+      alt:"AI in Application Development for BFSI Businesses"
+    },
+    {
+      id: 19,
+      image: Article19,
+      name: "Customer-Centric Digitization End User Personalized Experiences",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Today's savvy customers expect personalized experiences, and businesses need custom software solutions that address their unique challenges and unlock new opportunities.",
+      url:"/resources/articles/Customer-Centric-Digitization-End-User-Personalized-Experiences",
+      alt:"Customer-Centric Digitization End User Personalized Experiences"
+    },
+    {
+      id: 20,
+      image: Article20,
+      name: " Digital Transformation & Business Processes Automation in Banking & Finance",
+      category: "tab2",
+      logo: "react.svg",
+      description: "The BFSI landscape is undergoing a radical transformation driven by evolving customer expectations, disruptive technologies, and a relentless pursuit of efficiency and compliance. ",
+      url:"/resources/articles/Digital-Transformation-&-Business-Processes-Automation-in-Banking-&-Finance",
+      alt:" Digital Transformation & Business Processes Automation in Banking & Finance"
     }
   ];
 

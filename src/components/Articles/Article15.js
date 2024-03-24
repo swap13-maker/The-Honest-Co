@@ -17,6 +17,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article15() {
   const section1Ref = useRef();
@@ -68,6 +69,7 @@ export default function Article15() {
         <title>
         Simplifying Payments in Health Centers
         </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Advanced patient relationship management (PRM) softwares streamlining payments benefiitng both healthcare providers and patients."

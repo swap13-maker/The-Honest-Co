@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article9() {
   useEffect(() => {
@@ -71,6 +72,7 @@ export default function Article9() {
       {/* mian content */}
       <Helmet>
         <title>Efficient Interview Scheduling with Mobile Apps</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Modernize interview scheduling with mobile apps. Enhance team efficiency and applicant experience. Elevate your recruitment process.

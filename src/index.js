@@ -4,12 +4,21 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
+import TagManager from "react-gtm-module";
 import { Helmet } from "react-helmet";
+import GoogleTagManager from "./GoogleTagManager";
+
+const tagManagerArgs = {
+  gtmId: "GTM-PG45Q8KQ",
+};
+
+TagManager.initialize(tagManagerArgs);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Helmet>  
+    <Helmet>
+      <GoogleTagManager />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org/",

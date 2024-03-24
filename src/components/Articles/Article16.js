@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article16() {
   const section1Ref = useRef();
@@ -70,6 +71,7 @@ export default function Article16() {
         <title>
           Mental Health Support Through Mobile Accessed Messaging Platforms
         </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Role of mobile application in providing continious support and care for individual seeking mental health support & services"

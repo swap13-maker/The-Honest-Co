@@ -27,6 +27,7 @@ import mobwork1 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 6.
 import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project6() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function Project6() {
       <InnerHeader />
       <Helmet>
         <title>Online Photo Sharing with E-Commerce </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Celebrate every moment with our exclusive photo-sharing app integrated with e-commerce capabilities, allowing users to cherish and share memories seamlessly."

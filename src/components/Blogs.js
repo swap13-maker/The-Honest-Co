@@ -7,10 +7,12 @@ import blog3 from "../images/Blog/blog3.jpg";
 import blog4 from "../images/Blog/blog4.jpg";
 import blog5 from "../images/Blog/blog5.jpg";
 import { Link } from "react-router-dom";
+import GoogleTagManager from "../GoogleTagManager";
 
 function Blogs() {
   return (
     <section className="row py-5">
+       <GoogleTagManager />
       <div className="col-md-3">
       <Link to="/resources">
         <div className="sidebar-btn-section sidebar-btn-section--2 sticky-top">

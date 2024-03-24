@@ -13,6 +13,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article7() {
   useEffect(() => {
@@ -65,6 +66,7 @@ export default function Article7() {
       {/* mian content */}
       <Helmet>
         <title>Deep Learning for Adaptive Course Modules</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Transform education with adaptive course modules powered by deep learning algorithms. Tailor learning experiences for enhanced outcomes.

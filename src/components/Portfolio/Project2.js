@@ -25,6 +25,7 @@ import { Link } from "react-router-dom";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 2.webp'
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project2() {
   useEffect(() => {
@@ -51,6 +52,7 @@ function Project2() {
       <InnerHeader />
       <Helmet>
         <title>P2P Money Remittance Mobile Application </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Experience seamless P2P money transfer and utility payments with our intuitive mobile app, providing a hassle-free financial solution for users."

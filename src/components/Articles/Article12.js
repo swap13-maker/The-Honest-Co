@@ -19,6 +19,7 @@ import "./Article.css";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 export default function Article12() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -70,6 +71,7 @@ export default function Article12() {
       {/* mian content */}
       <Helmet>
         <title>AI Fleet Management for Effective Route Planning</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Enhance route planning and fleet management with artificial intelligence. 

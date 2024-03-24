@@ -19,6 +19,7 @@ import { Helmet } from "react-helmet";
 import "./Article.css";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 export default function Article2() {
   useEffect(() => {
@@ -71,6 +72,7 @@ export default function Article2() {
       {/* mian content */}
       <Helmet>
         <title>Smart Crypto Trading, AI & ML Bot Solutions</title>
+        <GoogleTagManager/>
         <meta
           name="description"
           content="Empower your trading with AI and ML. Explore our crypto trading bot for intelligent and automated strategies in the dynamic market.

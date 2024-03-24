@@ -12,6 +12,7 @@ import Lottie from "lottie-react";
 import loader from "../images/PortfolioListing.json";
 import ChatComponent from "../components/ChatComponent";
 import { Helmet } from "react-helmet";
+import GoogleTagManager from "../GoogleTagManager.js";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const Portfolio = () => {
     <section>
       <Helmet>
         <title>Our Digital Solutions | Honest Digital Services </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Our portfolio of digital products created for businesses all across the world. Digitally transforming Banking & Finance, D2C & ECommerce, HealthCare, Staffing & Recruitment and other sectors for achieving business goals. "

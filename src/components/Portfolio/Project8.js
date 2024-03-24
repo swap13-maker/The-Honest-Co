@@ -27,6 +27,7 @@ import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import mobwork1 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 7.webp";
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project8() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function Project8() {
       <InnerHeader />
       <Helmet>
         <title>Interview Scheduling & Job Tracking App</title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Simplify HR processes with our efficient app, streamlining job tracking and interview scheduling to enhance recruitment management for both employers and applicants."

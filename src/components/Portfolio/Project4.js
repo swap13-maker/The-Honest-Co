@@ -24,6 +24,7 @@ import { Helmet } from "react-helmet";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import mobwork1 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 4.webp"
+import GoogleTagManager from "../../GoogleTagManager.js";
 
 function Project4() {
   useEffect(() => {
@@ -50,6 +51,7 @@ function Project4() {
       <InnerHeader />
       <Helmet>
         <title>SOS & Location Sharing Application </title>
+        <GoogleTagManager />
         <meta
           name="description"
           content="Enhance safety with our comprehensive location sharing and SOS app, offering real-time tracking features that provide peace of mind and security for users."
