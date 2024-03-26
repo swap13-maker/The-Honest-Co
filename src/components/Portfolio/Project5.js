@@ -27,6 +27,7 @@ import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import mobwork5 from "../../images/Portfolio/Portfolio/Portfoliolisting/Frame 5.webp";
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 
 function Project5() {
   useEffect(() => {
@@ -529,6 +530,7 @@ function Project5() {
           </p>
         </div>
       </section>
+      <ChatComponent />
     </section>
   );
 }

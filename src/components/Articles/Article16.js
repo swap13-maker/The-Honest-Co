@@ -9,6 +9,8 @@ import Banner from "../../images/Article/Article16/pexels-charlotte-may-5965771 
 import B5a from "../../images/Article/Article16/pexels-anna-shvets-3943951 1.webp";
 import B5b from "../../images/Article/Article16/pexels-karolina-grabowska-7195090 1.webp";
 import B5c from "../../images/Article/Article16/woman-measure-heart-rate-with-smart-technology 1.webp";
+import ChatComponent from "../ChatComponent.js";
+
 import {
   Article16Banner,
   Article16B1a,
@@ -327,6 +329,7 @@ export default function Article16() {
 
       <section className="container bg-white py-4"></section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

@@ -28,6 +28,7 @@ import myFooterLogo from "../../images/footer-logo.png";
 import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 
 function Project6() {
   useEffect(() => {
@@ -524,6 +525,7 @@ function Project6() {
           </p>
         </div>
       </section>
+      <ChatComponent />
     </section>
   );
 }

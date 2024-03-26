@@ -9,6 +9,7 @@ import Banner from "../../images/Article/Article4/Banner 4.jpg";
 import B4a from "../../images/Article/Article4/B4a.jpg";
 import B4b from "../../images/Article/Article4/B4b.jpg";
 import B4c from "../../images/Article/Article4/B4c.jpg";
+import ChatComponent from "../ChatComponent.js";
 import {
   Article4Banner,
   Article4B4a,
@@ -331,6 +332,7 @@ export default function Article4() {
 
       <section className="container bg-white py-4"></section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

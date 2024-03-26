@@ -9,6 +9,7 @@ import Banner from "../../images/Article/Article2/Banner 2.jpg";
 import B2a from "../../images/Article/Article2/B2a.jpg";
 import B2b from "../../images/Article/Article2/B2b.jpg";
 import B2c from "../../images/Article/Article2/B2c.jpg";
+import ChatComponent from "../ChatComponent.js";
 import {
   Article2Banner,
   Article1B2a,
@@ -312,6 +313,7 @@ export default function Article2() {
         </div>
       </section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

@@ -27,6 +27,7 @@ import Lottie from "lottie-react";
 import myFooterLogo from "../../images/footer-logo.png";
 import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 1.webp'
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 
 function Project1() {
   useEffect(() => {
@@ -518,6 +519,7 @@ function Project1() {
           </p>
         </div>
       </section>
+      <ChatComponent />
     </section>
   );
 }

@@ -16,6 +16,7 @@ import conslusion from "../../images/Conclusion.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 
 function Project9() {
   useEffect(() => {
@@ -308,6 +309,7 @@ function Project9() {
           </div>
         </div> */}
       </section>
+      <ChatComponent />
     </section>
   );
 }

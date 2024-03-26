@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -308,6 +309,7 @@ export default function App() {
 
       <section className="container bg-white py-4"></section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

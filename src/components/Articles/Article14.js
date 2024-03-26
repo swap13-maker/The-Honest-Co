@@ -9,6 +9,8 @@ import Banner from "../../images/Article/Article14/1.webp";
 import B5a from "../../images/Article/Article14/pexels-fauxels-3184431 1.webp";
 import B5b from "../../images/Article/Article14/pexels-brett-jordan-5045978 1.webp";
 import B5c from "../../images/Article/Article14/pexels-pixabay-159519 1.webp";
+import ChatComponent from "../ChatComponent.js";
+
 import {
   Article14Banner,
   Article14B1a,
@@ -355,6 +357,7 @@ export default function Article14() {
 
       <section className="container bg-white py-4"></section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

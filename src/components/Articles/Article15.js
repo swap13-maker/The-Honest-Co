@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import Banner from "../../images/Article/Article15/man-is-holding-phone-another-man-is-holding-wallet-with-sign-that-says-smart-phone.webp";
 import B5a from "../../images/Article/Article15/contactless-cashless-payment-through-mobile-banking 1.webp";
 import B5b from "../../images/Article/Article15/pexels-pavel-danilyuk-8442147 1.webp";
+import ChatComponent from "../ChatComponent.js";
+
 import {
   Article15Banner,
   Article15B1b,
@@ -345,6 +347,7 @@ export default function Article15() {
 
       <section className="container bg-white py-4"></section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

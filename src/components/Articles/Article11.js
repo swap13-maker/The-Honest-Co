@@ -14,6 +14,7 @@ import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import Arrow from "../../images/Arrow.json";
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 
 export default function Article11() {
   useEffect(() => {
@@ -318,6 +319,7 @@ export default function Article11() {
 
       <section className="container bg-white py-4"></section>
       <Footer />
+      <ChatComponent />
     </section>
   );
 }

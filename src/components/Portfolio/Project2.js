@@ -26,6 +26,7 @@ import Arrow from "../../images/White_Arrow.json";
 import Lottie from "lottie-react";
 import mobwork1 from '../../images/Portfolio/Portfolio/Portfoliolisting/Frame 2.webp'
 import GoogleTagManager from "../../GoogleTagManager.js";
+import ChatComponent from "../ChatComponent.js";
 
 function Project2() {
   useEffect(() => {
@@ -516,6 +517,7 @@ function Project2() {
           </p>
         </div>
       </section>
+      <ChatComponent />
     </section>
   );
 }
