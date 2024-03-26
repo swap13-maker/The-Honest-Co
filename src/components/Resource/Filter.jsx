@@ -14,10 +14,10 @@ import Article13 from '../../images/Article/Article13/Arrticle13.webp'
 import Article14 from '../../images/Article/Article14/Article14.webp'
 import Article15 from '../../images/Article/Article15/Article15.webp'
 import Article16 from '../../images/Article/Article16/Article16.webp'
-import Article17 from '../../images/Article/Article18/Banner.webp'
-import Article18 from '../../images/Article/Article19/Banner.webp'
-import Article19 from '../../images/Article/Article20/Banner.webp'
-import Article20 from '../../images/Article/Article21/Banner.webp'
+import Article17 from '../../images/Article/Article18/17.webp'
+import Article18 from '../../images/Article/Article19/18.webp'
+import Article19 from '../../images/Article/Article20/19.webp'
+import Article20 from '../../images/Article/Article21/20.webp'
 
 const Filter = [
     {
