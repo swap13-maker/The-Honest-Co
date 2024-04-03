@@ -326,7 +326,10 @@ export default function Article19() {
                   <br />
                   <br />
                 </div>
+                <br />
+               <br />
               </div>
+              
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">
                   <div className="p-4 d-none d-md-block">
