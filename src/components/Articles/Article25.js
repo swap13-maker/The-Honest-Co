@@ -32,7 +32,7 @@ export default function Article25() {
   const section4Ref = useRef();
   const section5Ref = useRef();
   const section6Ref = useRef();
-  const section7Ref = useRef();
+ 
 
   const navHeader = [
     {
@@ -65,11 +65,7 @@ export default function Article25() {
       headerRef: section6Ref,
       headerID: "section6",
     },
-    {
-      headerTitle: "",
-      headerRef: section7Ref,
-      headerID: "section7",
-    },
+    
   ];
 
   return (
@@ -197,7 +193,7 @@ export default function Article25() {
                   </p>
                 </div>
 
-                <div className="pt-5" ref={section3Ref} id="section3">
+                <div className="pt-3" ref={section3Ref} id="section3">
                   <p className="light-article-content">
                     <ul>
                       <li>
@@ -234,7 +230,8 @@ export default function Article25() {
                   </p>
                 </div>
 
-                <div className="pt-5" ref={section5Ref} id="section5">
+                
+                <div className="pt-2" ref={section5Ref} id="section5">
                   <p className="light-article-content">
                     <ul>
                       <li>
@@ -250,13 +247,7 @@ export default function Article25() {
                         candidates and establish connections with potential
                         hires from diverse backgrounds and skill sets.
                       </li>
-                    </ul>
-                  </p>
-                </div>
-
-                <div className="pt-5" ref={section6Ref} id="section6">
-                  <p className="light-article-content">
-                    <ul>
+                      <br />
                       <li>
                         <strong>Real-time Analytics and Insights:</strong>
                         {" "}  Virtual career fairs provide organizations with valuable
@@ -271,8 +262,9 @@ export default function Article25() {
                   </p>
                   <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
                 </div>
+                
 
-                <div className="pt-5" ref={section7Ref} id="section7">
+                <div className="pt-5" ref={section6Ref} id="section6">
                   <h2 className="main-article-content">
                     Get Ready to Revolutionise your Recruitment Strategy with
                     The Honest Company
@@ -302,9 +294,9 @@ export default function Article25() {
                     </span>
                   </p>
                 </div>
-               <br />
-               <br />
-              </div>
+                <br />
+                <br />
+                </div>
               
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">
