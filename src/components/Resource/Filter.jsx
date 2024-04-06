@@ -18,6 +18,11 @@ import Article17 from '../../images/Article/Article18/17.webp'
 import Article18 from '../../images/Article/Article19/18.webp'
 import Article19 from '../../images/Article/Article20/19.webp'
 import Article20 from '../../images/Article/Article21/20.webp'
+import Article21 from '../../images/Article/Article22/21.webp'
+import Article22 from '../../images/Article/Article23/22.webp'
+import Article23 from '../../images/Article/Article24/23.webp'
+import Article24 from '../../images/Article/Article25/24.webp'
+import Article25 from '../../images/Article/Article26/25.webp'
 
 const Filter = [
     {
@@ -215,12 +220,62 @@ const Filter = [
     {
       id: 20,
       image: Article20,
-      name: " Digital Transformation & Business Processes Automation in Banking & Finance",
+      name: " Business Processes Automation in Banking & Finance",
       category: "tab2",
       logo: "react.svg",
       description: "The BFSI landscape is undergoing a radical transformation driven by evolving customer expectations, disruptive technologies, and a relentless pursuit of efficiency and compliance. ",
       url:"/resources/articles/Digital-Transformation-&-Business-Processes-Automation-in-Banking-&-Finance",
       alt:" Digital Transformation & Business Processes Automation in Banking & Finance"
+    },
+    {
+      id: 21,
+      image: Article21,
+      name: "AI-driven Talent Screening Revolutionizing Recruitment",
+      category: "tab2",
+      logo: "react.svg",
+      description: "In today's job market, finding the right talent is vital for success. But traditional hiring methods can be slow and ineffective, costing time and money. ",
+      url:"/resources/articles/AI-driven-Talent-Screening-Revolutionizing-Recruitment",
+      alt:"AI-driven Talent Screening Revolutionizing Recruitment"
+    },
+    {
+      id: 22,
+      image: Article22,
+      name: "Enhancing Trust and Security in Staffing through Blockchain",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Today's competitive job market demands trust and security for successful hiring. As an IT decision-maker in staffing tech, leveraging innovative solutions is key to enhancing both. ",
+      url:"/resources/articles/Enhancing-Trust-and-Security-in-Staffing-through-Blockchain",
+      alt:"Enhancing Trust and Security in Staffing through Blockchain"
+    },
+    {
+      id: 23,
+      image: Article23,
+      name: "Rethinking Candidate Assessment",
+      category: "tab2",
+      logo: "react.svg",
+      description: "In the dynamic field of staffing and recruitment, swift talent discovery is vital. Video interviewing platforms are revolutionizing candidate assessment, offering a new approach for organizations. ",
+      url:"/resources/articles/Rethinking-Candidate-Assessment",
+      alt:"Rethinking Candidate Assessment"
+    },
+    {
+      id: 24,
+      image: Article24,
+      name: "Streamlining Hiring Processes Through Automated Candidate Screening",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Amidst today's fast-paced business environment, organizations continually pursue streamlined hiring processes and efficient talent identification. ",
+      url:"/resources/articles/Streamlining-Hiring-Through-Automated-Candidate-Screening",
+      alt:"Streamlining Hiring Through Automated Candidate Screening"
+    },
+    {
+      id: 25,
+      image: Article25,
+      name: "Virtual Career Fairs: Expanding Access to Opportunities",
+      category: "tab2",
+      logo: "react.svg",
+      description: " Within the dynamic realm of recruitment, the quest for top talent is an ongoing endeavor that shapes the success of organizations.",
+      url:"/resources/articles/Virtual-Career-Fairs-Expanding-Access-to-Opportunities",
+      alt:"Virtual Career Fairs Expanding Access to Opportunities"
     }
   ];
 

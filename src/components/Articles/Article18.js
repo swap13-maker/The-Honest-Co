@@ -140,15 +140,6 @@ export default function Article18() {
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  {/* <h2 className="main-article-content">
-                    A seismic shift is rocking the BFSI sector. Evolving
-                    customer expectations are leading the charge. Today's
-                    tech-savvy consumers demand personalized, frictionless
-                    experiences across all channels. Their financial
-                    institutions need to be as accessible and convenient as
-                    their favourite online stores.
-                  </h2> */}
-                  <br />
                   <p className="light-article-content">
                     The BFSI sector has long navigated a complex landscape of
                     regulations, customer demands, and market fluctuations.
@@ -285,12 +276,10 @@ export default function Article18() {
                     customers, ultimately fostering loyalty and driving growth
                     in the dynamic marketplace.
                   </p>
+                  <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
                 </div>
 
                 <div className="pt-4" ref={section5Ref} id="section5">
-                  <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
-                  <br />
-                  <br />
                   <h2 className="main-article-content">
                     Building a Secure and Compliant Future
                   </h2>
@@ -351,7 +340,10 @@ export default function Article18() {
                     customer experiences.
                   </p>
                 </div>
+                <br />
+               <br />
               </div>
+              
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">
                   <div className="p-4 d-none d-md-block">

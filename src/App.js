@@ -36,6 +36,11 @@ import Article17 from './components/Articles/Article17.js';
 import Article18 from './components/Articles/Article18.js';
 import Article19 from './components/Articles/Article19.js';
 import Article20 from './components/Articles/Article20.js';
+import Article21 from './components/Articles/Article21.js';
+import Article22 from './components/Articles/Article22.js';
+import Article23 from './components/Articles/Article23.js';
+import Article24 from './components/Articles/Article24.js';
+import Article25 from './components/Articles/Article25.js';
 import GoogleTagManager from './GoogleTagManager.js';
 
 function App() {
@@ -89,6 +94,11 @@ function App() {
           <Route path="/resources/articles/AI-in-Application-Development-for-BFSI-Businesses" element={<Article18 />} />
           <Route path="/resources/articles/Customer-Centric-Digitization-End-User-Personalized-Experiences" element={<Article19 />} />
           <Route path="/resources/articles/Digital-Transformation-&-Business-Processes-Automation-in-Banking-&-Finance" element={<Article20 />} />
+          <Route path="/resources/articles/AI-driven-Talent-Screening-Revolutionizing-Recruitment" element={<Article21 />} />
+          <Route path="/resources/articles/Enhancing-Trust-and-Security-in-Staffing-through-Blockchain" element={<Article22 />} />
+          <Route path="/resources/articles/Rethinking-Candidate-Assessment" element={<Article23 />} />
+          <Route path="/resources/articles/Streamlining-Hiring-Through-Automated-Candidate-Screening" element={<Article24 />} />
+          <Route path="/resources/articles/Virtual-Career-Fairs-Expanding-Access-to-Opportunities" element={<Article25 />} />
           <Route path="/thankyou" element={<Thanks />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
