@@ -154,7 +154,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     From Manual to Machine-Driven Decision Making
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Traditionally, decision-making in BFSI relied heavily on
                     manual analysis and intuition. This often led to slow
@@ -204,7 +204,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     Streamlining Operations and Boosting Productivity
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     AI is reshaping application development beyond
                     decision-making by automating repetitive tasks and
@@ -234,7 +234,7 @@ export default function Article18() {
                     recruitment process, and mobile apps have made this a
                     reality.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Modern job seekers, especially the tech-savvy millennial and
                     Gen Z workforce, bring with them a set of expectations that
@@ -255,7 +255,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     Personalizing the Customer Journey
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     In today's highly competitive landscape, providing an
                     exceptional customer experience is paramount for BFSI
@@ -279,11 +279,11 @@ export default function Article18() {
                   <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
                 </div>
 
-                <div className="pt-4" ref={section5Ref} id="section5">
+                <div className="pt-5" ref={section5Ref} id="section5">
                   <h2 className="main-article-content">
                     Building a Secure and Compliant Future
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     As AI adoption grows, concerns regarding security and
                     compliance are critical. However, AI can also be a powerful
@@ -329,7 +329,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     The Honest Company: Your Trusted Partner in AI Innovation
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     At The Honest Company, we understand the unique challenges
                     and opportunities facing BFSI businesses in today's dynamic

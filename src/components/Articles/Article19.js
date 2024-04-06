@@ -144,7 +144,7 @@ export default function Article19() {
                     Tailored Transformations: Custom Solutions for Personalized
                     BFSI Experiences
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The BFSI sector stands at a crossroads, where digital
                     transformation isn't just an option, it's a necessity. But
@@ -162,7 +162,7 @@ export default function Article19() {
                   <h2 className="main-article-content">
                     Beyond Off-the-Shelf: Why Custom Matters
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Off-the-shelf solutions might seem appealing, but their
                     one-size-fits-all approach often leads to missed potential
@@ -226,7 +226,7 @@ export default function Article19() {
                   <h2 className="main-article-content">
                     Building Seamless Customer Journeys
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     Customer experience is no longer confined to individual
                     transactions. Today, it encompasses the entire customer
@@ -254,7 +254,7 @@ export default function Article19() {
                     crucial role in personalization and automation, the human
                     touch remains vital in BFSI.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     AI enhances the financial advisory experience by providing
                     data-driven insights and automating administrative tasks,
@@ -270,7 +270,7 @@ export default function Article19() {
                   <h2 className="main-article-content">
                     Building Trust and Security in the Digital Age
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     With increased personalization and data usage, data privacy
                     and security concerns are paramount. Next-gen applications
@@ -314,7 +314,7 @@ export default function Article19() {
                   <h2 className="main-article-content">
                     Redefine Your Banking Processes
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     We understand that every BFSI business is unique. That's why
                     we don't offer pre-packaged solutions. Our team of
@@ -323,8 +323,7 @@ export default function Article19() {
                     solutions based on your specific needs which are secure &
                     scalable.
                   </p>
-                  <br />
-                  <br />
+                 
                 </div>
                 <br />
                <br />

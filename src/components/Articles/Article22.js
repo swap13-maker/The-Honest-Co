@@ -146,7 +146,6 @@ export default function Article22() {
                     understand the importance of leveraging innovative solutions
                     to enhance trust and security throughout the hiring process.
                   </h2>
-                  <br />
                 </div>
 
                 <div className="pt-5" ref={section2Ref} id="section2">
@@ -154,8 +153,6 @@ export default function Article22() {
                     Empowering Staffing and Recruitment with Blockchain
                     Technology
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     Blockchain technology, best known for its role in
                     cryptocurrency transactions, offers a decentralized and
@@ -175,7 +172,7 @@ export default function Article22() {
                   <h2 className="main-article-content">
                     Verified Candidate Records
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     One of the challenges in staffing and recruitment is
                     verifying the authenticity of candidate credentials, such as
@@ -208,7 +205,7 @@ export default function Article22() {
                     Advantages of Blockchain Technology in Staffing &
                     Recruitment
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     One of the challenges in staffing and recruitment is
                     verifying the authenticity of candidate credentials, such as
@@ -262,7 +259,7 @@ export default function Article22() {
                   <h2 className="main-article-content">
                     Transform Your Staffing and Recruitment Today
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Are you ready to leverage the best of blockchain
                     technologies in your talent acquisition processes?In cases

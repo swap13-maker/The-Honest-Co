@@ -138,8 +138,6 @@ export default function Article21() {
                     and inefficient, leading to missed opportunities and
                     increased costs.
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     As IT decision-makers, you understand the importance of
                     leveraging innovative solutions to streamline recruitment
@@ -148,12 +146,10 @@ export default function Article21() {
                     revolutionizing recruitment and empowering businesses to
                     make smarter hiring decisions.
                   </p>
-
+                  <br />
                   <h2 className="main-article-content">
                     Empowering Recruitment with AI-driven Talent Screening
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     AI-driven talent screening leverages advanced algorithms and
                     machine learning techniques to automate and enhance the
@@ -163,7 +159,6 @@ export default function Article21() {
                     qualified candidates for a position. Let's delve into the
                     key features and benefits of these transformative solutions.
                   </p>
-
                   <img src={B1a} className="w-100 pt-5" alt={Article1B1a} />
                 </div>
 
@@ -171,7 +166,6 @@ export default function Article21() {
                   <h2 className="main-article-content">
                     Streamlined Candidate Evaluation
                   </h2>
-                  <br />
                   <p className="light-article-content">
                     Traditional methods of candidate evaluation often rely on
                     manual review of resumes and interviews, which can be
@@ -193,7 +187,7 @@ export default function Article21() {
                   <h2 className="main-article-content">
                     Enhanced Candidate Matching
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Matching candidates to job roles requires a deep
                     understanding of both candidate qualifications and job
@@ -213,7 +207,6 @@ export default function Article21() {
                   <h2 className="main-article-content">
                     Bias Reduction and Diversity Promotion
                   </h2>
-                  <br />
                   <p className="light-article-content">
                     Unconscious bias in the recruitment process can lead to
                     missed opportunities and hinder diversity initiatives within
@@ -240,7 +233,6 @@ export default function Article21() {
                   <h2 className="main-article-content">
                     Choose Innovation with The Honest Company
                   </h2>
-                  <br />
                   <p className="light-article-content">
                     At The Honest Company, we understand the transformative
                     impact of AI-driven talent screening in recruitment. Our

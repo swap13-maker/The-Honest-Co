@@ -148,7 +148,7 @@ export default function Article17() {
                     institutions need to be as accessible and convenient as
                     their favourite online stores.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     A digital revolution is surging through the BFSI sector,
                     fuelled by ever-evolving customer demands and a thirst for
@@ -169,7 +169,7 @@ export default function Article17() {
                   <h2 className="main-article-content">
                     Redefining Enterprise IT
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The role of IT in the BFSI sector is undergoing a
                     significant transformation. Previously seen as a cost
@@ -192,7 +192,7 @@ export default function Article17() {
                   <h2 className="main-article-content">
                     Customer Experience Takes Center Stage
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The BFSI sector is witnessing a fundamental shift, with
                     customer experience taking centre stage. Gone are the days
@@ -230,7 +230,7 @@ export default function Article17() {
                   <h2 className="main-article-content">
                     Transforming Workplace Culture and Technology
                   </h2>
-                  <br />
+                
                   <p className="light-article-content">
                     The future of work in the BFSI sector is being reshaped by
                     two key trends: remote work flexibility and digital data
@@ -259,13 +259,10 @@ export default function Article17() {
                 </div>
 
                 <div className="pt-5" ref={section5Ref} id="section5">
-               
-                <br />
-                <br />
                 <h2 className="main-article-content">
                     Managing Risk in New Ways
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The BFSI sector is adopting sophisticated tools to navigate
                     the ever-changing risk landscape. Predictive analytics,
@@ -294,7 +291,7 @@ export default function Article17() {
                   <h2 className="main-article-content">
                     Shifting towards a Culture of Innovation
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     In the ever-evolving financial landscape, The Honest Company
                     embraces digital transformation's potential while
@@ -314,8 +311,8 @@ export default function Article17() {
                     informed about data usage and giving them control over their
                     privacy.
                   </p>
+                  <br />
                 </div>
-                <br />
                <br />
               </div>
               

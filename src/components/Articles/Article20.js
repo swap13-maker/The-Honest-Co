@@ -143,8 +143,6 @@ export default function Article20() {
                   <h2 className="main-article-content">
                     Empowering Efficiency and Accuracy with Automation
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     <ul>
                       Imagine loan applications processed instantly, customer
@@ -152,6 +150,7 @@ export default function Article20() {
                       conducted in real-time. This is the transformative power
                       of automation in BFSI. Repetitive, manual tasks across key
                       functions can be significantly streamlined, including:
+                      <br />
                       <br />
                       <li>
                         <strong>Customer Onboarding:</strong> Automate KYC
@@ -236,7 +235,7 @@ export default function Article20() {
                   <h2 className="main-article-content">
                     Key Trends Shaping BFSI Automation
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     In the realm of BFSI (Banking, Financial Services, and
                     Insurance), several key trends are shaping the future of
@@ -273,7 +272,7 @@ export default function Article20() {
                   <h2 className="main-article-content">
                     Empowering Your BFSI Journey with The Honest Company
                   </h2>
-                  <br />
+                
                   <p className="light-article-content">
                     At The Honest Company, we recognize the complexities
                     inherent in the digital transformation of BFSI. Through
