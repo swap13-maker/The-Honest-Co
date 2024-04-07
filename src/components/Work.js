@@ -129,9 +129,9 @@ function Work() {
             </div>
           </Link>
         </Link>
-        <Link className="gallery__item media-w-100 d-block">
+        <Link to="portfolio/interview-scheduling-job-tracking-app" className="gallery__item media-w-100 d-block">
           <img src={work7} alt="" />
-          <Link>
+          <Link >
             <div className="work-heading">Interview Scheduling & Job Tracking App</div>
             <div className="work-subheading">
             Staffing and Recruitment · Custom Softwares · Job Search
