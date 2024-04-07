@@ -203,7 +203,7 @@ function Project2() {
             <div className="col-12 col-md-6 py-md-5">
               <div className="proj-content mt-md-5 mt-2">
                 The enhanced order purchsing and cart payment flow allows the
-                user to easiily add multiple products and single click re-order
+                user to easily add multiple products and single click re-order
                 from the list of previous orders placed.
                 <br />
               </div>
