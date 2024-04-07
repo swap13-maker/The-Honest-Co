@@ -142,8 +142,6 @@ export default function Article23() {
                     game-changer, revolutionizing how organizations assess
                     candidates.
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     As an IT decision-maker in the staffing and recruitment
                     technology industry, you recognize the critical role of
@@ -153,11 +151,12 @@ export default function Article23() {
                     assessment practices, empowering businesses to make informed
                     hiring decisions.
                   </p>
+                  <br />
 
                   <h2 className="main-article-content">
                     Empowering Recruitment with Video Interviewing Platforms
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Video interviewing platforms leverage technology to conduct
                     virtual interviews, allowing recruiters and hiring managers
@@ -176,7 +175,6 @@ export default function Article23() {
                   <h2 className="main-article-content">
                     Flexible Interviewing Options
                   </h2>
-                  <br />
                   <p className="light-article-content">
                     Video interviewing platforms offer flexible interviewing
                     options to accommodate the needs of both recruiters and
@@ -193,7 +191,6 @@ export default function Article23() {
                   <h2 className="main-article-content">
                     Enhanced Candidate Assessment
                   </h2>
-                 <br />
                   <p className="light-article-content">
                     Video interviewing platforms provide recruiters with
                     valuable insights into candidates' communication skills,
@@ -211,7 +208,7 @@ export default function Article23() {
                   <h2 className="main-article-content">
                     Improved Candidate Experience
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Traditional recruitment processes can be stressful and
                     time-consuming for candidates. Video interviewing platforms
@@ -227,7 +224,7 @@ export default function Article23() {
                   <h2 className="main-article-content">
                     Cost and Time Savings
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Traditional face-to-face interviews can be costly and
                     time-consuming, especially for organizations with
@@ -255,7 +252,7 @@ export default function Article23() {
                   <h2 className="main-article-content">
                     Transform Your Candidate Assessment Today
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Companies nowadays are looking more and more towards
                     improving their applicants journey while in the job

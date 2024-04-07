@@ -151,7 +151,7 @@ export default function Article24() {
                     are constantly seeking ways to streamline their hiring
                     processes and identify top talent efficiently.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     As an IT decision-maker in the staffing and recruitment
                     technology industry, you understand the importance of
@@ -163,8 +163,6 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Empowering Recruitment with Automated Candidate Screening
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     Automated candidate screening utilizes artificial
                     intelligence and machine learning algorithms to streamline
@@ -182,8 +180,6 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Efficient Resume Parsing
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     Manually reviewing resumes can be time-consuming and prone
                     to human error. Automated candidate screening platforms use
@@ -203,7 +199,7 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Customized Screening Criteria
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Every organization has unique hiring criteria based on job
                     requirements, company culture, and industry standards.
@@ -222,7 +218,7 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Data-Driven Candidate Evaluation
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Automated candidate screening platforms leverage data
                     analytics to evaluate candidate qualifications and predict
@@ -242,8 +238,6 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Enhanced Candidate Experience
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     The candidate experience plays a crucial role in attracting
                     top talent and fostering positive employer branding.
@@ -261,7 +255,7 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Cost-Efficient Recruitment
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Hiring new employees can be costly, requiring resources for
                     job postings, candidate sourcing, and interview logistics.
@@ -287,8 +281,6 @@ export default function Article24() {
                   <h2 className="main-article-content">
                     Transform Your Hiring Processes Today
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     Are you ready to streamline your hiring processes and
                     identify top talent efficiently through automated candidate

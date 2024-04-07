@@ -126,7 +126,7 @@ export default function Article16() {
                     plays a pivotal role in supporting individuals on their path
                     to recovery and resilience.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The revolutionary integration of messaging platforms with
                     Electronic Health Record (EHR) systems is transforming the
@@ -146,7 +146,7 @@ export default function Article16() {
                   <h2 className="main-article-content">
                     Emphasizing the Need for Continuous Care in Mental Health
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     One key aspect of continuous care is the provision of
                     ongoing support. Through consistent assistance, patients can
@@ -178,7 +178,7 @@ export default function Article16() {
                   <h2 className="main-article-content">
                     Improved Patient Engagement via Mobile Apps
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     In the ever-evolving landscape of mental health care, mobile
                     applications have emerged as powerful tools to enhance
@@ -253,7 +253,7 @@ export default function Article16() {
                   <h2 className="main-article-content">
                     The Future of Mental Health Tech
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     In conclusion, the seamless integration of messaging
                     platforms with Electronic Health Record (EHR) systems marks
@@ -274,7 +274,6 @@ export default function Article16() {
                     intersection of technology and mental health, ensuring a
                     future where holistic well-being is at the forefront of
                     healthcare innovation
-                    <br />
                   </p>
                 </div>
                <br />

@@ -143,7 +143,7 @@ export default function Article25() {
                     talent is an ongoing endeavour that shapes the success of
                     organizations.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Amidst this pursuit, a transformative force has emerged:
                     AI-driven talent screening. This innovative technology is
@@ -155,8 +155,6 @@ export default function Article25() {
                   <h2 className="main-article-content">
                     Empowering Recruitment with Virtual Career Fairs
                   </h2>
-                  <br />
-
                   <p className="light-article-content">
                     Virtual career fairs leverage digital platforms to bring
                     together job seekers and employers in a virtual environment,
@@ -271,7 +269,7 @@ export default function Article25() {
                     Get Ready to Revolutionise your Recruitment Strategy with
                     The Honest Company
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     In the time where remote work is on the high and businesses
                     are looking to streamline the recruitment processes, virtual
@@ -295,6 +293,7 @@ export default function Article25() {
                       </Link>
                     </span>
                   </p>
+                 
                 </div>
                 <br />
                 <br />
