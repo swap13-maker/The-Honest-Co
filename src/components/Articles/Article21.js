@@ -122,7 +122,7 @@ export default function Article21() {
                   </h1>
                 </div>
                 <div className="article-sub-heading pt-3">
-                  <h2 className="px-2">1st Sept, 2023 </h2> &bull;{" "}
+                  <h2 className="px-2">Sept 1, 2023  </h2> &bull;{" "}
                   <h2 className="px-2">AI & ML Solutions </h2> &bull;{" "}
                   <h2 className="px-2">Staffing & Recruitment</h2>
                 </div>

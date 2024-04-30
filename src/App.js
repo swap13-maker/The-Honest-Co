@@ -41,7 +41,13 @@ import Article22 from './components/Articles/Article22.js';
 import Article23 from './components/Articles/Article23.js';
 import Article24 from './components/Articles/Article24.js';
 import Article25 from './components/Articles/Article25.js';
+import Article26 from './components/Articles/Article26.js';
+import Article27 from './components/Articles/Article27.js';
+import Article28 from './components/Articles/Article28.js';
+import Article29 from './components/Articles/Article29.js';
 import GoogleTagManager from './GoogleTagManager.js';
+import Article30 from './components/Articles/Article30.js';
+
 
 function App() {
   return (
@@ -99,6 +105,11 @@ function App() {
           <Route path="/resources/articles/Rethinking-Candidate-Assessment" element={<Article23 />} />
           <Route path="/resources/articles/Streamlining-Hiring-Through-Automated-Candidate-Screening" element={<Article24 />} />
           <Route path="/resources/articles/Virtual-Career-Fairs-Expanding-Access-to-Opportunities" element={<Article25 />} />
+          <Route path="/resources/articles/Exploring-the-Potential-of-Student-Information-Systems" element={<Article26 />} />
+          <Route path="/resources/articles/Enhancing-Engagement-Via-Dynamic-Virtual-Learning-Environments" element={<Article27 />} />
+          <Route path="/resources/articles/Financial-Transparency-in-Education-Via-Custom-Software-Solutions" element={<Article28 />} />
+          <Route path="/resources/articles/The-Rise-of-Course-Management-&-Scheduling-Tools" element={<Article29 />} />
+          <Route path="/resources/articles/Harnessing-the-Power-of-Adaptive-Learning-Platforms" element={<Article30 />} />
           <Route path="/thankyou" element={<Thanks />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
