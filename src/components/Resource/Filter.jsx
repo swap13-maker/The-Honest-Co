@@ -23,6 +23,12 @@ import Article22 from '../../images/Article/Article23/22.webp'
 import Article23 from '../../images/Article/Article24/23.webp'
 import Article24 from '../../images/Article/Article25/24.webp'
 import Article25 from '../../images/Article/Article26/25.webp'
+import Article26 from '../../images/Article/Article27/26.webp'
+import Article27 from '../../images/Article/Article28/27.webp'
+import Article28 from '../../images/Article/Article29/28.webp'
+import Article29 from '../../images/Article/Article30/29.webp'
+import Article30 from '../../images/Article/Article31/30.webp'
+// import Article29 from '../Articles/Article29'
 
 const Filter = [
     {
@@ -276,6 +282,56 @@ const Filter = [
       description: " Within the dynamic realm of recruitment, the quest for top talent is an ongoing endeavor that shapes the success of organizations.",
       url:"/resources/articles/Virtual-Career-Fairs-Expanding-Access-to-Opportunities",
       alt:"Virtual Career Fairs Expanding Access to Opportunities"
+    },
+    {
+      id: 26,
+      image: Article26,
+      name: "Exploring the Potential of Student Information Systems",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Student Information Systems, commonly known as SIS, are comprehensive platforms designed to streamline administrative tasks, manage student data, and provide valuable insights to educational institutions.",
+      url:"/resources/articles/Exploring-the-Potential-of-Student-Information-Systems",
+      alt:"Exploring the Potential of Student Information Systems"
+    },
+    {
+      id: 27,
+      image: Article27,
+      name: "Enhancing Engagement Via Dynamic Virtual Learning Environments",
+      category: "tab2",
+      logo: "react.svg",
+      description: "In today's rapidly evolving educational landscape, the traditional classroom model is being complemented, and in some cases supplanted, by dynamic virtual learning environments.",
+      url:"/resources/articles/Enhancing-Engagement-Via-Dynamic-Virtual-Learning-Environments",
+      alt:"Enhancing Engagement Via Dynamic Virtual Learning Environments"
+    },
+    {
+      id: 28,
+      image: Article28,
+      name: "Financial Transparency in Education Via Custom Software Solutions",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Subscription Management & Accountancy Solutions offer comprehensive platforms designed to simplify financial management, automate subscription billing, and provide real-time insights into financial performance.",
+      url:"/resources/articles/Financial-Transparency-in-Education-Via-Custom-Software-Solutions",
+      alt:"Financial Transparency in Education Via Custom Software Solutions"
+    },
+    {
+      id: 29,
+      image: Article29,
+      name: "The Rise of Course Management & Scheduling Tools",
+      category: "tab2",
+      logo: "react.svg",
+      description: "In the digital era of education, institutions, educators, and students are embarking on a transformative journey, leveraging technology to enrich learning experiences and boost overall efficiency.",
+      url:"/resources/articles/The-Rise-of-Course-Management-&-Scheduling-Tools",
+      alt:"The Rise of Course Management & Scheduling Tools"
+    },
+    {
+      id: 30,
+      image: Article30,
+      name: "Harnessing the Power of Adaptive Learning Platforms",
+      category: "tab2",
+      logo: "react.svg",
+      description: "Every student is unique, with their own set of strengths, weaknesses, and learning preferences. Adaptive learning platforms empower educators to provide differentiated instruction that caters to the individual needs of each student.",
+      url:"/resources/articles/Harnessing-the-Power-of-Adaptive-Learning-Platforms",
+      alt:"Harnessing the Power of Adaptive Learning Platforms"
     }
   ];
 
