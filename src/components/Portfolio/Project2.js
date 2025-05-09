@@ -18,7 +18,7 @@ import ProjectCards from "../ProjectCards";
 import { NextArrow, PrevArrow } from "../Story/Story";
 import Banner from "../../images/TranXat2/Web/Banner.webp";
 import Grid from "../../images/TranXat2/Web/Grid 1.webp";
-import Grid2 from "../../images/TranXat2/Web/Grid 2.webp";
+import Grid2 from "../../images/TranXat2/Web/Grid2Project.webp";
 import secondGrid from "../../images/TranXat2/banner2.webp";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -203,14 +203,14 @@ function Project2() {
             <div className="col-12 col-md-6 py-md-5">
               <div className="proj-content mt-md-5 mt-2">
                 The enhanced order purchsing and cart payment flow allows the
-                user to easiily add multiple products and single click re-order
+                user to easily add multiple products and single click re-order
                 from the list of previous orders placed.
                 <br />
               </div>
             </div>
             {/* desktop only */}
             <div className="col-12 pt-5 col-md-6 d-none d-md-flex">
-              <div className="proj-heading d-flex align-items-center ml-auto py-5">
+              <div className="proj-heading d-flex align-items-end ml-auto py-5">
                 Seamless User Experience
               </div>
             </div>

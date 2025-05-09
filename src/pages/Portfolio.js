@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import "./../App.css";
-import "./../components/Portfolio/Portfolio.css";
-import Filter from "./../components/Portfolio/Filter";
-import InnerHeader from "../components/InnerHeader.js";
-import Footer from "./../components/Footer";
-import { Link } from "react-router-dom";
-import "../components/Portfolio/Portfolio.css";
-import ProjectCards from "../components/ProjectCards";
-import Lottie from "lottie-react";
-import loader from "../images/PortfolioListing.json";
-import ChatComponent from "../components/ChatComponent";
-import { Helmet } from "react-helmet";
-import GoogleTagManager from "../GoogleTagManager.js";
+import React, { useState } from 'react';
+import { useEffect } from 'react';
+import './../App.css';
+import './../components/Portfolio/Portfolio.css';
+import Filter from './../components/Portfolio/Filter';
+import InnerHeader from '../components/InnerHeader.js';
+import Footer from './../components/Footer';
+import { Link } from 'react-router-dom';
+import '../components/Portfolio/Portfolio.css';
+import ProjectCards from '../components/ProjectCards';
+import Lottie from 'lottie-react';
+import loader from '../images/PortfolioListing.json';
+import ChatComponent from '../components/ChatComponent';
+import { Helmet } from 'react-helmet';
+import GoogleTagManager from '../GoogleTagManager.js';
 
 const Portfolio = () => {
   useEffect(() => {
@@ -20,7 +20,7 @@ const Portfolio = () => {
   }, []);
 
   const [item, setItem] = useState(Filter);
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState('All');
   const [isPortfolioAniHidden, setIsPortfolioAniHidden] = useState(false);
   // const [filteredIndex, setFilteredIndex] = useState(0);
 
@@ -85,10 +85,10 @@ const Portfolio = () => {
             <div className="button-container filter__container d-flex">
               <div
                 className={`custom-button ${
-                  activeCategory === "All" ? "active" : ""
+                  activeCategory === 'All' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("All");
+                  setActiveCategory('All');
                   setItem(Filter);
                 }}
               >
@@ -96,66 +96,66 @@ const Portfolio = () => {
               </div>
               <div
                 className={`custom-button ${
-                  activeCategory === "tab1" ? "active" : ""
+                  activeCategory === 'tab1' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("tab1");
-                  getItem("tab1");
+                  setActiveCategory('tab1');
+                  getItem('tab1');
                 }}
               >
                 D2C & E-Commerce
               </div>
               <div
                 className={`custom-button ${
-                  activeCategory === "tab2" ? "active" : ""
+                  activeCategory === 'tab2' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("tab2");
-                  getItem("tab2");
+                  setActiveCategory('tab2');
+                  getItem('tab2');
                 }}
               >
                 Banking & Finance
               </div>
               <div
                 className={`custom-button ${
-                  activeCategory === "tab3" ? "active" : ""
+                  activeCategory === 'tab3' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("tab3");
-                  getItem("tab3");
+                  setActiveCategory('tab3');
+                  getItem('tab3');
                 }}
               >
                 Healthcare Technology
               </div>
               <div
                 className={`custom-button ${
-                  activeCategory === "tab4" ? "active" : ""
+                  activeCategory === 'tab4' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("tab4");
-                  getItem("tab4");
+                  setActiveCategory('tab4');
+                  getItem('tab4');
                 }}
               >
                 Staffing & Recruitment
               </div>
               <div
                 className={`custom-button ${
-                  activeCategory === "tab5" ? "active" : ""
+                  activeCategory === 'tab5' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("tab5");
-                  getItem("tab5");
+                  setActiveCategory('tab5');
+                  getItem('tab5');
                 }}
               >
                 Educational Technology
               </div>
               <div
                 className={`custom-button ${
-                  activeCategory === "tab6" ? "active" : ""
+                  activeCategory === 'tab6' ? 'active' : ''
                 }`}
                 onClick={() => {
-                  setActiveCategory("tab6");
-                  getItem("tab6");
+                  setActiveCategory('tab6');
+                  getItem('tab6');
                 }}
               >
                 Misc.
@@ -165,14 +165,16 @@ const Portfolio = () => {
             <div className="row custom-row mt-5 px-3 mobile-d-none">
               {item.map((data, index) => {
                 const { name, logo, image, description, alt, url } = data;
-                const cardClass = index % 2 === 0 ? "odd-card" : "even-card";
+                const cardClass = index % 2 === 0 ? 'odd-card' : 'even-card';
                 const marginTopClass =
-                  index === 0 || index === 1 ? "" : "margin-portolio";
+                  index === 0 || index === 1 ? '' : 'margin-portolio';
+                const paddingClass = index === 0 || index === 1 ? 'pb-3' : '';
 
                 return (
                   <ProjectCards
                     description={description}
                     marginTopClass={marginTopClass}
+                    paddingClass={paddingClass}
                     cardClass={cardClass}
                     name={name}
                     logo={logo}
@@ -186,7 +188,7 @@ const Portfolio = () => {
             </div>
             <div className="desktop-d-none">
               {item.map((data, index) => (
-                <div className="pb-5">
+                <div className="pt-5">
                   <Link key={index} to={data.url}>
                     {/* <div className="col-12 pb-2"> */}
                     <img
@@ -220,7 +222,7 @@ const Portfolio = () => {
             <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
               <div className="portfolio-sub-heading d-flex align-items-center">
                 <Link
-                  to=""
+                  to="/get-in-touch/customer-inquiry"
                   className="m-0 font-size-15 text-decoration-underline"
                 >
                   Start your dream project with us

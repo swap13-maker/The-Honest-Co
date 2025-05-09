@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./InnerHeader.css";
-import { Link as ScrollLink } from "react-scroll";
-import { useLocation,useNavigate } from 'react-router-dom';
-import $ from "jquery";
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './InnerHeader.css';
+import { Link as ScrollLink } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom';
+import $ from 'jquery';
 
 const InnerHeader = () => {
   const location = useLocation();
@@ -21,9 +21,9 @@ const InnerHeader = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [scrollPos, handleScroll]);
 
@@ -31,32 +31,30 @@ const InnerHeader = () => {
 
   const handleToggle = () => {
     setMenuOpen(!isMenuOpen);
-    $("#toggle").toggleClass("active");
-    $("#overlay").toggleClass("open");
+    $('#toggle').toggleClass('active');
+    $('#overlay').toggleClass('open');
   };
   const handleHome = () => {
-    navigate("/")
-  }
+    navigate('/');
+  };
   const handleAboutClick = () => {
     setMenuOpen(!isMenuOpen);
     navigate('/?scrollTo=Ourstory');
-  }
+  };
   const handleServicesClick = () => {
-    setMenuOpen(!isMenuOpen)
-    navigate('/?scrollTo=Services')
-  }
-  const handleServicesClickMob = () =>{
     setMenuOpen(!isMenuOpen);
-    navigate('/?scrollTo=ServicesMob')
-  }
-  
-  
+    navigate('/?scrollTo=Services');
+  };
+  const handleServicesClickMob = () => {
+    setMenuOpen(!isMenuOpen);
+    navigate('/?scrollTo=ServicesMob');
+  };
 
   return (
     <section>
       <header
         className={`header glass mobile-d-none height-85 ${
-          showHeader ? "sticky" : ""
+          showHeader ? 'sticky' : ''
         }`}
       >
         <Navbar className="container py-3" expand="lg" variant="dark" sticky="">
@@ -70,12 +68,18 @@ const InnerHeader = () => {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
-            <ScrollLink to="Ourstory" smooth={true} duration={200}>
-              <Nav.Link className="text-black menu-link" onClick={handleAboutClick}>
-                about
-              </Nav.Link>
-              </ScrollLink>  
-              <Nav.Link className="text-black menu-link" onClick={handleServicesClick}>
+              <ScrollLink to="Ourstory" smooth={true} duration={200}>
+                <Nav.Link
+                  className="text-black menu-link"
+                  onClick={handleAboutClick}
+                >
+                  about
+                </Nav.Link>
+              </ScrollLink>
+              <Nav.Link
+                className="text-black menu-link"
+                onClick={handleServicesClick}
+              >
                 services
               </Nav.Link>
               <Nav.Link className="text-black menu-link" href="#">
@@ -87,8 +91,11 @@ const InnerHeader = () => {
               <Nav.Link className="text-black menu-link" href="#">
                 <Link to="/resources">resources</Link>
               </Nav.Link>
-              <Nav.Link className="text-black nav-btn-area" href="#">
-                <Link to="/get-in-touch/customer-inquiry">
+              <Nav.Link
+                className="text-black nav-btn-area"
+                href="https://wa.me/917011242138"
+              >
+                <Link to="https://wa.me/917011242138">
                   <button className="nav-sticky-button">get in touch</button>
                 </Link>
               </Nav.Link>
@@ -107,7 +114,9 @@ const InnerHeader = () => {
         </Link>
         <div
           id="navbar-nav toggle"
-          className={`justify-content-end button_container button_container_inner ${isMenuOpen ? "active" : ""}`}
+          className={`justify-content-end button_container button_container_inner ${
+            isMenuOpen ? 'active' : ''
+          }`}
           onClick={handleToggle}
         >
           <span className="top"></span>
@@ -116,10 +125,10 @@ const InnerHeader = () => {
         </div>
         <Navbar.Toggle aria-controls="navbar-nav" />
 
-        <div id="overlay" className={`overlay ${isMenuOpen ? "open" : ""}`}>
+        <div id="overlay" className={`overlay ${isMenuOpen ? 'open' : ''}`}>
           <nav className="overlay-menu">
             <div className="pl-6">
-             <span onClick={handleHome}>Home</span>
+              <span onClick={handleHome}>Home</span>
             </div>
             <ul>
               <li>
@@ -138,7 +147,7 @@ const InnerHeader = () => {
                 <Link to="/resources">Resources</Link>
               </li>
               <li>
-                <Link to="/get-in-touch/customer-inquiry">
+                <Link to="https://wa.me/917011242138">
                   <button className="nav-button">get in touch</button>
                 </Link>
               </li>

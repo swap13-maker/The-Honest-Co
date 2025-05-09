@@ -135,7 +135,7 @@ export default function Article13() {
                   <h2 className="main-article-content">
                     Transforming Healthcare with AI and Machine Learning
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Artificial Intelligence is no mere buzzword in the Middle
                     Eastern healthcare landscape; it's a transformative force.
@@ -170,11 +170,12 @@ export default function Article13() {
                   </p>
                   <img src={B1a} className="w-100 pt-5" alt={Article13B1a} />
                 </div>
+
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <h2 className="main-article-content">
                     Electronic Health Records: A Pillar of Digital Healthcare
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     The adoption of EHR systems across the Middle East is
                     transforming patient data management. EHRs provide a
@@ -205,7 +206,7 @@ export default function Article13() {
                     Custom Healthcare Software: Tailoring Solutions to Regional
                     Needs
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The unique cultural, linguistic, and regulatory landscape of
                     the Middle East necessitates custom healthcare software
@@ -237,7 +238,7 @@ export default function Article13() {
                     Looking Ahead: The Future of Digital Healthcare in the
                     Middle East
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     The future of digital healthcare in the region is bright,
                     with several emerging trends poised to further transform the
@@ -278,7 +279,7 @@ export default function Article13() {
                     The Honest Company's ethos of leveraging technology for
                     positive impact.
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     The ongoing digital revolution in healthcare is poised to
                     create patient-centric, efficient, and readily accessible
@@ -298,6 +299,8 @@ export default function Article13() {
                     healthier and more connected future for all.
                   </p>
                 </div>
+                <br />
+                <br />
               </div>
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">

@@ -1,9 +1,9 @@
-import React from "react";
-import "./../App.css";
-import myFooterLogo from "../images/footer-logo.svg";
-import { Link } from "react-router-dom";
-import Arrow from "../images/White_Arrow.json";
-import Lottie from "lottie-react";
+import React from 'react';
+import './../App.css';
+import myFooterLogo from '../images/footer-logo.svg';
+import { Link } from 'react-router-dom';
+import Arrow from '../images/White_Arrow.json';
+import Lottie from 'lottie-react';
 
 function Footer() {
   return (
@@ -214,12 +214,14 @@ function Footer() {
           </div>
 
           <div className="col-6 pt-media-4 col-md-custom-footer-5 footer-card">
-            
             <Link to="mailto:business@thehonestco.in">
-              <div className="footer-heading mb-2"> business@thehonestco.in </div>
+              <div className="footer-heading mb-2">
+                {' '}
+                business@thehonestco.in{' '}
+              </div>
             </Link>
-            <Link to="tel:+91 120 246 2890">
-              <div className="footer-heading mb-2"> +91 120 246 2890</div>
+            <Link to="tel:+91 120 413 3072">
+              <div className="footer-heading mb-2"> +91 120 413 3072</div>
             </Link>
             <div className="footer-heading mb-2"> Terms & Conditions </div>
           </div>

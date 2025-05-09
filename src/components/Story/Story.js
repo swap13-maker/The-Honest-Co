@@ -1,19 +1,19 @@
-import React from "react";
-import "../../App.css";
-import "../Slider.css";
-import "./story.css";
-import Slider from "react-slick";
-import icon1 from "../../images/icon1.png";
-import icon2 from "../../images/icon2.png";
-import icon3 from "../../images/icon3.png";
-import icon4 from "../../images/icon4.png";
-import icon5 from "../../images/icon5.png";
-import IconArrow from "../../icons/IconArrow";
-import storyGif from "../../images/story.gif";
+import React from 'react';
+import '../../App.css';
+import '../Slider.css';
+import './story.css';
+import Slider from 'react-slick';
+import icon1 from '../../images/icon1.png';
+import icon2 from '../../images/icon2.png';
+import icon3 from '../../images/icon3.png';
+import icon4 from '../../images/icon4.png';
+import icon5 from '../../images/icon5.png';
+import IconArrow from '../../icons/IconArrow';
+import storyGif from '../../images/story.gif';
 
 function Story() {
   const settings = {
-    className: "slider variable-width",
+    className: 'slider variable-width',
     dots: false,
     arrows: true, // Add this line to enable arrows
     prevArrow: <PrevArrow />, // Custom component for previous arrow
@@ -26,12 +26,15 @@ function Story() {
 
   return (
     <>
-      <section className="container pb-sm-0 pt-5 pb-md-5 mt-md-5 mt-0 story__container" id="Ourstory">
+      <section
+        className="container pb-sm-0 pt-5 pb-md-5 mt-0 story__container"
+        id="Ourstory"
+      >
         <div className="row">
           <div className="col-12 col-md-5 col-lg-5">
             <div className="text-uppercase">
               <h1 className="left-aligned section-heading">
-                <span className="text-light-color text-light-space">OUR</span>{" "}
+                <span className="text-light-color text-light-space">OUR</span>{' '}
                 STORY
               </h1>
             </div>
@@ -48,7 +51,7 @@ function Story() {
           </div>
         </div>
       </section>
-      <div className="row slider-container w-100">
+      <div className="row slider-container w-100 pb-5 mb-5 mb-md-0">
         <div className="col-md-2 col-12 slider-container-left d-none d-md-block">
           <img
             src={storyGif}
@@ -61,7 +64,7 @@ function Story() {
           <Slider {...settings}>
             <div className="bg-white pt-1 w-440">
               <div className="py-4 story-icon">
-                <img src={icon1} className="card-icon py-3" alt=""/>
+                <img src={icon1} className="card-icon py-3" alt="" />
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -81,7 +84,7 @@ function Story() {
 
             <div className="bg-white w-440">
               <div className="py-4 story-icon">
-                <img src={icon2} className="card-icon py-2" alt=""/>
+                <img src={icon2} className="card-icon py-2" alt="" />
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -121,7 +124,7 @@ function Story() {
 
             <div className="bg-white w-440">
               <div className="py-4 story-icon">
-                <img src={icon4} className="card-icon" alt=""/>
+                <img src={icon4} className="card-icon" alt="" />
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -129,7 +132,6 @@ function Story() {
                     Presently operational in 3 cities, The Honest Co. has served
                     more than 40 clients and have successfully delivered more
                     than 70 projects.
-                    
                   </p>
                 </div>
                 <div className="mt-md-5 mt-4">
@@ -141,7 +143,7 @@ function Story() {
             </div>
             <div className="bg-white w-440">
               <div className="py-4 story-icon last-icon">
-                <img src={icon5} className="card-icon media-icon5" alt=""/>
+                <img src={icon5} className="card-icon media-icon5" alt="" />
               </div>
               <div className="bg-dark py-4 px-1">
                 <div className="px-4 py-4">
@@ -170,7 +172,11 @@ export const PrevArrow = (props) => {
   const { onClick } = props;
 
   return (
-    <div className="slick-arrow slick-prev" onClick={onClick} style={{ paddingTop: window.innerWidth <= 768 ? '100px' : 'auto' }}>
+    <div
+      className="slick-arrow slick-prev"
+      onClick={onClick}
+      style={{ paddingTop: window.innerWidth <= 768 ? '100px' : 'auto' }}
+    >
       <IconArrow />
     </div>
   );
@@ -181,7 +187,11 @@ export const NextArrow = (props) => {
   const { onClick } = props;
 
   return (
-    <div className="slick-arrow slick-next" onClick={onClick} style={{ paddingBottom: window.innerWidth <= 768 ? '100px' : 'auto' }}>
+    <div
+      className="slick-arrow slick-next"
+      onClick={onClick}
+      style={{ paddingBottom: window.innerWidth <= 768 ? '100px' : 'auto' }}
+    >
       <IconArrow />
     </div>
   );

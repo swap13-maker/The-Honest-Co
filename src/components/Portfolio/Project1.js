@@ -130,7 +130,7 @@ function Project1() {
               </div>
               <div className="proj-content mt-md-4 mt-3">
                 Enhancing the online buying experience by developing a mobile
-                application and a mobile responsive website for one of our
+                application and a mobile responsive website for our
                 customers in the consumer food industry.
               </div>
               <img
@@ -180,7 +180,7 @@ function Project1() {
                 Easy to use online purchasing flow allows the user to browse
                 through the menu and categories, select the best option and
                 proceed to cart to purchase the items. The profile section
-                allows the user to better track their orders and statues.
+                allows the user to better track their orders and status.
               </div>
             </div>
             <div className="col-12 Image_size d-none d-md-block">
@@ -203,7 +203,7 @@ function Project1() {
             <div className="col-12 col-md-6 py-md-5">
               <div className="proj-content mt-md-5 mt-2">
                 The enhanced order purchsing and cart payment flow allows the
-                user to easiily add multiple products and single click re-order
+                user to easiily add multiple products and single click reorder
                 from the list of previous orders placed.
                 <br />
               </div>

@@ -180,7 +180,7 @@ function Project5() {
             <div className="col-12 col-md-6">
               <div className="proj-content paddingLeft-even mt-md-3 mt-2">
                 With features like centralized prescription management and
-                comprehensive medical information storage, patients gain
+                comprehensive medical information storage, patients get
                 convenience, accuracy, and improved medication adherence for
                 enhanced health outcomes.
               </div>
@@ -265,7 +265,7 @@ function Project5() {
           <div className="col-12 py-md-2">
             <div className="w-100">
               Our Electronic Health platform, with its user-friendly mobile
-              application, empowers individuals to take control of their health
+              application, empower individuals to take control of their health
               by efficiently managing medications and consultations all via an
               intitutive mobile application.
             </div>

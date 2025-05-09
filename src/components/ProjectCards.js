@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 const ProjectCards = ({
   cardClass,
   marginTopClass,
+  paddingClass,
   image,
   name,
   description,
@@ -24,7 +25,7 @@ const ProjectCards = ({
               </div>
             </Link>
             <div className="pb-5 translate__down">
-              <div className="blog-heading">
+              <div className={`blog-heading ${paddingClass}`}>
                 {name}
                 <svg
                   width="20"

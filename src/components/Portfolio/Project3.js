@@ -127,7 +127,7 @@ function Project3() {
                 <hr className="w-40" />
               </div>
               <div className="proj-content mt-md-4 mt-3">
-                A unified platform for the users, staff members, and drivers to
+                An unified platform for the users, staff members, and drivers to
                 avail the services of the business. Easy itinerary access,
                 booking cabs, and contacting support made easy via mobile app
                 development.

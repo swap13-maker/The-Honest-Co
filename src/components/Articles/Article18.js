@@ -140,15 +140,6 @@ export default function Article18() {
 
               <div className="col-md-9">
                 <div className="pt-5" ref={section1Ref} id="section1">
-                  {/* <h2 className="main-article-content">
-                    A seismic shift is rocking the BFSI sector. Evolving
-                    customer expectations are leading the charge. Today's
-                    tech-savvy consumers demand personalized, frictionless
-                    experiences across all channels. Their financial
-                    institutions need to be as accessible and convenient as
-                    their favourite online stores.
-                  </h2> */}
-                  <br />
                   <p className="light-article-content">
                     The BFSI sector has long navigated a complex landscape of
                     regulations, customer demands, and market fluctuations.
@@ -163,7 +154,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     From Manual to Machine-Driven Decision Making
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Traditionally, decision-making in BFSI relied heavily on
                     manual analysis and intuition. This often led to slow
@@ -213,7 +204,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     Streamlining Operations and Boosting Productivity
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     AI is reshaping application development beyond
                     decision-making by automating repetitive tasks and
@@ -243,7 +234,7 @@ export default function Article18() {
                     recruitment process, and mobile apps have made this a
                     reality.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Modern job seekers, especially the tech-savvy millennial and
                     Gen Z workforce, bring with them a set of expectations that
@@ -264,7 +255,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     Personalizing the Customer Journey
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     In today's highly competitive landscape, providing an
                     exceptional customer experience is paramount for BFSI
@@ -285,16 +276,14 @@ export default function Article18() {
                     customers, ultimately fostering loyalty and driving growth
                     in the dynamic marketplace.
                   </p>
+                  <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
                 </div>
 
-                <div className="pt-4" ref={section5Ref} id="section5">
-                  <img src={B1c} className="w-100 pt-5" alt={Article1B1c} />
-                  <br />
-                  <br />
+                <div className="pt-5" ref={section5Ref} id="section5">
                   <h2 className="main-article-content">
                     Building a Secure and Compliant Future
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     As AI adoption grows, concerns regarding security and
                     compliance are critical. However, AI can also be a powerful
@@ -340,7 +329,7 @@ export default function Article18() {
                   <h2 className="main-article-content">
                     The Honest Company: Your Trusted Partner in AI Innovation
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     At The Honest Company, we understand the unique challenges
                     and opportunities facing BFSI businesses in today's dynamic
@@ -351,7 +340,10 @@ export default function Article18() {
                     customer experiences.
                   </p>
                 </div>
+                <br />
+               <br />
               </div>
+              
               <div className="col-md-3 pt-5 pl-md-5">
                 <div className="bg-white sticky-top sticky-top-with-padding">
                   <div className="p-4 d-none d-md-block">

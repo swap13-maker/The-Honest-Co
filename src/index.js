@@ -19,7 +19,7 @@ root.render(
   <React.StrictMode>
     <Helmet>
       <GoogleTagManager />
-      <script type="application/ld+json">
+      {/* <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org/",
           "@type": "BreadcrumbList",
@@ -52,7 +52,7 @@ root.render(
             },
           ],
         })}
-      </script>
+      </script> */}
     </Helmet>
     <App />
   </React.StrictMode>

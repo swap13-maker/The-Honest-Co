@@ -242,7 +242,7 @@ const Resource = () => {
               <div className="col-12 col-md-5 col-lg-5 d-flex justify-content-end">
                 <div className="portfolio-sub-heading d-flex align-items-center">
                   <Link
-                    to=""
+                    to="/get-in-touch/customer-inquiry"
                     className="m-0 font-size-15 text-decoration-underline"
                   >
                     Start your dream project with us

@@ -126,7 +126,7 @@ export default function Article14() {
                     presents a unique landscape for the deployment of healthcare
                     technologies.
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Understanding and respecting this cultural diversity is not
                     just a matter of ethical practice but a pivotal aspect of
@@ -144,7 +144,7 @@ export default function Article14() {
                   <h2 className="main-article-content">
                     Embracing Cultural Sensitivity in Health Tech
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     In the Middle East, healthcare technology stands at the
                     crossroads of innovation and tradition, where the
@@ -167,12 +167,13 @@ export default function Article14() {
                   </p>
                   <img src={B5a} className="w-100 pt-5" alt={Article14B1a} />
                 </div>
+
                 <div className="pt-5" ref={section3Ref} id="section3">
                   <h2 className="main-article-content">
                     Designing for Diversity, Cultural Sensitivity in User
                     Interfaces
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     Effective communication is the cornerstone of healthcare,
                     and in a region as linguistically diverse as the Middle
@@ -198,13 +199,14 @@ export default function Article14() {
                   </p>
                   <img src={B5b} className="w-100 pt-5" alt={Article14B1b} />
                 </div>
+
                 <div className="pt-5" ref={section4Ref} id="section4">
                   <h2 className="main-article-content">
                     Effective communication is the cornerstone of healthcare,
                     and in a region as linguistically diverse as the Middle
                     East, multilingual support is not optional—it's essential.
                   </h2>
-                  <br />
+                
                   <p className="light-article-content">
                     Beyond mere translation, the practice of localization
                     becomes paramount. This involves adapting content to
@@ -226,7 +228,7 @@ export default function Article14() {
                   <h2 className="main-article-content">
                     User Engagement and Cultural Relevance
                   </h2>
-                  <br />
+                 
                   <p className="light-article-content">
                     Cultural relevance is key to user engagement. When users see
                     their cultural identity and values reflected in healthcare
@@ -281,7 +283,7 @@ export default function Article14() {
                   <h2 className="main-article-content">
                     Ethical Considerations in Health Tech
                   </h2>
-                  <br />
+                  
                   <p className="light-article-content">
                     Ethical considerations in health tech, particularly
                     concerning patient privacy and data security, gain

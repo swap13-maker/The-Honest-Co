@@ -90,11 +90,10 @@ function Services() {
                       ) : (
                         <img className="tab-icon" src={arrow} alt="tab-icon" />
                       )}
-                      <span className="px-3">Application Development</span>
+                      <span className="px-3">Custom Solutions </span>
                     </div>
                     <div className="sub-heading-tab">
-                      Crafting customized, user-centric applications across
-                      platforms, leveraging the best of digital development.
+                    Crafting customized, user-centric applications across platforms, leveraging the best of digital development.
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
@@ -109,11 +108,10 @@ function Services() {
                       ) : (
                         <img className="tab-icon" src={arrow} alt="" />
                       )}
-                      <span className="px-3">Content Creation</span>
+                      <span className="px-3">Mobile Applications </span>
                     </div>
                     <div className="sub-heading-tab">
-                      Curating powerful storytelling and creating captivating
-                      visuals driving meaningful connections.
+                    Curating powerful mobility solutions for the fast moving businesses, allowing customer to take actions swiftly. 
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
@@ -128,11 +126,10 @@ function Services() {
                       ) : (
                         <img className="tab-icon" src={arrow} alt="" />
                       )}
-                      <span className="px-3">Industrial Design</span>
+                      <span className="px-3">AI & ML Solutions </span>
                     </div>
                     <div className="sub-heading-tab">
-                      Transforming ideas into tangible products, from
-                      prototyping to packaging, creating market fit products.
+                    Transforming ideas into tangible working solutions, creating bespoke automations saving time and money. 
                     </div>
                   </MDBTabsLink>
                 </MDBTabsItem>
@@ -230,7 +227,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                concept & prototyping
+                              System Integration
                               </div>
                             </div>
                           </div>
@@ -243,7 +240,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                product design
+                              Process Automation
                               </div>
                             </div>
                           </div>
@@ -256,7 +253,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                              Merchandising & Packaging
+                              Custom Model Generation
                               </div>
                             </div>
                           </div>
@@ -269,7 +266,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                manufacturing support
+                              Model Training
                               </div>
                             </div>
                           </div>
@@ -287,7 +284,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                Custom Software Development
+                              Process Automation
                               </div>
                             </div>
                           </div>
@@ -300,7 +297,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                Mobile Application Development
+                              Digital Development
                               </div>
                             </div>
                           </div>
@@ -313,7 +310,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                Ai & ML solutions
+                              System Integrations
                               </div>
                             </div>
                           </div>
@@ -326,7 +323,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                Web 3 & Blockchain
+                              ERP Solutions
                               </div>
                             </div>
                           </div>
@@ -344,7 +341,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                motion graphics
+                              Digital Product Development
                               </div>
                             </div>
                           </div>
@@ -357,7 +354,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                2D & 3D Graphics Design
+                              E-Commerce Mobile Apps
                               </div>
                             </div>
                           </div>
@@ -370,7 +367,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                branding & identity design
+                              ERP Mobility Solutions
                               </div>
                             </div>
                           </div>
@@ -383,7 +380,7 @@ function Services() {
                           <div className="circle__inner">
                             <div className="circle__wrapper">
                               <div className="circle__content">
-                                advertisements
+                              Bespoke Applications
                               </div>
                             </div>
                           </div>

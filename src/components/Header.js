@@ -59,8 +59,8 @@ function Header() {
             <Nav.Link className="text-black menu-link" href="#">
               <Link to="/resources">resources</Link>
             </Nav.Link>
-            <Nav.Link className="text-black nav-btn-area" href="#">
-              <Link to="/get-in-touch/customer-inquiry">
+            <Nav.Link href="https://wa.me/917011242138" className="text-black nav-btn-area" href="#">
+              <Link  to="https://wa.me/917011242138">
                 <button className="nav-sticky-button">get in touch</button>
               </Link>
             </Nav.Link>
